@@ -27,7 +27,8 @@ Finally, GDScript was written as a custom solution. The language and interpreter
 
 Some people can learn better by just taking a look at the syntax, so here’s a simple example of how it looks.
 
-`<code python>`# a file is a class!
+```python
+# a file is a class!
 
 # inheritance
 
@@ -82,7 +83,8 @@ class Something:
 func _init():
     print("constructed!")
     var lv = Something.new()
-    print(lv.a)`</code>`
+    print(lv.a)
+```
 #  Language 
 
 ##  Identifiers 
@@ -131,128 +133,133 @@ The following is the list of supported operators and their precedence (TODO, cha
 
 Anything from a ’#’ to the end of the line is ignored and is considered a comment.
 
-	:::python
-	# This is a comment`</code>`
-	#   Built-In Types 
-	
-	##   Basic Built-In Types 
-	
-	A variable in GDScript can be assigned to several built-in types.
-	
-	###   null 
-	
-	’null’ is a data type that contains no information, nothing assigned, and it’s just empty. It can only be set to one value: ’null’.
-	
-	###   bool 
-	
-	The Boolean data type can only contain ’true’ or ’false’.
-	
-	###   int 
-	
-	The integer data type can only contain integer numbers, (both negative and positive).
-	
-	###   float 
-	Used to contain a floating point value (real numbers).
-	
-	###   String 
-	
-	A sequence of characters in unicode format. Strings can contain the standard C escape sequences.
-	
-	##   Vector Built-In Types 
-	
-	###   Vector2/Size2 
-	
-	2D vector type containing x and y fields. Can alternatively access fields as width and height for readability. Can also be accessed as array.
-	
-	###   Rect2 
-	
-	2D Rectangle type containing two vectors fields: “pos” and "size". Alternatively contains an “end” field which is “pos+size”.
-	
-	###   Vector3 
-	
-	3D vector type containing x, y and z fields. This can also be accessed as an array.
-	
-	###   Matrix32 
-	
-	3x2 matrix used for 2D transforms.
-	
-	###   Plane 
-	
-	3D Plane type in normalized form that contains a “normal” vector field and a “d” scalar distance.
-	
-	###   Quat 
-	
-	Quaternion is a datatype used for representing a 3D rotation. It’s useful for interpolating rotations.
-	
-	###   AABB/Box3 
-	
-	Axis Aligned bounding box (or 3D box) contains 2 vectors fields: “pos” and "size". Alternatively contains an “end” field which is “pos+size”.
-	
-	###   Matrix3 
-	
-	3x3 matrix used for 3D rotation and scale. It contains 3 vector fields (x, y and z) and can also be accessed as an array of 3D vectors.
-	
-	###   Transform 
-	
-	3D Transform contains a Matrix3 field “basis” and a Vector3 field “origin”.
-	
-	##   Engine Built-In Types 
-	
-	###   Color 
-	
-	Color data type contains r, g, b, and a fields. It can also be accessed as h, s, and v for hue/saturation/value.
-	
-	###   Image 
-	
-	Contains a custom format 2D image and allows direct access to the pixels.
-	
-	###   NodePath 
-	
-	Compiled path to a node used mainly in the scene system. It can be easily assigned to, and from, a String.
-	
-	###   RID 
-	
-	Resource ID (RID). Servers use generic RIDs to reference opaque data.
-	
-	###   Object 
-	
-	Base class for anything that is not a built-in type.
-	
-	###   InputEvent 
-	
-	Events from input devices are contained in very compact form in InputEvent objects. Due to the fact that they can be received in high amounts from frame to frame they are optimized as their own data type.
-	
-	##   Container Built-In Types 
-	
-	###   Array 
-	
-	Generic sequence of objects. Its size can be changed to anything and starts from index 0.
-	
-	`<code python>`var arr=[]
-	arr=[1, 2, 3]
-	arr[0] = "Hi!"`</code>`
-	Arrays are allocated linearly in memory, so they are fast, but very large arrays (more than tens of thousands of elements) may cause fragmentation. 
-	
-	There are specialized arrays (listed below) for some built-in data types which do not suffer from this and use less memory, but they are atomic and generally run a little slower, so they are only justified for very large amount of data.
-	
-	###   Dictionary 
-	
-	Associative container which contains values referenced by unique keys.
-	
-	`<code python>`var d={4:5, "a key":"a value", 28:[1,2,3]}
-	d["Hi!"] = 0
+```python
+# This is a comment
+```
+#   Built-In Types 
 
+##   Basic Built-In Types 
+
+A variable in GDScript can be assigned to several built-in types.
+
+###   null 
+
+’null’ is a data type that contains no information, nothing assigned, and it’s just empty. It can only be set to one value: ’null’.
+
+###   bool 
+
+The Boolean data type can only contain ’true’ or ’false’.
+
+###   int 
+
+The integer data type can only contain integer numbers, (both negative and positive).
+
+###   float 
+
+Used to contain a floating point value (real numbers).
+
+###   String 
+
+A sequence of characters in unicode format. Strings can contain the standard C escape sequences.
+
+##   Vector Built-In Types 
+
+###   Vector2/Size2 
+
+2D vector type containing x and y fields. Can alternatively access fields as width and height for readability. Can also be accessed as array.
+
+###   Rect2 
+
+2D Rectangle type containing two vectors fields: “pos” and "size". Alternatively contains an “end” field which is “pos+size”.
+
+###   Vector3 
+
+3D vector type containing x, y and z fields. This can also be accessed as an array.
+
+###   Matrix32 
+
+3x2 matrix used for 2D transforms.
+
+###   Plane 
+
+3D Plane type in normalized form that contains a “normal” vector field and a “d” scalar distance.
+
+###   Quat 
+
+Quaternion is a datatype used for representing a 3D rotation. It’s useful for interpolating rotations.
+
+###   AABB/Box3 
+
+Axis Aligned bounding box (or 3D box) contains 2 vectors fields: “pos” and "size". Alternatively contains an “end” field which is “pos+size”.
+
+###   Matrix3 
+
+3x3 matrix used for 3D rotation and scale. It contains 3 vector fields (x, y and z) and can also be accessed as an array of 3D vectors.
+
+###   Transform 
+
+3D Transform contains a Matrix3 field “basis” and a Vector3 field “origin”.
+
+##   Engine Built-In Types 
+
+###   Color 
+
+Color data type contains r, g, b, and a fields. It can also be accessed as h, s, and v for hue/saturation/value.
+
+###   Image 
+
+Contains a custom format 2D image and allows direct access to the pixels.
+
+###   NodePath 
+
+Compiled path to a node used mainly in the scene system. It can be easily assigned to, and from, a String.
+
+###   RID 
+
+Resource ID (RID). Servers use generic RIDs to reference opaque data.
+
+###   Object 
+
+Base class for anything that is not a built-in type.
+
+###   InputEvent 
+	
+Events from input devices are contained in very compact form in InputEvent objects. Due to the fact that they can be received in high amounts from frame to frame they are optimized as their own data type.
+
+##   Container Built-In Types 
+
+###   Array 
+
+Generic sequence of objects. Its size can be changed to anything and starts from index 0.
+
+```python
+var arr=[]
+arr=[1, 2, 3]
+arr[0] = "Hi!"
+```
+Arrays are allocated linearly in memory, so they are fast, but very large arrays (more than tens of thousands of elements) may cause fragmentation. 
+
+There are specialized arrays (listed below) for some built-in data types which do not suffer from this and use less memory, but they are atomic and generally run a little slower, so they are only justified for very large amount of data.
+
+###   Dictionary 
+
+Associative container which contains values referenced by unique keys.
+	
+```python
+var d={4:5, "a key":"a value", 28:[1,2,3]}
+d["Hi!"] = 0
+```
 
 Lua-style table syntax is also supported, given that it's easier to write and read:
 
-	:::python
-	
-	var d = {
-	  somekey = 2,
-	  otherkey = [2,3,4],
-	  morekey = "Hello"
-	}
+```python
 
+var d = {
+    somekey = 2,
+    otherkey = [2,3,4],
+    morekey = "Hello"
+}
+```
 
 ###  ByteArray 
 
@@ -290,29 +297,38 @@ Array of Color can only contains colors.
 
 Variables can exist as class members or local to functions. They are created with the “var” keyword and may, optionally, be assigned a value upon initialization.
 
-`<code python>`var a  # data type is null by default
+```python
+var a  # data type is null by default
 var b = 5
 var c = 3.8
-var d = b + c  # variables are always initialized in order`</code>`
+var d = b + c  # variables are always initialized in order
+```
+
 ##  Constants 
 
 Constants are similar to variables, but must be constants or constant expressions and must be assigned on initialization.
 
-`<code python>`const a = 5
+```python
+const a = 5
 const b = Vector2(20, 20)
 const c = 10 + 20 # constant expression
 const d = Vector2(20, 30).x  # constant expression: 20
 const e = [1, 2, 3, 4][0]  # constant expression: 1
 const f = sin(20)  # sin() can be used in constant expressions
-const g = x + 20  # invalid; this is not a constant expression!`</code>`
+const g = x + 20  # invalid; this is not a constant expression!
+```
+
 ##  Functions 
 
 Functions always belong to a class. The scope priority for variable look-up is: local -> class member -> global. “self” is provided as an option for accessing class members but is not always required (and must *not* be defined as the first parameter, like in Python). For performance reasons, functions are not considered class members, so they can’t be referenced directly. A function can return at any point. The default return value is null.
 
-`<code python>`func myfunction(a, b):
+```python
+func myfunction(a, b):
     print(a)
     print(b)
-    return a + b  # return is optional; without it null is returned`</code>`
+    return a + b  # return is optional; without it null is returned
+```
+
 ###  Statements and Control Flow 
 
 Statements are standard and can be assignments, function calls, control flow structures, etc (see below). “;” as a statement separator is entirely optional.
@@ -321,23 +337,29 @@ Statements are standard and can be assignments, function calls, control flow str
 
 Simple conditions are created by using the *if/else/elif* syntax. Parenthesis around statements is allowed, but not requiered. Given the nature of the tab-based indentation, elif can be used instead of else:/if: to mantain a level of indentation.
 
-`<code python>`if [expression]:
+```python
+if [expression]:
     statement(s)
 elif [expression]:
     statement(s)
 else:
-    statement(s)`</code>`
+    statement(s)
+```
+
 ###  while 
 
 Simple loops are created by using *while* syntax. Loops can be broken using *break* or continued using *continue*:
 
-`<code python>`while [expression]:
-    statement(s)`</code>`
+```python
+while [expression]:
+    statement(s)
+```
 ###  for 
 
 To iterate through a range, such as an array or table, a *for* loop is used. For loops store the index in the loop variable on each iteration.
 
-`<code python>`for i in [0, 1, 2]:
+```python
+for i in [0, 1, 2]:
     statement  # loop iterates 3 times with i as 0, then 1 and finally 2
 
 var dict = {"a":0, "b":1, "c":2}
@@ -351,7 +373,9 @@ for i in range(1,3):
     statement  # similar to [1, 2] but does not allocate an array
 
 for i in range(2,8,2):
-    statement  # similar to [2, 4, 6] but does not allocate an array`</code>`
+    statement  # similar to [2, 4, 6] but does not allocate an array
+```
+
 #  Classes 
 
 By default, the body of a script file is an unnamed class and it can only be referenced externally as a resource or file. Class syntax is meant to be very compact and can only contain member variables or functions. Static functions are allowed, but not static members (this is in the spirit of thread safety since scripts can be initialized in separate threads without the user knowing). In the same way, member variables (including arrays and dictionaries) are initialized every time an instance is created.
@@ -360,15 +384,19 @@ By default, the body of a script file is an unnamed class and it can only be ref
 
 Imagine the following being stored in a file like myclass.gd.
 
-`<code python>`var a = 5
+```python
+var a = 5
 
 func print_value_of_a():
-    print(a)`</code>`
+    print(a)
+```
+
 ##  Inheritance 
 
 A class file can inherit from a global class, another file or a subclass inside another file. Multiple inheritance is not allowed. The “extends” syntax is used:
 
-`<code python>`# extend from some class (global)
+```python
+# extend from some class (global)
 extends SomeClass 
 
 # optionally, extend from another file
@@ -377,17 +405,22 @@ extends "somefile.gd"
 
 # extend from a subclass in another file
 
-extends "somefile.gd".Subclass `</code>`
+extends "somefile.gd".Subclass
+```
+
 ##  Inheritance Testing 
 
 It's possible to check if an instance inherits from a given class. For this the “extends” keyword can be used as an operator instead:
 
-`<code python>`static var enemy_class = preload("enemy.gd")  # cache the enemy class
+```python
+static var enemy_class = preload("enemy.gd")  # cache the enemy class
 
 [..]
 
 if (entity extends enemy_class):
-    entity.apply_damage()`</code>`
+    entity.apply_damage()
+```
+
 ##  Constructor 
 
 A class can have an optional constructor; a function named “_init” that is called when the class is instanced.
@@ -396,19 +429,23 @@ A class can have an optional constructor; a function named “_init” that is c
 
 A class file can have subclasses. This syntax should be straightforward:
 
-`<code python>`class SomeSubClass:
+```python
+class SomeSubClass:
     var a = 5
     func print_value_of_a():
         print(a)
 
 func _init():
     var sc = SomeSubClass.new()  #instance by calling built-in new
-    sc.print_value_of_a()`</code>`
+    sc.print_value_of_a()
+```
+
 ##  Classes as Objects 
 
 It may be desired at some point to load a class from a file and then instance it. Since the global scope does not exist, classes must be loaded as a resource. Instancing is done by calling the “new” function in a class object:
 
-`<code python>`# load the class (loaded every time the script is instanced)
+```python
+# load the class (loaded every time the script is instanced)
 var MyClass = load("myclass.gd")
 
 # alternatively, using the preload() function preloads the class at compile time
@@ -417,18 +454,24 @@ var MyClass2 = preload("myclass.gd")
 
 func _init():
     var a = MyClass.new()
-    a.somefunction()`</code>`
+    a.somefunction()
+```
+
 ##  Exports 
 
 Class members can be exported. This means their value gets saved along with a scene. If class members have initializers to constant expressions, they will be available for editing in the property editor. Exporting is done by using the export keyword:
 
-`<code python>`extends Button
+```python
+extends Button
 
 export var data  # value will be saved
-export var number = 5  # also available to the property editor`</code>`
+export var number = 5  # also available to the property editor
+```
+
 One of the fundamental benefits of exporting member variables is to have them visible in the property editor. This way artists and game designers can modify values that later influence how the program runs. For this, a special export syntax is provided for more detail in the exported variables:
 
-`<code python>`# if the exported value assigns a constant or constant expression, the type will be inferred and used in the editor
+```python
+# if the exported value assigns a constant or constant expression, the type will be inferred and used in the editor
 
 export var number = 5
 
@@ -460,24 +503,32 @@ export(float, -10, 20, 0.2) var k  # -10 to 20 allowed, with stepping of 0.2
 # color can hint availability of alpha
 
 export(Color, RGB) var col  # Color is RGB
-export(Color, RGBA) var col  # Color is RGBA`</code>`
+export(Color, RGBA) var col  # Color is RGBA
+```
+
 It must be noted that even if the script is not being run while at the editor, the exported properties are still editable (see below for “tool”).
 
 ##  Static Functions 
 
 A function can be declared static. When a function is static it has no access to the instance member variables or “self”. This is mainly useful to make libraries of helper functions:
 
-`<code python>`static func sum2(a, b):
-    return a + b`</code>`
+```python
+static func sum2(a, b):
+    return a + b
+```
+
 ##  Tool Mode 
 
 Scripts, by default, don’t run inside the editor and only the exported properties can be changed. In some cases it is desired that they do run inside the editor (as long as they don’t execute game code or manually avoid doing so). For this, the “tool” keyword exists and must be placed at the top of the file:
 
-`<code python>`tool
+```python
+tool
 extends Button
 
 func _init():
-    print("Hello")`</code>`
+    print("Hello")
+```
+
 ##  Memory Management 
 
 If a class inherits from *Reference*, then instances will be freed when no longer in use. No garbage collector exists, just simple reference counting. By default, all classes that don’t define inheritance extend *Reference*. If this is not desired, then a class must inherit *Object* manually and must call instance.free(). To avoid reference cycles that can’t be freed, a weakref() function is provided for creating weak references.
@@ -485,10 +536,11 @@ If a class inherits from *Reference*, then instances will be freed when no longe
 ##  Function References 
 
 Functions can’t be referenced because they are not treated as class members. There are two alternatives to this, though. The “call” function or the funcref() helper.
-
-`<code python>`instance.call("funcname", args)  # call a function by name
+```python
+instance.call("funcname", args)  # call a function by name
 
 var fr = funcref(instance, "funcname")  # create a function ref
-fr.exec(args)`</code>`
+fr.exec(args)
+```
 
  --- //[Juan Linietsky](reduzio@gmail.com) 2013/11/10 18:09//
