@@ -1,82 +1,108 @@
 
-|  | | | | | | | |
-|  --- | | ------- | --- | | ------- | --- | | ------- | --- | | ------- |
-| **@** | [@GDScript](class_@gdscript) |  | [Font](class_font) |  | [Path2D](class_path2d) |  | [SoundRoomParams](class_soundroomparams) | 
-|  | [@Global Scope](class_@global scope) | **G** | [GDNativeClass](class_gdnativeclass) |  | [PathFollow](class_pathfollow) |  | [Spatial](class_spatial) | 
-|  | [@MultiScript](class_@multiscript) |  | [GDScript](class_gdscript) |  | [PathRemap](class_pathremap) |  | [SpatialPlayer](class_spatialplayer) | 
-| **A** | [AABB](class_aabb) |  | [Geometry](class_geometry) |  | [Performance](class_performance) |  | [SpatialSamplePlayer](class_spatialsampleplayer) | 
-|  | [AcceptDialog](class_acceptdialog) |  | [GeometryInstance](class_geometryinstance) |  | [Physics2DDirectBodyState](class_physics2ddirectbodystate) |  | [SpatialSound2DServer](class_spatialsound2dserver) | 
-|  | [AnimatedSprite](class_animatedsprite) |  | [Globals](class_globals) |  | [Physics2DDirectBodyStateSW](class_physics2ddirectbodystatesw) |  | [SpatialSound2DServerSW](class_spatialsound2dserversw) | 
-|  | [Animation](class_animation) |  | [GridContainer](class_gridcontainer) |  | [Physics2DDirectSpaceState](class_physics2ddirectspacestate) |  | [SpatialSoundServer](class_spatialsoundserver) | 
-|  | [AnimationPlayer](class_animationplayer) |  | [GridMap](class_gridmap) |  | [Physics2DServer](class_physics2dserver) |  | [SpatialSoundServerSW](class_spatialsoundserversw) | 
-|  | [AnimationTreePlayer](class_animationtreeplayer) |  | [GrooveJoint2D](class_groovejoint2d) |  | [Physics2DServerSW](class_physics2dserversw) |  | [SpatialStreamPlayer](class_spatialstreamplayer) | 
-|  | [Area](class_area) | **H** | [HBoxContainer](class_hboxcontainer) |  | [Physics2DShapeQueryResult](class_physics2dshapequeryresult) |  | [SphereShape](class_sphereshape) | 
-|  | [Area2D](class_area2d) |  | [HButtonArray](class_hbuttonarray) |  | [PhysicsBody](class_physicsbody) |  | [SpinBox](class_spinbox) | 
-|  | [Array](class_array) |  | [HScrollBar](class_hscrollbar) |  | [PhysicsBody2D](class_physicsbody2d) |  | [SplitContainer](class_splitcontainer) | 
-|  | [AtlasTexture](class_atlastexture) |  | [HSeparator](class_hseparator) |  | [PhysicsDirectBodyState](class_physicsdirectbodystate) |  | [SpotLight](class_spotlight) | 
-|  | [AudioServer](class_audioserver) |  | [HSlider](class_hslider) |  | [PhysicsDirectBodyStateSW](class_physicsdirectbodystatesw) |  | [Sprite](class_sprite) | 
-|  | [AudioServerSW](class_audioserversw) |  | [HSplitContainer](class_hsplitcontainer) |  | [PhysicsDirectSpaceState](class_physicsdirectspacestate) |  | [SpriteFrames](class_spriteframes) | 
-|  | [AudioStream](class_audiostream) |  | [HTTPClient](class_httpclient) |  | [PhysicsServer](class_physicsserver) |  | [StaticBody](class_staticbody) | 
-|  | [AudioStreamGibberish](class_audiostreamgibberish) | **I** | [IP](class_ip) |  | [PhysicsServerSW](class_physicsserversw) |  | [StaticBody2D](class_staticbody2d) | 
-|  | [AudioStreamMPC](class_audiostreammpc) |  | [IP_Unix](class_ip_unix) |  | [PhysicsShapeQueryResult](class_physicsshapequeryresult) |  | [StreamPeer](class_streampeer) | 
-|  | [AudioStreamOGGVorbis](class_audiostreamoggvorbis) |  | [Image](class_image) |  | [PinJoint2D](class_pinjoint2d) |  | [StreamPeerTCP](class_streampeertcp) | 
-|  | [AudioStreamResampled](class_audiostreamresampled) |  | [ImagePathFinder](class_imagepathfinder) |  | [Plane](class_plane) |  | [StreamPlayer](class_streamplayer) | 
-|  | [AudioStreamSpeex](class_audiostreamspeex) |  | [ImageTexture](class_imagetexture) |  | [PlaneShape](class_planeshape) |  | [String](class_string) | 
-| **B** | [BaseButton](class_basebutton) |  | [Input](class_input) |  | [Popup](class_popup) |  | [StringArray](class_stringarray) | 
-|  | [BitMap](class_bitmap) |  | [InputDefault](class_inputdefault) |  | [PopupDialog](class_popupdialog) |  | [StyleBox](class_stylebox) | 
-|  | [BoneAttachment](class_boneattachment) |  | [InputEvent](class_inputevent) |  | [PopupMenu](class_popupmenu) |  | [StyleBoxEmpty](class_styleboxempty) | 
-|  | [BoxContainer](class_boxcontainer) |  | [InputEventAction](class_inputeventaction) |  | [PopupPanel](class_popuppanel) |  | [StyleBoxFlat](class_styleboxflat) | 
-|  | [BoxShape](class_boxshape) |  | [InputEventJoyButton](class_inputeventjoybutton) |  | [Portal](class_portal) |  | [StyleBoxImageMask](class_styleboximagemask) | 
-|  | [Button](class_button) |  | [InputEventJoyMotion](class_inputeventjoymotion) |  | [Position2D](class_position2d) |  | [StyleBoxTexture](class_styleboxtexture) | 
-|  | [ButtonArray](class_buttonarray) |  | [InputEventKey](class_inputeventkey) |  | [Position3D](class_position3d) |  | [SurfaceTool](class_surfacetool) | 
-|  | [ButtonGroup](class_buttongroup) |  | [InputEventMouseButton](class_inputeventmousebutton) |  | [ProgressBar](class_progressbar) | **T** | [TCP_Server](class_tcp_server) | 
-| **C** | [Camera](class_camera) |  | [InputEventMouseMotion](class_inputeventmousemotion) |  | [ProximityGroup](class_proximitygroup) |  | [TabContainer](class_tabcontainer) | 
-|  | [Camera2D](class_camera2d) |  | [InputEventScreenDrag](class_inputeventscreendrag) | **Q** | [Quad](class_quad) |  | [Tabs](class_tabs) | 
-|  | [CanvasItem](class_canvasitem) |  | [InputEventScreenTouch](class_inputeventscreentouch) |  | [Quat](class_quat) |  | [TestCube](class_testcube) | 
-|  | [CanvasLayer](class_canvaslayer) |  | [InputMap](class_inputmap) | **R** | [RID](class_rid) |  | [TextEdit](class_textedit) | 
-|  | [CapsuleShape](class_capsuleshape) |  | [IntArray](class_intarray) |  | [Range](class_range) |  | [Texture](class_texture) | 
-|  | [CapsuleShape2D](class_capsuleshape2d) |  | [InterpolatedCamera](class_interpolatedcamera) |  | [RawArray](class_rawarray) |  | [TextureButton](class_texturebutton) | 
-|  | [CarBody](class_carbody) | **J** | [Joint2D](class_joint2d) |  | [RayCast](class_raycast) |  | [TextureFrame](class_textureframe) | 
-|  | [CarWheel](class_carwheel) | **L** | [Label](class_label) |  | [RayCast2D](class_raycast2d) |  | [TextureProgress](class_textureprogress) | 
-|  | [CenterContainer](class_centercontainer) |  | [LargeTexture](class_largetexture) |  | [RayShape](class_rayshape) |  | [Theme](class_theme) | 
-|  | [CheckButton](class_checkbutton) |  | [Light](class_light) |  | [RayShape2D](class_rayshape2d) |  | [Thread](class_thread) | 
-|  | [CircleShape2D](class_circleshape2d) |  | [LineEdit](class_lineedit) |  | [RealArray](class_realarray) |  | [TileMap](class_tilemap) | 
-|  | [CollisionObject](class_collisionobject) |  | [LineShape2D](class_lineshape2d) |  | [Rect2](class_rect2) |  | [TileSet](class_tileset) | 
-|  | [CollisionObject2D](class_collisionobject2d) | **M** | [MainLoop](class_mainloop) |  | [RectangleShape2D](class_rectangleshape2d) |  | [Timer](class_timer) | 
-|  | [CollisionPolygon2D](class_collisionpolygon2d) |  | [MarginContainer](class_margincontainer) |  | [Reference](class_reference) |  | [TouchScreenButton](class_touchscreenbutton) | 
-|  | [CollisionShape](class_collisionshape) |  | [Marshalls](class_marshalls) |  | [ReferenceFrame](class_referenceframe) |  | [Transform](class_transform) | 
-|  | [CollisionShape2D](class_collisionshape2d) |  | [Material](class_material) |  | [RegEx](class_regex) |  | [Translation](class_translation) | 
-|  | [Color](class_color) |  | [Matrix3](class_matrix3) |  | [RemoteTransform2D](class_remotetransform2d) |  | [TranslationServer](class_translationserver) | 
-|  | [ColorArray](class_colorarray) |  | [Matrix32](class_matrix32) |  | [RenderTargetTexture](class_rendertargettexture) |  | [Tree](class_tree) | 
-|  | [ColorPicker](class_colorpicker) |  | [MenuButton](class_menubutton) |  | [Resource](class_resource) |  | [TreeItem](class_treeitem) | 
-|  | [ColorPickerButton](class_colorpickerbutton) |  | [Mesh](class_mesh) |  | [ResourceImportMetadata](class_resourceimportmetadata) | **U** | [UnshadedMaterial](class_unshadedmaterial) | 
-|  | [ConcavePolygonShape](class_concavepolygonshape) |  | [MeshDataTool](class_meshdatatool) |  | [ResourceInteractiveLoader](class_resourceinteractiveloader) | **V** | [VBoxContainer](class_vboxcontainer) | 
-|  | [ConcavePolygonShape2D](class_concavepolygonshape2d) |  | [MeshInstance](class_meshinstance) |  | [ResourceLoader](class_resourceloader) |  | [VButtonArray](class_vbuttonarray) | 
-|  | [ConfigFile](class_configfile) |  | [MeshLibrary](class_meshlibrary) |  | [ResourcePreloader](class_resourcepreloader) |  | [VScrollBar](class_vscrollbar) | 
-|  | [ConfirmationDialog](class_confirmationdialog) |  | [MultiMesh](class_multimesh) |  | [ResourceSaver](class_resourcesaver) |  | [VSeparator](class_vseparator) | 
-|  | [Container](class_container) |  | [MultiMeshInstance](class_multimeshinstance) |  | [RichTextLabel](class_richtextlabel) |  | [VSlider](class_vslider) | 
-|  | [Control](class_control) |  | [MultiScript](class_multiscript) |  | [RigidBody](class_rigidbody) |  | [VSplitContainer](class_vsplitcontainer) | 
-|  | [ConvexPolygonShape](class_convexpolygonshape) |  | [Mutex](class_mutex) |  | [RigidBody2D](class_rigidbody2d) |  | [Vector2](class_vector2) | 
-|  | [ConvexPolygonShape2D](class_convexpolygonshape2d) | **N** | [Nil](class_nil) |  | [Room](class_room) |  | [Vector2Array](class_vector2array) | 
-|  | [CubeMap](class_cubemap) |  | [Node](class_node) |  | [RoomBounds](class_roombounds) |  | [Vector3](class_vector3) | 
-|  | [Curve2D](class_curve2d) |  | [Node2D](class_node2d) | **S** | [Sample](class_sample) |  | [Vector3Array](class_vector3array) | 
-|  | [Curve3D](class_curve3d) |  | [NodePath](class_nodepath) |  | [SampleLibrary](class_samplelibrary) |  | [VideoPlayer](class_videoplayer) | 
-| **D** | [DampedSpringJoint2D](class_dampedspringjoint2d) | **O** | [OS](class_os) |  | [SamplePlayer](class_sampleplayer) |  | [VideoStream](class_videostream) | 
-|  | [Dictionary](class_dictionary) |  | [Object](class_object) |  | [SamplePlayer2D](class_sampleplayer2d) |  | [VideoStreamTheora](class_videostreamtheora) | 
-|  | [DirectionalLight](class_directionallight) |  | [OmniLight](class_omnilight) |  | [SceneIO](class_sceneio) |  | [Viewport](class_viewport) | 
-|  | [Directory](class_directory) |  | [OptionButton](class_optionbutton) |  | [SceneInteractiveLoader](class_sceneinteractiveloader) |  | [VisibilityEnabler](class_visibilityenabler) | 
-| **E** | [EditableShape](class_editableshape) | **P** | [PHashTranslation](class_phashtranslation) |  | [SceneMainLoop](class_scenemainloop) |  | [VisibilityEnabler2D](class_visibilityenabler2d) | 
-|  | [EditableSphere](class_editablesphere) |  | [PackedDataContainer](class_packeddatacontainer) |  | [ScenePreloader](class_scenepreloader) |  | [VisibilityNotifier](class_visibilitynotifier) | 
-|  | [EditorImportPlugin](class_editorimportplugin) |  | [PackedDataContainerRef](class_packeddatacontainerref) |  | [Script](class_script) |  | [VisibilityNotifier2D](class_visibilitynotifier2d) | 
-|  | [EditorPlugin](class_editorplugin) |  | [PackedScene](class_packedscene) |  | [ScrollBar](class_scrollbar) |  | [VisualInstance](class_visualinstance) | 
-|  | [EditorScenePostImport](class_editorscenepostimport) |  | [PacketPeer](class_packetpeer) |  | [ScrollContainer](class_scrollcontainer) |  | [VisualServer](class_visualserver) | 
-|  | [EmptyControl](class_emptycontrol) |  | [PacketPeerStream](class_packetpeerstream) |  | [SegmentShape2D](class_segmentshape2d) | **W** | [WindowDialog](class_windowdialog) | 
-|  | [Environment](class_environment) |  | [Panel](class_panel) |  | [Semaphore](class_semaphore) |  | [World](class_world) | 
-|  | [EventPlayer](class_eventplayer) |  | [PanelContainer](class_panelcontainer) |  | [Separator](class_separator) |  | [World2D](class_world2d) | 
-|  | [EventStream](class_eventstream) |  | [ParallaxBackground](class_parallaxbackground) |  | [Shader](class_shader) |  | [WorldEnvironment](class_worldenvironment) | 
-|  | [EventStreamChibi](class_eventstreamchibi) |  | [ParallaxLayer](class_parallaxlayer) |  | [ShaderMaterial](class_shadermaterial) | **X** | [XMLParser](class_xmlparser) | 
-| **F** | [File](class_file) |  | [ParticleAttractor2D](class_particleattractor2d) |  | [Shape](class_shape) | **b** | [bool](class_bool) | 
-|  | [FileDialog](class_filedialog) |  | [ParticleSystemMaterial](class_particlesystemmaterial) |  | [Shape2D](class_shape2d) | **i** | [int](class_int) | 
-|  | [FixedMaterial](class_fixedmaterial) |  | [Particles](class_particles) |  | [Skeleton](class_skeleton) | **r** | [real](class_real) | 
-|  | [Flurry](class_flurry) |  | [Particles2D](class_particles2d) |  | [Slider](class_slider) | 
-|  | [FollowCamera](class_followcamera) |  | [Path](class_path) |  | [SoundPlayer2D](class_soundplayer2d) | 
+|  | | | | | |
+|  --- | ------- | --- | ------- | --- | ------- |
+| **@** | [@GDScript](class_@gdscript) |  | [InputEventJoyMotion](class_inputeventjoymotion) |  | [ResourceSaver](class_resourcesaver) | 
+|  | [@Global Scope](class_@global scope) |  | [InputEventKey](class_inputeventkey) |  | [RichTextLabel](class_richtextlabel) | 
+|  | [@MultiScript](class_@multiscript) |  | [InputEventMouseButton](class_inputeventmousebutton) |  | [RigidBody](class_rigidbody) | 
+| **A** | [AABB](class_aabb) |  | [InputEventMouseMotion](class_inputeventmousemotion) |  | [RigidBody2D](class_rigidbody2d) | 
+|  | [AcceptDialog](class_acceptdialog) |  | [InputEventScreenDrag](class_inputeventscreendrag) |  | [Room](class_room) | 
+|  | [AnimatedSprite](class_animatedsprite) |  | [InputEventScreenTouch](class_inputeventscreentouch) |  | [RoomBounds](class_roombounds) | 
+|  | [Animation](class_animation) |  | [InputMap](class_inputmap) | **S** | [Sample](class_sample) | 
+|  | [AnimationPlayer](class_animationplayer) |  | [IntArray](class_intarray) |  | [SampleLibrary](class_samplelibrary) | 
+|  | [AnimationTreePlayer](class_animationtreeplayer) |  | [InterpolatedCamera](class_interpolatedcamera) |  | [SamplePlayer](class_sampleplayer) | 
+|  | [Area](class_area) | **J** | [Joint2D](class_joint2d) |  | [SamplePlayer2D](class_sampleplayer2d) | 
+|  | [Area2D](class_area2d) | **L** | [Label](class_label) |  | [SceneIO](class_sceneio) | 
+|  | [Array](class_array) |  | [LargeTexture](class_largetexture) |  | [SceneInteractiveLoader](class_sceneinteractiveloader) | 
+|  | [AtlasTexture](class_atlastexture) |  | [Light](class_light) |  | [SceneMainLoop](class_scenemainloop) | 
+|  | [AudioServer](class_audioserver) |  | [LineEdit](class_lineedit) |  | [ScenePreloader](class_scenepreloader) | 
+|  | [AudioServerSW](class_audioserversw) |  | [LineShape2D](class_lineshape2d) |  | [Script](class_script) | 
+|  | [AudioStream](class_audiostream) | **M** | [MainLoop](class_mainloop) |  | [ScrollBar](class_scrollbar) | 
+|  | [AudioStreamGibberish](class_audiostreamgibberish) |  | [MarginContainer](class_margincontainer) |  | [ScrollContainer](class_scrollcontainer) | 
+|  | [AudioStreamMPC](class_audiostreammpc) |  | [Marshalls](class_marshalls) |  | [SegmentShape2D](class_segmentshape2d) | 
+|  | [AudioStreamOGGVorbis](class_audiostreamoggvorbis) |  | [Material](class_material) |  | [Semaphore](class_semaphore) | 
+|  | [AudioStreamResampled](class_audiostreamresampled) |  | [Matrix3](class_matrix3) |  | [Separator](class_separator) | 
+|  | [AudioStreamSpeex](class_audiostreamspeex) |  | [Matrix32](class_matrix32) |  | [Shader](class_shader) | 
+| **B** | [BaseButton](class_basebutton) |  | [MenuButton](class_menubutton) |  | [ShaderMaterial](class_shadermaterial) | 
+|  | [BitMap](class_bitmap) |  | [Mesh](class_mesh) |  | [Shape](class_shape) | 
+|  | [BoneAttachment](class_boneattachment) |  | [MeshDataTool](class_meshdatatool) |  | [Shape2D](class_shape2d) | 
+|  | [BoxContainer](class_boxcontainer) |  | [MeshInstance](class_meshinstance) |  | [Skeleton](class_skeleton) | 
+|  | [BoxShape](class_boxshape) |  | [MeshLibrary](class_meshlibrary) |  | [Slider](class_slider) | 
+|  | [Button](class_button) |  | [MultiMesh](class_multimesh) |  | [SoundPlayer2D](class_soundplayer2d) | 
+|  | [ButtonArray](class_buttonarray) |  | [MultiMeshInstance](class_multimeshinstance) |  | [SoundRoomParams](class_soundroomparams) | 
+|  | [ButtonGroup](class_buttongroup) |  | [MultiScript](class_multiscript) |  | [Spatial](class_spatial) | 
+| **C** | [Camera](class_camera) |  | [Mutex](class_mutex) |  | [SpatialPlayer](class_spatialplayer) | 
+|  | [Camera2D](class_camera2d) | **N** | [Nil](class_nil) |  | [SpatialSamplePlayer](class_spatialsampleplayer) | 
+|  | [CanvasItem](class_canvasitem) |  | [Node](class_node) |  | [SpatialSound2DServer](class_spatialsound2dserver) | 
+|  | [CanvasLayer](class_canvaslayer) |  | [Node2D](class_node2d) |  | [SpatialSound2DServerSW](class_spatialsound2dserversw) | 
+|  | [CapsuleShape](class_capsuleshape) |  | [NodePath](class_nodepath) |  | [SpatialSoundServer](class_spatialsoundserver) | 
+|  | [CapsuleShape2D](class_capsuleshape2d) | **O** | [OS](class_os) |  | [SpatialSoundServerSW](class_spatialsoundserversw) | 
+|  | [CarBody](class_carbody) |  | [Object](class_object) |  | [SpatialStreamPlayer](class_spatialstreamplayer) | 
+|  | [CarWheel](class_carwheel) |  | [OmniLight](class_omnilight) |  | [SphereShape](class_sphereshape) | 
+|  | [CenterContainer](class_centercontainer) |  | [OptionButton](class_optionbutton) |  | [SpinBox](class_spinbox) | 
+|  | [CheckButton](class_checkbutton) | **P** | [PHashTranslation](class_phashtranslation) |  | [SplitContainer](class_splitcontainer) | 
+|  | [CircleShape2D](class_circleshape2d) |  | [PackedDataContainer](class_packeddatacontainer) |  | [SpotLight](class_spotlight) | 
+|  | [CollisionObject](class_collisionobject) |  | [PackedDataContainerRef](class_packeddatacontainerref) |  | [Sprite](class_sprite) | 
+|  | [CollisionObject2D](class_collisionobject2d) |  | [PackedScene](class_packedscene) |  | [SpriteFrames](class_spriteframes) | 
+|  | [CollisionPolygon2D](class_collisionpolygon2d) |  | [PacketPeer](class_packetpeer) |  | [StaticBody](class_staticbody) | 
+|  | [CollisionShape](class_collisionshape) |  | [PacketPeerStream](class_packetpeerstream) |  | [StaticBody2D](class_staticbody2d) | 
+|  | [CollisionShape2D](class_collisionshape2d) |  | [Panel](class_panel) |  | [StreamPeer](class_streampeer) | 
+|  | [Color](class_color) |  | [PanelContainer](class_panelcontainer) |  | [StreamPeerTCP](class_streampeertcp) | 
+|  | [ColorArray](class_colorarray) |  | [ParallaxBackground](class_parallaxbackground) |  | [StreamPlayer](class_streamplayer) | 
+|  | [ColorPicker](class_colorpicker) |  | [ParallaxLayer](class_parallaxlayer) |  | [String](class_string) | 
+|  | [ColorPickerButton](class_colorpickerbutton) |  | [ParticleAttractor2D](class_particleattractor2d) |  | [StringArray](class_stringarray) | 
+|  | [ConcavePolygonShape](class_concavepolygonshape) |  | [ParticleSystemMaterial](class_particlesystemmaterial) |  | [StyleBox](class_stylebox) | 
+|  | [ConcavePolygonShape2D](class_concavepolygonshape2d) |  | [Particles](class_particles) |  | [StyleBoxEmpty](class_styleboxempty) | 
+|  | [ConfigFile](class_configfile) |  | [Particles2D](class_particles2d) |  | [StyleBoxFlat](class_styleboxflat) | 
+|  | [ConfirmationDialog](class_confirmationdialog) |  | [Path](class_path) |  | [StyleBoxImageMask](class_styleboximagemask) | 
+|  | [Container](class_container) |  | [Path2D](class_path2d) |  | [StyleBoxTexture](class_styleboxtexture) | 
+|  | [Control](class_control) |  | [PathFollow](class_pathfollow) |  | [SurfaceTool](class_surfacetool) | 
+|  | [ConvexPolygonShape](class_convexpolygonshape) |  | [PathRemap](class_pathremap) | **T** | [TCP_Server](class_tcp_server) | 
+|  | [ConvexPolygonShape2D](class_convexpolygonshape2d) |  | [Performance](class_performance) |  | [TabContainer](class_tabcontainer) | 
+|  | [CubeMap](class_cubemap) |  | [Physics2DDirectBodyState](class_physics2ddirectbodystate) |  | [Tabs](class_tabs) | 
+|  | [Curve2D](class_curve2d) |  | [Physics2DDirectBodyStateSW](class_physics2ddirectbodystatesw) |  | [TestCube](class_testcube) | 
+|  | [Curve3D](class_curve3d) |  | [Physics2DDirectSpaceState](class_physics2ddirectspacestate) |  | [TextEdit](class_textedit) | 
+| **D** | [DampedSpringJoint2D](class_dampedspringjoint2d) |  | [Physics2DServer](class_physics2dserver) |  | [Texture](class_texture) | 
+|  | [Dictionary](class_dictionary) |  | [Physics2DServerSW](class_physics2dserversw) |  | [TextureButton](class_texturebutton) | 
+|  | [DirectionalLight](class_directionallight) |  | [Physics2DShapeQueryResult](class_physics2dshapequeryresult) |  | [TextureFrame](class_textureframe) | 
+|  | [Directory](class_directory) |  | [PhysicsBody](class_physicsbody) |  | [TextureProgress](class_textureprogress) | 
+| **E** | [EditableShape](class_editableshape) |  | [PhysicsBody2D](class_physicsbody2d) |  | [Theme](class_theme) | 
+|  | [EditableSphere](class_editablesphere) |  | [PhysicsDirectBodyState](class_physicsdirectbodystate) |  | [Thread](class_thread) | 
+|  | [EditorImportPlugin](class_editorimportplugin) |  | [PhysicsDirectBodyStateSW](class_physicsdirectbodystatesw) |  | [TileMap](class_tilemap) | 
+|  | [EditorPlugin](class_editorplugin) |  | [PhysicsDirectSpaceState](class_physicsdirectspacestate) |  | [TileSet](class_tileset) | 
+|  | [EditorScenePostImport](class_editorscenepostimport) |  | [PhysicsServer](class_physicsserver) |  | [Timer](class_timer) | 
+|  | [EmptyControl](class_emptycontrol) |  | [PhysicsServerSW](class_physicsserversw) |  | [TouchScreenButton](class_touchscreenbutton) | 
+|  | [Environment](class_environment) |  | [PhysicsShapeQueryResult](class_physicsshapequeryresult) |  | [Transform](class_transform) | 
+|  | [EventPlayer](class_eventplayer) |  | [PinJoint2D](class_pinjoint2d) |  | [Translation](class_translation) | 
+|  | [EventStream](class_eventstream) |  | [Plane](class_plane) |  | [TranslationServer](class_translationserver) | 
+|  | [EventStreamChibi](class_eventstreamchibi) |  | [PlaneShape](class_planeshape) |  | [Tree](class_tree) | 
+| **F** | [File](class_file) |  | [Popup](class_popup) |  | [TreeItem](class_treeitem) | 
+|  | [FileDialog](class_filedialog) |  | [PopupDialog](class_popupdialog) | **U** | [UnshadedMaterial](class_unshadedmaterial) | 
+|  | [FixedMaterial](class_fixedmaterial) |  | [PopupMenu](class_popupmenu) | **V** | [VBoxContainer](class_vboxcontainer) | 
+|  | [Flurry](class_flurry) |  | [PopupPanel](class_popuppanel) |  | [VButtonArray](class_vbuttonarray) | 
+|  | [FollowCamera](class_followcamera) |  | [Portal](class_portal) |  | [VScrollBar](class_vscrollbar) | 
+|  | [Font](class_font) |  | [Position2D](class_position2d) |  | [VSeparator](class_vseparator) | 
+| **G** | [GDNativeClass](class_gdnativeclass) |  | [Position3D](class_position3d) |  | [VSlider](class_vslider) | 
+|  | [GDScript](class_gdscript) |  | [ProgressBar](class_progressbar) |  | [VSplitContainer](class_vsplitcontainer) | 
+|  | [Geometry](class_geometry) |  | [ProximityGroup](class_proximitygroup) |  | [Vector2](class_vector2) | 
+|  | [GeometryInstance](class_geometryinstance) | **Q** | [Quad](class_quad) |  | [Vector2Array](class_vector2array) | 
+|  | [Globals](class_globals) |  | [Quat](class_quat) |  | [Vector3](class_vector3) | 
+|  | [GridContainer](class_gridcontainer) | **R** | [RID](class_rid) |  | [Vector3Array](class_vector3array) | 
+|  | [GridMap](class_gridmap) |  | [Range](class_range) |  | [VideoPlayer](class_videoplayer) | 
+|  | [GrooveJoint2D](class_groovejoint2d) |  | [RawArray](class_rawarray) |  | [VideoStream](class_videostream) | 
+| **H** | [HBoxContainer](class_hboxcontainer) |  | [RayCast](class_raycast) |  | [VideoStreamTheora](class_videostreamtheora) | 
+|  | [HButtonArray](class_hbuttonarray) |  | [RayCast2D](class_raycast2d) |  | [Viewport](class_viewport) | 
+|  | [HScrollBar](class_hscrollbar) |  | [RayShape](class_rayshape) |  | [VisibilityEnabler](class_visibilityenabler) | 
+|  | [HSeparator](class_hseparator) |  | [RayShape2D](class_rayshape2d) |  | [VisibilityEnabler2D](class_visibilityenabler2d) | 
+|  | [HSlider](class_hslider) |  | [RealArray](class_realarray) |  | [VisibilityNotifier](class_visibilitynotifier) | 
+|  | [HSplitContainer](class_hsplitcontainer) |  | [Rect2](class_rect2) |  | [VisibilityNotifier2D](class_visibilitynotifier2d) | 
+|  | [HTTPClient](class_httpclient) |  | [RectangleShape2D](class_rectangleshape2d) |  | [VisualInstance](class_visualinstance) | 
+| **I** | [IP](class_ip) |  | [Reference](class_reference) |  | [VisualServer](class_visualserver) | 
+|  | [IP_Unix](class_ip_unix) |  | [ReferenceFrame](class_referenceframe) | **W** | [WindowDialog](class_windowdialog) | 
+|  | [Image](class_image) |  | [RegEx](class_regex) |  | [World](class_world) | 
+|  | [ImagePathFinder](class_imagepathfinder) |  | [RemoteTransform2D](class_remotetransform2d) |  | [World2D](class_world2d) | 
+|  | [ImageTexture](class_imagetexture) |  | [RenderTargetTexture](class_rendertargettexture) |  | [WorldEnvironment](class_worldenvironment) | 
+|  | [Input](class_input) |  | [Resource](class_resource) | **X** | [XMLParser](class_xmlparser) | 
+|  | [InputDefault](class_inputdefault) |  | [ResourceImportMetadata](class_resourceimportmetadata) | **b** | [bool](class_bool) | 
+|  | [InputEvent](class_inputevent) |  | [ResourceInteractiveLoader](class_resourceinteractiveloader) | **i** | [int](class_int) | 
+|  | [InputEventAction](class_inputeventaction) |  | [ResourceLoader](class_resourceloader) | **r** | [real](class_real) | 
+|  | [InputEventJoyButton](class_inputeventjoybutton) |  | [ResourcePreloader](class_resourcepreloader) | 
