@@ -9,13 +9,14 @@ However,it is still a very common case to have a script process on every frame. 
 Idle processing is activated with the [Node.set_process](class_list/node#set_process)() function. Once active, the [Node._process](class_list/node#set_process)() callback will be called every frame. Example:
 
 ```python
+
 func _ready():
-   set_process(true)
+	set_process(true)
 
 func _process(delta):
-   [dosomething..]
-```
+	[dosomething..]
 
+```
 The delta parameter describes the time elapsed (in seconds, as floating point) since the previous call to _process().
 Fixed processing is similar, but only needed for synchronization with the physics engine.
 
@@ -27,11 +28,12 @@ extends Label
 var accum=0
 
 func _ready():
-   set_process(true)
+	set_process(true)
 
 func _process(delta):
-   accum+=delta
-   set_text(str(accum))
+	accum+=delta
+	set_text(str(accum))
+
 ```
 
 Which will show a counter increasing each second.
@@ -40,28 +42,34 @@ Which will show a counter increasing each second.
 
 Nodes can be added to groups (as many as desired per node). This is a simple yet useful feature for organizing large scenes. There are two ways to do this, the first is from the UI, from tne Groups button:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=groups.png)
+<p align="center"><img src="images/groups.png"></p>
 
 And the second from code. One useful example would be, for example, to tag scenes which are enemies. 
 
 ```python 
+
 func _ready():
-   add_to_group("enemies")
+	add_to_group("enemies")
+
 ```
 
 This way, if the player, sneaking into the secret base, is discovered, all enemies can be notified about the alarm sounding, by using [SceneMainLoop.call_group](class_list/scenemainloop#call_group)():
 
 ```python 
+
 func _on_discovered():
 
-   get_scene().call_group(0,"guards","player_was_discovered")
+	get_scene().call_group(0,"guards","player_was_discovered")
+
 ```
 
 The above code calls the function "player_was_discovered" on every member of the group "guards".
 Optionally, it is possible to get the full list of "guards" nodes by calling [SceneMainLoop.get_nodes_in_group](class_list/scenemainloop#get_nodes_in_group)():
 
 ```python
+
 var guards = get_scene().get_nodes_in_group("guards")
+
 ```
 
 More will be added about [SceneMainLoop](class_list/scenemainloop) later.
@@ -72,12 +80,14 @@ More will be added about [SceneMainLoop](class_list/scenemainloop) later.
 Godot has a system of notifications. This is usually not needed to be used from scripting, as it's too low level and virtual functions are provided for most of them. It's just good to know they exists. Simply add a [Object._notification](class_list/object#_notification)() function in your script:
 
 ```python
+
 func _notification(what):
      if (what==NOTIFICATION_READY):
         print("This is the same as overriding _ready()...")
      elif (what==NOTIFICATION_PROCESS):     
         var delta = get_process_time()
         print("This is the same as overriding _process()...")
+        
 ```
 
 The documentation of each class in the [class list](class_list/class_list) shows the notifications it can receive. However, again, for most cases script provides simpler overrideable functions.
@@ -87,6 +97,7 @@ The documentation of each class in the [class list](class_list/class_list) shows
 As mentioned before, it's better to use these functions. Nodes provide many useful overrideable functions, which are described as follows:
 
 ```python
+
 func _enter_scene():
    pass # When the node enters the active scene, this function is called. Children nodes have not entered the active scene yet. In general, it's better to use _ready() for most cases.
 
@@ -107,4 +118,7 @@ func _paused():
    
 func _unpaused():
    pass #Called when game is unpaused   
+   
 ```
+
+

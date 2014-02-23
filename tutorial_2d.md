@@ -5,21 +5,21 @@ In this simple tutorial, a basic game of Pong will be created. There are plenty 
 
 ### Assets
 
-Some assets are included for this tutorial, the {{::pong_assets.zip|pong pads, the ball and the divisor}}.
+Some assets are included for this tutorial, the <p align="center"><img src="pong_assets.zip|pong pads, the ball and the divisor}}.
 
 ### Scene Setup
 
 For the sake of the old times, the game will be in 640x400 pixels resolution. This can be configured in the Project Settings (see previous tutorials). The default background color should be set to black:
 
 
-<img align="center" src="clearcolor.png"></img>
+<p align="center"><img src="images/clearcolor.png"></p>
 
 Create a [Node2D](class_list/node2d) node for the project root. Node2D is the base type for the 2D engine. After this, add some sprites ([Sprite](class_list/sprite) node) and set each to the corresponding texture. The final scene layour should look similar to this (note: the ball is in the middle!):
 
-`<img align="center" src="pong_layout.png">``</img>`
+<p align="center"><img src="images/pong_layout.png"></p>
 
 The scene tree should, then look similar to this:
-`<img align="center" src="pong_nodes.png">``</img>`
+<p align="center"><img src="images/pong_nodes.png"></p>
 
 Save the scene as "pong.scn" and set it as the main scene in the project properties. 
 
@@ -32,7 +32,7 @@ Handling all possible input methods can be very frustrating and take a lot of co
 Open the project properties dialog again, but this time move to the "Input Map" tab. 
 On it, add 4 actions: "left_move_up","left_move_down","right_move_up","right_move_down". Assign the keys that you desire. A/Z for left and Up/Down as keys should work in most cases.
 
-`<img align="center" src="inputmap.png">``</img>`
+<p align="center"><img src="images/inputmap.png"></p>
 
 
 ### Script

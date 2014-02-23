@@ -2,7 +2,7 @@
 
 ### Introduction
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=chef.png)
+<p align="center"><img src="images/chef.png"></p>
 
 Imagine for a second that you are not a game developer anymore. Instead, You are a chef! Change your hipster outfit for a toque and a double breasted jacket. Now, instead of making games, you create new and delicious recipes for your guests. 
 
@@ -28,8 +28,7 @@ But let's go to the basics. A node is a basic element for creating a game, it ha
 *  Can be added other nodes as children.
 
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=tree.png)
-
+<p align="center"><img src="images/tree.png"></p>
 The last one is very important. Nodes can have other nodes as children. When arranged in this way, the nodes become a *tree*. 
 
 In Godot, the ability to arrange nodes in this way creates a powerful tool for organizing the projects. Since different nodes have different functions, combining them allows to create more complex functions.
@@ -38,7 +37,7 @@ This is probably not clear yet and it makes little sense, but everything will cl
 
 ### Scenes
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=scene.png)
+<p align="center"><img src="images/scene.png"></p>
 
 Now that the existence of nodes has been defined, the next logical step is to explain what a Scene is.
 A scene is composed of a group of nodes organized hierarchically (in tree fashion). It has the following properties:
@@ -61,58 +60,60 @@ Theory is boring, so let's change subject and go practical. Following a long tra
 
 When godot executable is run outside a project, the Project Manager appears. This helps developers manage their projects.
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=newproject.png)
+<p align="center"><img src="images/newproject.png"></p>
 
 To create a new project, the "New Project" option must be used. Choose and create a path for the project and specify the project name:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=newproj.png)
+<p align="center"><img src="images/newproj.png"></p>
 
 ### Editor
 
 Once the "New Project" is created, the next step is opening it. This will open the Godot editor. Here is how the editor looks when freshly opened:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=editor.png)
+<p align="center"><img src="images/editor.png"></p>
+
 
 As mentioned before, making games in Godot feels like being in a kitchen, so let's open the refrigerator and add some fresh nodes to the project. We'll begin with a Hello World! To do this, the "New Node" button must be pressed:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=newnode.png)
+<p align="center"><img src="images/newnode.png"></p>
+
 
 This will open the Create Node dialog, showing the long list of nodes that can be created:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=createnode.png)
+<p align="center"><img src="images/createnode.png"></p>
 
 From there, select the "Label" node first. Searching for it is probably the quickest way:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=nodesearch.png)
+<p align="center"><img src="images/nodesearch.png"></p>
  
 And finally, create the Label! A lot happens when Create is pressed:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=addedlabel.png)
+<p align="center"><img src="images/addedlabel.png"></p>
 
 First of all, the scene is changed to the 2D editor (because Label is a 2D Node type), and the Label appears, selected, at the top left corner of the viewport.
 The node appears in the scene tree editor (box in the top right corner), and the label properties apear in the Inspector (box in the bottom right corner).
 
 The next step, will be to change the "Text" Property of the label, let change it to "Hello, World!":
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=hw.png)
+<p align="center"><img src="images/hw.png"></p>
 
 Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the top bar (or hit F6):
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=playscene.png)
+<p align="center"><img src="images/playscene.png"></p>
 
 Aaaand.. Oops.
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=neversaved.png)
+<p align="center"><img src="images/neversaved.png"></p>
 
 Scenes need to be saved to be run, so save the scene to something like hello.scn in Scene -> Save:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=savescene.png)
+<p align="center"><img src="images/savescene.png"></p>
  
 And here's when something funny happens. The file dialog is a special file dialog, and only allows to save inside the project. %%The project root is "res://" which means "resource path. This means that files can only be saved inside the project. For the future, when doing file operations in Godot, remember that "res://" is the resource path, and no matter the platform or install location, it is the way to locate where resource files are from inside the game.%%
 
 After saving the scene and pressing run scene again, the "Hello, World!" demo should finally execute:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=helloworld.png)
+<p align="center"><img src="images/helloworld.png"></p>
 
 Success!!
 
@@ -126,7 +127,7 @@ To access that dialog, simply go to Scene -> Project Settings.
 
 Once the window opens, the task will be to select a main scene. This can be done easily by changing the application/main_scene property and selecting 'hello.scn'.
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=main_scene.png)
+<p align="center"><img src="images/main_scene.png"></p>
 
 With this change, pressing the regular Play button (or F5) will run the project, no matter which scene is being edited.
 

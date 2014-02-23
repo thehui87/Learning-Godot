@@ -18,8 +18,10 @@ Godot also uses the [extend](http://c2.com/cgi/wiki?EmbedVsExtend) pattern for s
 
 [GDScript](gdscript) (click link for reference) is a dynamically typed scripting language to fit inside Godot. It was designed with the following goals:
 
-* First and most importantly, making it simple, familiar and as easy to learn as possible.
-* Making the code readable and error safe. The syntax is mostly borrowed from Python.
+
+*  First and most importantly, making it simple, familiar and as easy to learn as possible.
+
+*  Making the code readable and error safe. The syntax is mostly borrowed from Python.
 
 Programmers generally take a few days to learn it, and within two weeks feel comfortable with it.
 
@@ -35,17 +37,18 @@ Before continuing, please make sure to read the [GDScript](gdscript) reference. 
 
 This tutorial will begin by scripting a simple GUI scene. Use the add node dialog to create the following hierarchy, with the following nodes:
 
-* Panel
+
+*  Panel
     * Label
     * Button
 
 It should look like this in the scene tree:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=scriptscene.png)
+<p align="center"><img src="images/scriptscene.png"></p>
 
 And try to make it look like this in the 2D editor, so it makes sense:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=scriptsceneimg.png)
+<p align="center"><img src="images/scriptsceneimg.png"></p>
 
 Finally, save the scene, a fitting name could be "sayhello.scn"
 
@@ -53,22 +56,23 @@ Finally, save the scene, a fitting name could be "sayhello.scn"
 
 Select the Panel node, then press the "Add Script" Icon as follows:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=addscript.png)
+<p align="center"><img src="images/addscript.png"></p>
 
 The script creation diallog will popup. This dialog allows to select the language, class name, etc. 
 GDScript does not use class names in script files, so that field is not editable.
 The script should inherit from "Panel" (as it is meant to extend the node, which is of Panel type, this is automatically filled anyway).
 Select the filename for the script (if you saved the scene previously, one will be automatically generated as sayhello.gd) and push "Create":
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=scriptcreate.png)
+<p align="center"><img src="images/scriptcreate.png"></p>
 
 Once this is done, the script will be created and added to the node. You can see this both as an extra icon in the node, as well as in the script property:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=scriptadded.png)
+<p align="center"><img src="images/scriptadded.png"></p>
+
 
 To edit the script, pushing the icon above should do it (although, the UI will take you directly to the Script editor screen). So, here's the template script:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=script_template.png)
+<p align="center"><img src="images/script_template.png"></p>
 
 There is not much in there. The "_ready()" function is called when the node (and all it's children) entered the active scene. (Remember, It's not a constructor, the constructor is "_init()" ). 
 
@@ -78,10 +82,11 @@ Signals are used mostly in GUI nodes, (although other nodes have them too). Sign
 
 There is a GUI for connecting signals, just select the node and press the "Signals" button:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=signals.png)
+<p align="center"><img src="images/signals.png"></p>
+
 Which will show the list of signals a Button can emit.
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=button_connections.png)
+<p align="center"><img src="images/button_connections.png"></p>
 
 But this example will not use it. We don't want to make things *too* easy. So please close that screen!
 In any case, at this point it is clear that that we are interested in the "pressed" signal, so instead of doing it with the visual interface, the connection will be done using code. 
@@ -91,26 +96,33 @@ For this, there is a function that is probably the one that Godot programmers wi
 To fetch the button, the following must be used:
 
 ```python
+
 get_node("Button")
+
 ```
 
 So, next, a callback will be added for when a button is pressed, that will change the label's text:
 
 ```python
-func _on_button_pressed(): 
-   get_node("Label").set_text("HELLO!")
+
+func _on_button_pressed():	
+	get_node("Label").set_text("HELLO!")
+
 ```
 
 Finally, the button "pressed" signal will be connected to that callback in _ready(), by using [connect](class_list/object#connect)().
 
 ```python
+
 func _ready():
-   get_node("Button").connect("pressed",self,"_on_button_pressed")
+	get_node("Button").connect("pressed",self,"_on_button_pressed")
 ```
 
 The final script should look like this:
 
 ```python
+
+
 extends Panel
 
 # member variables here, example:
@@ -119,15 +131,22 @@ extends Panel
 # var b="textvar"
 
 func _on_button_pressed():
-   get_node("Label").set_text("HELLO!")
+	get_node("Label").set_text("HELLO!")
 
 func _ready():
-   get_node("Button").connect("pressed",self,"_on_button_pressed")
+	get_node("Button").connect("pressed",self,"_on_button_pressed")
+
+
 ```
 
 Running the scene should have the expected result when pressing the button:
 
-![](http://www.godotengine.org/wiki/lib/exe/fetch.php?media=scripthello.png)
+<p align="center"><img src="images/scripthello.png"></p>
+
+
+
+
+
 
 
 
