@@ -1,5 +1,3 @@
-##  PhysicsServerSW  
-**Inherits:** [[physicsserver|PhysicsServer]]\\
-**Category:** Core\\
-##  Brief Description  
+#  PhysicsServerSW  
+**Inherits:** [PhysicsServer](class_physicsserver)\\n\\n###  Brief Description  
 

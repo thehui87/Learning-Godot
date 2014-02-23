@@ -1,5 +1,3 @@
-##  Shape  
-**Inherits:** [[resource|Resource]]\\
-**Category:** Core\\
-##  Brief Description  
+#  Shape  
+**Inherits:** [Resource](class_resource)\\n\\n###  Brief Description  
 

@@ -1,8 +1,7 @@
-##  @Global Scope  
-**Category:** Core\\
-##  Brief Description  
+#  @Global Scope  
+###  Brief Description  
 Global scope constants and variables.
-##  Member Variables  
+###  Member Variables  
   * [Performance](class_performance) **Performance**
   * [Globals](class_globals) **Globals**
   * [IP](class_ip) **IP**
@@ -29,7 +28,7 @@ Global scope constants and variables.
   * [SpatialSound2DServer](class_spatialsound2dserver) **SpatialSound2DServer**
   * [SpatialSound2DServer](class_spatialsound2dserver) **SS2D**
   * [Flurry](class_flurry) **Flurry**
-##  Numeric Constants  
+###  Numeric Constants  
   * **MARGIN_LEFT** = **0** - Left margin, used usually for [Control] or [StyleBox] derived classes.
   * **MARGIN_TOP** = **1** - Top margin, used usually for [Control] or [StyleBox] derived classes.
   * **MARGIN_RIGHT** = **2** - Right margin, used usually for [Control] or [StyleBox] derived classes.
@@ -450,6 +449,6 @@ Global scope constants and variables.
   * **TYPE_VECTOR3_ARRAY** = **27**
   * **TYPE_COLOR_ARRAY** = **28**
   * **TYPE_MAX** = **29**
-##  Description  
+###  Description  
 Global scope constants and variables. This is all that resides in the globals, constants regarding error codes, scancodes, property hints, etc. It's not much.
         Singletons are also documented here, since they can be accessed from anywhere.

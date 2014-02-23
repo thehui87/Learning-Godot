@@ -1,8 +1,6 @@
-##  PackedDataContainerRef  
-**Inherits:** [[reference|Reference]]\\
-**Category:** Core\\
-##  Brief Description  
+#  PackedDataContainerRef  
+**Inherits:** [Reference](class_reference)\\n\\n###  Brief Description  
 
-##  Member Functions 
-  * [int](class_int) [[#size|size]]**(****)** const
-##  Member Function Description  
+###  Member Functions 
+  * [int](class_int) [size"](#size) **(** **)** const
+###  Member Function Description  

@@ -1,7 +1,5 @@
-##  HBoxContainer  
-**Inherits:** [[boxcontainer|BoxContainer]]\\
-**Category:** Core\\
-##  Brief Description  
+#  HBoxContainer  
+**Inherits:** [BoxContainer](class_boxcontainer)\\n\\n###  Brief Description  
 Horizontal box container.
-##  Description  
+###  Description  
 Horizontal box container. See [[boxcontainer|BoxContainer]].

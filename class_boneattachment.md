@@ -1,5 +1,3 @@
-##  BoneAttachment  
-**Inherits:** [[spatial|Spatial]]\\
-**Category:** Core\\
-##  Brief Description  
+#  BoneAttachment  
+**Inherits:** [Spatial](class_spatial)\\n\\n###  Brief Description  
 

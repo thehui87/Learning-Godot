@@ -1,5 +1,3 @@
-##  Physics2DServerSW  
-**Inherits:** [[physics2dserver|Physics2DServer]]\\
-**Category:** Core\\
-##  Brief Description  
+#  Physics2DServerSW  
+**Inherits:** [Physics2DServer](class_physics2dserver)\\n\\n###  Brief Description  
 

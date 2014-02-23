@@ -1,7 +1,5 @@
-##  AudioStreamOGGVorbis  
-**Inherits:** [[audiostreamresampled|AudioStreamResampled]]\\
-**Category:** Core\\
-##  Brief Description  
+#  AudioStreamOGGVorbis  
+**Inherits:** [AudioStreamResampled](class_audiostreamresampled)\\n\\n###  Brief Description  
 OGG Vorbis audio stream driver.
-##  Description  
+###  Description  
 OGG Vorbis audio stream driver.

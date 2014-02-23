@@ -1,7 +1,5 @@
-##  HButtonArray  
-**Inherits:** [[buttonarray|ButtonArray]]\\
-**Category:** Core\\
-##  Brief Description  
+#  HButtonArray  
+**Inherits:** [ButtonArray](class_buttonarray)\\n\\n###  Brief Description  
 Horizontal button array.
-##  Description  
+###  Description  
 Horizontal button array. See [[buttonarray|ButtonArray]].

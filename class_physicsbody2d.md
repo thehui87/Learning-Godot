@@ -1,5 +1,3 @@
-##  PhysicsBody2D  
-**Inherits:** [[collisionobject2d|CollisionObject2D]]\\
-**Category:** Core\\
-##  Brief Description  
+#  PhysicsBody2D  
+**Inherits:** [CollisionObject2D](class_collisionobject2d)\\n\\n###  Brief Description  
 

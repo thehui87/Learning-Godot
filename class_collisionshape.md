@@ -1,5 +1,3 @@
-##  CollisionShape  
-**Inherits:** [[spatial|Spatial]]\\
-**Category:** Core\\
-##  Brief Description  
+#  CollisionShape  
+**Inherits:** [Spatial](class_spatial)\\n\\n###  Brief Description  
 

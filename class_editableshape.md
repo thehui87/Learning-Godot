@@ -1,5 +1,3 @@
-##  EditableShape  
-**Inherits:** [[spatial|Spatial]]\\
-**Category:** Core\\
-##  Brief Description  
+#  EditableShape  
+**Inherits:** [Spatial](class_spatial)\\n\\n###  Brief Description  
 

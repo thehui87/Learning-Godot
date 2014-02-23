@@ -1,5 +1,3 @@
-##  InputDefault  
-**Inherits:** [[input|Input]]\\
-**Category:** Core\\
-##  Brief Description  
+#  InputDefault  
+**Inherits:** [Input](class_input)\\n\\n###  Brief Description  
 

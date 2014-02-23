@@ -1,5 +1,3 @@
-##  EventStream  
-**Inherits:** [[resource|Resource]]\\
-**Category:** Core\\
-##  Brief Description  
+#  EventStream  
+**Inherits:** [Resource](class_resource)\\n\\n###  Brief Description  
 

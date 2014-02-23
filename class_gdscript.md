@@ -1,8 +1,6 @@
-##  GDScript  
-**Inherits:** [[script|Script]]\\
-**Category:** Core\\
-##  Brief Description  
+#  GDScript  
+**Inherits:** [Script](class_script)\\n\\n###  Brief Description  
 
-##  Member Functions 
-  * void [[#new|new]]**(****)**
-##  Member Function Description  
+###  Member Functions 
+  * void [new"](#new) **(** **)**
+###  Member Function Description  

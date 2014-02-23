@@ -1,7 +1,5 @@
-##  VButtonArray  
-**Inherits:** [[buttonarray|ButtonArray]]\\
-**Category:** Core\\
-##  Brief Description  
+#  VButtonArray  
+**Inherits:** [ButtonArray](class_buttonarray)\\n\\n###  Brief Description  
 Vertical button array.
-##  Description  
+###  Description  
 Vertical button array. See [[buttonarray|ButtonArray]].

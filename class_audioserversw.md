@@ -1,5 +1,3 @@
-##  AudioServerSW  
-**Inherits:** [[audioserver|AudioServer]]\\
-**Category:** Core\\
-##  Brief Description  
+#  AudioServerSW  
+**Inherits:** [AudioServer](class_audioserver)\\n\\n###  Brief Description  
 

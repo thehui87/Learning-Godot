@@ -1,7 +1,5 @@
-##  AudioStreamResampled  
-**Inherits:** [[audiostream|AudioStream]]\\
-**Category:** Core\\
-##  Brief Description  
+#  AudioStreamResampled  
+**Inherits:** [AudioStream](class_audiostream)\\n\\n###  Brief Description  
 Base class for resampled audio streams.
-##  Description  
+###  Description  
 Base class for resampled audio streams.

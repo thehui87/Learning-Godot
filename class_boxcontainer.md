@@ -1,7 +1,5 @@
-##  BoxContainer  
-**Inherits:** [[container|Container]]\\
-**Category:** Core\\
-##  Brief Description  
+#  BoxContainer  
+**Inherits:** [Container](class_container)\\n\\n###  Brief Description  
 Base class for Box containers.
-##  Description  
+###  Description  
 Base class for Box containers. It arranges children controls vertically or horizontally, and rearranges them automatically when their minimum size changes.

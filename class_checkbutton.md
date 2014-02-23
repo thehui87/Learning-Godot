@@ -1,7 +1,5 @@
-##  CheckButton  
-**Inherits:** [[button|Button]]\\
-**Category:** Core\\
-##  Brief Description  
+#  CheckButton  
+**Inherits:** [Button](class_button)\\n\\n###  Brief Description  
 Checkable button.
-##  Description  
+###  Description  
 CheckButton is a toggle button displayed as a check field.

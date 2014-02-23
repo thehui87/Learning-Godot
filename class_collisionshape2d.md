@@ -1,7 +1,5 @@
-##  CollisionShape2D  
-**Inherits:** [[node2d|Node2D]]\\
-**Category:** Core\\
-##  Brief Description  
+#  CollisionShape2D  
+**Inherits:** [Node2D](class_node2d)\\n\\n###  Brief Description  
 Editor-Only class.
-##  Description  
+###  Description  
 Editor-Only class. This is not present when running the game. It's used in the editor to properly edit and position collision shapes in [[collisionobject2d|CollisionObject2D]]. This is not accessible from regular code.

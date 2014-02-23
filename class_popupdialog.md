@@ -1,5 +1,3 @@
-##  PopupDialog  
-**Inherits:** [[popup|Popup]]\\
-**Category:** Core\\
-##  Brief Description  
+#  PopupDialog  
+**Inherits:** [Popup](class_popup)\\n\\n###  Brief Description  
 Base class for Popup Dialogs

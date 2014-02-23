@@ -1,7 +1,5 @@
-##  Separator  
-**Inherits:** [[control|Control]]\\
-**Category:** Core\\
-##  Brief Description  
+#  Separator  
+**Inherits:** [Control](class_control)\\n\\n###  Brief Description  
 Base class for separators.
-##  Description  
+###  Description  
 Separator is a [[control|Control]] used for sepataring other controls. It's purely a visual decoration. Horizontal ([[hseparator|HSeparator]]) and Vertical ([[vseparator|VSeparator]]) versions are available.

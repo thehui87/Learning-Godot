@@ -1,5 +1,3 @@
-##  RenderTargetTexture  
-**Inherits:** [[texture|Texture]]\\
-**Category:** Core\\
-##  Brief Description  
+#  RenderTargetTexture  
+**Inherits:** [Texture](class_texture)\\n\\n###  Brief Description  
 

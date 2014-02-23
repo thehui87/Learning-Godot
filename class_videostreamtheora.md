@@ -1,5 +1,3 @@
-##  VideoStreamTheora  
-**Inherits:** [[videostream|VideoStream]]\\
-**Category:** Core\\
-##  Brief Description  
+#  VideoStreamTheora  
+**Inherits:** [VideoStream](class_videostream)\\n\\n###  Brief Description  
 

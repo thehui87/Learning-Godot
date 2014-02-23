@@ -1,8 +1,6 @@
-##  GDNativeClass  
-**Inherits:** [[reference|Reference]]\\
-**Category:** Core\\
-##  Brief Description  
+#  GDNativeClass  
+**Inherits:** [Reference](class_reference)\\n\\n###  Brief Description  
 
-##  Member Functions 
-  * void [[#new|new]]**(****)**
-##  Member Function Description  
+###  Member Functions 
+  * void [new"](#new) **(** **)**
+###  Member Function Description  

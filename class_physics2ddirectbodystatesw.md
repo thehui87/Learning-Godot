@@ -1,5 +1,3 @@
-##  Physics2DDirectBodyStateSW  
-**Inherits:** [[physics2ddirectbodystate|Physics2DDirectBodyState]]\\
-**Category:** Core\\
-##  Brief Description  
+#  Physics2DDirectBodyStateSW  
+**Inherits:** [Physics2DDirectBodyState](class_physics2ddirectbodystate)\\n\\n###  Brief Description  
 

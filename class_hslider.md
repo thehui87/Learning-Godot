@@ -1,7 +1,5 @@
-##  HSlider  
-**Inherits:** [[slider|Slider]]\\
-**Category:** Core\\
-##  Brief Description  
+#  HSlider  
+**Inherits:** [Slider](class_slider)\\n\\n###  Brief Description  
 Horizontal slider.
-##  Description  
+###  Description  
 Horizontal slider. See [[slider|Slider]]. This one goes from left (min) to right (max).

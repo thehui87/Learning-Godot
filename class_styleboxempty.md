@@ -1,7 +1,5 @@
-##  StyleBoxEmpty  
-**Inherits:** [[stylebox|StyleBox]]\\
-**Category:** Core\\
-##  Brief Description  
+#  StyleBoxEmpty  
+**Inherits:** [StyleBox](class_stylebox)\\n\\n###  Brief Description  
 Empty stylebox (does not display anything).
-##  Description  
+###  Description  
 Empty stylebox (really does not display anything).

@@ -1,5 +1,3 @@
-##  SpatialSound2DServerSW  
-**Inherits:** [[spatialsound2dserver|SpatialSound2DServer]]\\
-**Category:** Core\\
-##  Brief Description  
+#  SpatialSound2DServerSW  
+**Inherits:** [SpatialSound2DServer](class_spatialsound2dserver)\\n\\n###  Brief Description  
 

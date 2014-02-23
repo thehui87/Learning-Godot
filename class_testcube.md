@@ -1,5 +1,3 @@
-##  TestCube  
-**Inherits:** [[geometryinstance|GeometryInstance]]\\
-**Category:** Core\\
-##  Brief Description  
+#  TestCube  
+**Inherits:** [GeometryInstance](class_geometryinstance)\\n\\n###  Brief Description  
 

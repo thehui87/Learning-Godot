@@ -1,5 +1,3 @@
-##  MultiScript  
-**Inherits:** [[script|Script]]\\
-**Category:** Core\\
-##  Brief Description  
+#  MultiScript  
+**Inherits:** [Script](class_script)\\n\\n###  Brief Description  
 

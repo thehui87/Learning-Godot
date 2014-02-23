@@ -1,7 +1,5 @@
-##  MarginContainer  
-**Inherits:** [[container|Container]]\\
-**Category:** Core\\
-##  Brief Description  
+#  MarginContainer  
+**Inherits:** [Container](class_container)\\n\\n###  Brief Description  
 Simple margin container.
-##  Description  
+###  Description  
 Simple margin container. Adds a left margin to anything contained.

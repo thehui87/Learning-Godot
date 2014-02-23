@@ -1,12 +1,11 @@
-##  InputEventKey  
-**Category:** Built-In Types\\
-##  Brief Description  
+#  InputEventKey  
+###  Brief Description  
 
-##  Member Functions 
-  * [bool](class_bool) [[#is_action|is_action]]**(** [String](class_string) action **)**
-  * [bool](class_bool) [[#is_echo|is_echo]]**(****)**
-  * [bool](class_bool) [[#is_pressed|is_pressed]]**(****)**
-##  Member Variables  
+###  Member Functions 
+  * [bool](class_bool) [is_action"](#is_action) **(** [String](class_string) action  **)**
+  * [bool](class_bool) [is_echo"](#is_echo) **(** **)**
+  * [bool](class_bool) [is_pressed"](#is_pressed) **(** **)**
+###  Member Variables  
   * [int](class_int) **type**
   * [int](class_int) **device**
   * [int](class_int) **ID**
@@ -18,7 +17,7 @@
   * [bool](class_bool) **echo**
   * [int](class_int) **scancode**
   * [int](class_int) **unicode**
-##  Numeric Constants  
+###  Numeric Constants  
   * **NONE** = **0**
   * **KEY** = **1**
   * **MOUSE_MOTION** = **2**
@@ -28,4 +27,4 @@
   * **SCREEN_TOUCH** = **6**
   * **SCREEN_DRAG** = **7**
   * **ACTION** = **8**
-##  Member Function Description  
+###  Member Function Description  

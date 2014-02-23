@@ -1,5 +1,3 @@
-##  SpatialSoundServer  
-**Inherits:** [[object|Object]]\\
-**Category:** Core\\
-##  Brief Description  
+#  SpatialSoundServer  
+**Inherits:** [Object](class_object)\\n\\n###  Brief Description  
 

@@ -1,5 +1,3 @@
-##  EventStreamChibi  
-**Inherits:** [[eventstream|EventStream]]\\
-**Category:** Core\\
-##  Brief Description  
+#  EventStreamChibi  
+**Inherits:** [EventStream](class_eventstream)\\n\\n###  Brief Description  
 
