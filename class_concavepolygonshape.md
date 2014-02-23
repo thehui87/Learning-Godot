@@ -13,11 +13,11 @@ Concave polygon shape resource, which can be set into a [[physicsbody|PhysicsBod
 ###  Member Function Description  
 
 #### <a name="set_faces">set_faces</a>
-  * void  **[set_faces](#set_faces)**  **(** [Vector3Array](class_vector3array) faces  **)**
-\\
+  * void  **set_faces**  **(** [Vector3Array](class_vector3array) faces  **)**
+
 Set the faces (an array of triangles).
 
 #### <a name="get_faces">get_faces</a>
-  * [Vector3Array](class_vector3array)  **[get_faces](#get_faces)**  **(** **)** const
-\\
+  * [Vector3Array](class_vector3array)  **get_faces**  **(** **)** const
+
 Return the faces (an array of triangles).

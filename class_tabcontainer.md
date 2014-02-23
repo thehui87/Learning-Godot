@@ -27,51 +27,51 @@ Tabbed Container. Contains several children controls, but shows only one at the 
 ###  Member Function Description  
 
 #### <a name="get_tab_count">get_tab_count</a>
-  * [int](class_int)  **[get_tab_count](#get_tab_count)**  **(** **)** const
-\\
+  * [int](class_int)  **get_tab_count**  **(** **)** const
+
 Return the amount of tabs.
 
 #### <a name="set_current_tab">set_current_tab</a>
-  * void  **[set_current_tab](#set_current_tab)**  **(** [int](class_int) tab_idx  **)**
-\\
+  * void  **set_current_tab**  **(** [int](class_int) tab_idx  **)**
+
 Bring a tab (and the Control it represents) to the front, and hide the rest.
 
 #### <a name="get_current_tab">get_current_tab</a>
-  * [int](class_int)  **[get_current_tab](#get_current_tab)**  **(** **)** const
-\\
+  * [int](class_int)  **get_current_tab**  **(** **)** const
+
 Return the current tab that is being showed.
 
 #### <a name="set_tab_align">set_tab_align</a>
-  * void  **[set_tab_align](#set_tab_align)**  **(** [int](class_int) align  **)**
-\\
+  * void  **set_tab_align**  **(** [int](class_int) align  **)**
+
 Set tab alignment, from the ALIGN_* enum. Moves tabs to the left, right or center.
 
 #### <a name="get_tab_align">get_tab_align</a>
-  * [int](class_int)  **[get_tab_align](#get_tab_align)**  **(** **)** const
-\\
+  * [int](class_int)  **get_tab_align**  **(** **)** const
+
 Return tab alignment, from the ALIGN_* enum
 
 #### <a name="set_tabs_visible">set_tabs_visible</a>
-  * void  **[set_tabs_visible](#set_tabs_visible)**  **(** [bool](class_bool) visible  **)**
-\\
+  * void  **set_tabs_visible**  **(** [bool](class_bool) visible  **)**
+
 Set whether the tabs should be visible or hidden.
 
 #### <a name="are_tabs_visible">are_tabs_visible</a>
-  * [bool](class_bool)  **[are_tabs_visible](#are_tabs_visible)**  **(** **)** const
-\\
+  * [bool](class_bool)  **are_tabs_visible**  **(** **)** const
+
 Return whether the tabs should be visible or hidden.
 
 #### <a name="set_tab_title">set_tab_title</a>
-  * void  **[set_tab_title](#set_tab_title)**  **(** [int](class_int) tab_idx, [String](class_string) title  **)**
-\\
+  * void  **set_tab_title**  **(** [int](class_int) tab_idx, [String](class_string) title  **)**
+
 Set a title for the tab. Tab titles are by default the children node name, but this can be overriden.
 
 #### <a name="get_tab_title">get_tab_title</a>
-  * [String](class_string)  **[get_tab_title](#get_tab_title)**  **(** [int](class_int) tab_idx  **)** const
-\\
+  * [String](class_string)  **get_tab_title**  **(** [int](class_int) tab_idx  **)** const
+
 Return the title for the tab. Tab titles are by default the children node name, but this can be overriden.
 
 #### <a name="set_tab_icon">set_tab_icon</a>
-  * void  **[set_tab_icon](#set_tab_icon)**  **(** [int](class_int) tab_idx, [Texture](class_texture) icon  **)**
-\\
+  * void  **set_tab_icon**  **(** [int](class_int) tab_idx, [Texture](class_texture) icon  **)**
+
 Set an icon for a tab.

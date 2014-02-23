@@ -15,21 +15,21 @@ Line shape for 2D collision objects. It works like a 2D plane and will not allow
 ###  Member Function Description  
 
 #### <a name="set_normal">set_normal</a>
-  * void  **[set_normal](#set_normal)**  **(** [Vector2](class_vector2) normal  **)**
-\\
+  * void  **set_normal**  **(** [Vector2](class_vector2) normal  **)**
+
 Set the line normal.
 
 #### <a name="get_normal">get_normal</a>
-  * [Vector2](class_vector2)  **[get_normal](#get_normal)**  **(** **)** const
-\\
+  * [Vector2](class_vector2)  **get_normal**  **(** **)** const
+
 Return the line normal.
 
 #### <a name="set_d">set_d</a>
-  * void  **[set_d](#set_d)**  **(** [real](class_real) d  **)**
-\\
+  * void  **set_d**  **(** [real](class_real) d  **)**
+
 Set the line distance from the origin.
 
 #### <a name="get_d">get_d</a>
-  * [real](class_real)  **[get_d](#get_d)**  **(** **)** const
-\\
+  * [real](class_real)  **get_d**  **(** **)** const
+
 Return the line distance from the origin.

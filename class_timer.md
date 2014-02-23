@@ -23,46 +23,46 @@ Timer node. This is a simple node that will emit a timeout callback when the tim
 ###  Member Function Description  
 
 #### <a name="set_wait_time">set_wait_time</a>
-  * void  **[set_wait_time](#set_wait_time)**  **(** [real](class_real) time_sec  **)**
-\\
+  * void  **set_wait_time**  **(** [real](class_real) time_sec  **)**
+
 Set wait time. When the time is over, it will emit timeout signal.
 
 #### <a name="get_wait_time">get_wait_time</a>
-  * [real](class_real)  **[get_wait_time](#get_wait_time)**  **(** **)** const
-\\
+  * [real](class_real)  **get_wait_time**  **(** **)** const
+
 Return the wait time. When the time is over, it will emit timeout signal.
 
 #### <a name="set_one_shot">set_one_shot</a>
-  * void  **[set_one_shot](#set_one_shot)**  **(** [bool](class_bool) enable  **)**
-\\
+  * void  **set_one_shot**  **(** [bool](class_bool) enable  **)**
+
 Set as one-shot. If true, timer will stop after timeout, otherwise it will automatically restart.
 
 #### <a name="is_one_shot">is_one_shot</a>
-  * [bool](class_bool)  **[is_one_shot](#is_one_shot)**  **(** **)** const
-\\
+  * [bool](class_bool)  **is_one_shot**  **(** **)** const
+
 Return true if is set as one-shot. If true, timer will stop after timeout, otherwise it will automatically restart.
 
 #### <a name="set_autostart">set_autostart</a>
-  * void  **[set_autostart](#set_autostart)**  **(** [bool](class_bool) enable  **)**
-\\
+  * void  **set_autostart**  **(** [bool](class_bool) enable  **)**
+
 Set to automatically start when entering the scene.
 
 #### <a name="has_autostart">has_autostart</a>
-  * [bool](class_bool)  **[has_autostart](#has_autostart)**  **(** **)** const
-\\
+  * [bool](class_bool)  **has_autostart**  **(** **)** const
+
 Return true if set to automatically start when entering the scene.
 
 #### <a name="start">start</a>
-  * void  **[start](#start)**  **(** **)**
-\\
+  * void  **start**  **(** **)**
+
 Start the timer.
 
 #### <a name="stop">stop</a>
-  * void  **[stop](#stop)**  **(** **)**
-\\
+  * void  **stop**  **(** **)**
+
 Stop (cancel) the timer.
 
 #### <a name="get_time_left">get_time_left</a>
-  * [real](class_real)  **[get_time_left](#get_time_left)**  **(** **)** const
-\\
+  * [real](class_real)  **get_time_left**  **(** **)** const
+
 Return the time left for timeout if the timer is active.

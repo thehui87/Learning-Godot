@@ -49,31 +49,31 @@ A Viewport creates a different view into the screen, or a sub-view inside anothe
 ###  Member Function Description  
 
 #### <a name="set_rect">set_rect</a>
-  * void  **[set_rect](#set_rect)**  **(** [Rect2](class_rect2) rect  **)**
-\\
+  * void  **set_rect**  **(** [Rect2](class_rect2) rect  **)**
+
 Set the viewport rect. If the viewport is child of a control, it will use the same as the parent.
 
 #### <a name="get_rect">get_rect</a>
-  * [Rect2](class_rect2)  **[get_rect](#get_rect)**  **(** **)** const
-\\
+  * [Rect2](class_rect2)  **get_rect**  **(** **)** const
+
 Return the viewport rect. If the viewport is child of a control, it will use the same as the parent, otherwise if the rect is empty, the viewport will use all the allowed space.
 
 #### <a name="get_visible_rect">get_visible_rect</a>
-  * [Rect2](class_rect2)  **[get_visible_rect](#get_visible_rect)**  **(** **)** const
-\\
+  * [Rect2](class_rect2)  **get_visible_rect**  **(** **)** const
+
 Return the final, visuble rect in global screen coordinates.
 
 #### <a name="set_transparent_background">set_transparent_background</a>
-  * void  **[set_transparent_background](#set_transparent_background)**  **(** [bool](class_bool) enable  **)**
-\\
+  * void  **set_transparent_background**  **(** [bool](class_bool) enable  **)**
+
 Keep whathver the parent viewport has drawn
 
 #### <a name="has_transparent_background">has_transparent_background</a>
-  * [bool](class_bool)  **[has_transparent_background](#has_transparent_background)**  **(** **)** const
-\\
+  * [bool](class_bool)  **has_transparent_background**  **(** **)** const
+
 If this viewport is a child of another viewport, keep the previously drawn background visible.
 
 #### <a name="get_viewport">get_viewport</a>
-  * [RID](class_rid)  **[get_viewport](#get_viewport)**  **(** **)** const
-\\
+  * [RID](class_rid)  **get_viewport**  **(** **)** const
+
 Get the viewport RID from the visual server.

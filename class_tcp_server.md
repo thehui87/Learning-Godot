@@ -15,21 +15,21 @@ TCP Server class. Listens to connections on a port and returns a StreamPeerTCP w
 ###  Member Function Description  
 
 #### <a name="listen">listen</a>
-  * [int](class_int)  **[listen](#listen)**  **(** [int](class_int) port, [StringArray](class_stringarray) accepted_hosts=StringArray()  **)**
-\\
+  * [int](class_int)  **listen**  **(** [int](class_int) port, [StringArray](class_stringarray) accepted_hosts=StringArray()  **)**
+
 Listen on a port, alternatively give a white-list of accepted hosts.
 
 #### <a name="is_connection_available">is_connection_available</a>
-  * [bool](class_bool)  **[is_connection_available](#is_connection_available)**  **(** **)** const
-\\
+  * [bool](class_bool)  **is_connection_available**  **(** **)** const
+
 Return true if a connection is available for taking.
 
 #### <a name="take_connection">take_connection</a>
-  * [Object](class_object)  **[take_connection](#take_connection)**  **(** **)**
-\\
+  * [Object](class_object)  **take_connection**  **(** **)**
+
 If a connection is available, return a StreamPeerTCP with the connection/
 
 #### <a name="stop">stop</a>
-  * void  **[stop](#stop)**  **(** **)**
-\\
+  * void  **stop**  **(** **)**
+
 Stop listening.

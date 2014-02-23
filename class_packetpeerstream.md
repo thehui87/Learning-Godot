@@ -12,6 +12,6 @@ PacketStreamPeer provides a wrapper for working using packets over a stream. Thi
 ###  Member Function Description  
 
 #### <a name="set_stream_peer">set_stream_peer</a>
-  * void  **[set_stream_peer](#set_stream_peer)**  **(** [StreamPeer](class_streampeer) peer  **)**
-\\
+  * void  **set_stream_peer**  **(** [StreamPeer](class_streampeer) peer  **)**
+
 Set the StreamPeer object to be wrapped

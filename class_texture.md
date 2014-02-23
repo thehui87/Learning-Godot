@@ -28,36 +28,36 @@ A texture works by registering an image in the video hardware, which then can be
 ###  Member Function Description  
 
 #### <a name="get_width">get_width</a>
-  * [int](class_int)  **[get_width](#get_width)**  **(** **)** const
-\\
+  * [int](class_int)  **get_width**  **(** **)** const
+
 Return the texture width.
 
 #### <a name="get_height">get_height</a>
-  * [int](class_int)  **[get_height](#get_height)**  **(** **)** const
-\\
+  * [int](class_int)  **get_height**  **(** **)** const
+
 Return the texture height.
 
 #### <a name="get_size">get_size</a>
-  * [Vector2](class_vector2)  **[get_size](#get_size)**  **(** **)** const
-\\
+  * [Vector2](class_vector2)  **get_size**  **(** **)** const
+
 Return the texture size.
 
 #### <a name="get_rid">get_rid</a>
-  * [RID](class_rid)  **[get_rid](#get_rid)**  **(** **)** const
-\\
+  * [RID](class_rid)  **get_rid**  **(** **)** const
+
 Return the texture RID as used in the [[visualserver|VisualServer]].
 
 #### <a name="set_flags">set_flags</a>
-  * void  **[set_flags](#set_flags)**  **(** [int](class_int) flags  **)**
-\\
+  * void  **set_flags**  **(** [int](class_int) flags  **)**
+
 Change the texture flags.
 
 #### <a name="get_flags">get_flags</a>
-  * [int](class_int)  **[get_flags](#get_flags)**  **(** **)** const
-\\
+  * [int](class_int)  **get_flags**  **(** **)** const
+
 Return the current texture flags.
 
 #### <a name="draw">draw</a>
-  * void  **[draw](#draw)**  **(** [RID](class_rid) canvas_item, [Vector2](class_vector2) pos, [Color](class_color) modulate=Color(1,1,1,1)  **)** const
-\\
+  * void  **draw**  **(** [RID](class_rid) canvas_item, [Vector2](class_vector2) pos, [Color](class_color) modulate=Color(1,1,1,1)  **)** const
+
 Draw the texture into a a [[visualserver|VisualServer]] canvas item.

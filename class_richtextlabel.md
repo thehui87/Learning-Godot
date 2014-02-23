@@ -56,11 +56,11 @@ Label that displays rich text. Rich text can contain custom text, fonts, images 
 ###  Member Function Description  
 
 #### <a name="set_selection_enabled">set_selection_enabled</a>
-  * void  **[set_selection_enabled](#set_selection_enabled)**  **(** [bool](class_bool) enabled  **)**
-\\
+  * void  **set_selection_enabled**  **(** [bool](class_bool) enabled  **)**
+
 Set to true if selecting the text inside this richtext is allowed.
 
 #### <a name="is_selection_enabled">is_selection_enabled</a>
-  * [bool](class_bool)  **[is_selection_enabled](#is_selection_enabled)**  **(** **)** const
-\\
+  * [bool](class_bool)  **is_selection_enabled**  **(** **)** const
+
 Return true if selecting the text inside this richtext is allowed.

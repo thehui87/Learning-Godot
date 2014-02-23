@@ -21,31 +21,31 @@ Button is just the standard themed button: [image src="images/button_example.png
 ###  Member Function Description  
 
 #### <a name="set_text">set_text</a>
-  * void  **[set_text](#set_text)**  **(** [String](class_string) text  **)**
-\\
+  * void  **set_text**  **(** [String](class_string) text  **)**
+
 Set the button text, which will be displayed inside the button area.
 
 #### <a name="get_text">get_text</a>
-  * [String](class_string)  **[get_text](#get_text)**  **(** **)** const
-\\
+  * [String](class_string)  **get_text**  **(** **)** const
+
 Return the button text.
 
 #### <a name="set_flat">set_flat</a>
-  * void  **[set_flat](#set_flat)**  **(** [bool](class_bool) enabled  **)**
-\\
+  * void  **set_flat**  **(** [bool](class_bool) enabled  **)**
+
 Set the //flat// property of a Button. Flat buttons don"apos;t display decoration unless hoevered or pressed.
 
 #### <a name="set_clip_text">set_clip_text</a>
-  * void  **[set_clip_text](#set_clip_text)**  **(** [bool](class_bool) enabled  **)**
-\\
+  * void  **set_clip_text**  **(** [bool](class_bool) enabled  **)**
+
 Set the //clip_text// property of a Button. When this property is enabled, text that is too large to fit the button is clipped, when disabled (default) the Button will always be wide enough to hold the text.
 
 #### <a name="get_clip_text">get_clip_text</a>
-  * [bool](class_bool)  **[get_clip_text](#get_clip_text)**  **(** **)** const
-\\
+  * [bool](class_bool)  **get_clip_text**  **(** **)** const
+
 Return the state of the //clip_text// property (see [[#set_clip_text|set_clip_text]])
 
 #### <a name="is_flat">is_flat</a>
-  * [bool](class_bool)  **[is_flat](#is_flat)**  **(** **)** const
-\\
+  * [bool](class_bool)  **is_flat**  **(** **)** const
+
 Return the state of the //flat// property (see [[#set_flat|set_flat]])

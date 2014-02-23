@@ -18,26 +18,26 @@ SpinBox is a numerical input text field. It allows entering integers and floats.
 ###  Member Function Description  
 
 #### <a name="set_suffix">set_suffix</a>
-  * void  **[set_suffix](#set_suffix)**  **(** [String](class_string) suffix  **)**
-\\
+  * void  **set_suffix**  **(** [String](class_string) suffix  **)**
+
 Set a specific suffix.
 
 #### <a name="get_suffix">get_suffix</a>
-  * [String](class_string)  **[get_suffix](#get_suffix)**  **(** **)** const
-\\
+  * [String](class_string)  **get_suffix**  **(** **)** const
+
 Return the specific suffix.
 
 #### <a name="set_prefix">set_prefix</a>
-  * void  **[set_prefix](#set_prefix)**  **(** [String](class_string) prefix  **)**
-\\
+  * void  **set_prefix**  **(** [String](class_string) prefix  **)**
+
 Set a prefix.
 
 #### <a name="set_editable">set_editable</a>
-  * void  **[set_editable](#set_editable)**  **(** [bool](class_bool) editable  **)**
-\\
+  * void  **set_editable**  **(** [bool](class_bool) editable  **)**
+
 Set whether the spinbox is editable.
 
 #### <a name="is_editable">is_editable</a>
-  * [bool](class_bool)  **[is_editable](#is_editable)**  **(** **)** const
-\\
+  * [bool](class_bool)  **is_editable**  **(** **)** const
+
 Return if the spinbox is editable.

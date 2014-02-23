@@ -25,56 +25,56 @@ For this case a MultiMesh becomes very useful, as it can draw thousands of insta
 ###  Member Function Description  
 
 #### <a name="set_mesh">set_mesh</a>
-  * void  **[set_mesh](#set_mesh)**  **(** [Mesh](class_mesh) mesh  **)**
-\\
+  * void  **set_mesh**  **(** [Mesh](class_mesh) mesh  **)**
+
 Set the [[mesh|Mesh]] resource to be drawn in multiple instances.
 
 #### <a name="get_mesh">get_mesh</a>
-  * [Mesh](class_mesh)  **[get_mesh](#get_mesh)**  **(** **)** const
-\\
+  * [Mesh](class_mesh)  **get_mesh**  **(** **)** const
+
 Return the [[mesh|Mesh]] resource drawn as multiple instances.
 
 #### <a name="set_instance_count">set_instance_count</a>
-  * void  **[set_instance_count](#set_instance_count)**  **(** [int](class_int) arg0  **)**
-\\
+  * void  **set_instance_count**  **(** [int](class_int) arg0  **)**
+
 Set the amount of instnces that is going to be drawn. Changing this number will erase all the existing instance transform and color data.
 
 #### <a name="get_instance_count">get_instance_count</a>
-  * [int](class_int)  **[get_instance_count](#get_instance_count)**  **(** **)** const
-\\
+  * [int](class_int)  **get_instance_count**  **(** **)** const
+
 Return the amount of instnces that is going to be drawn.
 
 #### <a name="set_instance_transform">set_instance_transform</a>
-  * void  **[set_instance_transform](#set_instance_transform)**  **(** [int](class_int) arg0, [Transform](class_transform) arg1  **)**
-\\
+  * void  **set_instance_transform**  **(** [int](class_int) arg0, [Transform](class_transform) arg1  **)**
+
 Set the transform for a specific instance.
 
 #### <a name="get_instance_transform">get_instance_transform</a>
-  * [Transform](class_transform)  **[get_instance_transform](#get_instance_transform)**  **(** [int](class_int) arg0  **)** const
-\\
+  * [Transform](class_transform)  **get_instance_transform**  **(** [int](class_int) arg0  **)** const
+
 Return the transform of a specific instance.
 
 #### <a name="set_instance_color">set_instance_color</a>
-  * void  **[set_instance_color](#set_instance_color)**  **(** [int](class_int) arg0, [Color](class_color) arg1  **)**
-\\
+  * void  **set_instance_color**  **(** [int](class_int) arg0, [Color](class_color) arg1  **)**
+
 Set the color of a specific instance.
 
 #### <a name="get_instance_color">get_instance_color</a>
-  * [Color](class_color)  **[get_instance_color](#get_instance_color)**  **(** [int](class_int) arg0  **)** const
-\\
+  * [Color](class_color)  **get_instance_color**  **(** [int](class_int) arg0  **)** const
+
 Get the color of a specific instance.
 
 #### <a name="set_aabb">set_aabb</a>
-  * void  **[set_aabb](#set_aabb)**  **(** [AABB](class_aabb) arg0  **)**
-\\
+  * void  **set_aabb**  **(** [AABB](class_aabb) arg0  **)**
+
 Set the visibility AABB. If not provided, MultiMesh will not be visible.
 
 #### <a name="get_aabb">get_aabb</a>
-  * [AABB](class_aabb)  **[get_aabb](#get_aabb)**  **(** **)** const
-\\
+  * [AABB](class_aabb)  **get_aabb**  **(** **)** const
+
 Return the visibility AABB.
 
 #### <a name="generate_aabb">generate_aabb</a>
-  * void  **[generate_aabb](#generate_aabb)**  **(** **)**
-\\
+  * void  **generate_aabb**  **(** **)**
+
 Generate a new visibility AABB, using mesh AABB and instance transforms. Since instance information is stored in the [[visualserver|VisualServer]], this function is VERY SLOW and must NOT be used often.

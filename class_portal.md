@@ -22,51 +22,51 @@ Portals provide virtual openings to [RoomInstance] nodes, so cameras can look at
 ###  Member Function Description  
 
 #### <a name="set_shape">set_shape</a>
-  * void  **[set_shape](#set_shape)**  **(** [Vector2Array](class_vector2array) points  **)**
-\\
+  * void  **set_shape**  **(** [Vector2Array](class_vector2array) points  **)**
+
 Set the portal shape. The shape is an array of [Point2]  points, representing a convex polygon in the X,Y plane.
 
 #### <a name="get_shape">get_shape</a>
-  * [Vector2Array](class_vector2array)  **[get_shape](#get_shape)**  **(** **)** const
-\\
+  * [Vector2Array](class_vector2array)  **get_shape**  **(** **)** const
+
 Return the portal shape. The shape is an array of [Point2]  points, representing a convex polygon in the X,Y plane.
 
 #### <a name="set_enabled">set_enabled</a>
-  * void  **[set_enabled](#set_enabled)**  **(** [bool](class_bool) enable  **)**
-\\
+  * void  **set_enabled**  **(** [bool](class_bool) enable  **)**
+
 Enable the portal (it is enabled by defaul though), disabling it will cause the parent [RoomInstance] to not be visible any longer when looking through the portal.
 
 #### <a name="is_enabled">is_enabled</a>
-  * [bool](class_bool)  **[is_enabled](#is_enabled)**  **(** **)** const
-\\
+  * [bool](class_bool)  **is_enabled**  **(** **)** const
+
 Return wether the portal is active. When disabled it causes the parent [RoomInstance] to not be visible any longer when looking through the portal.
 
 #### <a name="set_disable_distance">set_disable_distance</a>
-  * void  **[set_disable_distance](#set_disable_distance)**  **(** [real](class_real) distance  **)**
-\\
+  * void  **set_disable_distance**  **(** [real](class_real) distance  **)**
+
 Set the distance threshold for disabling the portal. Every time that the portal goes beyond "distance", it disables itself, becoming the opaque color (see [[#set_disabled_color|set_disabled_color]]).
 
 #### <a name="get_disable_distance">get_disable_distance</a>
-  * [real](class_real)  **[get_disable_distance](#get_disable_distance)**  **(** **)** const
-\\
+  * [real](class_real)  **get_disable_distance**  **(** **)** const
+
 Return the distance threshold for disabling the portal. Every time that the portal goes beyond "distance", it disables itself, becoming the opaque color (see [[#set_disabled_color|set_disabled_color]]).
 
 #### <a name="set_disabled_color">set_disabled_color</a>
-  * void  **[set_disabled_color](#set_disabled_color)**  **(** [Color](class_color) color  **)**
-\\
+  * void  **set_disabled_color**  **(** [Color](class_color) color  **)**
+
 When the portal goes beyond the disable distance (see [[#set_disable_distance|set_disable_distance]]), it becomes opaque and displayed with color "color".
 
 #### <a name="get_disabled_color">get_disabled_color</a>
-  * [Color](class_color)  **[get_disabled_color](#get_disabled_color)**  **(** **)** const
-\\
+  * [Color](class_color)  **get_disabled_color**  **(** **)** const
+
 Return the color for when the portal goes beyond the disable distance (see [[#set_disable_distance|set_disable_distance]]) and becomes disabled.
 
 #### <a name="set_connect_range">set_connect_range</a>
-  * void  **[set_connect_range](#set_connect_range)**  **(** [real](class_real) range  **)**
-\\
+  * void  **set_connect_range**  **(** [real](class_real) range  **)**
+
 Set the range for auto-connecting two portals from different rooms sharing the same space.
 
 #### <a name="get_connect_range">get_connect_range</a>
-  * [real](class_real)  **[get_connect_range](#get_connect_range)**  **(** **)** const
-\\
+  * [real](class_real)  **get_connect_range**  **(** **)** const
+
 Return the range for auto-connecting two portals from different rooms sharing the same space.

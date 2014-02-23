@@ -14,7 +14,7 @@ explain ownership, and that node does not need to own itself
 ###  Member Function Description  
 
 #### <a name="pack">pack</a>
-  * [int](class_int)  **[pack](#pack)**  **(** [Node](class_node) path  **)**
-\\
+  * [int](class_int)  **pack**  **(** [Node](class_node) path  **)**
+
 Pack will ignore any sub-nodes not owned by given
 			node. See [Node.set_owner].

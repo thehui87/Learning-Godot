@@ -34,26 +34,26 @@ Spatial is the base for every type of 3D [[node|Node]]. It contains a 3D [[trans
 ###  Member Function Description  
 
 #### <a name="set_transform">set_transform</a>
-  * void  **[set_transform](#set_transform)**  **(** [Transform](class_transform) local  **)**
-\\
+  * void  **set_transform**  **(** [Transform](class_transform) local  **)**
+
 Set the transform locally, relative to the parent spatial node.
 
 #### <a name="get_transform">get_transform</a>
-  * [Transform](class_transform)  **[get_transform](#get_transform)**  **(** **)** const
-\\
+  * [Transform](class_transform)  **get_transform**  **(** **)** const
+
 Return the local transform, relative to the bone parent.
 
 #### <a name="set_global_transform">set_global_transform</a>
-  * void  **[set_global_transform](#set_global_transform)**  **(** [Transform](class_transform) global  **)**
-\\
+  * void  **set_global_transform**  **(** [Transform](class_transform) global  **)**
+
 Set the transform globally, relative to worldspace.
 
 #### <a name="get_global_transform">get_global_transform</a>
-  * [Transform](class_transform)  **[get_global_transform](#get_global_transform)**  **(** **)** const
-\\
+  * [Transform](class_transform)  **get_global_transform**  **(** **)** const
+
 Return the gloal transform, relative to worldspace.
 
 #### <a name="get_parent_spatial">get_parent_spatial</a>
-  * [Object](class_object)  **[get_parent_spatial](#get_parent_spatial)**  **(** **)** const
-\\
+  * [Object](class_object)  **get_parent_spatial**  **(** **)** const
+
 Return the parent [[spatial|Spatial]], or an empty [[object|Object]] if no parent exists or parent is not of type [Spatial.

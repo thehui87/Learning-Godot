@@ -31,16 +31,16 @@ General purpose area detection for 2D Phisics. Areas can be used for detection o
 ###  Member Function Description  
 
 #### <a name="set_gravity_is_point">set_gravity_is_point</a>
-  * void  **[set_gravity_is_point](#set_gravity_is_point)**  **(** [bool](class_bool) enable  **)**
-\\
+  * void  **set_gravity_is_point**  **(** [bool](class_bool) enable  **)**
+
 When overriding space parameters, areas can have a center of gravity as a point.
 
 #### <a name="is_gravity_a_point">is_gravity_a_point</a>
-  * [bool](class_bool)  **[is_gravity_a_point](#is_gravity_a_point)**  **(** **)** const
-\\
+  * [bool](class_bool)  **is_gravity_a_point**  **(** **)** const
+
 Return if gravity is a point. When overriding space parameters, areas can have a center of gravity as a point.
 
 #### <a name="set_gravity_vector">set_gravity_vector</a>
-  * void  **[set_gravity_vector](#set_gravity_vector)**  **(** [Vector2](class_vector2) vector  **)**
-\\
+  * void  **set_gravity_vector**  **(** [Vector2](class_vector2) vector  **)**
+
 Set gravity vector. If gravity is a point, this will be the attraction center

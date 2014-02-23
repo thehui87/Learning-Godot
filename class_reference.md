@@ -14,11 +14,11 @@ Base class for anything refcounted. Resource and many other helper objects inher
 ###  Member Function Description  
 
 #### <a name="reference">reference</a>
-  * void  **[reference](#reference)**  **(** **)**
-\\
+  * void  **reference**  **(** **)**
+
 Increase the internal reference counter. Use this only if you really know what you are doing.
 
 #### <a name="unreference">unreference</a>
-  * [bool](class_bool)  **[unreference](#unreference)**  **(** **)**
-\\
+  * [bool](class_bool)  **unreference**  **(** **)**
+
 Decrease the internal reference counter. Use this only if you really know what you are doing.

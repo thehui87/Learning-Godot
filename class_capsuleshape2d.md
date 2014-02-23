@@ -15,21 +15,21 @@ Capsule 2D shape resource for physics. A capsule (or sometimes called "pill") is
 ###  Member Function Description  
 
 #### <a name="set_radius">set_radius</a>
-  * void  **[set_radius](#set_radius)**  **(** [real](class_real) radius  **)**
-\\
+  * void  **set_radius**  **(** [real](class_real) radius  **)**
+
 Radius of the [[capsuleshape2d|CapsuleShape2D]].
 
 #### <a name="get_radius">get_radius</a>
-  * [real](class_real)  **[get_radius](#get_radius)**  **(** **)** const
-\\
+  * [real](class_real)  **get_radius**  **(** **)** const
+
 Return the radius of the [[capsuleshape2d|CapsuleShape2D]].
 
 #### <a name="set_height">set_height</a>
-  * void  **[set_height](#set_height)**  **(** [real](class_real) height  **)**
-\\
+  * void  **set_height**  **(** [real](class_real) height  **)**
+
 Height of the [[capsuleshape2d|CapsuleShape2D]].
 
 #### <a name="get_height">get_height</a>
-  * [real](class_real)  **[get_height](#get_height)**  **(** **)** const
-\\
+  * [real](class_real)  **get_height**  **(** **)** const
+
 Return the height of the [[capsuleshape2d|CapsuleShape2D]].

@@ -12,6 +12,6 @@ Dialog for confirmation of actions. This dialog inherits from [[acceptdialog|Acc
 ###  Member Function Description  
 
 #### <a name="get_cancel">get_cancel</a>
-  * [Button](class_button)  **[get_cancel](#get_cancel)**  **(** **)**
-\\
+  * [Button](class_button)  **get_cancel**  **(** **)**
+
 Return the cancel button.

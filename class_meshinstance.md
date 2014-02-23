@@ -16,21 +16,21 @@ MeshInstance is a [[node|Node]] that takes a [[mesh|Mesh]] resource and adds it 
 ###  Member Function Description  
 
 #### <a name="set_mesh">set_mesh</a>
-  * void  **[set_mesh](#set_mesh)**  **(** [Mesh](class_mesh) mesh  **)**
-\\
+  * void  **set_mesh**  **(** [Mesh](class_mesh) mesh  **)**
+
 Set the [[mesh|Mesh]] resource for the instance.
 
 #### <a name="get_mesh">get_mesh</a>
-  * [Mesh](class_mesh)  **[get_mesh](#get_mesh)**  **(** **)** const
-\\
+  * [Mesh](class_mesh)  **get_mesh**  **(** **)** const
+
 Return the current [[mesh|Mesh]] resource for the instance.
 
 #### <a name="get_aabb">get_aabb</a>
-  * [AABB](class_aabb)  **[get_aabb](#get_aabb)**  **(** **)** const
-\\
+  * [AABB](class_aabb)  **get_aabb**  **(** **)** const
+
 Return the AABB of the mesh, in local coordinates.
 
 #### <a name="create_trimesh_collision">create_trimesh_collision</a>
-  * void  **[create_trimesh_collision](#create_trimesh_collision)**  **(** **)**
-\\
+  * void  **create_trimesh_collision**  **(** **)**
+
 This helper creates a [[staticbody|StaticBody]] child [[node|Node]] using the mesh geometry as collision. It"apos;s mainly used for testing.

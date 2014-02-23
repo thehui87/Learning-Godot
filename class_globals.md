@@ -22,41 +22,41 @@ Contains global variables accessible from everywhere. Use the normal [[object|Ob
 ###  Member Function Description  
 
 #### <a name="has">has</a>
-  * [bool](class_bool)  **[has](#has)**  **(** [String](class_string) name  **)** const
-\\
+  * [bool](class_bool)  **has**  **(** [String](class_string) name  **)** const
+
 Return true if a configuration value is present.
 
 #### <a name="set_order">set_order</a>
-  * void  **[set_order](#set_order)**  **(** [String](class_string) name, [int](class_int) pos  **)**
-\\
+  * void  **set_order**  **(** [String](class_string) name, [int](class_int) pos  **)**
+
 Set the order of a configuration value (influences when saved to the config file).
 
 #### <a name="get_order">get_order</a>
-  * [int](class_int)  **[get_order](#get_order)**  **(** [String](class_string) name  **)** const
-\\
+  * [int](class_int)  **get_order**  **(** [String](class_string) name  **)** const
+
 Return the order of a configuration value (influences when saved to the config file).
 
 #### <a name="set_persisting">set_persisting</a>
-  * void  **[set_persisting](#set_persisting)**  **(** [String](class_string) name, [bool](class_bool) enable  **)**
-\\
+  * void  **set_persisting**  **(** [String](class_string) name, [bool](class_bool) enable  **)**
+
 If set to true, this value can be saved to the configuration file. This is useful for editors.
 
 #### <a name="is_persisting">is_persisting</a>
-  * [bool](class_bool)  **[is_persisting](#is_persisting)**  **(** [String](class_string) name  **)** const
-\\
+  * [bool](class_bool)  **is_persisting**  **(** [String](class_string) name  **)** const
+
 If returns true, this value can be saved to the configuration file. This is useful for editors.
 
 #### <a name="clear">clear</a>
-  * void  **[clear](#clear)**  **(** [String](class_string) name  **)**
-\\
+  * void  **clear**  **(** [String](class_string) name  **)**
+
 Clear the whole configuration (not recommended, may break things).
 
 #### <a name="localize_path">localize_path</a>
-  * [String](class_string)  **[localize_path](#localize_path)**  **(** [String](class_string) path  **)** const
-\\
+  * [String](class_string)  **localize_path**  **(** [String](class_string) path  **)** const
+
 Convert a path to a localized path (res:// path).
 
 #### <a name="globalize_path">globalize_path</a>
-  * [String](class_string)  **[globalize_path](#globalize_path)**  **(** [String](class_string) path  **)** const
-\\
+  * [String](class_string)  **globalize_path**  **(** [String](class_string) path  **)** const
+
 Convert a localized path (res://) to a full native OS path.

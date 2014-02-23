@@ -47,31 +47,31 @@ Material is a base [[resource|Resource]] used for coloring and shading geometry.
 ###  Member Function Description  
 
 #### <a name="set_flag">set_flag</a>
-  * void  **[set_flag](#set_flag)**  **(** [int](class_int) flag, [bool](class_bool) enable  **)**
-\\
+  * void  **set_flag**  **(** [int](class_int) flag, [bool](class_bool) enable  **)**
+
 Set a [[material|Material]] flag, which toggles on or off a behavior when rendering. See enumeration FLAG_* for a list.
 
 #### <a name="get_flag">get_flag</a>
-  * [bool](class_bool)  **[get_flag](#get_flag)**  **(** [int](class_int) flag  **)** const
-\\
+  * [bool](class_bool)  **get_flag**  **(** [int](class_int) flag  **)** const
+
 Return a [[material|Material]] flag, which toggles on or off a behavior when rendering. See enumeration FLAG_* for a list.
 
 #### <a name="set_blend_mode">set_blend_mode</a>
-  * void  **[set_blend_mode](#set_blend_mode)**  **(** [int](class_int) mode  **)**
-\\
+  * void  **set_blend_mode**  **(** [int](class_int) mode  **)**
+
 Set blend mode for the material, which can be one of BLEND_MODE_MIX (default), BLEND_MODE_ADD, BLEND_MODE_SUB. Keep in mind that only BLEND_MODE_MIX ensures that the material //may// be opaque, any other blend mode will render with alpha blending enabled in raster-based [[visualserver|VisualServer]] implementations.
 
 #### <a name="get_blend_mode">get_blend_mode</a>
-  * [int](class_int)  **[get_blend_mode](#get_blend_mode)**  **(** **)** const
-\\
+  * [int](class_int)  **get_blend_mode**  **(** **)** const
+
 Return blend mode for the material, which can be one of BLEND_MODE_MIX (default), BLEND_MODE_ADD, BLEND_MODE_SUB. Keep in mind that only BLEND_MODE_MIX ensures that the material //may// be opaque, any other blend mode will render with alpha blending enabled in raster-based [[visualserver|VisualServer]] implementations.
 
 #### <a name="set_line_width">set_line_width</a>
-  * void  **[set_line_width](#set_line_width)**  **(** [real](class_real) width  **)**
-\\
+  * void  **set_line_width**  **(** [real](class_real) width  **)**
+
 Set the line width for geometry drawn with FLAG_WIREFRAME enabled, or LINE primitives. Note that not all hardware or VisualServer backends support this (like DirectX).
 
 #### <a name="get_line_width">get_line_width</a>
-  * [real](class_real)  **[get_line_width](#get_line_width)**  **(** **)** const
-\\
+  * [real](class_real)  **get_line_width**  **(** **)** const
+
 Return the line width for geometry drawn with FLAG_WIREFRAME enabled, or LINE primitives. Note that not all hardware or VisualServer backends support this (like DirectX).

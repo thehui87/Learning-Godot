@@ -39,36 +39,36 @@ FileDialog is a preset dialog used to choose files and directories in the filesy
 ###  Member Function Description  
 
 #### <a name="clear_filters">clear_filters</a>
-  * void  **[clear_filters](#clear_filters)**  **(** **)**
-\\
+  * void  **clear_filters**  **(** **)**
+
 Clear all the added filters in the dialog.
 
 #### <a name="add_filter">add_filter</a>
-  * void  **[add_filter](#add_filter)**  **(** [String](class_string) filter  **)**
-\\
+  * void  **add_filter**  **(** [String](class_string) filter  **)**
+
 Add a custom filter. Filter format is: "mask ; description", example (C++): dialog-"lt;add_filter("*.png ; PNG Images");
 
 #### <a name="get_current_dir">get_current_dir</a>
-  * [String](class_string)  **[get_current_dir](#get_current_dir)**  **(** **)** const
-\\
+  * [String](class_string)  **get_current_dir**  **(** **)** const
+
 Get the current working directory of the file dialog.
 
 #### <a name="get_current_file">get_current_file</a>
-  * [String](class_string)  **[get_current_file](#get_current_file)**  **(** **)** const
-\\
+  * [String](class_string)  **get_current_file**  **(** **)** const
+
 Get the current selected file of the file dialog (empty if none).
 
 #### <a name="get_current_path">get_current_path</a>
-  * [String](class_string)  **[get_current_path](#get_current_path)**  **(** **)** const
-\\
+  * [String](class_string)  **get_current_path**  **(** **)** const
+
 Get the current selected path (directory and file) of the file dialog (empty if none).
 
 #### <a name="set_mode">set_mode</a>
-  * void  **[set_mode](#set_mode)**  **(** [int](class_int) mode  **)**
-\\
+  * void  **set_mode**  **(** [int](class_int) mode  **)**
+
 Set the file dialog mode from the MODE_* enum.
 
 #### <a name="get_mode">get_mode</a>
-  * [int](class_int)  **[get_mode](#get_mode)**  **(** **)** const
-\\
+  * [int](class_int)  **get_mode**  **(** **)** const
+
 Get the file dialog mode from the MODE_* enum.

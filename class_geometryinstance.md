@@ -32,11 +32,11 @@ Base node for geometry based visual instances. Shares some common functionality 
 ###  Member Function Description  
 
 #### <a name="set_material_override">set_material_override</a>
-  * void  **[set_material_override](#set_material_override)**  **(** [Object](class_object) material  **)**
-\\
+  * void  **set_material_override**  **(** [Object](class_object) material  **)**
+
 Set the material override for the whole geometry.
 
 #### <a name="get_material_override">get_material_override</a>
-  * [Object](class_object)  **[get_material_override](#get_material_override)**  **(** **)** const
-\\
+  * [Object](class_object)  **get_material_override**  **(** **)** const
+
 Return the material override for the whole geometry.

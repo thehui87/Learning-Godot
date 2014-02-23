@@ -23,8 +23,8 @@
 ###  Member Function Description  
 
 #### <a name="get_mouse_pos">get_mouse_pos</a>
-  * [Vector2](class_vector2)  **[get_mouse_pos](#get_mouse_pos)**  **(** **)** const
-\\
+  * [Vector2](class_vector2)  **get_mouse_pos**  **(** **)** const
+
 Return the global, unscaled, screen pointer coordinates.
 			If the 2D viewport has been scaled, it may not work well
 			with [[camera|Camera]] or controls.

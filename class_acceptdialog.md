@@ -25,39 +25,39 @@ This dialog is useful for small notifications to the user about an
 ###  Member Function Description  
 
 #### <a name="get_ok">get_ok</a>
-  * [Object](class_object)  **[get_ok](#get_ok)**  **(** **)**
-\\
+  * [Object](class_object)  **get_ok**  **(** **)**
+
 Return the OK Button.
 
 #### <a name="get_label">get_label</a>
-  * [Object](class_object)  **[get_label](#get_label)**  **(** **)**
-\\
+  * [Object](class_object)  **get_label**  **(** **)**
+
 Return the label used for built-in text.
 
 #### <a name="set_hide_on_ok">set_hide_on_ok</a>
-  * void  **[set_hide_on_ok](#set_hide_on_ok)**  **(** [bool](class_bool) enabled  **)**
-\\
+  * void  **set_hide_on_ok**  **(** [bool](class_bool) enabled  **)**
+
 Set whether the dialog is hidden when accepted
 			(default true).
 
 #### <a name="get_hide_on_ok">get_hide_on_ok</a>
-  * [bool](class_bool)  **[get_hide_on_ok](#get_hide_on_ok)**  **(** **)** const
-\\
+  * [bool](class_bool)  **get_hide_on_ok**  **(** **)** const
+
 Return true if the dialog will be hidden when
 			accepted (default true).
 
 #### <a name="register_text_enter">register_text_enter</a>
-  * void  **[register_text_enter](#register_text_enter)**  **(** [Object](class_object) line_edit  **)**
-\\
+  * void  **register_text_enter**  **(** [Object](class_object) line_edit  **)**
+
 Register a [[lineedit|LineEdit]] in the dialog. When the enter
 			key is pressed, the dialog will be accepted.
 
 #### <a name="set_text">set_text</a>
-  * void  **[set_text](#set_text)**  **(** [String](class_string) text  **)**
-\\
+  * void  **set_text**  **(** [String](class_string) text  **)**
+
 Set the built-in label text.
 
 #### <a name="get_text">get_text</a>
-  * [String](class_string)  **[get_text](#get_text)**  **(** **)** const
-\\
+  * [String](class_string)  **get_text**  **(** **)** const
+
 Return the built-in label text.

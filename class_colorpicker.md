@@ -20,11 +20,11 @@ This is a simple color picker [[control|Control]]. It's useful for selecting a c
 ###  Member Function Description  
 
 #### <a name="set_color">set_color</a>
-  * void  **[set_color](#set_color)**  **(** [Color](class_color) color  **)**
-\\
+  * void  **set_color**  **(** [Color](class_color) color  **)**
+
 Select the current color.
 
 #### <a name="get_color">get_color</a>
-  * [Color](class_color)  **[get_color](#get_color)**  **(** **)** const
-\\
+  * [Color](class_color)  **get_color**  **(** **)** const
+
 Return the current (edited) color.

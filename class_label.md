@@ -37,41 +37,41 @@ Label is a control that displays formatted text, optionally autowrapping it to t
 ###  Member Function Description  
 
 #### <a name="set_align">set_align</a>
-  * void  **[set_align](#set_align)**  **(** [int](class_int) align  **)**
-\\
+  * void  **set_align**  **(** [int](class_int) align  **)**
+
 Set the alignmend mode to any of the ALIGN_* enumeration values.
 
 #### <a name="get_align">get_align</a>
-  * [int](class_int)  **[get_align](#get_align)**  **(** **)** const
-\\
+  * [int](class_int)  **get_align**  **(** **)** const
+
 Return the alignmend mode (any of the ALIGN_* enumeration values).
 
 #### <a name="set_text">set_text</a>
-  * void  **[set_text](#set_text)**  **(** [String](class_string) text  **)**
-\\
+  * void  **set_text**  **(** [String](class_string) text  **)**
+
 Set the label text. Text can contain newlines.
 
 #### <a name="get_text">get_text</a>
-  * [String](class_string)  **[get_text](#get_text)**  **(** **)** const
-\\
+  * [String](class_string)  **get_text**  **(** **)** const
+
 Return the label text. Text can contain newlines.
 
 #### <a name="set_autowrap">set_autowrap</a>
-  * void  **[set_autowrap](#set_autowrap)**  **(** [bool](class_bool) enable  **)**
-\\
+  * void  **set_autowrap**  **(** [bool](class_bool) enable  **)**
+
 Set //autowrap// mode. When enabled, autowrap will fit text to the control width, breaking sentences when they exceed the available horizontal space. When disabled, the label minimum width becomes the width of the longest row, and the minimum height large enough to fit all rows.
 
 #### <a name="has_autowrap">has_autowrap</a>
-  * [bool](class_bool)  **[has_autowrap](#has_autowrap)**  **(** **)** const
-\\
+  * [bool](class_bool)  **has_autowrap**  **(** **)** const
+
 Return the state of the //autowrap// mode (see [[#set_autowrap|set_autowrap]]).
 
 #### <a name="get_line_height">get_line_height</a>
-  * [int](class_int)  **[get_line_height](#get_line_height)**  **(** **)** const
-\\
+  * [int](class_int)  **get_line_height**  **(** **)** const
+
 Return the height of a line.
 
 #### <a name="get_line_count">get_line_count</a>
-  * [int](class_int)  **[get_line_count](#get_line_count)**  **(** **)** const
-\\
+  * [int](class_int)  **get_line_count**  **(** **)** const
+
 Return the amount of lines.

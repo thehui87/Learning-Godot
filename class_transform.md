@@ -29,16 +29,16 @@ Transform is used to store transformations, including translations. It consists 
 ###  Member Function Description  
 
 #### <a name="inverse">inverse</a>
-  * [Transform](class_transform)  **[inverse](#inverse)**  **(** **)**
-\\
+  * [Transform](class_transform)  **inverse**  **(** **)**
+
 Returns the inverse of the transform.
 
 #### <a name="xform">xform</a>
-  * var  **[xform](#xform)**  **(** var v  **)**
-\\
+  * var  **xform**  **(** var v  **)**
+
 Transforms vector "v" by this transform.
 
 #### <a name="xform_inv">xform_inv</a>
-  * var  **[xform_inv](#xform_inv)**  **(** var v  **)**
-\\
+  * var  **xform_inv**  **(** var v  **)**
+
 Inverse-transforms vector "v" by this transform.
