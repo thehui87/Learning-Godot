@@ -1,5 +1,6 @@
 #  StreamPeerTCP  
-#####**Inherits:** [StreamPeer](class_streampeer)
+####**Inherits:** [StreamPeer](class_streampeer)
+####**Category:** Core
 
 ###  Brief Description  
 TCP Stream peer.

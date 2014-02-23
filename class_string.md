@@ -1,4 +1,5 @@
 #  String  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 Built-In string class.

@@ -1,5 +1,6 @@
 #  StyleBoxTexture  
-#####**Inherits:** [StyleBox](class_stylebox)
+####**Inherits:** [StyleBox](class_stylebox)
+####**Category:** Core
 
 ###  Brief Description  
 Texture Based 3x3 scale style.

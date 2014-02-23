@@ -1,5 +1,6 @@
 #  Input  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 
@@ -28,4 +29,4 @@
 
 Return the global, unscaled, screen pointer coordinates.
 			If the 2D viewport has been scaled, it may not work well
-			with [[camera|Camera]] or controls.
+			with [Camera](class_camera) or controls.

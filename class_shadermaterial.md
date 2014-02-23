@@ -1,5 +1,6 @@
 #  ShaderMaterial  
-#####**Inherits:** [Material](class_material)
+####**Inherits:** [Material](class_material)
+####**Category:** Core
 
 ###  Brief Description  
 

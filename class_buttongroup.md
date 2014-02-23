@@ -1,5 +1,6 @@
 #  ButtonGroup  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Group of Buttons.
@@ -12,7 +13,7 @@ Group of Buttons.
   * void  **[`set_pressed_button`](#set_pressed_button)**  **(** [BaseButton](class_basebutton) button  **)**
 
 ###  Description  
-Group of [[button|Button]]s. All direct and indirect children buttons become radios. Only one allows being pressed.
+Group of [Button](class_button)s. All direct and indirect children buttons become radios. Only one allows being pressed.
 
 ###  Member Function Description  
 

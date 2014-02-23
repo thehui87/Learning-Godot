@@ -1,5 +1,6 @@
 #  Viewport  
-#####**Inherits:** [Node](class_node)
+####**Inherits:** [Node](class_node)
+####**Category:** Core
 
 ###  Brief Description  
 Creates a sub-view into the screen.
@@ -35,15 +36,15 @@ Creates a sub-view into the screen.
   *  **`size_changed`**  **(** **)**
 
 ###  Description  
-A Viewport creates a different view into the screen, or a sub-view inside another viewport. Children 2D Nodes will display on it, and children Camera 3D nodes will renderon it too.\\
+A Viewport creates a different view into the screen, or a sub-view inside another viewport. Children 2D Nodes will display on it, and children Camera 3D nodes will renderon it too.
 
-	Optionally, a viewport can have it's own 2D or 3D world, so they don't share what they draw with other viewports.\\
+	Optionally, a viewport can have it's own 2D or 3D world, so they don't share what they draw with other viewports.
 
-	If a viewport is a child of a [[control|Control]], it will automatically take up it's same rect and position, otherwise they must be set manually.\\
+	If a viewport is a child of a [Control](class_control), it will automatically take up it's same rect and position, otherwise they must be set manually.
 
-	Viewports can also choose to be audio listeners, so they generate positional audio depending on a 2D or 3D camera child of it.\\
+	Viewports can also choose to be audio listeners, so they generate positional audio depending on a 2D or 3D camera child of it.
 
-	Also, viewports can be assigned to different screens in the situation while devices have multiple screens.\\
+	Also, viewports can be assigned to different screens in the situation while devices have multiple screens.
 
 	Finaly, viewports can also behave as render targets, in which case they will not be visible unless the associated texture is used to draw.
 

@@ -1,5 +1,6 @@
 #  CanvasLayer  
-#####**Inherits:** [Node](class_node)
+####**Inherits:** [Node](class_node)
+####**Category:** Core
 
 ###  Brief Description  
 Canvas Item layer.
@@ -19,7 +20,7 @@ Canvas Item layer.
   * [RID](class_rid)  **[`get_viewport`](#get_viewport)**  **(** **)** const
 
 ###  Description  
-Canvas Item layer. [[canvasitem|CanvasItem]] nodes that are direct or indirect children of a [[canvaslayer|CanvasLayer]] will be drawn in that layer. The layer is a numeric index that defines the draw order. The default 2D scene renders with index 0, so a [[canvaslayer|CanvasLayer]] with index -1 will be drawn below, and one with index 1 will be drawn above. This is very useful for HUDs (in layer 1+ or above), or backgrounds (in layer -1 or below).
+Canvas Item layer. [CanvasItem](class_canvasitem) nodes that are direct or indirect children of a [CanvasLayer](class_canvaslayer) will be drawn in that layer. The layer is a numeric index that defines the draw order. The default 2D scene renders with index 0, so a [CanvasLayer](class_canvaslayer) with index -1 will be drawn below, and one with index 1 will be drawn above. This is very useful for HUDs (in layer 1+ or above), or backgrounds (in layer -1 or below).
 
 ###  Member Function Description  
 
@@ -76,7 +77,7 @@ Return the base scale for this layer (helper).
 #### <a name="get_world_2d">get_world_2d</a>
   * Canvas  **`get_world_2d`**  **(** **)** const
 
-Return the [[world2d|World2D]] used by this layer.
+Return the [World2D](class_world2d) used by this layer.
 
 #### <a name="get_viewport">get_viewport</a>
   * [RID](class_rid)  **`get_viewport`**  **(** **)** const

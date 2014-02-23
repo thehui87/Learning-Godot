@@ -1,5 +1,6 @@
 #  GridContainer  
-#####**Inherits:** [Container](class_container)
+####**Inherits:** [Container](class_container)
+####**Category:** Core
 
 ###  Brief Description  
 

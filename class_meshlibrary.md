@@ -1,5 +1,6 @@
 #  MeshLibrary  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Library of meshes.
@@ -18,7 +19,7 @@ Library of meshes.
   * [int](class_int)  **[`get_last_unused_item_id`](#get_last_unused_item_id)**  **(** **)** const
 
 ###  Description  
-Library of meshes. Contains a list of [[mesh|Mesh]] resources, each with name and ID. Useful for GridMap or painting Terrain.
+Library of meshes. Contains a list of [Mesh](class_mesh) resources, each with name and ID. Useful for GridMap or painting Terrain.
 
 ###  Member Function Description  
 

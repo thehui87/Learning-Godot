@@ -1,5 +1,6 @@
 #  TileSet  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Tile library for tilemaps.
@@ -24,7 +25,7 @@ Tile library for tilemaps.
   * [int](class_int)  **[`find_tile_by_name`](#find_tile_by_name)**  **(** [String](class_string) name  **)** const
 
 ###  Description  
-A TileSet is a library of tiles for a [[tilemap|TileMap]]. It contains a list of tiles, each consisting of a sprite and optional collision shapes.
+A TileSet is a library of tiles for a [TileMap](class_tilemap). It contains a list of tiles, each consisting of a sprite and optional collision shapes.
 
 ###  Member Function Description  
 

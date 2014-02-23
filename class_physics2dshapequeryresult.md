@@ -1,5 +1,6 @@
 #  Physics2DShapeQueryResult  
-#####**Inherits:** [Reference](class_reference)
+####**Inherits:** [Reference](class_reference)
+####**Category:** Core
 
 ###  Brief Description  
 

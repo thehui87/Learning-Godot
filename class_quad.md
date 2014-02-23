@@ -1,5 +1,6 @@
 #  Quad  
-#####**Inherits:** [GeometryInstance](class_geometryinstance)
+####**Inherits:** [GeometryInstance](class_geometryinstance)
+####**Category:** Core
 
 ###  Brief Description  
 

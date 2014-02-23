@@ -1,5 +1,6 @@
 #  ResourceLoader  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 Resource Loader.
@@ -13,7 +14,7 @@ Resource Loader.
   * [bool](class_bool)  **[`has`](#has)**  **(** [String](class_string) arg0  **)**
 
 ###  Description  
-Resource Loader. This is a static object accessible as [[resourceloader|ResourceLoader]]. GDScript has a simplified load() function, though.
+Resource Loader. This is a static object accessible as [ResourceLoader](class_resourceloader). GDScript has a simplified load() function, though.
 
 ###  Member Function Description  
 

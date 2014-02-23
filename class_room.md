@@ -1,5 +1,6 @@
 #  Room  
-#####**Inherits:** [VisualInstance](class_visualinstance)
+####**Inherits:** [VisualInstance](class_visualinstance)
+####**Category:** Core
 
 ###  Brief Description  
 Room data resource.

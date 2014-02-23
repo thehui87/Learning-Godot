@@ -1,5 +1,6 @@
 #  PacketPeer  
-#####**Inherits:** [Reference](class_reference)
+####**Inherits:** [Reference](class_reference)
+####**Category:** Core
 
 ###  Brief Description  
 Abstraction and base class for packet-based protocols.

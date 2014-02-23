@@ -1,5 +1,6 @@
 #  RichTextLabel  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Label that displays rich text.

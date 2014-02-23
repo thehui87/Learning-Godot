@@ -1,8 +1,9 @@
 #  HSplitContainer  
-#####**Inherits:** [SplitContainer](class_splitcontainer)
+####**Inherits:** [SplitContainer](class_splitcontainer)
+####**Category:** Core
 
 ###  Brief Description  
 Horizontal split container.
 
 ###  Description  
-Horizontal split container. See [[splitcontainer|SplitContainer]]. This goes from left to right.
+Horizontal split container. See [SplitContainer](class_splitcontainer). This goes from left to right.

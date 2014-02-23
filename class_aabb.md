@@ -1,4 +1,5 @@
 #  AABB  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 Axis-Aligned Bounding Box.
@@ -40,58 +41,58 @@ AABB provides an 3D Axis-Aligned Bounding Box. It consists of a
 #### <a name="encloses">encloses</a>
   * [bool](class_bool)  **`encloses`**  **(** [AABB](class_aabb) with  **)**
 
-Return true if this [[aabb|AABB]] completely encloses another
+Return true if this [AABB](class_aabb) completely encloses another
 			one.
 
 #### <a name="expand">expand</a>
   * [AABB](class_aabb)  **`expand`**  **(** [Vector3](class_vector3) to_point  **)**
 
-Return this [[aabb|AABB]] expanded to include a given
+Return this [AABB](class_aabb) expanded to include a given
 			point.
 
 #### <a name="get_area">get_area</a>
   * [real](class_real)  **`get_area`**  **(** **)**
 
-Get the area inside the [[aabb|AABB]]
+Get the area inside the [AABB](class_aabb)
 
 #### <a name="get_endpoint">get_endpoint</a>
   * [Vector3](class_vector3)  **`get_endpoint`**  **(** [int](class_int) idx  **)**
 
-Get the position of the 8 endpoints of the [[aabb|AABB]] in space.
+Get the position of the 8 endpoints of the [AABB](class_aabb) in space.
 
 #### <a name="get_longest_axis">get_longest_axis</a>
   * [Vector3](class_vector3)  **`get_longest_axis`**  **(** **)**
 
-Return the normalized longest axis of the [[aabb|AABB]]
+Return the normalized longest axis of the [AABB](class_aabb)
 
 #### <a name="get_longest_axis_index">get_longest_axis_index</a>
   * [int](class_int)  **`get_longest_axis_index`**  **(** **)**
 
-Return the index of the longest axis of the [[aabb|AABB]]
-			(according to [[vector3|Vector3]]::AXIS* enum).
+Return the index of the longest axis of the [AABB](class_aabb)
+			(according to [Vector3](class_vector3)::AXIS* enum).
 
 #### <a name="get_longest_axis_size">get_longest_axis_size</a>
   * [real](class_real)  **`get_longest_axis_size`**  **(** **)**
 
 Return the scalar length of the longest axis of the
-			[[aabb|AABB]].
+			[AABB](class_aabb).
 
 #### <a name="get_shortest_axis">get_shortest_axis</a>
   * [Vector3](class_vector3)  **`get_shortest_axis`**  **(** **)**
 
-Return the normalized shortest axis of the [[aabb|AABB]]
+Return the normalized shortest axis of the [AABB](class_aabb)
 
 #### <a name="get_shortest_axis_index">get_shortest_axis_index</a>
   * [int](class_int)  **`get_shortest_axis_index`**  **(** **)**
 
-Return the index of the shortest axis of the [[aabb|AABB]]
-			(according to [[vector3|Vector3]]::AXIS* enum).
+Return the index of the shortest axis of the [AABB](class_aabb)
+			(according to [Vector3](class_vector3)::AXIS* enum).
 
 #### <a name="get_shortest_axis_size">get_shortest_axis_size</a>
   * [real](class_real)  **`get_shortest_axis_size`**  **(** **)**
 
 Return the scalar length of the shortest axis of the
-			[[aabb|AABB]].
+			[AABB](class_aabb).
 
 #### <a name="get_support">get_support</a>
   * [Vector3](class_vector3)  **`get_support`**  **(** [Vector3](class_vector3) dir  **)**
@@ -108,28 +109,28 @@ Return a copy of the AABB grown a given a mount of
 #### <a name="has_no_area">has_no_area</a>
   * [bool](class_bool)  **`has_no_area`**  **(** **)**
 
-Return true if the [[aabb|AABB]] is flat or empty.
+Return true if the [AABB](class_aabb) is flat or empty.
 
 #### <a name="has_no_surface">has_no_surface</a>
   * [bool](class_bool)  **`has_no_surface`**  **(** **)**
 
-Return true if the [[aabb|AABB]] is empty.
+Return true if the [AABB](class_aabb) is empty.
 
 #### <a name="has_point">has_point</a>
   * [bool](class_bool)  **`has_point`**  **(** [Vector3](class_vector3) point  **)**
 
-Return true if the [[aabb|AABB]] contains a point.
+Return true if the [AABB](class_aabb) contains a point.
 
 #### <a name="intersection">intersection</a>
   * [AABB](class_aabb)  **`intersection`**  **(** [AABB](class_aabb) with  **)**
 
-Return the intersection between two [[aabb|AABB]]s. An
+Return the intersection between two [AABB](class_aabb)s. An
 			empty AABB (size 0,0,0) is returned on failure.
 
 #### <a name="intersects">intersects</a>
   * [bool](class_bool)  **`intersects`**  **(** [AABB](class_aabb) with  **)**
 
-Return true if the [[aabb|AABB]] overlaps with another.
+Return true if the [AABB](class_aabb) overlaps with another.
 
 #### <a name="intersects_plane">intersects_plane</a>
   * [bool](class_bool)  **`intersects_plane`**  **(** [Plane](class_plane) plane  **)**
@@ -139,7 +140,7 @@ Return true if the AABB is at both sides of a plane.
 #### <a name="merge">merge</a>
   * [AABB](class_aabb)  **`merge`**  **(** [AABB](class_aabb) with  **)**
 
-Combine this [[aabb|AABB]] with another one, a larger one
+Combine this [AABB](class_aabb) with another one, a larger one
 			is returned that contains both.
 
 #### <a name="AABB">AABB</a>

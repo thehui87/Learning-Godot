@@ -1,5 +1,6 @@
 #  ConcavePolygonShape  
-#####**Inherits:** [Shape](class_shape)
+####**Inherits:** [Shape](class_shape)
+####**Category:** Core
 
 ###  Brief Description  
 Concave polygon shape.
@@ -9,7 +10,7 @@ Concave polygon shape.
   * [Vector3Array](class_vector3array)  **[`get_faces`](#get_faces)**  **(** **)** const
 
 ###  Description  
-Concave polygon shape resource, which can be set into a [[physicsbody|PhysicsBody]] or area."#10;           This shape is created by feeding a list of triangles.
+Concave polygon shape resource, which can be set into a [PhysicsBody](class_physicsbody) or area."#10;           This shape is created by feeding a list of triangles.
 
 ###  Member Function Description  
 

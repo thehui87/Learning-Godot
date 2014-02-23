@@ -1,5 +1,6 @@
 #  PhysicsShapeQueryResult  
-#####**Inherits:** [Reference](class_reference)
+####**Inherits:** [Reference](class_reference)
+####**Category:** Core
 
 ###  Brief Description  
 Result of a shape query in Physics2DServer.

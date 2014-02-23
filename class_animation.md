@@ -1,5 +1,6 @@
 #  Animation  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Contains data used to animate everything in the engine.
@@ -51,8 +52,8 @@ Contains data used to animate everything in the engine.
   * **INTERPOLATION_CUBIC** = **2** - Cubic interpolation.
 
 ###  Description  
-An Animation resource contains data used to animate everything in the engine. Animations are divided into tracks, and each track must be linked to a node. The state of that node can be changed through time, by adding timed keys (events) to the track. \\
- Animations are just data containers, and must be added to odes such as an [[animationplayer|AnimationPlayer]] or [[animationtreeplayer|AnimationTreePlayer]] to be played back.
+An Animation resource contains data used to animate everything in the engine. Animations are divided into tracks, and each track must be linked to a node. The state of that node can be changed through time, by adding timed keys (events) to the track. 
+ Animations are just data containers, and must be added to odes such as an [AnimationPlayer](class_animationplayer) or [AnimationTreePlayer](class_animationtreeplayer) to be played back.
 
 ###  Member Function Description  
 
@@ -79,7 +80,7 @@ Get the type of a track.
 #### <a name="track_get_path">track_get_path</a>
   * [NodePath](class_nodepath)  **`track_get_path`**  **(** [int](class_int) idx  **)** const
 
-Get the path of a track. for more information on the path format, see [[#track_set_path|track_set_path]]
+Get the path of a track. for more information on the path format, see [`track_set_path`](#track_set_path)
 
 #### <a name="track_set_path">track_set_path</a>
   * void  **`track_set_path`**  **(** [int](class_int) idx, [NodePath](class_nodepath) path  **)**
@@ -166,7 +167,7 @@ Return the interpolation type of a given track, from the INTERPOLATION_* enum.
 #### <a name="transform_track_interpolate">transform_track_interpolate</a>
   * [Array](class_array)  **`transform_track_interpolate`**  **(** [int](class_int) idx, [real](class_real) time_sec  **)** const
 
-Return the interpolated value of a transform track at a given time (in seconds). An array consisting of 3 elements: position ([[vector3|Vector3]]), rotation ([[quat|Quat]]) and scale ([[vector3|Vector3]]).
+Return the interpolated value of a transform track at a given time (in seconds). An array consisting of 3 elements: position ([Vector3](class_vector3)), rotation ([Quat](class_quat)) and scale ([Vector3](class_vector3)).
 
 #### <a name="value_track_set_continuous">value_track_set_continuous</a>
   * void  **`value_track_set_continuous`**  **(** [int](class_int) idx, [bool](class_bool) continuous  **)**

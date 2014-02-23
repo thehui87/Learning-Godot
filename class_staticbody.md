@@ -1,5 +1,6 @@
 #  StaticBody  
-#####**Inherits:** [PhysicsBody](class_physicsbody)
+####**Inherits:** [PhysicsBody](class_physicsbody)
+####**Category:** Core
 
 ###  Brief Description  
 PhysicsBody for static collision objects.
@@ -13,6 +14,6 @@ PhysicsBody for static collision objects.
   * [Vector3](class_vector3)  **[`get_constant_angular_velocity`](#get_constant_angular_velocity)**  **(** **)** const
 
 ###  Description  
-StaticBody implements a static collision [[node|Node]], by utilizing a rigid body in the [[physicsserver|PhysicsServer]]. Static bodies are used for static collision. For more information on physics body nodes, see [[physicsbody|PhysicsBody]].
+StaticBody implements a static collision [Node](class_node), by utilizing a rigid body in the [PhysicsServer](class_physicsserver). Static bodies are used for static collision. For more information on physics body nodes, see [PhysicsBody](class_physicsbody).
 
 ###  Member Function Description  

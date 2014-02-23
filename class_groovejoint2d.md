@@ -1,5 +1,6 @@
 #  GrooveJoint2D  
-#####**Inherits:** [Joint2D](class_joint2d)
+####**Inherits:** [Joint2D](class_joint2d)
+####**Category:** Core
 
 ###  Brief Description  
 Groove constraint for 2D physics.

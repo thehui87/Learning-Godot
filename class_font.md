@@ -1,5 +1,6 @@
 #  Font  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Internationalized font and text drawing support.
@@ -53,7 +54,7 @@ Return the font descent (number of pixels below the baseline).
 #### <a name="add_kerning_pair">add_kerning_pair</a>
   * void  **`add_kerning_pair`**  **(** [int](class_int) char_a, [int](class_int) char_b, [int](class_int) kerning  **)**
 
-Add a kerning pair to the [[font|Font]] as a difference. Kerning pairs are special cases where a typeface advance is determined by the next character.
+Add a kerning pair to the [Font](class_font) as a difference. Kerning pairs are special cases where a typeface advance is determined by the next character.
 
 #### <a name="get_kerning_pair">get_kerning_pair</a>
   * [int](class_int)  **`get_kerning_pair`**  **(** [int](class_int) arg0, [int](class_int) arg1  **)** const
@@ -63,7 +64,7 @@ Return a kerning pair as a difference. Kerning pairs are special cases where a t
 #### <a name="add_texture">add_texture</a>
   * void  **`add_texture`**  **(** [Texture](class_texture) texture  **)**
 
-Add a texture to the [[font|Font]].
+Add a texture to the [Font](class_font).
 
 #### <a name="add_char">add_char</a>
   * void  **`add_char`**  **(** [int](class_int) character, [int](class_int) texture, [Rect2](class_rect2) rect, [Vector2](class_vector2) align=Vector2(0,0), [real](class_real) advance=-1  **)**
@@ -88,9 +89,9 @@ Clear all the font data.
 #### <a name="draw">draw</a>
   * void  **`draw`**  **(** [RID](class_rid) canvas_item, [Vector2](class_vector2) pos, [String](class_string) string, [Color](class_color) modulate=Color(1,1,1,1), [int](class_int) clip_w=-1  **)** const
 
-Draw "string" into a canvas item using the font at a given "pos" position, with "modulate" color, and optionally clipping the width. "pos" specifies te baseline, not the top. To draw from the top, //ascent// must be added to the Y axis.
+Draw "string" into a canvas item using the font at a given "pos" position, with "modulate" color, and optionally clipping the width. "pos" specifies te baseline, not the top. To draw from the top, _ascent_ must be added to the Y axis.
 
 #### <a name="draw_char">draw_char</a>
   * [real](class_real)  **`draw_char`**  **(** [RID](class_rid) canvas_item, [Vector2](class_vector2) pos, [int](class_int) char, [int](class_int) next=-1, [Color](class_color) modulate=Color(1,1,1,1)  **)** const
 
-Draw character "char" into a canvas item using the font at a given "pos" position, with "modulate" color, and optionally kerning if "next" is apassed. clipping the width. "pos" specifies te baseline, not the top. To draw from the top, //ascent// must be added to the Y axis. The width used by the character is returned, making this function useful for drawing strings character by character.
+Draw character "char" into a canvas item using the font at a given "pos" position, with "modulate" color, and optionally kerning if "next" is apassed. clipping the width. "pos" specifies te baseline, not the top. To draw from the top, _ascent_ must be added to the Y axis. The width used by the character is returned, making this function useful for drawing strings character by character.

@@ -1,5 +1,6 @@
 #  CapsuleShape  
-#####**Inherits:** [Shape](class_shape)
+####**Inherits:** [Shape](class_shape)
+####**Category:** Core
 
 ###  Brief Description  
 Capsule shape resource.
@@ -11,7 +12,7 @@ Capsule shape resource.
   * [real](class_real)  **[`get_height`](#get_height)**  **(** **)** const
 
 ###  Description  
-Capsule shape resource, which can be set into a [[physicsbody|PhysicsBody]] or area.
+Capsule shape resource, which can be set into a [PhysicsBody](class_physicsbody) or area.
 
 ###  Member Function Description  
 

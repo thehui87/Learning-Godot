@@ -1,5 +1,6 @@
 #  BoxShape  
-#####**Inherits:** [Shape](class_shape)
+####**Inherits:** [Shape](class_shape)
+####**Category:** Core
 
 ###  Brief Description  
 Box shape resource.
@@ -9,7 +10,7 @@ Box shape resource.
   * [Vector3](class_vector3)  **[`get_extents`](#get_extents)**  **(** **)** const
 
 ###  Description  
-Box shape resource, which can be set into a [[physicsbody|PhysicsBody]] or area.
+Box shape resource, which can be set into a [PhysicsBody](class_physicsbody) or area.
 
 ###  Member Function Description  
 

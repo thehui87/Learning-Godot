@@ -1,4 +1,5 @@
 #  bool  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 Boolean built-in type

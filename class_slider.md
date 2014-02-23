@@ -1,5 +1,6 @@
 #  Slider  
-#####**Inherits:** [Range](class_range)
+####**Inherits:** [Range](class_range)
+####**Category:** Core
 
 ###  Brief Description  
 Base class for GUI Sliders.

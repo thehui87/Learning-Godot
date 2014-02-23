@@ -1,5 +1,6 @@
 #  StyleBoxImageMask  
-#####**Inherits:** [StyleBox](class_stylebox)
+####**Inherits:** [StyleBox](class_stylebox)
+####**Category:** Core
 
 ###  Brief Description  
 Image mask based StyleBox, for mask test.
@@ -13,7 +14,7 @@ Image mask based StyleBox, for mask test.
   * [real](class_real)  **[`get_expand_margin_size`](#get_expand_margin_size)**  **(** [int](class_int) arg0  **)** const
 
 ###  Description  
-This StyleBox is similar to [[styleboxtexture|StyleBoxTexture]], but only meant to be used for mask testing. It takes an image and applies stretch rules to determine if the poit clicked is masked or not.
+This StyleBox is similar to [StyleBoxTexture](class_styleboxtexture), but only meant to be used for mask testing. It takes an image and applies stretch rules to determine if the poit clicked is masked or not.
 
 ###  Member Function Description  
 
@@ -25,17 +26,17 @@ Set the image used for mask testing. Pixels (converted to grey) that have a valu
 #### <a name="get_image">get_image</a>
   * [Image](class_image)  **`get_image`**  **(** **)** const
 
-Return the image used for mask testing. (see [[#set_imag|set_imag]]).
+Return the image used for mask testing. (see [`set_imag`](#set_imag)).
 
 #### <a name="set_expand">set_expand</a>
   * void  **`set_expand`**  **(** [bool](class_bool) expand  **)**
 
-Set the expand property (default). When expanding, the image will use the same rules as [[styleboxtexture|StyleBoxTexture]] for expand. If not expanding, the image will always be tested at its original size.
+Set the expand property (default). When expanding, the image will use the same rules as [StyleBoxTexture](class_styleboxtexture) for expand. If not expanding, the image will always be tested at its original size.
 
 #### <a name="get_expand">get_expand</a>
   * [bool](class_bool)  **`get_expand`**  **(** **)** const
 
-Return wether the expand property is set(default). When expanding, the image will use the same rules as [[styleboxtexture|StyleBoxTexture]] for expand. If not expanding, the image will always be tested at its original size.
+Return wether the expand property is set(default). When expanding, the image will use the same rules as [StyleBoxTexture](class_styleboxtexture) for expand. If not expanding, the image will always be tested at its original size.
 
 #### <a name="set_expand_margin_size">set_expand_margin_size</a>
   * void  **`set_expand_margin_size`**  **(** [int](class_int) margin, [real](class_real) size  **)**

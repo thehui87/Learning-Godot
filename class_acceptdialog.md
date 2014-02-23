@@ -1,5 +1,6 @@
 #  AcceptDialog  
-#####**Inherits:** [WindowDialog](class_windowdialog)
+####**Inherits:** [WindowDialog](class_windowdialog)
+####**Category:** Core
 
 ###  Brief Description  
 Base dialog for user notification.
@@ -50,7 +51,7 @@ Return true if the dialog will be hidden when
 #### <a name="register_text_enter">register_text_enter</a>
   * void  **`register_text_enter`**  **(** [Object](class_object) line_edit  **)**
 
-Register a [[lineedit|LineEdit]] in the dialog. When the enter
+Register a [LineEdit](class_lineedit) in the dialog. When the enter
 			key is pressed, the dialog will be accepted.
 
 #### <a name="set_text">set_text</a>

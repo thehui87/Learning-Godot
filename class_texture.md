@@ -1,5 +1,6 @@
 #  Texture  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Texture for 2D and 3D.
@@ -24,7 +25,7 @@ Texture for 2D and 3D.
   * **FLAGS_DEFAULT** = **7** - Default flags
 
 ###  Description  
-A texture works by registering an image in the video hardware, which then can be used in 3D models or 2D [[sprite|Sprite]] or GUI [[control|Control]]s.
+A texture works by registering an image in the video hardware, which then can be used in 3D models or 2D [Sprite](class_sprite) or GUI [Control](class_control)s.
 
 ###  Member Function Description  
 
@@ -46,7 +47,7 @@ Return the texture size.
 #### <a name="get_rid">get_rid</a>
   * [RID](class_rid)  **`get_rid`**  **(** **)** const
 
-Return the texture RID as used in the [[visualserver|VisualServer]].
+Return the texture RID as used in the [VisualServer](class_visualserver).
 
 #### <a name="set_flags">set_flags</a>
   * void  **`set_flags`**  **(** [int](class_int) flags  **)**
@@ -61,4 +62,4 @@ Return the current texture flags.
 #### <a name="draw">draw</a>
   * void  **`draw`**  **(** [RID](class_rid) canvas_item, [Vector2](class_vector2) pos, [Color](class_color) modulate=Color(1,1,1,1)  **)** const
 
-Draw the texture into a a [[visualserver|VisualServer]] canvas item.
+Draw the texture into a a [VisualServer](class_visualserver) canvas item.

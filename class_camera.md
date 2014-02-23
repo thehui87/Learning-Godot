@@ -1,5 +1,6 @@
 #  Camera  
-#####**Inherits:** [Spatial](class_spatial)
+####**Inherits:** [Spatial](class_spatial)
+####**Category:** Core
 
 ###  Brief Description  
 Camera node, displays from a point of view.
@@ -35,46 +36,46 @@ Camera node, displays from a point of view.
   * **PROJECTION_ORTHOGONAL** = **1** - Orthogonal Projection (objects remain the same size on the screen no matter how far away they are).
 
 ###  Description  
-Camera is a special node that displays what is visible from its current location. Cameras register themselves in the nearest [[viewport|Viewport]] node (when ascending the tree). Only one camera can be active per viewport. If no viewport is available ascending the tree, the Camera will register in the global viewport. In other words, a Camera just provides //3D// display capabilities to a [[viewport|Viewport]], and, without one, a [Scene] registered in that [[viewport|Viewport]] (or higher viewports) can't be displayed.
+Camera is a special node that displays what is visible from its current location. Cameras register themselves in the nearest [Viewport](class_viewport) node (when ascending the tree). Only one camera can be active per viewport. If no viewport is available ascending the tree, the Camera will register in the global viewport. In other words, a Camera just provides _3D_ display capabilities to a [Viewport](class_viewport), and, without one, a [Scene] registered in that [Viewport](class_viewport) (or higher viewports) can't be displayed.
 
 ###  Member Function Description  
 
 #### <a name="project_ray_normal">project_ray_normal</a>
   * [Vector3](class_vector3)  **`project_ray_normal`**  **(** [Vector2](class_vector2) screen_point  **)** const
 
-Return a normal vector in worldspace, that is the result of projecting a point on the [[viewport|Viewport]] rectangle by the camera proyection. This is useful for casting rays in the form of (origin,normal) for object intersection or picking.
+Return a normal vector in worldspace, that is the result of projecting a point on the [Viewport](class_viewport) rectangle by the camera proyection. This is useful for casting rays in the form of (origin,normal) for object intersection or picking.
 
 #### <a name="project_ray_origin">project_ray_origin</a>
   * [Vector3](class_vector3)  **`project_ray_origin`**  **(** [Vector2](class_vector2) screen_point  **)** const
 
-Return a 3D position in worldspace, that is the result of projecting a point on the [[viewport|Viewport]] rectangle by the camera proyection. This is useful for casting rays in the form of (origin,normal) for object intersection or picking.
+Return a 3D position in worldspace, that is the result of projecting a point on the [Viewport](class_viewport) rectangle by the camera proyection. This is useful for casting rays in the form of (origin,normal) for object intersection or picking.
 
 #### <a name="unproject_position">unproject_position</a>
   * [Vector2](class_vector2)  **`unproject_position`**  **(** [Vector3](class_vector3) world_point  **)** const
 
-Return how a 3D point in worldpsace maps to a 2D coordinate in the [[viewport|Viewport]] rectangle.
+Return how a 3D point in worldpsace maps to a 2D coordinate in the [Viewport](class_viewport) rectangle.
 
 #### <a name="set_perspective">set_perspective</a>
   * void  **`set_perspective`**  **(** [real](class_real) fov, [real](class_real) z_near, [real](class_real) z_far  **)**
 
-Set the camera projection to perspective mode, by specifying a //FOV// Y angle in degrees (FOV means Field of View), and the //near// and //far// clip planes in worldspace units.
+Set the camera projection to perspective mode, by specifying a _FOV_ Y angle in degrees (FOV means Field of View), and the _near_ and _far_ clip planes in worldspace units.
 
 #### <a name="set_orthogonal">set_orthogonal</a>
   * void  **`set_orthogonal`**  **(** [real](class_real) size, [real](class_real) z_near, [real](class_real) z_far  **)**
 
-Set the camera projection to orthogonal mode, by specifying a"#10;"#9;"#9;"#9;width and the //near// and //far// clip planes in worldspace units. (As a hint, 2D games often use this projection, with values specified in pixels)
+Set the camera projection to orthogonal mode, by specifying a"#10;"#9;"#9;"#9;width and the _near_ and _far_ clip planes in worldspace units. (As a hint, 2D games often use this projection, with values specified in pixels)
 
 #### <a name="make_current">make_current</a>
   * void  **`make_current`**  **(** **)**
 
-Make this camera the current Camera for the [[viewport|Viewport]] (see class description). If the Camera Node is outside the scene tree, it will attempt to become current once it"apos;s added.
+Make this camera the current Camera for the [Viewport](class_viewport) (see class description). If the Camera Node is outside the scene tree, it will attempt to become current once it"apos;s added.
 
 #### <a name="is_current">is_current</a>
   * [bool](class_bool)  **`is_current`**  **(** **)** const
 
-Return wether the Camera is the current one in the [[viewport|Viewport]], or plans to become current (if outside the scene tree).
+Return wether the Camera is the current one in the [Viewport](class_viewport), or plans to become current (if outside the scene tree).
 
 #### <a name="get_camera_transform">get_camera_transform</a>
   * [Transform](class_transform)  **`get_camera_transform`**  **(** **)** const
 
-Get the camera transform. Subclassed cameras (such as CharacterCamera) may provide different transforms than the [[node|Node]] transform.
+Get the camera transform. Subclassed cameras (such as CharacterCamera) may provide different transforms than the [Node](class_node) transform.

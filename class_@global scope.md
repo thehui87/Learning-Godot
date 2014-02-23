@@ -1,4 +1,5 @@
 #  @Global Scope  
+####**Category:** Core
 
 ###  Brief Description  
 Global scope constants and variables.

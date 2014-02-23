@@ -1,5 +1,6 @@
 #  SceneMainLoop  
-#####**Inherits:** [MainLoop](class_mainloop)
+####**Inherits:** [MainLoop](class_mainloop)
+####**Category:** Core
 
 ###  Brief Description  
 Scene-Based implementation of the MainLoop.
@@ -33,7 +34,7 @@ Scene-Based implementation of the MainLoop.
   * **GROUP_CALL_UNIQUE** = **4** - Call a group only once, even if call is performed many times.
 
 ###  Description  
-Scene implementation of the MainLoop. All scenes edited using the editor are loaded with this main loop, which provides the base for the scene system.\\
+Scene implementation of the MainLoop. All scenes edited using the editor are loaded with this main loop, which provides the base for the scene system.
 
 	All group operations (get nodes, call, etc) is performed here. All nodes in a group can be called a specific functions, set a property or notified. This happens in scene-order.
 

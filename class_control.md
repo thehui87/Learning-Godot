@@ -1,5 +1,6 @@
 #  Control  
-#####**Inherits:** [CanvasItem](class_canvasitem)
+####**Inherits:** [CanvasItem](class_canvasitem)
+####**Category:** Core
 
 ###  Brief Description  
 Control is the base node for all the GUI components.
@@ -123,12 +124,12 @@ Control is the base node for all the GUI components.
 
 ###  Description  
 Control is the base class Node for all the GUI components. Every GUI component inherits from it, directly or indirectly. In this way, sections of the scene tree made of contiguous control nodes, become user interfaces.
-	Controls are relative to the parent position and size by using anchors and margins. This ensures that they can adapt easily in most situation to changing dialog and screen sizes. When more flexibility is desired, [[container|Container]] derived nodes can be used.
+	Controls are relative to the parent position and size by using anchors and margins. This ensures that they can adapt easily in most situation to changing dialog and screen sizes. When more flexibility is desired, [Container](class_container) derived nodes can be used.
 	Anchors work by defining which margin do they follow, and a value relative to it. Allowed anchoring modes are ANCHOR_BEGIN, where the margin is relative to the top or left margins of the parent (in pixels), ANCHOR_END for the right and bottom margins of the parent and ANCHOR_RATIO, which is a ratio from 0 to 1 in the parent range.
-	Input device events ([[inputevent|InputEvent]]) are first sent to the root controls via the [[node#_input|Node._input]], which distribute it through the tree, then delivers them to the adequate one (under cursor or keyboard focus based) by calling [Node._input_event]. There is no need to enable input processing on controls to receive such events. To ensure that no one else will receive the event (not even [[node#_unhandled_input|Node._unhandled_input]]), the control can accept it by calling [[#accept_event|accept_event]].
-	Only one control can hold the keyboard focus (receiving keyboard events), for that the control must define the focus mode with [[#set_focus_mode|set_focus_mode]]. Focus is lost when another control gains it, or the current focus owner is hidden.
-	It is sometimes desired for a control to ignore mouse/pointer events. This is often the case when placing other controls on top of a button, in such cases. Calling [[#set_ignore_mouse|set_ignore_mouse]] enables this function.
-	Finally, controls are skinned according to a [[theme|Theme]]. Setting a [[theme|Theme]] on a control will propagate all the skinning down the tree. Optionally, skinning can be overrided per each control by calling the add_*_override functions, or from the editor.
+	Input device events ([InputEvent](class_inputevent)) are first sent to the root controls via the [Node.`_input`](node#_input), which distribute it through the tree, then delivers them to the adequate one (under cursor or keyboard focus based) by calling [Node._input_event]. There is no need to enable input processing on controls to receive such events. To ensure that no one else will receive the event (not even [Node.`_unhandled_input`](node#_unhandled_input)), the control can accept it by calling [`accept_event`](#accept_event).
+	Only one control can hold the keyboard focus (receiving keyboard events), for that the control must define the focus mode with [`set_focus_mode`](#set_focus_mode). Focus is lost when another control gains it, or the current focus owner is hidden.
+	It is sometimes desired for a control to ignore mouse/pointer events. This is often the case when placing other controls on top of a button, in such cases. Calling [`set_ignore_mouse`](#set_ignore_mouse) enables this function.
+	Finally, controls are skinned according to a [Theme](class_theme). Setting a [Theme](class_theme) on a control will propagate all the skinning down the tree. Optionally, skinning can be overrided per each control by calling the add_*_override functions, or from the editor.
 
 ###  Member Function Description  
 
@@ -145,7 +146,7 @@ Return the minimum size this Control can shrink to. A control will never be disp
 #### <a name="accept_event">accept_event</a>
   * void  **`accept_event`**  **(** **)**
 
-Handles the event, no other control will receive it and it will not be sent to nodes waiting on [[node#_unhandled_input|Node._unhandled_input]] or [[node#_unhandled_key_input|Node._unhandled_key_input]].
+Handles the event, no other control will receive it and it will not be sent to nodes waiting on [Node.`_unhandled_input`](node#_unhandled_input) or [Node.`_unhandled_key_input`](node#_unhandled_key_input).
 
 #### <a name="get_minimum_size">get_minimum_size</a>
   * [Vector2](class_vector2)  **`get_minimum_size`**  **(** **)** const
@@ -155,17 +156,17 @@ Return the minimum size this Control can shrink to. A control will never be disp
 #### <a name="is_window">is_window</a>
   * [bool](class_bool)  **`is_window`**  **(** **)** const
 
-Return wether this control is a //window//. Controls are considered windows when their parent [[node|Node]] is not a Control.
+Return wether this control is a _window_. Controls are considered windows when their parent [Node](class_node) is not a Control.
 
 #### <a name="get_window">get_window</a>
   * [Object](class_object)  **`get_window`**  **(** **)** const
 
-Return the //window// for this control, ascending the scene tree (see [[#is_window|is_window]]).
+Return the _window_ for this control, ascending the scene tree (see [`is_window`](#is_window)).
 
 #### <a name="set_anchor">set_anchor</a>
   * void  **`set_anchor`**  **(** [int](class_int) margin, [int](class_int) anchor_mode  **)**
 
-Change the anchor (ANCHOR_BEGIN, ANCHOR_END, ANCHOR_RATIO) type for a margin (MARGIN_LEFT, MARGIN_TOP, MARGIN_RIGHT, MARGIN_BOTTOM). Changing the anchor mode converts the current margin offset from the previos anchor mode to the new one, so margin offsets ([[#set_margin|set_margin]]) must be done after setting anchors, or at the same time ([[#set_anchor_and_margin|set_anchor_and_margin]]).
+Change the anchor (ANCHOR_BEGIN, ANCHOR_END, ANCHOR_RATIO) type for a margin (MARGIN_LEFT, MARGIN_TOP, MARGIN_RIGHT, MARGIN_BOTTOM). Changing the anchor mode converts the current margin offset from the previos anchor mode to the new one, so margin offsets ([`set_margin`](#set_margin)) must be done after setting anchors, or at the same time ([`set_anchor_and_margin`](#set_anchor_and_margin)).
 
 #### <a name="get_anchor">get_anchor</a>
   * [int](class_int)  **`get_anchor`**  **(** [int](class_int) margin  **)** const
@@ -180,32 +181,32 @@ Set a margin offset. Margin can be one of (MARGIN_LEFT, MARGIN_TOP, MARGIN_RIGHT
 #### <a name="set_anchor_and_margin">set_anchor_and_margin</a>
   * void  **`set_anchor_and_margin`**  **(** [int](class_int) margin, [int](class_int) anchor_mode, [real](class_real) offset  **)**
 
-Change the anchor (ANCHOR_BEGIN, ANCHOR_END, ANCHOR_RATIO) type for a margin (MARGIN_LEFT, MARGIN_TOP, MARGIN_RIGHT, MARGIN_BOTTOM), and also set its offset. This is a helper (see [[#set_anchor|set_anchor]] and [[#set_margin|set_margin]]).
+Change the anchor (ANCHOR_BEGIN, ANCHOR_END, ANCHOR_RATIO) type for a margin (MARGIN_LEFT, MARGIN_TOP, MARGIN_RIGHT, MARGIN_BOTTOM), and also set its offset. This is a helper (see [`set_anchor`](#set_anchor) and [`set_margin`](#set_margin)).
 
 #### <a name="set_begin">set_begin</a>
   * void  **`set_begin`**  **(** [Vector2](class_vector2) pos  **)**
 
-Sets MARGIN_LEFT and MARGIN_TOP at the same time. This is a helper (see [[#set_margin|set_margin]]).
+Sets MARGIN_LEFT and MARGIN_TOP at the same time. This is a helper (see [`set_margin`](#set_margin)).
 
 #### <a name="set_end">set_end</a>
   * void  **`set_end`**  **(** [Vector2](class_vector2) pos  **)**
 
-Sets MARGIN_RIGHT and MARGIN_BOTTOM at the same time. This is a helper (see [[#set_margin|set_margin]]).
+Sets MARGIN_RIGHT and MARGIN_BOTTOM at the same time. This is a helper (see [`set_margin`](#set_margin)).
 
 #### <a name="set_pos">set_pos</a>
   * void  **`set_pos`**  **(** [Vector2](class_vector2) pos  **)**
 
-Move the Control to a new position, relative to the top-left corner of the parent Control, changing all margins if needed and without changing current anchor mode. This is a helper (see [[#set_margin|set_margin]]).
+Move the Control to a new position, relative to the top-left corner of the parent Control, changing all margins if needed and without changing current anchor mode. This is a helper (see [`set_margin`](#set_margin)).
 
 #### <a name="set_size">set_size</a>
   * void  **`set_size`**  **(** [Vector2](class_vector2) size  **)**
 
-Changes MARGIN_RIGHT and MARGIN_BOTTOM to fit a given size. This is a helper (see [[#set_margin|set_margin]]).
+Changes MARGIN_RIGHT and MARGIN_BOTTOM to fit a given size. This is a helper (see [`set_margin`](#set_margin)).
 
 #### <a name="set_global_pos">set_global_pos</a>
   * void  **`set_global_pos`**  **(** [Vector2](class_vector2) pos  **)**
 
-Move the Control to a new position, relative to the top-left corner of the //window// Control, and without changing current anchor mode. (see [[#set_margin|set_margin]]).
+Move the Control to a new position, relative to the top-left corner of the _window_ Control, and without changing current anchor mode. (see [`set_margin`](#set_margin)).
 
 #### <a name="get_margin">get_margin</a>
   * [real](class_real)  **`get_margin`**  **(** [int](class_int) margin  **)** const
@@ -215,7 +216,7 @@ Return a margin offset. Margin can be one of (MARGIN_LEFT, MARGIN_TOP, MARGIN_RI
 #### <a name="get_end">get_end</a>
   * [Vector2](class_vector2)  **`get_end`**  **(** **)** const
 
-Returns MARGIN_LEFT and MARGIN_TOP at the same time. This is a helper (see [[#set_margin|set_margin]]).
+Returns MARGIN_LEFT and MARGIN_TOP at the same time. This is a helper (see [`set_margin`](#set_margin)).
 
 #### <a name="get_pos">get_pos</a>
   * [Vector2](class_vector2)  **`get_pos`**  **(** **)** const
@@ -225,7 +226,7 @@ Returns the Control position, relative to the top-left corner of the parent Cont
 #### <a name="get_size">get_size</a>
   * [Vector2](class_vector2)  **`get_size`**  **(** **)** const
 
-Returns the size of the Control, computed from all margins, however the size returned will **never be smaller than the minimum size reported by [[#get_minimum_size|get_minimum_size]]**. This means that even if end position of the Control rectangle is smaller than the begin position, the Control will still display and interact correctly. (see description, [[#get_minimum_size|get_minimum_size]], [[#set_margin|set_margin]], [[#set_anchor|set_anchor]]).
+Returns the size of the Control, computed from all margins, however the size returned will **never be smaller than the minimum size reported by [`get_minimum_size`](#get_minimum_size)**. This means that even if end position of the Control rectangle is smaller than the begin position, the Control will still display and interact correctly. (see description, [`get_minimum_size`](#get_minimum_size), [`set_margin`](#set_margin), [`set_anchor`](#set_anchor)).
 
 #### <a name="get_global_pos">get_global_pos</a>
   * [Vector2](class_vector2)  **`get_global_pos`**  **(** **)** const
@@ -235,22 +236,22 @@ Returns the Control position, relative to the top-left corner of the parent Cont
 #### <a name="get_rect">get_rect</a>
   * [Rect2](class_rect2)  **`get_rect`**  **(** **)** const
 
-Return position and size of the Control, relative to the top-left corner of the parent Control. This is a helper (see [[#get_pos|get_pos]],[[#get_size|get_size]]).
+Return position and size of the Control, relative to the top-left corner of the parent Control. This is a helper (see [`get_pos`](#get_pos),[`get_size`](#get_size)).
 
 #### <a name="get_global_rect">get_global_rect</a>
   * [Rect2](class_rect2)  **`get_global_rect`**  **(** **)** const
 
-Return position and size of the Control, relative to the top-left corner of the //window// Control. This is a helper (see [[#get_global_pos|get_global_pos]],[[#get_size|get_size]]).
+Return position and size of the Control, relative to the top-left corner of the _window_ Control. This is a helper (see [`get_global_pos`](#get_global_pos),[`get_size`](#get_size)).
 
 #### <a name="set_area_as_parent_rect">set_area_as_parent_rect</a>
   * void  **`set_area_as_parent_rect`**  **(** [int](class_int) margin=0  **)**
 
-Change all margins and anchors, so this Control always takes up the same area as the parent Control. This is a helper (see [[#set_anchor|set_anchor]],[[#set_margin|set_margin]]).
+Change all margins and anchors, so this Control always takes up the same area as the parent Control. This is a helper (see [`set_anchor`](#set_anchor),[`set_margin`](#set_margin)).
 
 #### <a name="show_modal">show_modal</a>
   * void  **`show_modal`**  **(** [bool](class_bool) exclusive=false  **)**
 
-Display a Control as modal. Control must be a subwindow (see [[#set_as_subwindow|set_as_subwindow]]). Modal controls capture the input signals until closed or the area outside them is accessed. When a modal control loses focus, or the ESC key is pressed, they automatically hide. Modal controls are used extensively for popup dialogs and menus.
+Display a Control as modal. Control must be a subwindow (see [`set_as_subwindow`](#set_as_subwindow)). Modal controls capture the input signals until closed or the area outside them is accessed. When a modal control loses focus, or the ESC key is pressed, they automatically hide. Modal controls are used extensively for popup dialogs and menus.
 
 #### <a name="set_focus_mode">set_focus_mode</a>
   * void  **`set_focus_mode`**  **(** [int](class_int) mode  **)**
@@ -260,12 +261,12 @@ Set the focus access mode for the control (FOCUS_NONE, FOCUS_CLICK, FOCUS_ALL). 
 #### <a name="has_focus">has_focus</a>
   * [bool](class_bool)  **`has_focus`**  **(** **)** const
 
-Return wether the Control is the current focused control (see [[#set_focus_mode|set_focus_mode]]).
+Return wether the Control is the current focused control (see [`set_focus_mode`](#set_focus_mode)).
 
 #### <a name="grab_focus">grab_focus</a>
   * void  **`grab_focus`**  **(** **)**
 
-Steal the focus from another control and become the focused control (see [[#set_focus_mode|set_focus_mode]]).
+Steal the focus from another control and become the focused control (see [`set_focus_mode`](#set_focus_mode)).
 
 #### <a name="release_focus">release_focus</a>
   * void  **`release_focus`**  **(** **)**
@@ -310,17 +311,17 @@ Hint for containers, return vertical positioning flags.
 #### <a name="set_theme">set_theme</a>
   * void  **`set_theme`**  **(** [Theme](class_theme) theme  **)**
 
-Override whole the [[theme|Theme]] for this Control and all its children controls.
+Override whole the [Theme](class_theme) for this Control and all its children controls.
 
 #### <a name="get_theme">get_theme</a>
   * [Theme](class_theme)  **`get_theme`**  **(** **)** const
 
-Return a [[theme|Theme]] override, if one exists (see [[#set_theme|set_theme]]).
+Return a [Theme](class_theme) override, if one exists (see [`set_theme`](#set_theme)).
 
 #### <a name="add_icon_override">add_icon_override</a>
   * void  **`add_icon_override`**  **(** [String](class_string) name, [Texture](class_texture) texture  **)**
 
-Override a single icon ([[texture|Texture]]) in the theme of this Control. If texture is empty, override is cleared.
+Override a single icon ([Texture](class_texture)) in the theme of this Control. If texture is empty, override is cleared.
 
 #### <a name="add_style_override">add_style_override</a>
   * void  **`add_style_override`**  **(** [String](class_string) name, [StyleBox](class_stylebox) stylebox  **)**

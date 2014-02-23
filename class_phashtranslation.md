@@ -1,5 +1,6 @@
 #  PHashTranslation  
-#####**Inherits:** [Translation](class_translation)
+####**Inherits:** [Translation](class_translation)
+####**Category:** Core
 
 ###  Brief Description  
 Optimized translation.

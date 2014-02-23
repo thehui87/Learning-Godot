@@ -1,5 +1,6 @@
 #  OS  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 Operating System functions.
@@ -187,7 +188,7 @@ Return the commandline passed to the engine.
 #### <a name="get_main_loop">get_main_loop</a>
   * [Object](class_object)  **`get_main_loop`**  **(** **)** const
 
-Return the main loop object (see [[mainloop|MainLoop]]).
+Return the main loop object (see [MainLoop](class_mainloop)).
 
 #### <a name="get_date">get_date</a>
   * [Dictionary](class_dictionary)  **`get_date`**  **(** **)** const

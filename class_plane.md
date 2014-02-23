@@ -1,4 +1,5 @@
 #  Plane  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 Plane in hessian form.

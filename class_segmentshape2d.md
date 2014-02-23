@@ -1,5 +1,6 @@
 #  SegmentShape2D  
-#####**Inherits:** [Shape2D](class_shape2d)
+####**Inherits:** [Shape2D](class_shape2d)
+####**Category:** Core
 
 ###  Brief Description  
 Segment Shape for 2D Collision Detection.

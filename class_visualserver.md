@@ -1,5 +1,6 @@
 #  VisualServer  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 Server for anything visible.
@@ -282,7 +283,7 @@ Server for anything visible.
   * **INFO_VERTEX_MEM_USED** = **9**
 
 ###  Description  
-Server for anything visible. The visual server is the API backend for everything visible. The whole scene system mounts on it to display.\\
+Server for anything visible. The visual server is the API backend for everything visible. The whole scene system mounts on it to display.
 
 	The visual server is completely opaque, the internals are entirely implementation specific and cannot be accessed.
 

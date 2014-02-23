@@ -1,5 +1,6 @@
 #  TabContainer  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Tabbed Container.
@@ -21,7 +22,7 @@ Tabbed Container.
   *  **`tab_changed`**  **(** [int](class_int) tab  **)**
 
 ###  Description  
-Tabbed Container. Contains several children controls, but shows only one at the same time. Clicking ont he top tabs allows to change the current visible one.\\
+Tabbed Container. Contains several children controls, but shows only one at the same time. Clicking ont he top tabs allows to change the current visible one.
 
 	Children controls of this one automatically.
 

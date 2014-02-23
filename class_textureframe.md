@@ -1,5 +1,6 @@
 #  TextureFrame  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Control Frame that draws a texture.

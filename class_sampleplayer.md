@@ -1,5 +1,6 @@
 #  SamplePlayer  
-#####**Inherits:** [Node](class_node)
+####**Inherits:** [Node](class_node)
+####**Category:** Core
 
 ###  Brief Description  
 Sample Player node.
@@ -73,7 +74,7 @@ Sample Player node.
   * **REVERB_HALL** = **3** - Huge reverb room (cathedral, warehouse).
 
 ###  Description  
-SamplePlayer is a [[node|Node]] meant for simple sample playback. A library of samples is loaded and played back "as is", without positioning or anything.
+SamplePlayer is a [Node](class_node) meant for simple sample playback. A library of samples is loaded and played back "as is", without positioning or anything.
 
 ###  Member Function Description  
 
@@ -95,7 +96,7 @@ Play back sample, given it"apos;s identifier "name". if "unique" is true, all ot
 #### <a name="stop">stop</a>
   * void  **`stop`**  **(** [int](class_int) voice  **)**
 
-Stop a voice "voice". (see [[#play|play]]).
+Stop a voice "voice". (see [`play`](#play)).
 
 #### <a name="set_mix_rate">set_mix_rate</a>
   * void  **`set_mix_rate`**  **(** [int](class_int) voice, [int](class_int) hz  **)**
@@ -125,7 +126,7 @@ Set and enable a filter of a voice, with type "type" (see FILTER_* enum), cutoff
 #### <a name="set_chorus">set_chorus</a>
   * void  **`set_chorus`**  **(** [int](class_int) voice, [real](class_real) send  **)**
 
-Set the chorus send level of a voice (0 to 1). For setting chorus parameters, see [[audioserver|AudioServer]].
+Set the chorus send level of a voice (0 to 1). For setting chorus parameters, see [AudioServer](class_audioserver).
 
 #### <a name="set_reverb">set_reverb</a>
   * void  **`set_reverb`**  **(** [int](class_int) voice, [int](class_int) room_type, [real](class_real) send  **)**

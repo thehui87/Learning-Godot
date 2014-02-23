@@ -1,5 +1,6 @@
 #  AudioStream  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Base class for audio streams.
@@ -24,7 +25,7 @@ Base class for audio streams.
   * **UPDATE_THREAD** = **2** - Stream is updated on its own thread.
 
 ###  Description  
-Base class for audio streams. Audio streams are used for music"#10;"#9;playback, or other types of streamed sounds that don't fit or"#10;"#9;requiere more flexibility than a [[sample|Sample]].
+Base class for audio streams. Audio streams are used for music"#10;"#9;playback, or other types of streamed sounds that don't fit or"#10;"#9;requiere more flexibility than a [Sample](class_sample).
 
 ###  Member Function Description  
 
@@ -51,7 +52,7 @@ Set the loop hint for the audio stream playback. if"#10;"#9;"#9;"#9;true, audio 
 #### <a name="has_loop">has_loop</a>
   * [bool](class_bool)  **`has_loop`**  **(** **)** const
 
-Return wether the audio stream loops. See [[#set_loop|set_loop]]
+Return wether the audio stream loops. See [`set_loop`](#set_loop)
 
 #### <a name="get_stream_name">get_stream_name</a>
   * [String](class_string)  **`get_stream_name`**  **(** **)** const

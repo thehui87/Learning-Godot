@@ -1,5 +1,6 @@
 #  SphereShape  
-#####**Inherits:** [Shape](class_shape)
+####**Inherits:** [Shape](class_shape)
+####**Category:** Core
 
 ###  Brief Description  
 

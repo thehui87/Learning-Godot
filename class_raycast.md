@@ -1,5 +1,6 @@
 #  RayCast  
-#####**Inherits:** [Spatial](class_spatial)
+####**Inherits:** [Spatial](class_spatial)
+####**Category:** Core
 
 ###  Brief Description  
 

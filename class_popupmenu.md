@@ -1,5 +1,6 @@
 #  PopupMenu  
-#####**Inherits:** [Popup](class_popup)
+####**Inherits:** [Popup](class_popup)
+####**Category:** Core
 
 ###  Brief Description  
 PopupMenu displays a list of options.

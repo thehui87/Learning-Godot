@@ -1,5 +1,6 @@
 #  AnimatedSprite  
-#####**Inherits:** [Node2D](class_node2d)
+####**Inherits:** [Node2D](class_node2d)
+####**Category:** Core
 
 ###  Brief Description  
 

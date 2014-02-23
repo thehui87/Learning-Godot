@@ -1,5 +1,6 @@
 #  Camera2D  
-#####**Inherits:** [Node2D](class_node2d)
+####**Inherits:** [Node2D](class_node2d)
+####**Category:** Core
 
 ###  Brief Description  
 Camera node for 2D scenes.
@@ -32,12 +33,12 @@ Camera node for 2D scenes.
   * void  **[`force_update_scroll`](#force_update_scroll)**  **(** **)**
 
 ###  Description  
-Camera node for 2D scenes. It forces the screen (current layer) to scroll following this node. This makes it easier (and faster) to program scrollable scenes than manually changing the position of [[canvasitem|CanvasItem]] based nodes.
+Camera node for 2D scenes. It forces the screen (current layer) to scroll following this node. This makes it easier (and faster) to program scrollable scenes than manually changing the position of [CanvasItem](class_canvasitem) based nodes.
 	This node is intended to be a simple helper get get things going quickly
 	and it may happen often that more functionality is desired to change
 	how the camera works. To make your own custom camera node, simply
-	inherit from [[node2d|Node2D]] and change the transform of the canvas by
-	calling get_viewport().set_canvas_transform(m) in [[viewport|Viewport]].
+	inherit from [Node2D](class_node2d) and change the transform of the canvas by
+	calling get_viewport().set_canvas_transform(m) in [Viewport](class_viewport).
 
 ###  Member Function Description  
 
@@ -70,7 +71,7 @@ Make this the current 2D camera for the scene (viewport and layer), in case ther
 #### <a name="is_current">is_current</a>
   * [bool](class_bool)  **`is_current`**  **(** **)** const
 
-Return true of this is the current camera (see [[camera2d#make_current|Camera2D.make_current]]).
+Return true of this is the current camera (see [Camera2D.`make_current`](camera2d#make_current)).
 
 #### <a name="set_limit">set_limit</a>
   * void  **`set_limit`**  **(** [int](class_int) margin, [int](class_int) limit  **)**
@@ -90,7 +91,7 @@ Set the margins needed to drag the camera (relative to the screen size). Margin 
 #### <a name="get_drag_margin">get_drag_margin</a>
   * [real](class_real)  **`get_drag_margin`**  **(** [int](class_int) margin  **)** const
 
-Return the margins needed to drag the camera (see [[#set_drag_margin|set_drag_margin]]).
+Return the margins needed to drag the camera (see [`set_drag_margin`](#set_drag_margin)).
 
 #### <a name="get_camera_pos">get_camera_pos</a>
   * [Vector2](class_vector2)  **`get_camera_pos`**  **(** **)** const

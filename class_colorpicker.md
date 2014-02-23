@@ -1,5 +1,6 @@
 #  ColorPicker  
-#####**Inherits:** [HBoxContainer](class_hboxcontainer)
+####**Inherits:** [HBoxContainer](class_hboxcontainer)
+####**Category:** Core
 
 ###  Brief Description  
 Color picker control.
@@ -16,7 +17,7 @@ Color picker control.
   *  **`color_changed`**  **(** [Color](class_color) color  **)**
 
 ###  Description  
-This is a simple color picker [[control|Control]]. It's useful for selecting a color from an RGB/RGBA colorspace.
+This is a simple color picker [Control](class_control). It's useful for selecting a color from an RGB/RGBA colorspace.
 
 ###  Member Function Description  
 

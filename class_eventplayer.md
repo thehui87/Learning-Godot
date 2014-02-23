@@ -1,5 +1,6 @@
 #  EventPlayer  
-#####**Inherits:** [Node](class_node)
+####**Inherits:** [Node](class_node)
+####**Category:** Core
 
 ###  Brief Description  
 

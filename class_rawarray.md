@@ -1,4 +1,5 @@
 #  RawArray  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 Raw byte array.

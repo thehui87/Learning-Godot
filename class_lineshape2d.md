@@ -1,5 +1,6 @@
 #  LineShape2D  
-#####**Inherits:** [Shape2D](class_shape2d)
+####**Inherits:** [Shape2D](class_shape2d)
+####**Category:** Core
 
 ###  Brief Description  
 Line shape for 2D collision objects.

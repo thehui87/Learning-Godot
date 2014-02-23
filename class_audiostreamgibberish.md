@@ -1,5 +1,6 @@
 #  AudioStreamGibberish  
-#####**Inherits:** [AudioStream](class_audiostream)
+####**Inherits:** [AudioStream](class_audiostream)
+####**Category:** Core
 
 ###  Brief Description  
 Simple gibberish speech stream playback.

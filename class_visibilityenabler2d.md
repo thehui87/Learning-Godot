@@ -1,5 +1,6 @@
 #  VisibilityEnabler2D  
-#####**Inherits:** [VisibilityNotifier2D](class_visibilitynotifier2d)
+####**Inherits:** [VisibilityNotifier2D](class_visibilitynotifier2d)
+####**Category:** Core
 
 ###  Brief Description  
 

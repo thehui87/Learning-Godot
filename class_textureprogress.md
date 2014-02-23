@@ -1,5 +1,6 @@
 #  TextureProgress  
-#####**Inherits:** [Range](class_range)
+####**Inherits:** [Range](class_range)
+####**Category:** Core
 
 ###  Brief Description  
 Textured progress bar implementation.
@@ -13,6 +14,6 @@ Textured progress bar implementation.
   * [Object](class_object)  **[`get_over_texture`](#get_over_texture)**  **(** **)** const
 
 ###  Description  
-[[progressbar|ProgressBar]] implementation that is easier to theme (by just passing a few textures).
+[ProgressBar](class_progressbar) implementation that is easier to theme (by just passing a few textures).
 
 ###  Member Function Description  

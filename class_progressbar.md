@@ -1,5 +1,6 @@
 #  ProgressBar  
-#####**Inherits:** [Range](class_range)
+####**Inherits:** [Range](class_range)
+####**Category:** Core
 
 ###  Brief Description  
 General purpose progres bar.

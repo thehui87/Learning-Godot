@@ -1,5 +1,6 @@
 #  StyleBoxFlat  
-#####**Inherits:** [StyleBox](class_stylebox)
+####**Inherits:** [StyleBox](class_stylebox)
+####**Category:** Core
 
 ###  Brief Description  
 Stylebox of a single color.

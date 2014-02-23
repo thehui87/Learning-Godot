@@ -1,5 +1,6 @@
 #  ConvexPolygonShape  
-#####**Inherits:** [Shape](class_shape)
+####**Inherits:** [Shape](class_shape)
+####**Category:** Core
 
 ###  Brief Description  
 Convex Polygon Shape
@@ -9,6 +10,6 @@ Convex Polygon Shape
   * [Vector3Array](class_vector3array)  **[`get_points`](#get_points)**  **(** **)** const
 
 ###  Description  
-Convex polygon shape resource, which can be set into a [[physicsbody|PhysicsBody]] or area.
+Convex polygon shape resource, which can be set into a [PhysicsBody](class_physicsbody) or area.
 
 ###  Member Function Description  

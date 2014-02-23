@@ -1,5 +1,6 @@
 #  SamplePlayer2D  
-#####**Inherits:** [SoundPlayer2D](class_soundplayer2d)
+####**Inherits:** [SoundPlayer2D](class_soundplayer2d)
+####**Category:** Core
 
 ###  Brief Description  
 Sample player for Positional 2D Sound.

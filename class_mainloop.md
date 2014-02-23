@@ -1,5 +1,6 @@
 #  MainLoop  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 Main loop is the abstract main loop base class.
@@ -14,6 +15,6 @@ Main loop is the abstract main loop base class.
   * **NOTIFICATION_WM_UNFOCUS_REQUEST** = **8**
 
 ###  Description  
-Main loop is the abstract main loop base class. All other main loop classes are derived from it. Upon application start, a [[mainloop|MainLoop]] has to be provided to OS, else the application will exit. This happens automatically (and a [[scenemainloop|SceneMainLoop]] is created), unless a main [[script|Script]] is supplied, which may or not create and return a [[mainloop|MainLoop]].
+Main loop is the abstract main loop base class. All other main loop classes are derived from it. Upon application start, a [MainLoop](class_mainloop) has to be provided to OS, else the application will exit. This happens automatically (and a [SceneMainLoop](class_scenemainloop) is created), unless a main [Script](class_script) is supplied, which may or not create and return a [MainLoop](class_mainloop).
 
 ###  Member Function Description  

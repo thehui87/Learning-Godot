@@ -1,5 +1,6 @@
 #  SpriteFrames  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Sprite frame library for AnimatedSprite.
@@ -13,7 +14,7 @@ Sprite frame library for AnimatedSprite.
   * void  **[`clear`](#clear)**  **(** **)**
 
 ###  Description  
-Sprite frame library for [[animatedsprite|AnimatedSprite]].
+Sprite frame library for [AnimatedSprite](class_animatedsprite).
 
 ###  Member Function Description  
 

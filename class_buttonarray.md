@@ -1,5 +1,6 @@
 #  ButtonArray  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Array of Buttons.

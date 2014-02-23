@@ -1,5 +1,6 @@
 #  Button  
-#####**Inherits:** [BaseButton](class_basebutton)
+####**Inherits:** [BaseButton](class_basebutton)
+####**Category:** Core
 
 ###  Brief Description  
 Standard themed Button.
@@ -17,7 +18,7 @@ Standard themed Button.
   * [bool](class_bool)  **[`is_flat`](#is_flat)**  **(** **)** const
 
 ###  Description  
-Button is just the standard themed button: [image src="images/button_example.png"/] It can contain text and an icon, and will display them according to the current [[theme|Theme]].
+Button is just the standard themed button: [image src="images/button_example.png"/] It can contain text and an icon, and will display them according to the current [Theme](class_theme).
 
 ###  Member Function Description  
 
@@ -34,19 +35,19 @@ Return the button text.
 #### <a name="set_flat">set_flat</a>
   * void  **`set_flat`**  **(** [bool](class_bool) enabled  **)**
 
-Set the //flat// property of a Button. Flat buttons don"apos;t display decoration unless hoevered or pressed.
+Set the _flat_ property of a Button. Flat buttons don"apos;t display decoration unless hoevered or pressed.
 
 #### <a name="set_clip_text">set_clip_text</a>
   * void  **`set_clip_text`**  **(** [bool](class_bool) enabled  **)**
 
-Set the //clip_text// property of a Button. When this property is enabled, text that is too large to fit the button is clipped, when disabled (default) the Button will always be wide enough to hold the text.
+Set the _clip_text_ property of a Button. When this property is enabled, text that is too large to fit the button is clipped, when disabled (default) the Button will always be wide enough to hold the text.
 
 #### <a name="get_clip_text">get_clip_text</a>
   * [bool](class_bool)  **`get_clip_text`**  **(** **)** const
 
-Return the state of the //clip_text// property (see [[#set_clip_text|set_clip_text]])
+Return the state of the _clip_text_ property (see [`set_clip_text`](#set_clip_text))
 
 #### <a name="is_flat">is_flat</a>
   * [bool](class_bool)  **`is_flat`**  **(** **)** const
 
-Return the state of the //flat// property (see [[#set_flat|set_flat]])
+Return the state of the _flat_ property (see [`set_flat`](#set_flat))

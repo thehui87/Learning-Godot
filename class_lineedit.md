@@ -1,5 +1,6 @@
 #  LineEdit  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Control that provides single line string editing.
@@ -32,7 +33,7 @@ LineEdit provides a single line string editor, used for text fields.
 #### <a name="clear">clear</a>
   * void  **`clear`**  **(** **)**
 
-Clear the [[lineedit|LineEdit]] text.
+Clear the [LineEdit](class_lineedit) text.
 
 #### <a name="select_all">select_all</a>
   * void  **`select_all`**  **(** **)**
@@ -42,54 +43,54 @@ Select the whole string.
 #### <a name="set_text">set_text</a>
   * void  **`set_text`**  **(** [String](class_string) text  **)**
 
-Set the text in the [[lineedit|LineEdit]], clearing the existing one and the selection.
+Set the text in the [LineEdit](class_lineedit), clearing the existing one and the selection.
 
 #### <a name="get_text">get_text</a>
   * [String](class_string)  **`get_text`**  **(** **)** const
 
-Return the text in the [[lineedit|LineEdit]].
+Return the text in the [LineEdit](class_lineedit).
 
 #### <a name="set_cursor_pos">set_cursor_pos</a>
   * void  **`set_cursor_pos`**  **(** [int](class_int) pos  **)**
 
-Set the cursor position inside the [[lineedit|LineEdit]], causing it to scroll if needed.
+Set the cursor position inside the [LineEdit](class_lineedit), causing it to scroll if needed.
 
 #### <a name="get_cursor_pos">get_cursor_pos</a>
   * [int](class_int)  **`get_cursor_pos`**  **(** **)** const
 
-Return the cursor position inside the [[lineedit|LineEdit]].
+Return the cursor position inside the [LineEdit](class_lineedit).
 
 #### <a name="set_max_length">set_max_length</a>
   * void  **`set_max_length`**  **(** [int](class_int) chars  **)**
 
-Set the maximum amount of characters the [[lineedit|LineEdit]] can edit, and cropping existing text in case it exceeds that limit. Setting 0 removes the limit.
+Set the maximum amount of characters the [LineEdit](class_lineedit) can edit, and cropping existing text in case it exceeds that limit. Setting 0 removes the limit.
 
 #### <a name="get_max_length">get_max_length</a>
   * [int](class_int)  **`get_max_length`**  **(** **)** const
 
-Return the maximum amount of characters the [[lineedit|LineEdit]] can edit. If 0 is returned, no limit exists.
+Return the maximum amount of characters the [LineEdit](class_lineedit) can edit. If 0 is returned, no limit exists.
 
 #### <a name="append_at_cursor">append_at_cursor</a>
   * void  **`append_at_cursor`**  **(** [String](class_string) text  **)**
 
-Append text at cursor, scrolling the [[lineedit|LineEdit]] when needed.
+Append text at cursor, scrolling the [LineEdit](class_lineedit) when needed.
 
 #### <a name="set_editable">set_editable</a>
   * void  **`set_editable`**  **(** [bool](class_bool) enabled  **)**
 
-Set the //editable// status of the [[lineedit|LineEdit]]. When disabled, existing text can"apos;t be modified and new text can"apos;t be added.
+Set the _editable_ status of the [LineEdit](class_lineedit). When disabled, existing text can"apos;t be modified and new text can"apos;t be added.
 
 #### <a name="is_editable">is_editable</a>
   * [bool](class_bool)  **`is_editable`**  **(** **)** const
 
-Return the //editable// status of the [[lineedit|LineEdit]] (see [[#set_editable|set_editable]]).
+Return the _editable_ status of the [LineEdit](class_lineedit) (see [`set_editable`](#set_editable)).
 
 #### <a name="set_secret">set_secret</a>
   * void  **`set_secret`**  **(** [bool](class_bool) enabled  **)**
 
-Set the //secret// status of the [[lineedit|LineEdit]]. When enabled, every character is displayed as "*".
+Set the _secret_ status of the [LineEdit](class_lineedit). When enabled, every character is displayed as "*".
 
 #### <a name="is_secret">is_secret</a>
   * [bool](class_bool)  **`is_secret`**  **(** **)** const
 
-Return the //secret// status of the [[lineedit|LineEdit]] (see [[#set_secret|set_secret]]).
+Return the _secret_ status of the [LineEdit](class_lineedit) (see [`set_secret`](#set_secret)).

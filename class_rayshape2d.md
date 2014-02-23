@@ -1,5 +1,6 @@
 #  RayShape2D  
-#####**Inherits:** [Shape2D](class_shape2d)
+####**Inherits:** [Shape2D](class_shape2d)
+####**Category:** Core
 
 ###  Brief Description  
 Ray 2D shape resource for physics.

@@ -1,5 +1,6 @@
 #  Spatial  
-#####**Inherits:** [Node](class_node)
+####**Inherits:** [Node](class_node)
+####**Category:** Core
 
 ###  Brief Description  
 Base class for all 3D nodes.
@@ -30,7 +31,7 @@ Base class for all 3D nodes.
   * **NOTIFICATION_EXIT_WORLD** = **42**
 
 ###  Description  
-Spatial is the base for every type of 3D [[node|Node]]. It contains a 3D [[transform|Transform]] which can be set or get as local or global. If a Spatial [[node|Node]] has Spatial children, their transforms will be relative to the parent.
+Spatial is the base for every type of 3D [Node](class_node). It contains a 3D [Transform](class_transform) which can be set or get as local or global. If a Spatial [Node](class_node) has Spatial children, their transforms will be relative to the parent.
 
 ###  Member Function Description  
 
@@ -57,4 +58,4 @@ Return the gloal transform, relative to worldspace.
 #### <a name="get_parent_spatial">get_parent_spatial</a>
   * [Object](class_object)  **`get_parent_spatial`**  **(** **)** const
 
-Return the parent [[spatial|Spatial]], or an empty [[object|Object]] if no parent exists or parent is not of type [Spatial.
+Return the parent [Spatial](class_spatial), or an empty [Object](class_object) if no parent exists or parent is not of type [Spatial.

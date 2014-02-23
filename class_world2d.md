@@ -1,5 +1,6 @@
 #  World2D  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Class that has everything pertaining to a 2D world.

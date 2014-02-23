@@ -1,5 +1,6 @@
 #  ScrollBar  
-#####**Inherits:** [Range](class_range)
+####**Inherits:** [Range](class_range)
+####**Category:** Core
 
 ###  Brief Description  
 Base class for scroll bars.
@@ -9,6 +10,6 @@ Base class for scroll bars.
   * [real](class_real)  **[`get_custom_step`](#get_custom_step)**  **(** **)** const
 
 ###  Description  
-Scrollbars are a [[range|Range]] based [[control|Control]], that display a draggable area (the size of the page). Horizontal ([[hscrollbar|HScrollBar]]) and Vertical ([[vscrollbar|VScrollBar]]) versions are available.
+Scrollbars are a [Range](class_range) based [Control](class_control), that display a draggable area (the size of the page). Horizontal ([HScrollBar](class_hscrollbar)) and Vertical ([VScrollBar](class_vscrollbar)) versions are available.
 
 ###  Member Function Description  

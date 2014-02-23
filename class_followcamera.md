@@ -1,5 +1,6 @@
 #  FollowCamera  
-#####**Inherits:** [Camera](class_camera)
+####**Inherits:** [Camera](class_camera)
+####**Category:** Core
 
 ###  Brief Description  
 

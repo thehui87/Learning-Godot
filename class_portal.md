@@ -1,5 +1,6 @@
 #  Portal  
-#####**Inherits:** [VisualInstance](class_visualinstance)
+####**Inherits:** [VisualInstance](class_visualinstance)
+####**Category:** Core
 
 ###  Brief Description  
 Portals provide virtual openings to rooms.
@@ -45,22 +46,22 @@ Return wether the portal is active. When disabled it causes the parent [RoomInst
 #### <a name="set_disable_distance">set_disable_distance</a>
   * void  **`set_disable_distance`**  **(** [real](class_real) distance  **)**
 
-Set the distance threshold for disabling the portal. Every time that the portal goes beyond "distance", it disables itself, becoming the opaque color (see [[#set_disabled_color|set_disabled_color]]).
+Set the distance threshold for disabling the portal. Every time that the portal goes beyond "distance", it disables itself, becoming the opaque color (see [`set_disabled_color`](#set_disabled_color)).
 
 #### <a name="get_disable_distance">get_disable_distance</a>
   * [real](class_real)  **`get_disable_distance`**  **(** **)** const
 
-Return the distance threshold for disabling the portal. Every time that the portal goes beyond "distance", it disables itself, becoming the opaque color (see [[#set_disabled_color|set_disabled_color]]).
+Return the distance threshold for disabling the portal. Every time that the portal goes beyond "distance", it disables itself, becoming the opaque color (see [`set_disabled_color`](#set_disabled_color)).
 
 #### <a name="set_disabled_color">set_disabled_color</a>
   * void  **`set_disabled_color`**  **(** [Color](class_color) color  **)**
 
-When the portal goes beyond the disable distance (see [[#set_disable_distance|set_disable_distance]]), it becomes opaque and displayed with color "color".
+When the portal goes beyond the disable distance (see [`set_disable_distance`](#set_disable_distance)), it becomes opaque and displayed with color "color".
 
 #### <a name="get_disabled_color">get_disabled_color</a>
   * [Color](class_color)  **`get_disabled_color`**  **(** **)** const
 
-Return the color for when the portal goes beyond the disable distance (see [[#set_disable_distance|set_disable_distance]]) and becomes disabled.
+Return the color for when the portal goes beyond the disable distance (see [`set_disable_distance`](#set_disable_distance)) and becomes disabled.
 
 #### <a name="set_connect_range">set_connect_range</a>
   * void  **`set_connect_range`**  **(** [real](class_real) range  **)**

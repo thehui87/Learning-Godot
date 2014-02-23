@@ -1,4 +1,5 @@
 #  StringArray  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 String Array .

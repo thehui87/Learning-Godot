@@ -1,5 +1,6 @@
 #  AudioStreamMPC  
-#####**Inherits:** [AudioStreamResampled](class_audiostreamresampled)
+####**Inherits:** [AudioStreamResampled](class_audiostreamresampled)
+####**Category:** Core
 
 ###  Brief Description  
 MusePack audio stream driver.

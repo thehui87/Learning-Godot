@@ -1,5 +1,6 @@
 #  Range  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Abstract base class for range-based controls.
@@ -31,7 +32,7 @@ Abstract base class for range-based controls.
   *  **`changed`**  **(** **)**
 
 ###  Description  
-Range is a base class for [[control|Control]] nodes that change a floating point //value// between a need a //minimum//, //maximum//, using //step// and //page//, for example a [[scrollbar|ScrollBar]].
+Range is a base class for [Control](class_control) nodes that change a floating point _value_ between a need a _minimum_, _maximum_, using _step_ and _page_, for example a [ScrollBar](class_scrollbar).
 
 ###  Member Function Description  
 

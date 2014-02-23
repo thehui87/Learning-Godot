@@ -1,5 +1,6 @@
 #  Globals  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 Contains global variables accessible from everywhere.
@@ -18,7 +19,7 @@ Contains global variables accessible from everywhere.
   * [Object](class_object)  **[`get_singleton`](#get_singleton)**  **(** [String](class_string) arg0  **)** const
 
 ###  Description  
-Contains global variables accessible from everywhere. Use the normal [[object|Object]] API, such as "Globals.get(variable)", "Globals.set(variable,value)" or "Globals.has(variable)" to access them. Variables stored in engine.cfg are also loaded into globals, making this object very useful for reading custom game configuration options.
+Contains global variables accessible from everywhere. Use the normal [Object](class_object) API, such as "Globals.get(variable)", "Globals.set(variable,value)" or "Globals.has(variable)" to access them. Variables stored in engine.cfg are also loaded into globals, making this object very useful for reading custom game configuration options.
 
 ###  Member Function Description  
 

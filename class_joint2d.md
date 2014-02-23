@@ -1,5 +1,6 @@
 #  Joint2D  
-#####**Inherits:** [Node2D](class_node2d)
+####**Inherits:** [Node2D](class_node2d)
+####**Category:** Core
 
 ###  Brief Description  
 Base node for all joint constraints in 2D phyisics.

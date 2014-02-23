@@ -1,5 +1,6 @@
 #  Popup  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Base container control for popups and dialogs.
@@ -19,7 +20,7 @@ Base container control for popups and dialogs.
   * **NOTIFICATION_POST_POPUP** = **80**
 
 ###  Description  
-PopUp is a base [[control|Control]] used to show dialogs and popups. It's a subwindow and modal by default (see [[control|Control]]) and has helpers for custom popup behavior.
+PopUp is a base [Control](class_control) used to show dialogs and popups. It's a subwindow and modal by default (see [Control](class_control)) and has helpers for custom popup behavior.
 
 ###  Member Function Description  
 

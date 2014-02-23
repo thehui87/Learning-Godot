@@ -1,4 +1,5 @@
 #  NodePath  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 Built-in type optimized for path traversing.

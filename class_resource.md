@@ -1,5 +1,6 @@
 #  Resource  
-#####**Inherits:** [Reference](class_reference)
+####**Inherits:** [Reference](class_reference)
+####**Category:** Core
 
 ###  Brief Description  
 Base class for all resources.
@@ -18,7 +19,7 @@ Base class for all resources.
   *  **`changed`**  **(** **)**
 
 ###  Description  
-Resource is the base class for all resource types. Resources are primarily data containers. They are reference counted and freed when no longer in use. They are also loaded only once from disk, and further attempts to load the resource will return the same reference (all this in contrast to a [[node|Node]], which is not reference counted and can be instanced from disk as many times as desred). Resources can be saved externally on disk or bundled into another object, such as a [[node|Node]] or another resource.
+Resource is the base class for all resource types. Resources are primarily data containers. They are reference counted and freed when no longer in use. They are also loaded only once from disk, and further attempts to load the resource will return the same reference (all this in contrast to a [Node](class_node), which is not reference counted and can be instanced from disk as many times as desred). Resources can be saved externally on disk or bundled into another object, such as a [Node](class_node) or another resource.
 
 ###  Member Function Description  
 
@@ -45,4 +46,4 @@ Return the name of the resources, any name is ok (it doesn"apos;t have to be uni
 #### <a name="get_rid">get_rid</a>
   * [RID](class_rid)  **`get_rid`**  **(** **)** const
 
-Return the RID of the resource (or an empty RID). Many resources (such as [[texture|Texture]], [[mesh|Mesh]], etc) are high level abstractions of resources stored in a server, so this function will return the original RID.
+Return the RID of the resource (or an empty RID). Many resources (such as [Texture](class_texture), [Mesh](class_mesh), etc) are high level abstractions of resources stored in a server, so this function will return the original RID.

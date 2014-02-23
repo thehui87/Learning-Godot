@@ -1,5 +1,6 @@
 #  TextureButton  
-#####**Inherits:** [BaseButton](class_basebutton)
+####**Inherits:** [BaseButton](class_basebutton)
+####**Category:** Core
 
 ###  Brief Description  
 Button that can be themed with textures.
@@ -19,7 +20,7 @@ Button that can be themed with textures.
   * [BitMap](class_bitmap)  **[`get_click_mask`](#get_click_mask)**  **(** **)** const
 
 ###  Description  
-Button that can be themed with textures. This is like a regular [[button|Button]] but can be themed by assigning textures to it. This button is intended to be easy to theme, however a regular button can expand (that uses styleboxes) and still be better if the interface is expect to have internationalization of texts.\\
+Button that can be themed with textures. This is like a regular [Button](class_button) but can be themed by assigning textures to it. This button is intended to be easy to theme, however a regular button can expand (that uses styleboxes) and still be better if the interface is expect to have internationalization of texts.
 
 	Only the normal texture is required, the others are optional.
 

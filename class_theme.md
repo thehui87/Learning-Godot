@@ -1,5 +1,6 @@
 #  Theme  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Theme for controls.
@@ -34,7 +35,7 @@ Theme for controls.
   * void  **[`copy_default_theme`](#copy_default_theme)**  **(** **)**
 
 ###  Description  
-Theme for skinning controls. Controls can be skinned individually, but for complex applications it's more efficient to just create a global theme that defines everything. This theme can be applied to any [[control|Control]], and it and the children will automatically use it.\\
+Theme for skinning controls. Controls can be skinned individually, but for complex applications it's more efficient to just create a global theme that defines everything. This theme can be applied to any [Control](class_control), and it and the children will automatically use it.
 
 	Theme resources can be alternatively loaded by writing them in a .theme file, see wiki for more info.
 

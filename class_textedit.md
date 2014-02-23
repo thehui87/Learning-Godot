@@ -1,5 +1,6 @@
 #  TextEdit  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Multiline text editing control.

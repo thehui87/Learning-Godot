@@ -1,5 +1,6 @@
 #  Light  
-#####**Inherits:** [VisualInstance](class_visualinstance)
+####**Inherits:** [VisualInstance](class_visualinstance)
+####**Category:** Core
 
 ###  Brief Description  
 Provides a base class for different kinds of light nodes.

@@ -1,5 +1,6 @@
 #  ProximityGroup  
-#####**Inherits:** [Spatial](class_spatial)
+####**Inherits:** [Spatial](class_spatial)
+####**Category:** Core
 
 ###  Brief Description  
 General purpose proximity-detection node.

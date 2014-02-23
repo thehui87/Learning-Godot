@@ -1,5 +1,6 @@
 #  InputMap  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 Singleton that manages actions.

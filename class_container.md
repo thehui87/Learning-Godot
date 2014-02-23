@@ -1,5 +1,6 @@
 #  Container  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Base node for containers.
@@ -15,7 +16,7 @@ Base node for containers.
   * **NOTIFICATION_SORT_CHILDREN** = **50** - Notification for when sorting the children, it must be obeyed immediately.
 
 ###  Description  
-Base node for conainers. A [[container|Container]] contains other controls and automatically arranges them in a certain way.
+Base node for conainers. A [Container](class_container) contains other controls and automatically arranges them in a certain way.
 	A Control can inherit this to reate custom container classes.
 
 ###  Member Function Description  

@@ -1,5 +1,6 @@
 #  FileDialog  
-#####**Inherits:** [ConfirmationDialog](class_confirmationdialog)
+####**Inherits:** [ConfirmationDialog](class_confirmationdialog)
+####**Category:** Core
 
 ###  Brief Description  
 Dialog for selecting files or directories in the filesystem.

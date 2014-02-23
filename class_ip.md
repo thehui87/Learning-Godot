@@ -1,5 +1,6 @@
 #  IP  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 IP Protocol support functions.
@@ -20,7 +21,7 @@ IP Protocol support functions.
   * **RESOLVER_INVALID_ID** = **-1**
 
 ###  Description  
-IP contains some support functions for the IPv4 protocol. TCP/IP support is in different classes (see [TCP_Client], [[tcp_server|TCP_Server]]). IP provides hostname resolution support, both blocking and threaded.
+IP contains some support functions for the IPv4 protocol. TCP/IP support is in different classes (see [TCP_Client], [TCP_Server](class_tcp_server)). IP provides hostname resolution support, both blocking and threaded.
 
 ###  Member Function Description  
 
@@ -42,7 +43,7 @@ Return the status of hostname queued for resolving, given it"apos;s queue ID. Re
 #### <a name="get_resolve_item_address">get_resolve_item_address</a>
   * [String](class_string)  **`get_resolve_item_address`**  **(** [int](class_int) id  **)** const
 
-Return a resolved item address, or an empty string if an error happened or resolution didn"apos;t happen yet (see [[#get_resolve_item_status|get_resolve_item_status]]).
+Return a resolved item address, or an empty string if an error happened or resolution didn"apos;t happen yet (see [`get_resolve_item_status`](#get_resolve_item_status)).
 
 #### <a name="erase_resolve_item">erase_resolve_item</a>
   * void  **`erase_resolve_item`**  **(** [int](class_int) id  **)**

@@ -1,5 +1,6 @@
 #  TileMap  
-#####**Inherits:** [Node2D](class_node2d)
+####**Inherits:** [Node2D](class_node2d)
+####**Category:** Core
 
 ###  Brief Description  
 Node for 2D Tile-Based games.
@@ -26,7 +27,7 @@ Node for 2D Tile-Based games.
 
 ###  Description  
 Node for 2D Tile-Based games. Tilemaps use a TileSet which contain a list of tiles (textures, their rect and a collision) and are used to create complex grid-based maps.
-	To optimize drawing and culling (sort of like [[gridmap|GridMap]]), you can specify a quadrant size, so chunks of the map will be batched together the time of drawing.
+	To optimize drawing and culling (sort of like [GridMap](class_gridmap)), you can specify a quadrant size, so chunks of the map will be batched together the time of drawing.
 
 ###  Member Function Description  
 

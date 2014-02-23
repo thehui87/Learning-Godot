@@ -1,5 +1,6 @@
 #  Skeleton  
-#####**Inherits:** [Spatial](class_spatial)
+####**Inherits:** [Spatial](class_spatial)
+####**Category:** Core
 
 ###  Brief Description  
 Skeleton for characters and animated objects.
@@ -27,14 +28,14 @@ Skeleton for characters and animated objects.
   * **NOTIFICATION_UPDATE_SKELETON** = **50**
 
 ###  Description  
-Skeleton provides a hierachial interface for managing bones, including pose, rest and animation (see [[animation|Animation]]). Skeleton will support rag doll dynamics in the future.
+Skeleton provides a hierachial interface for managing bones, including pose, rest and animation (see [Animation](class_animation)). Skeleton will support rag doll dynamics in the future.
 
 ###  Member Function Description  
 
 #### <a name="add_bone">add_bone</a>
   * void  **`add_bone`**  **(** [String](class_string) name  **)**
 
-Add a bone, with name "name". [[#get_bone_count|get_bone_count]] will become the bone index.
+Add a bone, with name "name". [`get_bone_count`](#get_bone_count) will become the bone index.
 
 #### <a name="find_bone">find_bone</a>
   * [int](class_int)  **`find_bone`**  **(** [String](class_string) name  **)** const

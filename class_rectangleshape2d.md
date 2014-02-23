@@ -1,5 +1,6 @@
 #  RectangleShape2D  
-#####**Inherits:** [Shape2D](class_shape2d)
+####**Inherits:** [Shape2D](class_shape2d)
+####**Category:** Core
 
 ###  Brief Description  
 Rectangle Shape for 2D Physics.

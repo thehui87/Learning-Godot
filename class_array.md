@@ -1,4 +1,5 @@
 #  Array  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 Generic array datatype.
@@ -74,34 +75,34 @@ Return the amount of elements in the array.
 #### <a name="Array">Array</a>
   * void  **`Array`**  **(** [RawArray](class_rawarray) from  **)**
 
-Construct an array from a [[rawarray|RawArray]].
+Construct an array from a [RawArray](class_rawarray).
 
 #### <a name="Array">Array</a>
   * void  **`Array`**  **(** [IntArray](class_intarray) from  **)**
 
-Construct an array from a [[rawarray|RawArray]].
+Construct an array from a [RawArray](class_rawarray).
 
 #### <a name="Array">Array</a>
   * void  **`Array`**  **(** [RealArray](class_realarray) from  **)**
 
-Construct an array from a [[rawarray|RawArray]].
+Construct an array from a [RawArray](class_rawarray).
 
 #### <a name="Array">Array</a>
   * void  **`Array`**  **(** [StringArray](class_stringarray) from  **)**
 
-Construct an array from a [[rawarray|RawArray]].
+Construct an array from a [RawArray](class_rawarray).
 
 #### <a name="Array">Array</a>
   * void  **`Array`**  **(** [Vector2Array](class_vector2array) from  **)**
 
-Construct an array from a [[rawarray|RawArray]].
+Construct an array from a [RawArray](class_rawarray).
 
 #### <a name="Array">Array</a>
   * void  **`Array`**  **(** [Vector3Array](class_vector3array) from  **)**
 
-Construct an array from a [[rawarray|RawArray]].
+Construct an array from a [RawArray](class_rawarray).
 
 #### <a name="Array">Array</a>
   * void  **`Array`**  **(** [ColorArray](class_colorarray) from  **)**
 
-Construct an array from a [[rawarray|RawArray]].
+Construct an array from a [RawArray](class_rawarray).

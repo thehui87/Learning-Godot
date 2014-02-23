@@ -1,5 +1,6 @@
 #  Label  
-#####**Inherits:** [Range](class_range)
+####**Inherits:** [Range](class_range)
+####**Category:** Core
 
 ###  Brief Description  
 Control that displays formatted text.
@@ -33,7 +34,7 @@ Control that displays formatted text.
   * **VALIGN_FILL** = **3** - Align the whole text by spreading the rows.
 
 ###  Description  
-Label is a control that displays formatted text, optionally autowrapping it to the [[control|Control]] area. It inherits from range to be able to scroll wrapped text vertically.
+Label is a control that displays formatted text, optionally autowrapping it to the [Control](class_control) area. It inherits from range to be able to scroll wrapped text vertically.
 
 ###  Member Function Description  
 
@@ -60,12 +61,12 @@ Return the label text. Text can contain newlines.
 #### <a name="set_autowrap">set_autowrap</a>
   * void  **`set_autowrap`**  **(** [bool](class_bool) enable  **)**
 
-Set //autowrap// mode. When enabled, autowrap will fit text to the control width, breaking sentences when they exceed the available horizontal space. When disabled, the label minimum width becomes the width of the longest row, and the minimum height large enough to fit all rows.
+Set _autowrap_ mode. When enabled, autowrap will fit text to the control width, breaking sentences when they exceed the available horizontal space. When disabled, the label minimum width becomes the width of the longest row, and the minimum height large enough to fit all rows.
 
 #### <a name="has_autowrap">has_autowrap</a>
   * [bool](class_bool)  **`has_autowrap`**  **(** **)** const
 
-Return the state of the //autowrap// mode (see [[#set_autowrap|set_autowrap]]).
+Return the state of the _autowrap_ mode (see [`set_autowrap`](#set_autowrap)).
 
 #### <a name="get_line_height">get_line_height</a>
   * [int](class_int)  **`get_line_height`**  **(** **)** const

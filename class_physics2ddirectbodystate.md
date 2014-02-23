@@ -1,8 +1,9 @@
 #  Physics2DDirectBodyState  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
-Direct access object to a physics body in the [[physics2dserver|Physics2DServer]].
+Direct access object to a physics body in the [Physics2DServer](class_physics2dserver).
 
 ###  Member Functions 
   * [Vector2](class_vector2)  **[`get_total_gravity`](#get_total_gravity)**  **(** **)** const
@@ -32,7 +33,7 @@ Direct access object to a physics body in the [[physics2dserver|Physics2DServer]
   * [Physics2DDirectSpaceState](class_physics2ddirectspacestate)  **[`get_space_state`](#get_space_state)**  **(** **)**
 
 ###  Description  
-Direct access object to a physics body in the [[physics2dserver|Physics2DServer]]. This object is passed via the direct state callback of rigid/character bodies, and is intended for changing the direct state of that body.
+Direct access object to a physics body in the [Physics2DServer](class_physics2dserver). This object is passed via the direct state callback of rigid/character bodies, and is intended for changing the direct state of that body.
 
 ###  Member Function Description  
 

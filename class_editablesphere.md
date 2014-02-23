@@ -1,5 +1,6 @@
 #  EditableSphere  
-#####**Inherits:** [EditableShape](class_editableshape)
+####**Inherits:** [EditableShape](class_editableshape)
+####**Category:** Core
 
 ###  Brief Description  
 

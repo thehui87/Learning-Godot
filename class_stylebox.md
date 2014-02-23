@@ -1,5 +1,6 @@
 #  StyleBox  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Base class for dawing stylized boxes for the UI.
@@ -15,7 +16,7 @@ Base class for dawing stylized boxes for the UI.
   * void  **[`draw`](#draw)**  **(** [RID](class_rid) arg0, [Rect2](class_rect2) arg1  **)** const
 
 ###  Description  
-StyleBox is [[resource|Resource]] that provides an abstract base class for dawing stylized boxes for the UI. StyleBoxes are used for dawing the styles of buttons, line edit backgrounds, tree backgrounds, etc. and also for testing a transparency mask for pointer signals. If mask test fails on a StyleBox assigned as mask to a control, clicks and motion signals will go through it to the one below.
+StyleBox is [Resource](class_resource) that provides an abstract base class for dawing stylized boxes for the UI. StyleBoxes are used for dawing the styles of buttons, line edit backgrounds, tree backgrounds, etc. and also for testing a transparency mask for pointer signals. If mask test fails on a StyleBox assigned as mask to a control, clicks and motion signals will go through it to the one below.
 
 ###  Member Function Description  
 

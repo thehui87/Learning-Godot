@@ -1,5 +1,6 @@
 #  SpatialStreamPlayer  
-#####**Inherits:** [SpatialPlayer](class_spatialplayer)
+####**Inherits:** [SpatialPlayer](class_spatialplayer)
+####**Category:** Core
 
 ###  Brief Description  
 

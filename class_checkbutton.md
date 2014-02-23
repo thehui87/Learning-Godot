@@ -1,5 +1,6 @@
 #  CheckButton  
-#####**Inherits:** [Button](class_button)
+####**Inherits:** [Button](class_button)
+####**Category:** Core
 
 ###  Brief Description  
 Checkable button.

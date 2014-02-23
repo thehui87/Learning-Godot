@@ -1,5 +1,6 @@
 #  Particles  
-#####**Inherits:** [GeometryInstance](class_geometryinstance)
+####**Inherits:** [GeometryInstance](class_geometryinstance)
+####**Category:** Core
 
 ###  Brief Description  
 Particle system 3D Node
@@ -55,7 +56,7 @@ Particle system 3D Node
   * **VAR_MAX** = **14**
 
 ###  Description  
-Particles is a particle system 3D [[node|Node]] that is used to simulate several types of particle effects, such as explosions, rain, snow, fireflies, or other magical-like shinny sparkles. Particles are drawn using impostors, and given their dynamic behavior, the user must provide a visibility AABB (although helpers to create one automatically exist).
+Particles is a particle system 3D [Node](class_node) that is used to simulate several types of particle effects, such as explosions, rain, snow, fireflies, or other magical-like shinny sparkles. Particles are drawn using impostors, and given their dynamic behavior, the user must provide a visibility AABB (although helpers to create one automatically exist).
 
 ###  Member Function Description  
 
@@ -77,7 +78,7 @@ Set the "emitting" property state. When emitting, the particle system generates 
 #### <a name="is_emitting">is_emitting</a>
   * [bool](class_bool)  **`is_emitting`**  **(** **)** const
 
-Return the "emitting" property state (see [[#set_emitting|set_emitting]]).
+Return the "emitting" property state (see [`set_emitting`](#set_emitting)).
 
 #### <a name="set_visibility_aabb">set_visibility_aabb</a>
   * void  **`set_visibility_aabb`**  **(** [AABB](class_aabb) aabb  **)**

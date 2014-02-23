@@ -1,5 +1,6 @@
 #  CollisionObject2D  
-#####**Inherits:** [Node2D](class_node2d)
+####**Inherits:** [Node2D](class_node2d)
+####**Category:** Core
 
 ###  Brief Description  
 Base node for 2D collisionables.
@@ -25,7 +26,7 @@ CollisionObject2D is the base class for 2D physics collisionables. They can hold
 #### <a name="add_shape">add_shape</a>
   * void  **`add_shape`**  **(** [Shape2D](class_shape2d) shape, [Matrix32](class_matrix32) transform=1,0, 0,1, 0,0  **)**
 
-Add a [[shape2d|Shape2D]] to the collision body, with a given custom transform.
+Add a [Shape2D](class_shape2d) to the collision body, with a given custom transform.
 
 #### <a name="get_shape_count">get_shape_count</a>
   * [int](class_int)  **`get_shape_count`**  **(** **)** const

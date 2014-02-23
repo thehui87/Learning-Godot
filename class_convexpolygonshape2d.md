@@ -1,5 +1,6 @@
 #  ConvexPolygonShape2D  
-#####**Inherits:** [Shape2D](class_shape2d)
+####**Inherits:** [Shape2D](class_shape2d)
+####**Category:** Core
 
 ###  Brief Description  
 Convex Polygon Shape for 2D physics

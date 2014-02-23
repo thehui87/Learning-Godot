@@ -1,5 +1,6 @@
 #  RigidBody2D  
-#####**Inherits:** [PhysicsBody2D](class_physicsbody2d)
+####**Inherits:** [PhysicsBody2D](class_physicsbody2d)
+####**Category:** Core
 
 ###  Brief Description  
 Rigid body 2D node.
@@ -51,7 +52,7 @@ Rigid body 2D node.
 
 ###  Description  
 Rigid body 2D node. This node is used for placing rigid bodies in the scene. It can contain a number of shapes, and also shift state between regular Rigid Body to Character or even Static. 
-	Character mode forbids the node from being rotated. This node can have a custom force integrator function, for writing complex physics motion behavior per node.\\
+	Character mode forbids the node from being rotated. This node can have a custom force integrator function, for writing complex physics motion behavior per node.
 
 	As a warning, don't change this node position every frame or very often. Sporadic changes work fine, but physics runs at a different granularity (fixed hz) than usual rendering (process callback) and maybe even in a separate thread, so changing this from a process loop will yield strange behavior.
 

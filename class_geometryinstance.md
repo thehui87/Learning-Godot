@@ -1,5 +1,6 @@
 #  GeometryInstance  
-#####**Inherits:** [VisualInstance](class_visualinstance)
+####**Inherits:** [VisualInstance](class_visualinstance)
+####**Category:** Core
 
 ###  Brief Description  
 Base node for geometry based visual instances.

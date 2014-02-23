@@ -1,5 +1,6 @@
 #  AudioServer  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 Server interface for low level audio access.
@@ -78,7 +79,7 @@ AudioServer is a low level server interface for audio access. It is"#10;"#9;in c
 #### <a name="sample_create">sample_create</a>
   * [RID](class_rid)  **`sample_create`**  **(** [int](class_int) format, [bool](class_bool) stereo, [int](class_int) length  **)**
 
-Create an audio sample, return a [[rid|RID]] referencing"#10;"#9;"#9;"#9;it. The sample will be created with a given format"#10;"#9;"#9;"#9;(from the SAMPLE_FORMAT_* enum), a total length (in"#10;"#9;"#9;"#9;frames, not samples or bytes), in either stereo or"#10;"#9;"#9;"#9;mono.
+Create an audio sample, return a [RID](class_rid) referencing"#10;"#9;"#9;"#9;it. The sample will be created with a given format"#10;"#9;"#9;"#9;(from the SAMPLE_FORMAT_* enum), a total length (in"#10;"#9;"#9;"#9;frames, not samples or bytes), in either stereo or"#10;"#9;"#9;"#9;mono.
 
 #### <a name="sample_set_description">sample_set_description</a>
   * void  **`sample_set_description`**  **(** [RID](class_rid) sample, [String](class_string) description  **)**
@@ -143,27 +144,27 @@ Return the loop format for a sample, as a value from"#10;"#9;"#9;"#9;the SAMPLE_
 #### <a name="sample_set_loop_begin">sample_set_loop_begin</a>
   * void  **`sample_set_loop_begin`**  **(** [RID](class_rid) sample, [int](class_int) pos  **)**
 
-Set the initial loop point of a sample. Only has"#10;"#9;"#9;"#9;effect if sample loop is enabled. See [[#sample_set_loop_format|sample_set_loop_format]].
+Set the initial loop point of a sample. Only has"#10;"#9;"#9;"#9;effect if sample loop is enabled. See [`sample_set_loop_format`](#sample_set_loop_format).
 
 #### <a name="sample_get_loop_begin">sample_get_loop_begin</a>
   * [int](class_int)  **`sample_get_loop_begin`**  **(** [RID](class_rid) sample  **)** const
 
-Return the initial loop point of a sample. Only has"#10;"#9;"#9;"#9;effect if sample loop is enabled. See [[#sample_set_loop_format|sample_set_loop_format]].
+Return the initial loop point of a sample. Only has"#10;"#9;"#9;"#9;effect if sample loop is enabled. See [`sample_set_loop_format`](#sample_set_loop_format).
 
 #### <a name="sample_set_loop_end">sample_set_loop_end</a>
   * void  **`sample_set_loop_end`**  **(** [RID](class_rid) sample, [int](class_int) pos  **)**
 
-Set the final loop point of a sample. Only has"#10;"#9;"#9;"#9;effect if sample loop is enabled. See [[#sample_set_loop_format|sample_set_loop_format]].
+Set the final loop point of a sample. Only has"#10;"#9;"#9;"#9;effect if sample loop is enabled. See [`sample_set_loop_format`](#sample_set_loop_format).
 
 #### <a name="sample_get_loop_end">sample_get_loop_end</a>
   * [int](class_int)  **`sample_get_loop_end`**  **(** [RID](class_rid) sample  **)** const
 
-Return the final loop point of a sample. Only has"#10;"#9;"#9;"#9;effect if sample loop is enabled. See [[#sample_set_loop_format|sample_set_loop_format]].
+Return the final loop point of a sample. Only has"#10;"#9;"#9;"#9;effect if sample loop is enabled. See [`sample_set_loop_format`](#sample_set_loop_format).
 
 #### <a name="voice_create">voice_create</a>
   * [RID](class_rid)  **`voice_create`**  **(** **)**
 
-Allocate a voice for playback. Voices are"#10;"#9;"#9;"#9;persistent. A voice can play a single sample at the"#10;"#9;"#9;"#9;same time. See [[#sample_create|sample_create]].
+Allocate a voice for playback. Voices are"#10;"#9;"#9;"#9;persistent. A voice can play a single sample at the"#10;"#9;"#9;"#9;same time. See [`sample_create`](#sample_create).
 
 #### <a name="voice_play">voice_play</a>
   * void  **`voice_play`**  **(** [RID](class_rid) voice, [RID](class_rid) sample  **)**
@@ -263,7 +264,7 @@ Return the current mix rate for a given voice.
 #### <a name="voice_is_positional">voice_is_positional</a>
   * [bool](class_bool)  **`voice_is_positional`**  **(** [RID](class_rid) voice  **)** const
 
-Return wether the current voice is positional. See"#10;"#9;"#9;"#9;[[#voice_set_positional|voice_set_positional]].
+Return wether the current voice is positional. See"#10;"#9;"#9;"#9;[`voice_set_positional`](#voice_set_positional).
 
 #### <a name="voice_stop">voice_stop</a>
   * void  **`voice_stop`**  **(** [RID](class_rid) voice  **)**
@@ -273,7 +274,7 @@ Stop a given voice.
 #### <a name="free">free</a>
   * void  **`free`**  **(** [RID](class_rid) rid  **)**
 
-Free a [[rid|RID]] resource.
+Free a [RID](class_rid) resource.
 
 #### <a name="set_stream_global_volume_scale">set_stream_global_volume_scale</a>
   * void  **`set_stream_global_volume_scale`**  **(** [real](class_real) scale  **)**

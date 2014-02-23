@@ -1,5 +1,6 @@
 #  SpinBox  
-#####**Inherits:** [Range](class_range)
+####**Inherits:** [Range](class_range)
+####**Category:** Core
 
 ###  Brief Description  
 Numerical input text field.

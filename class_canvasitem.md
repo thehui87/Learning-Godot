@@ -1,5 +1,6 @@
 #  CanvasItem  
-#####**Inherits:** [Node](class_node)
+####**Inherits:** [Node](class_node)
+####**Category:** Core
 
 ###  Brief Description  
 Base class of anything 2D.
@@ -66,7 +67,7 @@ Base class of anything 2D.
   * **NOTIFICATION_TRANSFORM_CHANGED** = **29** - Canvas item transform has changed. Only received if requested.
 
 ###  Description  
-Base class of anything 2D. Canvas items are laid out in a tree and children inherit and extend the transform of their parent. CanvasItem is extended by [[control|Control]], for anything GUI related, and by [[node2d|Node2D]] for anything 2D engine related.
+Base class of anything 2D. Canvas items are laid out in a tree and children inherit and extend the transform of their parent. CanvasItem is extended by [Control](class_control), for anything GUI related, and by [Node2D](class_node2d) for anything 2D engine related.
 	Any CanvasItem can draw. For this, the "update" function must be called, then NOTIFICATION_DRAW will be received on idle time to request redraw. Because of this, canvas items don't need to be redraw on every frame, improving the performance significantly. Several functions for drawing on the CanvasItem are provided (see draw_* functions). They can only be used inside the notification, signal or _draw() overrided function, though.
 	Canvas items are draw in tree order. By default, children are on top of their parents so a root CanvasItem will be drawn behind everything (this can be changed per item though). 
 	Canvas items can also be hidden (hiding also their subtree). They provide many means for changing standard parameters such as opacity (for it and the subtree) and self opacity, blend mode.
@@ -97,7 +98,7 @@ Return a rect containing the editable contents of the item.
 #### <a name="get_canvas_item">get_canvas_item</a>
   * [RID](class_rid)  **`get_canvas_item`**  **(** **)** const
 
-Return the canvas item RID used by [[visualserver|VisualServer]] for this item.
+Return the canvas item RID used by [VisualServer](class_visualserver) for this item.
 
 #### <a name="is_visible">is_visible</a>
   * [bool](class_bool)  **`is_visible`**  **(** **)** const
@@ -107,7 +108,7 @@ Return true if this CanvasItem is visible. It may be invisible because itself or
 #### <a name="is_hidden">is_hidden</a>
   * [bool](class_bool)  **`is_hidden`**  **(** **)** const
 
-Return true if this CanvasItem is hidden. Note that the CanvasItem may not be visible, but as long as it's not hidden ([[#hide|hide]] called) the function will return false.
+Return true if this CanvasItem is hidden. Note that the CanvasItem may not be visible, but as long as it's not hidden ([`hide`](#hide) called) the function will return false.
 
 #### <a name="show">show</a>
   * void  **`show`**  **(** **)**
@@ -132,7 +133,7 @@ Set as toplevel. This means that it will not inherit transform from parent canva
 #### <a name="is_set_as_toplevel">is_set_as_toplevel</a>
   * [bool](class_bool)  **`is_set_as_toplevel`**  **(** **)** const
 
-Return if set as toplevel. See [[#set_as_toplevel|set_as_toplevel]]/
+Return if set as toplevel. See [`set_as_toplevel`](#set_as_toplevel)/
 
 #### <a name="set_blend_mode">set_blend_mode</a>
   * void  **`set_blend_mode`**  **(** [int](class_int) blend_mode  **)**

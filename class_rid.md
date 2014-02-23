@@ -1,4 +1,5 @@
 #  RID  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 

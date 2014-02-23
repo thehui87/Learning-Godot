@@ -1,5 +1,6 @@
 #  WindowDialog  
-#####**Inherits:** [Popup](class_popup)
+####**Inherits:** [Popup](class_popup)
+####**Category:** Core
 
 ###  Brief Description  
 Base class for window dialogs.
@@ -10,7 +11,7 @@ Base class for window dialogs.
   * [TextureButton](class_texturebutton)  **[`get_close_button`](#get_close_button)**  **(** **)**
 
 ###  Description  
-Windowdialog is the base class for all window-based dialogs. It's a by-default toplevel [[control|Control]] that draws a window decoration and allows motion and resizing.
+Windowdialog is the base class for all window-based dialogs. It's a by-default toplevel [Control](class_control) that draws a window decoration and allows motion and resizing.
 
 ###  Member Function Description  
 
@@ -27,4 +28,4 @@ Return the title of the window.
 #### <a name="get_close_button">get_close_button</a>
   * [TextureButton](class_texturebutton)  **`get_close_button`**  **(** **)**
 
-Return the close [[texturebutton|TextureButton]].
+Return the close [TextureButton](class_texturebutton).

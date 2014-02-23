@@ -1,5 +1,6 @@
 #  DirectionalLight  
-#####**Inherits:** [Light](class_light)
+####**Inherits:** [Light](class_light)
+####**Category:** Core
 
 ###  Brief Description  
 Directional Light, such as the Sun or the Moon.
@@ -19,6 +20,6 @@ Directional Light, such as the Sun or the Moon.
   * **SHADOW_PARAM_PSSM_ZOFFSET_SCALE** = **2**
 
 ###  Description  
-A DirectionalLight is a type of [[light|Light]] node that emits light constantly in one direction (the negative z axis of the node). It is used lights with strong intensity that are located far away from the scene to model sunlight or moonlight. The worldpace location of the DirectionalLight transform (origin) is ignored, only the basis is used do determine light direction.
+A DirectionalLight is a type of [Light](class_light) node that emits light constantly in one direction (the negative z axis of the node). It is used lights with strong intensity that are located far away from the scene to model sunlight or moonlight. The worldpace location of the DirectionalLight transform (origin) is ignored, only the basis is used do determine light direction.
 
 ###  Member Function Description  

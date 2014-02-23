@@ -1,5 +1,6 @@
 #  Sample  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Audio Sample (sound) class.

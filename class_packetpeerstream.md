@@ -1,5 +1,6 @@
 #  PacketPeerStream  
-#####**Inherits:** [PacketPeer](class_packetpeer)
+####**Inherits:** [PacketPeer](class_packetpeer)
+####**Category:** Core
 
 ###  Brief Description  
 Wrapper to use a PacketPeer over a StreamPeer.

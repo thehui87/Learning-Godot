@@ -1,5 +1,6 @@
 #  Area  
-#####**Inherits:** [CollisionObject](class_collisionobject)
+####**Inherits:** [CollisionObject](class_collisionobject)
+####**Category:** Core
 
 ###  Brief Description  
 

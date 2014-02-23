@@ -1,5 +1,6 @@
 #  ConfirmationDialog  
-#####**Inherits:** [AcceptDialog](class_acceptdialog)
+####**Inherits:** [AcceptDialog](class_acceptdialog)
+####**Category:** Core
 
 ###  Brief Description  
 Dialog for confirmation of actions.
@@ -8,7 +9,7 @@ Dialog for confirmation of actions.
   * [Button](class_button)  **[`get_cancel`](#get_cancel)**  **(** **)**
 
 ###  Description  
-Dialog for confirmation of actions. This dialog inherits from [[acceptdialog|AcceptDialog]], but has by default an OK and Cancel buton (in host OS order).
+Dialog for confirmation of actions. This dialog inherits from [AcceptDialog](class_acceptdialog), but has by default an OK and Cancel buton (in host OS order).
 
 ###  Member Function Description  
 

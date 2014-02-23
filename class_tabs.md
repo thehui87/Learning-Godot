@@ -1,5 +1,6 @@
 #  Tabs  
-#####**Inherits:** [Control](class_control)
+####**Inherits:** [Control](class_control)
+####**Category:** Core
 
 ###  Brief Description  
 Tabs Control.
@@ -18,6 +19,6 @@ Tabs Control.
   *  **`tab_changed`**  **(** [int](class_int) tab  **)**
 
 ###  Description  
-Simple tabs control, similar to [[tabcontainer|TabContainer]] but is only in charge of drawing tabs, not interact with children.
+Simple tabs control, similar to [TabContainer](class_tabcontainer) but is only in charge of drawing tabs, not interact with children.
 
 ###  Member Function Description  

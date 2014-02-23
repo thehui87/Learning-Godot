@@ -1,4 +1,5 @@
 #  Object  
+####**Category:** Core
 
 ###  Brief Description  
 Base class for all non built-in types.
@@ -51,10 +52,10 @@ Base class for all non built-in types.
 
 ###  Description  
 Base class for all non built-in types. Everything not a built-in type starts the inheritance chain from this class.
-        Objects do not manage memory, if inheriting from one the object will most likely have to be deleted manually (call the [[#free|free]] function from the script or delete from C++).
-        Some derivates add memory management, such as [[reference|Reference]] (which keps a reference count and deletes itself automatically when no longer referenced) and [[node|Node]], which deletes the children tree when deleted.
-        Objects export properties, which are mainly useful for storage and editing, but not really so much in programming. Properties are exported in [[#_get_property_list|_get_property_list]] and handled in [[#_get|_get]] and [_set]. However, scripting languages and C++ have simper means to export them.
-        Objects also receive notifications ([[#_notification|_notification]]). Notifications are a simple way to notify the object about simple events, so they can all be handled together.
+        Objects do not manage memory, if inheriting from one the object will most likely have to be deleted manually (call the [`free`](#free) function from the script or delete from C++).
+        Some derivates add memory management, such as [Reference](class_reference) (which keps a reference count and deletes itself automatically when no longer referenced) and [Node](class_node), which deletes the children tree when deleted.
+        Objects export properties, which are mainly useful for storage and editing, but not really so much in programming. Properties are exported in [`_get_property_list`](#_get_property_list) and handled in [`_get`](#_get) and [_set]. However, scripting languages and C++ have simper means to export them.
+        Objects also receive notifications ([`_notification`](#_notification)). Notifications are a simple way to notify the object about simple events, so they can all be handled together.
 
 ###  Member Function Description  
 
@@ -126,7 +127,7 @@ Return the object script (or null if it doesn't have one).
 #### <a name="set_meta">set_meta</a>
   * void  **`set_meta`**  **(** [String](class_string) name, var value  **)**
 
-Set a metadata into the object. Medatada is serialized. Metadata can be //anything//.
+Set a metadata into the object. Medatada is serialized. Metadata can be _anything_.
 
 #### <a name="get_meta">get_meta</a>
   * void  **`get_meta`**  **(** [String](class_string) name  **)** const
@@ -172,7 +173,7 @@ Return the list of signals as an array of dictionaries.
   * void  **`connect`**  **(** [String](class_string) signal, [Object](class_object) target, [String](class_string) method, [Array](class_array) binds=Array(), [int](class_int) flags=0  **)**
 
 Connect a signal to a method at a target (member function). Binds are optional and are passed as extra arguments to the call. Flags specify optional deferred or one shot connections, see enum CONNECT_*.
-                        A signal can only be connected once to a method, and it will throw an error if already connected. If you want to avoid this, use [[#is_connected|is_connected]] to check.
+                        A signal can only be connected once to a method, and it will throw an error if already connected. If you want to avoid this, use [`is_connected`](#is_connected) to check.
 
 #### <a name="disconnect">disconnect</a>
   * void  **`disconnect`**  **(** [String](class_string) signal, [Object](class_object) target, [String](class_string) method  **)**
@@ -212,4 +213,4 @@ deprecated, will go away.
 #### <a name="tr">tr</a>
   * [String](class_string)  **`tr`**  **(** [String](class_string) message  **)** const
 
-Translate a message. Only works in message translation is enabled (which is by default). See [[#set_message_translation|set_message_translation]].
+Translate a message. Only works in message translation is enabled (which is by default). See [`set_message_translation`](#set_message_translation).

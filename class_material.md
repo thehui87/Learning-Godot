@@ -1,8 +1,9 @@
 #  Material  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
-Abstract base [[resource|Resource]] for coloring and shading geometry.
+Abstract base [Resource](class_resource) for coloring and shading geometry.
 
 ###  Member Functions 
   * void  **[`set_flag`](#set_flag)**  **(** [int](class_int) flag, [bool](class_bool) enable  **)**
@@ -43,29 +44,29 @@ Abstract base [[resource|Resource]] for coloring and shading geometry.
   * **BLEND_MODE_SUB** = **2** - Use substractive blending equation, often used for some smoke effects or types of glass.
 
 ###  Description  
-Material is a base [[resource|Resource]] used for coloring and shading geometry. All materials inherit from it and almost all [[visualinstance|VisualInstance]] derived nodes carry a Material. A few flags and parameters are shared between all material types and are configured here.
+Material is a base [Resource](class_resource) used for coloring and shading geometry. All materials inherit from it and almost all [VisualInstance](class_visualinstance) derived nodes carry a Material. A few flags and parameters are shared between all material types and are configured here.
 
 ###  Member Function Description  
 
 #### <a name="set_flag">set_flag</a>
   * void  **`set_flag`**  **(** [int](class_int) flag, [bool](class_bool) enable  **)**
 
-Set a [[material|Material]] flag, which toggles on or off a behavior when rendering. See enumeration FLAG_* for a list.
+Set a [Material](class_material) flag, which toggles on or off a behavior when rendering. See enumeration FLAG_* for a list.
 
 #### <a name="get_flag">get_flag</a>
   * [bool](class_bool)  **`get_flag`**  **(** [int](class_int) flag  **)** const
 
-Return a [[material|Material]] flag, which toggles on or off a behavior when rendering. See enumeration FLAG_* for a list.
+Return a [Material](class_material) flag, which toggles on or off a behavior when rendering. See enumeration FLAG_* for a list.
 
 #### <a name="set_blend_mode">set_blend_mode</a>
   * void  **`set_blend_mode`**  **(** [int](class_int) mode  **)**
 
-Set blend mode for the material, which can be one of BLEND_MODE_MIX (default), BLEND_MODE_ADD, BLEND_MODE_SUB. Keep in mind that only BLEND_MODE_MIX ensures that the material //may// be opaque, any other blend mode will render with alpha blending enabled in raster-based [[visualserver|VisualServer]] implementations.
+Set blend mode for the material, which can be one of BLEND_MODE_MIX (default), BLEND_MODE_ADD, BLEND_MODE_SUB. Keep in mind that only BLEND_MODE_MIX ensures that the material _may_ be opaque, any other blend mode will render with alpha blending enabled in raster-based [VisualServer](class_visualserver) implementations.
 
 #### <a name="get_blend_mode">get_blend_mode</a>
   * [int](class_int)  **`get_blend_mode`**  **(** **)** const
 
-Return blend mode for the material, which can be one of BLEND_MODE_MIX (default), BLEND_MODE_ADD, BLEND_MODE_SUB. Keep in mind that only BLEND_MODE_MIX ensures that the material //may// be opaque, any other blend mode will render with alpha blending enabled in raster-based [[visualserver|VisualServer]] implementations.
+Return blend mode for the material, which can be one of BLEND_MODE_MIX (default), BLEND_MODE_ADD, BLEND_MODE_SUB. Keep in mind that only BLEND_MODE_MIX ensures that the material _may_ be opaque, any other blend mode will render with alpha blending enabled in raster-based [VisualServer](class_visualserver) implementations.
 
 #### <a name="set_line_width">set_line_width</a>
   * void  **`set_line_width`**  **(** [real](class_real) width  **)**

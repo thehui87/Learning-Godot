@@ -1,5 +1,6 @@
 #  ParallaxBackground  
-#####**Inherits:** [CanvasLayer](class_canvaslayer)
+####**Inherits:** [CanvasLayer](class_canvaslayer)
+####**Category:** Core
 
 ###  Brief Description  
 

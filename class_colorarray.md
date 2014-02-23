@@ -1,4 +1,5 @@
 #  ColorArray  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 Array of Colors

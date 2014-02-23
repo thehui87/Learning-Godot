@@ -1,5 +1,6 @@
 #  StaticBody2D  
-#####**Inherits:** [PhysicsBody2D](class_physicsbody2d)
+####**Inherits:** [PhysicsBody2D](class_physicsbody2d)
+####**Category:** Core
 
 ###  Brief Description  
 Static body for 2D Physics.
@@ -17,7 +18,7 @@ Static body for 2D Physics.
   * [real](class_real)  **[`get_bounce`](#get_bounce)**  **(** **)** const
 
 ###  Description  
-Static body for 2D Physics. A static body is a simple body that is not intended to move. They don't consume any CPU resources in contrast to a [[rigidbody2d|RigidBody2D]] so they are great for scenaro collision.\\
+Static body for 2D Physics. A static body is a simple body that is not intended to move. They don't consume any CPU resources in contrast to a [RigidBody2D](class_rigidbody2d) so they are great for scenaro collision.
 
 	A static body also can be animated by using simulated motion mode, this is useful for implementing functionalities such as moving platforms, when this mode is active the body can be animated and automatically compute linear and angular velocity to apply in that frame and to influence other bodies.
 	Alternatively, a constant linear or angular velocity can be set for the static body, so even if it doesn't move, it affects other bodies as if it was moving (this is useful for simulating conveyor belts or conveyor wheels).

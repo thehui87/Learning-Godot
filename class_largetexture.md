@@ -1,5 +1,6 @@
 #  LargeTexture  
-#####**Inherits:** [Texture](class_texture)
+####**Inherits:** [Texture](class_texture)
+####**Category:** Core
 
 ###  Brief Description  
 

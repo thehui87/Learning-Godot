@@ -1,5 +1,6 @@
 #  Node  
-#####**Inherits:** [Object](class_object)
+####**Inherits:** [Object](class_object)
+####**Category:** Core
 
 ###  Brief Description  
 Base class for all the "Scene" elements.
@@ -87,11 +88,11 @@ Base class for all the "Scene" elements.
 ###  Description  
 Nodes can be set as children of other nodes, resulting in a tree arrangement. Any tree of nodes is called a "Scene".
         Scenes can be saved to disk, and then instanced into other scenes. This allows for very high flexibility in the architecture and data model of the projects. 
-        [[scenemainloop|SceneMainLoop]] contains the "active" tree of nodes, and a node becomes active (receinving NOTIFICATION_ENTER_SCENE) when added to that tree.
+        [SceneMainLoop](class_scenemainloop) contains the "active" tree of nodes, and a node becomes active (receinving NOTIFICATION_ENTER_SCENE) when added to that tree.
         A node can contain any number of nodes as a children (but there is only one tree root) with the requirement that no two childrens with the same name can exist.
         Nodes can, optionally, be added to groups. This makes it easy to reach a number of nodes from the code (for example an "enemies" group).
-        Nodes can be set to "process" state, so they constantly receive a callback requesting them to process (do anything). Normal processing ([[#_process|_process]]) happens as fast as possible and is dependent on the frame rate, so the processing time delta is variable. Fixed processing ([[#_fixed_process|_fixed_process]]) happens a fixed amount of times per second (by default 60) and is useful to link itself to the physics.
-        Nodes can also process input events. When set, the [[#_input|_input]] function will be called with every input that the program receives. Since this is usually too overkill (unless used for simple projects), an [[#_unhandled_input|_unhandled_input]] function is called when the input was not handled by anyone else (usually, GUI [[control|Control]] nodes).
+        Nodes can be set to "process" state, so they constantly receive a callback requesting them to process (do anything). Normal processing ([`_process`](#_process)) happens as fast as possible and is dependent on the frame rate, so the processing time delta is variable. Fixed processing ([`_fixed_process`](#_fixed_process)) happens a fixed amount of times per second (by default 60) and is useful to link itself to the physics.
+        Nodes can also process input events. When set, the [`_input`](#_input) function will be called with every input that the program receives. Since this is usually too overkill (unless used for simple projects), an [`_unhandled_input`](#_unhandled_input) function is called when the input was not handled by anyone else (usually, GUI [Control](class_control) nodes).
         To keep track of the scene hieararchy (specially when instancing scenes into scenes) an "owner" can be set to a node. This keeps track of who instanced what. This is mostly useful when writing editors and tools, though.
         Finally, when a node is freed, it will free all its children nodes too.
 
@@ -115,7 +116,7 @@ Called for fixed processing (synced to the physics).
 #### <a name="_input">_input</a>
   * void  **`_input`**  **(** [InputEvent](class_inputevent) event  **)** virtual
 
-Called when any input happens (also must enable with [[#set_process_input|set_process_input]] or the property).
+Called when any input happens (also must enable with [`set_process_input`](#set_process_input) or the property).
 
 #### <a name="_process">_process</a>
   * void  **`_process`**  **(** [real](class_real) delta  **)** virtual
@@ -130,7 +131,7 @@ Called when ready (entered scene and children entered too).
 #### <a name="_unhandled_input">_unhandled_input</a>
   * void  **`_unhandled_input`**  **(** [InputEvent](class_inputevent) event  **)** virtual
 
-Called when any input happens that was not handled by something else (also must enable with [[#set_process_unhandled_input|set_process_unhandled_input]] or the property).
+Called when any input happens that was not handled by something else (also must enable with [`set_process_unhandled_input`](#set_process_unhandled_input) or the property).
 
 #### <a name="_unhandled_key_input">_unhandled_key_input</a>
   * void  **`_unhandled_key_input`**  **(** [InputEvent](class_inputevent) key_event  **)** virtual
@@ -140,22 +141,22 @@ Called when any key input happens that was not handled by something else.
 #### <a name="set_name">set_name</a>
   * void  **`set_name`**  **(** [String](class_string) name  **)**
 
-Set the name of the [[node|Node]]. Name must be unique within parent, and setting an already existing name will cause for the node to be automatically renamed.
+Set the name of the [Node](class_node). Name must be unique within parent, and setting an already existing name will cause for the node to be automatically renamed.
 
 #### <a name="get_name">get_name</a>
   * [String](class_string)  **`get_name`**  **(** **)** const
 
-Return the name of the [[node|Node]]. Name is be unique within parent.
+Return the name of the [Node](class_node). Name is be unique within parent.
 
 #### <a name="add_child">add_child</a>
   * void  **`add_child`**  **(** [Node](class_node) node  **)**
 
-Add a child [[node|Node]]. Nodes can have as many children as they want, but every child must have a unique name. Children nodes are automatically deleted when the parent node is deleted, so deleting a whole scene is performed by deleting its topmost node.
+Add a child [Node](class_node). Nodes can have as many children as they want, but every child must have a unique name. Children nodes are automatically deleted when the parent node is deleted, so deleting a whole scene is performed by deleting its topmost node.
 
 #### <a name="remove_child">remove_child</a>
   * void  **`remove_child`**  **(** [Node](class_node) node  **)**
 
-Remove a child [[node|Node]]. Node is NOT deleted and will have to be deleted manually.
+Remove a child [Node](class_node). Node is NOT deleted and will have to be deleted manually.
 
 #### <a name="get_child_count">get_child_count</a>
   * [int](class_int)  **`get_child_count`**  **(** **)** const
@@ -165,19 +166,19 @@ Return the amount of children nodes.
 #### <a name="get_child">get_child</a>
   * [Node](class_node)  **`get_child`**  **(** [int](class_int) idx  **)** const
 
-Return a children node by it"apos;s index (see [[#get_child_count|get_child_count]]). This method is often used for iterating all children of a node.
+Return a children node by it"apos;s index (see [`get_child_count`](#get_child_count)). This method is often used for iterating all children of a node.
 
 #### <a name="get_node">get_node</a>
   * [Node](class_node)  **`get_node`**  **(** [NodePath](class_nodepath) path  **)** const
 
-Fetch a node. "path" must be valid (or else error will occur) and can be either the name of a child node, a relative path (from the current node to another node), or an absolute path to a node.\\
- Examples ofa paths are: get_node("Sword") , get_node("../Swamp/Alligator") , get_node("/MyGame"). \\
-Note: fetching absolute paths only works when the node is inside the scene tree (see [[#is_inside_scene|is_inside_scene]]).
+Fetch a node. "path" must be valid (or else error will occur) and can be either the name of a child node, a relative path (from the current node to another node), or an absolute path to a node.
+ Examples ofa paths are: get_node("Sword") , get_node("../Swamp/Alligator") , get_node("/MyGame"). 
+Note: fetching absolute paths only works when the node is inside the scene tree (see [`is_inside_scene`](#is_inside_scene)).
 
 #### <a name="get_parent">get_parent</a>
   * Parent  **`get_parent`**  **(** **)** const
 
-Return the parent [[node|Node]] of the current [[node|Node]], or an empty Object if the node lacks a parent.
+Return the parent [Node](class_node) of the current [Node](class_node), or an empty Object if the node lacks a parent.
 
 #### <a name="is_inside_scene">is_inside_scene</a>
   * [bool](class_bool)  **`is_inside_scene`**  **(** **)** const
@@ -187,17 +188,17 @@ Return wether the node is inside a scene tree (a tree where the topmost node is 
 #### <a name="is_a_parent_of">is_a_parent_of</a>
   * [bool](class_bool)  **`is_a_parent_of`**  **(** [Node](class_node) node  **)** const
 
-Return //true// if the "node" argument is a direct or indirect child of the current node, otherwise return //false//.
+Return _true_ if the "node" argument is a direct or indirect child of the current node, otherwise return _false_.
 
 #### <a name="is_greater_than">is_greater_than</a>
   * [bool](class_bool)  **`is_greater_than`**  **(** [Node](class_node) node  **)** const
 
-Return //true// if "node" occurs later in the scene hierarchy than the current node, otherwise return //false//.
+Return _true_ if "node" occurs later in the scene hierarchy than the current node, otherwise return _false_.
 
 #### <a name="get_path">get_path</a>
   * [NodePath](class_nodepath)  **`get_path`**  **(** **)** const
 
-Return the absolute path of the current node. This only works if the curent node is inside the scene tree (see [[#is_inside_scene|is_inside_scene]]).
+Return the absolute path of the current node. This only works if the curent node is inside the scene tree (see [`is_inside_scene`](#is_inside_scene)).
 
 #### <a name="get_path_to">get_path_to</a>
   * [NodePath](class_nodepath)  **`get_path_to`**  **(** [Node](class_node) node  **)** const
@@ -207,7 +208,7 @@ Return the relative path from the current node to the specified node in "node" a
 #### <a name="add_to_group">add_to_group</a>
   * void  **`add_to_group`**  **(** [String](class_string) group, [bool](class_bool) arg1=false  **)**
 
-Add a node to a group. Groups are helpers to name and organize group of nodes, like for example: "Enemies" "Collectables", etc. A [[node|Node]] can be in any number of groups. Nodes can be assigned a group at any time, but will not be added to it until they are inside the scene tree (see [[#is_inside_scene|is_inside_scene]]).
+Add a node to a group. Groups are helpers to name and organize group of nodes, like for example: "Enemies" "Collectables", etc. A [Node](class_node) can be in any number of groups. Nodes can be assigned a group at any time, but will not be added to it until they are inside the scene tree (see [`is_inside_scene`](#is_inside_scene)).
 
 #### <a name="remove_from_group">remove_from_group</a>
   * void  **`remove_from_group`**  **(** [String](class_string) group  **)**
@@ -222,7 +223,7 @@ Move a child node to a different position (order) amongst the other children. Si
 #### <a name="raise">raise</a>
   * void  **`raise`**  **(** **)**
 
-Move this node to the top of the array of nodes of the parent node. This is often useful on GUIs ([[control|Control]]), because their order of drawing fully depends on their order in the tree.
+Move this node to the top of the array of nodes of the parent node. This is often useful on GUIs ([Control](class_control)), because their order of drawing fully depends on their order in the tree.
 
 #### <a name="set_owner">set_owner</a>
   * void  **`set_owner`**  **(** [Node](class_node) owner  **)**
@@ -232,7 +233,7 @@ Set the node owner. A node can have any other node as owner (as long as a valid 
 #### <a name="get_owner">get_owner</a>
   * [Node](class_node)  **`get_owner`**  **(** **)** const
 
-Get the node owner (see [[#set_node_owner|set_node_owner]]).
+Get the node owner (see [`set_node_owner`](#set_node_owner)).
 
 #### <a name="remove_and_skip">remove_and_skip</a>
   * void  **`remove_and_skip`**  **(** **)**
@@ -257,7 +258,7 @@ A node can contain a filename. This filename should not be changed by the user, 
 #### <a name="get_filename">get_filename</a>
   * [String](class_string)  **`get_filename`**  **(** **)** const
 
-Return a filename that may be containedA node can contained by the node. When a scene is instanced from a file, it topmost node contains the filename from where it was loaded (see [[#set_filename|set_filename]]).
+Return a filename that may be containedA node can contained by the node. When a scene is instanced from a file, it topmost node contains the filename from where it was loaded (see [`set_filename`](#set_filename)).
 
 #### <a name="propagate_notification">propagate_notification</a>
   * void  **`propagate_notification`**  **(** [int](class_int) what  **)**
@@ -267,22 +268,22 @@ Notify the current node and all its chldren recursively by calling notification(
 #### <a name="set_fixed_process">set_fixed_process</a>
   * void  **`set_fixed_process`**  **(** [bool](class_bool) enable  **)**
 
-Enables or disables node fixed framerate processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS at a fixed (usually 60fps, check [[os|OS]] to change that) interval (and the [[#_fixed_process|_fixed_process]] callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [[#get_fixed_process_time|get_fixed_process_time]].
+Enables or disables node fixed framerate processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS at a fixed (usually 60fps, check [OS](class_os) to change that) interval (and the [`_fixed_process`](#_fixed_process) callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [`get_fixed_process_time`](#get_fixed_process_time).
 
 #### <a name="get_fixed_process_delta_time">get_fixed_process_delta_time</a>
   * [real](class_real)  **`get_fixed_process_delta_time`**  **(** **)** const
 
-Return the time elapsed since the last fixed frame. This is always the same in fixed proecssing unless the frames per second is changed in [[os|OS]].
+Return the time elapsed since the last fixed frame. This is always the same in fixed proecssing unless the frames per second is changed in [OS](class_os).
 
 #### <a name="is_fixed_processing">is_fixed_processing</a>
   * [bool](class_bool)  **`is_fixed_processing`**  **(** **)** const
 
-Return true if fixed processing is enabled (see [[#set_fixed_process|set_fixed_process]]).
+Return true if fixed processing is enabled (see [`set_fixed_process`](#set_fixed_process)).
 
 #### <a name="set_process">set_process</a>
   * void  **`set_process`**  **(** [bool](class_bool) enable  **)**
 
-Enables or disables node processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS on every drawn frame (and the [[#_process|_process]] callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [[#get_process_time|get_process_time]].
+Enables or disables node processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS on every drawn frame (and the [`_process`](#_process) callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [`get_process_time`](#get_process_time).
 
 #### <a name="get_process_delta_time">get_process_delta_time</a>
   * [real](class_real)  **`get_process_delta_time`**  **(** **)** const
@@ -292,27 +293,27 @@ Return the time elapsed (in seconds) since the last process callback. This is al
 #### <a name="is_processing">is_processing</a>
   * [bool](class_bool)  **`is_processing`**  **(** **)** const
 
-Return wether processing is enabled in the current node (see [[#set_process|set_process]]).
+Return wether processing is enabled in the current node (see [`set_process`](#set_process)).
 
 #### <a name="set_process_input">set_process_input</a>
   * void  **`set_process_input`**  **(** [bool](class_bool) enable  **)**
 
-Enable input processing for node. This is not requiered for GUI controls! It hooks up the node to receive all input (see [[#_input|_input]]).
+Enable input processing for node. This is not requiered for GUI controls! It hooks up the node to receive all input (see [`_input`](#_input)).
 
 #### <a name="is_processing_input">is_processing_input</a>
   * [bool](class_bool)  **`is_processing_input`**  **(** **)** const
 
-Return true if the node is processing input (see [[#set_process_input|set_process_input]]).
+Return true if the node is processing input (see [`set_process_input`](#set_process_input)).
 
 #### <a name="set_process_unhandled_input">set_process_unhandled_input</a>
   * void  **`set_process_unhandled_input`**  **(** [bool](class_bool) enable  **)**
 
-Enable unhandled input processing for node. This is not requiered for GUI controls! It hooks up the node to receive all input that was not previously handled before (usually by a [[control|Control]]). (see [[#_unhandled_input|_unhandled_input]]).
+Enable unhandled input processing for node. This is not requiered for GUI controls! It hooks up the node to receive all input that was not previously handled before (usually by a [Control](class_control)). (see [`_unhandled_input`](#_unhandled_input)).
 
 #### <a name="is_processing_unhandled_input">is_processing_unhandled_input</a>
   * [bool](class_bool)  **`is_processing_unhandled_input`**  **(** **)** const
 
-Return true if the node is processing unhandled input (see [[#set_process_unhandled_input|set_process_unhandled_input]]).
+Return true if the node is processing unhandled input (see [`set_process_unhandled_input`](#set_process_unhandled_input)).
 
 #### <a name="can_process">can_process</a>
   * [bool](class_bool)  **`can_process`**  **(** **)** const

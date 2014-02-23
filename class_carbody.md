@@ -1,5 +1,6 @@
 #  CarBody  
-#####**Inherits:** [PhysicsBody](class_physicsbody)
+####**Inherits:** [PhysicsBody](class_physicsbody)
+####**Category:** Core
 
 ###  Brief Description  
 

@@ -1,5 +1,6 @@
 #  AnimationPlayer  
-#####**Inherits:** [Node](class_node)
+####**Inherits:** [Node](class_node)
+####**Category:** Core
 
 ###  Brief Description  
 Container and player of [Animaton] resources.
@@ -49,7 +50,7 @@ Container and player of [Animaton] resources.
   * **ANIMATION_PROCESS_IDLE** = **1**
 
 ###  Description  
-An animation player is used for general purpose playback of [[animation|Animation]] resources. It contains a dictionary of animations (referenced by name) and custom blend times between their transitions. Additionally, animations can be played and blended in diferent channels.
+An animation player is used for general purpose playback of [Animation](class_animation) resources. It contains a dictionary of animations (referenced by name) and custom blend times between their transitions. Additionally, animations can be played and blended in diferent channels.
 
 ###  Member Function Description  
 
@@ -71,12 +72,12 @@ Rename an existing animation.
 #### <a name="has_animation">has_animation</a>
   * [bool](class_bool)  **`has_animation`**  **(** [String](class_string) name  **)** const
 
-Request wether an [[animation|Animation]] name exist within the player.
+Request wether an [Animation](class_animation) name exist within the player.
 
 #### <a name="get_animation">get_animation</a>
   * [Animation](class_animation)  **`get_animation`**  **(** [String](class_string) name  **)** const
 
-Get an [[animation|Animation]] resource by requesting a name.
+Get an [Animation](class_animation) resource by requesting a name.
 
 #### <a name="get_animation_list">get_animation_list</a>
   * [StringArray](class_stringarray)  **`get_animation_list`**  **(** **)** const
@@ -141,12 +142,12 @@ Return true if the player is active.
 #### <a name="set_speed">set_speed</a>
   * void  **`set_speed`**  **(** [real](class_real) speed  **)**
 
-Set a speed scaling ratio in a given animation channel (or channel 0 if none is provided). Default ratio is //1// (no scaling).
+Set a speed scaling ratio in a given animation channel (or channel 0 if none is provided). Default ratio is _1_ (no scaling).
 
 #### <a name="get_speed">get_speed</a>
   * [real](class_real)  **`get_speed`**  **(** **)** const
 
-Get the speed scaling ratio in a given animation channel (or channel 0 if none is provided). Default ratio is //1// (no scaling).
+Get the speed scaling ratio in a given animation channel (or channel 0 if none is provided). Default ratio is _1_ (no scaling).
 
 #### <a name="set_autoplay">set_autoplay</a>
   * void  **`set_autoplay`**  **(** [String](class_string) name  **)**
@@ -186,4 +187,4 @@ Set the mode in which the animation player processes. By default, it processes o
 #### <a name="get_animation_process_mode">get_animation_process_mode</a>
   * [int](class_int)  **`get_animation_process_mode`**  **(** **)** const
 
-Return the mode in which the animation player processes. See [[#set_animation_process_mode|set_animation_process_mode]].
+Return the mode in which the animation player processes. See [`set_animation_process_mode`](#set_animation_process_mode).

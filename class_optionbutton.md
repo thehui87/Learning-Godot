@@ -1,5 +1,6 @@
 #  OptionButton  
-#####**Inherits:** [Button](class_button)
+####**Inherits:** [Button](class_button)
+####**Category:** Core
 
 ###  Brief Description  
 Button control that provides selectable options when pressed.
@@ -87,7 +88,7 @@ Add a separator to the list of items. Separators help to group items. Separator 
 #### <a name="clear">clear</a>
   * void  **`clear`**  **(** **)**
 
-Clear all the items in the [[optionbutton|OptionButton]].
+Clear all the items in the [OptionButton](class_optionbutton).
 
 #### <a name="select">select</a>
   * void  **`select`**  **(** [int](class_int) arg0  **)**

@@ -1,4 +1,5 @@
 #  Matrix3  
+####**Category:** Built-In Types
 
 ###  Brief Description  
 3x3 matrix datatype.
@@ -27,7 +28,7 @@
   * [Vector3](class_vector3) **z**
 
 ###  Description  
-3x3 matrix used for 3D rotation and scale. Contains 3 vector fields x,y and z. Can also be accessed as array of 3D vectors. Almost always used as orthogonal basis for a [[transform|Transform]].
+3x3 matrix used for 3D rotation and scale. Contains 3 vector fields x,y and z. Can also be accessed as array of 3D vectors. Almost always used as orthogonal basis for a [Transform](class_transform).
 
 ###  Member Function Description  
 

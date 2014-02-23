@@ -1,5 +1,6 @@
 #  VisibilityEnabler  
-#####**Inherits:** [VisibilityNotifier](class_visibilitynotifier)
+####**Inherits:** [VisibilityNotifier](class_visibilitynotifier)
+####**Category:** Core
 
 ###  Brief Description  
 

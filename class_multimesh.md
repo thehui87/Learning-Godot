@@ -1,5 +1,6 @@
 #  MultiMesh  
-#####**Inherits:** [Resource](class_resource)
+####**Inherits:** [Resource](class_resource)
+####**Category:** Core
 
 ###  Brief Description  
 Provides high perfomance mesh instancing.
@@ -18,22 +19,22 @@ Provides high perfomance mesh instancing.
   * void  **[`generate_aabb`](#generate_aabb)**  **(** **)**
 
 ###  Description  
-MultiMesh provides low level mesh instancing. If the amount of [[mesh|Mesh]] instances needed goes from hundreds to thousands (and most need to be visible at close proximity) creating such a large amount of [[meshinstance|MeshInstance]] nodes may affect performance by using too much CPU or video memory. \\
-For this case a MultiMesh becomes very useful, as it can draw thousands of instances with little API overhead.\\
- As a drawback, if the instances are too far away of each other, performance may be reduced as every sigle instance will always rendered (they are spatially indexed as one, for the whole object).\\
- Since instances may have any  behavior, the AABB used for visibility must be provided by the user, or generated with [[#generate_aabb|generate_aabb]].
+MultiMesh provides low level mesh instancing. If the amount of [Mesh](class_mesh) instances needed goes from hundreds to thousands (and most need to be visible at close proximity) creating such a large amount of [MeshInstance](class_meshinstance) nodes may affect performance by using too much CPU or video memory. 
+For this case a MultiMesh becomes very useful, as it can draw thousands of instances with little API overhead.
+ As a drawback, if the instances are too far away of each other, performance may be reduced as every sigle instance will always rendered (they are spatially indexed as one, for the whole object).
+ Since instances may have any  behavior, the AABB used for visibility must be provided by the user, or generated with [`generate_aabb`](#generate_aabb).
 
 ###  Member Function Description  
 
 #### <a name="set_mesh">set_mesh</a>
   * void  **`set_mesh`**  **(** [Mesh](class_mesh) mesh  **)**
 
-Set the [[mesh|Mesh]] resource to be drawn in multiple instances.
+Set the [Mesh](class_mesh) resource to be drawn in multiple instances.
 
 #### <a name="get_mesh">get_mesh</a>
   * [Mesh](class_mesh)  **`get_mesh`**  **(** **)** const
 
-Return the [[mesh|Mesh]] resource drawn as multiple instances.
+Return the [Mesh](class_mesh) resource drawn as multiple instances.
 
 #### <a name="set_instance_count">set_instance_count</a>
   * void  **`set_instance_count`**  **(** [int](class_int) arg0  **)**
@@ -78,4 +79,4 @@ Return the visibility AABB.
 #### <a name="generate_aabb">generate_aabb</a>
   * void  **`generate_aabb`**  **(** **)**
 
-Generate a new visibility AABB, using mesh AABB and instance transforms. Since instance information is stored in the [[visualserver|VisualServer]], this function is VERY SLOW and must NOT be used often.
+Generate a new visibility AABB, using mesh AABB and instance transforms. Since instance information is stored in the [VisualServer](class_visualserver), this function is VERY SLOW and must NOT be used often.

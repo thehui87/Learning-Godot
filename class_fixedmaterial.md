@@ -1,5 +1,6 @@
 #  FixedMaterial  
-#####**Inherits:** [Material](class_material)
+####**Inherits:** [Material](class_material)
+####**Category:** Core
 
 ###  Brief Description  
 Simple Material with a fixed parameter set.
@@ -39,7 +40,7 @@ Simple Material with a fixed parameter set.
   * **FLAG_USE_POINT_SIZE** = **2**
 
 ###  Description  
-FixedMaterial is a simple type of material [[resource|Resource]], which contains a fixed amount of paramters. It is the only type of material supported in fixed-pipeline devices and APIs. It is also an often a better alternative to [[shadermaterial|ShaderMaterial]] for most simple use cases.
+FixedMaterial is a simple type of material [Resource](class_resource), which contains a fixed amount of paramters. It is the only type of material supported in fixed-pipeline devices and APIs. It is also an often a better alternative to [ShaderMaterial](class_shadermaterial) for most simple use cases.
 
 ###  Member Function Description  
 
@@ -56,12 +57,12 @@ Return a parameter, parameters are defined in the PARAM_* enum. The type of each
 #### <a name="set_texture">set_texture</a>
   * void  **`set_texture`**  **(** [int](class_int) param, [Texture](class_texture) texture  **)**
 
-Set a texture. Textures change parameters per texel and are mapped to the model depending on the texcoord mode (see [[#set_texcoord_mode|set_texcoord_mode]]).
+Set a texture. Textures change parameters per texel and are mapped to the model depending on the texcoord mode (see [`set_texcoord_mode`](#set_texcoord_mode)).
 
 #### <a name="get_texture">get_texture</a>
   * [Texture](class_texture)  **`get_texture`**  **(** [int](class_int) param  **)** const
 
-Return a texture. Textures change parameters per texel and are mapped to the model depending on the texcoord mode (see [[#set_texcoord_mode|set_texcoord_mode]]).
+Return a texture. Textures change parameters per texel and are mapped to the model depending on the texcoord mode (see [`set_texcoord_mode`](#set_texcoord_mode)).
 
 #### <a name="set_texcoord_mode">set_texcoord_mode</a>
   * void  **`set_texcoord_mode`**  **(** [int](class_int) param, [int](class_int) mode  **)**

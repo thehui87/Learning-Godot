@@ -1,5 +1,6 @@
 #  StreamPeer  
-#####**Inherits:** [Reference](class_reference)
+####**Inherits:** [Reference](class_reference)
+####**Category:** Core
 
 ###  Brief Description  
 Abstraction and base class for stream-based protocols.
