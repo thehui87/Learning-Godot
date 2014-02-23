@@ -12,7 +12,7 @@ Some assets are included for this tutorial, the {{::pong_assets.zip|pong pads, t
 For the sake of the old times, the game will be in 640x400 pixels resolution. This can be configured in the Project Settings (see previous tutorials). The default background color should be set to black:
 
 
-<img align="center" src="clearcolor.png"></img>
+<img align="center" src="images/clearcolor.png"></img>
 
 Create a [Node2D](class_list/node2d) node for the project root. Node2D is the base type for the 2D engine. After this, add some sprites ([Sprite](class_list/sprite) node) and set each to the corresponding texture. The final scene layour should look similar to this (note: the ball is in the middle!):
 
