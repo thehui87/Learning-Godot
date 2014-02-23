@@ -1,3 +1,4 @@
 #  AudioServerSW  
-**Inherits:** [AudioServer](class_audioserver)\\n\\n###  Brief Description  
+**Inherits:** [AudioServer](class_audioserver)\\n\\n
+###  Brief Description  
 

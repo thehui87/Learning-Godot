@@ -1,6 +1,9 @@
 #  GDScript  
-**Inherits:** [Script](class_script)\\n\\n###  Brief Description  
+**Inherits:** [Script](class_script)\\n\\n
+###  Brief Description  
+
 
 ###  Member Functions 
-  * void [new"](#new) **(** **)**
+  * void  ** [new](#new) **  **(** **)**
+
 ###  Member Function Description  

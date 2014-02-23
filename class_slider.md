@@ -1,27 +1,31 @@
 #  Slider  
-**Inherits:** [Range](class_range)\\n\\n###  Brief Description  
+**Inherits:** [Range](class_range)\\n\\n
+###  Brief Description  
 Base class for GUI Sliders.
+
 ###  Member Functions 
-  * void [set_ticks"](#set_ticks) **(** [int](class_int) count  **)**
-  * [int](class_int) [get_ticks"](#get_ticks) **(** **)** const
-  * [bool](class_bool) [get_ticks_on_borders"](#get_ticks_on_borders) **(** **)** const
-  * void [set_ticks_on_borders"](#set_ticks_on_borders) **(** [bool](class_bool) ticks_on_border  **)**
+  * void  ** [set_ticks](#set_ticks) **  **(** [int](class_int) count  **)**
+  * [int](class_int)  ** [get_ticks](#get_ticks) **  **(** **)** const
+  * [bool](class_bool)  ** [get_ticks_on_borders](#get_ticks_on_borders) **  **(** **)** const
+  * void  ** [set_ticks_on_borders](#set_ticks_on_borders) **  **(** [bool](class_bool) ticks_on_border  **)**
+
 ###  Description  
 Base class for GUI Sliders.
+
 ###  Member Function Description  
-==  set_ticks  ==
-  * void [set_ticks"](#set_ticks) **(** [int](class_int) count  **)**
+#### <a name="set_ticks">set_ticks</a>
+  * void  ** [set_ticks](#set_ticks) **  **(** [int](class_int) count  **)**
 \\
 Set amount of ticks to display in slider.
-==  get_ticks  ==
-  * [int](class_int) [get_ticks"](#get_ticks) **(** **)** const
+#### <a name="get_ticks">get_ticks</a>
+  * [int](class_int)  ** [get_ticks](#get_ticks) **  **(** **)** const
 \\
 Return amounts of ticks to display on slider.
-==  get_ticks_on_borders  ==
-  * [bool](class_bool) [get_ticks_on_borders"](#get_ticks_on_borders) **(** **)** const
+#### <a name="get_ticks_on_borders">get_ticks_on_borders</a>
+  * [bool](class_bool)  ** [get_ticks_on_borders](#get_ticks_on_borders) **  **(** **)** const
 \\
 Return true if ticks are visible on borders.
-==  set_ticks_on_borders  ==
-  * void [set_ticks_on_borders"](#set_ticks_on_borders) **(** [bool](class_bool) ticks_on_border  **)**
+#### <a name="set_ticks_on_borders">set_ticks_on_borders</a>
+  * void  ** [set_ticks_on_borders](#set_ticks_on_borders) **  **(** [bool](class_bool) ticks_on_border  **)**
 \\
 Set true if ticks are visible on borders.

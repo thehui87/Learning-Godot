@@ -1,5 +1,7 @@
 #  ProgressBar  
-**Inherits:** [Range](class_range)\\n\\n###  Brief Description  
+**Inherits:** [Range](class_range)\\n\\n
+###  Brief Description  
 General purpose progres bar.
+
 ###  Description  
 General purpose progres bar. Shows fill percentage from right to left.

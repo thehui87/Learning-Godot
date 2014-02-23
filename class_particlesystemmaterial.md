@@ -1,7 +1,10 @@
 #  ParticleSystemMaterial  
-**Inherits:** [Material](class_material)\\n\\n###  Brief Description  
+**Inherits:** [Material](class_material)\\n\\n
+###  Brief Description  
+
 
 ###  Member Functions 
-  * void [set_texture"](#set_texture) **(** [Object](class_object) texture  **)**
-  * [Texture](class_texture) [get_texture"](#get_texture) **(** **)** const
+  * void  ** [set_texture](#set_texture) **  **(** [Object](class_object) texture  **)**
+  * [Texture](class_texture)  ** [get_texture](#get_texture) **  **(** **)** const
+
 ###  Member Function Description  

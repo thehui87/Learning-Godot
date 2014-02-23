@@ -1,3 +1,4 @@
 #  SpatialSoundServer  
-**Inherits:** [Object](class_object)\\n\\n###  Brief Description  
+**Inherits:** [Object](class_object)\\n\\n
+###  Brief Description  
 

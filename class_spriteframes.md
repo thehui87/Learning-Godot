@@ -1,33 +1,37 @@
 #  SpriteFrames  
-**Inherits:** [Resource](class_resource)\\n\\n###  Brief Description  
+**Inherits:** [Resource](class_resource)\\n\\n
+###  Brief Description  
 Sprite frame library for AnimatedSprite.
+
 ###  Member Functions 
-  * void [add_frame"](#add_frame) **(** [Object](class_object) frame, [int](class_int) atpos=-1  **)**
-  * [int](class_int) [get_frame_count"](#get_frame_count) **(** **)** const
-  * [Object](class_object) [get_frame"](#get_frame) **(** [int](class_int) idx  **)** const
-  * void [set_frame"](#set_frame) **(** [int](class_int) idx, [Object](class_object) txt  **)**
-  * void [remove_frame"](#remove_frame) **(** [int](class_int) idx  **)**
-  * void [clear"](#clear) **(** **)**
+  * void  ** [add_frame](#add_frame) **  **(** [Object](class_object) frame, [int](class_int) atpos=-1  **)**
+  * [int](class_int)  ** [get_frame_count](#get_frame_count) **  **(** **)** const
+  * [Object](class_object)  ** [get_frame](#get_frame) **  **(** [int](class_int) idx  **)** const
+  * void  ** [set_frame](#set_frame) **  **(** [int](class_int) idx, [Object](class_object) txt  **)**
+  * void  ** [remove_frame](#remove_frame) **  **(** [int](class_int) idx  **)**
+  * void  ** [clear](#clear) **  **(** **)**
+
 ###  Description  
 Sprite frame library for [[animatedsprite|AnimatedSprite]].
+
 ###  Member Function Description  
-==  add_frame  ==
-  * void [add_frame"](#add_frame) **(** [Object](class_object) frame, [int](class_int) atpos=-1  **)**
+#### <a name="add_frame">add_frame</a>
+  * void  ** [add_frame](#add_frame) **  **(** [Object](class_object) frame, [int](class_int) atpos=-1  **)**
 \\
 Add a frame (texture).
-==  get_frame_count  ==
-  * [int](class_int) [get_frame_count"](#get_frame_count) **(** **)** const
+#### <a name="get_frame_count">get_frame_count</a>
+  * [int](class_int)  ** [get_frame_count](#get_frame_count) **  **(** **)** const
 \\
 Return the amount of frames.
-==  get_frame  ==
-  * [Object](class_object) [get_frame"](#get_frame) **(** [int](class_int) idx  **)** const
+#### <a name="get_frame">get_frame</a>
+  * [Object](class_object)  ** [get_frame](#get_frame) **  **(** [int](class_int) idx  **)** const
 \\
 Return a texture (frame).
-==  remove_frame  ==
-  * void [remove_frame"](#remove_frame) **(** [int](class_int) idx  **)**
+#### <a name="remove_frame">remove_frame</a>
+  * void  ** [remove_frame](#remove_frame) **  **(** [int](class_int) idx  **)**
 \\
 Remove a frame
-==  clear  ==
-  * void [clear"](#clear) **(** **)**
+#### <a name="clear">clear</a>
+  * void  ** [clear](#clear) **  **(** **)**
 \\
 Clear the frames.

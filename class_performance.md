@@ -1,8 +1,11 @@
 #  Performance  
-**Inherits:** [Object](class_object)\\n\\n###  Brief Description  
+**Inherits:** [Object](class_object)\\n\\n
+###  Brief Description  
+
 
 ###  Member Functions 
-  * [real](class_real) [get_monitor"](#get_monitor) **(** [int](class_int) monitor  **)** const
+  * [real](class_real)  ** [get_monitor](#get_monitor) **  **(** [int](class_int) monitor  **)** const
+
 ###  Numeric Constants  
   * **TIME_FPS** = **0**
   * **TIME_PROCESS** = **1**
@@ -26,4 +29,5 @@
   * **RENDER_TEXTURE_MEM_USED** = **18**
   * **RENDER_VERTEX_MEM_USED** = **19**
   * **MONITOR_MAX** = **21**
+
 ###  Member Function Description  

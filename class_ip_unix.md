@@ -1,3 +1,4 @@
 #  IP_Unix  
-**Inherits:** [IP](class_ip)\\n\\n###  Brief Description  
+**Inherits:** [IP](class_ip)\\n\\n
+###  Brief Description  
 
