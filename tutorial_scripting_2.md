@@ -6,7 +6,7 @@ Several actions in Godot are triggered by callbacks or virtual functions, so the
 
 However,it is still a very common case to have a script process on every frame. There are two types of processing, idle processing and fixed processing.
 
-Idle processing is activated with the [Node.set_process](class_list/node#set_process)() function. Once active, the [Node._process](class_list/node#set_process)() callback will be called every frame. Example:
+Idle processing is activated with the [Node.set_process](class_node#set_process)() function. Once active, the [Node._process](class_node#set_process)() callback will be called every frame. Example:
 
 ```python
 
@@ -53,7 +53,7 @@ func _ready():
 
 ```
 
-This way, if the player, sneaking into the secret base, is discovered, all enemies can be notified about the alarm sounding, by using [SceneMainLoop.call_group](class_list/scenemainloop#call_group)():
+This way, if the player, sneaking into the secret base, is discovered, all enemies can be notified about the alarm sounding, by using [SceneMainLoop.call_group](class_scenemainloop#call_group)():
 
 ```python 
 
@@ -64,7 +64,7 @@ func _on_discovered():
 ```
 
 The above code calls the function "player_was_discovered" on every member of the group "guards".
-Optionally, it is possible to get the full list of "guards" nodes by calling [SceneMainLoop.get_nodes_in_group](class_list/scenemainloop#get_nodes_in_group)():
+Optionally, it is possible to get the full list of "guards" nodes by calling [SceneMainLoop.get_nodes_in_group](class_scenemainloop#get_nodes_in_group)():
 
 ```python
 
@@ -72,12 +72,12 @@ var guards = get_scene().get_nodes_in_group("guards")
 
 ```
 
-More will be added about [SceneMainLoop](class_list/scenemainloop) later.
+More will be added about [SceneMainLoop](class_scenemainloop) later.
 
 
 ### Notifications
 
-Godot has a system of notifications. This is usually not needed to be used from scripting, as it's too low level and virtual functions are provided for most of them. It's just good to know they exists. Simply add a [Object._notification](class_list/object#_notification)() function in your script:
+Godot has a system of notifications. This is usually not needed to be used from scripting, as it's too low level and virtual functions are provided for most of them. It's just good to know they exists. Simply add a [Object._notification](class_object#_notification)() function in your script:
 
 ```python
 
@@ -90,7 +90,7 @@ func _notification(what):
         
 ```
 
-The documentation of each class in the [class list](class_list/class_list) shows the notifications it can receive. However, again, for most cases script provides simpler overrideable functions.
+The documentation of each class in the [class list](class_class_list) shows the notifications it can receive. However, again, for most cases script provides simpler overrideable functions.
 
 ### Overrideable Functions
 

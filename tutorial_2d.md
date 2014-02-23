@@ -14,7 +14,7 @@ For the sake of the old times, the game will be in 640x400 pixels resolution. Th
 
 <p align="center"><img src="images/clearcolor.png"></p>
 
-Create a [Node2D](class_list/node2d) node for the project root. Node2D is the base type for the 2D engine. After this, add some sprites ([Sprite](class_list/sprite) node) and set each to the corresponding texture. The final scene layour should look similar to this (note: the ball is in the middle!):
+Create a [Node2D](class_node2d) node for the project root. Node2D is the base type for the 2D engine. After this, add some sprites ([Sprite](class_sprite) node) and set each to the corresponding texture. The final scene layour should look similar to this (note: the ball is in the middle!):
 
 <p align="center"><img src="images/pong_layout.png"></p>
 

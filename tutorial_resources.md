@@ -2,12 +2,12 @@
 
 ### Nodes AND Resources
 
-So far, [Node](class_list/node) have been the most important datatype in Godot, as most of the behaviors and features of the engine are implemented through them. There is, though, another datatype that is equally as important. That is [Resource](class_list/resource)..
+So far, [Node](class_node) have been the most important datatype in Godot, as most of the behaviors and features of the engine are implemented through them. There is, though, another datatype that is equally as important. That is [Resource](class_resource)..
 
 Where *Nodes* focus on behaviors, such as drawing a sprite, drawing a 3D model, physics, GUI controls, etc, 
 *Resources* are mere *data containers*. This means that they don't do any action nor process any information. Resources just contain data.
 
-Examples of resources are [Texture](class_list/texture), [Script](class_list/script), [Mesh](class_list/mesh), [Animation](class_list/animation), [Sample](class_list/sample), [AudioStream](class_list/audiostream), [Font](class_list/font), [Translation](class_list/translation), etc.
+Examples of resources are [Texture](class_texture), [Script](class_script), [Mesh](class_mesh), [Animation](class_animation), [Sample](class_sample), [AudioStream](class_audiostream), [Font](class_font), [Translation](class_translation), etc.
 
 When Godot saves o loads (from disk) a scene (.scn or .xml), an image (png, jpg), a scrit (.gd) or pretty much anything, that file is considered a resource.
 
@@ -20,7 +20,7 @@ Typically, every object in Godot (Node, Resource, or anything else) can export p
 ### External vs Built-In
 
 The resource properties can reference resources in two ways, *external* (on disk) or *built-in*. 
-To be more specific, here's a [Texture](class_list/texture) in a [Sprite](class_list/sprite) node:
+To be more specific, here's a [Texture](class_texture) in a [Sprite](class_sprite) node:
 
 <p align="center"><img src="images/spriteprop.png"></p>
 
@@ -57,9 +57,9 @@ func _ready():
 
 ### Loading Scenes
 
-Scenes are also resources, but there is a catch. Scenes saved to disk are resources of type [PackedScene](class_list/packedscene), this means that the scene is packed inside a resource.
+Scenes are also resources, but there is a catch. Scenes saved to disk are resources of type [PackedScene](class_packedscene), this means that the scene is packed inside a resource.
 
-To obtain an instance of the scene, the method  [instance](class_list/packedscene#instance)() must be used. 
+To obtain an instance of the scene, the method  [instance](class_packedscene#instance)() must be used. 
 ```python
 func _on_shoot():
 
@@ -68,11 +68,11 @@ func _on_shoot():
 ```
 
 This method creates the nodes in hierarchy, configures them (sets all the properties) and returns the root node of the scene, which can be added to any other node.
-The approach has several advantages. As the [instance](class_list/packedscene#instance)() function is pretty fast, adding extra content to the scene can be done efficiently. New enemies, bullets, effects, etc can be added or removed quickly, without having to load them again from disk each time. It is important to remember that, as always, images, meshes, etc are all shared between the scene instances.
+The approach has several advantages. As the [instance](class_packedscene#instance)() function is pretty fast, adding extra content to the scene can be done efficiently. New enemies, bullets, effects, etc can be added or removed quickly, without having to load them again from disk each time. It is important to remember that, as always, images, meshes, etc are all shared between the scene instances.
 
 ### Freeing Resources
 
-Resource extends from [Reference](class_list/reference). As such, when a resource is no longer in use, it will automatically free itelf. Since, in most cases, Resources are contained in Nodes, scripts or other resources, when a node is removed or freed, all the children resources are freed too.
+Resource extends from [Reference](class_reference). As such, when a resource is no longer in use, it will automatically free itelf. Since, in most cases, Resources are contained in Nodes, scripts or other resources, when a node is removed or freed, all the children resources are freed too.
 
 ### Scripting
 

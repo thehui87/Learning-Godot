@@ -9,7 +9,7 @@ To begin, let's just use the scene from the previous tutorial (splash screen). T
 
 ### Creating the Animation
 
-First of all, add an [AnimationPlayer](class_list/animationplayer) node to the scene, make it a child of bg (the root node):
+First of all, add an [AnimationPlayer](class_animationplayer) node to the scene, make it a child of bg (the root node):
 
 <p align="center"><img src="images/animplayer.png"></p>
 

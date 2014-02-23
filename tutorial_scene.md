@@ -134,7 +134,7 @@ With this change, pressing the regular Play button (or F5) will run the project,
 Going back to the project settings dialog. This dialog provides a lot of options that can be added to engine.cfg and show their default values. If the default value is ok, then there isn't any need to change it.
 When a value is changed, a tick is marked to the left of the name. This means that the property will be saved to the engine.cfg file and remembered. 
 
-As a side note, for future reference and a little out of context (this is the first tutorial after all!), it is also possible to add custom configuration options and read them in run-time using the [Globals](class_list/globals) singleton. 
+As a side note, for future reference and a little out of context (this is the first tutorial after all!), it is also possible to add custom configuration options and read them in run-time using the [Globals](class_globals) singleton. 
 
 ### To Be Continued...
 

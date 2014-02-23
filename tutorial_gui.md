@@ -19,19 +19,19 @@ In the end, the resulting UI subsystem in Godot is an efficient solution to this
 
 ### Control
 
-The basic node for UI elements is [Control](class_list/control) (sometimes called "Widget" or "Box" in other toolkits). Every node that provides user interface functionality descends from it.
+The basic node for UI elements is [Control](class_control) (sometimes called "Widget" or "Box" in other toolkits). Every node that provides user interface functionality descends from it.
 
 When controls are put in a scene tree as a child of another control, it's coordinates (position, size) are always relative to the parent. This sets the basis for editing complex user interface quickly and visually.
 
 ### Input and Drawing
 
-Controls receive input events by means of the [_input_event](class_list/control#_input_event)() callback. Only one control, the one in focus, will receive keyboard/joypad events (see [set_focus_mode](class_list/control#set_focus_mode)() and [grab_focus](class_list/control#grab_focus)().
+Controls receive input events by means of the [_input_event](class_control#_input_event)() callback. Only one control, the one in focus, will receive keyboard/joypad events (see [set_focus_mode](class_control#set_focus_mode)() and [grab_focus](class_control#grab_focus)().
 
 Mouse Motion events are received by the control directly below the mouse pointer. When a control receives a mouse button pressed event, all subsequent motion events are received by the pressed control until that button is released, even if the pointer moves outside the control boundary.
 
-Like any class that inherits from [CanvasItem](class_list/canvasitem) (Control does), a [_draw](class_list/canvasitem#draw)() callback will be received at the begining and every time the control needs to be redrawn (programmer needs to call [update](class_list/canvasitem#update)() to enqueue the CanvasItem for redraw). If the control is not visible (yet aother CanvasItem property), the control does not receive any input.
+Like any class that inherits from [CanvasItem](class_canvasitem) (Control does), a [_draw](class_canvasitem#draw)() callback will be received at the begining and every time the control needs to be redrawn (programmer needs to call [update](class_canvasitem#update)() to enqueue the CanvasItem for redraw). If the control is not visible (yet aother CanvasItem property), the control does not receive any input.
 
-In general though, the programmer does not need to deal with drawing and input events directly when building UIs, (that is more useful when creating custom controls). Instead, controls emit different kinds of signals with contextural information for when action occurs. For example, a [Button](class_list/button) emits a "pressed" signal when pressed, a [Slider](class_list/slider) will emit a "value_changed" when dragged, etc.
+In general though, the programmer does not need to deal with drawing and input events directly when building UIs, (that is more useful when creating custom controls). Instead, controls emit different kinds of signals with contextural information for when action occurs. For example, a [Button](class_button) emits a "pressed" signal when pressed, a [Slider](class_slider) will emit a "value_changed" when dragged, etc.
 
 ### Custom Control Mini Tutorial
 
@@ -80,18 +80,18 @@ As mentioned before, Godot includes dozens of controls ready for using in a user
 This set of controls is enough for most games, where complex interactions or ways to present information are not necessary. The can be skinned easily with regular textures.
 
 
-*  [Label](class_list/label) : Node used for showing text.
+*  [Label](class_label) : Node used for showing text.
 
-*  [TextureFrame](class_list/textureframe) : Displays a single texture, which can be scaled or kept fixed.
+*  [TextureFrame](class_textureframe) : Displays a single texture, which can be scaled or kept fixed.
 
-*  [TextureButton](class_list/texturebutton) : Displays a simple texture buttons, states such as pressed, hover, disabled, etc can be set.
+*  [TextureButton](class_texturebutton) : Displays a simple texture buttons, states such as pressed, hover, disabled, etc can be set.
 
-*  [TextureProgress](class_list/textureprogress) : Displays a single textured progress bar.
+*  [TextureProgress](class_textureprogress) : Displays a single textured progress bar.
 
 
 Additionally, re-positioning of controls is most efficiently done with anchors in this case (see the [Size and Anchors](tutorial_gui_repositioning) tutorial for more info).
 
-In any case, it will happen often that even for simple games, more complex UI behaviors will be required. An example of this is a scrolling list of elements (for a high score table, for example), which needs a [ScrollContainer](class_list/scrollcontainer) and a [VBoxContainer](class_list/vboxcontainer). These kind of more advanced controls can be mixed with the regular ones seamlessly (they are all controls anyway).
+In any case, it will happen often that even for simple games, more complex UI behaviors will be required. An example of this is a scrolling list of elements (for a high score table, for example), which needs a [ScrollContainer](class_scrollcontainer) and a [VBoxContainer](class_vboxcontainer). These kind of more advanced controls can be mixed with the regular ones seamlessly (they are all controls anyway).
 
 #### Complex UI Controls
 

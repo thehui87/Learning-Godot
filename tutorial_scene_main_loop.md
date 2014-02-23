@@ -9,40 +9,40 @@ This deserves going a little more into depth. In fact, the scene system is not e
 
 ### MainLoop
 
-The way Godot works internally is as follows. There is the the [OS](class_list/os) class, which is the only instance that runs at the beginning. Afterwards, all drivers, servers, scripting languages, scene system, etc are loaded. 
-When initialization is complete, [OS](class_list/os) needs to be supplied a [MainLoop](class_list/mainloop) to run. Up to this point, all this is internals working (you can check main/main.cpp file in the source code if you are ever interested to see how this works internally). 
+The way Godot works internally is as follows. There is the the [OS](class_os) class, which is the only instance that runs at the beginning. Afterwards, all drivers, servers, scripting languages, scene system, etc are loaded. 
+When initialization is complete, [OS](class_os) needs to be supplied a [MainLoop](class_mainloop) to run. Up to this point, all this is internals working (you can check main/main.cpp file in the source code if you are ever interested to see how this works internally). 
 
 The user program, or game, starts in the MainLoop. This class has a few methods, for initialization, idle (frame-syncronized callback), fixed (physics-synchronized callback), and input. Again, this is really low level and when making games in Godot, writing your own MainLoop does not even make sense. 
 
 ### SceneMainLoop
 
 One of the ways to explain how Godot works, is that it's a high level game engine over a low level middleware.
-The scene system is the game engine, while the [OS](class_list/os) and servers are the low level API. 
+The scene system is the game engine, while the [OS](class_os) and servers are the low level API. 
 
-In any case, the scene system provides it's own main loop to OS, [SceneMainLoop](class_list/scenemainloop). 
+In any case, the scene system provides it's own main loop to OS, [SceneMainLoop](class_scenemainloop). 
 This is automatically instanced and set when running a scene, no need to do any extra work.
 
 It's important to know that this class exists because it has a few important uses:
 
 
-*  It contains the root [Viewport](class_list/viewport), when a scene is first opened, it's added as a child of it to become part of the active scene (more on that next)
+*  It contains the root [Viewport](class_viewport), when a scene is first opened, it's added as a child of it to become part of the active scene (more on that next)
 
 *  It contains information about the groups, and has means to call all nodes in a group, or get a list of them.
 
 *  It contains some global state functionality, such as setting pause mode, or quitting the process.
 
-When a node is part of the active scene, the [SceneMainLoop](class_list/scenemainloop) can be obtained by simply calling [Node.get_scene](class_list/node#get_scene)().
+When a node is part of the active scene, the [SceneMainLoop](class_scenemainloop) can be obtained by simply calling [Node.get_scene](class_node#get_scene)().
 
 ### Root Viewport
 
-The root [Viewport](class_list/viewport) is always a top of the scene. From a node, it can be obtained in two different ways:
+The root [Viewport](class_viewport) is always a top of the scene. From a node, it can be obtained in two different ways:
 
 ```python
     get_scene().get_root() # access via scenemainloop
     get_node("/root") # access via absolute path
 ```
 
-This node contains the main viewport, anything that is a child of a [Viewport](class_list/viewport) is drawn inside of it by default, so it makes sense that the top of all nodes is always a node of this type, otherwise nothing would be seen! 
+This node contains the main viewport, anything that is a child of a [Viewport](class_viewport) is drawn inside of it by default, so it makes sense that the top of all nodes is always a node of this type, otherwise nothing would be seen! 
 
 While other viewports can be created in the scene (for split-screen effects and such), this one is the only one that is never created by the user. It's created automatically inside SceneMainLoop.
 

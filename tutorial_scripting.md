@@ -91,7 +91,7 @@ Which will show the list of signals a Button can emit.
 But this example will not use it. We don't want to make things *too* easy. So please close that screen!
 In any case, at this point it is clear that that we are interested in the "pressed" signal, so instead of doing it with the visual interface, the connection will be done using code. 
 
-For this, there is a function that is probably the one that Godot programmers will use the most, this is [get_node](class_list/node#get_node)(). This function uses paths to fetch nodes in the current tree or anywhere in the scene, relative to the node holding the script.
+For this, there is a function that is probably the one that Godot programmers will use the most, this is [get_node](class_node#get_node)(). This function uses paths to fetch nodes in the current tree or anywhere in the scene, relative to the node holding the script.
 
 To fetch the button, the following must be used:
 
@@ -110,7 +110,7 @@ func _on_button_pressed():
 
 ```
 
-Finally, the button "pressed" signal will be connected to that callback in _ready(), by using [connect](class_list/object#connect)().
+Finally, the button "pressed" signal will be connected to that callback in _ready(), by using [connect](class_object#connect)().
 
 ```python
 
