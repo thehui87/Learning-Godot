@@ -4,6 +4,6 @@
 
 
 ###  Member Functions 
-  * void  ** [post_import](#post_import) **  **(** [Object](class_object) scene  **)** virtual
+  * void  **[post_import](#post_import)**  **(** [Object](class_object) scene  **)** virtual
 
 ###  Member Function Description  

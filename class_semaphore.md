@@ -4,7 +4,7 @@
 
 
 ###  Member Functions 
-  * [int](class_int)  ** [wait](#wait) **  **(** **)**
-  * [int](class_int)  ** [post](#post) **  **(** **)**
+  * [int](class_int)  **[wait](#wait)**  **(** **)**
+  * [int](class_int)  **[post](#post)**  **(** **)**
 
 ###  Member Function Description  

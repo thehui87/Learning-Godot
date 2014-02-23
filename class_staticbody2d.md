@@ -4,16 +4,16 @@
 Static body for 2D Physics.
 
 ###  Member Functions 
-  * void  ** [set_simulate_motion](#set_simulate_motion) **  **(** [bool](class_bool) enabled  **)**
-  * [bool](class_bool)  ** [is_simulating_motion](#is_simulating_motion) **  **(** **)** const
-  * void  ** [set_constant_linear_velocity](#set_constant_linear_velocity) **  **(** [Vector2](class_vector2) vel  **)**
-  * void  ** [set_constant_angular_velocity](#set_constant_angular_velocity) **  **(** [real](class_real) vel  **)**
-  * [Vector2](class_vector2)  ** [get_constant_linear_velocity](#get_constant_linear_velocity) **  **(** **)** const
-  * [real](class_real)  ** [get_constant_angular_velocity](#get_constant_angular_velocity) **  **(** **)** const
-  * void  ** [set_friction](#set_friction) **  **(** [real](class_real) friction  **)**
-  * [real](class_real)  ** [get_friction](#get_friction) **  **(** **)** const
-  * void  ** [set_bounce](#set_bounce) **  **(** [real](class_real) bounce  **)**
-  * [real](class_real)  ** [get_bounce](#get_bounce) **  **(** **)** const
+  * void  **[set_simulate_motion](#set_simulate_motion)**  **(** [bool](class_bool) enabled  **)**
+  * [bool](class_bool)  **[is_simulating_motion](#is_simulating_motion)**  **(** **)** const
+  * void  **[set_constant_linear_velocity](#set_constant_linear_velocity)**  **(** [Vector2](class_vector2) vel  **)**
+  * void  **[set_constant_angular_velocity](#set_constant_angular_velocity)**  **(** [real](class_real) vel  **)**
+  * [Vector2](class_vector2)  **[get_constant_linear_velocity](#get_constant_linear_velocity)**  **(** **)** const
+  * [real](class_real)  **[get_constant_angular_velocity](#get_constant_angular_velocity)**  **(** **)** const
+  * void  **[set_friction](#set_friction)**  **(** [real](class_real) friction  **)**
+  * [real](class_real)  **[get_friction](#get_friction)**  **(** **)** const
+  * void  **[set_bounce](#set_bounce)**  **(** [real](class_real) bounce  **)**
+  * [real](class_real)  **[get_bounce](#get_bounce)**  **(** **)** const
 
 ###  Description  
 Static body for 2D Physics. A static body is a simple body that is not intended to move. They don't consume any CPU resources in contrast to a [[rigidbody2d|RigidBody2D]] so they are great for scenaro collision.\\
@@ -22,27 +22,33 @@ Static body for 2D Physics. A static body is a simple body that is not intended 
 	Alternatively, a constant linear or angular velocity can be set for the static body, so even if it doesn't move, it affects other bodies as if it was moving (this is useful for simulating conveyor belts or conveyor wheels).
 
 ###  Member Function Description  
+
 #### <a name="set_simulate_motion">set_simulate_motion</a>
-  * void  ** [set_simulate_motion](#set_simulate_motion) **  **(** [bool](class_bool) enabled  **)**
+  * void  **[set_simulate_motion](#set_simulate_motion)**  **(** [bool](class_bool) enabled  **)**
 \\
 Enable or disable simulated motion mode.
+
 #### <a name="is_simulating_motion">is_simulating_motion</a>
-  * [bool](class_bool)  ** [is_simulating_motion](#is_simulating_motion) **  **(** **)** const
+  * [bool](class_bool)  **[is_simulating_motion](#is_simulating_motion)**  **(** **)** const
 \\
 Return true if simulated motion mode is enabled.
+
 #### <a name="set_constant_linear_velocity">set_constant_linear_velocity</a>
-  * void  ** [set_constant_linear_velocity](#set_constant_linear_velocity) **  **(** [Vector2](class_vector2) vel  **)**
+  * void  **[set_constant_linear_velocity](#set_constant_linear_velocity)**  **(** [Vector2](class_vector2) vel  **)**
 \\
 Set a constant linear velocity for the body.
+
 #### <a name="set_constant_angular_velocity">set_constant_angular_velocity</a>
-  * void  ** [set_constant_angular_velocity](#set_constant_angular_velocity) **  **(** [real](class_real) vel  **)**
+  * void  **[set_constant_angular_velocity](#set_constant_angular_velocity)**  **(** [real](class_real) vel  **)**
 \\
 Set a constant angular velocity for the body.
+
 #### <a name="get_constant_linear_velocity">get_constant_linear_velocity</a>
-  * [Vector2](class_vector2)  ** [get_constant_linear_velocity](#get_constant_linear_velocity) **  **(** **)** const
+  * [Vector2](class_vector2)  **[get_constant_linear_velocity](#get_constant_linear_velocity)**  **(** **)** const
 \\
 Return the constant linear velocity for the body.
+
 #### <a name="get_constant_angular_velocity">get_constant_angular_velocity</a>
-  * [real](class_real)  ** [get_constant_angular_velocity](#get_constant_angular_velocity) **  **(** **)** const
+  * [real](class_real)  **[get_constant_angular_velocity](#get_constant_angular_velocity)**  **(** **)** const
 \\
 Return the constant angular velocity for the body.

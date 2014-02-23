@@ -4,14 +4,14 @@
 
 
 ###  Member Functions 
-  * void  ** [set_background](#set_background) **  **(** [int](class_int) bgmode  **)**
-  * [int](class_int)  ** [get_background](#get_background) **  **(** **)** const
-  * void  ** [set_background_param](#set_background_param) **  **(** [int](class_int) param, var value  **)**
-  * void  ** [get_background_param](#get_background_param) **  **(** [int](class_int) param  **)** const
-  * void  ** [set_enable_fx](#set_enable_fx) **  **(** [int](class_int) effect, [bool](class_bool) enabled  **)**
-  * [bool](class_bool)  ** [is_fx_enabled](#is_fx_enabled) **  **(** [int](class_int) effect  **)** const
-  * void  ** [fx_set_param](#fx_set_param) **  **(** [int](class_int) param, var value  **)**
-  * void  ** [fx_get_param](#fx_get_param) **  **(** [int](class_int) param  **)** const
+  * void  **[set_background](#set_background)**  **(** [int](class_int) bgmode  **)**
+  * [int](class_int)  **[get_background](#get_background)**  **(** **)** const
+  * void  **[set_background_param](#set_background_param)**  **(** [int](class_int) param, var value  **)**
+  * void  **[get_background_param](#get_background_param)**  **(** [int](class_int) param  **)** const
+  * void  **[set_enable_fx](#set_enable_fx)**  **(** [int](class_int) effect, [bool](class_bool) enabled  **)**
+  * [bool](class_bool)  **[is_fx_enabled](#is_fx_enabled)**  **(** [int](class_int) effect  **)** const
+  * void  **[fx_set_param](#fx_set_param)**  **(** [int](class_int) param, var value  **)**
+  * void  **[fx_get_param](#fx_get_param)**  **(** [int](class_int) param  **)** const
 
 ###  Numeric Constants  
   * **BG_KEEP** = **0**
