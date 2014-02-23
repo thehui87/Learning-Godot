@@ -5,9 +5,9 @@
 
 
 ###  Member Functions 
-  * [bool](class_bool)  **[`is_action`](#is_action)**  **(** [String](class_string) action  **)**
-  * [bool](class_bool)  **[`is_echo`](#is_echo)**  **(** **)**
-  * [bool](class_bool)  **[`is_pressed`](#is_pressed)**  **(** **)**
+  * [bool](class_bool)  **[is&#95action](#is_action)**  **(** [String](class_string) action  **)**
+  * [bool](class_bool)  **[is&#95echo](#is_echo)**  **(** **)**
+  * [bool](class_bool)  **[is&#95pressed](#is_pressed)**  **(** **)**
 
 ###  Member Variables  
   * [int](class_int) **type**

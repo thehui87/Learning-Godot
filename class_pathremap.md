@@ -6,11 +6,11 @@
 Singleton containing the list of remapped resources.
 
 ###  Member Functions 
-  * void  **[`add_remap`](#add_remap)**  **(** [String](class_string) from, [String](class_string) to, [String](class_string) locale=""  **)**
-  * [bool](class_bool)  **[`has_remap`](#has_remap)**  **(** [String](class_string) path  **)** const
-  * [String](class_string)  **[`get_remap`](#get_remap)**  **(** [String](class_string) path  **)** const
-  * void  **[`erase_remap`](#erase_remap)**  **(** [String](class_string) path  **)**
-  * void  **[`clear_remaps`](#clear_remaps)**  **(** **)**
+  * void  **[add&#95remap](#add_remap)**  **(** [String](class_string) from, [String](class_string) to, [String](class_string) locale=""  **)**
+  * [bool](class_bool)  **[has&#95remap](#has_remap)**  **(** [String](class_string) path  **)** const
+  * [String](class_string)  **[get&#95remap](#get_remap)**  **(** [String](class_string) path  **)** const
+  * void  **[erase&#95remap](#erase_remap)**  **(** [String](class_string) path  **)**
+  * void  **[clear&#95remaps](#clear_remaps)**  **(** **)**
 
 ###  Description  
 When exporting, the types of some resources may change internally so they are converted to more optimized versions. While it's not usually necesary to access to this directly (path remapping happens automatically when opeining a file), it's exported just for information.
@@ -18,26 +18,26 @@ When exporting, the types of some resources may change internally so they are co
 ###  Member Function Description  
 
 #### <a name="add_remap">add_remap</a>
-  * void  **`add_remap`**  **(** [String](class_string) from, [String](class_string) to, [String](class_string) locale=""  **)**
+  * void  **add&#95remap**  **(** [String](class_string) from, [String](class_string) to, [String](class_string) locale=""  **)**
 
 Add a remap from a file to another.
 
 #### <a name="has_remap">has_remap</a>
-  * [bool](class_bool)  **`has_remap`**  **(** [String](class_string) path  **)** const
+  * [bool](class_bool)  **has&#95remap**  **(** [String](class_string) path  **)** const
 
 Return true if a file is being remapped.
 
 #### <a name="get_remap">get_remap</a>
-  * [String](class_string)  **`get_remap`**  **(** [String](class_string) path  **)** const
+  * [String](class_string)  **get&#95remap**  **(** [String](class_string) path  **)** const
 
 Return the remapped new path of a file.
 
 #### <a name="erase_remap">erase_remap</a>
-  * void  **`erase_remap`**  **(** [String](class_string) path  **)**
+  * void  **erase&#95remap**  **(** [String](class_string) path  **)**
 
 Erase a remap.
 
 #### <a name="clear_remaps">clear_remaps</a>
-  * void  **`clear_remaps`**  **(** **)**
+  * void  **clear&#95remaps**  **(** **)**
 
 Clear all remaps.

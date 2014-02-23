@@ -6,18 +6,18 @@
 Base class for audio streams.
 
 ###  Member Functions 
-  * void  **[`play`](#play)**  **(** **)**
-  * void  **[`stop`](#stop)**  **(** **)**
-  * [bool](class_bool)  **[`is_playing`](#is_playing)**  **(** **)** const
-  * void  **[`set_loop`](#set_loop)**  **(** [bool](class_bool) enabled  **)**
-  * [bool](class_bool)  **[`has_loop`](#has_loop)**  **(** **)** const
-  * [String](class_string)  **[`get_stream_name`](#get_stream_name)**  **(** **)** const
-  * [int](class_int)  **[`get_loop_count`](#get_loop_count)**  **(** **)** const
-  * void  **[`seek_pos`](#seek_pos)**  **(** [real](class_real) pos  **)**
-  * [real](class_real)  **[`get_pos`](#get_pos)**  **(** **)** const
-  * [real](class_real)  **[`get_length`](#get_length)**  **(** **)** const
-  * [int](class_int)  **[`get_update_mode`](#get_update_mode)**  **(** **)** const
-  * void  **[`update`](#update)**  **(** **)**
+  * void  **[play](#play)**  **(** **)**
+  * void  **[stop](#stop)**  **(** **)**
+  * [bool](class_bool)  **[is&#95playing](#is_playing)**  **(** **)** const
+  * void  **[set&#95loop](#set_loop)**  **(** [bool](class_bool) enabled  **)**
+  * [bool](class_bool)  **[has&#95loop](#has_loop)**  **(** **)** const
+  * [String](class_string)  **[get&#95stream&#95name](#get_stream_name)**  **(** **)** const
+  * [int](class_int)  **[get&#95loop&#95count](#get_loop_count)**  **(** **)** const
+  * void  **[seek&#95pos](#seek_pos)**  **(** [real](class_real) pos  **)**
+  * [real](class_real)  **[get&#95pos](#get_pos)**  **(** **)** const
+  * [real](class_real)  **[get&#95length](#get_length)**  **(** **)** const
+  * [int](class_int)  **[get&#95update&#95mode](#get_update_mode)**  **(** **)** const
+  * void  **[update](#update)**  **(** **)**
 
 ###  Numeric Constants  
   * **UPDATE_NONE** = **0** - Does not need update, or manual polling.
@@ -30,56 +30,56 @@ Base class for audio streams. Audio streams are used for music"#10;"#9;playback,
 ###  Member Function Description  
 
 #### <a name="play">play</a>
-  * void  **`play`**  **(** **)**
+  * void  **play**  **(** **)**
 
 Start playback of an audio stream.
 
 #### <a name="stop">stop</a>
-  * void  **`stop`**  **(** **)**
+  * void  **stop**  **(** **)**
 
 Stop playback of an audio stream.
 
 #### <a name="is_playing">is_playing</a>
-  * [bool](class_bool)  **`is_playing`**  **(** **)** const
+  * [bool](class_bool)  **is&#95playing**  **(** **)** const
 
 Return wether the audio stream is currently playing.
 
 #### <a name="set_loop">set_loop</a>
-  * void  **`set_loop`**  **(** [bool](class_bool) enabled  **)**
+  * void  **set&#95loop**  **(** [bool](class_bool) enabled  **)**
 
 Set the loop hint for the audio stream playback. if"#10;"#9;"#9;"#9;true, audio stream will attempt to loop (restart)"#10;"#9;"#9;"#9;when finished.
 
 #### <a name="has_loop">has_loop</a>
-  * [bool](class_bool)  **`has_loop`**  **(** **)** const
+  * [bool](class_bool)  **has&#95loop**  **(** **)** const
 
-Return wether the audio stream loops. See [`set_loop`](#set_loop)
+Return wether the audio stream loops. See [set&#95loop](#set_loop)
 
 #### <a name="get_stream_name">get_stream_name</a>
-  * [String](class_string)  **`get_stream_name`**  **(** **)** const
+  * [String](class_string)  **get&#95stream&#95name**  **(** **)** const
 
 Return the name of the audio stream. Often the song"#10;"#9;"#9;"#9;title when the stream is music.
 
 #### <a name="get_loop_count">get_loop_count</a>
-  * [int](class_int)  **`get_loop_count`**  **(** **)** const
+  * [int](class_int)  **get&#95loop&#95count**  **(** **)** const
 
 Return the amount of times that the stream has"#10;"#9;"#9;"#9;looped (if loop is supported).
 
 #### <a name="seek_pos">seek_pos</a>
-  * void  **`seek_pos`**  **(** [real](class_real) pos  **)**
+  * void  **seek&#95pos**  **(** [real](class_real) pos  **)**
 
 Seek to a certain position (in seconds) in an audio"#10;"#9;"#9;"#9;stream.
 
 #### <a name="get_pos">get_pos</a>
-  * [real](class_real)  **`get_pos`**  **(** **)** const
+  * [real](class_real)  **get&#95pos**  **(** **)** const
 
 Return the current playing position (in seconds) of the audio"#10;"#9;"#9;"#9;stream (if supported). Since this value is updated"#10;"#9;"#9;"#9;internally, it may not be exact or updated"#10;"#9;"#9;"#9;continuosly. Accuracy depends on the sample buffer"#10;"#9;"#9;"#9;size of the audio driver.
 
 #### <a name="get_update_mode">get_update_mode</a>
-  * [int](class_int)  **`get_update_mode`**  **(** **)** const
+  * [int](class_int)  **get&#95update&#95mode**  **(** **)** const
 
 Return the type of update that the stream uses. Some"#10;"#9;"#9;"#9;types of stream may need manual polling.
 
 #### <a name="update">update</a>
-  * void  **`update`**  **(** **)**
+  * void  **update**  **(** **)**
 
 Manually poll the audio stream (if it is requested"#10;"#9;"#9;"#9;to).

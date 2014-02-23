@@ -6,6 +6,6 @@
 
 
 ###  Member Functions 
-  * void  **[`new`](#new)**  **(** **)**
+  * void  **[new](#new)**  **(** **)**
 
 ###  Member Function Description  

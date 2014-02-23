@@ -6,10 +6,10 @@
 Directional Light, such as the Sun or the Moon.
 
 ###  Member Functions 
-  * void  **[`set_shadow_mode`](#set_shadow_mode)**  **(** [int](class_int) mode  **)**
-  * [int](class_int)  **[`get_shadow_mode`](#get_shadow_mode)**  **(** **)** const
-  * void  **[`set_shadow_param`](#set_shadow_param)**  **(** [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[`get_shadow_param`](#get_shadow_param)**  **(** [int](class_int) param  **)** const
+  * void  **[set&#95shadow&#95mode](#set_shadow_mode)**  **(** [int](class_int) mode  **)**
+  * [int](class_int)  **[get&#95shadow&#95mode](#get_shadow_mode)**  **(** **)** const
+  * void  **[set&#95shadow&#95param](#set_shadow_param)**  **(** [int](class_int) param, [real](class_real) value  **)**
+  * [real](class_real)  **[get&#95shadow&#95param](#get_shadow_param)**  **(** [int](class_int) param  **)** const
 
 ###  Numeric Constants  
   * **SHADOW_ORTHOGONAL** = **0**

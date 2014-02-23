@@ -6,7 +6,7 @@
 Optimized translation.
 
 ###  Member Functions 
-  * void  **[`generate`](#generate)**  **(** [Translation](class_translation) from  **)**
+  * void  **[generate](#generate)**  **(** [Translation](class_translation) from  **)**
 
 ###  Description  
 Optimized translation. Uses real-time compressed translations, which results in very small dictionaries.

@@ -6,8 +6,8 @@
 
 
 ###  Member Functions 
-  * void  **[`set_param`](#set_param)**  **(** [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[`get_param`](#get_param)**  **(** [int](class_int) param  **)** const
+  * void  **[set&#95param](#set_param)**  **(** [int](class_int) param, [real](class_real) value  **)**
+  * [real](class_real)  **[get&#95param](#get_param)**  **(** [int](class_int) param  **)** const
 
 ###  Numeric Constants  
   * **PARAM_VOLUME_DB** = **0**

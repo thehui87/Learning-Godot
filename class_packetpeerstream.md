@@ -6,7 +6,7 @@
 Wrapper to use a PacketPeer over a StreamPeer.
 
 ###  Member Functions 
-  * void  **[`set_stream_peer`](#set_stream_peer)**  **(** [StreamPeer](class_streampeer) peer  **)**
+  * void  **[set&#95stream&#95peer](#set_stream_peer)**  **(** [StreamPeer](class_streampeer) peer  **)**
 
 ###  Description  
 PacketStreamPeer provides a wrapper for working using packets over a stream. This allows for using packet based code with StreamPeers. PacketPeerStream implements a custom protocol over the StreamPeer, so the user should not read or write to the wrapped StreamPeer directly.
@@ -14,6 +14,6 @@ PacketStreamPeer provides a wrapper for working using packets over a stream. Thi
 ###  Member Function Description  
 
 #### <a name="set_stream_peer">set_stream_peer</a>
-  * void  **`set_stream_peer`**  **(** [StreamPeer](class_streampeer) peer  **)**
+  * void  **set&#95stream&#95peer**  **(** [StreamPeer](class_streampeer) peer  **)**
 
 Set the StreamPeer object to be wrapped

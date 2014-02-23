@@ -6,31 +6,31 @@
 Label that displays rich text.
 
 ###  Member Functions 
-  * void  **[`add_text`](#add_text)**  **(** [String](class_string) text  **)**
-  * void  **[`add_image`](#add_image)**  **(** [Texture](class_texture) image  **)**
-  * void  **[`newline`](#newline)**  **(** **)**
-  * void  **[`push_font`](#push_font)**  **(** [Object](class_object) font  **)**
-  * void  **[`push_color`](#push_color)**  **(** [Color](class_color) color  **)**
-  * void  **[`push_align`](#push_align)**  **(** [int](class_int) align  **)**
-  * void  **[`push_indent`](#push_indent)**  **(** [int](class_int) level  **)**
-  * void  **[`push_list`](#push_list)**  **(** [int](class_int) type  **)**
-  * void  **[`push_meta`](#push_meta)**  **(** var data  **)**
-  * void  **[`push_underline`](#push_underline)**  **(** **)**
-  * void  **[`pop`](#pop)**  **(** **)**
-  * void  **[`clear`](#clear)**  **(** **)**
-  * void  **[`set_meta_underline`](#set_meta_underline)**  **(** [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[`is_meta_underlined`](#is_meta_underlined)**  **(** **)** const
-  * void  **[`set_scroll_active`](#set_scroll_active)**  **(** [bool](class_bool) active  **)**
-  * [bool](class_bool)  **[`is_scroll_active`](#is_scroll_active)**  **(** **)** const
-  * void  **[`set_scroll_follow`](#set_scroll_follow)**  **(** [bool](class_bool) follow  **)**
-  * [bool](class_bool)  **[`is_scroll_following`](#is_scroll_following)**  **(** **)** const
-  * void  **[`set_tab_size`](#set_tab_size)**  **(** [int](class_int) spaces  **)**
-  * [int](class_int)  **[`get_tab_size`](#get_tab_size)**  **(** **)** const
-  * void  **[`set_selection_enabled`](#set_selection_enabled)**  **(** [bool](class_bool) enabled  **)**
-  * [bool](class_bool)  **[`is_selection_enabled`](#is_selection_enabled)**  **(** **)** const
+  * void  **[add&#95text](#add_text)**  **(** [String](class_string) text  **)**
+  * void  **[add&#95image](#add_image)**  **(** [Texture](class_texture) image  **)**
+  * void  **[newline](#newline)**  **(** **)**
+  * void  **[push&#95font](#push_font)**  **(** [Object](class_object) font  **)**
+  * void  **[push&#95color](#push_color)**  **(** [Color](class_color) color  **)**
+  * void  **[push&#95align](#push_align)**  **(** [int](class_int) align  **)**
+  * void  **[push&#95indent](#push_indent)**  **(** [int](class_int) level  **)**
+  * void  **[push&#95list](#push_list)**  **(** [int](class_int) type  **)**
+  * void  **[push&#95meta](#push_meta)**  **(** var data  **)**
+  * void  **[push&#95underline](#push_underline)**  **(** **)**
+  * void  **[pop](#pop)**  **(** **)**
+  * void  **[clear](#clear)**  **(** **)**
+  * void  **[set&#95meta&#95underline](#set_meta_underline)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[is&#95meta&#95underlined](#is_meta_underlined)**  **(** **)** const
+  * void  **[set&#95scroll&#95active](#set_scroll_active)**  **(** [bool](class_bool) active  **)**
+  * [bool](class_bool)  **[is&#95scroll&#95active](#is_scroll_active)**  **(** **)** const
+  * void  **[set&#95scroll&#95follow](#set_scroll_follow)**  **(** [bool](class_bool) follow  **)**
+  * [bool](class_bool)  **[is&#95scroll&#95following](#is_scroll_following)**  **(** **)** const
+  * void  **[set&#95tab&#95size](#set_tab_size)**  **(** [int](class_int) spaces  **)**
+  * [int](class_int)  **[get&#95tab&#95size](#get_tab_size)**  **(** **)** const
+  * void  **[set&#95selection&#95enabled](#set_selection_enabled)**  **(** [bool](class_bool) enabled  **)**
+  * [bool](class_bool)  **[is&#95selection&#95enabled](#is_selection_enabled)**  **(** **)** const
 
 ###  Signals  
-  *  **`meta_clicked`**  **(** [Nil](class_nil) meta  **)**
+  *  **meta&#95clicked**  **(** [Nil](class_nil) meta  **)**
 
 ###  Numeric Constants  
   * **ALIGN_LEFT** = **0**
@@ -58,11 +58,11 @@ Label that displays rich text. Rich text can contain custom text, fonts, images 
 ###  Member Function Description  
 
 #### <a name="set_selection_enabled">set_selection_enabled</a>
-  * void  **`set_selection_enabled`**  **(** [bool](class_bool) enabled  **)**
+  * void  **set&#95selection&#95enabled**  **(** [bool](class_bool) enabled  **)**
 
 Set to true if selecting the text inside this richtext is allowed.
 
 #### <a name="is_selection_enabled">is_selection_enabled</a>
-  * [bool](class_bool)  **`is_selection_enabled`**  **(** **)** const
+  * [bool](class_bool)  **is&#95selection&#95enabled**  **(** **)** const
 
 Return true if selecting the text inside this richtext is allowed.

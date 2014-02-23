@@ -6,7 +6,7 @@
 
 
 ###  Member Functions 
-  * void  **[`set_curve`](#set_curve)**  **(** [Curve3D](class_curve3d) curve  **)**
-  * [Curve3D](class_curve3d)  **[`get_curve`](#get_curve)**  **(** **)** const
+  * void  **[set&#95curve](#set_curve)**  **(** [Curve3D](class_curve3d) curve  **)**
+  * [Curve3D](class_curve3d)  **[get&#95curve](#get_curve)**  **(** **)** const
 
 ###  Member Function Description  

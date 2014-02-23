@@ -6,69 +6,69 @@
 Base class for all the "Scene" elements.
 
 ###  Member Functions 
-  * void  **[`_enter_scene`](#_enter_scene)**  **(** **)** virtual
-  * void  **[`_exit_scene`](#_exit_scene)**  **(** **)** virtual
-  * void  **[`_fixed_process`](#_fixed_process)**  **(** [real](class_real) delta  **)** virtual
-  * void  **[`_input`](#_input)**  **(** [InputEvent](class_inputevent) event  **)** virtual
-  * void  **[`_process`](#_process)**  **(** [real](class_real) delta  **)** virtual
-  * void  **[`_ready`](#_ready)**  **(** **)** virtual
-  * void  **[`_unhandled_input`](#_unhandled_input)**  **(** [InputEvent](class_inputevent) event  **)** virtual
-  * void  **[`_unhandled_key_input`](#_unhandled_key_input)**  **(** [InputEvent](class_inputevent) key_event  **)** virtual
-  * void  **[`set_name`](#set_name)**  **(** [String](class_string) name  **)**
-  * [String](class_string)  **[`get_name`](#get_name)**  **(** **)** const
-  * void  **[`add_child`](#add_child)**  **(** [Node](class_node) node  **)**
-  * void  **[`remove_child`](#remove_child)**  **(** [Node](class_node) node  **)**
-  * void  **[`remove_and_delete_child`](#remove_and_delete_child)**  **(** [Node](class_node) node  **)**
-  * [int](class_int)  **[`get_child_count`](#get_child_count)**  **(** **)** const
-  * [Array](class_array)  **[`get_children`](#get_children)**  **(** **)** const
-  * [Node](class_node)  **[`get_child`](#get_child)**  **(** [int](class_int) idx  **)** const
-  * [bool](class_bool)  **[`has_node`](#has_node)**  **(** [NodePath](class_nodepath) path  **)** const
-  * [Node](class_node)  **[`get_node`](#get_node)**  **(** [NodePath](class_nodepath) path  **)** const
-  * Parent  **[`get_parent`](#get_parent)**  **(** **)** const
-  * [bool](class_bool)  **[`has_node_and_resource`](#has_node_and_resource)**  **(** [NodePath](class_nodepath) path  **)** const
-  * [Array](class_array)  **[`get_node_and_resource`](#get_node_and_resource)**  **(** [NodePath](class_nodepath) path  **)**
-  * [bool](class_bool)  **[`is_inside_scene`](#is_inside_scene)**  **(** **)** const
-  * [bool](class_bool)  **[`is_a_parent_of`](#is_a_parent_of)**  **(** [Node](class_node) node  **)** const
-  * [bool](class_bool)  **[`is_greater_than`](#is_greater_than)**  **(** [Node](class_node) node  **)** const
-  * [NodePath](class_nodepath)  **[`get_path`](#get_path)**  **(** **)** const
-  * [NodePath](class_nodepath)  **[`get_path_to`](#get_path_to)**  **(** [Node](class_node) node  **)** const
-  * void  **[`add_to_group`](#add_to_group)**  **(** [String](class_string) group, [bool](class_bool) arg1=false  **)**
-  * void  **[`remove_from_group`](#remove_from_group)**  **(** [String](class_string) group  **)**
-  * [bool](class_bool)  **[`is_in_group`](#is_in_group)**  **(** [String](class_string) group  **)** const
-  * void  **[`move_child`](#move_child)**  **(** [Node](class_node) child_node, [int](class_int) to_pos  **)**
-  * void  **[`raise`](#raise)**  **(** **)**
-  * void  **[`set_owner`](#set_owner)**  **(** [Node](class_node) owner  **)**
-  * [Node](class_node)  **[`get_owner`](#get_owner)**  **(** **)** const
-  * void  **[`remove_and_skip`](#remove_and_skip)**  **(** **)**
-  * [int](class_int)  **[`get_index`](#get_index)**  **(** **)** const
-  * void  **[`print_tree`](#print_tree)**  **(** **)**
-  * void  **[`set_filename`](#set_filename)**  **(** [String](class_string) filename  **)**
-  * [String](class_string)  **[`get_filename`](#get_filename)**  **(** **)** const
-  * void  **[`propagate_notification`](#propagate_notification)**  **(** [int](class_int) what  **)**
-  * void  **[`set_fixed_process`](#set_fixed_process)**  **(** [bool](class_bool) enable  **)**
-  * [real](class_real)  **[`get_fixed_process_delta_time`](#get_fixed_process_delta_time)**  **(** **)** const
-  * [bool](class_bool)  **[`is_fixed_processing`](#is_fixed_processing)**  **(** **)** const
-  * void  **[`set_process`](#set_process)**  **(** [bool](class_bool) enable  **)**
-  * [real](class_real)  **[`get_process_delta_time`](#get_process_delta_time)**  **(** **)** const
-  * [bool](class_bool)  **[`is_processing`](#is_processing)**  **(** **)** const
-  * void  **[`set_process_input`](#set_process_input)**  **(** [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[`is_processing_input`](#is_processing_input)**  **(** **)** const
-  * void  **[`set_process_unhandled_input`](#set_process_unhandled_input)**  **(** [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[`is_processing_unhandled_input`](#is_processing_unhandled_input)**  **(** **)** const
-  * void  **[`set_pause_mode`](#set_pause_mode)**  **(** [int](class_int) mode  **)**
-  * [int](class_int)  **[`get_pause_mode`](#get_pause_mode)**  **(** **)** const
-  * [bool](class_bool)  **[`can_process`](#can_process)**  **(** **)** const
-  * void  **[`print_stray_nodes`](#print_stray_nodes)**  **(** **)**
-  * [int](class_int)  **[`get_position_in_parent`](#get_position_in_parent)**  **(** **)** const
-  * [SceneMainLoop](class_scenemainloop)  **[`get_scene`](#get_scene)**  **(** **)** const
-  * [Node](class_node)  **[`duplicate`](#duplicate)**  **(** **)** const
-  * void  **[`replace_by`](#replace_by)**  **(** [Node](class_node) node, [bool](class_bool) keep_data=false  **)**
-  * void  **[`queue_free`](#queue_free)**  **(** **)**
+  * void  **[&#95enter&#95scene](#_enter_scene)**  **(** **)** virtual
+  * void  **[&#95exit&#95scene](#_exit_scene)**  **(** **)** virtual
+  * void  **[&#95fixed&#95process](#_fixed_process)**  **(** [real](class_real) delta  **)** virtual
+  * void  **[&#95input](#_input)**  **(** [InputEvent](class_inputevent) event  **)** virtual
+  * void  **[&#95process](#_process)**  **(** [real](class_real) delta  **)** virtual
+  * void  **[&#95ready](#_ready)**  **(** **)** virtual
+  * void  **[&#95unhandled&#95input](#_unhandled_input)**  **(** [InputEvent](class_inputevent) event  **)** virtual
+  * void  **[&#95unhandled&#95key&#95input](#_unhandled_key_input)**  **(** [InputEvent](class_inputevent) key_event  **)** virtual
+  * void  **[set&#95name](#set_name)**  **(** [String](class_string) name  **)**
+  * [String](class_string)  **[get&#95name](#get_name)**  **(** **)** const
+  * void  **[add&#95child](#add_child)**  **(** [Node](class_node) node  **)**
+  * void  **[remove&#95child](#remove_child)**  **(** [Node](class_node) node  **)**
+  * void  **[remove&#95and&#95delete&#95child](#remove_and_delete_child)**  **(** [Node](class_node) node  **)**
+  * [int](class_int)  **[get&#95child&#95count](#get_child_count)**  **(** **)** const
+  * [Array](class_array)  **[get&#95children](#get_children)**  **(** **)** const
+  * [Node](class_node)  **[get&#95child](#get_child)**  **(** [int](class_int) idx  **)** const
+  * [bool](class_bool)  **[has&#95node](#has_node)**  **(** [NodePath](class_nodepath) path  **)** const
+  * [Node](class_node)  **[get&#95node](#get_node)**  **(** [NodePath](class_nodepath) path  **)** const
+  * Parent  **[get&#95parent](#get_parent)**  **(** **)** const
+  * [bool](class_bool)  **[has&#95node&#95and&#95resource](#has_node_and_resource)**  **(** [NodePath](class_nodepath) path  **)** const
+  * [Array](class_array)  **[get&#95node&#95and&#95resource](#get_node_and_resource)**  **(** [NodePath](class_nodepath) path  **)**
+  * [bool](class_bool)  **[is&#95inside&#95scene](#is_inside_scene)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95a&#95parent&#95of](#is_a_parent_of)**  **(** [Node](class_node) node  **)** const
+  * [bool](class_bool)  **[is&#95greater&#95than](#is_greater_than)**  **(** [Node](class_node) node  **)** const
+  * [NodePath](class_nodepath)  **[get&#95path](#get_path)**  **(** **)** const
+  * [NodePath](class_nodepath)  **[get&#95path&#95to](#get_path_to)**  **(** [Node](class_node) node  **)** const
+  * void  **[add&#95to&#95group](#add_to_group)**  **(** [String](class_string) group, [bool](class_bool) arg1=false  **)**
+  * void  **[remove&#95from&#95group](#remove_from_group)**  **(** [String](class_string) group  **)**
+  * [bool](class_bool)  **[is&#95in&#95group](#is_in_group)**  **(** [String](class_string) group  **)** const
+  * void  **[move&#95child](#move_child)**  **(** [Node](class_node) child_node, [int](class_int) to_pos  **)**
+  * void  **[raise](#raise)**  **(** **)**
+  * void  **[set&#95owner](#set_owner)**  **(** [Node](class_node) owner  **)**
+  * [Node](class_node)  **[get&#95owner](#get_owner)**  **(** **)** const
+  * void  **[remove&#95and&#95skip](#remove_and_skip)**  **(** **)**
+  * [int](class_int)  **[get&#95index](#get_index)**  **(** **)** const
+  * void  **[print&#95tree](#print_tree)**  **(** **)**
+  * void  **[set&#95filename](#set_filename)**  **(** [String](class_string) filename  **)**
+  * [String](class_string)  **[get&#95filename](#get_filename)**  **(** **)** const
+  * void  **[propagate&#95notification](#propagate_notification)**  **(** [int](class_int) what  **)**
+  * void  **[set&#95fixed&#95process](#set_fixed_process)**  **(** [bool](class_bool) enable  **)**
+  * [real](class_real)  **[get&#95fixed&#95process&#95delta&#95time](#get_fixed_process_delta_time)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95fixed&#95processing](#is_fixed_processing)**  **(** **)** const
+  * void  **[set&#95process](#set_process)**  **(** [bool](class_bool) enable  **)**
+  * [real](class_real)  **[get&#95process&#95delta&#95time](#get_process_delta_time)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95processing](#is_processing)**  **(** **)** const
+  * void  **[set&#95process&#95input](#set_process_input)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[is&#95processing&#95input](#is_processing_input)**  **(** **)** const
+  * void  **[set&#95process&#95unhandled&#95input](#set_process_unhandled_input)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[is&#95processing&#95unhandled&#95input](#is_processing_unhandled_input)**  **(** **)** const
+  * void  **[set&#95pause&#95mode](#set_pause_mode)**  **(** [int](class_int) mode  **)**
+  * [int](class_int)  **[get&#95pause&#95mode](#get_pause_mode)**  **(** **)** const
+  * [bool](class_bool)  **[can&#95process](#can_process)**  **(** **)** const
+  * void  **[print&#95stray&#95nodes](#print_stray_nodes)**  **(** **)**
+  * [int](class_int)  **[get&#95position&#95in&#95parent](#get_position_in_parent)**  **(** **)** const
+  * [SceneMainLoop](class_scenemainloop)  **[get&#95scene](#get_scene)**  **(** **)** const
+  * [Node](class_node)  **[duplicate](#duplicate)**  **(** **)** const
+  * void  **[replace&#95by](#replace_by)**  **(** [Node](class_node) node, [bool](class_bool) keep_data=false  **)**
+  * void  **[queue&#95free](#queue_free)**  **(** **)**
 
 ###  Signals  
-  *  **`enter_scene`**  **(** **)**
-  *  **`renamed`**  **(** **)**
-  *  **`exit_scene`**  **(** **)**
+  *  **enter&#95scene**  **(** **)**
+  *  **renamed**  **(** **)**
+  *  **exit&#95scene**  **(** **)**
 
 ###  Numeric Constants  
   * **NOTIFICATION_ENTER_SCENE** = **10** - Notification received when the node enters the Scene Tree and gains access to the [RootNode]. Note that children nodes will not have received the notification at that time yet.
@@ -91,246 +91,246 @@ Nodes can be set as children of other nodes, resulting in a tree arrangement. An
         [SceneMainLoop](class_scenemainloop) contains the "active" tree of nodes, and a node becomes active (receinving NOTIFICATION_ENTER_SCENE) when added to that tree.
         A node can contain any number of nodes as a children (but there is only one tree root) with the requirement that no two childrens with the same name can exist.
         Nodes can, optionally, be added to groups. This makes it easy to reach a number of nodes from the code (for example an "enemies" group).
-        Nodes can be set to "process" state, so they constantly receive a callback requesting them to process (do anything). Normal processing ([`_process`](#_process)) happens as fast as possible and is dependent on the frame rate, so the processing time delta is variable. Fixed processing ([`_fixed_process`](#_fixed_process)) happens a fixed amount of times per second (by default 60) and is useful to link itself to the physics.
-        Nodes can also process input events. When set, the [`_input`](#_input) function will be called with every input that the program receives. Since this is usually too overkill (unless used for simple projects), an [`_unhandled_input`](#_unhandled_input) function is called when the input was not handled by anyone else (usually, GUI [Control](class_control) nodes).
+        Nodes can be set to "process" state, so they constantly receive a callback requesting them to process (do anything). Normal processing ([&#95process](#_process)) happens as fast as possible and is dependent on the frame rate, so the processing time delta is variable. Fixed processing ([&#95fixed&#95process](#_fixed_process)) happens a fixed amount of times per second (by default 60) and is useful to link itself to the physics.
+        Nodes can also process input events. When set, the [&#95input](#_input) function will be called with every input that the program receives. Since this is usually too overkill (unless used for simple projects), an [&#95unhandled&#95input](#_unhandled_input) function is called when the input was not handled by anyone else (usually, GUI [Control](class_control) nodes).
         To keep track of the scene hieararchy (specially when instancing scenes into scenes) an "owner" can be set to a node. This keeps track of who instanced what. This is mostly useful when writing editors and tools, though.
         Finally, when a node is freed, it will free all its children nodes too.
 
 ###  Member Function Description  
 
 #### <a name="_enter_scene">_enter_scene</a>
-  * void  **`_enter_scene`**  **(** **)** virtual
+  * void  **&#95enter&#95scene**  **(** **)** virtual
 
 Called when entered the scene.
 
 #### <a name="_exit_scene">_exit_scene</a>
-  * void  **`_exit_scene`**  **(** **)** virtual
+  * void  **&#95exit&#95scene**  **(** **)** virtual
 
 Called when being removed from the scene.
 
 #### <a name="_fixed_process">_fixed_process</a>
-  * void  **`_fixed_process`**  **(** [real](class_real) delta  **)** virtual
+  * void  **&#95fixed&#95process**  **(** [real](class_real) delta  **)** virtual
 
 Called for fixed processing (synced to the physics).
 
 #### <a name="_input">_input</a>
-  * void  **`_input`**  **(** [InputEvent](class_inputevent) event  **)** virtual
+  * void  **&#95input**  **(** [InputEvent](class_inputevent) event  **)** virtual
 
-Called when any input happens (also must enable with [`set_process_input`](#set_process_input) or the property).
+Called when any input happens (also must enable with [set&#95process&#95input](#set_process_input) or the property).
 
 #### <a name="_process">_process</a>
-  * void  **`_process`**  **(** [real](class_real) delta  **)** virtual
+  * void  **&#95process**  **(** [real](class_real) delta  **)** virtual
 
 Called for processing. This is called every frame, with the delta time from the previous frame.
 
 #### <a name="_ready">_ready</a>
-  * void  **`_ready`**  **(** **)** virtual
+  * void  **&#95ready**  **(** **)** virtual
 
 Called when ready (entered scene and children entered too).
 
 #### <a name="_unhandled_input">_unhandled_input</a>
-  * void  **`_unhandled_input`**  **(** [InputEvent](class_inputevent) event  **)** virtual
+  * void  **&#95unhandled&#95input**  **(** [InputEvent](class_inputevent) event  **)** virtual
 
-Called when any input happens that was not handled by something else (also must enable with [`set_process_unhandled_input`](#set_process_unhandled_input) or the property).
+Called when any input happens that was not handled by something else (also must enable with [set&#95process&#95unhandled&#95input](#set_process_unhandled_input) or the property).
 
 #### <a name="_unhandled_key_input">_unhandled_key_input</a>
-  * void  **`_unhandled_key_input`**  **(** [InputEvent](class_inputevent) key_event  **)** virtual
+  * void  **&#95unhandled&#95key&#95input**  **(** [InputEvent](class_inputevent) key_event  **)** virtual
 
 Called when any key input happens that was not handled by something else.
 
 #### <a name="set_name">set_name</a>
-  * void  **`set_name`**  **(** [String](class_string) name  **)**
+  * void  **set&#95name**  **(** [String](class_string) name  **)**
 
 Set the name of the [Node](class_node). Name must be unique within parent, and setting an already existing name will cause for the node to be automatically renamed.
 
 #### <a name="get_name">get_name</a>
-  * [String](class_string)  **`get_name`**  **(** **)** const
+  * [String](class_string)  **get&#95name**  **(** **)** const
 
 Return the name of the [Node](class_node). Name is be unique within parent.
 
 #### <a name="add_child">add_child</a>
-  * void  **`add_child`**  **(** [Node](class_node) node  **)**
+  * void  **add&#95child**  **(** [Node](class_node) node  **)**
 
 Add a child [Node](class_node). Nodes can have as many children as they want, but every child must have a unique name. Children nodes are automatically deleted when the parent node is deleted, so deleting a whole scene is performed by deleting its topmost node.
 
 #### <a name="remove_child">remove_child</a>
-  * void  **`remove_child`**  **(** [Node](class_node) node  **)**
+  * void  **remove&#95child**  **(** [Node](class_node) node  **)**
 
 Remove a child [Node](class_node). Node is NOT deleted and will have to be deleted manually.
 
 #### <a name="get_child_count">get_child_count</a>
-  * [int](class_int)  **`get_child_count`**  **(** **)** const
+  * [int](class_int)  **get&#95child&#95count**  **(** **)** const
 
 Return the amount of children nodes.
 
 #### <a name="get_child">get_child</a>
-  * [Node](class_node)  **`get_child`**  **(** [int](class_int) idx  **)** const
+  * [Node](class_node)  **get&#95child**  **(** [int](class_int) idx  **)** const
 
-Return a children node by it"apos;s index (see [`get_child_count`](#get_child_count)). This method is often used for iterating all children of a node.
+Return a children node by it"apos;s index (see [get&#95child&#95count](#get_child_count)). This method is often used for iterating all children of a node.
 
 #### <a name="get_node">get_node</a>
-  * [Node](class_node)  **`get_node`**  **(** [NodePath](class_nodepath) path  **)** const
+  * [Node](class_node)  **get&#95node**  **(** [NodePath](class_nodepath) path  **)** const
 
 Fetch a node. "path" must be valid (or else error will occur) and can be either the name of a child node, a relative path (from the current node to another node), or an absolute path to a node.
  Examples ofa paths are: get_node("Sword") , get_node("../Swamp/Alligator") , get_node("/MyGame"). 
-Note: fetching absolute paths only works when the node is inside the scene tree (see [`is_inside_scene`](#is_inside_scene)).
+Note: fetching absolute paths only works when the node is inside the scene tree (see [is&#95inside&#95scene](#is_inside_scene)).
 
 #### <a name="get_parent">get_parent</a>
-  * Parent  **`get_parent`**  **(** **)** const
+  * Parent  **get&#95parent**  **(** **)** const
 
 Return the parent [Node](class_node) of the current [Node](class_node), or an empty Object if the node lacks a parent.
 
 #### <a name="is_inside_scene">is_inside_scene</a>
-  * [bool](class_bool)  **`is_inside_scene`**  **(** **)** const
+  * [bool](class_bool)  **is&#95inside&#95scene**  **(** **)** const
 
 Return wether the node is inside a scene tree (a tree where the topmost node is a [RootNode])
 
 #### <a name="is_a_parent_of">is_a_parent_of</a>
-  * [bool](class_bool)  **`is_a_parent_of`**  **(** [Node](class_node) node  **)** const
+  * [bool](class_bool)  **is&#95a&#95parent&#95of**  **(** [Node](class_node) node  **)** const
 
 Return _true_ if the "node" argument is a direct or indirect child of the current node, otherwise return _false_.
 
 #### <a name="is_greater_than">is_greater_than</a>
-  * [bool](class_bool)  **`is_greater_than`**  **(** [Node](class_node) node  **)** const
+  * [bool](class_bool)  **is&#95greater&#95than**  **(** [Node](class_node) node  **)** const
 
 Return _true_ if "node" occurs later in the scene hierarchy than the current node, otherwise return _false_.
 
 #### <a name="get_path">get_path</a>
-  * [NodePath](class_nodepath)  **`get_path`**  **(** **)** const
+  * [NodePath](class_nodepath)  **get&#95path**  **(** **)** const
 
-Return the absolute path of the current node. This only works if the curent node is inside the scene tree (see [`is_inside_scene`](#is_inside_scene)).
+Return the absolute path of the current node. This only works if the curent node is inside the scene tree (see [is&#95inside&#95scene](#is_inside_scene)).
 
 #### <a name="get_path_to">get_path_to</a>
-  * [NodePath](class_nodepath)  **`get_path_to`**  **(** [Node](class_node) node  **)** const
+  * [NodePath](class_nodepath)  **get&#95path&#95to**  **(** [Node](class_node) node  **)** const
 
 Return the relative path from the current node to the specified node in "node" argument. Both nodes must be in the same scene, or else the function will fail.
 
 #### <a name="add_to_group">add_to_group</a>
-  * void  **`add_to_group`**  **(** [String](class_string) group, [bool](class_bool) arg1=false  **)**
+  * void  **add&#95to&#95group**  **(** [String](class_string) group, [bool](class_bool) arg1=false  **)**
 
-Add a node to a group. Groups are helpers to name and organize group of nodes, like for example: "Enemies" "Collectables", etc. A [Node](class_node) can be in any number of groups. Nodes can be assigned a group at any time, but will not be added to it until they are inside the scene tree (see [`is_inside_scene`](#is_inside_scene)).
+Add a node to a group. Groups are helpers to name and organize group of nodes, like for example: "Enemies" "Collectables", etc. A [Node](class_node) can be in any number of groups. Nodes can be assigned a group at any time, but will not be added to it until they are inside the scene tree (see [is&#95inside&#95scene](#is_inside_scene)).
 
 #### <a name="remove_from_group">remove_from_group</a>
-  * void  **`remove_from_group`**  **(** [String](class_string) group  **)**
+  * void  **remove&#95from&#95group**  **(** [String](class_string) group  **)**
 
 Remove a node from a group.
 
 #### <a name="move_child">move_child</a>
-  * void  **`move_child`**  **(** [Node](class_node) child_node, [int](class_int) to_pos  **)**
+  * void  **move&#95child**  **(** [Node](class_node) child_node, [int](class_int) to_pos  **)**
 
 Move a child node to a different position (order) amongst the other children. Since calls, signals, etc are performed by tree order, changing the order of chilren nodes may be useful.
 
 #### <a name="raise">raise</a>
-  * void  **`raise`**  **(** **)**
+  * void  **raise**  **(** **)**
 
 Move this node to the top of the array of nodes of the parent node. This is often useful on GUIs ([Control](class_control)), because their order of drawing fully depends on their order in the tree.
 
 #### <a name="set_owner">set_owner</a>
-  * void  **`set_owner`**  **(** [Node](class_node) owner  **)**
+  * void  **set&#95owner**  **(** [Node](class_node) owner  **)**
 
 Set the node owner. A node can have any other node as owner (as long as a valid parent, grandparent, etc ascending in the tree). When saving a node (using SceneSaver) all the nodes it owns will be saved with it. This allows to create complex SceneTrees, with instancing and subinstancing.
 
 #### <a name="get_owner">get_owner</a>
-  * [Node](class_node)  **`get_owner`**  **(** **)** const
+  * [Node](class_node)  **get&#95owner**  **(** **)** const
 
-Get the node owner (see [`set_node_owner`](#set_node_owner)).
+Get the node owner (see [set&#95node&#95owner](#set_node_owner)).
 
 #### <a name="remove_and_skip">remove_and_skip</a>
-  * void  **`remove_and_skip`**  **(** **)**
+  * void  **remove&#95and&#95skip**  **(** **)**
 
 Remove a node and set all its children as childrens of the parent node (if exists). All even subscriptions that pass by the removed node will be unsubscribed.
 
 #### <a name="get_index">get_index</a>
-  * [int](class_int)  **`get_index`**  **(** **)** const
+  * [int](class_int)  **get&#95index**  **(** **)** const
 
 Get the node index in the parent (assuming it has a parent).
 
 #### <a name="print_tree">print_tree</a>
-  * void  **`print_tree`**  **(** **)**
+  * void  **print&#95tree**  **(** **)**
 
 Print the screne to stdout. Used mainly for debugging purposes.
 
 #### <a name="set_filename">set_filename</a>
-  * void  **`set_filename`**  **(** [String](class_string) filename  **)**
+  * void  **set&#95filename**  **(** [String](class_string) filename  **)**
 
 A node can contain a filename. This filename should not be changed by the user, unless writing editors and tools. When a scene is instanced from a file, it topmost node contains the filename from where it was loaded.
 
 #### <a name="get_filename">get_filename</a>
-  * [String](class_string)  **`get_filename`**  **(** **)** const
+  * [String](class_string)  **get&#95filename**  **(** **)** const
 
-Return a filename that may be containedA node can contained by the node. When a scene is instanced from a file, it topmost node contains the filename from where it was loaded (see [`set_filename`](#set_filename)).
+Return a filename that may be containedA node can contained by the node. When a scene is instanced from a file, it topmost node contains the filename from where it was loaded (see [set&#95filename](#set_filename)).
 
 #### <a name="propagate_notification">propagate_notification</a>
-  * void  **`propagate_notification`**  **(** [int](class_int) what  **)**
+  * void  **propagate&#95notification**  **(** [int](class_int) what  **)**
 
 Notify the current node and all its chldren recursively by calling notification() in all of them.
 
 #### <a name="set_fixed_process">set_fixed_process</a>
-  * void  **`set_fixed_process`**  **(** [bool](class_bool) enable  **)**
+  * void  **set&#95fixed&#95process**  **(** [bool](class_bool) enable  **)**
 
-Enables or disables node fixed framerate processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS at a fixed (usually 60fps, check [OS](class_os) to change that) interval (and the [`_fixed_process`](#_fixed_process) callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [`get_fixed_process_time`](#get_fixed_process_time).
+Enables or disables node fixed framerate processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS at a fixed (usually 60fps, check [OS](class_os) to change that) interval (and the [&#95fixed&#95process](#_fixed_process) callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [get&#95fixed&#95process&#95time](#get_fixed_process_time).
 
 #### <a name="get_fixed_process_delta_time">get_fixed_process_delta_time</a>
-  * [real](class_real)  **`get_fixed_process_delta_time`**  **(** **)** const
+  * [real](class_real)  **get&#95fixed&#95process&#95delta&#95time**  **(** **)** const
 
 Return the time elapsed since the last fixed frame. This is always the same in fixed proecssing unless the frames per second is changed in [OS](class_os).
 
 #### <a name="is_fixed_processing">is_fixed_processing</a>
-  * [bool](class_bool)  **`is_fixed_processing`**  **(** **)** const
+  * [bool](class_bool)  **is&#95fixed&#95processing**  **(** **)** const
 
-Return true if fixed processing is enabled (see [`set_fixed_process`](#set_fixed_process)).
+Return true if fixed processing is enabled (see [set&#95fixed&#95process](#set_fixed_process)).
 
 #### <a name="set_process">set_process</a>
-  * void  **`set_process`**  **(** [bool](class_bool) enable  **)**
+  * void  **set&#95process**  **(** [bool](class_bool) enable  **)**
 
-Enables or disables node processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS on every drawn frame (and the [`_process`](#_process) callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [`get_process_time`](#get_process_time).
+Enables or disables node processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS on every drawn frame (and the [&#95process](#_process) callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [get&#95process&#95time](#get_process_time).
 
 #### <a name="get_process_delta_time">get_process_delta_time</a>
-  * [real](class_real)  **`get_process_delta_time`**  **(** **)** const
+  * [real](class_real)  **get&#95process&#95delta&#95time**  **(** **)** const
 
 Return the time elapsed (in seconds) since the last process callback. This is almost always different each time.
 
 #### <a name="is_processing">is_processing</a>
-  * [bool](class_bool)  **`is_processing`**  **(** **)** const
+  * [bool](class_bool)  **is&#95processing**  **(** **)** const
 
-Return wether processing is enabled in the current node (see [`set_process`](#set_process)).
+Return wether processing is enabled in the current node (see [set&#95process](#set_process)).
 
 #### <a name="set_process_input">set_process_input</a>
-  * void  **`set_process_input`**  **(** [bool](class_bool) enable  **)**
+  * void  **set&#95process&#95input**  **(** [bool](class_bool) enable  **)**
 
-Enable input processing for node. This is not requiered for GUI controls! It hooks up the node to receive all input (see [`_input`](#_input)).
+Enable input processing for node. This is not requiered for GUI controls! It hooks up the node to receive all input (see [&#95input](#_input)).
 
 #### <a name="is_processing_input">is_processing_input</a>
-  * [bool](class_bool)  **`is_processing_input`**  **(** **)** const
+  * [bool](class_bool)  **is&#95processing&#95input**  **(** **)** const
 
-Return true if the node is processing input (see [`set_process_input`](#set_process_input)).
+Return true if the node is processing input (see [set&#95process&#95input](#set_process_input)).
 
 #### <a name="set_process_unhandled_input">set_process_unhandled_input</a>
-  * void  **`set_process_unhandled_input`**  **(** [bool](class_bool) enable  **)**
+  * void  **set&#95process&#95unhandled&#95input**  **(** [bool](class_bool) enable  **)**
 
-Enable unhandled input processing for node. This is not requiered for GUI controls! It hooks up the node to receive all input that was not previously handled before (usually by a [Control](class_control)). (see [`_unhandled_input`](#_unhandled_input)).
+Enable unhandled input processing for node. This is not requiered for GUI controls! It hooks up the node to receive all input that was not previously handled before (usually by a [Control](class_control)). (see [&#95unhandled&#95input](#_unhandled_input)).
 
 #### <a name="is_processing_unhandled_input">is_processing_unhandled_input</a>
-  * [bool](class_bool)  **`is_processing_unhandled_input`**  **(** **)** const
+  * [bool](class_bool)  **is&#95processing&#95unhandled&#95input**  **(** **)** const
 
-Return true if the node is processing unhandled input (see [`set_process_unhandled_input`](#set_process_unhandled_input)).
+Return true if the node is processing unhandled input (see [set&#95process&#95unhandled&#95input](#set_process_unhandled_input)).
 
 #### <a name="can_process">can_process</a>
-  * [bool](class_bool)  **`can_process`**  **(** **)** const
+  * [bool](class_bool)  **can&#95process**  **(** **)** const
 
 Return true if the node can process.
 
 #### <a name="get_scene">get_scene</a>
-  * [SceneMainLoop](class_scenemainloop)  **`get_scene`**  **(** **)** const
+  * [SceneMainLoop](class_scenemainloop)  **get&#95scene**  **(** **)** const
 
 Get the current SceneMainLoop. Only returned if the node is inside the scene, else returns null.
 
 #### <a name="duplicate">duplicate</a>
-  * [Node](class_node)  **`duplicate`**  **(** **)** const
+  * [Node](class_node)  **duplicate**  **(** **)** const
 
 Return a duplicate of the scene, with all nodes and parameters copied. Subscriptions will not be duplicated.
 
 #### <a name="replace_by">replace_by</a>
-  * void  **`replace_by`**  **(** [Node](class_node) node, [bool](class_bool) keep_data=false  **)**
+  * void  **replace&#95by**  **(** [Node](class_node) node, [bool](class_bool) keep_data=false  **)**
 
 Replace a node in a scene by a given one. Subscriptions that pass through this node will be lost.

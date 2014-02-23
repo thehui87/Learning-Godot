@@ -6,17 +6,17 @@
 Contains global variables accessible from everywhere.
 
 ###  Member Functions 
-  * [bool](class_bool)  **[`has`](#has)**  **(** [String](class_string) name  **)** const
-  * void  **[`set_order`](#set_order)**  **(** [String](class_string) name, [int](class_int) pos  **)**
-  * [int](class_int)  **[`get_order`](#get_order)**  **(** [String](class_string) name  **)** const
-  * void  **[`set_persisting`](#set_persisting)**  **(** [String](class_string) name, [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[`is_persisting`](#is_persisting)**  **(** [String](class_string) name  **)** const
-  * void  **[`clear`](#clear)**  **(** [String](class_string) name  **)**
-  * [String](class_string)  **[`localize_path`](#localize_path)**  **(** [String](class_string) path  **)** const
-  * [String](class_string)  **[`globalize_path`](#globalize_path)**  **(** [String](class_string) path  **)** const
-  * [int](class_int)  **[`save`](#save)**  **(** **)**
-  * [bool](class_bool)  **[`has_singleton`](#has_singleton)**  **(** [String](class_string) arg0  **)** const
-  * [Object](class_object)  **[`get_singleton`](#get_singleton)**  **(** [String](class_string) arg0  **)** const
+  * [bool](class_bool)  **[has](#has)**  **(** [String](class_string) name  **)** const
+  * void  **[set&#95order](#set_order)**  **(** [String](class_string) name, [int](class_int) pos  **)**
+  * [int](class_int)  **[get&#95order](#get_order)**  **(** [String](class_string) name  **)** const
+  * void  **[set&#95persisting](#set_persisting)**  **(** [String](class_string) name, [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[is&#95persisting](#is_persisting)**  **(** [String](class_string) name  **)** const
+  * void  **[clear](#clear)**  **(** [String](class_string) name  **)**
+  * [String](class_string)  **[localize&#95path](#localize_path)**  **(** [String](class_string) path  **)** const
+  * [String](class_string)  **[globalize&#95path](#globalize_path)**  **(** [String](class_string) path  **)** const
+  * [int](class_int)  **[save](#save)**  **(** **)**
+  * [bool](class_bool)  **[has&#95singleton](#has_singleton)**  **(** [String](class_string) arg0  **)** const
+  * [Object](class_object)  **[get&#95singleton](#get_singleton)**  **(** [String](class_string) arg0  **)** const
 
 ###  Description  
 Contains global variables accessible from everywhere. Use the normal [Object](class_object) API, such as "Globals.get(variable)", "Globals.set(variable,value)" or "Globals.has(variable)" to access them. Variables stored in engine.cfg are also loaded into globals, making this object very useful for reading custom game configuration options.
@@ -24,41 +24,41 @@ Contains global variables accessible from everywhere. Use the normal [Object](cl
 ###  Member Function Description  
 
 #### <a name="has">has</a>
-  * [bool](class_bool)  **`has`**  **(** [String](class_string) name  **)** const
+  * [bool](class_bool)  **has**  **(** [String](class_string) name  **)** const
 
 Return true if a configuration value is present.
 
 #### <a name="set_order">set_order</a>
-  * void  **`set_order`**  **(** [String](class_string) name, [int](class_int) pos  **)**
+  * void  **set&#95order**  **(** [String](class_string) name, [int](class_int) pos  **)**
 
 Set the order of a configuration value (influences when saved to the config file).
 
 #### <a name="get_order">get_order</a>
-  * [int](class_int)  **`get_order`**  **(** [String](class_string) name  **)** const
+  * [int](class_int)  **get&#95order**  **(** [String](class_string) name  **)** const
 
 Return the order of a configuration value (influences when saved to the config file).
 
 #### <a name="set_persisting">set_persisting</a>
-  * void  **`set_persisting`**  **(** [String](class_string) name, [bool](class_bool) enable  **)**
+  * void  **set&#95persisting**  **(** [String](class_string) name, [bool](class_bool) enable  **)**
 
 If set to true, this value can be saved to the configuration file. This is useful for editors.
 
 #### <a name="is_persisting">is_persisting</a>
-  * [bool](class_bool)  **`is_persisting`**  **(** [String](class_string) name  **)** const
+  * [bool](class_bool)  **is&#95persisting**  **(** [String](class_string) name  **)** const
 
 If returns true, this value can be saved to the configuration file. This is useful for editors.
 
 #### <a name="clear">clear</a>
-  * void  **`clear`**  **(** [String](class_string) name  **)**
+  * void  **clear**  **(** [String](class_string) name  **)**
 
 Clear the whole configuration (not recommended, may break things).
 
 #### <a name="localize_path">localize_path</a>
-  * [String](class_string)  **`localize_path`**  **(** [String](class_string) path  **)** const
+  * [String](class_string)  **localize&#95path**  **(** [String](class_string) path  **)** const
 
 Convert a path to a localized path (res:// path).
 
 #### <a name="globalize_path">globalize_path</a>
-  * [String](class_string)  **`globalize_path`**  **(** [String](class_string) path  **)** const
+  * [String](class_string)  **globalize&#95path**  **(** [String](class_string) path  **)** const
 
 Convert a localized path (res://) to a full native OS path.

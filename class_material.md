@@ -6,16 +6,16 @@
 Abstract base [Resource](class_resource) for coloring and shading geometry.
 
 ###  Member Functions 
-  * void  **[`set_flag`](#set_flag)**  **(** [int](class_int) flag, [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[`get_flag`](#get_flag)**  **(** [int](class_int) flag  **)** const
-  * void  **[`set_hint`](#set_hint)**  **(** [int](class_int) hint, [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[`get_hint`](#get_hint)**  **(** [int](class_int) hint  **)** const
-  * void  **[`set_blend_mode`](#set_blend_mode)**  **(** [int](class_int) mode  **)**
-  * [int](class_int)  **[`get_blend_mode`](#get_blend_mode)**  **(** **)** const
-  * void  **[`set_shade_model`](#set_shade_model)**  **(** [int](class_int) model  **)**
-  * [int](class_int)  **[`get_shade_model`](#get_shade_model)**  **(** **)** const
-  * void  **[`set_line_width`](#set_line_width)**  **(** [real](class_real) width  **)**
-  * [real](class_real)  **[`get_line_width`](#get_line_width)**  **(** **)** const
+  * void  **[set&#95flag](#set_flag)**  **(** [int](class_int) flag, [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[get&#95flag](#get_flag)**  **(** [int](class_int) flag  **)** const
+  * void  **[set&#95hint](#set_hint)**  **(** [int](class_int) hint, [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[get&#95hint](#get_hint)**  **(** [int](class_int) hint  **)** const
+  * void  **[set&#95blend&#95mode](#set_blend_mode)**  **(** [int](class_int) mode  **)**
+  * [int](class_int)  **[get&#95blend&#95mode](#get_blend_mode)**  **(** **)** const
+  * void  **[set&#95shade&#95model](#set_shade_model)**  **(** [int](class_int) model  **)**
+  * [int](class_int)  **[get&#95shade&#95model](#get_shade_model)**  **(** **)** const
+  * void  **[set&#95line&#95width](#set_line_width)**  **(** [real](class_real) width  **)**
+  * [real](class_real)  **[get&#95line&#95width](#get_line_width)**  **(** **)** const
 
 ###  Numeric Constants  
   * **FLAG_VISIBLE** = **0** - Geometry is visible when this flag is enabled (default).
@@ -49,31 +49,31 @@ Material is a base [Resource](class_resource) used for coloring and shading geom
 ###  Member Function Description  
 
 #### <a name="set_flag">set_flag</a>
-  * void  **`set_flag`**  **(** [int](class_int) flag, [bool](class_bool) enable  **)**
+  * void  **set&#95flag**  **(** [int](class_int) flag, [bool](class_bool) enable  **)**
 
 Set a [Material](class_material) flag, which toggles on or off a behavior when rendering. See enumeration FLAG_* for a list.
 
 #### <a name="get_flag">get_flag</a>
-  * [bool](class_bool)  **`get_flag`**  **(** [int](class_int) flag  **)** const
+  * [bool](class_bool)  **get&#95flag**  **(** [int](class_int) flag  **)** const
 
 Return a [Material](class_material) flag, which toggles on or off a behavior when rendering. See enumeration FLAG_* for a list.
 
 #### <a name="set_blend_mode">set_blend_mode</a>
-  * void  **`set_blend_mode`**  **(** [int](class_int) mode  **)**
+  * void  **set&#95blend&#95mode**  **(** [int](class_int) mode  **)**
 
 Set blend mode for the material, which can be one of BLEND_MODE_MIX (default), BLEND_MODE_ADD, BLEND_MODE_SUB. Keep in mind that only BLEND_MODE_MIX ensures that the material _may_ be opaque, any other blend mode will render with alpha blending enabled in raster-based [VisualServer](class_visualserver) implementations.
 
 #### <a name="get_blend_mode">get_blend_mode</a>
-  * [int](class_int)  **`get_blend_mode`**  **(** **)** const
+  * [int](class_int)  **get&#95blend&#95mode**  **(** **)** const
 
 Return blend mode for the material, which can be one of BLEND_MODE_MIX (default), BLEND_MODE_ADD, BLEND_MODE_SUB. Keep in mind that only BLEND_MODE_MIX ensures that the material _may_ be opaque, any other blend mode will render with alpha blending enabled in raster-based [VisualServer](class_visualserver) implementations.
 
 #### <a name="set_line_width">set_line_width</a>
-  * void  **`set_line_width`**  **(** [real](class_real) width  **)**
+  * void  **set&#95line&#95width**  **(** [real](class_real) width  **)**
 
 Set the line width for geometry drawn with FLAG_WIREFRAME enabled, or LINE primitives. Note that not all hardware or VisualServer backends support this (like DirectX).
 
 #### <a name="get_line_width">get_line_width</a>
-  * [real](class_real)  **`get_line_width`**  **(** **)** const
+  * [real](class_real)  **get&#95line&#95width**  **(** **)** const
 
 Return the line width for geometry drawn with FLAG_WIREFRAME enabled, or LINE primitives. Note that not all hardware or VisualServer backends support this (like DirectX).

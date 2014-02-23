@@ -6,8 +6,8 @@
 
 
 ###  Member Functions 
-  * void  **[`set_enabler`](#set_enabler)**  **(** [int](class_int) enabler, [bool](class_bool) enabled  **)**
-  * [bool](class_bool)  **[`is_enabler_enabled`](#is_enabler_enabled)**  **(** [int](class_int) enabler  **)** const
+  * void  **[set&#95enabler](#set_enabler)**  **(** [int](class_int) enabler, [bool](class_bool) enabled  **)**
+  * [bool](class_bool)  **[is&#95enabler&#95enabled](#is_enabler_enabled)**  **(** [int](class_int) enabler  **)** const
 
 ###  Numeric Constants  
   * **ENABLER_FREEZE_BODIES** = **1**

@@ -6,7 +6,7 @@
 Dialog for confirmation of actions.
 
 ###  Member Functions 
-  * [Button](class_button)  **[`get_cancel`](#get_cancel)**  **(** **)**
+  * [Button](class_button)  **[get&#95cancel](#get_cancel)**  **(** **)**
 
 ###  Description  
 Dialog for confirmation of actions. This dialog inherits from [AcceptDialog](class_acceptdialog), but has by default an OK and Cancel buton (in host OS order).
@@ -14,6 +14,6 @@ Dialog for confirmation of actions. This dialog inherits from [AcceptDialog](cla
 ###  Member Function Description  
 
 #### <a name="get_cancel">get_cancel</a>
-  * [Button](class_button)  **`get_cancel`**  **(** **)**
+  * [Button](class_button)  **get&#95cancel**  **(** **)**
 
 Return the cancel button.

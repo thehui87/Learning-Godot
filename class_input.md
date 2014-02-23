@@ -6,16 +6,16 @@
 
 
 ###  Member Functions 
-  * [bool](class_bool)  **[`is_key_pressed`](#is_key_pressed)**  **(** [int](class_int) scancode  **)**
-  * [bool](class_bool)  **[`is_mouse_button_pressed`](#is_mouse_button_pressed)**  **(** [int](class_int) button  **)**
-  * [bool](class_bool)  **[`is_joy_button_pressed`](#is_joy_button_pressed)**  **(** [int](class_int) device, [int](class_int) button  **)**
-  * [bool](class_bool)  **[`is_action_pressed`](#is_action_pressed)**  **(** [String](class_string) action  **)**
-  * [real](class_real)  **[`get_joy_axis`](#get_joy_axis)**  **(** [int](class_int) device, [int](class_int) axis  **)**
-  * [Vector3](class_vector3)  **[`get_accelerometer`](#get_accelerometer)**  **(** **)**
-  * [Vector2](class_vector2)  **[`get_mouse_pos`](#get_mouse_pos)**  **(** **)** const
-  * [Vector2](class_vector2)  **[`get_mouse_speed`](#get_mouse_speed)**  **(** **)** const
-  * void  **[`set_mouse_mode`](#set_mouse_mode)**  **(** [int](class_int) mode  **)**
-  * [int](class_int)  **[`get_mouse_mode`](#get_mouse_mode)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95key&#95pressed](#is_key_pressed)**  **(** [int](class_int) scancode  **)**
+  * [bool](class_bool)  **[is&#95mouse&#95button&#95pressed](#is_mouse_button_pressed)**  **(** [int](class_int) button  **)**
+  * [bool](class_bool)  **[is&#95joy&#95button&#95pressed](#is_joy_button_pressed)**  **(** [int](class_int) device, [int](class_int) button  **)**
+  * [bool](class_bool)  **[is&#95action&#95pressed](#is_action_pressed)**  **(** [String](class_string) action  **)**
+  * [real](class_real)  **[get&#95joy&#95axis](#get_joy_axis)**  **(** [int](class_int) device, [int](class_int) axis  **)**
+  * [Vector3](class_vector3)  **[get&#95accelerometer](#get_accelerometer)**  **(** **)**
+  * [Vector2](class_vector2)  **[get&#95mouse&#95pos](#get_mouse_pos)**  **(** **)** const
+  * [Vector2](class_vector2)  **[get&#95mouse&#95speed](#get_mouse_speed)**  **(** **)** const
+  * void  **[set&#95mouse&#95mode](#set_mouse_mode)**  **(** [int](class_int) mode  **)**
+  * [int](class_int)  **[get&#95mouse&#95mode](#get_mouse_mode)**  **(** **)** const
 
 ###  Numeric Constants  
   * **MOUSE_MODE_VISIBLE** = **0**
@@ -25,7 +25,7 @@
 ###  Member Function Description  
 
 #### <a name="get_mouse_pos">get_mouse_pos</a>
-  * [Vector2](class_vector2)  **`get_mouse_pos`**  **(** **)** const
+  * [Vector2](class_vector2)  **get&#95mouse&#95pos**  **(** **)** const
 
 Return the global, unscaled, screen pointer coordinates.
 			If the 2D viewport has been scaled, it may not work well

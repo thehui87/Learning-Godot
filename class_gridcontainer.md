@@ -6,7 +6,7 @@
 
 
 ###  Member Functions 
-  * void  **[`set_columns`](#set_columns)**  **(** [int](class_int) columns  **)**
-  * [int](class_int)  **[`get_columns`](#get_columns)**  **(** **)** const
+  * void  **[set&#95columns](#set_columns)**  **(** [int](class_int) columns  **)**
+  * [int](class_int)  **[get&#95columns](#get_columns)**  **(** **)** const
 
 ###  Member Function Description  

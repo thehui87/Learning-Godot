@@ -6,16 +6,16 @@
 Static body for 2D Physics.
 
 ###  Member Functions 
-  * void  **[`set_simulate_motion`](#set_simulate_motion)**  **(** [bool](class_bool) enabled  **)**
-  * [bool](class_bool)  **[`is_simulating_motion`](#is_simulating_motion)**  **(** **)** const
-  * void  **[`set_constant_linear_velocity`](#set_constant_linear_velocity)**  **(** [Vector2](class_vector2) vel  **)**
-  * void  **[`set_constant_angular_velocity`](#set_constant_angular_velocity)**  **(** [real](class_real) vel  **)**
-  * [Vector2](class_vector2)  **[`get_constant_linear_velocity`](#get_constant_linear_velocity)**  **(** **)** const
-  * [real](class_real)  **[`get_constant_angular_velocity`](#get_constant_angular_velocity)**  **(** **)** const
-  * void  **[`set_friction`](#set_friction)**  **(** [real](class_real) friction  **)**
-  * [real](class_real)  **[`get_friction`](#get_friction)**  **(** **)** const
-  * void  **[`set_bounce`](#set_bounce)**  **(** [real](class_real) bounce  **)**
-  * [real](class_real)  **[`get_bounce`](#get_bounce)**  **(** **)** const
+  * void  **[set&#95simulate&#95motion](#set_simulate_motion)**  **(** [bool](class_bool) enabled  **)**
+  * [bool](class_bool)  **[is&#95simulating&#95motion](#is_simulating_motion)**  **(** **)** const
+  * void  **[set&#95constant&#95linear&#95velocity](#set_constant_linear_velocity)**  **(** [Vector2](class_vector2) vel  **)**
+  * void  **[set&#95constant&#95angular&#95velocity](#set_constant_angular_velocity)**  **(** [real](class_real) vel  **)**
+  * [Vector2](class_vector2)  **[get&#95constant&#95linear&#95velocity](#get_constant_linear_velocity)**  **(** **)** const
+  * [real](class_real)  **[get&#95constant&#95angular&#95velocity](#get_constant_angular_velocity)**  **(** **)** const
+  * void  **[set&#95friction](#set_friction)**  **(** [real](class_real) friction  **)**
+  * [real](class_real)  **[get&#95friction](#get_friction)**  **(** **)** const
+  * void  **[set&#95bounce](#set_bounce)**  **(** [real](class_real) bounce  **)**
+  * [real](class_real)  **[get&#95bounce](#get_bounce)**  **(** **)** const
 
 ###  Description  
 Static body for 2D Physics. A static body is a simple body that is not intended to move. They don't consume any CPU resources in contrast to a [RigidBody2D](class_rigidbody2d) so they are great for scenaro collision.
@@ -26,31 +26,31 @@ Static body for 2D Physics. A static body is a simple body that is not intended 
 ###  Member Function Description  
 
 #### <a name="set_simulate_motion">set_simulate_motion</a>
-  * void  **`set_simulate_motion`**  **(** [bool](class_bool) enabled  **)**
+  * void  **set&#95simulate&#95motion**  **(** [bool](class_bool) enabled  **)**
 
 Enable or disable simulated motion mode.
 
 #### <a name="is_simulating_motion">is_simulating_motion</a>
-  * [bool](class_bool)  **`is_simulating_motion`**  **(** **)** const
+  * [bool](class_bool)  **is&#95simulating&#95motion**  **(** **)** const
 
 Return true if simulated motion mode is enabled.
 
 #### <a name="set_constant_linear_velocity">set_constant_linear_velocity</a>
-  * void  **`set_constant_linear_velocity`**  **(** [Vector2](class_vector2) vel  **)**
+  * void  **set&#95constant&#95linear&#95velocity**  **(** [Vector2](class_vector2) vel  **)**
 
 Set a constant linear velocity for the body.
 
 #### <a name="set_constant_angular_velocity">set_constant_angular_velocity</a>
-  * void  **`set_constant_angular_velocity`**  **(** [real](class_real) vel  **)**
+  * void  **set&#95constant&#95angular&#95velocity**  **(** [real](class_real) vel  **)**
 
 Set a constant angular velocity for the body.
 
 #### <a name="get_constant_linear_velocity">get_constant_linear_velocity</a>
-  * [Vector2](class_vector2)  **`get_constant_linear_velocity`**  **(** **)** const
+  * [Vector2](class_vector2)  **get&#95constant&#95linear&#95velocity**  **(** **)** const
 
 Return the constant linear velocity for the body.
 
 #### <a name="get_constant_angular_velocity">get_constant_angular_velocity</a>
-  * [real](class_real)  **`get_constant_angular_velocity`**  **(** **)** const
+  * [real](class_real)  **get&#95constant&#95angular&#95velocity**  **(** **)** const
 
 Return the constant angular velocity for the body.
