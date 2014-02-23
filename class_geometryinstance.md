@@ -6,17 +6,17 @@
 Base node for geometry based visual instances.
 
 ###  Member Functions 
-  * void  **[set&#95material&#95override](#set_material_override)**  **(** [Object](class_object) material  **)**
-  * [Object](class_object)  **[get&#95material&#95override](#get_material_override)**  **(** **)** const
-  * void  **[set&#95flag](#set_flag)**  **(** [int](class_int) flag, [bool](class_bool) value  **)**
-  * [bool](class_bool)  **[get&#95flag](#get_flag)**  **(** [int](class_int) flag  **)** const
-  * void  **[set&#95draw&#95range&#95begin](#set_draw_range_begin)**  **(** [real](class_real) mode  **)**
-  * [real](class_real)  **[get&#95draw&#95range&#95begin](#get_draw_range_begin)**  **(** **)** const
-  * void  **[set&#95draw&#95range&#95end](#set_draw_range_end)**  **(** [real](class_real) mode  **)**
-  * [real](class_real)  **[get&#95draw&#95range&#95end](#get_draw_range_end)**  **(** **)** const
+  * void  **[set&#95;material&#95;override](#set_material_override)**  **(** [Object](class_object) material  **)**
+  * [Object](class_object)  **[get&#95;material&#95;override](#get_material_override)**  **(** **)** const
+  * void  **[set&#95;flag](#set_flag)**  **(** [int](class_int) flag, [bool](class_bool) value  **)**
+  * [bool](class_bool)  **[get&#95;flag](#get_flag)**  **(** [int](class_int) flag  **)** const
+  * void  **[set&#95;draw&#95;range&#95;begin](#set_draw_range_begin)**  **(** [real](class_real) mode  **)**
+  * [real](class_real)  **[get&#95;draw&#95;range&#95;begin](#get_draw_range_begin)**  **(** **)** const
+  * void  **[set&#95;draw&#95;range&#95;end](#set_draw_range_end)**  **(** [real](class_real) mode  **)**
+  * [real](class_real)  **[get&#95;draw&#95;range&#95;end](#get_draw_range_end)**  **(** **)** const
 
 ###  Signals  
-  *  **visibility&#95changed**  **(** **)**
+  *  **visibility&#95;changed**  **(** **)**
 
 ###  Numeric Constants  
   * **FLAG_VISIBLE** = **0**
@@ -34,11 +34,11 @@ Base node for geometry based visual instances. Shares some common functionality 
 ###  Member Function Description  
 
 #### <a name="set_material_override">set_material_override</a>
-  * void  **set&#95material&#95override**  **(** [Object](class_object) material  **)**
+  * void  **set&#95;material&#95;override**  **(** [Object](class_object) material  **)**
 
 Set the material override for the whole geometry.
 
 #### <a name="get_material_override">get_material_override</a>
-  * [Object](class_object)  **get&#95material&#95override**  **(** **)** const
+  * [Object](class_object)  **get&#95;material&#95;override**  **(** **)** const
 
 Return the material override for the whole geometry.

@@ -7,19 +7,19 @@
 
 ###  Member Functions 
   * [int](class_int)  **[connect](#connect)**  **(** [String](class_string) host, [int](class_int) port  **)**
-  * void  **[set&#95connection](#set_connection)**  **(** [StreamPeer](class_streampeer) connection  **)**
+  * void  **[set&#95;connection](#set_connection)**  **(** [StreamPeer](class_streampeer) connection  **)**
   * [int](class_int)  **[request](#request)**  **(** [int](class_int) method, [String](class_string) url, [StringArray](class_stringarray) headers, [String](class_string) body=""  **)**
-  * [int](class_int)  **[send&#95body&#95text](#send_body_text)**  **(** [String](class_string) body  **)**
-  * [int](class_int)  **[send&#95body&#95data](#send_body_data)**  **(** [RawArray](class_rawarray) body  **)**
+  * [int](class_int)  **[send&#95;body&#95;text](#send_body_text)**  **(** [String](class_string) body  **)**
+  * [int](class_int)  **[send&#95;body&#95;data](#send_body_data)**  **(** [RawArray](class_rawarray) body  **)**
   * void  **[close](#close)**  **(** **)**
-  * [bool](class_bool)  **[has&#95response](#has_response)**  **(** **)** const
-  * [bool](class_bool)  **[is&#95response&#95chunked](#is_response_chunked)**  **(** **)** const
-  * [int](class_int)  **[get&#95response&#95code](#get_response_code)**  **(** **)** const
-  * [StringArray](class_stringarray)  **[get&#95response&#95headers](#get_response_headers)**  **(** **)**
-  * [Dictionary](class_dictionary)  **[get&#95response&#95headers&#95as&#95dictionary](#get_response_headers_as_dictionary)**  **(** **)**
-  * [int](class_int)  **[get&#95response&#95body&#95length](#get_response_body_length)**  **(** **)** const
-  * [RawArray](class_rawarray)  **[read&#95response&#95body&#95chunk](#read_response_body_chunk)**  **(** **)**
-  * [int](class_int)  **[get&#95status](#get_status)**  **(** **)** const
+  * [bool](class_bool)  **[has&#95;response](#has_response)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95;response&#95;chunked](#is_response_chunked)**  **(** **)** const
+  * [int](class_int)  **[get&#95;response&#95;code](#get_response_code)**  **(** **)** const
+  * [StringArray](class_stringarray)  **[get&#95;response&#95;headers](#get_response_headers)**  **(** **)**
+  * [Dictionary](class_dictionary)  **[get&#95;response&#95;headers&#95;as&#95;dictionary](#get_response_headers_as_dictionary)**  **(** **)**
+  * [int](class_int)  **[get&#95;response&#95;body&#95;length](#get_response_body_length)**  **(** **)** const
+  * [RawArray](class_rawarray)  **[read&#95;response&#95;body&#95;chunk](#read_response_body_chunk)**  **(** **)**
+  * [int](class_int)  **[get&#95;status](#get_status)**  **(** **)** const
   * [int](class_int)  **[poll](#poll)**  **(** **)**
 
 ###  Numeric Constants  

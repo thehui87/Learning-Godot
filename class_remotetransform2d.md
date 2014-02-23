@@ -6,7 +6,7 @@
 
 
 ###  Member Functions 
-  * void  **[set&#95remote&#95node](#set_remote_node)**  **(** [NodePath](class_nodepath) path  **)**
-  * [NodePath](class_nodepath)  **[get&#95remote&#95node](#get_remote_node)**  **(** **)** const
+  * void  **[set&#95;remote&#95;node](#set_remote_node)**  **(** [NodePath](class_nodepath) path  **)**
+  * [NodePath](class_nodepath)  **[get&#95;remote&#95;node](#get_remote_node)**  **(** **)** const
 
 ###  Member Function Description  

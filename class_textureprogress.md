@@ -6,12 +6,12 @@
 Textured progress bar implementation.
 
 ###  Member Functions 
-  * void  **[set&#95under&#95texture](#set_under_texture)**  **(** [Object](class_object) tex  **)**
-  * [Object](class_object)  **[get&#95under&#95texture](#get_under_texture)**  **(** **)** const
-  * void  **[set&#95progress&#95texture](#set_progress_texture)**  **(** [Object](class_object) tex  **)**
-  * [Object](class_object)  **[get&#95progress&#95texture](#get_progress_texture)**  **(** **)** const
-  * void  **[set&#95over&#95texture](#set_over_texture)**  **(** [Object](class_object) tex  **)**
-  * [Object](class_object)  **[get&#95over&#95texture](#get_over_texture)**  **(** **)** const
+  * void  **[set&#95;under&#95;texture](#set_under_texture)**  **(** [Object](class_object) tex  **)**
+  * [Object](class_object)  **[get&#95;under&#95;texture](#get_under_texture)**  **(** **)** const
+  * void  **[set&#95;progress&#95;texture](#set_progress_texture)**  **(** [Object](class_object) tex  **)**
+  * [Object](class_object)  **[get&#95;progress&#95;texture](#get_progress_texture)**  **(** **)** const
+  * void  **[set&#95;over&#95;texture](#set_over_texture)**  **(** [Object](class_object) tex  **)**
+  * [Object](class_object)  **[get&#95;over&#95;texture](#get_over_texture)**  **(** **)** const
 
 ###  Description  
 [ProgressBar](class_progressbar) implementation that is easier to theme (by just passing a few textures).

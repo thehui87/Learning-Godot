@@ -6,13 +6,13 @@ Plane in hessian form.
 
 ###  Member Functions 
   * [Vector3](class_vector3)  **[center](#center)**  **(** **)**
-  * [real](class_real)  **[distance&#95to](#distance_to)**  **(** [Vector3](class_vector3) point  **)**
-  * [Vector3](class_vector3)  **[get&#95any&#95point](#get_any_point)**  **(** **)**
-  * [bool](class_bool)  **[has&#95point](#has_point)**  **(** [Vector3](class_vector3) point, [real](class_real) epsilon=0.00001  **)**
-  * [Vector3](class_vector3)  **[intersect&#953](#intersect_3)**  **(** [Plane](class_plane) b, [Plane](class_plane) c  **)**
-  * [Vector3](class_vector3)  **[intersects&#95ray](#intersects_ray)**  **(** [Vector3](class_vector3) from, [Vector3](class_vector3) dir  **)**
-  * [Vector3](class_vector3)  **[intersects&#95segment](#intersects_segment)**  **(** [Vector3](class_vector3) begin, [Vector3](class_vector3) end  **)**
-  * [bool](class_bool)  **[is&#95point&#95over](#is_point_over)**  **(** [Vector3](class_vector3) point  **)**
+  * [real](class_real)  **[distance&#95;to](#distance_to)**  **(** [Vector3](class_vector3) point  **)**
+  * [Vector3](class_vector3)  **[get&#95;any&#95;point](#get_any_point)**  **(** **)**
+  * [bool](class_bool)  **[has&#95;point](#has_point)**  **(** [Vector3](class_vector3) point, [real](class_real) epsilon=0.00001  **)**
+  * [Vector3](class_vector3)  **[intersect&#95;3](#intersect_3)**  **(** [Plane](class_plane) b, [Plane](class_plane) c  **)**
+  * [Vector3](class_vector3)  **[intersects&#95;ray](#intersects_ray)**  **(** [Vector3](class_vector3) from, [Vector3](class_vector3) dir  **)**
+  * [Vector3](class_vector3)  **[intersects&#95;segment](#intersects_segment)**  **(** [Vector3](class_vector3) begin, [Vector3](class_vector3) end  **)**
+  * [bool](class_bool)  **[is&#95;point&#95;over](#is_point_over)**  **(** [Vector3](class_vector3) point  **)**
   * [Plane](class_plane)  **[normalized](#normalized)**  **(** **)**
   * [Vector3](class_vector3)  **[project](#project)**  **(** [Vector3](class_vector3) point  **)**
   * void  **[Plane](#Plane)**  **(** [real](class_real) a, [real](class_real) b, [real](class_real) c, [real](class_real) d  **)**
@@ -32,27 +32,27 @@ Plane represents a normalized plane equation. Basically, "normal" is the normal 
 ###  Member Function Description  
 
 #### <a name="has_point">has_point</a>
-  * [bool](class_bool)  **has&#95point**  **(** [Vector3](class_vector3) point, [real](class_real) epsilon=0.00001  **)**
+  * [bool](class_bool)  **has&#95;point**  **(** [Vector3](class_vector3) point, [real](class_real) epsilon=0.00001  **)**
 
 Returns true if "p" is inside the plane (by a very minimum treshold).
 
 #### <a name="intersect_3">intersect_3</a>
-  * [Vector3](class_vector3)  **intersect&#953**  **(** [Plane](class_plane) b, [Plane](class_plane) c  **)**
+  * [Vector3](class_vector3)  **intersect&#95;3**  **(** [Plane](class_plane) b, [Plane](class_plane) c  **)**
 
 Returns true if this plane intersects with planes "a" and "b". The resulting intersectin is placed in "r".
 
 #### <a name="intersects_ray">intersects_ray</a>
-  * [Vector3](class_vector3)  **intersects&#95ray**  **(** [Vector3](class_vector3) from, [Vector3](class_vector3) dir  **)**
+  * [Vector3](class_vector3)  **intersects&#95;ray**  **(** [Vector3](class_vector3) from, [Vector3](class_vector3) dir  **)**
 
 Returns true if ray consiting of position "p" and direction normal "d" intersects this plane. If true, the result is placed in "r".
 
 #### <a name="intersects_segment">intersects_segment</a>
-  * [Vector3](class_vector3)  **intersects&#95segment**  **(** [Vector3](class_vector3) begin, [Vector3](class_vector3) end  **)**
+  * [Vector3](class_vector3)  **intersects&#95;segment**  **(** [Vector3](class_vector3) begin, [Vector3](class_vector3) end  **)**
 
 Returns true if segment from position "sa" to position "sb" intersects this plane. If true, the result is placed in "r".
 
 #### <a name="is_point_over">is_point_over</a>
-  * [bool](class_bool)  **is&#95point&#95over**  **(** [Vector3](class_vector3) point  **)**
+  * [bool](class_bool)  **is&#95;point&#95;over**  **(** [Vector3](class_vector3) point  **)**
 
 Returns true if "p" is located above the plane.
 

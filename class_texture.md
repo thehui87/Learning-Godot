@@ -6,16 +6,16 @@
 Texture for 2D and 3D.
 
 ###  Member Functions 
-  * [int](class_int)  **[get&#95width](#get_width)**  **(** **)** const
-  * [int](class_int)  **[get&#95height](#get_height)**  **(** **)** const
-  * [Vector2](class_vector2)  **[get&#95size](#get_size)**  **(** **)** const
-  * [RID](class_rid)  **[get&#95rid](#get_rid)**  **(** **)** const
-  * [bool](class_bool)  **[has&#95alpha](#has_alpha)**  **(** **)** const
-  * void  **[set&#95flags](#set_flags)**  **(** [int](class_int) flags  **)**
-  * [int](class_int)  **[get&#95flags](#get_flags)**  **(** **)** const
+  * [int](class_int)  **[get&#95;width](#get_width)**  **(** **)** const
+  * [int](class_int)  **[get&#95;height](#get_height)**  **(** **)** const
+  * [Vector2](class_vector2)  **[get&#95;size](#get_size)**  **(** **)** const
+  * [RID](class_rid)  **[get&#95;rid](#get_rid)**  **(** **)** const
+  * [bool](class_bool)  **[has&#95;alpha](#has_alpha)**  **(** **)** const
+  * void  **[set&#95;flags](#set_flags)**  **(** [int](class_int) flags  **)**
+  * [int](class_int)  **[get&#95;flags](#get_flags)**  **(** **)** const
   * void  **[draw](#draw)**  **(** [RID](class_rid) canvas_item, [Vector2](class_vector2) pos, [Color](class_color) modulate=Color(1,1,1,1)  **)** const
-  * void  **[draw&#95rect](#draw_rect)**  **(** [RID](class_rid) canvas_item, [Rect2](class_rect2) rect, [bool](class_bool) tile, [Color](class_color) modulate=Color(1,1,1,1)  **)** const
-  * void  **[draw&#95rect&#95region](#draw_rect_region)**  **(** [RID](class_rid) canvas_item, [Rect2](class_rect2) rect, [Rect2](class_rect2) src_rect, [Color](class_color) modulate=Color(1,1,1,1)  **)** const
+  * void  **[draw&#95;rect](#draw_rect)**  **(** [RID](class_rid) canvas_item, [Rect2](class_rect2) rect, [bool](class_bool) tile, [Color](class_color) modulate=Color(1,1,1,1)  **)** const
+  * void  **[draw&#95;rect&#95;region](#draw_rect_region)**  **(** [RID](class_rid) canvas_item, [Rect2](class_rect2) rect, [Rect2](class_rect2) src_rect, [Color](class_color) modulate=Color(1,1,1,1)  **)** const
 
 ###  Numeric Constants  
   * **FLAG_MIPMAPS** = **1** - Generate mipmaps.
@@ -30,32 +30,32 @@ A texture works by registering an image in the video hardware, which then can be
 ###  Member Function Description  
 
 #### <a name="get_width">get_width</a>
-  * [int](class_int)  **get&#95width**  **(** **)** const
+  * [int](class_int)  **get&#95;width**  **(** **)** const
 
 Return the texture width.
 
 #### <a name="get_height">get_height</a>
-  * [int](class_int)  **get&#95height**  **(** **)** const
+  * [int](class_int)  **get&#95;height**  **(** **)** const
 
 Return the texture height.
 
 #### <a name="get_size">get_size</a>
-  * [Vector2](class_vector2)  **get&#95size**  **(** **)** const
+  * [Vector2](class_vector2)  **get&#95;size**  **(** **)** const
 
 Return the texture size.
 
 #### <a name="get_rid">get_rid</a>
-  * [RID](class_rid)  **get&#95rid**  **(** **)** const
+  * [RID](class_rid)  **get&#95;rid**  **(** **)** const
 
 Return the texture RID as used in the [VisualServer](class_visualserver).
 
 #### <a name="set_flags">set_flags</a>
-  * void  **set&#95flags**  **(** [int](class_int) flags  **)**
+  * void  **set&#95;flags**  **(** [int](class_int) flags  **)**
 
 Change the texture flags.
 
 #### <a name="get_flags">get_flags</a>
-  * [int](class_int)  **get&#95flags**  **(** **)** const
+  * [int](class_int)  **get&#95;flags**  **(** **)** const
 
 Return the current texture flags.
 

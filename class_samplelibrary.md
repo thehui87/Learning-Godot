@@ -6,14 +6,14 @@
 Library that contains a collection of Samples.
 
 ###  Member Functions 
-  * void  **[add&#95sample](#add_sample)**  **(** [String](class_string) name, [Sample](class_sample) sample  **)**
-  * [Sample](class_sample)  **[get&#95sample](#get_sample)**  **(** [String](class_string) name  **)** const
-  * [bool](class_bool)  **[has&#95sample](#has_sample)**  **(** [String](class_string) name  **)** const
-  * void  **[remove&#95sample](#remove_sample)**  **(** [String](class_string) name  **)**
-  * void  **[sample&#95set&#95volume&#95db](#sample_set_volume_db)**  **(** [String](class_string) name, [real](class_real) db  **)**
-  * [real](class_real)  **[sample&#95get&#95volume&#95db](#sample_get_volume_db)**  **(** [String](class_string) name  **)** const
-  * void  **[sample&#95set&#95pitch&#95scale](#sample_set_pitch_scale)**  **(** [String](class_string) name, [real](class_real) pitch  **)**
-  * [real](class_real)  **[sample&#95get&#95pitch&#95scale](#sample_get_pitch_scale)**  **(** [String](class_string) name  **)** const
+  * void  **[add&#95;sample](#add_sample)**  **(** [String](class_string) name, [Sample](class_sample) sample  **)**
+  * [Sample](class_sample)  **[get&#95;sample](#get_sample)**  **(** [String](class_string) name  **)** const
+  * [bool](class_bool)  **[has&#95;sample](#has_sample)**  **(** [String](class_string) name  **)** const
+  * void  **[remove&#95;sample](#remove_sample)**  **(** [String](class_string) name  **)**
+  * void  **[sample&#95;set&#95;volume&#95;db](#sample_set_volume_db)**  **(** [String](class_string) name, [real](class_real) db  **)**
+  * [real](class_real)  **[sample&#95;get&#95;volume&#95;db](#sample_get_volume_db)**  **(** [String](class_string) name  **)** const
+  * void  **[sample&#95;set&#95;pitch&#95;scale](#sample_set_pitch_scale)**  **(** [String](class_string) name, [real](class_real) pitch  **)**
+  * [real](class_real)  **[sample&#95;get&#95;pitch&#95;scale](#sample_get_pitch_scale)**  **(** [String](class_string) name  **)** const
 
 ###  Description  
 Library that contains a collection of Samples, each identified by an text id. This is used as a data containeer for the majority of the SamplePlayer classes and derivatives.
@@ -21,21 +21,21 @@ Library that contains a collection of Samples, each identified by an text id. Th
 ###  Member Function Description  
 
 #### <a name="add_sample">add_sample</a>
-  * void  **add&#95sample**  **(** [String](class_string) name, [Sample](class_sample) sample  **)**
+  * void  **add&#95;sample**  **(** [String](class_string) name, [Sample](class_sample) sample  **)**
 
 Add a sample to the library, with a given text id;
 
 #### <a name="get_sample">get_sample</a>
-  * [Sample](class_sample)  **get&#95sample**  **(** [String](class_string) name  **)** const
+  * [Sample](class_sample)  **get&#95;sample**  **(** [String](class_string) name  **)** const
 
 Return a sample from the library, from a given text-id. Return null if the sample is not found.
 
 #### <a name="has_sample">has_sample</a>
-  * [bool](class_bool)  **has&#95sample**  **(** [String](class_string) name  **)** const
+  * [bool](class_bool)  **has&#95;sample**  **(** [String](class_string) name  **)** const
 
 Return true if the sample text id exists in the library.
 
 #### <a name="remove_sample">remove_sample</a>
-  * void  **remove&#95sample**  **(** [String](class_string) name  **)**
+  * void  **remove&#95;sample**  **(** [String](class_string) name  **)**
 
 Remove a sample given a specific text id.

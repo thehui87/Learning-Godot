@@ -5,15 +5,15 @@
 3D Transformation.
 
 ###  Member Functions 
-  * [Transform](class_transform)  **[affine&#95inverse](#affine_inverse)**  **(** **)**
+  * [Transform](class_transform)  **[affine&#95;inverse](#affine_inverse)**  **(** **)**
   * [Transform](class_transform)  **[inverse](#inverse)**  **(** **)**
-  * [Transform](class_transform)  **[looking&#95at](#looking_at)**  **(** [Vector3](class_vector3) target, [Vector3](class_vector3) up  **)**
+  * [Transform](class_transform)  **[looking&#95;at](#looking_at)**  **(** [Vector3](class_vector3) target, [Vector3](class_vector3) up  **)**
   * [Transform](class_transform)  **[orthonormalized](#orthonormalized)**  **(** **)**
   * [Transform](class_transform)  **[rotated](#rotated)**  **(** [Vector3](class_vector3) axis, [real](class_real) phi  **)**
   * [Transform](class_transform)  **[scaled](#scaled)**  **(** [Vector3](class_vector3) scale  **)**
   * [Transform](class_transform)  **[translated](#translated)**  **(** [Vector3](class_vector3) ofs  **)**
   * var  **[xform](#xform)**  **(** var v  **)**
-  * var  **[xform&#95inv](#xform_inv)**  **(** var v  **)**
+  * var  **[xform&#95;inv](#xform_inv)**  **(** var v  **)**
   * void  **[Transform](#Transform)**  **(** [Vector3](class_vector3) x_axis, [Vector3](class_vector3) y_axis, [Vector3](class_vector3) z_axis, [Vector3](class_vector3) origin  **)**
   * void  **[Transform](#Transform)**  **(** [Matrix3](class_matrix3) basis, [Vector3](class_vector3) origin  **)**
   * void  **[Transform](#Transform)**  **(** [Matrix32](class_matrix32) from  **)**
@@ -40,6 +40,6 @@ Returns the inverse of the transform.
 Transforms vector "v" by this transform.
 
 #### <a name="xform_inv">xform_inv</a>
-  * var  **xform&#95inv**  **(** var v  **)**
+  * var  **xform&#95;inv**  **(** var v  **)**
 
 Inverse-transforms vector "v" by this transform.

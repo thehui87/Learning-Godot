@@ -6,7 +6,7 @@ String Array .
 
 ###  Member Functions 
   * [String](class_string)  **[get](#get)**  **(** [int](class_int) idx  **)**
-  * void  **[push&#95back](#push_back)**  **(** [String](class_string) string  **)**
+  * void  **[push&#95;back](#push_back)**  **(** [String](class_string) string  **)**
   * void  **[resize](#resize)**  **(** [int](class_int) idx  **)**
   * void  **[set](#set)**  **(** [int](class_int) idx, [String](class_string) string  **)**
   * [int](class_int)  **[size](#size)**  **(** **)**

@@ -6,7 +6,7 @@ Array of Colors
 
 ###  Member Functions 
   * [Color](class_color)  **[get](#get)**  **(** [int](class_int) idx  **)**
-  * void  **[push&#95back](#push_back)**  **(** [Color](class_color) color  **)**
+  * void  **[push&#95;back](#push_back)**  **(** [Color](class_color) color  **)**
   * void  **[resize](#resize)**  **(** [int](class_int) idx  **)**
   * void  **[set](#set)**  **(** [int](class_int) idx, [Color](class_color) color  **)**
   * [int](class_int)  **[size](#size)**  **(** **)**
@@ -23,7 +23,7 @@ Array of Color, can only contains colors. Optimized for memory usage, cant fragm
 Get an index in the array.
 
 #### <a name="push_back">push_back</a>
-  * void  **push&#95back**  **(** [Color](class_color) color  **)**
+  * void  **push&#95;back**  **(** [Color](class_color) color  **)**
 
 Append a value to the array.
 

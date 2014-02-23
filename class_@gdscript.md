@@ -36,8 +36,8 @@ Built-in GDScript functions.
   * [Nil](class_nil)  **[randomize](#randomize)**  **(** **)**
   * [int](class_int)  **[rand](#rand)**  **(** **)**
   * [real](class_real)  **[randf](#randf)**  **(** **)**
-  * [real](class_real)  **[rand&#95range](#rand_range)**  **(** [real](class_real) from, [real](class_real) to  **)**
-  * [Array](class_array)  **[rand&#95seed](#rand_seed)**  **(** [real](class_real) seed  **)**
+  * [real](class_real)  **[rand&#95;range](#rand_range)**  **(** [real](class_real) from, [real](class_real) to  **)**
+  * [Array](class_array)  **[rand&#95;seed](#rand_seed)**  **(** [real](class_real) seed  **)**
   * [real](class_real)  **[deg2rad](#deg2rad)**  **(** [real](class_real) deg  **)**
   * [real](class_real)  **[rad2deg](#rad2deg)**  **(** [real](class_real) rad  **)**
   * [real](class_real)  **[linear2db](#linear2db)**  **(** [real](class_real) nrg  **)**
@@ -45,7 +45,7 @@ Built-in GDScript functions.
   * [real](class_real)  **[max](#max)**  **(** [real](class_real) a, [real](class_real) b  **)**
   * [real](class_real)  **[min](#min)**  **(** [real](class_real) a, [real](class_real) b  **)**
   * [real](class_real)  **[clamp](#clamp)**  **(** [real](class_real) val, [real](class_real) min, [real](class_real) max  **)**
-  * [int](class_int)  **[nearest&#95po2](#nearest_po2)**  **(** [int](class_int) val  **)**
+  * [int](class_int)  **[nearest&#95;po2](#nearest_po2)**  **(** [int](class_int) val  **)**
   * [Object](class_object)  **[weakref](#weakref)**  **(** [Object](class_object) obj  **)**
   * [Object](class_object)  **[convert](#convert)**  **(** var what, [int](class_int) type  **)**
   * [String](class_string)  **[str](#str)**  **(** var what, var ...  **)**
@@ -57,7 +57,7 @@ Built-in GDScript functions.
   * [Array](class_array)  **[range](#range)**  **(** var ...  **)**
   * [Dictionary](class_dictionary)  **[inst2dict](#inst2dict)**  **(** [Object](class_object) inst  **)**
   * [Object](class_object)  **[dict2inst](#dict2inst)**  **(** [Dictionary](class_dictionary) dict  **)**
-  * [Nil](class_nil)  **[print&#95stack](#print_stack)**  **(** **)**
+  * [Nil](class_nil)  **[print&#95;stack](#print_stack)**  **(** **)**
 
 ###  Description  
 This contains the list of built-in gdscript functions. Mostly math functions and other utilities. Everything else is expanded by objects.
@@ -200,12 +200,12 @@ Random value (integer).
 Random value (0 to 1 float).
 
 #### <a name="rand_range">rand_range</a>
-  * [real](class_real)  **rand&#95range**  **(** [real](class_real) from, [real](class_real) to  **)**
+  * [real](class_real)  **rand&#95;range**  **(** [real](class_real) from, [real](class_real) to  **)**
 
 Random range.
 
 #### <a name="rand_seed">rand_seed</a>
-  * [Array](class_array)  **rand&#95seed**  **(** [real](class_real) seed  **)**
+  * [Array](class_array)  **rand&#95;seed**  **(** [real](class_real) seed  **)**
 
 random from seed, pass a seed and an array with both number and new seed is returned.
 
@@ -245,7 +245,7 @@ Return the minimum of two values.
 Clamp both values to a range.
 
 #### <a name="nearest_po2">nearest_po2</a>
-  * [int](class_int)  **nearest&#95po2**  **(** [int](class_int) val  **)**
+  * [int](class_int)  **nearest&#95;po2**  **(** [int](class_int) val  **)**
 
 Return the nearest larger power of 2 for an integer.
 

@@ -6,7 +6,7 @@
 Base class for anything refcounted.
 
 ###  Member Functions 
-  * [bool](class_bool)  **[init&#95ref](#init_ref)**  **(** **)**
+  * [bool](class_bool)  **[init&#95;ref](#init_ref)**  **(** **)**
   * void  **[reference](#reference)**  **(** **)**
   * [bool](class_bool)  **[unreference](#unreference)**  **(** **)**
 

@@ -6,8 +6,8 @@
 
 ###  Member Functions 
   * [real](class_real)  **[determinant](#determinant)**  **(** **)**
-  * [Vector3](class_vector3)  **[get&#95euler](#get_euler)**  **(** **)**
-  * [int](class_int)  **[get&#95orthogonal&#95index](#get_orthogonal_index)**  **(** **)**
+  * [Vector3](class_vector3)  **[get&#95;euler](#get_euler)**  **(** **)**
+  * [int](class_int)  **[get&#95;orthogonal&#95;index](#get_orthogonal_index)**  **(** **)**
   * [Matrix3](class_matrix3)  **[inverse](#inverse)**  **(** **)**
   * [Matrix3](class_matrix3)  **[orthonormalized](#orthonormalized)**  **(** **)**
   * [Matrix3](class_matrix3)  **[rotated](#rotated)**  **(** [Vector3](class_vector3) axis, [real](class_real) phi  **)**
@@ -17,7 +17,7 @@
   * [real](class_real)  **[tdotz](#tdotz)**  **(** [Vector3](class_vector3) with  **)**
   * [Matrix3](class_matrix3)  **[transposed](#transposed)**  **(** **)**
   * [Vector3](class_vector3)  **[xform](#xform)**  **(** [Vector3](class_vector3) v  **)**
-  * [Vector3](class_vector3)  **[xform&#95inv](#xform_inv)**  **(** [Vector3](class_vector3) v  **)**
+  * [Vector3](class_vector3)  **[xform&#95;inv](#xform_inv)**  **(** [Vector3](class_vector3) v  **)**
   * void  **[Matrix3](#Matrix3)**  **(** [Vector3](class_vector3) x_axis, [Vector3](class_vector3) y_axis, [Vector3](class_vector3) z_axis  **)**
   * void  **[Matrix3](#Matrix3)**  **(** [Vector3](class_vector3) axis, [real](class_real) phi  **)**
   * void  **[Matrix3](#Matrix3)**  **(** [Quat](class_quat) from  **)**
@@ -38,7 +38,7 @@
 Return the determinant of the matrix.
 
 #### <a name="get_euler">get_euler</a>
-  * [Vector3](class_vector3)  **get&#95euler**  **(** **)**
+  * [Vector3](class_vector3)  **get&#95;euler**  **(** **)**
 
 Return euler angles from the matrix.
 
@@ -88,7 +88,7 @@ Return the transposed version of the matrix.
 Return a vector transformed by the matrix and return it.
 
 #### <a name="xform_inv">xform_inv</a>
-  * [Vector3](class_vector3)  **xform&#95inv**  **(** [Vector3](class_vector3) v  **)**
+  * [Vector3](class_vector3)  **xform&#95;inv**  **(** [Vector3](class_vector3) v  **)**
 
 Return a vector transformed by the transposed matrix and return it.
 

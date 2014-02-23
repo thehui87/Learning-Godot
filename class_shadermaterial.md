@@ -6,7 +6,7 @@
 
 
 ###  Member Functions 
-  * void  **[set&#95shader](#set_shader)**  **(** [Shader](class_shader) shader  **)**
-  * [Shader](class_shader)  **[get&#95shader](#get_shader)**  **(** **)** const
+  * void  **[set&#95;shader](#set_shader)**  **(** [Shader](class_shader) shader  **)**
+  * [Shader](class_shader)  **[get&#95;shader](#get_shader)**  **(** **)** const
 
 ###  Member Function Description  

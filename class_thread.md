@@ -7,9 +7,9 @@
 
 ###  Member Functions 
   * [int](class_int)  **[start](#start)**  **(** [Object](class_object) instance, [String](class_string) method, var userdata=NULL, [int](class_int) priority=1  **)**
-  * [String](class_string)  **[get&#95id](#get_id)**  **(** **)** const
-  * [bool](class_bool)  **[is&#95active](#is_active)**  **(** **)** const
-  * void  **[wait&#95to&#95finish](#wait_to_finish)**  **(** **)**
+  * [String](class_string)  **[get&#95;id](#get_id)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95;active](#is_active)**  **(** **)** const
+  * void  **[wait&#95;to&#95;finish](#wait_to_finish)**  **(** **)**
 
 ###  Numeric Constants  
   * **PRIORITY_LOW** = **0**

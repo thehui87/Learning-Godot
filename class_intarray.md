@@ -6,7 +6,7 @@ Integer Array .
 
 ###  Member Functions 
   * [int](class_int)  **[get](#get)**  **(** [int](class_int) idx  **)**
-  * void  **[push&#95back](#push_back)**  **(** [int](class_int) integer  **)**
+  * void  **[push&#95;back](#push_back)**  **(** [int](class_int) integer  **)**
   * void  **[resize](#resize)**  **(** [int](class_int) idx  **)**
   * void  **[set](#set)**  **(** [int](class_int) idx, [int](class_int) integer  **)**
   * [int](class_int)  **[size](#size)**  **(** **)**
@@ -23,7 +23,7 @@ Integer Array. Array of integers. Can only contain integers. Optimized for memor
 Get an index in the array.
 
 #### <a name="push_back">push_back</a>
-  * void  **push&#95back**  **(** [int](class_int) integer  **)**
+  * void  **push&#95;back**  **(** [int](class_int) integer  **)**
 
 Append a value to the array.
 

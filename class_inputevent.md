@@ -5,9 +5,9 @@
 Built-in input event data.
 
 ###  Member Functions 
-  * [bool](class_bool)  **[is&#95action](#is_action)**  **(** [String](class_string) action  **)**
-  * [bool](class_bool)  **[is&#95echo](#is_echo)**  **(** **)**
-  * [bool](class_bool)  **[is&#95pressed](#is_pressed)**  **(** **)**
+  * [bool](class_bool)  **[is&#95;action](#is_action)**  **(** [String](class_string) action  **)**
+  * [bool](class_bool)  **[is&#95;echo](#is_echo)**  **(** **)**
+  * [bool](class_bool)  **[is&#95;pressed](#is_pressed)**  **(** **)**
 
 ###  Member Variables  
   * [int](class_int) **type**
@@ -31,16 +31,16 @@ Built-in input event data. InputEvent is a built-in engine datatype, given that 
 ###  Member Function Description  
 
 #### <a name="is_action">is_action</a>
-  * [bool](class_bool)  **is&#95action**  **(** [String](class_string) action  **)**
+  * [bool](class_bool)  **is&#95;action**  **(** [String](class_string) action  **)**
 
 Return if this input event matches a pre-defined action, no matter the type.
 
 #### <a name="is_echo">is_echo</a>
-  * [bool](class_bool)  **is&#95echo**  **(** **)**
+  * [bool](class_bool)  **is&#95;echo**  **(** **)**
 
 Return if this input event is an echo event (usually for key events).
 
 #### <a name="is_pressed">is_pressed</a>
-  * [bool](class_bool)  **is&#95pressed**  **(** **)**
+  * [bool](class_bool)  **is&#95;pressed**  **(** **)**
 
 Return if this input event is pressed (for key, mouse, joy button or screen press events).

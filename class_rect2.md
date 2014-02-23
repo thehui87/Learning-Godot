@@ -8,10 +8,10 @@
   * [Rect2](class_rect2)  **[clip](#clip)**  **(** [Rect2](class_rect2) b  **)**
   * [bool](class_bool)  **[encloses](#encloses)**  **(** [Rect2](class_rect2) b  **)**
   * [Rect2](class_rect2)  **[expand](#expand)**  **(** [Vector2](class_vector2) to  **)**
-  * [real](class_real)  **[get&#95area](#get_area)**  **(** **)**
+  * [real](class_real)  **[get&#95;area](#get_area)**  **(** **)**
   * [Rect2](class_rect2)  **[grow](#grow)**  **(** [real](class_real) by  **)**
-  * [bool](class_bool)  **[has&#95no&#95area](#has_no_area)**  **(** **)**
-  * [bool](class_bool)  **[has&#95point](#has_point)**  **(** [Vector2](class_vector2) point  **)**
+  * [bool](class_bool)  **[has&#95;no&#95;area](#has_no_area)**  **(** **)**
+  * [bool](class_bool)  **[has&#95;point](#has_point)**  **(** [Vector2](class_vector2) point  **)**
   * [bool](class_bool)  **[intersects](#intersects)**  **(** [Rect2](class_rect2) b  **)**
   * [Rect2](class_rect2)  **[merge](#merge)**  **(** [Rect2](class_rect2) b  **)**
   * void  **[Rect2](#Rect2)**  **(** [Vector2](class_vector2) pos, [Vector2](class_vector2) size  **)**

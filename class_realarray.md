@@ -6,7 +6,7 @@ Real Array .
 
 ###  Member Functions 
   * [real](class_real)  **[get](#get)**  **(** [int](class_int) idx  **)**
-  * void  **[push&#95back](#push_back)**  **(** [real](class_real) value  **)**
+  * void  **[push&#95;back](#push_back)**  **(** [real](class_real) value  **)**
   * void  **[resize](#resize)**  **(** [int](class_int) idx  **)**
   * void  **[set](#set)**  **(** [int](class_int) idx, [real](class_real) value  **)**
   * [int](class_int)  **[size](#size)**  **(** **)**

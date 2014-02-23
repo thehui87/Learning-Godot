@@ -7,7 +7,7 @@
 
 ###  Member Functions 
   * void  **[lock](#lock)**  **(** **)**
-  * [int](class_int)  **[try&#95lock](#try_lock)**  **(** **)**
+  * [int](class_int)  **[try&#95;lock](#try_lock)**  **(** **)**
   * void  **[unlock](#unlock)**  **(** **)**
 
 ###  Member Function Description  

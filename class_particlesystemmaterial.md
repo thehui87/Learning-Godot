@@ -6,7 +6,7 @@
 
 
 ###  Member Functions 
-  * void  **[set&#95texture](#set_texture)**  **(** [Object](class_object) texture  **)**
-  * [Texture](class_texture)  **[get&#95texture](#get_texture)**  **(** **)** const
+  * void  **[set&#95;texture](#set_texture)**  **(** [Object](class_object) texture  **)**
+  * [Texture](class_texture)  **[get&#95;texture](#get_texture)**  **(** **)** const
 
 ###  Member Function Description  

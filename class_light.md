@@ -6,16 +6,16 @@
 Provides a base class for different kinds of light nodes.
 
 ###  Member Functions 
-  * void  **[set&#95parameter](#set_parameter)**  **(** [int](class_int) variable, [real](class_real) value  **)**
-  * [real](class_real)  **[get&#95parameter](#get_parameter)**  **(** [int](class_int) arg0  **)** const
-  * void  **[set&#95color](#set_color)**  **(** [int](class_int) color, [Color](class_color) value  **)**
-  * [Color](class_color)  **[get&#95color](#get_color)**  **(** [int](class_int) arg0  **)** const
-  * void  **[set&#95project&#95shadows](#set_project_shadows)**  **(** [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[has&#95project&#95shadows](#has_project_shadows)**  **(** **)** const
-  * void  **[set&#95projector](#set_projector)**  **(** [Texture](class_texture) projector  **)**
-  * [Texture](class_texture)  **[get&#95projector](#get_projector)**  **(** **)** const
-  * void  **[set&#95operator](#set_operator)**  **(** [int](class_int) operator  **)**
-  * [int](class_int)  **[get&#95operator](#get_operator)**  **(** **)** const
+  * void  **[set&#95;parameter](#set_parameter)**  **(** [int](class_int) variable, [real](class_real) value  **)**
+  * [real](class_real)  **[get&#95;parameter](#get_parameter)**  **(** [int](class_int) arg0  **)** const
+  * void  **[set&#95;color](#set_color)**  **(** [int](class_int) color, [Color](class_color) value  **)**
+  * [Color](class_color)  **[get&#95;color](#get_color)**  **(** [int](class_int) arg0  **)** const
+  * void  **[set&#95;project&#95;shadows](#set_project_shadows)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[has&#95;project&#95;shadows](#has_project_shadows)**  **(** **)** const
+  * void  **[set&#95;projector](#set_projector)**  **(** [Texture](class_texture) projector  **)**
+  * [Texture](class_texture)  **[get&#95;projector](#get_projector)**  **(** **)** const
+  * void  **[set&#95;operator](#set_operator)**  **(** [int](class_int) operator  **)**
+  * [int](class_int)  **[get&#95;operator](#get_operator)**  **(** **)** const
 
 ###  Numeric Constants  
   * **PARAM_RADIUS** = **2**

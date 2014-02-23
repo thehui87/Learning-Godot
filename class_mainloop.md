@@ -6,7 +6,7 @@
 Main loop is the abstract main loop base class.
 
 ###  Member Functions 
-  * void  **[input&#95event](#input_event)**  **(** [InputEvent](class_inputevent) arg0  **)**
+  * void  **[input&#95;event](#input_event)**  **(** [InputEvent](class_inputevent) arg0  **)**
 
 ###  Numeric Constants  
   * **NOTIFICATION_WM_FOCUS_IN** = **5**

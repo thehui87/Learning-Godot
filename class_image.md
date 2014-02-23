@@ -5,18 +5,18 @@
 Image datatype.
 
 ###  Member Functions 
-  * void  **[blit&#95rect](#blit_rect)**  **(** [Image](class_image) src, [Rect2](class_rect2) src_rect, [Vector2](class_vector2) dest=0  **)**
-  * void  **[brush&#95transfer](#brush_transfer)**  **(** [Image](class_image) src, [Image](class_image) brush, [Vector2](class_vector2) pos=0  **)**
+  * void  **[blit&#95;rect](#blit_rect)**  **(** [Image](class_image) src, [Rect2](class_rect2) src_rect, [Vector2](class_vector2) dest=0  **)**
+  * void  **[brush&#95;transfer](#brush_transfer)**  **(** [Image](class_image) src, [Image](class_image) brush, [Vector2](class_vector2) pos=0  **)**
   * [Image](class_image)  **[brushed](#brushed)**  **(** [Image](class_image) src, [Image](class_image) brush, [Vector2](class_vector2) pos=0  **)**
   * [Image](class_image)  **[compressed](#compressed)**  **(** [int](class_int) format=0  **)**
   * [bool](class_bool)  **[empty](#empty)**  **(** **)**
-  * [RawArray](class_rawarray)  **[get&#95data](#get_data)**  **(** **)**
-  * [int](class_int)  **[get&#95format](#get_format)**  **(** **)**
-  * [int](class_int)  **[get&#95height](#get_height)**  **(** **)**
-  * [Color](class_color)  **[get&#95pixel](#get_pixel)**  **(** [int](class_int) x, [int](class_int) y, [int](class_int) mipmap_level=0  **)**
-  * [Image](class_image)  **[get&#95rect](#get_rect)**  **(** [Rect2](class_rect2) area=0  **)**
-  * [Rect2](class_rect2)  **[get&#95used&#95rect](#get_used_rect)**  **(** **)**
-  * [int](class_int)  **[get&#95width](#get_width)**  **(** **)**
+  * [RawArray](class_rawarray)  **[get&#95;data](#get_data)**  **(** **)**
+  * [int](class_int)  **[get&#95;format](#get_format)**  **(** **)**
+  * [int](class_int)  **[get&#95;height](#get_height)**  **(** **)**
+  * [Color](class_color)  **[get&#95;pixel](#get_pixel)**  **(** [int](class_int) x, [int](class_int) y, [int](class_int) mipmap_level=0  **)**
+  * [Image](class_image)  **[get&#95;rect](#get_rect)**  **(** [Rect2](class_rect2) area=0  **)**
+  * [Rect2](class_rect2)  **[get&#95;used&#95;rect](#get_used_rect)**  **(** **)**
+  * [int](class_int)  **[get&#95;width](#get_width)**  **(** **)**
   * [int](class_int)  **[load](#load)**  **(** [String](class_string) path=0  **)**
   * [Image](class_image)  **[resized](#resized)**  **(** [int](class_int) x, [int](class_int) y, [int](class_int) interpolation=1  **)**
 

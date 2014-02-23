@@ -6,53 +6,53 @@
 Base class of anything 2D.
 
 ###  Member Functions 
-  * void  **[&#95draw](#_draw)**  **(** **)** virtual
-  * void  **[edit&#95set&#95state](#edit_set_state)**  **(** var state  **)**
-  * void  **[edit&#95get](#edit_get)**  **(** **)** const
-  * void  **[edit&#95set&#95rect](#edit_set_rect)**  **(** [Rect2](class_rect2) rect  **)**
-  * void  **[edit&#95rotate](#edit_rotate)**  **(** [real](class_real) degrees  **)**
-  * [Rect2](class_rect2)  **[get&#95item&#95rect](#get_item_rect)**  **(** **)** const
-  * [RID](class_rid)  **[get&#95canvas&#95item](#get_canvas_item)**  **(** **)** const
-  * [bool](class_bool)  **[is&#95visible](#is_visible)**  **(** **)** const
-  * [bool](class_bool)  **[is&#95hidden](#is_hidden)**  **(** **)** const
+  * void  **[&#95;draw](#_draw)**  **(** **)** virtual
+  * void  **[edit&#95;set&#95;state](#edit_set_state)**  **(** var state  **)**
+  * void  **[edit&#95;get](#edit_get)**  **(** **)** const
+  * void  **[edit&#95;set&#95;rect](#edit_set_rect)**  **(** [Rect2](class_rect2) rect  **)**
+  * void  **[edit&#95;rotate](#edit_rotate)**  **(** [real](class_real) degrees  **)**
+  * [Rect2](class_rect2)  **[get&#95;item&#95;rect](#get_item_rect)**  **(** **)** const
+  * [RID](class_rid)  **[get&#95;canvas&#95;item](#get_canvas_item)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95;visible](#is_visible)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95;hidden](#is_hidden)**  **(** **)** const
   * void  **[show](#show)**  **(** **)**
   * void  **[hide](#hide)**  **(** **)**
   * void  **[update](#update)**  **(** **)**
-  * void  **[set&#95as&#95toplevel](#set_as_toplevel)**  **(** [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[is&#95set&#95as&#95toplevel](#is_set_as_toplevel)**  **(** **)** const
-  * void  **[set&#95blend&#95mode](#set_blend_mode)**  **(** [int](class_int) blend_mode  **)**
-  * [int](class_int)  **[get&#95blend&#95mode](#get_blend_mode)**  **(** **)** const
-  * void  **[set&#95opacity](#set_opacity)**  **(** [real](class_real) opacity  **)**
-  * [real](class_real)  **[get&#95opacity](#get_opacity)**  **(** **)** const
-  * void  **[set&#95self&#95opacity](#set_self_opacity)**  **(** [real](class_real) self_opacity  **)**
-  * [real](class_real)  **[get&#95self&#95opacity](#get_self_opacity)**  **(** **)** const
-  * void  **[set&#95on&#95top](#set_on_top)**  **(** [bool](class_bool) on_top  **)**
-  * [bool](class_bool)  **[is&#95on&#95top](#is_on_top)**  **(** **)** const
-  * void  **[draw&#95line](#draw_line)**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to, [Color](class_color) color, [real](class_real) width=1  **)**
-  * void  **[draw&#95rect](#draw_rect)**  **(** [Rect2](class_rect2) rect, [Color](class_color) color  **)**
-  * void  **[draw&#95circle](#draw_circle)**  **(** [Vector2](class_vector2) pos, [real](class_real) radius, [Color](class_color) color  **)**
-  * void  **[draw&#95texture](#draw_texture)**  **(** [Texture](class_texture) texture, [Vector2](class_vector2) pos  **)**
-  * void  **[draw&#95texture&#95rect](#draw_texture_rect)**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [bool](class_bool) tile=false, [Color](class_color) modulate=Color(1,1,1,1)  **)**
-  * void  **[draw&#95texture&#95rect&#95region](#draw_texture_rect_region)**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [Rect2](class_rect2) src_rect, [Color](class_color) modulate=Color(1,1,1,1)  **)**
-  * void  **[draw&#95style&#95box](#draw_style_box)**  **(** [StyleBox](class_stylebox) style_box, [Rect2](class_rect2) rect  **)**
-  * void  **[draw&#95primitive](#draw_primitive)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object(), [real](class_real) width=1  **)**
-  * void  **[draw&#95polygon](#draw_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
-  * void  **[draw&#95colored&#95polygon](#draw_colored_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
-  * void  **[draw&#95string](#draw_string)**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) text, [Color](class_color) modulate=Color(1,1,1,1), [int](class_int) clip_w=-1  **)**
-  * [real](class_real)  **[draw&#95char](#draw_char)**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) char, [String](class_string) next, [Color](class_color) modulate=Color(1,1,1,1)  **)**
-  * void  **[draw&#95set&#95transform](#draw_set_transform)**  **(** [Vector2](class_vector2) pos, [real](class_real) rot, [Vector2](class_vector2) scale  **)**
-  * [Matrix32](class_matrix32)  **[get&#95transform](#get_transform)**  **(** **)** const
-  * [Matrix32](class_matrix32)  **[get&#95global&#95transform](#get_global_transform)**  **(** **)** const
-  * [Matrix32](class_matrix32)  **[get&#95viewport&#95transform](#get_viewport_transform)**  **(** **)** const
-  * [Rect2](class_rect2)  **[get&#95viewport&#95rect](#get_viewport_rect)**  **(** **)** const
-  * [RID](class_rid)  **[get&#95canvas](#get_canvas)**  **(** **)** const
-  * [Object](class_object)  **[get&#95world&#952d](#get_world_2d)**  **(** **)** const
-  * [Object](class_object)  **[get&#95viewport](#get_viewport)**  **(** **)** const
+  * void  **[set&#95;as&#95;toplevel](#set_as_toplevel)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[is&#95;set&#95;as&#95;toplevel](#is_set_as_toplevel)**  **(** **)** const
+  * void  **[set&#95;blend&#95;mode](#set_blend_mode)**  **(** [int](class_int) blend_mode  **)**
+  * [int](class_int)  **[get&#95;blend&#95;mode](#get_blend_mode)**  **(** **)** const
+  * void  **[set&#95;opacity](#set_opacity)**  **(** [real](class_real) opacity  **)**
+  * [real](class_real)  **[get&#95;opacity](#get_opacity)**  **(** **)** const
+  * void  **[set&#95;self&#95;opacity](#set_self_opacity)**  **(** [real](class_real) self_opacity  **)**
+  * [real](class_real)  **[get&#95;self&#95;opacity](#get_self_opacity)**  **(** **)** const
+  * void  **[set&#95;on&#95;top](#set_on_top)**  **(** [bool](class_bool) on_top  **)**
+  * [bool](class_bool)  **[is&#95;on&#95;top](#is_on_top)**  **(** **)** const
+  * void  **[draw&#95;line](#draw_line)**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to, [Color](class_color) color, [real](class_real) width=1  **)**
+  * void  **[draw&#95;rect](#draw_rect)**  **(** [Rect2](class_rect2) rect, [Color](class_color) color  **)**
+  * void  **[draw&#95;circle](#draw_circle)**  **(** [Vector2](class_vector2) pos, [real](class_real) radius, [Color](class_color) color  **)**
+  * void  **[draw&#95;texture](#draw_texture)**  **(** [Texture](class_texture) texture, [Vector2](class_vector2) pos  **)**
+  * void  **[draw&#95;texture&#95;rect](#draw_texture_rect)**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [bool](class_bool) tile=false, [Color](class_color) modulate=Color(1,1,1,1)  **)**
+  * void  **[draw&#95;texture&#95;rect&#95;region](#draw_texture_rect_region)**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [Rect2](class_rect2) src_rect, [Color](class_color) modulate=Color(1,1,1,1)  **)**
+  * void  **[draw&#95;style&#95;box](#draw_style_box)**  **(** [StyleBox](class_stylebox) style_box, [Rect2](class_rect2) rect  **)**
+  * void  **[draw&#95;primitive](#draw_primitive)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object(), [real](class_real) width=1  **)**
+  * void  **[draw&#95;polygon](#draw_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
+  * void  **[draw&#95;colored&#95;polygon](#draw_colored_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
+  * void  **[draw&#95;string](#draw_string)**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) text, [Color](class_color) modulate=Color(1,1,1,1), [int](class_int) clip_w=-1  **)**
+  * [real](class_real)  **[draw&#95;char](#draw_char)**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) char, [String](class_string) next, [Color](class_color) modulate=Color(1,1,1,1)  **)**
+  * void  **[draw&#95;set&#95;transform](#draw_set_transform)**  **(** [Vector2](class_vector2) pos, [real](class_real) rot, [Vector2](class_vector2) scale  **)**
+  * [Matrix32](class_matrix32)  **[get&#95;transform](#get_transform)**  **(** **)** const
+  * [Matrix32](class_matrix32)  **[get&#95;global&#95;transform](#get_global_transform)**  **(** **)** const
+  * [Matrix32](class_matrix32)  **[get&#95;viewport&#95;transform](#get_viewport_transform)**  **(** **)** const
+  * [Rect2](class_rect2)  **[get&#95;viewport&#95;rect](#get_viewport_rect)**  **(** **)** const
+  * [RID](class_rid)  **[get&#95;canvas](#get_canvas)**  **(** **)** const
+  * [Object](class_object)  **[get&#95;world&#95;2d](#get_world_2d)**  **(** **)** const
+  * [Object](class_object)  **[get&#95;viewport](#get_viewport)**  **(** **)** const
 
 ###  Signals  
-  *  **item&#95rect&#95changed**  **(** **)**
+  *  **item&#95;rect&#95;changed**  **(** **)**
   *  **draw**  **(** **)**
-  *  **visibility&#95changed**  **(** **)**
+  *  **visibility&#95;changed**  **(** **)**
   *  **hide**  **(** **)**
 
 ###  Numeric Constants  
@@ -76,37 +76,37 @@ Base class of anything 2D. Canvas items are laid out in a tree and children inhe
 ###  Member Function Description  
 
 #### <a name="_draw">_draw</a>
-  * void  **&#95draw**  **(** **)** virtual
+  * void  **&#95;draw**  **(** **)** virtual
 
 Called (if exists) to draw the canvas item.
 
 #### <a name="edit_set_state">edit_set_state</a>
-  * void  **edit&#95set&#95state**  **(** var state  **)**
+  * void  **edit&#95;set&#95;state**  **(** var state  **)**
 
 Used for editing, returns an opaque value represeting the transform state.
 
 #### <a name="edit_rotate">edit_rotate</a>
-  * void  **edit&#95rotate**  **(** [real](class_real) degrees  **)**
+  * void  **edit&#95;rotate**  **(** [real](class_real) degrees  **)**
 
 Used for editing, handle rotation.
 
 #### <a name="get_item_rect">get_item_rect</a>
-  * [Rect2](class_rect2)  **get&#95item&#95rect**  **(** **)** const
+  * [Rect2](class_rect2)  **get&#95;item&#95;rect**  **(** **)** const
 
 Return a rect containing the editable contents of the item.
 
 #### <a name="get_canvas_item">get_canvas_item</a>
-  * [RID](class_rid)  **get&#95canvas&#95item**  **(** **)** const
+  * [RID](class_rid)  **get&#95;canvas&#95;item**  **(** **)** const
 
 Return the canvas item RID used by [VisualServer](class_visualserver) for this item.
 
 #### <a name="is_visible">is_visible</a>
-  * [bool](class_bool)  **is&#95visible**  **(** **)** const
+  * [bool](class_bool)  **is&#95;visible**  **(** **)** const
 
 Return true if this CanvasItem is visible. It may be invisible because itself or a parent canvas item is hidden.
 
 #### <a name="is_hidden">is_hidden</a>
-  * [bool](class_bool)  **is&#95hidden**  **(** **)** const
+  * [bool](class_bool)  **is&#95;hidden**  **(** **)** const
 
 Return true if this CanvasItem is hidden. Note that the CanvasItem may not be visible, but as long as it's not hidden ([hide](#hide) called) the function will return false.
 
@@ -126,111 +126,111 @@ Hide the CanvasItem currently visible.
 Queue the CanvasItem for update. NOTIFICATION_DRAW will be called on idle time to request redraw.
 
 #### <a name="set_as_toplevel">set_as_toplevel</a>
-  * void  **set&#95as&#95toplevel**  **(** [bool](class_bool) enable  **)**
+  * void  **set&#95;as&#95;toplevel**  **(** [bool](class_bool) enable  **)**
 
 Set as toplevel. This means that it will not inherit transform from parent canvas items.
 
 #### <a name="is_set_as_toplevel">is_set_as_toplevel</a>
-  * [bool](class_bool)  **is&#95set&#95as&#95toplevel**  **(** **)** const
+  * [bool](class_bool)  **is&#95;set&#95;as&#95;toplevel**  **(** **)** const
 
-Return if set as toplevel. See [set&#95as&#95toplevel](#set_as_toplevel)/
+Return if set as toplevel. See [set&#95;as&#95;toplevel](#set_as_toplevel)/
 
 #### <a name="set_blend_mode">set_blend_mode</a>
-  * void  **set&#95blend&#95mode**  **(** [int](class_int) blend_mode  **)**
+  * void  **set&#95;blend&#95;mode**  **(** [int](class_int) blend_mode  **)**
 
 Set the blending mode from enum BLEND_MODE_*.
 
 #### <a name="get_blend_mode">get_blend_mode</a>
-  * [int](class_int)  **get&#95blend&#95mode**  **(** **)** const
+  * [int](class_int)  **get&#95;blend&#95;mode**  **(** **)** const
 
 Return the current blending mode from enum BLEND_MODE_*.
 
 #### <a name="set_opacity">set_opacity</a>
-  * void  **set&#95opacity**  **(** [real](class_real) opacity  **)**
+  * void  **set&#95;opacity**  **(** [real](class_real) opacity  **)**
 
 Set canvas item opacity. This will affect the canvas item and all the children.
 
 #### <a name="get_opacity">get_opacity</a>
-  * [real](class_real)  **get&#95opacity**  **(** **)** const
+  * [real](class_real)  **get&#95;opacity**  **(** **)** const
 
 Return the canvas item opacity. This affects the canvas item and all the children.
 
 #### <a name="get_self_opacity">get_self_opacity</a>
-  * [real](class_real)  **get&#95self&#95opacity**  **(** **)** const
+  * [real](class_real)  **get&#95;self&#95;opacity**  **(** **)** const
 
 Set canvas item self-opacity. This does not affect the opacity of children items.
 
 #### <a name="set_on_top">set_on_top</a>
-  * void  **set&#95on&#95top**  **(** [bool](class_bool) on_top  **)**
+  * void  **set&#95;on&#95;top**  **(** [bool](class_bool) on_top  **)**
 
 Set canvas item as drawing over the parent canvas item (default: true).
 
 #### <a name="is_on_top">is_on_top</a>
-  * [bool](class_bool)  **is&#95on&#95top**  **(** **)** const
+  * [bool](class_bool)  **is&#95;on&#95;top**  **(** **)** const
 
 Return if the canvas item is drawing over the parent canvas item (default: true).
 
 #### <a name="draw_line">draw_line</a>
-  * void  **draw&#95line**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to, [Color](class_color) color, [real](class_real) width=1  **)**
+  * void  **draw&#95;line**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to, [Color](class_color) color, [real](class_real) width=1  **)**
 
 Draw a line from a 2D point to another, with a given color and width.
 
 #### <a name="draw_rect">draw_rect</a>
-  * void  **draw&#95rect**  **(** [Rect2](class_rect2) rect, [Color](class_color) color  **)**
+  * void  **draw&#95;rect**  **(** [Rect2](class_rect2) rect, [Color](class_color) color  **)**
 
 Draw a colored rectangle.
 
 #### <a name="draw_circle">draw_circle</a>
-  * void  **draw&#95circle**  **(** [Vector2](class_vector2) pos, [real](class_real) radius, [Color](class_color) color  **)**
+  * void  **draw&#95;circle**  **(** [Vector2](class_vector2) pos, [real](class_real) radius, [Color](class_color) color  **)**
 
 Draw a colored circle.
 
 #### <a name="draw_texture">draw_texture</a>
-  * void  **draw&#95texture**  **(** [Texture](class_texture) texture, [Vector2](class_vector2) pos  **)**
+  * void  **draw&#95;texture**  **(** [Texture](class_texture) texture, [Vector2](class_vector2) pos  **)**
 
 Draw a texture at a given position.
 
 #### <a name="draw_texture_rect">draw_texture_rect</a>
-  * void  **draw&#95texture&#95rect**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [bool](class_bool) tile=false, [Color](class_color) modulate=Color(1,1,1,1)  **)**
+  * void  **draw&#95;texture&#95;rect**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [bool](class_bool) tile=false, [Color](class_color) modulate=Color(1,1,1,1)  **)**
 
 Draw a textured rectangle at a given position, optionally modulated by a color.
 
 #### <a name="draw_texture_rect_region">draw_texture_rect_region</a>
-  * void  **draw&#95texture&#95rect&#95region**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [Rect2](class_rect2) src_rect, [Color](class_color) modulate=Color(1,1,1,1)  **)**
+  * void  **draw&#95;texture&#95;rect&#95;region**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [Rect2](class_rect2) src_rect, [Color](class_color) modulate=Color(1,1,1,1)  **)**
 
 Draw a textured rectangle region at a given position, optionally modulated by a color.
 
 #### <a name="draw_style_box">draw_style_box</a>
-  * void  **draw&#95style&#95box**  **(** [StyleBox](class_stylebox) style_box, [Rect2](class_rect2) rect  **)**
+  * void  **draw&#95;style&#95;box**  **(** [StyleBox](class_stylebox) style_box, [Rect2](class_rect2) rect  **)**
 
 Draw a styled rectangle.
 
 #### <a name="draw_primitive">draw_primitive</a>
-  * void  **draw&#95primitive**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object(), [real](class_real) width=1  **)**
+  * void  **draw&#95;primitive**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object(), [real](class_real) width=1  **)**
 
 Draw a custom primitive, 1 point for a point, 2 points for a line, 3 points for a triangle and 4 points for a quad.
 
 #### <a name="draw_polygon">draw_polygon</a>
-  * void  **draw&#95polygon**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
+  * void  **draw&#95;polygon**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
 
 Draw a polygon of any amount of points, convex or concave.
 
 #### <a name="draw_colored_polygon">draw_colored_polygon</a>
-  * void  **draw&#95colored&#95polygon**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
+  * void  **draw&#95;colored&#95;polygon**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
 
 Draw a colored polygon of any amount of points, convex or concave.
 
 #### <a name="draw_string">draw_string</a>
-  * void  **draw&#95string**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) text, [Color](class_color) modulate=Color(1,1,1,1), [int](class_int) clip_w=-1  **)**
+  * void  **draw&#95;string**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) text, [Color](class_color) modulate=Color(1,1,1,1), [int](class_int) clip_w=-1  **)**
 
 Draw a string using a custom font.
 
 #### <a name="draw_char">draw_char</a>
-  * [real](class_real)  **draw&#95char**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) char, [String](class_string) next, [Color](class_color) modulate=Color(1,1,1,1)  **)**
+  * [real](class_real)  **draw&#95;char**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) char, [String](class_string) next, [Color](class_color) modulate=Color(1,1,1,1)  **)**
 
 Draw a string character using a custom font. Returns the advance, depending on the char width and kerning with an optional next char.
 
 #### <a name="draw_set_transform">draw_set_transform</a>
-  * void  **draw&#95set&#95transform**  **(** [Vector2](class_vector2) pos, [real](class_real) rot, [Vector2](class_vector2) scale  **)**
+  * void  **draw&#95;set&#95;transform**  **(** [Vector2](class_vector2) pos, [real](class_real) rot, [Vector2](class_vector2) scale  **)**
 
 Set a custom transform for drawing. Anything drawn afterwards will be transformed by this.

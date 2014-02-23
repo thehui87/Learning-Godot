@@ -13,12 +13,12 @@ Generic array datatype.
   * [int](class_int)  **[hash](#hash)**  **(** **)**
   * void  **[insert](#insert)**  **(** [int](class_int) pos, var value  **)**
   * void  **[invert](#invert)**  **(** **)**
-  * void  **[push&#95back](#push_back)**  **(** var value  **)**
+  * void  **[push&#95;back](#push_back)**  **(** var value  **)**
   * void  **[remove](#remove)**  **(** [int](class_int) pos  **)**
   * void  **[resize](#resize)**  **(** [int](class_int) pos  **)**
   * [int](class_int)  **[size](#size)**  **(** **)**
   * void  **[sort](#sort)**  **(** **)**
-  * void  **[sort&#95custom](#sort_custom)**  **(** [Object](class_object) obj, [String](class_string) func  **)**
+  * void  **[sort&#95;custom](#sort_custom)**  **(** [Object](class_object) obj, [String](class_string) func  **)**
   * void  **[Array](#Array)**  **(** [RawArray](class_rawarray) from  **)**
   * void  **[Array](#Array)**  **(** [IntArray](class_intarray) from  **)**
   * void  **[Array](#Array)**  **(** [RealArray](class_realarray) from  **)**
@@ -53,7 +53,7 @@ Return a hashed integer value representing the array contents.
 Insert a new element at a given position in the array. The position must be valid, or at the end of the array (pos==size()).
 
 #### <a name="push_back">push_back</a>
-  * void  **push&#95back**  **(** var value  **)**
+  * void  **push&#95;back**  **(** var value  **)**
 
 Append an element at the end of the array.
 

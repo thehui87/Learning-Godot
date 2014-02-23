@@ -9,10 +9,10 @@ Color in RGBA format.
   * [Color](class_color)  **[contrasted](#contrasted)**  **(** **)**
   * [real](class_real)  **[gray](#gray)**  **(** **)**
   * [Color](class_color)  **[inverted](#inverted)**  **(** **)**
-  * [Color](class_color)  **[linear&#95interpolate](#linear_interpolate)**  **(** [Color](class_color) b, [real](class_real) t  **)**
-  * [int](class_int)  **[to&#9532](#to_32)**  **(** **)**
-  * [int](class_int)  **[to&#95ARGB32](#to_ARGB32)**  **(** **)**
-  * [String](class_string)  **[to&#95html](#to_html)**  **(** [bool](class_bool) with_alpha=True  **)**
+  * [Color](class_color)  **[linear&#95;interpolate](#linear_interpolate)**  **(** [Color](class_color) b, [real](class_real) t  **)**
+  * [int](class_int)  **[to&#95;32](#to_32)**  **(** **)**
+  * [int](class_int)  **[to&#95;ARGB32](#to_ARGB32)**  **(** **)**
+  * [String](class_string)  **[to&#95;html](#to_html)**  **(** [bool](class_bool) with_alpha=True  **)**
   * void  **[Color](#Color)**  **(** [real](class_real) r, [real](class_real) g, [real](class_real) b, [real](class_real) a  **)**
   * void  **[Color](#Color)**  **(** [real](class_real) r, [real](class_real) g, [real](class_real) b  **)**
 
@@ -46,22 +46,22 @@ Convert the color to gray.
 Return the inverted color (1-r, 1-g, 1-b, 1-a).
 
 #### <a name="linear_interpolate">linear_interpolate</a>
-  * [Color](class_color)  **linear&#95interpolate**  **(** [Color](class_color) b, [real](class_real) t  **)**
+  * [Color](class_color)  **linear&#95;interpolate**  **(** [Color](class_color) b, [real](class_real) t  **)**
 
 Return the linear interpolation with another color.
 
 #### <a name="to_32">to_32</a>
-  * [int](class_int)  **to&#9532**  **(** **)**
+  * [int](class_int)  **to&#95;32**  **(** **)**
 
 Convert the color to a 32 its integer (each byte represets a RGBA).
 
 #### <a name="to_ARGB32">to_ARGB32</a>
-  * [int](class_int)  **to&#95ARGB32**  **(** **)**
+  * [int](class_int)  **to&#95;ARGB32**  **(** **)**
 
 Convert color to ARGB32, more compatible with DirectX.
 
 #### <a name="to_html">to_html</a>
-  * [String](class_string)  **to&#95html**  **(** [bool](class_bool) with_alpha=True  **)**
+  * [String](class_string)  **to&#95;html**  **(** [bool](class_bool) with_alpha=True  **)**
 
 Return the HTML hexadecimal color string.
 

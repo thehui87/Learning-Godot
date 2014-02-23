@@ -8,7 +8,7 @@
 ###  Member Functions 
   * [int](class_int)  **[pack](#pack)**  **(** [Node](class_node) path  **)**
   * [Node](class_node)  **[instance](#instance)**  **(** [bool](class_bool) arg0=false  **)** const
-  * [bool](class_bool)  **[can&#95instance](#can_instance)**  **(** **)** const
+  * [bool](class_bool)  **[can&#95;instance](#can_instance)**  **(** **)** const
 
 ###  Description  
 explain ownership, and that node does not need to own itself

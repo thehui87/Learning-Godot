@@ -5,17 +5,17 @@
 Vector used for 2D Math.
 
 ###  Member Functions 
-  * [real](class_real)  **[angle&#95to](#angle_to)**  **(** [Vector2](class_vector2) to  **)**
-  * [Vector2](class_vector2)  **[cubic&#95interpolate](#cubic_interpolate)**  **(** [Vector2](class_vector2) b, [Vector2](class_vector2) pre_a, [Vector2](class_vector2) post_b, [real](class_real) t  **)**
-  * [real](class_real)  **[distance&#95squared&#95to](#distance_squared_to)**  **(** [Vector2](class_vector2) to  **)**
-  * [real](class_real)  **[distance&#95to](#distance_to)**  **(** [Vector2](class_vector2) to  **)**
+  * [real](class_real)  **[angle&#95;to](#angle_to)**  **(** [Vector2](class_vector2) to  **)**
+  * [Vector2](class_vector2)  **[cubic&#95;interpolate](#cubic_interpolate)**  **(** [Vector2](class_vector2) b, [Vector2](class_vector2) pre_a, [Vector2](class_vector2) post_b, [real](class_real) t  **)**
+  * [real](class_real)  **[distance&#95;squared&#95;to](#distance_squared_to)**  **(** [Vector2](class_vector2) to  **)**
+  * [real](class_real)  **[distance&#95;to](#distance_to)**  **(** [Vector2](class_vector2) to  **)**
   * [real](class_real)  **[dot](#dot)**  **(** [Vector2](class_vector2) with  **)**
   * [Vector2](class_vector2)  **[floor](#floor)**  **(** **)**
   * [Vector2](class_vector2)  **[floorf](#floorf)**  **(** **)**
-  * [real](class_real)  **[get&#95aspect](#get_aspect)**  **(** **)**
+  * [real](class_real)  **[get&#95;aspect](#get_aspect)**  **(** **)**
   * [real](class_real)  **[length](#length)**  **(** **)**
-  * [real](class_real)  **[length&#95squared](#length_squared)**  **(** **)**
-  * [Vector2](class_vector2)  **[linear&#95interpolate](#linear_interpolate)**  **(** [Vector2](class_vector2) b, [real](class_real) t  **)**
+  * [real](class_real)  **[length&#95;squared](#length_squared)**  **(** **)**
+  * [Vector2](class_vector2)  **[linear&#95;interpolate](#linear_interpolate)**  **(** [Vector2](class_vector2) b, [real](class_real) t  **)**
   * [Vector2](class_vector2)  **[normalized](#normalized)**  **(** **)**
   * [Vector2](class_vector2)  **[rotated](#rotated)**  **(** [real](class_real) phi  **)**
   * [Vector2](class_vector2)  **[snapped](#snapped)**  **(** [Vector2](class_vector2) by  **)**
@@ -31,7 +31,7 @@ Vector used for 2D Math.
 ###  Member Function Description  
 
 #### <a name="distance_to">distance_to</a>
-  * [real](class_real)  **distance&#95to**  **(** [Vector2](class_vector2) to  **)**
+  * [real](class_real)  **distance&#95;to**  **(** [Vector2](class_vector2) to  **)**
 
 Returns the distance to vector "b".
 
@@ -51,7 +51,7 @@ Remove the fractional part of x and y.
 Returns the length of the vector.
 
 #### <a name="linear_interpolate">linear_interpolate</a>
-  * [Vector2](class_vector2)  **linear&#95interpolate**  **(** [Vector2](class_vector2) b, [real](class_real) t  **)**
+  * [Vector2](class_vector2)  **linear&#95;interpolate**  **(** [Vector2](class_vector2) b, [real](class_real) t  **)**
 
 Returns the result of the linear interpolation between this vector and "b", by amount "i".
 

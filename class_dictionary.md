@@ -11,9 +11,9 @@ Dictionary type.
   * [bool](class_bool)  **[has](#has)**  **(** var value  **)**
   * [int](class_int)  **[hash](#hash)**  **(** **)**
   * [Array](class_array)  **[keys](#keys)**  **(** **)**
-  * [int](class_int)  **[parse&#95json](#parse_json)**  **(** [String](class_string) json  **)**
+  * [int](class_int)  **[parse&#95;json](#parse_json)**  **(** [String](class_string) json  **)**
   * [int](class_int)  **[size](#size)**  **(** **)**
-  * [String](class_string)  **[to&#95json](#to_json)**  **(** **)**
+  * [String](class_string)  **[to&#95;json](#to_json)**  **(** **)**
 
 ###  Description  
 Dictionary type. Associative container which contains values referenced by unique keys. Dictionaries are always passed by reference.

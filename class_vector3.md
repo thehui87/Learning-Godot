@@ -7,16 +7,16 @@ Vector class, which performs basic 3D vector math operations.
 ###  Member Functions 
   * [Vector3](class_vector3)  **[abs](#abs)**  **(** **)**
   * [Vector3](class_vector3)  **[cross](#cross)**  **(** [Vector3](class_vector3) b  **)**
-  * [Vector3](class_vector3)  **[cubic&#95interpolate](#cubic_interpolate)**  **(** [Vector3](class_vector3) b, [Vector3](class_vector3) pre_a, [Vector3](class_vector3) post_b, [real](class_real) t  **)**
-  * [real](class_real)  **[distance&#95squared&#95to](#distance_squared_to)**  **(** [Vector3](class_vector3) b  **)**
-  * [real](class_real)  **[distance&#95to](#distance_to)**  **(** [Vector3](class_vector3) b  **)**
+  * [Vector3](class_vector3)  **[cubic&#95;interpolate](#cubic_interpolate)**  **(** [Vector3](class_vector3) b, [Vector3](class_vector3) pre_a, [Vector3](class_vector3) post_b, [real](class_real) t  **)**
+  * [real](class_real)  **[distance&#95;squared&#95;to](#distance_squared_to)**  **(** [Vector3](class_vector3) b  **)**
+  * [real](class_real)  **[distance&#95;to](#distance_to)**  **(** [Vector3](class_vector3) b  **)**
   * [real](class_real)  **[dot](#dot)**  **(** [Vector3](class_vector3) b  **)**
   * [Vector3](class_vector3)  **[inverse](#inverse)**  **(** **)**
   * [real](class_real)  **[length](#length)**  **(** **)**
-  * [real](class_real)  **[length&#95squared](#length_squared)**  **(** **)**
-  * [Vector3](class_vector3)  **[linear&#95interpolate](#linear_interpolate)**  **(** [Vector3](class_vector3) b, [real](class_real) t  **)**
-  * [int](class_int)  **[max&#95axis](#max_axis)**  **(** **)**
-  * [int](class_int)  **[min&#95axis](#min_axis)**  **(** **)**
+  * [real](class_real)  **[length&#95;squared](#length_squared)**  **(** **)**
+  * [Vector3](class_vector3)  **[linear&#95;interpolate](#linear_interpolate)**  **(** [Vector3](class_vector3) b, [real](class_real) t  **)**
+  * [int](class_int)  **[max&#95;axis](#max_axis)**  **(** **)**
+  * [int](class_int)  **[min&#95;axis](#min_axis)**  **(** **)**
   * [Vector3](class_vector3)  **[normalized](#normalized)**  **(** **)**
   * [Vector3](class_vector3)  **[rotated](#rotated)**  **(** [Vector3](class_vector3) axis, [real](class_real) phi  **)**
   * [Vector3](class_vector3)  **[snapped](#snapped)**  **(** [real](class_real) by  **)**
@@ -43,17 +43,17 @@ Vector3 is one of the core classes of the engine, and includes several built-in 
 Return the cross product with b.
 
 #### <a name="cubic_interpolate">cubic_interpolate</a>
-  * [Vector3](class_vector3)  **cubic&#95interpolate**  **(** [Vector3](class_vector3) b, [Vector3](class_vector3) pre_a, [Vector3](class_vector3) post_b, [real](class_real) t  **)**
+  * [Vector3](class_vector3)  **cubic&#95;interpolate**  **(** [Vector3](class_vector3) b, [Vector3](class_vector3) pre_a, [Vector3](class_vector3) post_b, [real](class_real) t  **)**
 
 Perform a cubic interpolation between vectors a,b,c,d (b is current), by the given amount (i).
 
 #### <a name="distance_squared_to">distance_squared_to</a>
-  * [real](class_real)  **distance&#95squared&#95to**  **(** [Vector3](class_vector3) b  **)**
+  * [real](class_real)  **distance&#95;squared&#95;to**  **(** [Vector3](class_vector3) b  **)**
 
 Return the squared distance (distance minus the last square root) to b.
 
 #### <a name="distance_to">distance_to</a>
-  * [real](class_real)  **distance&#95to**  **(** [Vector3](class_vector3) b  **)**
+  * [real](class_real)  **distance&#95;to**  **(** [Vector3](class_vector3) b  **)**
 
 Return the distance to b.
 
@@ -73,12 +73,12 @@ Returns the inverse of the vector. this is the same as Vector3( 1.0 / v.x, 1.0 /
 Return the length of the vector.
 
 #### <a name="length_squared">length_squared</a>
-  * [real](class_real)  **length&#95squared**  **(** **)**
+  * [real](class_real)  **length&#95;squared**  **(** **)**
 
 Return the length of the vector, without the square root step.
 
 #### <a name="linear_interpolate">linear_interpolate</a>
-  * [Vector3](class_vector3)  **linear&#95interpolate**  **(** [Vector3](class_vector3) b, [real](class_real) t  **)**
+  * [Vector3](class_vector3)  **linear&#95;interpolate**  **(** [Vector3](class_vector3) b, [real](class_real) t  **)**
 
 Linearly interpolates the vector to a given one (b), by the given amount (i)
 

@@ -5,11 +5,11 @@
 Quaternion.
 
 ###  Member Functions 
-  * [Quat](class_quat)  **[cubic&#95slerp](#cubic_slerp)**  **(** [Quat](class_quat) b, [Quat](class_quat) pre_a, [Quat](class_quat) post_b, [real](class_real) t  **)**
+  * [Quat](class_quat)  **[cubic&#95;slerp](#cubic_slerp)**  **(** [Quat](class_quat) b, [Quat](class_quat) pre_a, [Quat](class_quat) post_b, [real](class_real) t  **)**
   * [real](class_real)  **[dot](#dot)**  **(** [Quat](class_quat) b  **)**
   * [Quat](class_quat)  **[inverse](#inverse)**  **(** **)**
   * [real](class_real)  **[length](#length)**  **(** **)**
-  * [real](class_real)  **[length&#95squared](#length_squared)**  **(** **)**
+  * [real](class_real)  **[length&#95;squared](#length_squared)**  **(** **)**
   * [Quat](class_quat)  **[normalized](#normalized)**  **(** **)**
   * [Quat](class_quat)  **[slerp](#slerp)**  **(** [Quat](class_quat) b, [real](class_real) t  **)**
   * [Quat](class_quat)  **[slerpni](#slerpni)**  **(** [Quat](class_quat) b, [real](class_real) t  **)**
@@ -43,7 +43,7 @@ Returns the inverse of the quaternion (applies to the inverse rotatio too).
 Returns the length of the quaternion.
 
 #### <a name="length_squared">length_squared</a>
-  * [real](class_real)  **length&#95squared**  **(** **)**
+  * [real](class_real)  **length&#95;squared**  **(** **)**
 
 Returns the length of the quaternion, minus the square root.
 

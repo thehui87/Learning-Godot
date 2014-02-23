@@ -7,7 +7,7 @@ Resource Saving Interface.
 
 ###  Member Functions 
   * [int](class_int)  **[save](#save)**  **(** [String](class_string) path, [Resource](class_resource) resource, [int](class_int) arg2=0  **)**
-  * [StringArray](class_stringarray)  **[get&#95recognized&#95extensions](#get_recognized_extensions)**  **(** [Object](class_object) type  **)**
+  * [StringArray](class_stringarray)  **[get&#95;recognized&#95;extensions](#get_recognized_extensions)**  **(** [Object](class_object) type  **)**
 
 ###  Description  
 Resource Saving Interface. This interface is used for saving resources to disk.
@@ -20,6 +20,6 @@ Resource Saving Interface. This interface is used for saving resources to disk.
 Save a resource to disk, to a given path.
 
 #### <a name="get_recognized_extensions">get_recognized_extensions</a>
-  * [StringArray](class_stringarray)  **get&#95recognized&#95extensions**  **(** [Object](class_object) type  **)**
+  * [StringArray](class_stringarray)  **get&#95;recognized&#95;extensions**  **(** [Object](class_object) type  **)**
 
 Return the list of extensions available for saving a resource of a given type.

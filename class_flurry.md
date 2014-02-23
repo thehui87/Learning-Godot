@@ -6,8 +6,8 @@
 
 
 ###  Member Functions 
-  * void  **[log&#95event](#log_event)**  **(** [String](class_string) name, [Dictionary](class_dictionary) params  **)**
-  * void  **[log&#95timed&#95event](#log_timed_event)**  **(** [String](class_string) name, [Dictionary](class_dictionary) params  **)**
-  * void  **[end&#95timed&#95event](#end_timed_event)**  **(** [String](class_string) name  **)**
+  * void  **[log&#95;event](#log_event)**  **(** [String](class_string) name, [Dictionary](class_dictionary) params  **)**
+  * void  **[log&#95;timed&#95;event](#log_timed_event)**  **(** [String](class_string) name, [Dictionary](class_dictionary) params  **)**
+  * void  **[end&#95;timed&#95;event](#end_timed_event)**  **(** [String](class_string) name  **)**
 
 ###  Member Function Description  
