@@ -1,12 +1,13 @@
 #  PackedScene  
-**Inherits:** [Resource](class_resource)\\n\\n
+#####**Inherits:** [Resource](class_resource)
+
 ###  Brief Description  
 
 
 ###  Member Functions 
-  * [int](class_int)  **[pack](#pack)**  **(** [Node](class_node) path  **)**
-  * [Node](class_node)  **[instance](#instance)**  **(** [bool](class_bool) arg0=false  **)** const
-  * [bool](class_bool)  **[can_instance](#can_instance)**  **(** **)** const
+  * [int](class_int)  **[`pack`](#pack)**  **(** [Node](class_node) path  **)**
+  * [Node](class_node)  **[`instance`](#instance)**  **(** [bool](class_bool) arg0=false  **)** const
+  * [bool](class_bool)  **[`can_instance`](#can_instance)**  **(** **)** const
 
 ###  Description  
 explain ownership, and that node does not need to own itself
@@ -14,7 +15,7 @@ explain ownership, and that node does not need to own itself
 ###  Member Function Description  
 
 #### <a name="pack">pack</a>
-  * [int](class_int)  **pack**  **(** [Node](class_node) path  **)**
+  * [int](class_int)  **`pack`**  **(** [Node](class_node) path  **)**
 
 Pack will ignore any sub-nodes not owned by given
 			node. See [Node.set_owner].

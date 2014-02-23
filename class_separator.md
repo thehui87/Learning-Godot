@@ -1,5 +1,6 @@
 #  Separator  
-**Inherits:** [Control](class_control)\\n\\n
+#####**Inherits:** [Control](class_control)
+
 ###  Brief Description  
 Base class for separators.
 

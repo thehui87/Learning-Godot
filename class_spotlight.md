@@ -1,5 +1,6 @@
 #  SpotLight  
-**Inherits:** [Light](class_light)\\n\\n
+#####**Inherits:** [Light](class_light)
+
 ###  Brief Description  
 Spotlight Light, such as a reflector spotlight or a latern.
 

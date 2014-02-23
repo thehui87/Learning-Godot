@@ -1,4 +1,5 @@
 #  EventStreamChibi  
-**Inherits:** [EventStream](class_eventstream)\\n\\n
+#####**Inherits:** [EventStream](class_eventstream)
+
 ###  Brief Description  
 

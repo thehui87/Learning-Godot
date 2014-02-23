@@ -1,5 +1,6 @@
 #  AudioStreamResampled  
-**Inherits:** [AudioStream](class_audiostream)\\n\\n
+#####**Inherits:** [AudioStream](class_audiostream)
+
 ###  Brief Description  
 Base class for resampled audio streams.
 

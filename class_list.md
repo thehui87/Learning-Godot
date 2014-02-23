@@ -1,3 +1,5 @@
+
+|--------|--------|--------|--------|
 |**@**|[@GDScript](class_@gdscript)| |[Font](class_font)| |[Path2D](class_path2d)| |[SoundRoomParams](class_soundroomparams)|
 | |[@Global Scope](class_@global scope)|**G**|[GDNativeClass](class_gdnativeclass)| |[PathFollow](class_pathfollow)| |[Spatial](class_spatial)|
 | |[@MultiScript](class_@multiscript)| |[GDScript](class_gdscript)| |[PathRemap](class_pathremap)| |[SpatialPlayer](class_spatialplayer)|

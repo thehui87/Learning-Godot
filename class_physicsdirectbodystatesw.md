@@ -1,4 +1,5 @@
 #  PhysicsDirectBodyStateSW  
-**Inherits:** [PhysicsDirectBodyState](class_physicsdirectbodystate)\\n\\n
+#####**Inherits:** [PhysicsDirectBodyState](class_physicsdirectbodystate)
+
 ###  Brief Description  
 

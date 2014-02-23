@@ -1,5 +1,6 @@
 #  CenterContainer  
-**Inherits:** [Container](class_container)\\n\\n
+#####**Inherits:** [Container](class_container)
+
 ###  Brief Description  
 Keeps children controls centered.
 

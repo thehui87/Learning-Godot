@@ -1,4 +1,5 @@
 #  Shape  
-**Inherits:** [Resource](class_resource)\\n\\n
+#####**Inherits:** [Resource](class_resource)
+
 ###  Brief Description  
 

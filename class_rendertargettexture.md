@@ -1,4 +1,5 @@
 #  RenderTargetTexture  
-**Inherits:** [Texture](class_texture)\\n\\n
+#####**Inherits:** [Texture](class_texture)
+
 ###  Brief Description  
 

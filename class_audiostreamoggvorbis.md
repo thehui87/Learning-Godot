@@ -1,5 +1,6 @@
 #  AudioStreamOGGVorbis  
-**Inherits:** [AudioStreamResampled](class_audiostreamresampled)\\n\\n
+#####**Inherits:** [AudioStreamResampled](class_audiostreamresampled)
+
 ###  Brief Description  
 OGG Vorbis audio stream driver.
 

@@ -1,5 +1,6 @@
 #  HScrollBar  
-**Inherits:** [ScrollBar](class_scrollbar)\\n\\n
+#####**Inherits:** [ScrollBar](class_scrollbar)
+
 ###  Brief Description  
 Horizontal scroll bar.
 

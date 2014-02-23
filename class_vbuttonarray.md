@@ -1,5 +1,6 @@
 #  VButtonArray  
-**Inherits:** [ButtonArray](class_buttonarray)\\n\\n
+#####**Inherits:** [ButtonArray](class_buttonarray)
+
 ###  Brief Description  
 Vertical button array.
 

@@ -1,5 +1,6 @@
 #  ReferenceFrame  
-**Inherits:** [Control](class_control)\\n\\n
+#####**Inherits:** [Control](class_control)
+
 ###  Brief Description  
 Reference frame for GUI.
 

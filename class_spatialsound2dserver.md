@@ -1,5 +1,6 @@
 #  SpatialSound2DServer  
-**Inherits:** [Object](class_object)\\n\\n
+#####**Inherits:** [Object](class_object)
+
 ###  Brief Description  
 Server for Spatial 2D Sound.
 

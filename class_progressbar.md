@@ -1,5 +1,6 @@
 #  ProgressBar  
-**Inherits:** [Range](class_range)\\n\\n
+#####**Inherits:** [Range](class_range)
+
 ###  Brief Description  
 General purpose progres bar.
 

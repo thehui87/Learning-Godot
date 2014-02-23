@@ -1,5 +1,6 @@
 #  PinJoint2D  
-**Inherits:** [Joint2D](class_joint2d)\\n\\n
+#####**Inherits:** [Joint2D](class_joint2d)
+
 ###  Brief Description  
 Pin Joint for 2D Shapes.
 

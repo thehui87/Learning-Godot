@@ -1,4 +1,5 @@
 #  MultiScript  
-**Inherits:** [Script](class_script)\\n\\n
+#####**Inherits:** [Script](class_script)
+
 ###  Brief Description  
 

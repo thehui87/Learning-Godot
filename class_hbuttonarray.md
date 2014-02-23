@@ -1,5 +1,6 @@
 #  HButtonArray  
-**Inherits:** [ButtonArray](class_buttonarray)\\n\\n
+#####**Inherits:** [ButtonArray](class_buttonarray)
+
 ###  Brief Description  
 Horizontal button array.
 

@@ -1,4 +1,5 @@
 #  PopupPanel  
-**Inherits:** [Popup](class_popup)\\n\\n
+#####**Inherits:** [Popup](class_popup)
+
 ###  Brief Description  
 Base class for Popup Panels

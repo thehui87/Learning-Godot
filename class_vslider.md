@@ -1,5 +1,6 @@
 #  VSlider  
-**Inherits:** [Slider](class_slider)\\n\\n
+#####**Inherits:** [Slider](class_slider)
+
 ###  Brief Description  
 Vertical slider.
 

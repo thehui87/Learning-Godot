@@ -1,5 +1,6 @@
 #  Position2D  
-**Inherits:** [Node2D](class_node2d)\\n\\n
+#####**Inherits:** [Node2D](class_node2d)
+
 ###  Brief Description  
 Generic 2D Position hint for editing.
 

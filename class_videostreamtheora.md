@@ -1,4 +1,5 @@
 #  VideoStreamTheora  
-**Inherits:** [VideoStream](class_videostream)\\n\\n
+#####**Inherits:** [VideoStream](class_videostream)
+
 ###  Brief Description  
 

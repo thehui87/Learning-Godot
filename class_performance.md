@@ -1,10 +1,11 @@
 #  Performance  
-**Inherits:** [Object](class_object)\\n\\n
+#####**Inherits:** [Object](class_object)
+
 ###  Brief Description  
 
 
 ###  Member Functions 
-  * [real](class_real)  **[get_monitor](#get_monitor)**  **(** [int](class_int) monitor  **)** const
+  * [real](class_real)  **[`get_monitor`](#get_monitor)**  **(** [int](class_int) monitor  **)** const
 
 ###  Numeric Constants  
   * **TIME_FPS** = **0**

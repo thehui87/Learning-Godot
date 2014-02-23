@@ -1,5 +1,6 @@
 #  PhysicsBody  
-**Inherits:** [CollisionObject](class_collisionobject)\\n\\n
+#####**Inherits:** [CollisionObject](class_collisionobject)
+
 ###  Brief Description  
 Base class for differnt types of Physics bodies.
 

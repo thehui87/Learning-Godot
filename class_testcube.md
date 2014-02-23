@@ -1,4 +1,5 @@
 #  TestCube  
-**Inherits:** [GeometryInstance](class_geometryinstance)\\n\\n
+#####**Inherits:** [GeometryInstance](class_geometryinstance)
+
 ###  Brief Description  
 

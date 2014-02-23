@@ -1,9 +1,10 @@
 #  GDNativeClass  
-**Inherits:** [Reference](class_reference)\\n\\n
+#####**Inherits:** [Reference](class_reference)
+
 ###  Brief Description  
 
 
 ###  Member Functions 
-  * void  **[new](#new)**  **(** **)**
+  * void  **[`new`](#new)**  **(** **)**
 
 ###  Member Function Description  

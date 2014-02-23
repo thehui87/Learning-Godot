@@ -1,5 +1,6 @@
 #  MarginContainer  
-**Inherits:** [Container](class_container)\\n\\n
+#####**Inherits:** [Container](class_container)
+
 ###  Brief Description  
 Simple margin container.
 

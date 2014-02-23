@@ -4,14 +4,14 @@
 Built-in type optimized for path traversing.
 
 ###  Member Functions 
-  * [String](class_string)  **[get_name](#get_name)**  **(** [int](class_int) idx  **)**
-  * [int](class_int)  **[get_name_count](#get_name_count)**  **(** **)**
-  * [String](class_string)  **[get_property](#get_property)**  **(** **)**
-  * [String](class_string)  **[get_subname](#get_subname)**  **(** [int](class_int) idx  **)**
-  * [int](class_int)  **[get_subname_count](#get_subname_count)**  **(** **)**
-  * [bool](class_bool)  **[is_absolute](#is_absolute)**  **(** **)**
-  * [bool](class_bool)  **[is_empty](#is_empty)**  **(** **)**
-  * void  **[NodePath](#NodePath)**  **(** [String](class_string) from  **)**
+  * [String](class_string)  **[`get_name`](#get_name)**  **(** [int](class_int) idx  **)**
+  * [int](class_int)  **[`get_name_count`](#get_name_count)**  **(** **)**
+  * [String](class_string)  **[`get_property`](#get_property)**  **(** **)**
+  * [String](class_string)  **[`get_subname`](#get_subname)**  **(** [int](class_int) idx  **)**
+  * [int](class_int)  **[`get_subname_count`](#get_subname_count)**  **(** **)**
+  * [bool](class_bool)  **[`is_absolute`](#is_absolute)**  **(** **)**
+  * [bool](class_bool)  **[`is_empty`](#is_empty)**  **(** **)**
+  * void  **[`NodePath`](#NodePath)**  **(** [String](class_string) from  **)**
 
 ###  Description  
 Built-in type optimized for path traversing. A Node path is an optimized compiled path used for traversing the scene tree. 
@@ -20,36 +20,36 @@ Built-in type optimized for path traversing. A Node path is an optimized compile
 ###  Member Function Description  
 
 #### <a name="get_name">get_name</a>
-  * [String](class_string)  **get_name**  **(** [int](class_int) idx  **)**
+  * [String](class_string)  **`get_name`**  **(** [int](class_int) idx  **)**
 
 Return a path level name.
 
 #### <a name="get_name_count">get_name_count</a>
-  * [int](class_int)  **get_name_count**  **(** **)**
+  * [int](class_int)  **`get_name_count`**  **(** **)**
 
 Return the path level count.
 
 #### <a name="get_property">get_property</a>
-  * [String](class_string)  **get_property**  **(** **)**
+  * [String](class_string)  **`get_property`**  **(** **)**
 
 Return the property associated (empty if none).
 
 #### <a name="get_subname">get_subname</a>
-  * [String](class_string)  **get_subname**  **(** [int](class_int) idx  **)**
+  * [String](class_string)  **`get_subname`**  **(** [int](class_int) idx  **)**
 
 Return the subname level name.
 
 #### <a name="get_subname_count">get_subname_count</a>
-  * [int](class_int)  **get_subname_count**  **(** **)**
+  * [int](class_int)  **`get_subname_count`**  **(** **)**
 
 Return the subname count.
 
 #### <a name="is_absolute">is_absolute</a>
-  * [bool](class_bool)  **is_absolute**  **(** **)**
+  * [bool](class_bool)  **`is_absolute`**  **(** **)**
 
 Return true if the node path is absolute (not relative).
 
 #### <a name="is_empty">is_empty</a>
-  * [bool](class_bool)  **is_empty**  **(** **)**
+  * [bool](class_bool)  **`is_empty`**  **(** **)**
 
 Return true if the node path is empty.

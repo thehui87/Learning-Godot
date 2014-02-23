@@ -1,4 +1,5 @@
 #  InputDefault  
-**Inherits:** [Input](class_input)\\n\\n
+#####**Inherits:** [Input](class_input)
+
 ###  Brief Description  
 

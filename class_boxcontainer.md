@@ -1,5 +1,6 @@
 #  BoxContainer  
-**Inherits:** [Container](class_container)\\n\\n
+#####**Inherits:** [Container](class_container)
+
 ###  Brief Description  
 Base class for Box containers.
 

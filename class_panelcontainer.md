@@ -1,5 +1,6 @@
 #  PanelContainer  
-**Inherits:** [Container](class_container)\\n\\n
+#####**Inherits:** [Container](class_container)
+
 ###  Brief Description  
 Panel container type.
 

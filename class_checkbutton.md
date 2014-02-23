@@ -1,5 +1,6 @@
 #  CheckButton  
-**Inherits:** [Button](class_button)\\n\\n
+#####**Inherits:** [Button](class_button)
+
 ###  Brief Description  
 Checkable button.
 

@@ -1,5 +1,6 @@
 #  VBoxContainer  
-**Inherits:** [BoxContainer](class_boxcontainer)\\n\\n
+#####**Inherits:** [BoxContainer](class_boxcontainer)
+
 ###  Brief Description  
 Vertical box container.
 

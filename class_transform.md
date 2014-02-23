@@ -4,20 +4,20 @@
 3D Transformation.
 
 ###  Member Functions 
-  * [Transform](class_transform)  **[affine_inverse](#affine_inverse)**  **(** **)**
-  * [Transform](class_transform)  **[inverse](#inverse)**  **(** **)**
-  * [Transform](class_transform)  **[looking_at](#looking_at)**  **(** [Vector3](class_vector3) target, [Vector3](class_vector3) up  **)**
-  * [Transform](class_transform)  **[orthonormalized](#orthonormalized)**  **(** **)**
-  * [Transform](class_transform)  **[rotated](#rotated)**  **(** [Vector3](class_vector3) axis, [real](class_real) phi  **)**
-  * [Transform](class_transform)  **[scaled](#scaled)**  **(** [Vector3](class_vector3) scale  **)**
-  * [Transform](class_transform)  **[translated](#translated)**  **(** [Vector3](class_vector3) ofs  **)**
-  * var  **[xform](#xform)**  **(** var v  **)**
-  * var  **[xform_inv](#xform_inv)**  **(** var v  **)**
-  * void  **[Transform](#Transform)**  **(** [Vector3](class_vector3) x_axis, [Vector3](class_vector3) y_axis, [Vector3](class_vector3) z_axis, [Vector3](class_vector3) origin  **)**
-  * void  **[Transform](#Transform)**  **(** [Matrix3](class_matrix3) basis, [Vector3](class_vector3) origin  **)**
-  * void  **[Transform](#Transform)**  **(** [Matrix32](class_matrix32) from  **)**
-  * void  **[Transform](#Transform)**  **(** [Quat](class_quat) from  **)**
-  * void  **[Transform](#Transform)**  **(** [Matrix3](class_matrix3) from  **)**
+  * [Transform](class_transform)  **[`affine_inverse`](#affine_inverse)**  **(** **)**
+  * [Transform](class_transform)  **[`inverse`](#inverse)**  **(** **)**
+  * [Transform](class_transform)  **[`looking_at`](#looking_at)**  **(** [Vector3](class_vector3) target, [Vector3](class_vector3) up  **)**
+  * [Transform](class_transform)  **[`orthonormalized`](#orthonormalized)**  **(** **)**
+  * [Transform](class_transform)  **[`rotated`](#rotated)**  **(** [Vector3](class_vector3) axis, [real](class_real) phi  **)**
+  * [Transform](class_transform)  **[`scaled`](#scaled)**  **(** [Vector3](class_vector3) scale  **)**
+  * [Transform](class_transform)  **[`translated`](#translated)**  **(** [Vector3](class_vector3) ofs  **)**
+  * var  **[`xform`](#xform)**  **(** var v  **)**
+  * var  **[`xform_inv`](#xform_inv)**  **(** var v  **)**
+  * void  **[`Transform`](#Transform)**  **(** [Vector3](class_vector3) x_axis, [Vector3](class_vector3) y_axis, [Vector3](class_vector3) z_axis, [Vector3](class_vector3) origin  **)**
+  * void  **[`Transform`](#Transform)**  **(** [Matrix3](class_matrix3) basis, [Vector3](class_vector3) origin  **)**
+  * void  **[`Transform`](#Transform)**  **(** [Matrix32](class_matrix32) from  **)**
+  * void  **[`Transform`](#Transform)**  **(** [Quat](class_quat) from  **)**
+  * void  **[`Transform`](#Transform)**  **(** [Matrix3](class_matrix3) from  **)**
 
 ###  Member Variables  
   * [Matrix3](class_matrix3) **basis**
@@ -29,16 +29,16 @@ Transform is used to store transformations, including translations. It consists 
 ###  Member Function Description  
 
 #### <a name="inverse">inverse</a>
-  * [Transform](class_transform)  **inverse**  **(** **)**
+  * [Transform](class_transform)  **`inverse`**  **(** **)**
 
 Returns the inverse of the transform.
 
 #### <a name="xform">xform</a>
-  * var  **xform**  **(** var v  **)**
+  * var  **`xform`**  **(** var v  **)**
 
 Transforms vector "v" by this transform.
 
 #### <a name="xform_inv">xform_inv</a>
-  * var  **xform_inv**  **(** var v  **)**
+  * var  **`xform_inv`**  **(** var v  **)**
 
 Inverse-transforms vector "v" by this transform.

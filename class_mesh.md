@@ -1,27 +1,28 @@
 #  Mesh  
-**Inherits:** [Resource](class_resource)\\n\\n
+#####**Inherits:** [Resource](class_resource)
+
 ###  Brief Description  
 A [[resource|Resource]] that contains vertex-array based geometry.
 
 ###  Member Functions 
-  * void  **[add_morph_target](#add_morph_target)**  **(** [String](class_string) name  **)**
-  * [int](class_int)  **[get_morph_target_count](#get_morph_target_count)**  **(** **)** const
-  * [String](class_string)  **[get_morph_target_name](#get_morph_target_name)**  **(** [int](class_int) index  **)** const
-  * void  **[clear_morph_targets](#clear_morph_targets)**  **(** **)**
-  * void  **[set_morph_target_mode](#set_morph_target_mode)**  **(** [int](class_int) mode  **)**
-  * [int](class_int)  **[get_morph_target_mode](#get_morph_target_mode)**  **(** **)** const
-  * void  **[add_surface](#add_surface)**  **(** [int](class_int) primitive, [Array](class_array) arrays, [Array](class_array) morph_arrays, [bool](class_bool) arg3=Array()  **)**
-  * [int](class_int)  **[get_surface_count](#get_surface_count)**  **(** **)** const
-  * void  **[surface_remove](#surface_remove)**  **(** [int](class_int) surf_idx  **)**
-  * [int](class_int)  **[surface_get_array_len](#surface_get_array_len)**  **(** [int](class_int) surf_idx  **)** const
-  * [int](class_int)  **[surface_get_array_index_len](#surface_get_array_index_len)**  **(** [int](class_int) surf_idx  **)** const
-  * [int](class_int)  **[surface_get_format](#surface_get_format)**  **(** [int](class_int) surf_idx  **)** const
-  * [int](class_int)  **[surface_get_primitive_type](#surface_get_primitive_type)**  **(** [int](class_int) surf_idx  **)** const
-  * void  **[surface_set_material](#surface_set_material)**  **(** [int](class_int) surf_idx, [Material](class_material) material  **)**
-  * [Material](class_material)  **[surface_get_material](#surface_get_material)**  **(** [int](class_int) surf_idx  **)** const
-  * void  **[surface_set_name](#surface_set_name)**  **(** [int](class_int) surf_idx, [String](class_string) name  **)**
-  * [String](class_string)  **[surface_get_name](#surface_get_name)**  **(** [int](class_int) surf_idx  **)** const
-  * void  **[center_geometry](#center_geometry)**  **(** **)**
+  * void  **[`add_morph_target`](#add_morph_target)**  **(** [String](class_string) name  **)**
+  * [int](class_int)  **[`get_morph_target_count`](#get_morph_target_count)**  **(** **)** const
+  * [String](class_string)  **[`get_morph_target_name`](#get_morph_target_name)**  **(** [int](class_int) index  **)** const
+  * void  **[`clear_morph_targets`](#clear_morph_targets)**  **(** **)**
+  * void  **[`set_morph_target_mode`](#set_morph_target_mode)**  **(** [int](class_int) mode  **)**
+  * [int](class_int)  **[`get_morph_target_mode`](#get_morph_target_mode)**  **(** **)** const
+  * void  **[`add_surface`](#add_surface)**  **(** [int](class_int) primitive, [Array](class_array) arrays, [Array](class_array) morph_arrays, [bool](class_bool) arg3=Array()  **)**
+  * [int](class_int)  **[`get_surface_count`](#get_surface_count)**  **(** **)** const
+  * void  **[`surface_remove`](#surface_remove)**  **(** [int](class_int) surf_idx  **)**
+  * [int](class_int)  **[`surface_get_array_len`](#surface_get_array_len)**  **(** [int](class_int) surf_idx  **)** const
+  * [int](class_int)  **[`surface_get_array_index_len`](#surface_get_array_index_len)**  **(** [int](class_int) surf_idx  **)** const
+  * [int](class_int)  **[`surface_get_format`](#surface_get_format)**  **(** [int](class_int) surf_idx  **)** const
+  * [int](class_int)  **[`surface_get_primitive_type`](#surface_get_primitive_type)**  **(** [int](class_int) surf_idx  **)** const
+  * void  **[`surface_set_material`](#surface_set_material)**  **(** [int](class_int) surf_idx, [Material](class_material) material  **)**
+  * [Material](class_material)  **[`surface_get_material`](#surface_get_material)**  **(** [int](class_int) surf_idx  **)** const
+  * void  **[`surface_set_name`](#surface_set_name)**  **(** [int](class_int) surf_idx, [String](class_string) name  **)**
+  * [String](class_string)  **[`surface_get_name`](#surface_get_name)**  **(** [int](class_int) surf_idx  **)** const
+  * void  **[`center_geometry`](#center_geometry)**  **(** **)**
 
 ###  Numeric Constants  
   * **NO_INDEX_ARRAY** = **-1** - Default value used for index_array_len when no indices are present.
@@ -58,48 +59,48 @@ Mesh is a type of [[resource|Resource]] that contains vertex-array based geometr
 ###  Member Function Description  
 
 #### <a name="add_surface">add_surface</a>
-  * void  **add_surface**  **(** [int](class_int) primitive, [Array](class_array) arrays, [Array](class_array) morph_arrays, [bool](class_bool) arg3=Array()  **)**
+  * void  **`add_surface`**  **(** [int](class_int) primitive, [Array](class_array) arrays, [Array](class_array) morph_arrays, [bool](class_bool) arg3=Array()  **)**
 
 Create a new surface ([[#get_surface_count|get_surface_count]] will become surf_idx for this.\\
 "#10;"#9;"#9;"#9;Surfaces are created to be rendered using a "primitive", which may be PRIMITIVE_POINTS, PRIMITIVE_LINES, PRIMITIVE_LINE_STRIP, PRIMITIVE_LINE_LOOP, PRIMITIVE_TRIANGLES, PRIMITIVE_TRIANGLE_STRIP, PRIMITIVE_TRIANGLE_FAN. (As a note, when using indices, it is recommended to only use just points, lines or triangles).\\
 "#10;"#9;"#9;"#9;The format of a surface determines which arrays it will allocate and hold, so "format" is a combination of ARRAY_FORMAT_* mask constants ORed together. ARRAY_FORMAT_VERTEX must be always present. "array_len" determines the amount of vertices in the array (not primitives!). if ARRAY_FORMAT_INDEX is in the format mask, then it means that an index array will be allocated and "index_array_len" must be passed.
 
 #### <a name="get_surface_count">get_surface_count</a>
-  * [int](class_int)  **get_surface_count**  **(** **)** const
+  * [int](class_int)  **`get_surface_count`**  **(** **)** const
 
 Return the amount of surfaces that the [[mesh|Mesh]] holds.
 
 #### <a name="surface_remove">surface_remove</a>
-  * void  **surface_remove**  **(** [int](class_int) surf_idx  **)**
+  * void  **`surface_remove`**  **(** [int](class_int) surf_idx  **)**
 
 Remove a surface at position surf_idx, shifting greater surfaces one surf_idx slot down.
 
 #### <a name="surface_get_array_len">surface_get_array_len</a>
-  * [int](class_int)  **surface_get_array_len**  **(** [int](class_int) surf_idx  **)** const
+  * [int](class_int)  **`surface_get_array_len`**  **(** [int](class_int) surf_idx  **)** const
 
 Return the length in vertices of the vertex array in the requested surface (see [[#add_surface|add_surface]]).
 
 #### <a name="surface_get_array_index_len">surface_get_array_index_len</a>
-  * [int](class_int)  **surface_get_array_index_len**  **(** [int](class_int) surf_idx  **)** const
+  * [int](class_int)  **`surface_get_array_index_len`**  **(** [int](class_int) surf_idx  **)** const
 
 Return the length in indices of the index array in the requested surface (see [[#add_surface|add_surface]]).
 
 #### <a name="surface_get_format">surface_get_format</a>
-  * [int](class_int)  **surface_get_format**  **(** [int](class_int) surf_idx  **)** const
+  * [int](class_int)  **`surface_get_format`**  **(** [int](class_int) surf_idx  **)** const
 
 Return the format mask of the requested surface (see [[#add_surface|add_surface]]).
 
 #### <a name="surface_get_primitive_type">surface_get_primitive_type</a>
-  * [int](class_int)  **surface_get_primitive_type**  **(** [int](class_int) surf_idx  **)** const
+  * [int](class_int)  **`surface_get_primitive_type`**  **(** [int](class_int) surf_idx  **)** const
 
 Return the primitive type of the requested surface (see [[#add_surface|add_surface]]).
 
 #### <a name="surface_set_material">surface_set_material</a>
-  * void  **surface_set_material**  **(** [int](class_int) surf_idx, [Material](class_material) material  **)**
+  * void  **`surface_set_material`**  **(** [int](class_int) surf_idx, [Material](class_material) material  **)**
 
 Set a [[material|Material]] for a given surface. Surface will be rendered using this material.
 
 #### <a name="surface_get_material">surface_get_material</a>
-  * [Material](class_material)  **surface_get_material**  **(** [int](class_int) surf_idx  **)** const
+  * [Material](class_material)  **`surface_get_material`**  **(** [int](class_int) surf_idx  **)** const
 
 Return a [[material|Material]] in a given surface. Surface is rendered using this material.

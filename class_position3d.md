@@ -1,5 +1,6 @@
 #  Position3D  
-**Inherits:** [Spatial](class_spatial)\\n\\n
+#####**Inherits:** [Spatial](class_spatial)
+
 ###  Brief Description  
 Generic 3D Position hint for editing
 

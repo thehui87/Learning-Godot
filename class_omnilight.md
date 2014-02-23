@@ -1,5 +1,6 @@
 #  OmniLight  
-**Inherits:** [Light](class_light)\\n\\n
+#####**Inherits:** [Light](class_light)
+
 ###  Brief Description  
 OmniDirectional Light, such as a lightbulb or a candle.
 

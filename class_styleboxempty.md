@@ -1,5 +1,6 @@
 #  StyleBoxEmpty  
-**Inherits:** [StyleBox](class_stylebox)\\n\\n
+#####**Inherits:** [StyleBox](class_stylebox)
+
 ###  Brief Description  
 Empty stylebox (does not display anything).
 

@@ -1,5 +1,6 @@
 #  HBoxContainer  
-**Inherits:** [BoxContainer](class_boxcontainer)\\n\\n
+#####**Inherits:** [BoxContainer](class_boxcontainer)
+
 ###  Brief Description  
 Horizontal box container.
 

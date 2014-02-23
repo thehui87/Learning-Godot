@@ -1,5 +1,6 @@
 #  HSplitContainer  
-**Inherits:** [SplitContainer](class_splitcontainer)\\n\\n
+#####**Inherits:** [SplitContainer](class_splitcontainer)
+
 ###  Brief Description  
 Horizontal split container.
 

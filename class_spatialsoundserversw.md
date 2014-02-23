@@ -1,4 +1,5 @@
 #  SpatialSoundServerSW  
-**Inherits:** [SpatialSoundServer](class_spatialsoundserver)\\n\\n
+#####**Inherits:** [SpatialSoundServer](class_spatialsoundserver)
+
 ###  Brief Description  
 

@@ -1,5 +1,6 @@
 #  HSeparator  
-**Inherits:** [Separator](class_separator)\\n\\n
+#####**Inherits:** [Separator](class_separator)
+
 ###  Brief Description  
 Horizontal separator.
 
