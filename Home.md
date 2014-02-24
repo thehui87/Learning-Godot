@@ -1,3 +1,4 @@
+<p align="center"><img src="images/logo.png"/></p>
 # Introduction
 
 Welcome to the Godot Engine documentation center. The aim of these pages is to provide centralized access to all documentation-related materials.
