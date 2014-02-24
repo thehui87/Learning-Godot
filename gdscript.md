@@ -139,7 +139,8 @@ The following is the list of supported operators and their precedence (TODO, cha
 Anything from a ’#’ to the end of the line is ignored and is considered a comment.
 
 ```python
-# This is a comment```
+# This is a comment
+```
 
 #  Built-in Types 
 
@@ -304,7 +305,8 @@ Variables can exist as class members or local to functions. They are created wit
 var a # datatype is null by default
 var b = 5
 var c = 3.8
-var d = b+c # variables are always initialized in order```
+var d = b+c # variables are always initialized in order
+```
 ##  Constants 
 
 Constants are similar to variables, but must be constants or constant expressions and must be assigned on initialization.
@@ -316,7 +318,8 @@ const c = 10+20 # constant expression
 const d = Vector2(20,30).x # constant expression: 20
 const e = [1,2,3,4][0] # constant expression: 1
 const f = sin(20) # sin() can be used in constant expression
-const g = x+20 # invalid, not a constant expression!```
+const g = x+20 # invalid, not a constant expression!
+```
 ##  Functions 
 
 Functions always belong to a class. The scope priority for variable look-up is: local -> class member -> global. “self” is provided as an option for accessing class members but is not required always (and must *not* be defined as first parameter, like in Python). For performance reasons, functions are not considered class members, so they can’t be referenced directly. A function can return at any point. The default return value is null.
@@ -349,7 +352,8 @@ Simple loops are created by using *while* syntax. Loops can be broken using *bre
 
 ```python
 while [expression]:
-    statement(s)```
+    statement(s)
+```
 ###  for 
 
 To iterate a range, array or table a *for* loop is used. For loops store the index in the loop variable on each iteration.
@@ -400,7 +404,8 @@ extends "somefile.gd"
 
 # extend from a subclass in another file
 
-extends "somefile.gd".Subclass ```
+extends "somefile.gd".Subclass 
+```
 ##  Inheritance Testing 
 
 It is possible to check if an instance inherits from a given class. For this the “extends” keyword can be used as an operator instead:
