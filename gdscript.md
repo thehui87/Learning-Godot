@@ -105,7 +105,7 @@ The following is the list of keywords supported by the language. Since keywords 
 The following is the list of supported operators and their precedence (TODO, change since this was made to reflect python operators)
 
  | Operator              | Description                    |                            
- | --------              | -----------                    |                            
+ | -------- | ----------- |                            
  | `x[index]`          | Subscription, Highest Priority |                            
  | x.attribute           | Attribute Reference            |                            
  | extends               | Instance Type Checker          |                            
