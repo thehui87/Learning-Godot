@@ -237,9 +237,11 @@ Events from input devices are contained in very compact form in InputEvent objec
 
 Generic sequence of objects. It’s size can be changed to anything and starts from index 0.
 
-```pythonvar arr=[]
+```python
+var arr=[]
 arr=[1,2,3]
-arr[0]="Hi!"```
+arr[0]="Hi!"
+```
 Arrays are allocated linearly in memory, so they are fast, but very large arrays (more than tens of thousands of elements) may cause fragmentation. 
 
 There are specialized arrays (listed below) for some built-in datatypes which do not suffer from this and use  less memory, but they are atomic and generally run a little slower, so they are only justified for very large amount of data.
@@ -248,7 +250,8 @@ There are specialized arrays (listed below) for some built-in datatypes which do
 
 Associative container which contains values referenced by unique keys.
 
-```pythonvar d={4:5, "a key":"a value", 28:[1,2,3]}
+```python
+var d={4:5, "a key":"a value", 28:[1,2,3]}
 d["Hi!"]=0
 ```
 
@@ -297,7 +300,8 @@ Array of Color, can only contains colors. Optimized for memory usage, can’t fr
 
 Variables can exist as class members or local to functions. They are created with the “var” keyword and may be, optionally, be assigned a value upon initialization.
 
-```pythonvar a # datatype is null by default
+```python
+var a # datatype is null by default
 var b = 5
 var c = 3.8
 var d = b+c # variables are always initialized in order```
@@ -305,7 +309,8 @@ var d = b+c # variables are always initialized in order```
 
 Constants are similar to variables, but must be constants or constant expressions and must be assigned on initialization.
 
-```pythonconst a = 5
+```python
+const a = 5
 const b = Vector2(20,20)
 const c = 10+20 # constant expression
 const d = Vector2(20,30).x # constant expression: 20
@@ -316,10 +321,12 @@ const g = x+20 # invalid, not a constant expression!```
 
 Functions always belong to a class. The scope priority for variable look-up is: local -> class member -> global. “self” is provided as an option for accessing class members but is not required always (and must *not* be defined as first parameter, like in Python). For performance reasons, functions are not considered class members, so they can’t be referenced directly. A function can return at any point. The default return value is null.
 
-```pythonfunc myfunction(a,b):
+```python
+    func myfunction(a,b):
     print(a)
     print(b)
-    return a+b # return is optional, otherwise null is returned```
+    return a+b # return is optional, otherwise null is returned
+```
 ###  Statements and Control Flow 
 
 Statements are standard, and can be assignments, function calls, control flow structures, etc (see below). “;” as separator is entirely optional.
@@ -328,23 +335,27 @@ Statements are standard, and can be assignments, function calls, control flow st
 
 Simple conditions are created by using the *if/else/elif* syntax. Parenthesis around statements is allowed but not requiered. Given the nature of the tab-based indentation, elif can be used instead of else:/if: to mantain a level of indentation.
 
-```pythonif [expression]:
+```python
+if [expression]:
     statement(s)
 elif [expression]:
     statement(s)
 else:
-    statement(s)```
+    statement(s)
+```
 ###  while 
 
 Simple loops are created by using *while* syntax. Loops can be broken using *break*, or continued using *continue*:
 
-```pythonwhile [expression]:
+```python
+while [expression]:
     statement(s)```
 ###  for 
 
 To iterate a range, array or table a *for* loop is used. For loops store the index in the loop variable on each iteration.
 
-```pythonfor i in [0,1,2]:
+```python
+for i in [0,1,2]:
     statement # loop iterates 3 times, i being 0,1 and 2
 
 var dict = {"a":0, "b":1, "c": 2}
@@ -358,7 +369,8 @@ for i in range(1,3):
     statement # similar to [1,2] but does not allocate an array
 
 for i in range(2,8,2):
-    statement # similar to [2,4,6] but does not allocate an array```
+    statement # similar to [2,4,6] but does not allocate an array
+```
 #  Classes 
 
 By default, the body of a script file is an unnamed class, and it can only be referenced externally as a resource or file. Class syntax is meant to be very compact and can only contain member variables or functions. Static functions are allowed, but not static members (in the spirit of thread safety, since scripts can be initialized in separate threads without the user knowing). In the same way, member variables (including arrays and dictionaries) are initialized every time an instance is created.
@@ -367,15 +379,19 @@ By default, the body of a script file is an unnamed class, and it can only be re
 
 Example of a class file, imagine it being stored in a file like myclass.gd.
 
-```pythonvar a=5
+```python
+
+var a=5
 
 func print_value_of_a():
-    print(a)```
+    print(a)
+```
 ##  Inheritance 
 
 A class-file can inherit from a global class, another file or a subclass inside another file. Multiple inheritance is not allowed. The “extends” syntax is used:
 
-```python# extend from some class (global)
+```python
+# extend from some class (global)
 extends SomeClass 
 
 # optionally, extend from another file
@@ -389,12 +405,14 @@ extends "somefile.gd".Subclass ```
 
 It is possible to check if an instance inherits from a given class. For this the “extends” keyword can be used as an operator instead:
 
-```pythonconst enemy_class = preload("enemy.gd") # cache the enemy class
+```python
+const enemy_class = preload("enemy.gd") # cache the enemy class
 
 [..]
 
 if ( entity extends enemy_class ):
-    entity.apply_damage()```
+    entity.apply_damage()
+```
 ##  Constructor 
 
 A class can have an optional constructor, a function named “_init” that is called when the class is instanced.
@@ -403,19 +421,23 @@ A class can have an optional constructor, a function named “_init” that is c
 
 A class file can have subclasses. Syntax should be straightforward:
 
-```pythonclass SomeSubClass:
+```python
+class SomeSubClass:
     var a=5
     func print_value_of_a():
         print(a)
 
 func _init():
     var sc = SomeSubClass.new() #instance by calling built-in new
-    sc.print_value_of_a()```
+    sc.print_value_of_a()
+```
 ##  Classes as Objects 
 
 It may be desired at some point to load a class from a file and then instance it. Since the global scope does not exist, classes must be loaded as a resource. Instancing is done by calling the “new” function in a class object:
 
-```python#load the class (loaded every time the script is instanced)
+```python
+
+#load the class (loaded every time the script is instanced)
 var MyClass = load("myclass.gd")
 
 # alternatively, using the preload() function preloads the class at compile time
@@ -424,18 +446,23 @@ var MyClass2 = preload("myclass.gd")
 
 func _init():
     var a = MyClass.new()
-    a.somefunction()```
+    a.somefunction()
+```
 ##  Exports 
 
 Class members can be exported. This means their value gets saved along with a scene. If class members have initializers to constant expressions, they will be available for editing in the property editor. Exporting is done by using the export keyword:
 
-```pythonextends Button
+```python
+extends Button
 
 export var data # value will be saved
-export var number=5 # also available to the property editor```
+export var number=5 # also available to the property editor
+```
+
 One of the fundamental benefits of exporting member variables is to have them visible in the property editor. This way artists and game designers can modify values that later influence how the program runs. For this, a special export syntax is provided for more detail in the exported variables:
 
-```python#if the exported value assigns a constant or constant expression, the type will be infered and used in the editor
+```python
+#if the exported value assigns a constant or constant expression, the type will be infered and used in the editor
 
 export var number=5
 
@@ -467,24 +494,31 @@ export(float,-10,20,0.2) var k # -10 to 20 allowed, with stepping of 0.2
 # color can hint availability of alpha
 
 export(Color,RGB) var col # Color is RGB
-export(Color,RGBA) var col # Color is RGBA```
+export(Color,RGBA) var col # Color is RGBA
+
+```
 It must be noted that even if the script is not being run while at the editor, the exported properties are still editable (see below for “tool”).
 
 ##  Static Functions 
 
 A function can be declared static. When static, it has no access to the instance member variables or “self”. This is mainly useful to make libraries of helper functions:
 
-```pythonstatic func sum2(a,b):
-    return a+b```
+```python
+
+static func sum2(a,b):
+    return a+b
+```
 ##  Tool Mode 
 
 Scripts by default don’t run inside the editor, and only the exported properties can be changed. In some cases it is desired that they do (as long as they don’t execute game code or manually avoid doing so). For this, the “tool” keyword exists, and must be placed at the top of the file:
 
-```pythontool
+```python
+tool
 extends Button
 
 func _init():
-    print("Hello")```
+    print("Hello")
+```
 ##  Memory Management 
 
 If a class inherits from *Reference*, then instances will be freed when no longer in use. No garbage collector exists, just simple reference counting. By default, all classes that don’t define inheritance extend *Reference*. If this is not desired, then a class must inherit *Object* manually and must call instance.free(). To avoid reference cycles that can’t be freed, a weakref() function is provided for creating weak references.
@@ -493,9 +527,12 @@ If a class inherits from *Reference*, then instances will be freed when no longe
 
 Functions can’t be referenced because they are not treated as class members. There are two alternatives to this, though. The “call” function or the funcref() helper.
 
-```pythoninstance.call("funcname",args) # call a function by bane
+```python
+instance.call("funcname",args) # call a function by bane
 
 var fr = funcref(instance,"funcname") #create a function ref
-fr.exec(args)```
+fr.exec(args)
+
+```
 
  --- //[Juan Linietsky](reduzio@gmail.com) 2013/11/10 18:09//
