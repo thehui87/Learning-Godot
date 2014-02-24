@@ -1,4 +1,4 @@
-![](images/logo.png)
+<p align="center"><img src="http://www.godotengine.org/wp/wp-content/uploads/2014/01/godot_logo_63px_alto-02-021.png"/></p>
 # Introduction
 
 Welcome to the Godot Engine documentation center. The aim of these pages is to provide centralized access to all documentation-related materials.
