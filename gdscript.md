@@ -105,23 +105,23 @@ The following is the list of supported operators and their precedence (TODO, cha
 
  | Operator              | Description                    |                            
  | --------              | -----------                    |                            
- | %%x[index]%%          | Subscription, Highest Priority |                            
+ | `x[index]`          | Subscription, Highest Priority |                            
  | x.attribute           | Attribute Reference            |                            
  | extends               | Instance Type Checker          |                            
- | %%~%%                 | Bitwise NOT                    |                            
+ | `~`                 | Bitwise NOT                    |                            
  | -x                    | Negative                       |                            
  | * / %                 | Mult / Div / Remainder         |                            
  | + -                   | Addition / Substraction        |                            
- | %%<< >>%%             | Bit Shifting                   |                            
+ | `<< >>`             | Bit Shifting                   |                            
  | &                     | Bitwise AND                    |                            
- | %%^%%                 | Bitwise XOR                    |                            
- | %%                    | %%                             | Bitwise OR                  |           
- | %%< > == != >= <=%%   | Comparisons                    |                            
+ | `^`                 | Bitwise XOR                    |                            
+ | `                    | `                             | Bitwise OR                  |           
+ | `< > == != >= <=`   | Comparisons                    |                            
  | in                    | Content Test                   |                            
- | %%! not%%             | Boolean NOT                    |                            
+ | `! not`             | Boolean NOT                    |                            
  | and &&                | Boolean AND                    |                            
- | or %%                 |                                | %%                          | Boolean OR | 
- | %%= += -= *= /= %= &= | =%%                            | Assignment, Lowest Priority |           
+ | or `                 |                                | `                          | Boolean OR | 
+ | `= += -= *= /= %= &= | =`                            | Assignment, Lowest Priority |           
 
 ##  Literals 
 

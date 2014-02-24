@@ -30,7 +30,7 @@ Pressing the the ">" button the right side of the preview, allows to view and ed
 
 When the resource comes from a file, it is considered an *external* resource. If the path property is erased (or never had a path o begin with), it is then considered a built-in resource. 
 
-For example, if the path %%"res://robi.png"%% is erased from the "path" property in the above example, and then the scene is saved, the resource will be saved inside the .scn scene file, no longer referencing the external "robi.png". However, even if saved as built-in, and even though the scene can be instanced multiple times, the resource will still always be loaded once. That means, different Robi robot scenes instanced at the same time will still share the same image.
+For example, if the path `"res://robi.png"` is erased from the "path" property in the above example, and then the scene is saved, the resource will be saved inside the .scn scene file, no longer referencing the external "robi.png". However, even if saved as built-in, and even though the scene can be instanced multiple times, the resource will still always be loaded once. That means, different Robi robot scenes instanced at the same time will still share the same image.
 
 ### Loading Resources from Code
 

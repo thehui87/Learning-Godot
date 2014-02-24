@@ -33,7 +33,7 @@ The language is statically type and only supports a few operations. Arrays, clas
 
 #### Syntax
 
-The syntax is similar to C, with statements ending in ; , and comments as %%// and /* */%%.
+The syntax is similar to C, with statements ending in ; , and comments as `// and /* */`.
 Example:
 
 	:::C
@@ -132,7 +132,7 @@ Example:
 	| vec_type **clamp**( vec_type value,vec_type min, vec_type max ) | Clamp to Min-Max |
 	| vec_type **mix**( vec_type a,vec_type b, float c ) | Linear Interpolate |
 	| vec_type **mix**( vec_type a,vec_type b, vec_type c ) | Linear Interpolate (Vector Coef.)|
-	| vec_type **step**( vec_type a,vec_type b) | %% a[i] < b[i] ? 0.0 : 1.0%%| 
+	| vec_type **step**( vec_type a,vec_type b) | ` a[i] < b[i] ? 0.0 : 1.0`| 
 	| float **length**( vec_type ) | Vector Length |
 	| float **distance**( vec_type, vec_type ) | Distance between vector. |
 	| float **dot**( vec_type, vec_type ) | Dot Product |

@@ -8,7 +8,7 @@ The scene system is very useful, but by itself it has a few drawbacks:
 
 *  There is no "common" place to store information (such as core, items obtained, etc) between two scenes.
 *  It is possible to make a scene that loads other scenes as children and frees them, while keeping that information, but then if that is done, it's not possible to run a scene alone by itself and expect it to work
-*  It is also possible to store persistent information to disk in %%user://%% and have scenes always load it, but saving/loading that while changing scenes is cumbersome.
+*  It is also possible to store persistent information to disk in `user://` and have scenes always load it, but saving/loading that while changing scenes is cumbersome.
 
 So, after using Godot for a while, it becomes clear that it is necessary to have parts of a scene that:
 

@@ -36,15 +36,15 @@ Godot only supports "/" as a directory delimiter. This is done for portability r
 
 ### Resource Path
 
-For accessing resources, using the host OS filesystem layout can be cumbersome and non portable. To solve this problem, the specal path %%"res://"%% was created.
+For accessing resources, using the host OS filesystem layout can be cumbersome and non portable. To solve this problem, the specal path `"res://"` was created.
 
-The path %%"res://"%% will always point at the project root (where engine.cfg is located, so in fact %%"res://engine.cfg"%% is always valid).
+The path `"res://"` will always point at the project root (where engine.cfg is located, so in fact `"res://engine.cfg"` is always valid).
 
 This filesystem is read-write only when running the project locally from the editor. When exported or when running on different devices (such as phones or consoles, or running from DVD), the filesystem will become read-only and writing will no longer be permitted.
 
 ### User Path
 
-Writing to disk is still needed often, from doing a savegame to downloading content packs. For this, the engine ensures that there is a special path %%"user://"%% that is always writable.
+Writing to disk is still needed often, from doing a savegame to downloading content packs. For this, the engine ensures that there is a special path `"user://"` that is always writable.
 
 ### Host Filesystem
 
