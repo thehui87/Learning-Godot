@@ -36,11 +36,8 @@ Scroll down to the section where the Android settings are located:
 
 In that screen, the path to 3 files needs to be set:
 
-
 *  The adb executable (adb.exe on Windows)
-
 *  The jarsigner executable (from JDK6)
-
 *  The debug keystore
 
 Once that is configured, everything is ready to export to Android!

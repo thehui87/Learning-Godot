@@ -18,9 +18,7 @@ Godot also uses the [extend](http://c2.com/cgi/wiki?EmbedVsExtend) pattern for s
 
 [GDScript](gdscript) (click link for reference) is a dynamically typed scripting language to fit inside Godot. It was designed with the following goals:
 
-
 *  First and most importantly, making it simple, familiar and as easy to learn as possible.
-
 *  Making the code readable and error safe. The syntax is mostly borrowed from Python.
 
 Programmers generally take a few days to learn it, and within two weeks feel comfortable with it.
@@ -36,7 +34,6 @@ Before continuing, please make sure to read the [GDScript](gdscript) reference. 
 #### Scene Setup
 
 This tutorial will begin by scripting a simple GUI scene. Use the add node dialog to create the following hierarchy, with the following nodes:
-
 
 *  Panel
     * Label

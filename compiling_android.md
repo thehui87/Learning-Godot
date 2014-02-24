@@ -6,13 +6,9 @@ For most cases, using the built in deployer and export templates is good enough.
 
 For compiling under Windows, the following is requiered:
 
-
 *  Python 2.7+ (3.0 is untested as of now).
-
 *  SCons build system.
-
 *  Android SDK version 8 and 13
-
 *  Android NDK
 
 # Setting Up SCons

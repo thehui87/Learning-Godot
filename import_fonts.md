@@ -28,11 +28,8 @@ Since the resulting font is a bitmap, a few more options were added to make the 
 #### Extra Spacing
 
 It is possible to add more space for:
-
 *  Characters, the space between them can be varied.
-
 *  "space" character, so the distance between words is bigger.
-
 *  Top and Bottom margins, this changes the spacing between lines as well as the space between the top and bottom lines and the borders.
 
 <p align="center"><img src="images/fontspacing.png"></p>

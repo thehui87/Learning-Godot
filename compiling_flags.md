@@ -24,11 +24,8 @@ scons <binary> tools=yes/no
 
 Target controls optimization and debug flags. Each mode means:
 
-
 *  **debug**: Build with C++ debugging symbols, runtime checks (performs checks and reports error) and none to little optimization.
-
 *  **release_debug**: Build without C++ debugging symbols and optimization, but keep the runtime checks (performs checks and reports errors)
-
 *  **release**: Build without symbols, with optimization and with little to no runtime checks.
 
 

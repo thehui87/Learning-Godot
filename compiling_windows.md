@@ -2,11 +2,8 @@
 
 For compiling under Windows, the following is requiered:
 
-
 *  [Visual C++](http://www.microsoft.com/visualstudio) Visual C++ or Visual C++ Express compiler.
-
 *  [Python 2.7+](http://www.python.org/getit/releases/2.7/) Python 2.7+ (3.0 is untested as of now). Using the 32-bits installer is recommended.
-
 *  [SCons](http://www.scons.org) SCons build system.
 
 # Setting Up SCons

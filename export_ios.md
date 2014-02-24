@@ -4,9 +4,7 @@ Exporting for iOS is done manually at the moment. These are the steps to load yo
 
 #### Requirements
 
-
 *  Download XCode for iOS
-
 *  Download the XCode project template: http://www.godotengine.org/builds/release/GodotiOSXCode.zip
 
 The zip contains an XCode project, "godot_ios.xcodeproj", an empty data.pck file and the engine executable. Open the project, and modify the game name, icon, organization, provisioning signing certificate identities (??), etc.

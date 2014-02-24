@@ -55,11 +55,8 @@ Once downloaded, they can be installed using the "Install Export Templates" opti
 
 When exporting, Godot makes a list of all the files to export and then creates the package. There are 3 different modes for exporting:
 
-
 *  Export every single file in the project
-
 *  Export only resources (+custom filter), this is default.
-
 *  Export only selected resources (+custom filter)
 
 <p align="center"><img src="images/expres.png"></p>

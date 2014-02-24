@@ -20,9 +20,7 @@ Several problems arise from trying to use standard image formats:
 ### Lack of MipMaps
 
 Images in 3D hardware are scaled with a (bi)linear filter, but this method has limitations. When images are shrunk too much, two problems arise:
-
 *  __Aliasing__: Pixels are skipped too much, and the image shows discontinuities. This decrases quality.
-
 *  __Cache Misses__: Pixels being read are too far apart, so texture cache reads a lot more data than it should. This decreases performance.
 
 (Todo, find image sample of why it looks bad)

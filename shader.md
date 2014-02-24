@@ -4,11 +4,8 @@
 
 Godot uses a simplified shader language (almost a subset of GLSL). Shaders can be used for:
 
-
 *  Materials
-
 *  Post-Process
-
 *  2D
 
 and are divided in *Vertex* and *Fragment* sections.

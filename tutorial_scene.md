@@ -16,15 +16,10 @@ There are many types of nodes, some show images, others play sound, other nodes 
 
 But let's go to the basics. A node is a basic element for creating a game, it has the following characteristics:
 
-
 *  Has a name.
-
 *  Has editable properties.
-
 *  Can receive a callback to process every frame.
-
 *  Can be extended (to have more functions).
-
 *  Can be added other nodes as children.
 
 
@@ -41,15 +36,10 @@ This is probably not clear yet and it makes little sense, but everything will cl
 
 Now that the existence of nodes has been defined, the next logical step is to explain what a Scene is.
 A scene is composed of a group of nodes organized hierarchically (in tree fashion). It has the following properties:
-
 *  A scene always has only one root node.
-
 *  Scenes can be saved to disk and loaded back.
-
 *  Scenes can be *instanced* (more on that later).
-
 *  Running a game means running a scene. 
-
 *  There can be several scenes in a project, but for it to start, one of them must selected to be loaded first.
 
 Basically, the Godot editor is a *scene editor*. It has plenty of tools for editing 2D and 3D scenes as well as user interfaces, but all the editor revolves around the concept of editing a scene and the nodes that compose it.

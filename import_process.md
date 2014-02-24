@@ -18,13 +18,9 @@ The aim of the import system is that it works well enough for most common cases 
 
 However, as mentioned before, this is on of the most difficult areas of writing a game engine. It may happen often (specially on large projects, ports, or projects with unusual requirement) that what is provided is not enough. It's easy to say that the engine is open source and that the programmer should make their own if they don't like what is there, but that would be making a huge disservice to the users and not the right attitude. Because of that, we made sure to provide as many tools and helpers as possible to support a custom import process, for example:
 
-
 *  Access to the internals of almost all data structures is provided to the scripting and C++ API, as well as saving and loading in all supported file formats.
-
 *  Some importers (like the 3D asset importer) support scripts to modify the data being imported.
-
 *  Support for creating custom import plugins is also provided, even for replacing the existing ones.
-
 *  If all else fails, Godot supports for adding custom resource loaders, to load data in alternative formats, without intermediate conversion.
 
 Both the import system and the custom tools provided will improve over time as more use cases are revealed to us.

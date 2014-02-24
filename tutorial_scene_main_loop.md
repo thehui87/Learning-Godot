@@ -24,11 +24,8 @@ This is automatically instanced and set when running a scene, no need to do any 
 
 It's important to know that this class exists because it has a few important uses:
 
-
 *  It contains the root [Viewport](class_viewport), when a scene is first opened, it's added as a child of it to become part of the active scene (more on that next)
-
 *  It contains information about the groups, and has means to call all nodes in a group, or get a list of them.
-
 *  It contains some global state functionality, such as setting pause mode, or quitting the process.
 
 When a node is part of the active scene, the [SceneMainLoop](class_scenemainloop) can be obtained by simply calling [Node.get_scene](class_node#get_scene)().

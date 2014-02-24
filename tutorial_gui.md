@@ -4,13 +4,9 @@
 
 If there is something that most programmers hate with passion, that is programming graphical user interfaces (GUIs). It's boring, tedious and unchallenging. Several aspects make matters worse such as:
 
-
 *  Pixel alignment of UI elements is difficult (so it looks just like the designer intends).
-
 *  UIs are changed constantly due to design and usability issues that appear during testing.
-
 *  Handling proper screen re-sizing for different display resolutions.
-
 *  Animating several screen components, to make it look less static.
 
 GUI programming is one of the leading causes of programmer burnout. During the development of Godot (and previous engine iterations), several techniques and philosophies for UI development were put in practice, such as immediate mode, containers, anchors, scripting, etc. This was always done with the main goal of reducing the stress programmers had to face while putting together user interfaces.
@@ -79,13 +75,9 @@ As mentioned before, Godot includes dozens of controls ready for using in a user
 
 This set of controls is enough for most games, where complex interactions or ways to present information are not necessary. The can be skinned easily with regular textures.
 
-
 *  [Label](class_label) : Node used for showing text.
-
 *  [TextureFrame](class_textureframe) : Displays a single texture, which can be scaled or kept fixed.
-
 *  [TextureButton](class_texturebutton) : Displays a simple texture buttons, states such as pressed, hover, disabled, etc can be set.
-
 *  [TextureProgress](class_textureprogress) : Displays a single textured progress bar.
 
 
@@ -97,11 +89,8 @@ In any case, it will happen often that even for simple games, more complex UI be
 
 The rest of the controls (and there are dozens of them!) are meant for another set of scenarios, most commonly:
 
-
 *  Games that require complex UIs, such as PC RPGs, MMOs, strategy, sims, etc.
-
 *  Creating custom development tools to speed up content creation.
-
 *  Creating Godot Editor Plugins, to extend the engine functionality.
 
 Re-positioning controls for these kind of interfaces is more commonly done with containers (see the [Size and Anchors](tutorial_gui_repositioning) tutorial for more info).

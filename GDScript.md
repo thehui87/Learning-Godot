@@ -10,15 +10,10 @@ In the early days, the engine used the [Lua](http://www.lua.org/) scripting lang
 
 The last third party scripting language that was used for shipped games was [Squirrel](http://squirrel-lang.org/), but it was also dropped too. At that point, it became evident that Godot would work more optimally by using a built-in scripting language, as the following barriers were met:
 
-
 *  Godot embeds scripts in nodes, most languages are not designed with this in mind.
-
 *  Godot uses several built-in data types for 2D and 3D math, script languages do not provide this, and binding them is inefficient.
-
 *  Godot uses threads heavily for lifting and initializing data from the net or disk, script interpreters for common languages are not friendly to this.
-
 *  Godot already has a memory management model for resources, most script languages provide their own, which resulted in duplicate effort and bugs.
-
 *  Binding code is always messy and results in several failure points, unexpected bugs and general unmaintainability.
 
 Finally, GDScript was written as a custom solution. The language and interpreter for it ended up being smaller than the binding code itself for Lua and Squirrel, and equally as functional. With time, having a built-in language has proven to be a huge advantage.

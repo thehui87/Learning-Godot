@@ -2,21 +2,13 @@
 
 For compiling under Linux or other Unix variants, the following is requiered:
 
-
 *  GCC or LLVM 
-
 *  Python 2.7+ (3.0 is untested as of now).
-
 *  SCons build system.
-
 *  X11 and MESA development Libraries
-
 *  ALSA development libraries
-
 *  Freetype (for the editor)
-
 *  pkg-config (used to detect the above three)
-
 *  **Ubuntu Users:** apt-get install scons pkg-config libx11-dev libxcursor-dev build-essential libasound2-dev libfreetype6-dev libgl1-mesa-dev libglu-dev
 
 # Compiling
