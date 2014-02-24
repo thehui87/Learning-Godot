@@ -1,5 +1,3 @@
-**Note**: Please do not change the guest account password!
-
 # Introduction
 
 Welcome to the Godot Engine documentation center. The aim of these pages is to provide centralized access to all documentation-related materials.
