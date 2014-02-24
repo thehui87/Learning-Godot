@@ -5,7 +5,7 @@ In this simple tutorial, a basic game of Pong will be created. There are plenty 
 
 ### Assets
 
-Some assets are included for this tutorial, the <p align="center"><img src="pong_assets.zip|pong pads, the ball and the divisor}}.
+Some assets are included for this tutorial, the [pong pads, the ball and the divisor](media/pong_assets.zip).
 
 ### Scene Setup
 
