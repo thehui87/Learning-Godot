@@ -38,7 +38,7 @@ var player_vars = get_node("/root/playervariables")
 ### Scene Switcher
 
 This short tutorial will explain how to make a scene switcher by using autoload.
-First download the template from here:[autoload.zip](media/autoload.zip), then open it.
+First download the template from here: [autoload.zip](media/autoload.zip), then open it.
 
 Two scenes are present, scene_a.scn and scene_b.scn on an otherwise empty project. Each are identical and contain a button connected to a callback for going to the opposite scene. When the project runs, it starts n scene_a.scn. However, this does nothing and pressing the button does not work.
 
