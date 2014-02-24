@@ -35,7 +35,6 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Paths](paths)
 *  ~~[Thread Safety](thread_safety) Using Multiple Threads.~~
 
-
 #### Editor Plug-Ins
 
 *  ~~[Editor Plugin](editor_plugin) Writing an editor extension.~~
@@ -43,6 +42,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  ~~[Editor Import-Export](editor_import) Writing an editor import-export extension.~~
 *  ~~[Editor Scene Loader](editor_scene_loader) Writing a scene format loader.~~
 *  ~~[Editor 3D Import](editor_import_3d) Writing a script for customizing imported 3D scenes.~~
+
 # Reference
 
 #### Class List
