@@ -22,7 +22,8 @@ Finally, GDScript was written. The language and interpreter for it ended up bein
 
 Some people can learn better by just taking a look at the syntax, so here’s a simple example of how it looks.
 
-```python#a file is a class!
+```python
+#a file is a class!
 
 # inheritance
 
