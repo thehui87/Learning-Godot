@@ -18,25 +18,25 @@ The language is statically type and only supports a few operations. Arrays, clas
 
 #### Data Types
 
- | DataType   | Description                                                | 
- | --------   | -----------                                                | 
- | void       | Void                                                       | 
- | bool       | boolean (true or false)                                    | 
- | float      | floating point                                             | 
- | vec2       | 2-component vector, float subindices (x,y or r,g )         | 
- | vec3       | 3-component vector, float subindices (x,y,z or r,g,b )     | 
- | vec4,color | 4-component vector, float subindices (x,y,z,w or r,g,b,a ) | 
- | mat3       | 3x3 matrix, vec3 subindices (x,y,z)                        | 
- | mat4       | 4x4 matrix, vec4 subindices (x,y,z,w)                      | 
- | texture    | texture sampler, can only be used as uniform               | 
- | cubemap    | cubemap sampler, can only be used as uniform               | 
+| DataType   | Description                                                | 
+| --------   | -----------                                                | 
+| void       | Void                                                       | 
+| bool       | boolean (true or false)                                    | 
+| float      | floating point                                             | 
+| vec2       | 2-component vector, float subindices (x,y or r,g )         | 
+| vec3       | 3-component vector, float subindices (x,y,z or r,g,b )     | 
+| vec4,color | 4-component vector, float subindices (x,y,z,w or r,g,b,a ) | 
+| mat3       | 3x3 matrix, vec3 subindices (x,y,z)                        | 
+| mat4       | 4x4 matrix, vec4 subindices (x,y,z,w)                      | 
+| texture    | texture sampler, can only be used as uniform               | 
+| cubemap    | cubemap sampler, can only be used as uniform               | 
 
 #### Syntax
 
 The syntax is similar to C, with statements ending in ; , and comments as `// and /* */`.
 Example:
 
-	:::C
+	```C
 	float a = 3;
 	vec3 b;
 	b.x = a;
@@ -46,7 +46,7 @@ Example:
 	
 	It is possible to use swizzling to reasigning subindices or groups of subindices, in order:
 	
-	<code C>
+	```c
 	vec3 a = vec3(1,2,3);
 	vec3 b = a.zyx; // b will contain vec3(3,2,1)
 	vec2 c = a.xy; // c will contain vec2(1,2)
@@ -57,7 +57,7 @@ Example:
 	
 	Constructors take the regular amount of elements, but can also accept less if the element has more subindices, for example:
 	
-	<code C>
+	```c
 	vec3 a = vec3( 1, vec2(2,3) );
 	vec3 b = vec3( a );
 	vec3 c = vec3( vec2(2,3), 1 );
@@ -71,7 +71,7 @@ Example:
 	
 	For now, only the "if" conditional is supported. Example:
 	
-	<code C>
+	```c
 	if (a < b) {
 	   c = b;
 	}
