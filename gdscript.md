@@ -104,35 +104,35 @@ The following is the list of keywords supported by the language. Since keywords 
 
 The following is the list of supported operators and their precedence (TODO, change since this was made to reflect python operators)
 
- | Operator              | Description                    |                            
- | -------- | ----------- |                            
- | `x[index]`          | Subscription, Highest Priority |                            
- | x.attribute           | Attribute Reference            |                            
- | extends               | Instance Type Checker          |                            
- | `~`                 | Bitwise NOT                    |                            
- | -x                    | Negative                       |                            
- | * / %                 | Mult / Div / Remainder         |                            
- | + -                   | Addition / Substraction        |                            
- | `<< >>`             | Bit Shifting                   |                            
- | &                     | Bitwise AND                    |                            
- | `^`                 | Bitwise XOR                    |                            
- | `                    | `                             | Bitwise OR                  |           
- | `< > == != >= <=`   | Comparisons                    |                            
- | in                    | Content Test                   |                            
- | `! not`             | Boolean NOT                    |                            
- | and &&                | Boolean AND                    |                            
- | or `                 |                                | `                          | Boolean OR | 
- | `= += -= *= /= %= &= | =`                            | Assignment, Lowest Priority |           
+| Operator              | Description                    |                            
+| -------- | ----------- |                            
+| `x[index]`          | Subscription, Highest Priority |                            
+| x.attribute           | Attribute Reference            |                            
+| extends               | Instance Type Checker          |                            
+| `~`                 | Bitwise NOT                    |                            
+| -x                    | Negative                       |                            
+| * / %                 | Mult / Div / Remainder         |                            
+| + -                   | Addition / Substraction        |                            
+| `<< >>`             | Bit Shifting                   |                            
+| &                     | Bitwise AND                    |                            
+| `^`                 | Bitwise XOR                    |                            
+| `                    | `                             | Bitwise OR                  |           
+| `< > == != >= <=`   | Comparisons                    |                            
+ in                    | Content Test                   |                            
+| `! not`             | Boolean NOT                    |                            
+| and &&                | Boolean AND                    |                            
+| or `||`                          | Boolean OR | 
+| `= += -= *= /= %= &= | =` | Assignment, Lowest Priority |           
 
 ##  Literals 
 
- | Literal               | Name                         | 
- | -------               | ----                         | 
- | 45                    | Base 10 Integer              | 
- | 0x8F51                | Base 16 (hex) Integer        | 
- | 3.14, 58.1e-10        | Floating Point Number (real) | 
- | ’Hello’, “Hi” | Strings                      | 
- | @"Node/Label"         | Node Path or StringName      | 
+| Literal               | Name                         | 
+| -------               | ----                         | 
+| 45                    | Base 10 Integer              | 
+| 0x8F51                | Base 16 (hex) Integer        | 
+| 3.14, 58.1e-10        | Floating Point Number (real) | 
+| ’Hello’, “Hi” | Strings                      | 
+| @"Node/Label"         | Node Path or StringName      | 
 
 ##  Comments 
 
