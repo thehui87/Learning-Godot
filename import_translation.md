@@ -16,17 +16,17 @@ Translators also, most of the time prefer to work with spreadsheets (either as a
 
 To complete the picture and allow efficient support for translations, Godot has a special importer that can read .csv files. Both Microsoft Excel and Google Spreadsheet can export to this format, so the only requirement is that the files have a special format. The csv files must be saved in utf-8 encoding and the format is as follows:
 
-|     | `<lang1>` | `<lang2>` | `<langN>` | 
+|     | <lang1> | <lang2> | <langN> | 
 | ---- | ----------- | ----------- | ----------- | 
-| KEY1 | `string`| `string`|`string`|
-| KEY2 | `string`| `string`|`string`|
-| KEYN | `string`| `string`|`string`|
+| KEY1 | string | string |string |
+| KEY2 | string | string |string |
+| KEYN | string | string |string |
 
 The "lang" tags must represent a language, it must be one of the [valid locales](locales) supported by the engine. The "KEY" tags must be unique and represent a string universally (they are usually in uppercase, to differentiate from other strings). Here's an example:
 
 
 |                                                        | en | es | ja | 
-|                                                        | -- | -- | -- | 
+| -- | -- | -- | -- | 
 | GREET | Hello, friend! | Hola, Amigo!|こんにちは|
 | ASK | How are you?| Cómo esta?|元気ですか|      
 | BYE | Good Bye| Adiós|さようなら|               
