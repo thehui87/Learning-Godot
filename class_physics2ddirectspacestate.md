@@ -8,6 +8,7 @@ Direct access object to a space in the [Physics2DServer](class_physics2dserver).
 ###  Member Functions 
   * void  **[intersect&#95;ray](#intersect_ray)**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to, [Array](class_array) exclude=Array(), [int](class_int) umask=0  **)**
   * void  **[intersect&#95;shape](#intersect_shape)**  **(** [RID](class_rid) shape, [Matrix32](class_matrix32) xform, [int](class_int) result_max, [Array](class_array) exclude=Array(), [int](class_int) umask=0  **)**
+  * void  **[cast&#95;motion](#cast_motion)**  **(** [RID](class_rid) shape, [Matrix32](class_matrix32) xform, [int](class_int) motion, [Array](class_array) exclude=Array(), [int](class_int) umask=0  **)**
 
 ###  Description  
 Direct access object to a space in the [Physics2DServer](class_physics2dserver). It's used mainly to do queries against objects and areas residing in a given space.

@@ -13,6 +13,11 @@
   * [int](class_int) **type**
   * [int](class_int) **device**
   * [int](class_int) **ID**
+  * [int](class_int) **index**
+  * [real](class_real) **x**
+  * [real](class_real) **y**
+  * [Vector2](class_vector2) **pos**
+  * [bool](class_bool) **pressed**
 
 ###  Numeric Constants  
   * **NONE** = **0**

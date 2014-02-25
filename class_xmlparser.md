@@ -21,7 +21,8 @@
   * [int](class_int)  **[get&#95;current&#95;line](#get_current_line)**  **(** **)** const
   * void  **[skip&#95;section](#skip_section)**  **(** **)**
   * [int](class_int)  **[seek](#seek)**  **(** [int](class_int) arg0  **)**
-  * [int](class_int)  **[open](#open)**  **(** [String](class_string) arg0  **)**
+  * [int](class_int)  **[open](#open)**  **(** [String](class_string) file  **)**
+  * [int](class_int)  **[open&#95;buffer](#open_buffer)**  **(** [RawArray](class_rawarray) buffer  **)**
 
 ###  Numeric Constants  
   * **NODE_NONE** = **0**

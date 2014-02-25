@@ -10,6 +10,8 @@ Camera node for 2D scenes.
   * [Vector2](class_vector2)  **[get&#95;offset](#get_offset)**  **(** **)** const
   * void  **[set&#95;centered](#set_centered)**  **(** [bool](class_bool) centered  **)**
   * [bool](class_bool)  **[is&#95;centered](#is_centered)**  **(** **)** const
+  * void  **[set&#95;rotating](#set_rotating)**  **(** [bool](class_bool) rotating  **)**
+  * [bool](class_bool)  **[is&#95;rotating](#is_rotating)**  **(** **)** const
   * void  **[make&#95;current](#make_current)**  **(** **)**
   * [bool](class_bool)  **[is&#95;current](#is_current)**  **(** **)** const
   * void  **[set&#95;limit](#set_limit)**  **(** [int](class_int) margin, [int](class_int) limit  **)**

@@ -30,7 +30,6 @@ Global scope constants and variables.
   * [SpatialSound2DServer](class_spatialsound2dserver) **SS**
   * [SpatialSound2DServer](class_spatialsound2dserver) **SpatialSound2DServer**
   * [SpatialSound2DServer](class_spatialsound2dserver) **SS2D**
-  * [Flurry](class_flurry) **Flurry**
 
 ###  Numeric Constants  
   * **MARGIN_LEFT** = **0** - Left margin, used usually for [Control] or [StyleBox] derived classes.

@@ -31,6 +31,8 @@ Theme for controls.
   * [bool](class_bool)  **[has&#95;constant](#has_constant)**  **(** [String](class_string) name, [String](class_string) type  **)** const
   * void  **[clear&#95;constant](#clear_constant)**  **(** [String](class_string) name, [String](class_string) type  **)**
   * [StringArray](class_stringarray)  **[get&#95;constant&#95;list](#get_constant_list)**  **(** [String](class_string) arg0  **)** const
+  * void  **[set&#95;default&#95;font](#set_default_font)**  **(** [Object](class_object) font  **)**
+  * [Object](class_object)  **[get&#95;default&#95;font](#get_default_font)**  **(** **)** const
   * [StringArray](class_stringarray)  **[get&#95;type&#95;list](#get_type_list)**  **(** [String](class_string) arg0  **)** const
   * void  **[copy&#95;default&#95;theme](#copy_default_theme)**  **(** **)**
 

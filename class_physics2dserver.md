@@ -29,8 +29,8 @@ Physics 2D Server.
   * [Matrix32](class_matrix32)  **[area&#95;get&#95;shape&#95;transform](#area_get_shape_transform)**  **(** [RID](class_rid) area, [int](class_int) shape_idx  **)** const
   * void  **[area&#95;remove&#95;shape](#area_remove_shape)**  **(** [RID](class_rid) area, [int](class_int) shape_idx  **)**
   * void  **[area&#95;clear&#95;shapes](#area_clear_shapes)**  **(** [RID](class_rid) area  **)**
-  * void  **[area&#95;set&#95;param](#area_set_param)**  **(** [RID](class_rid) area, [int](class_int) param  **)** const
-  * [Matrix32](class_matrix32)  **[area&#95;set&#95;transform](#area_set_transform)**  **(** [RID](class_rid) area  **)** const
+  * void  **[area&#95;set&#95;param](#area_set_param)**  **(** [RID](class_rid) area, [int](class_int) param, var value  **)**
+  * void  **[area&#95;set&#95;transform](#area_set_transform)**  **(** [RID](class_rid) area, [Matrix32](class_matrix32) transform  **)**
   * void  **[area&#95;get&#95;param](#area_get_param)**  **(** [RID](class_rid) area, [int](class_int) param  **)** const
   * [Matrix32](class_matrix32)  **[area&#95;get&#95;transform](#area_get_transform)**  **(** [RID](class_rid) area  **)** const
   * void  **[area&#95;attach&#95;object&#95;instance&#95;ID](#area_attach_object_instance_ID)**  **(** [RID](class_rid) area, [int](class_int) id  **)**
@@ -40,7 +40,7 @@ Physics 2D Server.
   * void  **[body&#95;set&#95;space](#body_set_space)**  **(** [RID](class_rid) body, [RID](class_rid) space  **)**
   * [RID](class_rid)  **[body&#95;get&#95;space](#body_get_space)**  **(** [RID](class_rid) body  **)** const
   * void  **[body&#95;set&#95;mode](#body_set_mode)**  **(** [RID](class_rid) body, [int](class_int) mode  **)**
-  * [int](class_int)  **[body&#95;get&#95;mode](#body_get_mode)**  **(** [RID](class_rid) body, [int](class_int) arg1  **)** const
+  * [int](class_int)  **[body&#95;get&#95;mode](#body_get_mode)**  **(** [RID](class_rid) body  **)** const
   * void  **[body&#95;add&#95;shape](#body_add_shape)**  **(** [RID](class_rid) body, [RID](class_rid) shape, [Matrix32](class_matrix32) transform=1,0, 0,1, 0,0  **)**
   * void  **[body&#95;set&#95;shape](#body_set_shape)**  **(** [RID](class_rid) body, [int](class_int) shape_idx, [RID](class_rid) shape  **)**
   * void  **[body&#95;set&#95;shape&#95;transform](#body_set_shape_transform)**  **(** [RID](class_rid) body, [int](class_int) shape_idx, [Matrix32](class_matrix32) transform  **)**
@@ -53,11 +53,10 @@ Physics 2D Server.
   * [bool](class_bool)  **[body&#95;is&#95;shape&#95;set&#95;as&#95;trigger](#body_is_shape_set_as_trigger)**  **(** [RID](class_rid) body, [int](class_int) shape_idx  **)** const
   * void  **[body&#95;attach&#95;object&#95;instance&#95;ID](#body_attach_object_instance_ID)**  **(** [RID](class_rid) body, [int](class_int) id  **)**
   * [int](class_int)  **[body&#95;get&#95;object&#95;instance&#95;ID](#body_get_object_instance_ID)**  **(** [RID](class_rid) body  **)** const
-  * void  **[body&#95;set&#95;enable&#95;continuous&#95;collision&#95;detection](#body_set_enable_continuous_collision_detection)**  **(** [RID](class_rid) body, [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[body&#95;is&#95;continuous&#95;collision&#95;detection&#95;enabled](#body_is_continuous_collision_detection_enabled)**  **(** [RID](class_rid) body  **)** const
+  * void  **[body&#95;set&#95;continuous&#95;collision&#95;detection&#95;mode](#body_set_continuous_collision_detection_mode)**  **(** [RID](class_rid) body, [int](class_int) mode  **)**
+  * [int](class_int)  **[body&#95;get&#95;continuous&#95;collision&#95;detection&#95;mode](#body_get_continuous_collision_detection_mode)**  **(** [RID](class_rid) body  **)** const
   * void  **[body&#95;set&#95;param](#body_set_param)**  **(** [RID](class_rid) body, [int](class_int) param, [real](class_real) value  **)**
   * [real](class_real)  **[body&#95;get&#95;param](#body_get_param)**  **(** [RID](class_rid) body, [int](class_int) param  **)** const
-  * void  **[body&#95;static&#95;simulate&#95;motion](#body_static_simulate_motion)**  **(** [RID](class_rid) body, [Matrix32](class_matrix32) new_xform  **)**
   * void  **[body&#95;set&#95;state](#body_set_state)**  **(** [RID](class_rid) body, [int](class_int) state, var value  **)**
   * void  **[body&#95;get&#95;state](#body_get_state)**  **(** [RID](class_rid) body, [int](class_int) state  **)** const
   * void  **[body&#95;apply&#95;impulse](#body_apply_impulse)**  **(** [RID](class_rid) body, [Vector2](class_vector2) pos, [Vector2](class_vector2) impulse  **)**
@@ -117,6 +116,9 @@ Physics 2D Server.
   * **DAMPED_STRING_REST_LENGTH** = **0**
   * **DAMPED_STRING_STIFFNESS** = **1**
   * **DAMPED_STRING_DAMPING** = **2**
+  * **CCD_MODE_DISABLED** = **0**
+  * **CCD_MODE_CAST_RAY** = **1**
+  * **CCD_MODE_CAST_SHAPE** = **2**
   * **AREA_BODY_ADDED** = **0**
   * **AREA_BODY_REMOVED** = **1**
 

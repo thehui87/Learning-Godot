@@ -6,8 +6,6 @@
 Static body for 2D Physics.
 
 ###  Member Functions 
-  * void  **[set&#95;simulate&#95;motion](#set_simulate_motion)**  **(** [bool](class_bool) enabled  **)**
-  * [bool](class_bool)  **[is&#95;simulating&#95;motion](#is_simulating_motion)**  **(** **)** const
   * void  **[set&#95;constant&#95;linear&#95;velocity](#set_constant_linear_velocity)**  **(** [Vector2](class_vector2) vel  **)**
   * void  **[set&#95;constant&#95;angular&#95;velocity](#set_constant_angular_velocity)**  **(** [real](class_real) vel  **)**
   * [Vector2](class_vector2)  **[get&#95;constant&#95;linear&#95;velocity](#get_constant_linear_velocity)**  **(** **)** const
@@ -24,16 +22,6 @@ Static body for 2D Physics. A static body is a simple body that is not intended 
 	Alternatively, a constant linear or angular velocity can be set for the static body, so even if it doesn't move, it affects other bodies as if it was moving (this is useful for simulating conveyor belts or conveyor wheels).
 
 ###  Member Function Description  
-
-#### <a name="set_simulate_motion">set_simulate_motion</a>
-  * void  **set&#95;simulate&#95;motion**  **(** [bool](class_bool) enabled  **)**
-
-Enable or disable simulated motion mode.
-
-#### <a name="is_simulating_motion">is_simulating_motion</a>
-  * [bool](class_bool)  **is&#95;simulating&#95;motion**  **(** **)** const
-
-Return true if simulated motion mode is enabled.
 
 #### <a name="set_constant_linear_velocity">set_constant_linear_velocity</a>
   * void  **set&#95;constant&#95;linear&#95;velocity**  **(** [Vector2](class_vector2) vel  **)**

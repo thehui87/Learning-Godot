@@ -17,7 +17,9 @@ Vector used for 2D Math.
   * [real](class_real)  **[length&#95;squared](#length_squared)**  **(** **)**
   * [Vector2](class_vector2)  **[linear&#95;interpolate](#linear_interpolate)**  **(** [Vector2](class_vector2) b, [real](class_real) t  **)**
   * [Vector2](class_vector2)  **[normalized](#normalized)**  **(** **)**
+  * [real](class_real)  **[reflect](#reflect)**  **(** [Vector2](class_vector2) vec  **)**
   * [Vector2](class_vector2)  **[rotated](#rotated)**  **(** [real](class_real) phi  **)**
+  * [real](class_real)  **[slide](#slide)**  **(** [Vector2](class_vector2) vec  **)**
   * [Vector2](class_vector2)  **[snapped](#snapped)**  **(** [Vector2](class_vector2) by  **)**
   * [Vector2](class_vector2)  **[tangent](#tangent)**  **(** **)**
   * void  **[Vector2](#Vector2)**  **(** [real](class_real) x, [real](class_real) y  **)**

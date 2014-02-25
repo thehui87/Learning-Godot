@@ -11,8 +11,10 @@ Tile library for tilemaps.
   * [String](class_string)  **[tile&#95;get&#95;name](#tile_get_name)**  **(** [int](class_int) id  **)** const
   * void  **[tile&#95;set&#95;texture](#tile_set_texture)**  **(** [int](class_int) id, [Texture](class_texture) texture  **)**
   * [Texture](class_texture)  **[tile&#95;get&#95;texture](#tile_get_texture)**  **(** [int](class_int) id  **)** const
-  * void  **[tile&#95;set&#95;offset](#tile_set_offset)**  **(** [int](class_int) id, [Vector2](class_vector2) offset  **)**
-  * [Vector2](class_vector2)  **[tile&#95;get&#95;offset](#tile_get_offset)**  **(** [int](class_int) id  **)** const
+  * void  **[tile&#95;set&#95;texture&#95;offset](#tile_set_texture_offset)**  **(** [int](class_int) id, [Vector2](class_vector2) texture_offset  **)**
+  * [Vector2](class_vector2)  **[tile&#95;get&#95;texture&#95;offset](#tile_get_texture_offset)**  **(** [int](class_int) id  **)** const
+  * void  **[tile&#95;set&#95;shape&#95;offset](#tile_set_shape_offset)**  **(** [int](class_int) id, [Vector2](class_vector2) shape_offset  **)**
+  * [Vector2](class_vector2)  **[tile&#95;get&#95;shape&#95;offset](#tile_get_shape_offset)**  **(** [int](class_int) id  **)** const
   * void  **[tile&#95;set&#95;region](#tile_set_region)**  **(** [int](class_int) id, [Rect2](class_rect2) region  **)**
   * [Rect2](class_rect2)  **[tile&#95;get&#95;region](#tile_get_region)**  **(** [int](class_int) id  **)** const
   * void  **[tile&#95;set&#95;shape](#tile_set_shape)**  **(** [int](class_int) id, [Shape2D](class_shape2d) shape  **)**
@@ -23,6 +25,7 @@ Tile library for tilemaps.
   * void  **[clear](#clear)**  **(** **)**
   * [int](class_int)  **[get&#95;last&#95;unused&#95;tile&#95;id](#get_last_unused_tile_id)**  **(** **)** const
   * [int](class_int)  **[find&#95;tile&#95;by&#95;name](#find_tile_by_name)**  **(** [String](class_string) name  **)** const
+  * [Array](class_array)  **[get&#95;tiles&#95;ids](#get_tiles_ids)**  **(** **)** const
 
 ###  Description  
 A TileSet is a library of tiles for a [TileMap](class_tilemap). It contains a list of tiles, each consisting of a sprite and optional collision shapes.
@@ -53,16 +56,6 @@ Set the texture of the tile.
   * [Texture](class_texture)  **tile&#95;get&#95;texture**  **(** [int](class_int) id  **)** const
 
 Return the texture of the tile.
-
-#### <a name="tile_set_offset">tile_set_offset</a>
-  * void  **tile&#95;set&#95;offset**  **(** [int](class_int) id, [Vector2](class_vector2) offset  **)**
-
-Set the offset to draw the tile.
-
-#### <a name="tile_get_offset">tile_get_offset</a>
-  * [Vector2](class_vector2)  **tile&#95;get&#95;offset**  **(** [int](class_int) id  **)** const
-
-Return the offset to draw the tile.
 
 #### <a name="tile_set_region">tile_set_region</a>
   * void  **tile&#95;set&#95;region**  **(** [int](class_int) id, [Rect2](class_rect2) region  **)**

@@ -27,8 +27,8 @@ Rigid body 2D node.
   * [bool](class_bool)  **[is&#95;using&#95;custom&#95;integrator](#is_using_custom_integrator)**  **(** **)**
   * void  **[set&#95;contact&#95;monitor](#set_contact_monitor)**  **(** [bool](class_bool) enabled  **)**
   * [bool](class_bool)  **[is&#95;contact&#95;monitor&#95;enabled](#is_contact_monitor_enabled)**  **(** **)** const
-  * void  **[set&#95;use&#95;continuous&#95;collision&#95;detection](#set_use_continuous_collision_detection)**  **(** [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[is&#95;using&#95;continuous&#95;collision&#95;detection](#is_using_continuous_collision_detection)**  **(** **)** const
+  * void  **[set&#95;continuous&#95;collision&#95;detection&#95;mode](#set_continuous_collision_detection_mode)**  **(** [int](class_int) mode  **)**
+  * [int](class_int)  **[get&#95;continuous&#95;collision&#95;detection&#95;mode](#get_continuous_collision_detection_mode)**  **(** **)** const
   * void  **[set&#95;axis&#95;velocity](#set_axis_velocity)**  **(** [Vector2](class_vector2) axis_velocity  **)**
   * void  **[apply&#95;impulse](#apply_impulse)**  **(** [Vector2](class_vector2) pos, [Vector2](class_vector2) impulse  **)**
   * void  **[set&#95;applied&#95;force](#set_applied_force)**  **(** [Vector2](class_vector2) force  **)**
@@ -49,6 +49,9 @@ Rigid body 2D node.
   * **MODE_KINEMATIC** = **3**
   * **MODE_RIGID** = **0** - Rigid body, can move and rotate.
   * **MODE_CHARACTER** = **2** - Character body, can move but not rotate.
+  * **CCD_MODE_DISABLED** = **0**
+  * **CCD_MODE_CAST_RAY** = **1**
+  * **CCD_MODE_CAST_SHAPE** = **2**
 
 ###  Description  
 Rigid body 2D node. This node is used for placing rigid bodies in the scene. It can contain a number of shapes, and also shift state between regular Rigid Body to Character or even Static. 
@@ -162,16 +165,6 @@ Enable contact monitoring. (the signals to notify when a body entered/exited col
   * [bool](class_bool)  **is&#95;contact&#95;monitor&#95;enabled**  **(** **)** const
 
 Return wether contact monitoring is enabled.
-
-#### <a name="set_use_continuous_collision_detection">set_use_continuous_collision_detection</a>
-  * void  **set&#95;use&#95;continuous&#95;collision&#95;detection**  **(** [bool](class_bool) enable  **)**
-
-Enable continuos collision detection. This prevents very fast-moving bodies (such as bullets) to not go through objects.
-
-#### <a name="is_using_continuous_collision_detection">is_using_continuous_collision_detection</a>
-  * [bool](class_bool)  **is&#95;using&#95;continuous&#95;collision&#95;detection**  **(** **)** const
-
-Return true if  continuous collision detection is in use.
 
 #### <a name="set_axis_velocity">set_axis_velocity</a>
   * void  **set&#95;axis&#95;velocity**  **(** [Vector2](class_vector2) axis_velocity  **)**

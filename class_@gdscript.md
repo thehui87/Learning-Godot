@@ -55,9 +55,13 @@ Built-in GDScript functions.
   * [Nil](class_nil)  **[printerr](#printerr)**  **(** var what, var ...  **)**
   * [Nil](class_nil)  **[printraw](#printraw)**  **(** var what, var ...  **)**
   * [Array](class_array)  **[range](#range)**  **(** var ...  **)**
+  * [Object](class_object)  **[load](#load)**  **(** [String](class_string) path  **)**
   * [Dictionary](class_dictionary)  **[inst2dict](#inst2dict)**  **(** [Object](class_object) inst  **)**
   * [Object](class_object)  **[dict2inst](#dict2inst)**  **(** [Dictionary](class_dictionary) dict  **)**
   * [Nil](class_nil)  **[print&#95;stack](#print_stack)**  **(** **)**
+
+###  Numeric Constants  
+  * **PI** = **3.141593**
 
 ###  Description  
 This contains the list of built-in gdscript functions. Mostly math functions and other utilities. Everything else is expanded by objects.
