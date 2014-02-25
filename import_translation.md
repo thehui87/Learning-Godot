@@ -25,11 +25,11 @@ To complete the picture and allow efficient support for translations, Godot has 
 The "lang" tags must represent a language, it must be one of the [valid locales](locales) supported by the engine. The "KEY" tags must be unique and represent a string universally (they are usually in uppercase, to differentiate from other strings). Here's an example:
 
 
-|                                                        | en | es | ja | 
-| -- | -- | -- | -- | 
-| GREET | Hello, friend! | Hola, Amigo!|こんにちは|
-| ASK | How are you?| Cómo esta?|元気ですか|      
-| BYE | Good Bye| Adiós|さようなら|               
+|  en | es | ja | 
+| --- | --- | --- | --- | 
+| GREET | Hello, friend! | Hola, Amigo! | こんにちは |
+| ASK | How are you?| Cómo esta?| 元気ですか |      
+| BYE | Good Bye| Adiós | さようなら |               
 
 #### Import Dialog
 
