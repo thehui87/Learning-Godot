@@ -16,8 +16,8 @@ Translators also, most of the time prefer to work with spreadsheets (either as a
 
 To complete the picture and allow efficient support for translations, Godot has a special importer that can read .csv files. Both Microsoft Excel and Google Spreadsheet can export to this format, so the only requirement is that the files have a special format. The csv files must be saved in utf-8 encoding and the format is as follows:
 
-|                                         | `<lang1>` | `<lang2>` | `<langN>` | 
-|                                           | ----------- | ----------- | ----------- | 
+|     | `<lang1>` | `<lang2>` | `<langN>` | 
+| ---- | ----------- | ----------- | ----------- | 
 | KEY1 | `string`| `string`|`string`|
 | KEY2 | `string`| `string`|`string`|
 | KEYN | `string`| `string`|`string`|
