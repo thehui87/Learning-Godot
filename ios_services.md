@@ -44,6 +44,8 @@ Pops the first event from the queue and returns it.
 
 ### Store Kit
 
+Implemented in platform/iphone/in_app_store.mm
+
 The Store Kit API is accessible through the "InAppStore" singleton (will always be available from gdscript). It is initialized automatically. It has 2 methods for purchasing:
 
   * Error [purchase](#wiki-purchase)(Variant p_params);
@@ -115,6 +117,8 @@ The response event will be a dictionary with the following fields:
 ```
 
 ### Game Center
+
+Implemented in platform/iphone/game_center.mm
 
 The Game Center API is available through the "GameCenter" singleton. It has 2 methods:
 
