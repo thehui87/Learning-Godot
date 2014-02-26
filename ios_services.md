@@ -46,10 +46,8 @@ Pops the first event from the queue and returns it.
 
 The Store Kit API is accessible through the "InAppStore" singleton (will always be available from gdscript). It is initialized automatically. It has 2 methods for purchasing:
 
-```c++
-	Error request_product_info(Variant p_params);
-	Error purchase(Variant p_params);
-```
+  * Error [purchase](#wiki-purchase)(Variant p_params);
+  * Error [request_product_info](#wiki-request_product_info)(Variant p_params);
 
 and the pending_event interface
 
@@ -120,10 +118,8 @@ The response event will be a dictionary with the following fields:
 
 The Game Center API is available through the "GameCenter" singleton. It has 2 methods:
 
-```c++
-	Error post_score(Variant p_score);
-	Error award_achievement(Variant p_params);
-```
+  * Error [post_score](#wiki-post_score)(Variant p_score);
+  * Error [award_achievement](#wiki-award_achievement)(Variant p_params);
 
 plus the standard pending event interface. 
 
