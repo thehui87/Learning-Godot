@@ -15,7 +15,7 @@ Using the Godot editor, [export your project for Windows](export_pc), to obtain 
 
 If you want to test your scenes on the ios device as you edit them, you can add your game directory to the project (instead of data.pck), and add a property "godot_path" to the Info.plist, with the name of your directory as its value.
 
-{{:godot_path.png|}}
+![](images/godot_path.png)
 
 Alternatively you can add all the files from your game directly, with "engine.cfg" at the root.
 
@@ -27,13 +27,13 @@ Sometimes your game becomes too big and deploying to the device takes too long e
 
 On your PC, open the editor, and click the right-most icon on the top-center group of icons, and select "Enable File Server". The icon turns red. Your PC will open a port and accept connections to serve files from your project's directory (so enable your local firewall accordingly).
 
-{{:rfs_server.png|}}
+![](images/rfs_server.png)
 
 #### Setting up the game
 
 On XCode, click on your app name (top left, next to the "Stop" button), and select "Edit Scheme". Go to the "Arguments" tab, and add 2 arguments, "-rfs" and the IP of your PC.
 
-{{:edit_scheme.png|}}
+![](images/edit_scheme.png)
 
 When you run, your device will connect to the host and open the files remotely. Note that the directory with the game data ("platformer") is no longer added to the project, only the engine executable.
 
