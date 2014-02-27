@@ -53,6 +53,7 @@ Operating System functions.
   * [String](class_string)  **[get&#95;data&#95;dir](#get_data_dir)**  **(** **)** const
   * [String](class_string)  **[get&#95;unique&#95;ID](#get_unique_ID)**  **(** **)** const
   * [real](class_real)  **[get&#95;frames&#95;per&#95;second](#get_frames_per_second)**  **(** **)** const
+  * void  **[print&#95;all&#95;textures&#95;by&#95;size](#print_all_textures_by_size)**  **(** **)**
 
 ###  Numeric Constants  
   * **DAY_SUNDAY** = **0**

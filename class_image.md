@@ -44,7 +44,10 @@ Image datatype.
   * **FORMAT_PVRTC4** = **16**
   * **FORMAT_PVRTC4_ALPHA** = **17**
   * **FORMAT_ETC** = **18**
-  * **FORMAT_CUSTOM** = **19**
+  * **FORMAT_ATC** = **19**
+  * **FORMAT_ATC_ALPHA_EXPLICIT** = **20**
+  * **FORMAT_ATC_ALPHA_INTERPOLATED** = **21**
+  * **FORMAT_CUSTOM** = **22**
 
 ###  Description  
 Built in native image datatype. Contains image data, which can be converted to a texture, and several functions to interact with it.
