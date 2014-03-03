@@ -37,3 +37,4 @@
 
 *  [Command Line](command_line) Using the command line, for fans of doing everything in Unix/Windows shell.      
 *  [External Editor](external_editor) Configuring an external editor for opening scripts.
+*  [iOS Services](ios_services) Using iOS services (GameCenter, StoreKit)
