@@ -59,6 +59,9 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Locales](locales) List of supported locale strings.
 
 # Asset Pipeline
+#### General
+
+*  [Image Files](image_files) Image Files (read first!)
 
 #### Import
 
