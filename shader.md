@@ -36,7 +36,7 @@ The language is statically type and only supports a few operations. Arrays, clas
 The syntax is similar to C, with statements ending in ; , and comments as // and /* */.
 Example:
 
-```C
+```c
 float a = 3;
 vec3 b;
 b.x = a;
@@ -44,7 +44,7 @@ b.x = a;
 
 ####  Swizzling
 	
-	It is possible to use swizzling to reasigning subindices or groups of subindices, in order:
+It is possible to use swizzling to reasigning subindices or groups of subindices, in order:
 	
 ```c
 vec3 a = vec3(1,2,3);
@@ -55,7 +55,7 @@ vec4 d = a.xyzz; // d will contain vec4(1,2,3,3)
 	
 ####  Constructors
 	
-	Constructors take the regular amount of elements, but can also accept less if the element has more subindices, for example:
+Constructors take the regular amount of elements, but can also accept less if the element has more subindices, for example:
 	
 ```c
 vec3 a = vec3( 1, vec2(2,3) );
@@ -79,7 +79,7 @@ if (a < b) {
 
 ###  Uniforms
 	
-	A variable can be declared as uniform. In this case, it's value will come from outside the shader (it will be the responsibility of the material or whatever using the shader to provide it).
+A variable can be declared as uniform. In this case, it's value will come from outside the shader (it will be the responsibility of the material or whatever using the shader to provide it).
 	
 ```c
 uniform vec3 direction;
@@ -106,7 +106,7 @@ vec3 c = addtwo(vec3(1,1,1)+vec3(2,2,2));
 	
 ###  Built-In Functions
 	
-	Several Built-in functions are provided for convenience, listed as follows:
+Several Built-in functions are provided for convenience, listed as follows:
 	
 | Function | Description |
 | -------- | --------- |
@@ -147,11 +147,12 @@ vec3 c = addtwo(vec3(1,1,1)+vec3(2,2,2));
 
 ###  Built-In Variables
 	
-	Depending on the shader type, several built-in variables are available, listed as follows:
+Depending on the shader type, several built-in variables are available, listed as follows:
 	
 #####  Material - VertexShader
 	
-^ Variable ^ Description ^
+| Variable | Description |
+| ------ | ------- |
 | vec3 **VERTEX** | Pre-Transformed Vertex | 
 | vec3 **NORMAL** | Pre-Transformed Normal | 
 | vec3 **TANGENT** | Pre-Transformed Tangent | 
@@ -168,7 +169,7 @@ vec3 c = addtwo(vec3(1,1,1)+vec3(2,2,2));
 | const float **INSTANCE_ID** | Instance ID (for multimesh)| 
 | const float **TIME** | Time (in seconds) | 
 
-#####  Material - FragmentShader==
+#####  Material - FragmentShader
 
 | Variable | Description |
 | -------- | -------- |
@@ -194,7 +195,7 @@ vec3 c = addtwo(vec3(1,1,1)+vec3(2,2,2));
 	
 ###  Examples
 	
-	Material that reads a texture, a color and multiples them, fragment program:
+Material that reads a texture, a color and multiples them, fragment program:
 	
 ```c
 
@@ -216,11 +217,11 @@ DIFFUSE = vec3(1,0,0) + vec(1,1,1)*mod(TIME,1.0);
 ###  Notes
 	
 
-	  * **Do not** use DIFFUSE_ALPHA unless you really intend to use transparency. Transparent materials must be sorted by depth and slow down the rendering pipeline. For opaque materials, just use DIFFUSE.
-	  * **Do not** use DISCARD unless you really need it. Discard makes rendering slower, specially on mobile devices.
-	  * TIME may reset after a while (may last an hour or so), it's meant for effects that vary over time.
-	  * In general, every built-in variable not used results in less shader code generated, so writing a single giant shader with a lot of code and optional scenarios is often not a good idea.
+  * **Do not** use DIFFUSE_ALPHA unless you really intend to use transparency. Transparent materials must be sorted by depth and slow down the rendering pipeline. For opaque materials, just use DIFFUSE.
+  * **Do not** use DISCARD unless you really need it. Discard makes rendering slower, specially on mobile devices.
+  * TIME may reset after a while (may last an hour or so), it's meant for effects that vary over time.
+  * In general, every built-in variable not used results in less shader code generated, so writing a single giant shader with a lot of code and optional scenarios is often not a good idea.
 	
- --- //[[reduzio@gmail.com|Juan Linietsky]] 2013/11/10 18:10//
+--- //[[reduzio@gmail.com|Juan Linietsky]] 2013/11/10 18:10//
 
 	
