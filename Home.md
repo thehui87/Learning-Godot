@@ -61,7 +61,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 # Asset Pipeline
 #### General
 
-*  [Image Files](image_files) Image Files (read first!)
+*  [Image Files](image_files) Managing image files (read first!).
 
 #### Import
 
