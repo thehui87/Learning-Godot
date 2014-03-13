@@ -99,7 +99,10 @@ This combo allows to change the texture format (compression in this case):
 <p align="center"><img src="images/compressopts.png"></img></p>
 
 Each of the four options described in this table together with their advantages and disadvantages (<img src="images/good.png"/>=Best, <img src="images/bad.png"/>=Worst):
-                                                                                                                                                                                                                          | Uncompressed | Compress Lossless (PNG) | Compress Lossy (WebP) | Compress VRAM |
+
+
+
+| Uncompressed | Compress Lossless (PNG) | Compress Lossy (WebP) | Compress VRAM |
 | ------------ | ----------------------- | --------------------- | ------------- | 
 | Description | Stored as raw pixels | Stored as PNG | Stored as WebP | Stored as S3TC/BC,PVRTC/ETC, depending on platform|
 | Size on Disk | <img src="images/bad.png"/>Large | <img src="images/regular.png">Small | <img src="images/good.png">Very Small | <img src="images/regular.png">Small |
