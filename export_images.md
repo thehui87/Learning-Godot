@@ -6,7 +6,7 @@ It is often desired to do an operation to all or a group of images upon export. 
 * Shrinking all images to half the size, to create a low resolution build for smaller screens.
 * Create an atlas for a group of images and crop them, for higher performance and less memory usage.
 
-## Image Export Options
+### Image Export Options
 
 In the [Export Dialog](export), go to the Images tab:
 
@@ -26,7 +26,7 @@ This section is similar to the previous one, except it can operate on a selected
 
 <p align="center"><img src="images/imagegroup.png"></img></p>
 
-### Atlas
+#### Atlas
 
 As a plus, an atlas can be created from a group. When this mode is active, a button to preview the resulting atlas becomes available. Make sure that atlases don't become too big, as some hardware will not support textures bigger than 2048x2048 pixels. If this happens, just create another atlas.
 
