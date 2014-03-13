@@ -3,6 +3,7 @@
 ### Do NOT to import them in most cases.
 
 In most cases you **don't** want images imported when dealing with 2D and GUI. Just copy them to the filesystem. Read the tutorial on [exporting textures](export_textures) before continuing! 
+For 3D, textures are always imported by the 3D scene importer. The flags and options are the same as here, so reading the rest of the document might help too.
 
 ### OK you _might_ want to import them.
 
@@ -99,14 +100,14 @@ This combo allows to change the texture format (compression in this case):
 
 Each of the four options described in this table together with their advantages and disadvantages (<p align="center"><img src="good.png"></p>=Best, <p align="center"><img src="bad.png"></p>=Worst):
 
- |                                                                                                                                                                                                                                  | Uncompressed | Compress Lossless (PNG) | Compress Lossy (WebP) | Compress VRAM | 
- |                                                                                                                                                                                                                                  | ------------ | ----------------------- | --------------------- | ------------- | 
- | Description | Stored as raw pixels | Stored as PNG | Stored as WebP | Stored as S3TC/BC,PVRTC/ETC, depending on platform|                                                                                                       
- | Size on Disk | {{:bad.png|}}Large | <p align="center"><img src="regular.png"></p>Small | <p align="center"><img src="good.png"></p>Very Small | <p align="center"><img src="regular.png"></p>Small |                            
- | Memory Usage | {{:bad.png|}}Large | {{:bad.png|}}Large | {{:bad.png|}}Large | <p align="center"><img src="good.png"></p>Small |                                                                                                 
- | Performance | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="good.png"></p>Fast |
- | Quality Loss | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="regular.png"></p>Slight | {{:bad.png|}}Moderate |                                  
- | Load Time | <p align="center"><img src="regular.png"></p>Normal | {{:bad.png|}}Slow | {{:bad.png|}}Slow | <p align="center"><img src="good.png"></p>Fast |                                                                      
+|                                                                                                                                                                                                                                  | Uncompressed | Compress Lossless (PNG) | Compress Lossy (WebP) | Compress VRAM | 
+|                                                                                                                                                                                                                                  | ------------ | ----------------------- | --------------------- | ------------- | 
+| Description | Stored as raw pixels | Stored as PNG | Stored as WebP | Stored as S3TC/BC,PVRTC/ETC, depending on platform|                                                                                                       
+| Size on Disk | {{:bad.png|}}Large | <p align="center"><img src="regular.png"></p>Small | <p align="center"><img src="good.png"></p>Very Small | <p align="center"><img src="regular.png"></p>Small |                            
+| Memory Usage | {{:bad.png|}}Large | {{:bad.png|}}Large | {{:bad.png|}}Large | <p align="center"><img src="good.png"></p>Small |                                                                                                 
+| Performance | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="good.png"></p>Fast |
+| Quality Loss | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="regular.png"></p>Slight | {{:bad.png|}}Moderate |                                  
+| Load Time | <p align="center"><img src="regular.png"></p>Normal | {{:bad.png|}}Slow | {{:bad.png|}}Slow | <p align="center"><img src="good.png"></p>Fast |                                                                      
 
 
 ### Texture Options:
