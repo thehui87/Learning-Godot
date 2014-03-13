@@ -100,13 +100,14 @@ This combo allows to change the texture format (compression in this case):
 
 Each of the four options described in this table together with their advantages and disadvantages (<p align="center"><img src="good.png"></p>=Best, <p align="center"><img src="bad.png"></p>=Worst):
 
-                                                                                                                                                                                                                               | Uncompressed | Compress Lossless (PNG) | Compress Lossy (WebP) | Compress VRAM |                                                                                                                                                                                                                                | ------------ | ----------------------- | --------------------- | ------------- | 
-| Description | Stored as raw pixels | Stored as PNG | Stored as WebP | Stored as S3TC/BC,PVRTC/ETC, depending on platform|                                                                                                       
-| Size on Disk | <img src="images/bad.png"/>Large | <p align="center"><img src="regular.png"></p>Small | <p align="center"><img src="good.png"></p>Very Small | <p align="center"><img src="regular.png"></p>Small |                            
+                                                                                                                                                                                                                               | Uncompressed | Compress Lossless (PNG) | Compress Lossy (WebP) | Compress VRAM |
+| ------------ | ----------------------- | --------------------- | ------------- | 
+| Description | Stored as raw pixels | Stored as PNG | Stored as WebP | Stored as S3TC/BC,PVRTC/ETC, depending on platform|
+| Size on Disk | <img src="images/bad.png"/>Large | <p align="center"><img src="regular.png"></p>Small | <p align="center"><img src="good.png"></p>Very Small | <p align="center"><img src="regular.png"></p>Small |
 | Memory Usage | <img src="images/bad.png"/>Large | <img src="images/bad.png"/>Large | <img src="images/bad.png"/>Large | <p align="center"><img src="good.png"></p>Small |                                                                                                 
 | Performance | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="good.png"></p>Fast |
-| Quality Loss | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="regular.png"></p>Slight | <img src="images/bad.png"/>Moderate |                                  
-| Load Time | <p align="center"><img src="regular.png"></p>Normal | <img src="images/bad.png"/>Slow | <img src="images/bad.png"/>Slow | <p align="center"><img src="good.png"></p>Fast |                                                                      
+| Quality Loss | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="regular.png"></p>Slight | <img src="images/bad.png"/>Moderate |
+| Load Time | <p align="center"><img src="regular.png"></p>Normal | <img src="images/bad.png"/>Slow | <img src="images/bad.png"/>Slow | <p align="center"><img src="good.png"></p>Fast |
 
 
 ### Texture Options:
