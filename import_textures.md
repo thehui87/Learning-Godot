@@ -1,6 +1,6 @@
 # Importing Textures
 
-### Do NOT to import them.
+### Do NOT to import them in most cases.
 
 In most cases you **don't** want images imported when dealing with 2D and GUI. Just copy them to the filesystem. Read the tutorial on [exporting textures](export_textures) before continuing! 
 
