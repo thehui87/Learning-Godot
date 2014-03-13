@@ -6,7 +6,7 @@ In most cases you **don't** want images imported when dealing with 2D and GUI. J
 
 ### OK you _might_ want to import them.
 
-So, if you have read the previous tutorial basically using the texture importer gives you more finer grained control on how textures are imported. If you want to change flags such as repeat, filter, mip-maps, fix edges, etc _**PER texture**_, importing them is the best way to accomplish this. For the bulk, it's probably more comfortable to use the methods in the above mentioned link.
+So, if you have read the previous tutorial on the texture exporter, the texture importer gives you more finer grained control on how textures are imported. If you want to change flags such as repeat, filter, mip-maps, fix edges, etc _**PER texture**_, importing them is the best way to accomplish this (since you can't save such flags in a standard image file). 
 
 ### Lack of MipMaps
 
