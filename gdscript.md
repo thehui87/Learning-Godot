@@ -528,6 +528,17 @@ func _init():
 
 If a class inherits from *Reference*, then instances will be freed when no longer in use. No garbage collector exists, just simple reference counting. By default, all classes that don’t define inheritance extend *Reference*. If this is not desired, then a class must inherit *Object* manually and must call instance.free(). To avoid reference cycles that can’t be freed, a weakref() function is provided for creating weak references.
 
+```python
+
+# to create the weak reference
+
+var wr = weakref(instance)
+
+#to use the weak reference (returns null if previously erased)
+
+wr.get_ref().somefunction()
+
+```
 ##  Function References 
 
 Functions can’t be referenced because they are not treated as class members. There are two alternatives to this, though. The “call” function or the funcref() helper.
