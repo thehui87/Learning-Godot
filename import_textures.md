@@ -1,18 +1,12 @@
 # Importing Textures
 
-## Rationale
+### Do NOT to import them.
 
-### What For?
+In most cases you **don't** want images imported when dealing with 2D and GUI. Just copy them to the filesystem. Read the tutorial on [exporting textures](export_textures) before continuing! 
 
-Godot can work with images directly on the filesystem and open them just like any other resource. So the first issue that comes to mind is.. is it worth it? When developing 2D games specially, there's no denying that having the image files around in the filesystem in their standard formats (png, jpg, etc) is nice and useful.
+### OK you _might_ want to import them.
 
-Still, there are a few advantages to using the texture importer. For 3D it's done automatically when importing models, but in 2D it must be done manually.
-
-## When NOT to import them.
-
-In most cases you **don't** want images imported. Just copy them to the filesystem. Read the tutorial on [exporting textures](export_textures) before continuing! 
-
-So, if you have read the previous tutorial basically using the texture importer gives you more finer grained control on how textures are imported. If you want to change flags such as repeat, filter, mip-maps, fix edges, etc PER texture, importing them is the best way to accomplish this. For the bulk, it's probably more comfortable to use the methods in the above mentioned link.
+So, if you have read the previous tutorial basically using the texture importer gives you more finer grained control on how textures are imported. If you want to change flags such as repeat, filter, mip-maps, fix edges, etc _**PER texture**_, importing them is the best way to accomplish this. For the bulk, it's probably more comfortable to use the methods in the above mentioned link.
 
 ### Lack of MipMaps
 
