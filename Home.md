@@ -59,6 +59,9 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Locales](locales) List of supported locale strings.
 
 # Asset Pipeline
+#### General
+
+*  [Image Files](image_files) Managing image files (read first!).
 
 #### Import
 
@@ -73,6 +76,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 
 *  [Export](export) Exporting Projects.
 *  [One Click Deploy](one_click_deploy) One Click Deploy.
+*  [Exporting Images](export_images) Tools for converting image files and creating atlases on export.
 *  [PC](export_pc) Exporting for PC (Mac, Windows, Linux).
 *  [Android](export_android) Exporting for Android.
 *  ~~[BlackBerry 10](export_bb10) Exporting for BlackBerry 10.~~
