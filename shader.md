@@ -91,7 +91,7 @@ vec3 result = tint.rgb * direction;
 	
 ###  Functions
 	
-	Simple support for functions is provided. Functions can't access uniforms or other shader variables.
+Simple support for functions is provided. Functions can't access uniforms or other shader variables.
 	
 ```c
 
