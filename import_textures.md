@@ -18,7 +18,7 @@ Images in 3D hardware are scaled with a (bi)linear filter, but this method has l
 (Todo, find image sample of why it looks bad)
 
 To solve this, mipmaps are created. Mipmaps are versions of the image shrunk by half in both axis, recursively, until the image is 1 pixel of size. When the 3D hardware needs to shrink the image, it finds the largest mipmap it can scale from, and scales from there. This improves performance and image quality.
-<p align="center"><img src="images/mipmaps.png?200 "/>
+<p align="center"><img src="images/mipmaps.png?200 "/></p>
 Godot automatically creates mipmaps upon load for standard image files. This process is time consuming (although not much) and makes load times a little worse. Pre-importing the textures allows the automatic generation of mipmaps.
 
 ### Unwanted MipMaps
