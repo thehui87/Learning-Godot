@@ -55,7 +55,7 @@ For such cases, the image can be imported as a texture (.tex), where the individ
 
 Importing also allows conversion to other formats (WebP, or RAM compression) which might be of use in some cases.
 .
-More information on the [Texture Import](import_texture) page.
+More information on the [Texture Import](import_textures) page.
 
 ## Image Export
 
