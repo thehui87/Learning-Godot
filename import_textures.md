@@ -98,7 +98,7 @@ This combo allows to change the texture format (compression in this case):
 
 <p align="center"><img src="images/compressopts.png"></img></p>
 
-Each of the four options described in this table together with their advantages and disadvantages (<p align="center"><img src="good.png"></p>=Best, <p align="center"><img src="bad.png"></p>=Worst):
+Each of the four options described in this table together with their advantages and disadvantages (<img src="images/good.png"/>=Best, <img src="images/bad.png"/>=Worst):
 
                                                                                                                                                                                                                                | Uncompressed | Compress Lossless (PNG) | Compress Lossy (WebP) | Compress VRAM |
 | ------------ | ----------------------- | --------------------- | ------------- | 
