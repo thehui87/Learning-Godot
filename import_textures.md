@@ -2,7 +2,7 @@
 
 ### Do NOT to import them in most cases.
 
-In most cases you **don't** want images imported when dealing with 2D and GUI. Just copy them to the filesystem. Read the tutorial on [exporting textures](export_textures) before continuing! 
+In most cases you **don't** want images imported when dealing with 2D and GUI. Just copy them to the filesystem. Read the tutorial on [dealing with image files](image_files) before continuing! 
 For 3D, textures are always imported by the 3D scene importer. The flags and options are the same as here, so reading the rest of the document might help too.
 
 ### OK you _might_ want to import them.
