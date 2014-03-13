@@ -2,20 +2,17 @@
 
 ## Rationale
 
-
 ### What For?
 
 Godot can work with images directly on the filesystem and open them just like any other resource. So the first issue that comes to mind is.. is it worth it? When developing 2D games specially, there's no denying that having the image files around in the filesystem in their standard formats (png, jpg, etc) is nice and useful.
 
-Still, there are many advantages to using the texture importer. For 3D it's done automatically when importing models, but in 2D it must be done by hand. The following sections will illustrate scenarios for using the texture importer.
+Still, there are a few advantages to using the texture importer. For 3D it's done automatically when importing models, but in 2D it must be done manually.
 
-### Do it Later..
+## When NOT to import them.
 
-Remember that by default, Godot ignores the extension of the referenced files. this allows to replace the images in standard formats by engine .tex files at a later time and nothing is lost.
+In most cases you **don't** want images imported. Just copy them to the filesystem. Read the tutorial on [exporting textures](export_textures) before continuing! 
 
-## Common Problems
-
-Several problems arise from trying to use standard image formats:
+So, if you have read the previous tutorial basically using the texture importer gives you more finer grained control on how textures are imported. If you want to change flags such as repeat, filter, mip-maps, fix edges, etc PER texture, importing them is the best way to accomplish this. For the bulk, it's probably more comfortable to use the methods in the above mentioned link.
 
 ### Lack of MipMaps
 
@@ -29,13 +26,11 @@ To solve this, mipmaps are created. Mipmaps are versions of the image shrunk by 
 <p align="center"><img src="images/mipmaps.png?200 |}}
 Godot automatically creates mipmaps upon load for standard image files. This process is time consuming (although not much) and makes load times a little worse. Pre-importing the textures allows the automatic generation of mipmaps.
 
-
 ### Unwanted MipMaps
 
 Remember the previous point about mipmaps? Yes, they are cool, but mobile GPUs only support them if the textures are in power of 2 dimensions (ie 256x256 or 512x128). In these platforms, Godot will stretch and enlarge the texture to the closest power of 2 size and then generate the mipmaps. This process takes more of a performance hit and it might degrade the quality a little more.
 
 Because of this, there are some scenarios when it may be desirable to not use them, and just use a linear filter. One of them is when working with graphical user interfaces (GUIs). Usually they are made of large images and don't stretch much. Even if the screen resolution is in a larger or smaller value than original art, the amount of stretch is not as much and the art can retain the quality. Pre-importing the textures also allows the disabling of mipmap generation.
-
 
 ### Blending Artifacts
 
