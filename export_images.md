@@ -20,7 +20,7 @@ In this dialog the image extensions for conversion can be selected, and operatio
 
 On export, Godot will perform the desired operation. The first export might be really slow, but subsequent exports will be fast, as the converted images will be cached.
 
-## Image Group Export Options
+### Image Group Export Options
 
 This section is similar to the previous one, except it can operate on a selected group of images. When a image is in a group, the settings from the global export options are overridden by the ones from the group.
 
