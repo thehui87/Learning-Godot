@@ -1,29 +1,29 @@
-## Image Files
+### Image Files
 
 If you have read the previous tutorials on [Resources](tutorial_resources) and [FileSystem](tutorial_fs), at this point you know that regular image files (.png, .jpg, etc) are treated as regular resources in Godot.
 
 Unlike texture resources (.tex files), image files contain no extra information on tiling (texture repeat), mipamps or filtering. Editing this information and saving the texture back will have not any effect, since such formats can't contain that information.
 
-## Image Loader
+### Image Loader
 
 Loading of images is done by the image loader. The behavior of the loader for all image files can be changed
 in the Project Settings dialog (Scene -> Project Settings). There is a section with values that correspond to the every image file when loaded:
 
 <p align="center"><img src="images/imgloader.png"/></p>
 
-## Image Loader Options
+### Image Loader Options
 
-# Filter:
+#### Filter:
 
 Filter is used when the image is stretched more than it's original size, so a texel in the image is bigger than a pixel on the screen. Turning off the fiter produces a retro-like look:
 
 <p align="center"><img src="images/imagefilter.png"/></p>
 
-# Repeat:
+#### Repeat:
 
 Repeat is mainly used for 3D textures, so it's off by default (textures are imported with the scenes and usually are not in the project as image files). When using UV coordinates (something not as common in 2D), and the UV value goes beyond the 0,0,1,1 rect, the texture repeats instead of clamping to the edge.
 
-# Mipmaps:
+#### Mipmaps:
 
 When the mipmaps option is enabled, Godot will generate mip-maps. Mipmaps are versions of the image shrunk by half in both axis, recursively, until the image is 1 pixel of size. When the 3D hardware needs to shrink the image, it finds the largest mipmap it can scale from, and scales from there. This improves performance and image quality.
 
@@ -33,8 +33,19 @@ When Mip-Maps are disabled, images start distorting badly when shrunk excessivel
 
 <p align="center"><img src="images/imagemipmap.png"/></p>
 
-## Alpha Blending
+### Alpha Blending
 
+The [blending equation](http://en.wikipedia.org/wiki/Alpha_compositing) used by applications like Photoshop is too complex for real-time. There are better approximations such as [pre-multiplied alpha](http://blogs.msdn.com/b/shawnhar/archive/2009/11/06/premultiplied-alpha.aspx?Redirected=true), but they impose more stress in the asset pipeline. In the end, we are left with textures that have artifacts in the edges, because apps such as Photoshop store white pixels in completely transparent areas. Such white pixels end up showing thanks to the texture filter (when active).
+
+Godot has an option to fix the edges of the image (by painting invisible pixels the same color as the visible neighbours):
+
+<p align="center"><img src="images/fixedborder.png"></img></p> 
+
+To do this, open the image from the resources tab, or edit it from the property editor from another node or resource, then go to the object options and select "Fix Border Alpha", then save it.
+
+<p align="center"><img src="images/imagefixalpha.png"></img></p> 
+
+Since fixing this in so many images can be a little annoying, both Texture Import and Image Export can also perform this operation. 
 
 ## Texture Import
 
