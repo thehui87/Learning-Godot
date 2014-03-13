@@ -38,7 +38,7 @@ The [blending equation](http://en.wikipedia.org/wiki/Alpha_compositing) used by 
 
 Godot has an option to fix the edges of the image (by painting invisible pixels the same color as the visible neighbours):
 
-<p align="center"><img src="images/fixedborder.png |}} 
+<p align="center"><img src="images/fixedborder.png"></img></p> 
 
 However, this must be done every time the image changes. Pre-Importing the textures makes sure that every time the original file changes, this artifact is fixed upon automatic re-import.
 
@@ -81,11 +81,11 @@ Still wondering whether to use the texture importer or not? Remember that in the
 
 Finally! It's time to take a look at the texture importer. There are 3 options in the import menu. They are pretty much (almost) the same dialog with a different set of defaults.
 
-<p align="center"><img src="images/importtex.png |}}
+<p align="center"><img src="images/importtex.png"></img></p>
 
 When selected, the texture import dialog will appear. This is the default one for 2D textures:
 
-<p align="center"><img src="images/import_images.png |}}
+<p align="center"><img src="images/import_images.png"></img></p>
 
 Each import option has a function, explained as follows:
 
@@ -101,7 +101,7 @@ A destination folder must be provided. It must be inside the project, as texture
 
 This combo allows to change the texture format (compression in this case):
 
-<p align="center"><img src="images/compressopts.png |}}
+<p align="center"><img src="images/compressopts.png"></img></p>
 
 Each of the four options described in this table together with their advantages and disadvantages (<p align="center"><img src="good.png"></p>=Best, <p align="center"><img src="bad.png"></p>=Worst):
 
