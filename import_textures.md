@@ -18,7 +18,7 @@ Images in 3D hardware are scaled with a (bi)linear filter, but this method has l
 (Todo, find image sample of why it looks bad)
 
 To solve this, mipmaps are created. Mipmaps are versions of the image shrunk by half in both axis, recursively, until the image is 1 pixel of size. When the 3D hardware needs to shrink the image, it finds the largest mipmap it can scale from, and scales from there. This improves performance and image quality.
-<p align="center"><img src="images/mipmaps.png?200 |}}
+<p align="center"><img src="images/mipmaps.png?200 "/>
 Godot automatically creates mipmaps upon load for standard image files. This process is time consuming (although not much) and makes load times a little worse. Pre-importing the textures allows the automatic generation of mipmaps.
 
 ### Unwanted MipMaps
@@ -102,11 +102,11 @@ Each of the four options described in this table together with their advantages 
 
                                                                                                                                                                                                                                | Uncompressed | Compress Lossless (PNG) | Compress Lossy (WebP) | Compress VRAM |                                                                                                                                                                                                                                | ------------ | ----------------------- | --------------------- | ------------- | 
 | Description | Stored as raw pixels | Stored as PNG | Stored as WebP | Stored as S3TC/BC,PVRTC/ETC, depending on platform|                                                                                                       
-| Size on Disk | {{:bad.png|}}Large | <p align="center"><img src="regular.png"></p>Small | <p align="center"><img src="good.png"></p>Very Small | <p align="center"><img src="regular.png"></p>Small |                            
-| Memory Usage | {{:bad.png|}}Large | {{:bad.png|}}Large | {{:bad.png|}}Large | <p align="center"><img src="good.png"></p>Small |                                                                                                 
+| Size on Disk | <img src="images/bad.png"/>Large | <p align="center"><img src="regular.png"></p>Small | <p align="center"><img src="good.png"></p>Very Small | <p align="center"><img src="regular.png"></p>Small |                            
+| Memory Usage | <img src="images/bad.png"/>Large | <img src="images/bad.png"/>Large | <img src="images/bad.png"/>Large | <p align="center"><img src="good.png"></p>Small |                                                                                                 
 | Performance | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="regular.png"></p>Normal | <p align="center"><img src="good.png"></p>Fast |
-| Quality Loss | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="regular.png"></p>Slight | {{:bad.png|}}Moderate |                                  
-| Load Time | <p align="center"><img src="regular.png"></p>Normal | {{:bad.png|}}Slow | {{:bad.png|}}Slow | <p align="center"><img src="good.png"></p>Fast |                                                                      
+| Quality Loss | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="good.png"></p>None | <p align="center"><img src="regular.png"></p>Slight | <img src="images/bad.png"/>Moderate |                                  
+| Load Time | <p align="center"><img src="regular.png"></p>Normal | <img src="images/bad.png"/>Slow | <img src="images/bad.png"/>Slow | <p align="center"><img src="good.png"></p>Fast |                                                                      
 
 
 ### Texture Options:
