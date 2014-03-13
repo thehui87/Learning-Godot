@@ -23,6 +23,7 @@ On export, Godot will perform the desired operation. The first export might be r
 ### Image Group Export Options
 
 This section is similar to the previous one, except it can operate on a selected group of images. When a image is in a group, the settings from the global export options are overridden by the ones from the group.
+An image can only be in one group at the same time. So if the image is in another group different to the current one being edited, it will not be selectable.
 
 <p align="center"><img src="images/imagegroup.png"></img></p>
 
