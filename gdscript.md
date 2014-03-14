@@ -241,6 +241,7 @@ Generic sequence of objects. It’s size can be changed to anything and starts f
 ```python
 var arr=[]
 arr=[1,2,3]
+arr=[1]+[2,3] # same as above
 arr[0]="Hi!"
 ```
 Arrays are allocated linearly in memory, so they are fast, but very large arrays (more than tens of thousands of elements) may cause fragmentation. 
