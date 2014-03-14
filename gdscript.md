@@ -241,12 +241,19 @@ Generic sequence of objects. It’s size can be changed to anything and starts f
 ```python
 var arr=[]
 arr=[1,2,3]
-arr=[1]+[2,3] # same as above
 arr[0]="Hi!"
 ```
 Arrays are allocated linearly in memory, so they are fast, but very large arrays (more than tens of thousands of elements) may cause fragmentation. 
 
-There are specialized arrays (listed below) for some built-in datatypes which do not suffer from this and use  less memory, but they are atomic and generally run a little slower, so they are only justified for very large amount of data.
+Arrays can be appended using the + operator:
+
+```python
+arr=[1,2,3]+[4,5,6]
+#is the same as
+arr[1,2,3,4,5,6]
+```
+
+There are specialized arrays for some built-in datatypes which do not suffer from this and use  less memory, but they are atomic and generally run a little slower, so they are only justified for very large amount of data: [RawArraw](class_rawarrat), [IntArray](class_intarray), [FloatArray](class_floatarray), [StringArray](class_stringarray), [Vector2Array](class_vector2array), , [Vector3Array](class_vector3array), , [ColorArray](class_colorarray).
 
 ###  [Dictionary](class_dictionary)
 
