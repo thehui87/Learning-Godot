@@ -234,7 +234,7 @@ Events from input devices are contained in very compact form in InputEvent objec
 
 ##  Container Built-In Types 
 
-###  Array 
+###  [Array](class_array) 
 
 Generic sequence of objects. It’s size can be changed to anything and starts from index 0.
 
@@ -247,7 +247,7 @@ Arrays are allocated linearly in memory, so they are fast, but very large arrays
 
 There are specialized arrays (listed below) for some built-in datatypes which do not suffer from this and use  less memory, but they are atomic and generally run a little slower, so they are only justified for very large amount of data.
 
-###  Dictionary 
+###  [Dictionary](class_dictionary)
 
 Associative container which contains values referenced by unique keys.
 
@@ -266,35 +266,6 @@ var d= {
     morekey="Hello"
 }
 ```
-
-###  ByteArray 
-
-Array of bytes. Can only contains bytes (integers from 0 to 255). Optimized for memory usage, can’t fragment the memory.
-
-###  IntArray 
-
-Array of integers. Can only contain integers. Optimized for memory usage, can’t fragment the memory.
-
-###  FloatArray 
-
-Array of floats, can only contain floats. Optimized for memory usage, can’t fragment the memory.
-
-###  StringArray 
-
-Array of strings, can only contain strings. Optimized for memory usage, can’t fragment the memory.
-
-###  Vector2Array 
-
-Array of Vector2, can only contain 2D Vectors. Optimized for memory usage, can’t fragment the memory.
-
-###  Vector3Array 
-
-Array of Vector3, can only contain 3D Vectors. Optimized for memory usage, can’t fragment the memory.
-
-###  ColorArray 
-
-Array of Color, can only contains colors. Optimized for memory usage, can’t fragment the memory.
-
 #  Data 
 
 ##  Variables 
