@@ -16,6 +16,12 @@ Afterwards, while editing an existing or a new scene, other scenes can be instan
 
 <p align="center"><img src="images/instancing.png"></p>
 
+In the above picture, Scene B was added to Scene A as an instance. It may seem weird at first, but at the end of this tutorial it will make complete sense!
+
+###Instancing, Step by Step
+
+To learn how to do instancing, let's start with downloading a [pre-made scene](media/instancing.zip).
+
 
 
 
