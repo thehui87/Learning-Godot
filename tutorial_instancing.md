@@ -22,6 +22,11 @@ In the above picture, Scene B was added to Scene A as an instance. It may seem w
 
 To learn how to do instancing, let's start with downloading a [pre-made scene](media/instancing.zip).
 
+Add this scene to the project manager using the Import option:
+
+<p align="center"><img src="images/importproject.png"></p>
+
+Simply browse to inside the project location and open the "engine.cfg" file. 
 
 
 
