@@ -7,17 +7,19 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 
 ####  Basic (Step by Step)
 
- 1.  [ Scenes and Nodes](tutorial_scene)
- 2.  [Scripting](tutorial_scripting)
- 3.  [Scripting (Continued)](tutorial_scripting_2)
- 4.  [Creating a 2D Game](tutorial_2d)
- 5.  [GUI Introduction](tutorial_gui)
- 6.  [Creating a Splash Screen](tutorial_splash)
- 7.  [Animation](tutorial_animation)
- 8.  [Resources](tutorial_resources)
- 9.  [File System](tutorial_fs)
- 10.  [SceneMainLoop](tutorial_scene_main_loop)
- 11.  [Singletons (Autoload)](tutorial_singletons)
+ 1.  [Scenes and Nodes](tutorial_scene)
+ 2.  [Instancing](tutorial_instancing)
+ 3.  [Instancing (Continued)](tutorial_instancing_2)
+ 4.  [Scripting](tutorial_scripting)
+ 5.  [Scripting (Continued)](tutorial_scripting_2)
+ 6.  [Creating a 2D Game](tutorial_2d)
+ 7.  [GUI Introduction](tutorial_gui)
+ 8.  [Creating a Splash Screen](tutorial_splash)
+ 9.  [Animation](tutorial_animation)
+ 10.  [Resources](tutorial_resources)
+ 11.  [File System](tutorial_fs)
+ 12.  [SceneMainLoop](tutorial_scene_main_loop)
+ 13.  [Singletons (Autoload)](tutorial_singletons)
 
 #### Intermediate
 
