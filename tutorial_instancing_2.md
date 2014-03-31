@@ -35,15 +35,7 @@ With Godot, games can grow as quickly as desired, as only more scenes have to be
 
 ###Information Overload!
 
-Do not worry to much, the important part of this tutorial is to create awareness on how scenes and instancing are used in real life. The best way to understand all this is to make some games. The advantages of this workflow will become obvious very quickly!
+Do not worry to much, the important part of this tutorial is to create awareness on how scenes and instancing are used in real life. The best way to understand all this is to make some games. 
 
-So, please do not scratch your head and go on to the next tutorial!
-
-
-
-
-
-
-
-
+Everything will become very obvious when put to practice, so, please do not scratch your head and go on to the next tutorial!
 
