@@ -123,13 +123,29 @@ func _unpaused():
 
 ### Creating Nodes
 
-The base class [Node](class_node) inherits from [Object](class_object) directly. This means it is not reference counted. This means that the memory management for Nodes differs from most other types of classes.
-
 To create a node from code, just call the .new() method, (like for any other class based datatype). Example:
+
 ```python
+var s
 func _ready():
-   var s = Sprite.new() # create a new sprite!
-   add_child(s)
+   s = Sprite.new() # create a new sprite!
+   add_child(s) #add it as a child of this node
 ```
 
+To delete a node, be it inside or outside the scene, free() must be used:
 
+```python
+func _someaction():
+   s.free() # immediately removes the node from the scene and frees it
+```
+
+When a node is freed, it also frees all it's children nodes. Because of this, manually deleting nodes is much simpler than it appears. Just free the base node and everything else in the sub-tree goes away with it.
+
+However, it might happen very often that we might want to delete a node that is currently "blocked" this means, the node is emitting a signal or calling a function. This will result in crashing the game. Running Godot in the debugger often will catch this case and warn you about it.
+
+The safest way to delete a node is by using [queue_free](class_node#queue_free)() instead. This erases the node during idle, safely.
+
+```python
+func _someaction():
+   s.queue_free() # remove the node and delete it while nothing is happening
+```
