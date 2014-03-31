@@ -149,3 +149,20 @@ The safest way to delete a node is by using [queue_free](class_node#queue_free)(
 func _someaction():
    s.queue_free() # remove the node and delete it while nothing is happening
 ```
+
+### Instancing Scenes
+
+Instancing a scene from code is pretty easy and done in two steps. The first one is to load the scene from disk.
+
+```python
+var scene = load("res://myscene.scn") # will load when the script is instanced
+```
+
+Preloading it can be more convenient sometimes, as it happens at parse time.
+
+```python
+var scene = preload("res://myscene.scn") # will load when parsing the script
+```
+
+But 'scene' is still not a node containing subnodes. It's packed in a special resource called [PackedScene](class_packedscene). To create the actual node, the function instance
+    
