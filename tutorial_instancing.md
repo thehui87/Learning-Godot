@@ -35,12 +35,13 @@ This project contains two scenes "ball.scn" and "container.scn". The ball scene 
 
 Open the container scene, then select the root node:
 
+<p align="center"><img src="images/controot.png"></p>
 
+Afterwards, push the '+' shaped button, this is the instancing button!
 
+<p align="center"><img src="images/continst.png"></p>
 
+Select the ball scene (ball.scn), the ball should appear in the origin (0,0), move it to around the center
+of the scene, like this:
 
-
-
-
-
-
+<p align="center"><img src="images/continstanced.png"></p>
