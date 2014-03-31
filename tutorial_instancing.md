@@ -64,7 +64,7 @@ Then try running the scene again:
 
 Cool, huh? This is how instancing works.
 
-###Even More!
+###Editing Instances
 
 Select one of the many copies of the balls and go to the property editor. Let's make it bounce a lot more, so look for the bounce parameter and set it to 1.0:
 
@@ -72,6 +72,8 @@ Select one of the many copies of the balls and go to the property editor. Let's 
 
 The next it will happen is that a green "revert" button appears. When this button is present, it means we modified a property from the instanced scene to override for a specific value in this instance. Even if that property is modified in the original scene, the custom value will always overwrite it. Pressing the revert button will restore the property to the original value that came from the scene.
 
+###Conclusion
 
+Instancing seems handy, but there is more to it than it meets the eye! The next part of the instancing tutorial should cover the rest..
 
 
