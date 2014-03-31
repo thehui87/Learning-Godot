@@ -164,5 +164,14 @@ Preloading it can be more convenient sometimes, as it happens at parse time.
 var scene = preload("res://myscene.scn") # will load when parsing the script
 ```
 
-But 'scene' is still not a node containing subnodes. It's packed in a special resource called [PackedScene](class_packedscene). To create the actual node, the function instance
+But 'scene' is still not a node containing subnodes. It's packed in a special resource called [PackedScene](class_packedscene). To create the actual node, the function [PackedScene.instance](class_packedscene#instance)() must be called. This will return the tree of nodes that can be added to the active scene:
+
+```python
+var node = scene.instance()
+add_child(node)
+```
+
+The advantage of this two-step process is that a packed scene may be kept loaded and ready to use, so it can be used to create as many instances as desired. This is specially useful, for example, to instance several enemies, bullets, etc. quickly in the active scene.
+
+
     
