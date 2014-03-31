@@ -28,6 +28,18 @@ The following is a more complex example, an open-world type of game with lots of
 
 <p align="center"><img src="images/openworld_instancing.png"/></p>
 
+Make some rooms with furniture, then connect them. Make a house later, and use those rooms are the interior.
+The house can be part of a citadel, which has many houses. Finally the citadel can be put on the world map terrain. Add also guards and other NPCs to the citadel by previously creating their scenes. 
+
+With Godot, games can grow as quickly as desired, as only more scenes have to be made and instanced. The editor UI is also designed to be operated by non programmers too, so an usual team development process involves 3D or 2D artists, level designers, game designers, animators, etc all working with the editor interface.
+
+###Information Overload!
+
+Do not worry to much, the important part of this tutorial is to create awareness on how scenes and instancing are used in real life. The best way to understand all this is to make some games. The advantages of this workflow will become obvious very quickly!
+
+So, please do not scratch your head and go on to the next tutorial!
+
+
 
 
 
