@@ -22,11 +22,23 @@ In the above picture, Scene B was added to Scene A as an instance. It may seem w
 
 To learn how to do instancing, let's start with downloading a [pre-made scene](media/instancing.zip).
 
-Add this scene to the project manager using the Import option:
+Unzip this scene in any place of our preference. Then, add this scene to the project manager using the 'Import' option:
 
 <p align="center"><img src="images/importproject.png"></p>
 
-Simply browse to inside the project location and open the "engine.cfg" file. 
+Simply browse to inside the project location and open the "engine.cfg" file. The new project will appear on the list of projects. Edit the project by using the 'Edit' option.
+
+This project contains two scenes "ball.scn" and "container.scn". The ball scene is just a ball with physics, while container scene has a nicely shaped collision, so balls can be thrown in there.
+
+<p align="center"><img src="images/ballscene.png"></p>
+<p align="center"><img src="images/contscene.png"></p>
+
+Open the container scene, then select the root node:
+
+
+
+
+
 
 
 
