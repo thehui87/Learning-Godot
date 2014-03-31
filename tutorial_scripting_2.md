@@ -121,4 +121,15 @@ func _unpaused():
    
 ```
 
+### Creating Nodes
+
+The base class [Node](class_node) inherits from [Object](class_object) directly. This means it is not reference counted. This means that the memory management for Nodes differs from most other types of classes.
+
+To create a node from code, just call the .new() method, (like for any other class based datatype). Example:
+```python
+func _ready():
+   var s = Sprite.new() # create a new sprite!
+   add_child(s)
+```
+
 
