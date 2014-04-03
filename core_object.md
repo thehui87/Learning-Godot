@@ -20,6 +20,9 @@ print_line("Object Type: ",obj->get_type()); //print object type
 obj2 = obj->cast_to<OtherType>(); // converting between types, this also works without RTTI enabled.
 ```
 
+#####References:
+* [core/object.h](https://github.com/okamstudio/godot/blob/master/core/object.h)
+
 ### Registering an Object
 
 ObjectTypeDB is a static class that hold the entire list of registered classes that inherit from object, as well as dynamic bindings to all their methods properties and integer constants. 
@@ -52,6 +55,9 @@ ObjectTypeDB::register_method(_MD("methodname","arg1name","arg2name"),&MyCustomT
 _MD is a macro that convers "methodname" to a stringname for more efficiency. Argument names are used for instrospection, but when compiling on release, the macro ignores them, so the strings are unused and optimized away.
 
 Check _bind_methods of Control or Object for more examples.
+
+#####References:
+* [core/object_type_db.h](https://github.com/okamstudio/godot/blob/master/core/object_type_db.h)
 
 ### constants
 
@@ -149,12 +155,17 @@ Ref<MyReference> myref = memnew( MyReference );
 
 "myref" is reference counted. It will be freed when no more Ref<> templates point to it.
 
+#####References:
+* [core/reference.h](https://github.com/okamstudio/godot/blob/master/core/reference.h)
+
 ### Resources:
 
 Resource inherits from Reference, so all resources are reference counted. Resources can optionally contain a path, which reference a file on disk. This can be set with resource.set_path(path). This is normally done by the resource loader though. No two different resources can have the same path, attempt to do so will result in an error.
 
 Resources without a path are fine too.
 
+#####References:
+* [core/resource.h](https://github.com/okamstudio/godot/blob/master/core/resource.h)
 ### Resource loading:
 
 Resources can be loaded with the ResourceLoader API, like this
@@ -166,6 +177,9 @@ if a reference to that resource has been loaded previously and is in memory, the
 
 -resourceinteractiveloader (TODO)
 
+#####References:
+* [core/io/resource_loader.h](https://github.com/okamstudio/godot/blob/master/core/io/resource_loader.h)
+
 ### Resource Saving:
 
 Saving a resource can be done with the resource saver API:
@@ -174,3 +188,6 @@ Saving a resource can be done with the resource saver API:
 ResourceSaver::save("res://someresource.res",instance)
 ```
 Instance will be saved. Sub resources that have a path to a file will be saved as a reference to that resource. Sub resources without a path will be bundled with the saved resource and assigned sub-IDs, like "res://somereource.res::1". This also helps to cache them when loaded.
+
+#####References:
+* [core/io/resource_saver.h](https://github.com/okamstudio/godot/blob/master/core/io/resource_saver.h)
