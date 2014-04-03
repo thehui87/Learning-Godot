@@ -23,6 +23,9 @@ A Variant can:
 Basically, thanks to the Variant class, writing Godot itself was a much, much easier task, as it allows 
 for highly dynamic constructs not common of c++ with little effort. Become a friend of Variant today.
 
+#####References:
+* [core/variant.h](https://github.com/okamstudio/godot/blob/master/core/variant.h)
+
 ### Dictionary and Array
 
 Both are implemented using variants. A Dictionary can match any datatype used as key to any 
@@ -32,3 +35,6 @@ Of course, a Variant can also hold a Dictionary and an Array inside, making it e
 Both have a shared mode and a COW mode. Scripts often use them in shared mode (meaning modifications to a 
 container will modify all references to it), or COW mode (modifications will always alter the local copy, making a copy of the internal data if necessary, but will not affect the other copies). In COW mode, Both Dictionary and Array are thread-safe, otherwise a Nutex should be created to lock if multi thread access is desired.
 
+#####References:
+* [core/dictionary.h](https://github.com/okamstudio/godot/blob/master/core/dictionary.h)
+* [core/array.h](https://github.com/okamstudio/godot/blob/master/core/array.h)
