@@ -94,6 +94,10 @@ w[4]=22;
 respectively. These allow fast read/write from DVectors and keep it locked until they go
 out of scope.
 
+#####References:
+[core/os/memory.h](https://github.com/okamstudio/godot/blob/master/core/os/memory.h)
+[core/dvector.h](https://github.com/okamstudio/godot/blob/master/core/dvector.h)
+
 ### Containers
 
 Godot provides also a set of common containers:
