@@ -20,7 +20,7 @@ For files or memory sizes, 'size_t' is used, which is warranted to be 64 bits.
 For Unicode characters, 'CharType' instead of 'wchar_t' is used, because many architectures have 4 bytes long wchar_t, where 2 bytes might be desired. However, by default, this has not been forced and CharType maps directly to wchar_t.
 
 #####References:
-[core/typedefs.h](https://github.com/okamstudio/godot/blob/master/core/typedefs.h)
+* [core/typedefs.h](https://github.com/okamstudio/godot/blob/master/core/typedefs.h)
 
 ### Memory Model
 
@@ -157,7 +157,7 @@ There are several linear math types available in the core/math directory, they a
 This is a special datatype sued for storing paths in a scenetree and referencing them fast.
 
 #####References:
-* [core/path_db.h](https://github.com/okamstudio/godot/blob/master/core/path_db)
+* [core/path_db.h](https://github.com/okamstudio/godot/blob/master/core/path_db.h)
 
 ### RID
 
