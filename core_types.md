@@ -50,20 +50,22 @@ the regular C and C++ library calls should not be used. Instead, a few other one
 
 For C still allocation, Godot provides a few macros:
 
+```c
 memalloc()
 memrealloc()
 memfree()
-
+```
 These are equivalent to the usual malloc, realloc, free of the standard library.
 
 For C++ style allocation, special macros are provided:
 
+```c
 memnew( Class / Class(args) )
 memdelete( instance )
 
 memnew_arr( Class , amount )
 memdelete_arr( pointer to array )
-
+```
 which are equivalent to new, delete, new[] and delete[].
 
 memnew/memdelete also use a little C++ magic and notify Objects right after they are created, 
@@ -71,19 +73,21 @@ and right before they are deleted.
 
 For dynamic memory, the DVector<> template is provided. Just use it like:
 
+```c
 DVector<int>
-
+```
 DVector is just a standard vector class, it can be accessed using the [] operator, but that's 
 probably slow for large amount of accesses (as it has to lock internally). A few helpers exist
 for this:
-
+```c
 DVector<int>::Read r = dvector.read()
 int someint = r[4]
+```
 and 
-
+```c
 DVector<int>::Write w = dvector.write()
 w[4]=22;
-
+```
 respectively. These allow fast read/write from DVectors and keep it locked until they go
 out of scope.
 
@@ -100,10 +104,11 @@ The are very simple and aim to be as minimal as possible, as templates in C++ ar
 and make the binary size much fatter, both in debug symbols and code. List, Set and Map can be
 iterated using pointers, like this:
 
+```c
 for(List<int>::Element *E=somelist.front();E;E=E->next()) {
 	print_line(E->get()); //print the element
 }
-
+```
 The Vector<> class also has a few nice features.
 -It does copy on write, so making copies of it is cheap as long as they are not modified.
 -It supports multi-threading, by using atomic operations on the reference counter.
