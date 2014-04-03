@@ -95,8 +95,8 @@ respectively. These allow fast read/write from DVectors and keep it locked until
 out of scope.
 
 #####References:
-[core/os/memory.h](https://github.com/okamstudio/godot/blob/master/core/os/memory.h)
-[core/dvector.h](https://github.com/okamstudio/godot/blob/master/core/dvector.h)
+* [core/os/memory.h](https://github.com/okamstudio/godot/blob/master/core/os/memory.h)
+* [core/dvector.h](https://github.com/okamstudio/godot/blob/master/core/dvector.h)
 
 ### Containers
 
@@ -120,11 +120,20 @@ The Vector<> class also has a few nice features.
 -It does copy on write, so making copies of it is cheap as long as they are not modified.
 -It supports multi-threading, by using atomic operations on the reference counter.
 
+#####References:
+* [core/vector.h](https://github.com/okamstudio/godot/blob/master/core/vector.h)
+* [core/list.h](https://github.com/okamstudio/godot/blob/master/core/list.h)
+* [core/set.h](https://github.com/okamstudio/godot/blob/master/core/set.h)
+* [core/map.h](https://github.com/okamstudio/godot/blob/master/core/map.h)
+
 ### String
 
 Godot also provides a String class. This class has a huge amoun of features, full Unicode support
 in all the functions (like case operations) and utf8 parsing/exracting, as well as helpers for 
 conversion and visualization.
+
+#####References:
+* [core/ustring.h](https://github.com/okamstudio/godot/blob/master/core/ustring.h)
 
 ### StringName
 
@@ -133,16 +142,28 @@ in a unique internal pointer for all equal strings. StringNames are really usefu
 strings as identifier, as comparing them is basically comparing a pointer. 
 Creation of a StringName (specially a new one) is slow, but comparison is fast.
 
+#####References:
+* [core/string_db.h](https://github.com/okamstudio/godot/blob/master/core/string_db.h)
+
 ### Math Types
 
 There are several linear math types available in the core/math directory, they are basically just that.
 
+#####References:
+* [core/math](https://github.com/okamstudio/godot/blob/master/core/math)
+
 ### NodePath
 
 This is a special datatype sued for storing paths in a scenetree and referencing them fast.
+
+#####References:
+* [core/path_db.h](https://github.com/okamstudio/godot/blob/master/core/path_db)
 
 ### RID
 
 RIDs are resource IDs. Servers use these to reference data stored in them. RIDs are opaque, 
 meaning that the data they reference can't be accessed directly. RIDs are unique, even for different
 types of referenced data.
+
+#####References:
+* [core/rid.h](https://github.com/okamstudio/godot/blob/master/core/rid.h)
