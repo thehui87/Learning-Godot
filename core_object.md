@@ -26,8 +26,9 @@ ObjectTypeDB is a static class that hold the entire list of registered classes t
 
 Classes are registered by calling:
 
+```c++
 ObjectTypeDB::register_type<MyCustomType>()
-
+```
 Registering it will allow the type to be instanced by scripts, code, or creating them again when deserializing.
 
 Registering as virtual is the same but it can't be instanced.
