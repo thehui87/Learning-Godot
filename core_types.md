@@ -102,10 +102,10 @@ out of scope.
 
 Godot provides also a set of common containers:
 
--Vector
--List
--Set
--Map
+* Vector
+* List
+* Set
+* Map
 
 The are very simple and aim to be as minimal as possible, as templates in C++ are often inlined
 and make the binary size much fatter, both in debug symbols and code. List, Set and Map can be
