@@ -98,7 +98,7 @@ Requests the product info on a list of product IDs.
 Takes a Dictionary as a parameter, with one field, "product_ids", a string array with a list of product ids. Example:
 
 ```python
-	var result = InAppStore.get_product_info( { "product_ids": ["my_product1", "my_product2"] } )
+	var result = InAppStore.request_product_info( { "product_ids": ["my_product1", "my_product2"] } )
 ```
 ##### Response event
 The response event will be a dictionary with the following fields:
