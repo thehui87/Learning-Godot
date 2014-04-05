@@ -16,6 +16,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * Reflections (using reflection objects)
 * Light Probes
 * More Shaders (2D, Lighting, Post-Processing)
+* 2D deforms and skeletons
 
 ### Milestone 3 (November 2014)
 
