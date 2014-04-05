@@ -17,6 +17,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * Light Probes
 * More Shaders (2D, Lighting, Post-Processing)
 * 2D deforms and skeletons
+* FBX Import (blender did it..)
 
 ### Milestone 3 (November 2014)
 
