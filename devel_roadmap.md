@@ -20,7 +20,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * FBX Import (blender did it..)
 * Live scene editing (should be rather easy)
 
-### Milestone 3 (November 2014)
+### Milestone 3 (~November 2014)
 
 * OpenGL ES 3.0 backend
 * SSAO, LPV, and more modern visual effects.
