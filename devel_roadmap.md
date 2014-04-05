@@ -29,4 +29,5 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 ### Future
 
 * Add optional typing to GDScript
+* Make viewports more flexible
 * Ideas?
