@@ -18,8 +18,15 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * More Shaders (2D, Lighting, Post-Processing)
 * 2D deforms and skeletons
 * FBX Import (blender did it..)
+* Live scene editing (should be rather easy)
 
 ### Milestone 3 (November 2014)
 
 * OpenGL ES 3.0 backend
 * SSAO, LPV, and more modern visual effects.
+* Windows Universal Binary support (API still does not exist AFAIK)
+
+### Future
+
+* Add optional typing to GDScript
+* Ideas?
