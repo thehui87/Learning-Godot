@@ -19,6 +19,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * 2D deforms and skeletons
 * FBX Import (blender did it..)
 * Live scene editing (should be rather easy)
+* Navmesh support
 
 ### Milestone 3 (~November 2014)
 
