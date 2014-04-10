@@ -2,7 +2,7 @@
 
 These are just tentative to have a rough idea of the development plan. Ideas and helping set better priorities are always welcome.
 
-### Milestone 1 (~June 2014)
+### Godot 1.0 (stable) (~June 2014)
 
 * No new features (unless small and useful)
 * Focus on Stability and Usability
@@ -10,7 +10,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * First stable, versioned release.
 * Easier deployer for iOS and NaCL
 
-### Milestone 2 (~August-2014)
+### Godot 1.1 (~August-2014)
 
 * Lightmapping
 * Reflections (using reflection objects)
@@ -21,7 +21,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * Live scene editing (should be rather easy)
 * Navmesh support
 
-### Milestone 3 (~November 2014)
+### Godot 1.2 (~November 2014)
 
 * OpenGL ES 3.0 backend
 * SSAO, LPV, and more modern visual effects.
