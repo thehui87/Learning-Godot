@@ -39,6 +39,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 #### Advanced
 
 *  [Paths](paths)
+*  [HTTP](http_client) Example of using the HTTP Client class.
 *  ~~[Thread Safety](thread_safety) Using Multiple Threads.~~
 
 #### Editor Plug-Ins
