@@ -11,13 +11,13 @@ Sample player for Positional 2D Sound.
   * void  **[set&#95;polyphony](#set_polyphony)**  **(** [int](class_int) voices  **)**
   * [int](class_int)  **[get&#95;polyphony](#get_polyphony)**  **(** **)** const
   * [int](class_int)  **[play](#play)**  **(** [String](class_string) sample, [int](class_int) voice=-2  **)**
-  * void  **[voice&#95;set&#95;pitch&#95;scale](#voice_set_pitch_scale)**  **(** [int](class_int) voice, [real](class_real) ratio  **)**
-  * void  **[voice&#95;set&#95;volume&#95;scale&#95;db](#voice_set_volume_scale_db)**  **(** [int](class_int) voice, [real](class_real) db  **)**
+  * void  **[voice&#95;set&#95;pitch&#95;scale](#voice_set_pitch_scale)**  **(** [int](class_int) voice, [float](class_float) ratio  **)**
+  * void  **[voice&#95;set&#95;volume&#95;scale&#95;db](#voice_set_volume_scale_db)**  **(** [int](class_int) voice, [float](class_float) db  **)**
   * [bool](class_bool)  **[is&#95;voice&#95;active](#is_voice_active)**  **(** [int](class_int) voice  **)** const
   * void  **[stop&#95;voice](#stop_voice)**  **(** [int](class_int) voice  **)**
   * void  **[stop&#95;all](#stop_all)**  **(** **)**
-  * void  **[set&#95;random&#95;pitch&#95;scale](#set_random_pitch_scale)**  **(** [real](class_real) val  **)**
-  * [real](class_real)  **[get&#95;random&#95;pitch&#95;scale](#get_random_pitch_scale)**  **(** **)** const
+  * void  **[set&#95;random&#95;pitch&#95;scale](#set_random_pitch_scale)**  **(** [float](class_float) val  **)**
+  * [float](class_float)  **[get&#95;random&#95;pitch&#95;scale](#get_random_pitch_scale)**  **(** **)** const
 
 ###  Numeric Constants  
   * **INVALID_VOICE** = **-1** - If the voice is invalid, this is returned.
@@ -54,12 +54,12 @@ Return the polyphony of the player (maximum amount of simultaneous voices).
 Play a sample, an internal polyphony id can be passed, or else it's assigned automatically. Returns a voice id which can be used to modify the voice parameters.
 
 #### <a name="voice_set_pitch_scale">voice_set_pitch_scale</a>
-  * void  **voice&#95;set&#95;pitch&#95;scale**  **(** [int](class_int) voice, [real](class_real) ratio  **)**
+  * void  **voice&#95;set&#95;pitch&#95;scale**  **(** [int](class_int) voice, [float](class_float) ratio  **)**
 
 Change the pitch scale of a currently playing voice.
 
 #### <a name="voice_set_volume_scale_db">voice_set_volume_scale_db</a>
-  * void  **voice&#95;set&#95;volume&#95;scale&#95;db**  **(** [int](class_int) voice, [real](class_real) db  **)**
+  * void  **voice&#95;set&#95;volume&#95;scale&#95;db**  **(** [int](class_int) voice, [float](class_float) db  **)**
 
 Change the volume scale of a currently playing voice (using dB).
 

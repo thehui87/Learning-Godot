@@ -10,12 +10,12 @@ Portals provide virtual openings to rooms.
   * [Vector2Array](class_vector2array)  **[get&#95;shape](#get_shape)**  **(** **)** const
   * void  **[set&#95;enabled](#set_enabled)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;enabled](#is_enabled)**  **(** **)** const
-  * void  **[set&#95;disable&#95;distance](#set_disable_distance)**  **(** [real](class_real) distance  **)**
-  * [real](class_real)  **[get&#95;disable&#95;distance](#get_disable_distance)**  **(** **)** const
+  * void  **[set&#95;disable&#95;distance](#set_disable_distance)**  **(** [float](class_float) distance  **)**
+  * [float](class_float)  **[get&#95;disable&#95;distance](#get_disable_distance)**  **(** **)** const
   * void  **[set&#95;disabled&#95;color](#set_disabled_color)**  **(** [Color](class_color) color  **)**
   * [Color](class_color)  **[get&#95;disabled&#95;color](#get_disabled_color)**  **(** **)** const
-  * void  **[set&#95;connect&#95;range](#set_connect_range)**  **(** [real](class_real) range  **)**
-  * [real](class_real)  **[get&#95;connect&#95;range](#get_connect_range)**  **(** **)** const
+  * void  **[set&#95;connect&#95;range](#set_connect_range)**  **(** [float](class_float) range  **)**
+  * [float](class_float)  **[get&#95;connect&#95;range](#get_connect_range)**  **(** **)** const
 
 ###  Description  
 Portals provide virtual openings to [RoomInstance] nodes, so cameras can look at them from the outside. Note that portals are a visibility optimization technique, and are in no way related to the game of the same name (as in, they are not used for teleportation). For more information on how rooms and portals work, see [RoomInstance]. Portals are represented as 2D convex polygon shapes (in the X,Y local plane), and are placed on the surface of the areas occupied by a [RoomInstance], to indicate that the room can be accessed or looked-at through them. If two rooms are next to each other, and two similar portals in each of them share the same world position (and are parallel and opposed to each other), they will automatically "connect" and form "doors" (for example, the portals that connect a kitchen to a living room are placed in the door they share). Portals must always have a [RoomInstance] node as a parent, grandparent or far parent, or else they will not be
@@ -44,12 +44,12 @@ Enable the portal (it is enabled by defaul though), disabling it will cause the 
 Return wether the portal is active. When disabled it causes the parent [RoomInstance] to not be visible any longer when looking through the portal.
 
 #### <a name="set_disable_distance">set_disable_distance</a>
-  * void  **set&#95;disable&#95;distance**  **(** [real](class_real) distance  **)**
+  * void  **set&#95;disable&#95;distance**  **(** [float](class_float) distance  **)**
 
 Set the distance threshold for disabling the portal. Every time that the portal goes beyond "distance", it disables itself, becoming the opaque color (see [set&#95;disabled&#95;color](#set_disabled_color)).
 
 #### <a name="get_disable_distance">get_disable_distance</a>
-  * [real](class_real)  **get&#95;disable&#95;distance**  **(** **)** const
+  * [float](class_float)  **get&#95;disable&#95;distance**  **(** **)** const
 
 Return the distance threshold for disabling the portal. Every time that the portal goes beyond "distance", it disables itself, becoming the opaque color (see [set&#95;disabled&#95;color](#set_disabled_color)).
 
@@ -64,11 +64,11 @@ When the portal goes beyond the disable distance (see [set&#95;disable&#95;dista
 Return the color for when the portal goes beyond the disable distance (see [set&#95;disable&#95;distance](#set_disable_distance)) and becomes disabled.
 
 #### <a name="set_connect_range">set_connect_range</a>
-  * void  **set&#95;connect&#95;range**  **(** [real](class_real) range  **)**
+  * void  **set&#95;connect&#95;range**  **(** [float](class_float) range  **)**
 
 Set the range for auto-connecting two portals from different rooms sharing the same space.
 
 #### <a name="get_connect_range">get_connect_range</a>
-  * [real](class_real)  **get&#95;connect&#95;range**  **(** **)** const
+  * [float](class_float)  **get&#95;connect&#95;range**  **(** **)** const
 
 Return the range for auto-connecting two portals from different rooms sharing the same space.

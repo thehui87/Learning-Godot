@@ -7,7 +7,7 @@
 ###  Member Functions 
   * void  **[Nil](#Nil)**  **(** [bool](class_bool) from  **)**
   * void  **[Nil](#Nil)**  **(** [int](class_int) from  **)**
-  * void  **[Nil](#Nil)**  **(** [real](class_real) from  **)**
+  * void  **[Nil](#Nil)**  **(** [float](class_float) from  **)**
   * void  **[Nil](#Nil)**  **(** [String](class_string) from  **)**
   * void  **[Nil](#Nil)**  **(** [Vector2](class_vector2) from  **)**
   * void  **[Nil](#Nil)**  **(** [Rect2](class_rect2) from  **)**

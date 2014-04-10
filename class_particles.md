@@ -20,18 +20,18 @@ Particle system 3D Node
   * [Vector3Array](class_vector3array)  **[get&#95;emission&#95;points](#get_emission_points)**  **(** **)** const
   * void  **[set&#95;gravity&#95;normal](#set_gravity_normal)**  **(** [Vector3](class_vector3) normal  **)**
   * [Vector3](class_vector3)  **[get&#95;gravity&#95;normal](#get_gravity_normal)**  **(** **)** const
-  * void  **[set&#95;variable](#set_variable)**  **(** [int](class_int) variable, [real](class_real) value  **)**
-  * [real](class_real)  **[get&#95;variable](#get_variable)**  **(** [int](class_int) variable  **)** const
-  * void  **[set&#95;randomness](#set_randomness)**  **(** [int](class_int) variable, [real](class_real) randomness  **)**
-  * [real](class_real)  **[get&#95;randomness](#get_randomness)**  **(** [int](class_int) arg0  **)** const
-  * void  **[set&#95;color&#95;phase&#95;pos](#set_color_phase_pos)**  **(** [int](class_int) phase, [real](class_real) pos  **)**
-  * [real](class_real)  **[get&#95;color&#95;phase&#95;pos](#get_color_phase_pos)**  **(** [int](class_int) phase  **)** const
+  * void  **[set&#95;variable](#set_variable)**  **(** [int](class_int) variable, [float](class_float) value  **)**
+  * [float](class_float)  **[get&#95;variable](#get_variable)**  **(** [int](class_int) variable  **)** const
+  * void  **[set&#95;randomness](#set_randomness)**  **(** [int](class_int) variable, [float](class_float) randomness  **)**
+  * [float](class_float)  **[get&#95;randomness](#get_randomness)**  **(** [int](class_int) arg0  **)** const
+  * void  **[set&#95;color&#95;phase&#95;pos](#set_color_phase_pos)**  **(** [int](class_int) phase, [float](class_float) pos  **)**
+  * [float](class_float)  **[get&#95;color&#95;phase&#95;pos](#get_color_phase_pos)**  **(** [int](class_int) phase  **)** const
   * void  **[set&#95;color&#95;phase&#95;color](#set_color_phase_color)**  **(** [int](class_int) phase, [Color](class_color) color  **)**
   * [Color](class_color)  **[get&#95;color&#95;phase&#95;color](#get_color_phase_color)**  **(** [int](class_int) phase  **)** const
   * void  **[set&#95;material](#set_material)**  **(** [Material](class_material) material  **)**
   * [Material](class_material)  **[get&#95;material](#get_material)**  **(** **)** const
-  * void  **[set&#95;emit&#95;timeout](#set_emit_timeout)**  **(** [real](class_real) arg0  **)**
-  * [real](class_real)  **[get&#95;emit&#95;timeout](#get_emit_timeout)**  **(** **)** const
+  * void  **[set&#95;emit&#95;timeout](#set_emit_timeout)**  **(** [float](class_float) arg0  **)**
+  * [float](class_float)  **[get&#95;emit&#95;timeout](#get_emit_timeout)**  **(** **)** const
   * void  **[set&#95;height&#95;from&#95;velocity](#set_height_from_velocity)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[has&#95;height&#95;from&#95;velocity](#has_height_from_velocity)**  **(** **)** const
   * void  **[set&#95;use&#95;local&#95;coordinates](#set_use_local_coordinates)**  **(** [bool](class_bool) enable  **)**
@@ -111,32 +111,32 @@ Set the normal vector towards where gravity is pulling (by default, negative Y).
 Return the normal vector towards where gravity is pulling (by default, negative Y).
 
 #### <a name="set_variable">set_variable</a>
-  * void  **set&#95;variable**  **(** [int](class_int) variable, [real](class_real) value  **)**
+  * void  **set&#95;variable**  **(** [int](class_int) variable, [float](class_float) value  **)**
 
 Set a specific variable for the particle system (see VAR_* enum).
 
 #### <a name="get_variable">get_variable</a>
-  * [real](class_real)  **get&#95;variable**  **(** [int](class_int) variable  **)** const
+  * [float](class_float)  **get&#95;variable**  **(** [int](class_int) variable  **)** const
 
 Return a specific variable for the particle system (see VAR_* enum).
 
 #### <a name="set_randomness">set_randomness</a>
-  * void  **set&#95;randomness**  **(** [int](class_int) variable, [real](class_real) randomness  **)**
+  * void  **set&#95;randomness**  **(** [int](class_int) variable, [float](class_float) randomness  **)**
 
 Set the randomness for a specific variable of the particle system. Randomness produces small changes from the default each time a particle is emitted.
 
 #### <a name="get_randomness">get_randomness</a>
-  * [real](class_real)  **get&#95;randomness**  **(** [int](class_int) arg0  **)** const
+  * [float](class_float)  **get&#95;randomness**  **(** [int](class_int) arg0  **)** const
 
 Return the randomness for a specific variable of the particle system. Randomness produces small changes from the default each time a particle is emitted.
 
 #### <a name="set_color_phase_pos">set_color_phase_pos</a>
-  * void  **set&#95;color&#95;phase&#95;pos**  **(** [int](class_int) phase, [real](class_real) pos  **)**
+  * void  **set&#95;color&#95;phase&#95;pos**  **(** [int](class_int) phase, [float](class_float) pos  **)**
 
 Set the position of a color phase (0 to 1)
 
 #### <a name="get_color_phase_pos">get_color_phase_pos</a>
-  * [real](class_real)  **get&#95;color&#95;phase&#95;pos**  **(** [int](class_int) phase  **)** const
+  * [float](class_float)  **get&#95;color&#95;phase&#95;pos**  **(** [int](class_int) phase  **)** const
 
 Return the position of a color phase (0 to 1)
 

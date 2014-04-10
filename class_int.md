@@ -6,7 +6,7 @@ Integer built-in type.
 
 ###  Member Functions 
   * void  **[int](#int)**  **(** [bool](class_bool) from  **)**
-  * void  **[int](#int)**  **(** [real](class_real) from  **)**
+  * void  **[int](#int)**  **(** [float](class_float) from  **)**
   * void  **[int](#int)**  **(** [String](class_string) from  **)**
 
 ###  Description  

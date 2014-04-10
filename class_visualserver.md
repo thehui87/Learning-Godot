@@ -23,8 +23,8 @@ Server for anything visible.
   * [bool](class_bool)  **[material&#95;get&#95;flag](#material_get_flag)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
   * void  **[material&#95;set&#95;blend&#95;mode](#material_set_blend_mode)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)**
   * [int](class_int)  **[material&#95;get&#95;blend&#95;mode](#material_get_blend_mode)**  **(** [RID](class_rid) arg0  **)** const
-  * void  **[material&#95;set&#95;line&#95;width](#material_set_line_width)**  **(** [RID](class_rid) arg0, [real](class_real) arg1  **)**
-  * [real](class_real)  **[material&#95;get&#95;line&#95;width](#material_get_line_width)**  **(** [RID](class_rid) arg0  **)** const
+  * void  **[material&#95;set&#95;line&#95;width](#material_set_line_width)**  **(** [RID](class_rid) arg0, [float](class_float) arg1  **)**
+  * [float](class_float)  **[material&#95;get&#95;line&#95;width](#material_get_line_width)**  **(** [RID](class_rid) arg0  **)** const
   * [RID](class_rid)  **[mesh&#95;create](#mesh_create)**  **(** **)**
   * void  **[mesh&#95;add&#95;surface](#mesh_add_surface)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [Array](class_array) arg2, [Array](class_array) arg3, [bool](class_bool) arg4=-1  **)**
   * void  **[mesh&#95;surface&#95;set&#95;material](#mesh_surface_set_material)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [RID](class_rid) arg2, [bool](class_bool) arg3=false  **)**
@@ -51,22 +51,22 @@ Server for anything visible.
   * [bool](class_bool)  **[particles&#95;is&#95;emitting](#particles_is_emitting)**  **(** [RID](class_rid) arg0  **)** const
   * void  **[particles&#95;set&#95;visibility&#95;aabb](#particles_set_visibility_aabb)**  **(** [RID](class_rid) arg0, [AABB](class_aabb) arg1  **)**
   * [AABB](class_aabb)  **[particles&#95;get&#95;visibility&#95;aabb](#particles_get_visibility_aabb)**  **(** [RID](class_rid) arg0  **)** const
-  * void  **[particles&#95;set&#95;variable](#particles_set_variable)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [real](class_real) arg2  **)**
-  * [real](class_real)  **[particles&#95;get&#95;variable](#particles_get_variable)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
-  * void  **[particles&#95;set&#95;randomness](#particles_set_randomness)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [real](class_real) arg2  **)**
-  * [real](class_real)  **[particles&#95;get&#95;randomness](#particles_get_randomness)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
+  * void  **[particles&#95;set&#95;variable](#particles_set_variable)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [float](class_float) arg2  **)**
+  * [float](class_float)  **[particles&#95;get&#95;variable](#particles_get_variable)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
+  * void  **[particles&#95;set&#95;randomness](#particles_set_randomness)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [float](class_float) arg2  **)**
+  * [float](class_float)  **[particles&#95;get&#95;randomness](#particles_get_randomness)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
   * void  **[particles&#95;set&#95;color&#95;phases](#particles_set_color_phases)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)**
   * [int](class_int)  **[particles&#95;get&#95;color&#95;phases](#particles_get_color_phases)**  **(** [RID](class_rid) arg0  **)** const
-  * void  **[particles&#95;set&#95;color&#95;phase&#95;pos](#particles_set_color_phase_pos)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [real](class_real) arg2  **)**
-  * [real](class_real)  **[particles&#95;get&#95;color&#95;phase&#95;pos](#particles_get_color_phase_pos)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
+  * void  **[particles&#95;set&#95;color&#95;phase&#95;pos](#particles_set_color_phase_pos)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [float](class_float) arg2  **)**
+  * [float](class_float)  **[particles&#95;get&#95;color&#95;phase&#95;pos](#particles_get_color_phase_pos)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
   * void  **[particles&#95;set&#95;color&#95;phase&#95;color](#particles_set_color_phase_color)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [Color](class_color) arg2  **)**
   * [Color](class_color)  **[particles&#95;get&#95;color&#95;phase&#95;color](#particles_get_color_phase_color)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
   * void  **[particles&#95;set&#95;attractors](#particles_set_attractors)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)**
   * [int](class_int)  **[particles&#95;get&#95;attractors](#particles_get_attractors)**  **(** [RID](class_rid) arg0  **)** const
   * void  **[particles&#95;set&#95;attractor&#95;pos](#particles_set_attractor_pos)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [Vector3](class_vector3) arg2  **)**
   * [Vector3](class_vector3)  **[particles&#95;get&#95;attractor&#95;pos](#particles_get_attractor_pos)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
-  * void  **[particles&#95;set&#95;attractor&#95;strength](#particles_set_attractor_strength)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [real](class_real) arg2  **)**
-  * [real](class_real)  **[particles&#95;get&#95;attractor&#95;strength](#particles_get_attractor_strength)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
+  * void  **[particles&#95;set&#95;attractor&#95;strength](#particles_set_attractor_strength)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [float](class_float) arg2  **)**
+  * [float](class_float)  **[particles&#95;get&#95;attractor&#95;strength](#particles_get_attractor_strength)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
   * void  **[particles&#95;set&#95;material](#particles_set_material)**  **(** [RID](class_rid) arg0, [RID](class_rid) arg1, [bool](class_bool) arg2=false  **)**
   * void  **[particles&#95;set&#95;height&#95;from&#95;velocity](#particles_set_height_from_velocity)**  **(** [RID](class_rid) arg0, [bool](class_bool) arg1  **)**
   * [bool](class_bool)  **[particles&#95;has&#95;height&#95;from&#95;velocity](#particles_has_height_from_velocity)**  **(** [RID](class_rid) arg0  **)** const
@@ -80,8 +80,8 @@ Server for anything visible.
   * [bool](class_bool)  **[light&#95;is&#95;volumetric](#light_is_volumetric)**  **(** [RID](class_rid) arg0  **)** const
   * void  **[light&#95;set&#95;projector](#light_set_projector)**  **(** [RID](class_rid) arg0, [RID](class_rid) arg1  **)**
   * [RID](class_rid)  **[light&#95;get&#95;projector](#light_get_projector)**  **(** [RID](class_rid) arg0  **)** const
-  * void  **[light&#95;set&#95;var](#light_set_var)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [real](class_real) arg2  **)**
-  * [real](class_real)  **[light&#95;get&#95;var](#light_get_var)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
+  * void  **[light&#95;set&#95;var](#light_set_var)**  **(** [RID](class_rid) arg0, [int](class_int) arg1, [float](class_float) arg2  **)**
+  * [float](class_float)  **[light&#95;get&#95;var](#light_get_var)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)** const
   * [RID](class_rid)  **[skeleton&#95;create](#skeleton_create)**  **(** **)**
   * void  **[skeleton&#95;resize](#skeleton_resize)**  **(** [RID](class_rid) arg0, [int](class_int) arg1  **)**
   * [int](class_int)  **[skeleton&#95;get&#95;bone&#95;count](#skeleton_get_bone_count)**  **(** [RID](class_rid) arg0  **)** const
@@ -95,13 +95,13 @@ Server for anything visible.
   * [Vector2Array](class_vector2array)  **[portal&#95;get&#95;shape](#portal_get_shape)**  **(** [RID](class_rid) arg0  **)** const
   * void  **[portal&#95;set&#95;enabled](#portal_set_enabled)**  **(** [RID](class_rid) arg0, [bool](class_bool) arg1  **)**
   * [bool](class_bool)  **[portal&#95;is&#95;enabled](#portal_is_enabled)**  **(** [RID](class_rid) arg0  **)** const
-  * void  **[portal&#95;set&#95;disable&#95;distance](#portal_set_disable_distance)**  **(** [RID](class_rid) arg0, [real](class_real) arg1  **)**
-  * [real](class_real)  **[portal&#95;get&#95;disable&#95;distance](#portal_get_disable_distance)**  **(** [RID](class_rid) arg0  **)** const
+  * void  **[portal&#95;set&#95;disable&#95;distance](#portal_set_disable_distance)**  **(** [RID](class_rid) arg0, [float](class_float) arg1  **)**
+  * [float](class_float)  **[portal&#95;get&#95;disable&#95;distance](#portal_get_disable_distance)**  **(** [RID](class_rid) arg0  **)** const
   * void  **[portal&#95;set&#95;disabled&#95;color](#portal_set_disabled_color)**  **(** [RID](class_rid) arg0, [Color](class_color) arg1  **)**
   * [Color](class_color)  **[portal&#95;get&#95;disabled&#95;color](#portal_get_disabled_color)**  **(** [RID](class_rid) arg0  **)** const
   * [RID](class_rid)  **[camera&#95;create](#camera_create)**  **(** **)**
-  * void  **[camera&#95;set&#95;perspective](#camera_set_perspective)**  **(** [RID](class_rid) arg0, [real](class_real) arg1, [real](class_real) arg2, [real](class_real) arg3  **)**
-  * void  **[camera&#95;set&#95;orthogonal](#camera_set_orthogonal)**  **(** [RID](class_rid) arg0, [real](class_real) arg1, [real](class_real) arg2, [real](class_real) arg3  **)**
+  * void  **[camera&#95;set&#95;perspective](#camera_set_perspective)**  **(** [RID](class_rid) arg0, [float](class_float) arg1, [float](class_float) arg2, [float](class_float) arg3  **)**
+  * void  **[camera&#95;set&#95;orthogonal](#camera_set_orthogonal)**  **(** [RID](class_rid) arg0, [float](class_float) arg1, [float](class_float) arg2, [float](class_float) arg3  **)**
   * void  **[camera&#95;set&#95;transform](#camera_set_transform)**  **(** [RID](class_rid) arg0, [Transform](class_transform) arg1  **)**
   * [RID](class_rid)  **[viewport&#95;create](#viewport_create)**  **(** **)**
   * void  **[viewport&#95;set&#95;rect](#viewport_set_rect)**  **(** [RID](class_rid) arg0, [Rect2](class_rect2) arg1  **)**
@@ -140,25 +140,25 @@ Server for anything visible.
   * void  **[canvas&#95;item&#95;set&#95;transform](#canvas_item_set_transform)**  **(** [RID](class_rid) arg0, [Matrix32](class_matrix32) arg1  **)**
   * void  **[canvas&#95;item&#95;set&#95;custom&#95;rect](#canvas_item_set_custom_rect)**  **(** [RID](class_rid) arg0, [bool](class_bool) arg1, [Rect2](class_rect2) arg2  **)**
   * void  **[canvas&#95;item&#95;set&#95;clip](#canvas_item_set_clip)**  **(** [RID](class_rid) arg0, [bool](class_bool) arg1  **)**
-  * void  **[canvas&#95;item&#95;set&#95;opacity](#canvas_item_set_opacity)**  **(** [RID](class_rid) arg0, [real](class_real) arg1  **)**
-  * [real](class_real)  **[canvas&#95;item&#95;get&#95;opacity](#canvas_item_get_opacity)**  **(** [RID](class_rid) arg0, [real](class_real) arg1  **)** const
-  * void  **[canvas&#95;item&#95;set&#95;self&#95;opacity](#canvas_item_set_self_opacity)**  **(** [RID](class_rid) arg0, [real](class_real) arg1  **)**
-  * [real](class_real)  **[canvas&#95;item&#95;get&#95;self&#95;opacity](#canvas_item_get_self_opacity)**  **(** [RID](class_rid) arg0, [real](class_real) arg1  **)** const
-  * void  **[canvas&#95;item&#95;add&#95;line](#canvas_item_add_line)**  **(** [RID](class_rid) arg0, [Vector2](class_vector2) arg1, [Vector2](class_vector2) arg2, [Color](class_color) arg3, [real](class_real) arg4=1  **)**
+  * void  **[canvas&#95;item&#95;set&#95;opacity](#canvas_item_set_opacity)**  **(** [RID](class_rid) arg0, [float](class_float) arg1  **)**
+  * [float](class_float)  **[canvas&#95;item&#95;get&#95;opacity](#canvas_item_get_opacity)**  **(** [RID](class_rid) arg0, [float](class_float) arg1  **)** const
+  * void  **[canvas&#95;item&#95;set&#95;self&#95;opacity](#canvas_item_set_self_opacity)**  **(** [RID](class_rid) arg0, [float](class_float) arg1  **)**
+  * [float](class_float)  **[canvas&#95;item&#95;get&#95;self&#95;opacity](#canvas_item_get_self_opacity)**  **(** [RID](class_rid) arg0, [float](class_float) arg1  **)** const
+  * void  **[canvas&#95;item&#95;add&#95;line](#canvas_item_add_line)**  **(** [RID](class_rid) arg0, [Vector2](class_vector2) arg1, [Vector2](class_vector2) arg2, [Color](class_color) arg3, [float](class_float) arg4=1  **)**
   * void  **[canvas&#95;item&#95;add&#95;rect](#canvas_item_add_rect)**  **(** [RID](class_rid) arg0, [Rect2](class_rect2) arg1, [Color](class_color) arg2  **)**
   * void  **[canvas&#95;item&#95;add&#95;texture&#95;rect](#canvas_item_add_texture_rect)**  **(** [RID](class_rid) arg0, [Rect2](class_rect2) arg1, [RID](class_rid) arg2, [bool](class_bool) arg3, [Color](class_color) arg4=Color(1,1,1,1)  **)**
   * void  **[canvas&#95;item&#95;add&#95;texture&#95;rect&#95;region](#canvas_item_add_texture_rect_region)**  **(** [RID](class_rid) arg0, [Rect2](class_rect2) arg1, [RID](class_rid) arg2, [Rect2](class_rect2) arg3, [Color](class_color) arg4=Color(1,1,1,1)  **)**
   * void  **[canvas&#95;item&#95;add&#95;style&#95;box](#canvas_item_add_style_box)**  **(** [RID](class_rid) arg0, [Rect2](class_rect2) arg1, [RID](class_rid) arg2, [RealArray](class_realarray) arg3, [Color](class_color) arg4=Color(1,1,1,1)  **)**
-  * void  **[canvas&#95;item&#95;add&#95;circle](#canvas_item_add_circle)**  **(** [RID](class_rid) arg0, [Vector2](class_vector2) arg1, [real](class_real) arg2, [Color](class_color) arg3  **)**
+  * void  **[canvas&#95;item&#95;add&#95;circle](#canvas_item_add_circle)**  **(** [RID](class_rid) arg0, [Vector2](class_vector2) arg1, [float](class_float) arg2, [Color](class_color) arg3  **)**
   * void  **[viewport&#95;set&#95;canvas&#95;transform](#viewport_set_canvas_transform)**  **(** [RID](class_rid) arg0, [RID](class_rid) arg1, [Matrix32](class_matrix32) arg2  **)**
   * void  **[canvas&#95;item&#95;clear](#canvas_item_clear)**  **(** [RID](class_rid) arg0  **)**
   * void  **[canvas&#95;item&#95;raise](#canvas_item_raise)**  **(** [RID](class_rid) arg0  **)**
-  * void  **[cursor&#95;set&#95;rotation](#cursor_set_rotation)**  **(** [real](class_real) arg0, [int](class_int) arg1  **)**
+  * void  **[cursor&#95;set&#95;rotation](#cursor_set_rotation)**  **(** [float](class_float) arg0, [int](class_int) arg1  **)**
   * void  **[cursor&#95;set&#95;texture](#cursor_set_texture)**  **(** [RID](class_rid) arg0, [Vector2](class_vector2) arg1, [int](class_int) arg2  **)**
   * void  **[cursor&#95;set&#95;visible](#cursor_set_visible)**  **(** [bool](class_bool) arg0, [int](class_int) arg1  **)**
   * void  **[cursor&#95;set&#95;pos](#cursor_set_pos)**  **(** [Vector2](class_vector2) arg0, [int](class_int) arg1  **)**
   * void  **[black&#95;bars&#95;set&#95;margins](#black_bars_set_margins)**  **(** [int](class_int) left, [int](class_int) top, [int](class_int) right, [int](class_int) bottom  **)**
-  * [RID](class_rid)  **[make&#95;sphere&#95;mesh](#make_sphere_mesh)**  **(** [int](class_int) arg0, [int](class_int) arg1, [real](class_real) arg2  **)**
+  * [RID](class_rid)  **[make&#95;sphere&#95;mesh](#make_sphere_mesh)**  **(** [int](class_int) arg0, [int](class_int) arg1, [float](class_float) arg2  **)**
   * void  **[mesh&#95;add&#95;surface&#95;from&#95;planes](#mesh_add_surface_from_planes)**  **(** [RID](class_rid) arg0, [Array](class_array) arg1  **)**
   * void  **[draw](#draw)**  **(** **)**
   * void  **[free](#free)**  **(** [RID](class_rid) arg0  **)**

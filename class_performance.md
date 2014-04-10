@@ -6,7 +6,7 @@
 
 
 ###  Member Functions 
-  * [real](class_real)  **[get&#95;monitor](#get_monitor)**  **(** [int](class_int) monitor  **)** const
+  * [float](class_float)  **[get&#95;monitor](#get_monitor)**  **(** [int](class_int) monitor  **)** const
 
 ###  Numeric Constants  
   * **TIME_FPS** = **0**

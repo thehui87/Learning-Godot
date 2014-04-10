@@ -15,5 +15,10 @@
   * [int](class_int)  **[get&#95;collider&#95;shape](#get_collider_shape)**  **(** **)** const
   * [Vector2](class_vector2)  **[get&#95;collision&#95;point](#get_collision_point)**  **(** **)** const
   * [Vector2](class_vector2)  **[get&#95;collision&#95;normal](#get_collision_normal)**  **(** **)** const
+  * void  **[add&#95;exception&#95;rid](#add_exception_rid)**  **(** [RID](class_rid) rid  **)**
+  * void  **[add&#95;exception](#add_exception)**  **(** [Object](class_object) node  **)**
+  * void  **[remove&#95;exception&#95;rid](#remove_exception_rid)**  **(** [RID](class_rid) rid  **)**
+  * void  **[remove&#95;exception](#remove_exception)**  **(** [Object](class_object) node  **)**
+  * void  **[clear&#95;exceptions](#clear_exceptions)**  **(** **)**
 
 ###  Member Function Description  

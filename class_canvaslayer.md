@@ -12,8 +12,8 @@ Canvas Item layer.
   * [Matrix32](class_matrix32)  **[get&#95;transform](#get_transform)**  **(** **)** const
   * void  **[set&#95;offset](#set_offset)**  **(** [Vector2](class_vector2) offset  **)**
   * [Vector2](class_vector2)  **[get&#95;offset](#get_offset)**  **(** **)** const
-  * void  **[set&#95;rotation](#set_rotation)**  **(** [real](class_real) rotation  **)**
-  * [real](class_real)  **[get&#95;rotation](#get_rotation)**  **(** **)** const
+  * void  **[set&#95;rotation](#set_rotation)**  **(** [float](class_float) rotation  **)**
+  * [float](class_float)  **[get&#95;rotation](#get_rotation)**  **(** **)** const
   * void  **[set&#95;scale](#set_scale)**  **(** [Vector2](class_vector2) scale  **)**
   * [Vector2](class_vector2)  **[get&#95;scale](#get_scale)**  **(** **)** const
   * Canvas  **[get&#95;world&#95;2d](#get_world_2d)**  **(** **)** const
@@ -55,12 +55,12 @@ Set the base offset for this layer (helper).
 Return the base offset for this layer (helper).
 
 #### <a name="set_rotation">set_rotation</a>
-  * void  **set&#95;rotation**  **(** [real](class_real) rotation  **)**
+  * void  **set&#95;rotation**  **(** [float](class_float) rotation  **)**
 
 Set the base rotation for this layer (helper).
 
 #### <a name="get_rotation">get_rotation</a>
-  * [real](class_real)  **get&#95;rotation**  **(** **)** const
+  * [float](class_float)  **get&#95;rotation**  **(** **)** const
 
 Return the base rotation for this layer (helper).
 

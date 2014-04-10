@@ -7,7 +7,7 @@ Base container control for popups and dialogs.
 
 ###  Member Functions 
   * void  **[popup&#95;centered](#popup_centered)**  **(** [Vector2](class_vector2) size=Vector2(0,0)  **)**
-  * void  **[popup&#95;centered&#95;ratio](#popup_centered_ratio)**  **(** [real](class_real) ratio=0.75  **)**
+  * void  **[popup&#95;centered&#95;ratio](#popup_centered_ratio)**  **(** [float](class_float) ratio=0.75  **)**
   * void  **[popup&#95;centered&#95;minsize](#popup_centered_minsize)**  **(** [Vector2](class_vector2) minsize=Vector2(0,0)  **)**
   * void  **[popup](#popup)**  **(** **)**
   * void  **[set&#95;exclusive](#set_exclusive)**  **(** [bool](class_bool) enable  **)**
@@ -30,7 +30,7 @@ PopUp is a base [Control](class_control) used to show dialogs and popups. It's a
 Popup (show the control in modal form) in the center of the screen, at the curent size, or at a size determined by "size".
 
 #### <a name="popup_centered_ratio">popup_centered_ratio</a>
-  * void  **popup&#95;centered&#95;ratio**  **(** [real](class_real) ratio=0.75  **)**
+  * void  **popup&#95;centered&#95;ratio**  **(** [float](class_float) ratio=0.75  **)**
 
 Popup (show the control in modal form) in the center of the screen, scalled at a ratio of size of the screen.
 

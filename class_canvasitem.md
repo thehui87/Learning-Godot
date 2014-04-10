@@ -10,7 +10,7 @@ Base class of anything 2D.
   * void  **[edit&#95;set&#95;state](#edit_set_state)**  **(** var state  **)**
   * void  **[edit&#95;get](#edit_get)**  **(** **)** const
   * void  **[edit&#95;set&#95;rect](#edit_set_rect)**  **(** [Rect2](class_rect2) rect  **)**
-  * void  **[edit&#95;rotate](#edit_rotate)**  **(** [real](class_real) degrees  **)**
+  * void  **[edit&#95;rotate](#edit_rotate)**  **(** [float](class_float) degrees  **)**
   * [Rect2](class_rect2)  **[get&#95;item&#95;rect](#get_item_rect)**  **(** **)** const
   * [RID](class_rid)  **[get&#95;canvas&#95;item](#get_canvas_item)**  **(** **)** const
   * [bool](class_bool)  **[is&#95;visible](#is_visible)**  **(** **)** const
@@ -22,25 +22,25 @@ Base class of anything 2D.
   * [bool](class_bool)  **[is&#95;set&#95;as&#95;toplevel](#is_set_as_toplevel)**  **(** **)** const
   * void  **[set&#95;blend&#95;mode](#set_blend_mode)**  **(** [int](class_int) blend_mode  **)**
   * [int](class_int)  **[get&#95;blend&#95;mode](#get_blend_mode)**  **(** **)** const
-  * void  **[set&#95;opacity](#set_opacity)**  **(** [real](class_real) opacity  **)**
-  * [real](class_real)  **[get&#95;opacity](#get_opacity)**  **(** **)** const
-  * void  **[set&#95;self&#95;opacity](#set_self_opacity)**  **(** [real](class_real) self_opacity  **)**
-  * [real](class_real)  **[get&#95;self&#95;opacity](#get_self_opacity)**  **(** **)** const
-  * void  **[set&#95;on&#95;top](#set_on_top)**  **(** [bool](class_bool) on_top  **)**
-  * [bool](class_bool)  **[is&#95;on&#95;top](#is_on_top)**  **(** **)** const
-  * void  **[draw&#95;line](#draw_line)**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to, [Color](class_color) color, [real](class_real) width=1  **)**
+  * void  **[set&#95;opacity](#set_opacity)**  **(** [float](class_float) opacity  **)**
+  * [float](class_float)  **[get&#95;opacity](#get_opacity)**  **(** **)** const
+  * void  **[set&#95;self&#95;opacity](#set_self_opacity)**  **(** [float](class_float) self_opacity  **)**
+  * [float](class_float)  **[get&#95;self&#95;opacity](#get_self_opacity)**  **(** **)** const
+  * void  **[set&#95;draw&#95;behind&#95;parent](#set_draw_behind_parent)**  **(** [bool](class_bool) enabe  **)**
+  * [bool](class_bool)  **[is&#95;draw&#95;behind&#95;parent&#95;enabled](#is_draw_behind_parent_enabled)**  **(** **)** const
+  * void  **[draw&#95;line](#draw_line)**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to, [Color](class_color) color, [float](class_float) width=1  **)**
   * void  **[draw&#95;rect](#draw_rect)**  **(** [Rect2](class_rect2) rect, [Color](class_color) color  **)**
-  * void  **[draw&#95;circle](#draw_circle)**  **(** [Vector2](class_vector2) pos, [real](class_real) radius, [Color](class_color) color  **)**
+  * void  **[draw&#95;circle](#draw_circle)**  **(** [Vector2](class_vector2) pos, [float](class_float) radius, [Color](class_color) color  **)**
   * void  **[draw&#95;texture](#draw_texture)**  **(** [Texture](class_texture) texture, [Vector2](class_vector2) pos  **)**
   * void  **[draw&#95;texture&#95;rect](#draw_texture_rect)**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [bool](class_bool) tile=false, [Color](class_color) modulate=Color(1,1,1,1)  **)**
   * void  **[draw&#95;texture&#95;rect&#95;region](#draw_texture_rect_region)**  **(** [Texture](class_texture) texture, [Rect2](class_rect2) rect, [Rect2](class_rect2) src_rect, [Color](class_color) modulate=Color(1,1,1,1)  **)**
   * void  **[draw&#95;style&#95;box](#draw_style_box)**  **(** [StyleBox](class_stylebox) style_box, [Rect2](class_rect2) rect  **)**
-  * void  **[draw&#95;primitive](#draw_primitive)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object(), [real](class_real) width=1  **)**
-  * void  **[draw&#95;polygon](#draw_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
-  * void  **[draw&#95;colored&#95;polygon](#draw_colored_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
+  * void  **[draw&#95;primitive](#draw_primitive)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object(), [float](class_float) width=1  **)**
+  * void  **[draw&#95;polygon](#draw_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [float](class_float) arg4=Object()  **)**
+  * void  **[draw&#95;colored&#95;polygon](#draw_colored_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [float](class_float) arg4=Object()  **)**
   * void  **[draw&#95;string](#draw_string)**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) text, [Color](class_color) modulate=Color(1,1,1,1), [int](class_int) clip_w=-1  **)**
-  * [real](class_real)  **[draw&#95;char](#draw_char)**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) char, [String](class_string) next, [Color](class_color) modulate=Color(1,1,1,1)  **)**
-  * void  **[draw&#95;set&#95;transform](#draw_set_transform)**  **(** [Vector2](class_vector2) pos, [real](class_real) rot, [Vector2](class_vector2) scale  **)**
+  * [float](class_float)  **[draw&#95;char](#draw_char)**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) char, [String](class_string) next, [Color](class_color) modulate=Color(1,1,1,1)  **)**
+  * void  **[draw&#95;set&#95;transform](#draw_set_transform)**  **(** [Vector2](class_vector2) pos, [float](class_float) rot, [Vector2](class_vector2) scale  **)**
   * [Matrix32](class_matrix32)  **[get&#95;transform](#get_transform)**  **(** **)** const
   * [Matrix32](class_matrix32)  **[get&#95;global&#95;transform](#get_global_transform)**  **(** **)** const
   * [Matrix32](class_matrix32)  **[get&#95;viewport&#95;transform](#get_viewport_transform)**  **(** **)** const
@@ -86,7 +86,7 @@ Called (if exists) to draw the canvas item.
 Used for editing, returns an opaque value represeting the transform state.
 
 #### <a name="edit_rotate">edit_rotate</a>
-  * void  **edit&#95;rotate**  **(** [real](class_real) degrees  **)**
+  * void  **edit&#95;rotate**  **(** [float](class_float) degrees  **)**
 
 Used for editing, handle rotation.
 
@@ -146,32 +146,22 @@ Set the blending mode from enum BLEND_MODE_*.
 Return the current blending mode from enum BLEND_MODE_*.
 
 #### <a name="set_opacity">set_opacity</a>
-  * void  **set&#95;opacity**  **(** [real](class_real) opacity  **)**
+  * void  **set&#95;opacity**  **(** [float](class_float) opacity  **)**
 
 Set canvas item opacity. This will affect the canvas item and all the children.
 
 #### <a name="get_opacity">get_opacity</a>
-  * [real](class_real)  **get&#95;opacity**  **(** **)** const
+  * [float](class_float)  **get&#95;opacity**  **(** **)** const
 
 Return the canvas item opacity. This affects the canvas item and all the children.
 
 #### <a name="get_self_opacity">get_self_opacity</a>
-  * [real](class_real)  **get&#95;self&#95;opacity**  **(** **)** const
+  * [float](class_float)  **get&#95;self&#95;opacity**  **(** **)** const
 
 Set canvas item self-opacity. This does not affect the opacity of children items.
 
-#### <a name="set_on_top">set_on_top</a>
-  * void  **set&#95;on&#95;top**  **(** [bool](class_bool) on_top  **)**
-
-Set canvas item as drawing over the parent canvas item (default: true).
-
-#### <a name="is_on_top">is_on_top</a>
-  * [bool](class_bool)  **is&#95;on&#95;top**  **(** **)** const
-
-Return if the canvas item is drawing over the parent canvas item (default: true).
-
 #### <a name="draw_line">draw_line</a>
-  * void  **draw&#95;line**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to, [Color](class_color) color, [real](class_real) width=1  **)**
+  * void  **draw&#95;line**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to, [Color](class_color) color, [float](class_float) width=1  **)**
 
 Draw a line from a 2D point to another, with a given color and width.
 
@@ -181,7 +171,7 @@ Draw a line from a 2D point to another, with a given color and width.
 Draw a colored rectangle.
 
 #### <a name="draw_circle">draw_circle</a>
-  * void  **draw&#95;circle**  **(** [Vector2](class_vector2) pos, [real](class_real) radius, [Color](class_color) color  **)**
+  * void  **draw&#95;circle**  **(** [Vector2](class_vector2) pos, [float](class_float) radius, [Color](class_color) color  **)**
 
 Draw a colored circle.
 
@@ -206,17 +196,17 @@ Draw a textured rectangle region at a given position, optionally modulated by a 
 Draw a styled rectangle.
 
 #### <a name="draw_primitive">draw_primitive</a>
-  * void  **draw&#95;primitive**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object(), [real](class_real) width=1  **)**
+  * void  **draw&#95;primitive**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object(), [float](class_float) width=1  **)**
 
 Draw a custom primitive, 1 point for a point, 2 points for a line, 3 points for a triangle and 4 points for a quad.
 
 #### <a name="draw_polygon">draw_polygon</a>
-  * void  **draw&#95;polygon**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
+  * void  **draw&#95;polygon**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [float](class_float) arg4=Object()  **)**
 
 Draw a polygon of any amount of points, convex or concave.
 
 #### <a name="draw_colored_polygon">draw_colored_polygon</a>
-  * void  **draw&#95;colored&#95;polygon**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [real](class_real) arg4=Object()  **)**
+  * void  **draw&#95;colored&#95;polygon**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [float](class_float) arg4=Object()  **)**
 
 Draw a colored polygon of any amount of points, convex or concave.
 
@@ -226,11 +216,11 @@ Draw a colored polygon of any amount of points, convex or concave.
 Draw a string using a custom font.
 
 #### <a name="draw_char">draw_char</a>
-  * [real](class_real)  **draw&#95;char**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) char, [String](class_string) next, [Color](class_color) modulate=Color(1,1,1,1)  **)**
+  * [float](class_float)  **draw&#95;char**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) char, [String](class_string) next, [Color](class_color) modulate=Color(1,1,1,1)  **)**
 
 Draw a string character using a custom font. Returns the advance, depending on the char width and kerning with an optional next char.
 
 #### <a name="draw_set_transform">draw_set_transform</a>
-  * void  **draw&#95;set&#95;transform**  **(** [Vector2](class_vector2) pos, [real](class_real) rot, [Vector2](class_vector2) scale  **)**
+  * void  **draw&#95;set&#95;transform**  **(** [Vector2](class_vector2) pos, [float](class_float) rot, [Vector2](class_vector2) scale  **)**
 
 Set a custom transform for drawing. Anything drawn afterwards will be transformed by this.

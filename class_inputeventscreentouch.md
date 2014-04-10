@@ -14,8 +14,8 @@
   * [int](class_int) **device**
   * [int](class_int) **ID**
   * [int](class_int) **index**
-  * [real](class_real) **x**
-  * [real](class_real) **y**
+  * [float](class_float) **x**
+  * [float](class_float) **y**
   * [Vector2](class_vector2) **pos**
   * [bool](class_bool) **pressed**
 

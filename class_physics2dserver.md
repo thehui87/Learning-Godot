@@ -13,8 +13,8 @@ Physics 2D Server.
   * [RID](class_rid)  **[space&#95;create](#space_create)**  **(** **)**
   * void  **[space&#95;set&#95;active](#space_set_active)**  **(** [RID](class_rid) space, [bool](class_bool) active  **)**
   * [bool](class_bool)  **[space&#95;is&#95;active](#space_is_active)**  **(** [RID](class_rid) space  **)** const
-  * void  **[space&#95;set&#95;param](#space_set_param)**  **(** [RID](class_rid) space, [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[space&#95;get&#95;param](#space_get_param)**  **(** [RID](class_rid) space, [int](class_int) param  **)** const
+  * void  **[space&#95;set&#95;param](#space_set_param)**  **(** [RID](class_rid) space, [int](class_int) param, [float](class_float) value  **)**
+  * [float](class_float)  **[space&#95;get&#95;param](#space_get_param)**  **(** [RID](class_rid) space, [int](class_int) param  **)** const
   * [Physics2DDirectSpaceState](class_physics2ddirectspacestate)  **[space&#95;get&#95;direct&#95;state](#space_get_direct_state)**  **(** [RID](class_rid) space  **)**
   * [RID](class_rid)  **[area&#95;create](#area_create)**  **(** **)**
   * void  **[area&#95;set&#95;space](#area_set_space)**  **(** [RID](class_rid) area, [RID](class_rid) space  **)**
@@ -55,8 +55,8 @@ Physics 2D Server.
   * [int](class_int)  **[body&#95;get&#95;object&#95;instance&#95;ID](#body_get_object_instance_ID)**  **(** [RID](class_rid) body  **)** const
   * void  **[body&#95;set&#95;continuous&#95;collision&#95;detection&#95;mode](#body_set_continuous_collision_detection_mode)**  **(** [RID](class_rid) body, [int](class_int) mode  **)**
   * [int](class_int)  **[body&#95;get&#95;continuous&#95;collision&#95;detection&#95;mode](#body_get_continuous_collision_detection_mode)**  **(** [RID](class_rid) body  **)** const
-  * void  **[body&#95;set&#95;param](#body_set_param)**  **(** [RID](class_rid) body, [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[body&#95;get&#95;param](#body_get_param)**  **(** [RID](class_rid) body, [int](class_int) param  **)** const
+  * void  **[body&#95;set&#95;param](#body_set_param)**  **(** [RID](class_rid) body, [int](class_int) param, [float](class_float) value  **)**
+  * [float](class_float)  **[body&#95;get&#95;param](#body_get_param)**  **(** [RID](class_rid) body, [int](class_int) param  **)** const
   * void  **[body&#95;set&#95;state](#body_set_state)**  **(** [RID](class_rid) body, [int](class_int) state, var value  **)**
   * void  **[body&#95;get&#95;state](#body_get_state)**  **(** [RID](class_rid) body, [int](class_int) state  **)** const
   * void  **[body&#95;apply&#95;impulse](#body_apply_impulse)**  **(** [RID](class_rid) body, [Vector2](class_vector2) pos, [Vector2](class_vector2) impulse  **)**
@@ -68,13 +68,13 @@ Physics 2D Server.
   * void  **[body&#95;set&#95;omit&#95;force&#95;integration](#body_set_omit_force_integration)**  **(** [RID](class_rid) body, [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[body&#95;is&#95;omitting&#95;force&#95;integration](#body_is_omitting_force_integration)**  **(** [RID](class_rid) body  **)** const
   * void  **[body&#95;set&#95;force&#95;integration&#95;callback](#body_set_force_integration_callback)**  **(** [RID](class_rid) body, [Object](class_object) receiver, [String](class_string) method, var arg3  **)**
-  * void  **[joint&#95;set&#95;param](#joint_set_param)**  **(** [RID](class_rid) joint, [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[joint&#95;get&#95;param](#joint_get_param)**  **(** [RID](class_rid) joint, [int](class_int) param  **)** const
+  * void  **[joint&#95;set&#95;param](#joint_set_param)**  **(** [RID](class_rid) joint, [int](class_int) param, [float](class_float) value  **)**
+  * [float](class_float)  **[joint&#95;get&#95;param](#joint_get_param)**  **(** [RID](class_rid) joint, [int](class_int) param  **)** const
   * [RID](class_rid)  **[pin&#95;joint&#95;create](#pin_joint_create)**  **(** [Vector2](class_vector2) anchor, [RID](class_rid) body_a, [RID](class_rid) body_b=RID()  **)**
   * [RID](class_rid)  **[groove&#95;joint&#95;create](#groove_joint_create)**  **(** [Vector2](class_vector2) groove1_a, [Vector2](class_vector2) groove2_a, [Vector2](class_vector2) anchor_b, [RID](class_rid) body_a=RID(), [RID](class_rid) body_b=RID()  **)**
   * [RID](class_rid)  **[damped&#95;spring&#95;joint&#95;create](#damped_spring_joint_create)**  **(** [Vector2](class_vector2) anchor_a, [Vector2](class_vector2) anchor_b, [RID](class_rid) body_a, [RID](class_rid) body_b=RID()  **)**
-  * void  **[damped&#95;string&#95;joint&#95;set&#95;param](#damped_string_joint_set_param)**  **(** [RID](class_rid) joint, [int](class_int) param, [real](class_real) value=RID()  **)**
-  * [real](class_real)  **[damped&#95;string&#95;joint&#95;get&#95;param](#damped_string_joint_get_param)**  **(** [RID](class_rid) joint, [int](class_int) param  **)** const
+  * void  **[damped&#95;string&#95;joint&#95;set&#95;param](#damped_string_joint_set_param)**  **(** [RID](class_rid) joint, [int](class_int) param, [float](class_float) value=RID()  **)**
+  * [float](class_float)  **[damped&#95;string&#95;joint&#95;get&#95;param](#damped_string_joint_get_param)**  **(** [RID](class_rid) joint, [int](class_int) param  **)** const
   * [int](class_int)  **[joint&#95;get&#95;type](#joint_get_type)**  **(** [RID](class_rid) joint  **)** const
   * void  **[free](#free)**  **(** [RID](class_rid) rid  **)**
   * void  **[set&#95;active](#set_active)**  **(** [bool](class_bool) active  **)**

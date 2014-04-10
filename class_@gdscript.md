@@ -5,48 +5,49 @@
 Built-in GDScript functions.
 
 ###  Member Functions 
-  * [real](class_real)  **[sin](#sin)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[cos](#cos)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[tan](#tan)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[sinh](#sinh)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[cosh](#cosh)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[tanh](#tanh)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[asin](#asin)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[acos](#acos)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[atan](#atan)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[atan2](#atan2)**  **(** [real](class_real) x, [real](class_real) y  **)**
-  * [real](class_real)  **[sqrt](#sqrt)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[fmod](#fmod)**  **(** [real](class_real) x, [real](class_real) y  **)**
-  * [real](class_real)  **[fposmod](#fposmod)**  **(** [real](class_real) x, [real](class_real) y  **)**
-  * [real](class_real)  **[floor](#floor)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[ceil](#ceil)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[round](#round)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[abs](#abs)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[sign](#sign)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[pow](#pow)**  **(** [real](class_real) x, [real](class_real) y  **)**
-  * [real](class_real)  **[log](#log)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[exp](#exp)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[isnan](#isnan)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[isinf](#isinf)**  **(** [real](class_real) s  **)**
-  * [real](class_real)  **[ease](#ease)**  **(** [real](class_real) s, [real](class_real) curve  **)**
-  * [real](class_real)  **[decimals](#decimals)**  **(** [real](class_real) step  **)**
-  * [real](class_real)  **[stepify](#stepify)**  **(** [real](class_real) s, [real](class_real) step  **)**
-  * [real](class_real)  **[lerp](#lerp)**  **(** [real](class_real) a, [real](class_real) b, [real](class_real) c  **)**
-  * [real](class_real)  **[dectime](#dectime)**  **(** [real](class_real) value, [real](class_real) amount, [real](class_real) step  **)**
+  * [float](class_float)  **[sin](#sin)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[cos](#cos)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[tan](#tan)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[sinh](#sinh)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[cosh](#cosh)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[tanh](#tanh)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[asin](#asin)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[acos](#acos)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[atan](#atan)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[atan2](#atan2)**  **(** [float](class_float) x, [float](class_float) y  **)**
+  * [float](class_float)  **[sqrt](#sqrt)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[fmod](#fmod)**  **(** [float](class_float) x, [float](class_float) y  **)**
+  * [float](class_float)  **[fposmod](#fposmod)**  **(** [float](class_float) x, [float](class_float) y  **)**
+  * [float](class_float)  **[floor](#floor)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[ceil](#ceil)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[round](#round)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[abs](#abs)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[sign](#sign)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[pow](#pow)**  **(** [float](class_float) x, [float](class_float) y  **)**
+  * [float](class_float)  **[log](#log)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[exp](#exp)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[isnan](#isnan)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[isinf](#isinf)**  **(** [float](class_float) s  **)**
+  * [float](class_float)  **[ease](#ease)**  **(** [float](class_float) s, [float](class_float) curve  **)**
+  * [float](class_float)  **[decimals](#decimals)**  **(** [float](class_float) step  **)**
+  * [float](class_float)  **[stepify](#stepify)**  **(** [float](class_float) s, [float](class_float) step  **)**
+  * [float](class_float)  **[lerp](#lerp)**  **(** [float](class_float) a, [float](class_float) b, [float](class_float) c  **)**
+  * [float](class_float)  **[dectime](#dectime)**  **(** [float](class_float) value, [float](class_float) amount, [float](class_float) step  **)**
   * [Nil](class_nil)  **[randomize](#randomize)**  **(** **)**
-  * [int](class_int)  **[rand](#rand)**  **(** **)**
-  * [real](class_real)  **[randf](#randf)**  **(** **)**
-  * [real](class_real)  **[rand&#95;range](#rand_range)**  **(** [real](class_real) from, [real](class_real) to  **)**
-  * [Array](class_array)  **[rand&#95;seed](#rand_seed)**  **(** [real](class_real) seed  **)**
-  * [real](class_real)  **[deg2rad](#deg2rad)**  **(** [real](class_real) deg  **)**
-  * [real](class_real)  **[rad2deg](#rad2deg)**  **(** [real](class_real) rad  **)**
-  * [real](class_real)  **[linear2db](#linear2db)**  **(** [real](class_real) nrg  **)**
-  * [real](class_real)  **[db2linear](#db2linear)**  **(** [real](class_real) db  **)**
-  * [real](class_real)  **[max](#max)**  **(** [real](class_real) a, [real](class_real) b  **)**
-  * [real](class_real)  **[min](#min)**  **(** [real](class_real) a, [real](class_real) b  **)**
-  * [real](class_real)  **[clamp](#clamp)**  **(** [real](class_real) val, [real](class_real) min, [real](class_real) max  **)**
+  * [int](class_int)  **[randi](#randi)**  **(** **)**
+  * [float](class_float)  **[randf](#randf)**  **(** **)**
+  * [float](class_float)  **[rand&#95;range](#rand_range)**  **(** [float](class_float) from, [float](class_float) to  **)**
+  * [Array](class_array)  **[rand&#95;seed](#rand_seed)**  **(** [float](class_float) seed  **)**
+  * [float](class_float)  **[deg2rad](#deg2rad)**  **(** [float](class_float) deg  **)**
+  * [float](class_float)  **[rad2deg](#rad2deg)**  **(** [float](class_float) rad  **)**
+  * [float](class_float)  **[linear2db](#linear2db)**  **(** [float](class_float) nrg  **)**
+  * [float](class_float)  **[db2linear](#db2linear)**  **(** [float](class_float) db  **)**
+  * [float](class_float)  **[max](#max)**  **(** [float](class_float) a, [float](class_float) b  **)**
+  * [float](class_float)  **[min](#min)**  **(** [float](class_float) a, [float](class_float) b  **)**
+  * [float](class_float)  **[clamp](#clamp)**  **(** [float](class_float) val, [float](class_float) min, [float](class_float) max  **)**
   * [int](class_int)  **[nearest&#95;po2](#nearest_po2)**  **(** [int](class_int) val  **)**
   * [Object](class_object)  **[weakref](#weakref)**  **(** [Object](class_object) obj  **)**
+  * [Object](class_object)  **[funcref](#funcref)**  **(** [Object](class_object) instance, [String](class_string) funcname  **)**
   * [Object](class_object)  **[convert](#convert)**  **(** var what, [int](class_int) type  **)**
   * [String](class_string)  **[str](#str)**  **(** var what, var ...  **)**
   * [String](class_string)  **[str](#str)**  **(** var what, var ...  **)**
@@ -69,182 +70,177 @@ This contains the list of built-in gdscript functions. Mostly math functions and
 ###  Member Function Description  
 
 #### <a name="sin">sin</a>
-  * [real](class_real)  **sin**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **sin**  **(** [float](class_float) s  **)**
 
 Standard sine function.
 
 #### <a name="cos">cos</a>
-  * [real](class_real)  **cos**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **cos**  **(** [float](class_float) s  **)**
 
 Standard cosine function.
 
 #### <a name="tan">tan</a>
-  * [real](class_real)  **tan**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **tan**  **(** [float](class_float) s  **)**
 
 Standard tangent function.
 
 #### <a name="sinh">sinh</a>
-  * [real](class_real)  **sinh**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **sinh**  **(** [float](class_float) s  **)**
 
 Hyperbolic sine.
 
 #### <a name="tanh">tanh</a>
-  * [real](class_real)  **tanh**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **tanh**  **(** [float](class_float) s  **)**
 
 Hyperbolic tangent.
 
 #### <a name="asin">asin</a>
-  * [real](class_real)  **asin**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **asin**  **(** [float](class_float) s  **)**
 
 Arc-sine.
 
 #### <a name="acos">acos</a>
-  * [real](class_real)  **acos**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **acos**  **(** [float](class_float) s  **)**
 
 Arc-cosine.
 
 #### <a name="atan">atan</a>
-  * [real](class_real)  **atan**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **atan**  **(** [float](class_float) s  **)**
 
 Arc-tangent.
 
 #### <a name="atan2">atan2</a>
-  * [real](class_real)  **atan2**  **(** [real](class_real) x, [real](class_real) y  **)**
+  * [float](class_float)  **atan2**  **(** [float](class_float) x, [float](class_float) y  **)**
 
 Arc-tangent that takes a 2D vector as argument, retuns the full -pi to +pi range.
 
 #### <a name="sqrt">sqrt</a>
-  * [real](class_real)  **sqrt**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **sqrt**  **(** [float](class_float) s  **)**
 
 Square root.
 
 #### <a name="fmod">fmod</a>
-  * [real](class_real)  **fmod**  **(** [real](class_real) x, [real](class_real) y  **)**
+  * [float](class_float)  **fmod**  **(** [float](class_float) x, [float](class_float) y  **)**
 
 Module (remainder of x/y).
 
 #### <a name="fposmod">fposmod</a>
-  * [real](class_real)  **fposmod**  **(** [real](class_real) x, [real](class_real) y  **)**
+  * [float](class_float)  **fposmod**  **(** [float](class_float) x, [float](class_float) y  **)**
 
 Module (remainder of x/y) that wraps equally in positive and negative.
 
 #### <a name="floor">floor</a>
-  * [real](class_real)  **floor**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **floor**  **(** [float](class_float) s  **)**
 
 Floor (rounds down to nearest integer).
 
 #### <a name="ceil">ceil</a>
-  * [real](class_real)  **ceil**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **ceil**  **(** [float](class_float) s  **)**
 
 Ceiling (rounds up to nearest integer).
 
 #### <a name="round">round</a>
-  * [real](class_real)  **round**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **round**  **(** [float](class_float) s  **)**
 
 Round to nearest integer.
 
 #### <a name="abs">abs</a>
-  * [real](class_real)  **abs**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **abs**  **(** [float](class_float) s  **)**
 
 Remove sign (works for integer and  float).
 
 #### <a name="sign">sign</a>
-  * [real](class_real)  **sign**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **sign**  **(** [float](class_float) s  **)**
 
 Return sign (-1 or +1).
 
 #### <a name="pow">pow</a>
-  * [real](class_real)  **pow**  **(** [real](class_real) x, [real](class_real) y  **)**
+  * [float](class_float)  **pow**  **(** [float](class_float) x, [float](class_float) y  **)**
 
 Power function, x elevate to y.
 
 #### <a name="log">log</a>
-  * [real](class_real)  **log**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **log**  **(** [float](class_float) s  **)**
 
 Natural logarithm.
 
 #### <a name="exp">exp</a>
-  * [real](class_real)  **exp**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **exp**  **(** [float](class_float) s  **)**
 
 Exponential logarithm.
 
 #### <a name="isnan">isnan</a>
-  * [real](class_real)  **isnan**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **isnan**  **(** [float](class_float) s  **)**
 
 Return true if the float is not a number.
 
 #### <a name="isinf">isinf</a>
-  * [real](class_real)  **isinf**  **(** [real](class_real) s  **)**
+  * [float](class_float)  **isinf**  **(** [float](class_float) s  **)**
 
 Return true if the float is infinite.
 
 #### <a name="ease">ease</a>
-  * [real](class_real)  **ease**  **(** [real](class_real) s, [real](class_real) curve  **)**
+  * [float](class_float)  **ease**  **(** [float](class_float) s, [float](class_float) curve  **)**
 
 Easing function, based on exponent. 0 is constant, 1 is linear, 0 to 1 is ease-in, 1+ is ease out. Negative values are in-out/out in.
 
 #### <a name="decimals">decimals</a>
-  * [real](class_real)  **decimals**  **(** [real](class_real) step  **)**
+  * [float](class_float)  **decimals**  **(** [float](class_float) step  **)**
 
 Return the amount of decimals in the floating point value.
 
 #### <a name="stepify">stepify</a>
-  * [real](class_real)  **stepify**  **(** [real](class_real) s, [real](class_real) step  **)**
+  * [float](class_float)  **stepify**  **(** [float](class_float) s, [float](class_float) step  **)**
 
 Snap float value to a given step.
 
-#### <a name="rand">rand</a>
-  * [int](class_int)  **rand**  **(** **)**
-
-Random value (integer).
-
 #### <a name="randf">randf</a>
-  * [real](class_real)  **randf**  **(** **)**
+  * [float](class_float)  **randf**  **(** **)**
 
 Random value (0 to 1 float).
 
 #### <a name="rand_range">rand_range</a>
-  * [real](class_real)  **rand&#95;range**  **(** [real](class_real) from, [real](class_real) to  **)**
+  * [float](class_float)  **rand&#95;range**  **(** [float](class_float) from, [float](class_float) to  **)**
 
 Random range.
 
 #### <a name="rand_seed">rand_seed</a>
-  * [Array](class_array)  **rand&#95;seed**  **(** [real](class_real) seed  **)**
+  * [Array](class_array)  **rand&#95;seed**  **(** [float](class_float) seed  **)**
 
 random from seed, pass a seed and an array with both number and new seed is returned.
 
 #### <a name="deg2rad">deg2rad</a>
-  * [real](class_real)  **deg2rad**  **(** [real](class_real) deg  **)**
+  * [float](class_float)  **deg2rad**  **(** [float](class_float) deg  **)**
 
 Convert from degrees to radians.
 
 #### <a name="rad2deg">rad2deg</a>
-  * [real](class_real)  **rad2deg**  **(** [real](class_real) rad  **)**
+  * [float](class_float)  **rad2deg**  **(** [float](class_float) rad  **)**
 
 Convert from radias to degrees.
 
 #### <a name="linear2db">linear2db</a>
-  * [real](class_real)  **linear2db**  **(** [real](class_real) nrg  **)**
+  * [float](class_float)  **linear2db**  **(** [float](class_float) nrg  **)**
 
 Convert from linear energy to decibels (audio).
 
 #### <a name="db2linear">db2linear</a>
-  * [real](class_real)  **db2linear**  **(** [real](class_real) db  **)**
+  * [float](class_float)  **db2linear**  **(** [float](class_float) db  **)**
 
 Convert from decibels to linear energy (audio).
 
 #### <a name="max">max</a>
-  * [real](class_real)  **max**  **(** [real](class_real) a, [real](class_real) b  **)**
+  * [float](class_float)  **max**  **(** [float](class_float) a, [float](class_float) b  **)**
 
 Return the maximum of two values.
 
 #### <a name="min">min</a>
-  * [real](class_real)  **min**  **(** [real](class_real) a, [real](class_real) b  **)**
+  * [float](class_float)  **min**  **(** [float](class_float) a, [float](class_float) b  **)**
 
 Return the minimum of two values.
 
 #### <a name="clamp">clamp</a>
-  * [real](class_real)  **clamp**  **(** [real](class_real) val, [real](class_real) min, [real](class_real) max  **)**
+  * [float](class_float)  **clamp**  **(** [float](class_float) val, [float](class_float) min, [float](class_float) max  **)**
 
 Clamp both values to a range.
 

@@ -14,8 +14,8 @@ Abstract base [Resource](class_resource) for coloring and shading geometry.
   * [int](class_int)  **[get&#95;blend&#95;mode](#get_blend_mode)**  **(** **)** const
   * void  **[set&#95;shade&#95;model](#set_shade_model)**  **(** [int](class_int) model  **)**
   * [int](class_int)  **[get&#95;shade&#95;model](#get_shade_model)**  **(** **)** const
-  * void  **[set&#95;line&#95;width](#set_line_width)**  **(** [real](class_real) width  **)**
-  * [real](class_real)  **[get&#95;line&#95;width](#get_line_width)**  **(** **)** const
+  * void  **[set&#95;line&#95;width](#set_line_width)**  **(** [float](class_float) width  **)**
+  * [float](class_float)  **[get&#95;line&#95;width](#get_line_width)**  **(** **)** const
 
 ###  Numeric Constants  
   * **FLAG_VISIBLE** = **0** - Geometry is visible when this flag is enabled (default).
@@ -69,11 +69,11 @@ Set blend mode for the material, which can be one of BLEND_MODE_MIX (default), B
 Return blend mode for the material, which can be one of BLEND_MODE_MIX (default), BLEND_MODE_ADD, BLEND_MODE_SUB. Keep in mind that only BLEND_MODE_MIX ensures that the material _may_ be opaque, any other blend mode will render with alpha blending enabled in raster-based [VisualServer](class_visualserver) implementations.
 
 #### <a name="set_line_width">set_line_width</a>
-  * void  **set&#95;line&#95;width**  **(** [real](class_real) width  **)**
+  * void  **set&#95;line&#95;width**  **(** [float](class_float) width  **)**
 
 Set the line width for geometry drawn with FLAG_WIREFRAME enabled, or LINE primitives. Note that not all hardware or VisualServer backends support this (like DirectX).
 
 #### <a name="get_line_width">get_line_width</a>
-  * [real](class_real)  **get&#95;line&#95;width**  **(** **)** const
+  * [float](class_float)  **get&#95;line&#95;width**  **(** **)** const
 
 Return the line width for geometry drawn with FLAG_WIREFRAME enabled, or LINE primitives. Note that not all hardware or VisualServer backends support this (like DirectX).

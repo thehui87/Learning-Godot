@@ -14,47 +14,47 @@ Sample Player node.
   * void  **[stop](#stop)**  **(** [int](class_int) voice  **)**
   * void  **[stop&#95;all](#stop_all)**  **(** **)**
   * void  **[set&#95;mix&#95;rate](#set_mix_rate)**  **(** [int](class_int) voice, [int](class_int) hz  **)**
-  * void  **[set&#95;pitch&#95;scale](#set_pitch_scale)**  **(** [int](class_int) voice, [real](class_real) ratio  **)**
-  * void  **[set&#95;volume](#set_volume)**  **(** [int](class_int) voice, [real](class_real) nrg  **)**
-  * void  **[set&#95;volume&#95;db](#set_volume_db)**  **(** [int](class_int) voice, [real](class_real) nrg  **)**
-  * void  **[set&#95;pan](#set_pan)**  **(** [int](class_int) voice, [real](class_real) pan, [real](class_real) depth=0, [real](class_real) height=0  **)**
-  * void  **[set&#95;filter](#set_filter)**  **(** [int](class_int) voice, [int](class_int) type, [real](class_real) cutoff_hz, [real](class_real) resonance, [real](class_real) gain=0  **)**
-  * void  **[set&#95;chorus](#set_chorus)**  **(** [int](class_int) voice, [real](class_real) send  **)**
-  * void  **[set&#95;reverb](#set_reverb)**  **(** [int](class_int) voice, [int](class_int) room_type, [real](class_real) send  **)**
+  * void  **[set&#95;pitch&#95;scale](#set_pitch_scale)**  **(** [int](class_int) voice, [float](class_float) ratio  **)**
+  * void  **[set&#95;volume](#set_volume)**  **(** [int](class_int) voice, [float](class_float) nrg  **)**
+  * void  **[set&#95;volume&#95;db](#set_volume_db)**  **(** [int](class_int) voice, [float](class_float) nrg  **)**
+  * void  **[set&#95;pan](#set_pan)**  **(** [int](class_int) voice, [float](class_float) pan, [float](class_float) depth=0, [float](class_float) height=0  **)**
+  * void  **[set&#95;filter](#set_filter)**  **(** [int](class_int) voice, [int](class_int) type, [float](class_float) cutoff_hz, [float](class_float) resonance, [float](class_float) gain=0  **)**
+  * void  **[set&#95;chorus](#set_chorus)**  **(** [int](class_int) voice, [float](class_float) send  **)**
+  * void  **[set&#95;reverb](#set_reverb)**  **(** [int](class_int) voice, [int](class_int) room_type, [float](class_float) send  **)**
   * [int](class_int)  **[get&#95;mix&#95;rate](#get_mix_rate)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;pitch&#95;scale](#get_pitch_scale)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;volume](#get_volume)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;volume&#95;db](#get_volume_db)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;pan](#get_pan)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;pan&#95;depth](#get_pan_depth)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;pan&#95;height](#get_pan_height)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;pitch&#95;scale](#get_pitch_scale)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;volume](#get_volume)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;volume&#95;db](#get_volume_db)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;pan](#get_pan)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;pan&#95;depth](#get_pan_depth)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;pan&#95;height](#get_pan_height)**  **(** [int](class_int) voice  **)** const
   * [int](class_int)  **[get&#95;filter&#95;type](#get_filter_type)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;filter&#95;cutoff](#get_filter_cutoff)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;filter&#95;resonance](#get_filter_resonance)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;filter&#95;gain](#get_filter_gain)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;chorus](#get_chorus)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;reverb&#95;room](#get_reverb_room)**  **(** [int](class_int) voice  **)** const
-  * [real](class_real)  **[get&#95;reverb](#get_reverb)**  **(** [int](class_int) voice  **)** const
-  * void  **[set&#95;default&#95;pitch&#95;scale](#set_default_pitch_scale)**  **(** [real](class_real) ratio  **)**
-  * void  **[set&#95;default&#95;volume](#set_default_volume)**  **(** [real](class_real) nrg  **)**
-  * void  **[set&#95;default&#95;volume&#95;db](#set_default_volume_db)**  **(** [real](class_real) db  **)**
-  * void  **[set&#95;default&#95;pan](#set_default_pan)**  **(** [real](class_real) pan, [real](class_real) depth=0, [real](class_real) height=0  **)**
-  * void  **[set&#95;default&#95;filter](#set_default_filter)**  **(** [int](class_int) type, [real](class_real) cutoff_hz, [real](class_real) resonance, [real](class_real) gain=0  **)**
-  * void  **[set&#95;default&#95;chorus](#set_default_chorus)**  **(** [real](class_real) send  **)**
-  * void  **[set&#95;default&#95;reverb](#set_default_reverb)**  **(** [int](class_int) room_type, [real](class_real) send  **)**
-  * [real](class_real)  **[get&#95;default&#95;pitch&#95;scale](#get_default_pitch_scale)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;volume](#get_default_volume)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;volume&#95;db](#get_default_volume_db)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;pan](#get_default_pan)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;pan&#95;depth](#get_default_pan_depth)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;pan&#95;height](#get_default_pan_height)**  **(** **)** const
+  * [float](class_float)  **[get&#95;filter&#95;cutoff](#get_filter_cutoff)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;filter&#95;resonance](#get_filter_resonance)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;filter&#95;gain](#get_filter_gain)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;chorus](#get_chorus)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;reverb&#95;room](#get_reverb_room)**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **[get&#95;reverb](#get_reverb)**  **(** [int](class_int) voice  **)** const
+  * void  **[set&#95;default&#95;pitch&#95;scale](#set_default_pitch_scale)**  **(** [float](class_float) ratio  **)**
+  * void  **[set&#95;default&#95;volume](#set_default_volume)**  **(** [float](class_float) nrg  **)**
+  * void  **[set&#95;default&#95;volume&#95;db](#set_default_volume_db)**  **(** [float](class_float) db  **)**
+  * void  **[set&#95;default&#95;pan](#set_default_pan)**  **(** [float](class_float) pan, [float](class_float) depth=0, [float](class_float) height=0  **)**
+  * void  **[set&#95;default&#95;filter](#set_default_filter)**  **(** [int](class_int) type, [float](class_float) cutoff_hz, [float](class_float) resonance, [float](class_float) gain=0  **)**
+  * void  **[set&#95;default&#95;chorus](#set_default_chorus)**  **(** [float](class_float) send  **)**
+  * void  **[set&#95;default&#95;reverb](#set_default_reverb)**  **(** [int](class_int) room_type, [float](class_float) send  **)**
+  * [float](class_float)  **[get&#95;default&#95;pitch&#95;scale](#get_default_pitch_scale)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;volume](#get_default_volume)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;volume&#95;db](#get_default_volume_db)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;pan](#get_default_pan)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;pan&#95;depth](#get_default_pan_depth)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;pan&#95;height](#get_default_pan_height)**  **(** **)** const
   * [int](class_int)  **[get&#95;default&#95;filter&#95;type](#get_default_filter_type)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;filter&#95;cutoff](#get_default_filter_cutoff)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;filter&#95;resonance](#get_default_filter_resonance)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;filter&#95;gain](#get_default_filter_gain)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;chorus](#get_default_chorus)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;reverb&#95;room](#get_default_reverb_room)**  **(** **)** const
-  * [real](class_real)  **[get&#95;default&#95;reverb](#get_default_reverb)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;filter&#95;cutoff](#get_default_filter_cutoff)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;filter&#95;resonance](#get_default_filter_resonance)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;filter&#95;gain](#get_default_filter_gain)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;chorus](#get_default_chorus)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;reverb&#95;room](#get_default_reverb_room)**  **(** **)** const
+  * [float](class_float)  **[get&#95;default&#95;reverb](#get_default_reverb)**  **(** **)** const
   * [bool](class_bool)  **[is&#95;active](#is_active)**  **(** **)** const
   * [bool](class_bool)  **[is&#95;voice&#95;active](#is_voice_active)**  **(** [int](class_int) voice  **)** const
 
@@ -104,32 +104,32 @@ Stop a voice "voice". (see [play](#play)).
 Change the mix rate of a voice "voice" to given "hz".
 
 #### <a name="set_pitch_scale">set_pitch_scale</a>
-  * void  **set&#95;pitch&#95;scale**  **(** [int](class_int) voice, [real](class_real) ratio  **)**
+  * void  **set&#95;pitch&#95;scale**  **(** [int](class_int) voice, [float](class_float) ratio  **)**
 
 Scale the pitch (mix rate) of a voice by a ratio value "ratio". A ratio of 1.0 means the voice is unscaled.
 
 #### <a name="set_volume">set_volume</a>
-  * void  **set&#95;volume**  **(** [int](class_int) voice, [real](class_real) nrg  **)**
+  * void  **set&#95;volume**  **(** [int](class_int) voice, [float](class_float) nrg  **)**
 
 Set the volume of a voice, 0db is maximum volume (every about -6db, volume is reduced in half). "db" does in fact go from zero to negative.
 
 #### <a name="set_pan">set_pan</a>
-  * void  **set&#95;pan**  **(** [int](class_int) voice, [real](class_real) pan, [real](class_real) depth=0, [real](class_real) height=0  **)**
+  * void  **set&#95;pan**  **(** [int](class_int) voice, [float](class_float) pan, [float](class_float) depth=0, [float](class_float) height=0  **)**
 
 Set the panning of a voice. Panning goes from -1 (left) to +1 (right). Optionally, if the hardware supports 3D sound, also set depth and height (also in range -1 to +1).
 
 #### <a name="set_filter">set_filter</a>
-  * void  **set&#95;filter**  **(** [int](class_int) voice, [int](class_int) type, [real](class_real) cutoff_hz, [real](class_real) resonance, [real](class_real) gain=0  **)**
+  * void  **set&#95;filter**  **(** [int](class_int) voice, [int](class_int) type, [float](class_float) cutoff_hz, [float](class_float) resonance, [float](class_float) gain=0  **)**
 
 Set and enable a filter of a voice, with type "type" (see FILTER_* enum), cutoff (0 to 22khz) frequency and resonance (0+).
 
 #### <a name="set_chorus">set_chorus</a>
-  * void  **set&#95;chorus**  **(** [int](class_int) voice, [real](class_real) send  **)**
+  * void  **set&#95;chorus**  **(** [int](class_int) voice, [float](class_float) send  **)**
 
 Set the chorus send level of a voice (0 to 1). For setting chorus parameters, see [AudioServer](class_audioserver).
 
 #### <a name="set_reverb">set_reverb</a>
-  * void  **set&#95;reverb**  **(** [int](class_int) voice, [int](class_int) room_type, [real](class_real) send  **)**
+  * void  **set&#95;reverb**  **(** [int](class_int) voice, [int](class_int) room_type, [float](class_float) send  **)**
 
 Set the reverb send level and type of a voice  (0 to 1). (see REVERB_* enum for type).
 
@@ -139,27 +139,27 @@ Set the reverb send level and type of a voice  (0 to 1). (see REVERB_* enum for 
 Return the current mix rate for a given voice.
 
 #### <a name="get_pitch_scale">get_pitch_scale</a>
-  * [real](class_real)  **get&#95;pitch&#95;scale**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;pitch&#95;scale**  **(** [int](class_int) voice  **)** const
 
 Return the current pitch scale for a given voice.
 
 #### <a name="get_volume">get_volume</a>
-  * [real](class_real)  **get&#95;volume**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;volume**  **(** [int](class_int) voice  **)** const
 
 Return the current volume (in db) for a given voice. 0db is maximum volume (every about -6db, volume is reduced in half). "db" does in fact go from zero to negative.
 
 #### <a name="get_pan">get_pan</a>
-  * [real](class_real)  **get&#95;pan**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;pan**  **(** [int](class_int) voice  **)** const
 
 Return the current panning for a given voice. Panning goes from -1 (left) to +1 (right).
 
 #### <a name="get_pan_depth">get_pan_depth</a>
-  * [real](class_real)  **get&#95;pan&#95;depth**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;pan&#95;depth**  **(** [int](class_int) voice  **)** const
 
 Return the current pan depth for a given voice (not used unless the hardware supports 3D sound)
 
 #### <a name="get_pan_height">get_pan_height</a>
-  * [real](class_real)  **get&#95;pan&#95;height**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;pan&#95;height**  **(** [int](class_int) voice  **)** const
 
 Return the current pan height for a given voice (not used unless the hardware supports 3D sound)
 
@@ -169,26 +169,26 @@ Return the current pan height for a given voice (not used unless the hardware su
 Return the current filter type in use (see FILTER_* enum) for a given voice.
 
 #### <a name="get_filter_cutoff">get_filter_cutoff</a>
-  * [real](class_real)  **get&#95;filter&#95;cutoff**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;filter&#95;cutoff**  **(** [int](class_int) voice  **)** const
 
 Return the current filter cutoff for a given voice. Cutoff goes from 0 to 22khz.
 
 #### <a name="get_filter_resonance">get_filter_resonance</a>
-  * [real](class_real)  **get&#95;filter&#95;resonance**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;filter&#95;resonance**  **(** [int](class_int) voice  **)** const
 
 Return the current filter resonance for a given voice. Resonance goes from 0 up.
 
 #### <a name="get_chorus">get_chorus</a>
-  * [real](class_real)  **get&#95;chorus**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;chorus**  **(** [int](class_int) voice  **)** const
 
 Return the current chorus send level for a given voice. (0 to 1).
 
 #### <a name="get_reverb_room">get_reverb_room</a>
-  * [real](class_real)  **get&#95;reverb&#95;room**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;reverb&#95;room**  **(** [int](class_int) voice  **)** const
 
 Return the current reverb room type for a given voice (see REVERB_* enum).
 
 #### <a name="get_reverb">get_reverb</a>
-  * [real](class_real)  **get&#95;reverb**  **(** [int](class_int) voice  **)** const
+  * [float](class_float)  **get&#95;reverb**  **(** [int](class_int) voice  **)** const
 
 Return the current reverb send level for a given voice. (0 to 1).

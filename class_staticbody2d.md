@@ -7,13 +7,13 @@ Static body for 2D Physics.
 
 ###  Member Functions 
   * void  **[set&#95;constant&#95;linear&#95;velocity](#set_constant_linear_velocity)**  **(** [Vector2](class_vector2) vel  **)**
-  * void  **[set&#95;constant&#95;angular&#95;velocity](#set_constant_angular_velocity)**  **(** [real](class_real) vel  **)**
+  * void  **[set&#95;constant&#95;angular&#95;velocity](#set_constant_angular_velocity)**  **(** [float](class_float) vel  **)**
   * [Vector2](class_vector2)  **[get&#95;constant&#95;linear&#95;velocity](#get_constant_linear_velocity)**  **(** **)** const
-  * [real](class_real)  **[get&#95;constant&#95;angular&#95;velocity](#get_constant_angular_velocity)**  **(** **)** const
-  * void  **[set&#95;friction](#set_friction)**  **(** [real](class_real) friction  **)**
-  * [real](class_real)  **[get&#95;friction](#get_friction)**  **(** **)** const
-  * void  **[set&#95;bounce](#set_bounce)**  **(** [real](class_real) bounce  **)**
-  * [real](class_real)  **[get&#95;bounce](#get_bounce)**  **(** **)** const
+  * [float](class_float)  **[get&#95;constant&#95;angular&#95;velocity](#get_constant_angular_velocity)**  **(** **)** const
+  * void  **[set&#95;friction](#set_friction)**  **(** [float](class_float) friction  **)**
+  * [float](class_float)  **[get&#95;friction](#get_friction)**  **(** **)** const
+  * void  **[set&#95;bounce](#set_bounce)**  **(** [float](class_float) bounce  **)**
+  * [float](class_float)  **[get&#95;bounce](#get_bounce)**  **(** **)** const
 
 ###  Description  
 Static body for 2D Physics. A static body is a simple body that is not intended to move. They don't consume any CPU resources in contrast to a [RigidBody2D](class_rigidbody2d) so they are great for scenaro collision.
@@ -29,7 +29,7 @@ Static body for 2D Physics. A static body is a simple body that is not intended 
 Set a constant linear velocity for the body.
 
 #### <a name="set_constant_angular_velocity">set_constant_angular_velocity</a>
-  * void  **set&#95;constant&#95;angular&#95;velocity**  **(** [real](class_real) vel  **)**
+  * void  **set&#95;constant&#95;angular&#95;velocity**  **(** [float](class_float) vel  **)**
 
 Set a constant angular velocity for the body.
 
@@ -39,6 +39,6 @@ Set a constant angular velocity for the body.
 Return the constant linear velocity for the body.
 
 #### <a name="get_constant_angular_velocity">get_constant_angular_velocity</a>
-  * [real](class_real)  **get&#95;constant&#95;angular&#95;velocity**  **(** **)** const
+  * [float](class_float)  **get&#95;constant&#95;angular&#95;velocity**  **(** **)** const
 
 Return the constant angular velocity for the body.

@@ -6,7 +6,7 @@
 
 
 ###  Member Functions 
-  * void  **[set&#95;radius](#set_radius)**  **(** [real](class_real) radius  **)**
-  * [real](class_real)  **[get&#95;radius](#get_radius)**  **(** **)** const
+  * void  **[set&#95;radius](#set_radius)**  **(** [float](class_float) radius  **)**
+  * [float](class_float)  **[get&#95;radius](#get_radius)**  **(** **)** const
 
 ###  Member Function Description  

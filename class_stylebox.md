@@ -7,9 +7,9 @@ Base class for dawing stylized boxes for the UI.
 
 ###  Member Functions 
   * [bool](class_bool)  **[test&#95;mask](#test_mask)**  **(** [Vector2](class_vector2) point, [Rect2](class_rect2) rect  **)** const
-  * void  **[set&#95;default&#95;margin](#set_default_margin)**  **(** [int](class_int) margin, [real](class_real) offset  **)**
-  * [real](class_real)  **[get&#95;default&#95;margin](#get_default_margin)**  **(** [int](class_int) margin  **)** const
-  * [real](class_real)  **[get&#95;margin](#get_margin)**  **(** [int](class_int) margin  **)** const
+  * void  **[set&#95;default&#95;margin](#set_default_margin)**  **(** [int](class_int) margin, [float](class_float) offset  **)**
+  * [float](class_float)  **[get&#95;default&#95;margin](#get_default_margin)**  **(** [int](class_int) margin  **)** const
+  * [float](class_float)  **[get&#95;margin](#get_margin)**  **(** [int](class_int) margin  **)** const
   * [Vector2](class_vector2)  **[get&#95;minimum&#95;size](#get_minimum_size)**  **(** **)** const
   * [Vector2](class_vector2)  **[get&#95;center&#95;size](#get_center_size)**  **(** **)** const
   * [Vector2](class_vector2)  **[get&#95;offset](#get_offset)**  **(** **)** const
@@ -26,17 +26,17 @@ StyleBox is [Resource](class_resource) that provides an abstract base class for 
 Test a position in a rectangle, return wether it pases the mask test.
 
 #### <a name="set_default_margin">set_default_margin</a>
-  * void  **set&#95;default&#95;margin**  **(** [int](class_int) margin, [real](class_real) offset  **)**
+  * void  **set&#95;default&#95;margin**  **(** [int](class_int) margin, [float](class_float) offset  **)**
 
 Set the default offset "offset" of the margin "margin" (see MARGIN_* enum) for a StyleBox, Controls that draw styleboxes with context inside need to know the margin, so the border of the stylebox is not occluded.
 
 #### <a name="get_default_margin">get_default_margin</a>
-  * [real](class_real)  **get&#95;default&#95;margin**  **(** [int](class_int) margin  **)** const
+  * [float](class_float)  **get&#95;default&#95;margin**  **(** [int](class_int) margin  **)** const
 
 Return the default offset of the margin "margin" (see MARGIN_* enum) of a StyleBox, Controls that draw styleboxes with context inside need to know the margin, so the border of the stylebox is not occluded.
 
 #### <a name="get_margin">get_margin</a>
-  * [real](class_real)  **get&#95;margin**  **(** [int](class_int) margin  **)** const
+  * [float](class_float)  **get&#95;margin**  **(** [int](class_int) margin  **)** const
 
 Return the offset of margin "margin" (see MARGIN_* enum).
 

@@ -46,7 +46,7 @@ Built-In string class.
   * [RealArray](class_realarray)  **[split&#95;floats](#split_floats)**  **(** [String](class_string) divisor, [bool](class_bool) allow_empty=True  **)**
   * [String](class_string)  **[strip&#95;edges](#strip_edges)**  **(** **)**
   * [String](class_string)  **[substr](#substr)**  **(** [int](class_int) from, [int](class_int) len  **)**
-  * [real](class_real)  **[to&#95;float](#to_float)**  **(** **)**
+  * [float](class_float)  **[to&#95;float](#to_float)**  **(** **)**
   * [int](class_int)  **[to&#95;int](#to_int)**  **(** **)**
   * [String](class_string)  **[to&#95;lower](#to_lower)**  **(** **)**
   * [String](class_string)  **[to&#95;upper](#to_upper)**  **(** **)**

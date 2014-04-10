@@ -10,18 +10,18 @@
   * [bool](class_bool)  **[is&#95;emitting](#is_emitting)**  **(** **)** const
   * void  **[set&#95;amount](#set_amount)**  **(** [int](class_int) amount  **)**
   * [int](class_int)  **[get&#95;amount](#get_amount)**  **(** **)** const
-  * void  **[set&#95;lifetime](#set_lifetime)**  **(** [real](class_real) lifetime  **)**
-  * [real](class_real)  **[get&#95;lifetime](#get_lifetime)**  **(** **)** const
-  * void  **[set&#95;time&#95;scale](#set_time_scale)**  **(** [real](class_real) time_scale  **)**
-  * [real](class_real)  **[get&#95;time&#95;scale](#get_time_scale)**  **(** **)** const
-  * void  **[set&#95;pre&#95;process&#95;time](#set_pre_process_time)**  **(** [real](class_real) time  **)**
-  * [real](class_real)  **[get&#95;pre&#95;process&#95;time](#get_pre_process_time)**  **(** **)** const
-  * void  **[set&#95;emit&#95;timeout](#set_emit_timeout)**  **(** [real](class_real) value  **)**
-  * [real](class_real)  **[get&#95;emit&#95;timeout](#get_emit_timeout)**  **(** **)** const
-  * void  **[set&#95;param](#set_param)**  **(** [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[get&#95;param](#get_param)**  **(** [int](class_int) param  **)** const
-  * void  **[set&#95;randomness](#set_randomness)**  **(** [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[get&#95;randomness](#get_randomness)**  **(** [int](class_int) param  **)** const
+  * void  **[set&#95;lifetime](#set_lifetime)**  **(** [float](class_float) lifetime  **)**
+  * [float](class_float)  **[get&#95;lifetime](#get_lifetime)**  **(** **)** const
+  * void  **[set&#95;time&#95;scale](#set_time_scale)**  **(** [float](class_float) time_scale  **)**
+  * [float](class_float)  **[get&#95;time&#95;scale](#get_time_scale)**  **(** **)** const
+  * void  **[set&#95;pre&#95;process&#95;time](#set_pre_process_time)**  **(** [float](class_float) time  **)**
+  * [float](class_float)  **[get&#95;pre&#95;process&#95;time](#get_pre_process_time)**  **(** **)** const
+  * void  **[set&#95;emit&#95;timeout](#set_emit_timeout)**  **(** [float](class_float) value  **)**
+  * [float](class_float)  **[get&#95;emit&#95;timeout](#get_emit_timeout)**  **(** **)** const
+  * void  **[set&#95;param](#set_param)**  **(** [int](class_int) param, [float](class_float) value  **)**
+  * [float](class_float)  **[get&#95;param](#get_param)**  **(** [int](class_int) param  **)** const
+  * void  **[set&#95;randomness](#set_randomness)**  **(** [int](class_int) param, [float](class_float) value  **)**
+  * [float](class_float)  **[get&#95;randomness](#get_randomness)**  **(** [int](class_int) param  **)** const
   * void  **[set&#95;texture](#set_texture)**  **(** [Object](class_object) texture  **)**
   * [Texture](class_texture)  **[get&#95;texture](#get_texture)**  **(** **)** const
   * void  **[set&#95;emissor&#95;offset](#set_emissor_offset)**  **(** [Vector2](class_vector2) offset  **)**
@@ -36,15 +36,15 @@
   * [int](class_int)  **[get&#95;color&#95;phases](#get_color_phases)**  **(** **)** const
   * void  **[set&#95;color&#95;phase&#95;color](#set_color_phase_color)**  **(** [int](class_int) phase, [Color](class_color) color  **)**
   * [Color](class_color)  **[get&#95;color&#95;phase&#95;color](#get_color_phase_color)**  **(** [int](class_int) phase  **)** const
-  * void  **[set&#95;color&#95;phase&#95;pos](#set_color_phase_pos)**  **(** [int](class_int) phase, [real](class_real) pos  **)**
-  * [real](class_real)  **[get&#95;color&#95;phase&#95;pos](#get_color_phase_pos)**  **(** [int](class_int) phase  **)** const
-  * void  **[pre&#95;process](#pre_process)**  **(** [real](class_real) time  **)**
+  * void  **[set&#95;color&#95;phase&#95;pos](#set_color_phase_pos)**  **(** [int](class_int) phase, [float](class_float) pos  **)**
+  * [float](class_float)  **[get&#95;color&#95;phase&#95;pos](#get_color_phase_pos)**  **(** [int](class_int) phase  **)** const
+  * void  **[pre&#95;process](#pre_process)**  **(** [float](class_float) time  **)**
   * void  **[set&#95;use&#95;local&#95;space](#set_use_local_space)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;using&#95;local&#95;space](#is_using_local_space)**  **(** **)** const
   * void  **[set&#95;initial&#95;velocity](#set_initial_velocity)**  **(** [Vector2](class_vector2) velocity  **)**
   * [Vector2](class_vector2)  **[get&#95;initial&#95;velocity](#get_initial_velocity)**  **(** **)** const
-  * void  **[set&#95;explosiveness](#set_explosiveness)**  **(** [real](class_real) amount  **)**
-  * [real](class_real)  **[get&#95;explosiveness](#get_explosiveness)**  **(** **)** const
+  * void  **[set&#95;explosiveness](#set_explosiveness)**  **(** [float](class_float) amount  **)**
+  * [float](class_float)  **[get&#95;explosiveness](#get_explosiveness)**  **(** **)** const
   * void  **[set&#95;emission&#95;points](#set_emission_points)**  **(** [Vector2Array](class_vector2array) points  **)**
   * [Vector2Array](class_vector2array)  **[get&#95;emission&#95;points](#get_emission_points)**  **(** **)** const
 

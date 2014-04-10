@@ -27,8 +27,8 @@
   * [int](class_int) **relative_x**
   * [int](class_int) **relative_y**
   * [Vector2](class_vector2) **relative_pos**
-  * [real](class_real) **speed_x**
-  * [real](class_real) **speed_y**
+  * [float](class_float) **speed_x**
+  * [float](class_float) **speed_y**
   * [Vector2](class_vector2) **speed**
 
 ###  Numeric Constants  

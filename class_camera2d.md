@@ -20,18 +20,18 @@ Camera node for 2D scenes.
   * [bool](class_bool)  **[is&#95;v&#95;drag&#95;enabled](#is_v_drag_enabled)**  **(** **)** const
   * void  **[set&#95;h&#95;drag&#95;enabled](#set_h_drag_enabled)**  **(** [bool](class_bool) enabled  **)**
   * [bool](class_bool)  **[is&#95;h&#95;drag&#95;enabled](#is_h_drag_enabled)**  **(** **)** const
-  * void  **[set&#95;v&#95;offset](#set_v_offset)**  **(** [real](class_real) ofs  **)**
-  * [real](class_real)  **[get&#95;v&#95;offset](#get_v_offset)**  **(** **)** const
-  * void  **[set&#95;h&#95;offset](#set_h_offset)**  **(** [real](class_real) ofs  **)**
-  * [real](class_real)  **[get&#95;h&#95;offset](#get_h_offset)**  **(** **)** const
-  * void  **[set&#95;drag&#95;margin](#set_drag_margin)**  **(** [int](class_int) margin, [real](class_real) drag_margin  **)**
-  * [real](class_real)  **[get&#95;drag&#95;margin](#get_drag_margin)**  **(** [int](class_int) margin  **)** const
+  * void  **[set&#95;v&#95;offset](#set_v_offset)**  **(** [float](class_float) ofs  **)**
+  * [float](class_float)  **[get&#95;v&#95;offset](#get_v_offset)**  **(** **)** const
+  * void  **[set&#95;h&#95;offset](#set_h_offset)**  **(** [float](class_float) ofs  **)**
+  * [float](class_float)  **[get&#95;h&#95;offset](#get_h_offset)**  **(** **)** const
+  * void  **[set&#95;drag&#95;margin](#set_drag_margin)**  **(** [int](class_int) margin, [float](class_float) drag_margin  **)**
+  * [float](class_float)  **[get&#95;drag&#95;margin](#get_drag_margin)**  **(** [int](class_int) margin  **)** const
   * [Vector2](class_vector2)  **[get&#95;camera&#95;pos](#get_camera_pos)**  **(** **)** const
   * [Vector2](class_vector2)  **[get&#95;camera&#95;screen&#95;center](#get_camera_screen_center)**  **(** **)** const
   * void  **[set&#95;zoom](#set_zoom)**  **(** [Vector2](class_vector2) arg0  **)**
   * [Vector2](class_vector2)  **[get&#95;zoom](#get_zoom)**  **(** **)** const
-  * void  **[set&#95;follow&#95;smoothing](#set_follow_smoothing)**  **(** [real](class_real) follow_smoothing  **)**
-  * [real](class_real)  **[get&#95;follow&#95;smoothing](#get_follow_smoothing)**  **(** **)** const
+  * void  **[set&#95;follow&#95;smoothing](#set_follow_smoothing)**  **(** [float](class_float) follow_smoothing  **)**
+  * [float](class_float)  **[get&#95;follow&#95;smoothing](#get_follow_smoothing)**  **(** **)** const
   * void  **[force&#95;update&#95;scroll](#force_update_scroll)**  **(** **)**
 
 ###  Description  
@@ -86,12 +86,12 @@ Set the scrolling limit in pixels
 Return the scrolling limit in pixels
 
 #### <a name="set_drag_margin">set_drag_margin</a>
-  * void  **set&#95;drag&#95;margin**  **(** [int](class_int) margin, [real](class_real) drag_margin  **)**
+  * void  **set&#95;drag&#95;margin**  **(** [int](class_int) margin, [float](class_float) drag_margin  **)**
 
 Set the margins needed to drag the camera (relative to the screen size). Margin uses the MARGIN_* enum.  Drag margins of 0,0,0,0 will keep the camera at the center of the screen, while drag margins of 1,1,1,1 will only move when the camera is at the edges.
 
 #### <a name="get_drag_margin">get_drag_margin</a>
-  * [real](class_real)  **get&#95;drag&#95;margin**  **(** [int](class_int) margin  **)** const
+  * [float](class_float)  **get&#95;drag&#95;margin**  **(** [int](class_int) margin  **)** const
 
 Return the margins needed to drag the camera (see [set&#95;drag&#95;margin](#set_drag_margin)).
 

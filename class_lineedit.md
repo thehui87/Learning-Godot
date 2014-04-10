@@ -19,7 +19,7 @@ Control that provides single line string editing.
   * [bool](class_bool)  **[is&#95;editable](#is_editable)**  **(** **)** const
   * void  **[set&#95;secret](#set_secret)**  **(** [bool](class_bool) enabled  **)**
   * [bool](class_bool)  **[is&#95;secret](#is_secret)**  **(** **)** const
-  * [bool](class_bool)  **[select](#select)**  **(** **)** const
+  * void  **[select](#select)**  **(** [int](class_int) from=0, [int](class_int) to=-1  **)**
 
 ###  Signals  
   *  **text&#95;entered**  **(** [String](class_string) text  **)**

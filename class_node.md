@@ -8,9 +8,9 @@ Base class for all the "Scene" elements.
 ###  Member Functions 
   * void  **[&#95;enter&#95;scene](#_enter_scene)**  **(** **)** virtual
   * void  **[&#95;exit&#95;scene](#_exit_scene)**  **(** **)** virtual
-  * void  **[&#95;fixed&#95;process](#_fixed_process)**  **(** [real](class_real) delta  **)** virtual
+  * void  **[&#95;fixed&#95;process](#_fixed_process)**  **(** [float](class_float) delta  **)** virtual
   * void  **[&#95;input](#_input)**  **(** [InputEvent](class_inputevent) event  **)** virtual
-  * void  **[&#95;process](#_process)**  **(** [real](class_real) delta  **)** virtual
+  * void  **[&#95;process](#_process)**  **(** [float](class_float) delta  **)** virtual
   * void  **[&#95;ready](#_ready)**  **(** **)** virtual
   * void  **[&#95;unhandled&#95;input](#_unhandled_input)**  **(** [InputEvent](class_inputevent) event  **)** virtual
   * void  **[&#95;unhandled&#95;key&#95;input](#_unhandled_key_input)**  **(** [InputEvent](class_inputevent) key_event  **)** virtual
@@ -46,10 +46,10 @@ Base class for all the "Scene" elements.
   * [String](class_string)  **[get&#95;filename](#get_filename)**  **(** **)** const
   * void  **[propagate&#95;notification](#propagate_notification)**  **(** [int](class_int) what  **)**
   * void  **[set&#95;fixed&#95;process](#set_fixed_process)**  **(** [bool](class_bool) enable  **)**
-  * [real](class_real)  **[get&#95;fixed&#95;process&#95;delta&#95;time](#get_fixed_process_delta_time)**  **(** **)** const
+  * [float](class_float)  **[get&#95;fixed&#95;process&#95;delta&#95;time](#get_fixed_process_delta_time)**  **(** **)** const
   * [bool](class_bool)  **[is&#95;fixed&#95;processing](#is_fixed_processing)**  **(** **)** const
   * void  **[set&#95;process](#set_process)**  **(** [bool](class_bool) enable  **)**
-  * [real](class_real)  **[get&#95;process&#95;delta&#95;time](#get_process_delta_time)**  **(** **)** const
+  * [float](class_float)  **[get&#95;process&#95;delta&#95;time](#get_process_delta_time)**  **(** **)** const
   * [bool](class_bool)  **[is&#95;processing](#is_processing)**  **(** **)** const
   * void  **[set&#95;process&#95;input](#set_process_input)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;processing&#95;input](#is_processing_input)**  **(** **)** const
@@ -109,7 +109,7 @@ Called when entered the scene.
 Called when being removed from the scene.
 
 #### <a name="_fixed_process">_fixed_process</a>
-  * void  **&#95;fixed&#95;process**  **(** [real](class_real) delta  **)** virtual
+  * void  **&#95;fixed&#95;process**  **(** [float](class_float) delta  **)** virtual
 
 Called for fixed processing (synced to the physics).
 
@@ -119,7 +119,7 @@ Called for fixed processing (synced to the physics).
 Called when any input happens (also must enable with [set&#95;process&#95;input](#set_process_input) or the property).
 
 #### <a name="_process">_process</a>
-  * void  **&#95;process**  **(** [real](class_real) delta  **)** virtual
+  * void  **&#95;process**  **(** [float](class_float) delta  **)** virtual
 
 Called for processing. This is called every frame, with the delta time from the previous frame.
 
@@ -271,7 +271,7 @@ Notify the current node and all its chldren recursively by calling notification(
 Enables or disables node fixed framerate processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS at a fixed (usually 60fps, check [OS](class_os) to change that) interval (and the [&#95;fixed&#95;process](#_fixed_process) callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [get&#95;fixed&#95;process&#95;time](#get_fixed_process_time).
 
 #### <a name="get_fixed_process_delta_time">get_fixed_process_delta_time</a>
-  * [real](class_real)  **get&#95;fixed&#95;process&#95;delta&#95;time**  **(** **)** const
+  * [float](class_float)  **get&#95;fixed&#95;process&#95;delta&#95;time**  **(** **)** const
 
 Return the time elapsed since the last fixed frame. This is always the same in fixed proecssing unless the frames per second is changed in [OS](class_os).
 
@@ -286,7 +286,7 @@ Return true if fixed processing is enabled (see [set&#95;fixed&#95;process](#set
 Enables or disables node processing. When a node is being processed, it will receive a NOTIFICATION_PROCESS on every drawn frame (and the [&#95;process](#_process) callback will be called if exists). It is common to check how much time was elapsed since the previous frame by calling [get&#95;process&#95;time](#get_process_time).
 
 #### <a name="get_process_delta_time">get_process_delta_time</a>
-  * [real](class_real)  **get&#95;process&#95;delta&#95;time**  **(** **)** const
+  * [float](class_float)  **get&#95;process&#95;delta&#95;time**  **(** **)** const
 
 Return the time elapsed (in seconds) since the last process callback. This is almost always different each time.
 

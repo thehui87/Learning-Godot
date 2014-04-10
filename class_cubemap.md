@@ -15,8 +15,8 @@
   * [Image](class_image)  **[get&#95;side](#get_side)**  **(** [int](class_int) side  **)** const
   * void  **[set&#95;storage](#set_storage)**  **(** [int](class_int) mode  **)**
   * [int](class_int)  **[get&#95;storage](#get_storage)**  **(** **)** const
-  * void  **[set&#95;lossy&#95;storage&#95;quality](#set_lossy_storage_quality)**  **(** [real](class_real) quality  **)**
-  * [real](class_real)  **[get&#95;lossy&#95;storage&#95;quality](#get_lossy_storage_quality)**  **(** **)** const
+  * void  **[set&#95;lossy&#95;storage&#95;quality](#set_lossy_storage_quality)**  **(** [float](class_float) quality  **)**
+  * [float](class_float)  **[get&#95;lossy&#95;storage&#95;quality](#get_lossy_storage_quality)**  **(** **)** const
 
 ###  Numeric Constants  
   * **STORAGE_RAW** = **0**

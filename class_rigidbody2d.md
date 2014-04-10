@@ -9,18 +9,18 @@ Rigid body 2D node.
   * void  **[&#95;integrate&#95;forces](#_integrate_forces)**  **(** [Physics2DDirectBodyState](class_physics2ddirectbodystate) state  **)** virtual
   * void  **[set&#95;mode](#set_mode)**  **(** [int](class_int) mode  **)**
   * [int](class_int)  **[get&#95;mode](#get_mode)**  **(** **)** const
-  * void  **[set&#95;mass](#set_mass)**  **(** [real](class_real) mass  **)**
-  * [real](class_real)  **[get&#95;mass](#get_mass)**  **(** **)** const
-  * void  **[set&#95;weight](#set_weight)**  **(** [real](class_real) weight  **)**
-  * [real](class_real)  **[get&#95;weight](#get_weight)**  **(** **)** const
-  * void  **[set&#95;friction](#set_friction)**  **(** [real](class_real) friction  **)**
-  * [real](class_real)  **[get&#95;friction](#get_friction)**  **(** **)** const
-  * void  **[set&#95;bounce](#set_bounce)**  **(** [real](class_real) bounce  **)**
-  * [real](class_real)  **[get&#95;bounce](#get_bounce)**  **(** **)** const
+  * void  **[set&#95;mass](#set_mass)**  **(** [float](class_float) mass  **)**
+  * [float](class_float)  **[get&#95;mass](#get_mass)**  **(** **)** const
+  * void  **[set&#95;weight](#set_weight)**  **(** [float](class_float) weight  **)**
+  * [float](class_float)  **[get&#95;weight](#get_weight)**  **(** **)** const
+  * void  **[set&#95;friction](#set_friction)**  **(** [float](class_float) friction  **)**
+  * [float](class_float)  **[get&#95;friction](#get_friction)**  **(** **)** const
+  * void  **[set&#95;bounce](#set_bounce)**  **(** [float](class_float) bounce  **)**
+  * [float](class_float)  **[get&#95;bounce](#get_bounce)**  **(** **)** const
   * void  **[set&#95;linear&#95;velocity](#set_linear_velocity)**  **(** [Vector2](class_vector2) linear_velocity  **)**
   * [Vector2](class_vector2)  **[get&#95;linear&#95;velocity](#get_linear_velocity)**  **(** **)** const
-  * void  **[set&#95;angular&#95;velocity](#set_angular_velocity)**  **(** [real](class_real) angular_velocity  **)**
-  * [real](class_real)  **[get&#95;angular&#95;velocity](#get_angular_velocity)**  **(** **)** const
+  * void  **[set&#95;angular&#95;velocity](#set_angular_velocity)**  **(** [float](class_float) angular_velocity  **)**
+  * [float](class_float)  **[get&#95;angular&#95;velocity](#get_angular_velocity)**  **(** **)** const
   * void  **[set&#95;max&#95;contacts&#95;reported](#set_max_contacts_reported)**  **(** [int](class_int) amount  **)**
   * [int](class_int)  **[get&#95;max&#95;contacts&#95;reported](#get_max_contacts_reported)**  **(** **)** const
   * void  **[set&#95;use&#95;custom&#95;integrator](#set_use_custom_integrator)**  **(** [bool](class_bool) enable  **)**
@@ -77,42 +77,42 @@ Set the body mode, fromt he MODE_* enum. This allows to change to a static body 
 Return the current body mode, see [set_mode].
 
 #### <a name="set_mass">set_mass</a>
-  * void  **set&#95;mass**  **(** [real](class_real) mass  **)**
+  * void  **set&#95;mass**  **(** [float](class_float) mass  **)**
 
 Set the body mass.
 
 #### <a name="get_mass">get_mass</a>
-  * [real](class_real)  **get&#95;mass**  **(** **)** const
+  * [float](class_float)  **get&#95;mass**  **(** **)** const
 
 Return the body mass.
 
 #### <a name="set_weight">set_weight</a>
-  * void  **set&#95;weight**  **(** [real](class_real) weight  **)**
+  * void  **set&#95;weight**  **(** [float](class_float) weight  **)**
 
 Set the body mass given standard earth-weight (gravity 9.8). Not really useful for 2D since most measuers for this node are in pixels.
 
 #### <a name="get_weight">get_weight</a>
-  * [real](class_real)  **get&#95;weight**  **(** **)** const
+  * [float](class_float)  **get&#95;weight**  **(** **)** const
 
 Return the body mass given standard earth-weight (gravity 9.8).
 
 #### <a name="set_friction">set_friction</a>
-  * void  **set&#95;friction**  **(** [real](class_real) friction  **)**
+  * void  **set&#95;friction**  **(** [float](class_float) friction  **)**
 
 Set the body friction, from 0 (friction less) to 1 (full friction).
 
 #### <a name="get_friction">get_friction</a>
-  * [real](class_real)  **get&#95;friction**  **(** **)** const
+  * [float](class_float)  **get&#95;friction**  **(** **)** const
 
 Return the body friction.
 
 #### <a name="set_bounce">set_bounce</a>
-  * void  **set&#95;bounce**  **(** [real](class_real) bounce  **)**
+  * void  **set&#95;bounce**  **(** [float](class_float) bounce  **)**
 
 Set the body bounciness, from 0 (no bounce) to 1 (bounce).
 
 #### <a name="get_bounce">get_bounce</a>
-  * [real](class_real)  **get&#95;bounce**  **(** **)** const
+  * [float](class_float)  **get&#95;bounce**  **(** **)** const
 
 Return the body bouncyness.
 
@@ -127,12 +127,12 @@ Set the body linear velocity. Can be used sporadically, but** DONT SET THIS IN E
 Return the body linear velocity. This changes by physics granularity. See [set_linear_velocity].
 
 #### <a name="set_angular_velocity">set_angular_velocity</a>
-  * void  **set&#95;angular&#95;velocity**  **(** [real](class_real) angular_velocity  **)**
+  * void  **set&#95;angular&#95;velocity**  **(** [float](class_float) angular_velocity  **)**
 
 Set the body angular velocity. Can be used sporadically, but** DONT SET THIS IN EVERY FRAME **, because physics may be running in another thread and definitely runs at a different granularity. Use [_integrate_forces] as your process loop if you want to have precise control of the body state.
 
 #### <a name="get_angular_velocity">get_angular_velocity</a>
-  * [real](class_real)  **get&#95;angular&#95;velocity**  **(** **)** const
+  * [float](class_float)  **get&#95;angular&#95;velocity**  **(** **)** const
 
 Return the body angular velocity. This changes by physics granularity. See [set_angular_velocity].
 

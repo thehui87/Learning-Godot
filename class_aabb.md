@@ -7,16 +7,16 @@ Axis-Aligned Bounding Box.
 ###  Member Functions 
   * [bool](class_bool)  **[encloses](#encloses)**  **(** [AABB](class_aabb) with  **)**
   * [AABB](class_aabb)  **[expand](#expand)**  **(** [Vector3](class_vector3) to_point  **)**
-  * [real](class_real)  **[get&#95;area](#get_area)**  **(** **)**
+  * [float](class_float)  **[get&#95;area](#get_area)**  **(** **)**
   * [Vector3](class_vector3)  **[get&#95;endpoint](#get_endpoint)**  **(** [int](class_int) idx  **)**
   * [Vector3](class_vector3)  **[get&#95;longest&#95;axis](#get_longest_axis)**  **(** **)**
   * [int](class_int)  **[get&#95;longest&#95;axis&#95;index](#get_longest_axis_index)**  **(** **)**
-  * [real](class_real)  **[get&#95;longest&#95;axis&#95;size](#get_longest_axis_size)**  **(** **)**
+  * [float](class_float)  **[get&#95;longest&#95;axis&#95;size](#get_longest_axis_size)**  **(** **)**
   * [Vector3](class_vector3)  **[get&#95;shortest&#95;axis](#get_shortest_axis)**  **(** **)**
   * [int](class_int)  **[get&#95;shortest&#95;axis&#95;index](#get_shortest_axis_index)**  **(** **)**
-  * [real](class_real)  **[get&#95;shortest&#95;axis&#95;size](#get_shortest_axis_size)**  **(** **)**
+  * [float](class_float)  **[get&#95;shortest&#95;axis&#95;size](#get_shortest_axis_size)**  **(** **)**
   * [Vector3](class_vector3)  **[get&#95;support](#get_support)**  **(** [Vector3](class_vector3) dir  **)**
-  * [AABB](class_aabb)  **[grow](#grow)**  **(** [real](class_real) by  **)**
+  * [AABB](class_aabb)  **[grow](#grow)**  **(** [float](class_float) by  **)**
   * [bool](class_bool)  **[has&#95;no&#95;area](#has_no_area)**  **(** **)**
   * [bool](class_bool)  **[has&#95;no&#95;surface](#has_no_surface)**  **(** **)**
   * [bool](class_bool)  **[has&#95;point](#has_point)**  **(** [Vector3](class_vector3) point  **)**
@@ -51,7 +51,7 @@ Return this [AABB](class_aabb) expanded to include a given
 			point.
 
 #### <a name="get_area">get_area</a>
-  * [real](class_real)  **get&#95;area**  **(** **)**
+  * [float](class_float)  **get&#95;area**  **(** **)**
 
 Get the area inside the [AABB](class_aabb)
 
@@ -72,7 +72,7 @@ Return the index of the longest axis of the [AABB](class_aabb)
 			(according to [Vector3](class_vector3)::AXIS* enum).
 
 #### <a name="get_longest_axis_size">get_longest_axis_size</a>
-  * [real](class_real)  **get&#95;longest&#95;axis&#95;size**  **(** **)**
+  * [float](class_float)  **get&#95;longest&#95;axis&#95;size**  **(** **)**
 
 Return the scalar length of the longest axis of the
 			[AABB](class_aabb).
@@ -89,7 +89,7 @@ Return the index of the shortest axis of the [AABB](class_aabb)
 			(according to [Vector3](class_vector3)::AXIS* enum).
 
 #### <a name="get_shortest_axis_size">get_shortest_axis_size</a>
-  * [real](class_real)  **get&#95;shortest&#95;axis&#95;size**  **(** **)**
+  * [float](class_float)  **get&#95;shortest&#95;axis&#95;size**  **(** **)**
 
 Return the scalar length of the shortest axis of the
 			[AABB](class_aabb).
@@ -101,7 +101,7 @@ Return the support point in a given direction. This
 			is useful for collision detection algorithms.
 
 #### <a name="grow">grow</a>
-  * [AABB](class_aabb)  **grow**  **(** [real](class_real) by  **)**
+  * [AABB](class_aabb)  **grow**  **(** [float](class_float) by  **)**
 
 Return a copy of the AABB grown a given a mount of
 			units towards all the sides.

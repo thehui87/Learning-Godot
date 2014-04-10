@@ -15,7 +15,7 @@
   * void  **[set&#95;point&#95;out](#set_point_out)**  **(** [int](class_int) idx, [Vector2](class_vector2) pos  **)**
   * [Vector2](class_vector2)  **[get&#95;point&#95;out](#get_point_out)**  **(** [int](class_int) idx  **)** const
   * void  **[remove&#95;point](#remove_point)**  **(** [int](class_int) idx  **)**
-  * [Vector2](class_vector2)  **[interpolate](#interpolate)**  **(** [int](class_int) idx, [real](class_real) t  **)** const
+  * [Vector2](class_vector2)  **[interpolate](#interpolate)**  **(** [int](class_int) idx, [float](class_float) t  **)** const
   * [Vector2Array](class_vector2array)  **[bake](#bake)**  **(** [int](class_int) subdivs=10  **)** const
   * void  **[set&#95;points&#95;in](#set_points_in)**  **(** [Vector2Array](class_vector2array) arg0  **)**
   * void  **[set&#95;points&#95;out](#set_points_out)**  **(** [Vector2Array](class_vector2array) arg0  **)**

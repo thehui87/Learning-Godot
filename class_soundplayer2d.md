@@ -6,8 +6,8 @@
 Base class for playing spatial 2D sound.
 
 ###  Member Functions 
-  * void  **[set&#95;param](#set_param)**  **(** [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[get&#95;param](#get_param)**  **(** [int](class_int) param  **)** const
+  * void  **[set&#95;param](#set_param)**  **(** [int](class_int) param, [float](class_float) value  **)**
+  * [float](class_float)  **[get&#95;param](#get_param)**  **(** [int](class_int) param  **)** const
 
 ###  Numeric Constants  
   * **PARAM_VOLUME_DB** = **0**

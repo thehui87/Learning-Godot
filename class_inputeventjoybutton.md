@@ -15,7 +15,7 @@
   * [int](class_int) **ID**
   * [int](class_int) **button_index**
   * [bool](class_bool) **pressed**
-  * [real](class_real) **pressure**
+  * [float](class_float) **pressure**
 
 ###  Numeric Constants  
   * **NONE** = **0**

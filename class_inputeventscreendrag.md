@@ -14,14 +14,14 @@
   * [int](class_int) **device**
   * [int](class_int) **ID**
   * [int](class_int) **index**
-  * [real](class_real) **x**
-  * [real](class_real) **y**
+  * [float](class_float) **x**
+  * [float](class_float) **y**
   * [Vector2](class_vector2) **pos**
-  * [real](class_real) **relative_x**
-  * [real](class_real) **relative_y**
+  * [float](class_float) **relative_x**
+  * [float](class_float) **relative_y**
   * [Vector2](class_vector2) **relative_pos**
-  * [real](class_real) **speed_x**
-  * [real](class_real) **speed_y**
+  * [float](class_float) **speed_x**
+  * [float](class_float) **speed_y**
   * [Vector2](class_vector2) **speed**
 
 ###  Numeric Constants  

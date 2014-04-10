@@ -5,10 +5,10 @@
 Real Array .
 
 ###  Member Functions 
-  * [real](class_real)  **[get](#get)**  **(** [int](class_int) idx  **)**
-  * void  **[push&#95;back](#push_back)**  **(** [real](class_real) value  **)**
+  * [float](class_float)  **[get](#get)**  **(** [int](class_int) idx  **)**
+  * void  **[push&#95;back](#push_back)**  **(** [float](class_float) value  **)**
   * void  **[resize](#resize)**  **(** [int](class_int) idx  **)**
-  * void  **[set](#set)**  **(** [int](class_int) idx, [real](class_real) value  **)**
+  * void  **[set](#set)**  **(** [int](class_int) idx, [float](class_float) value  **)**
   * [int](class_int)  **[size](#size)**  **(** **)**
   * void  **[RealArray](#RealArray)**  **(** [Array](class_array) from  **)**
 

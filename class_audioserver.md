@@ -25,33 +25,33 @@ Server interface for low level audio access.
   * [int](class_int)  **[sample&#95;get&#95;loop&#95;end](#sample_get_loop_end)**  **(** [RID](class_rid) sample  **)** const
   * [RID](class_rid)  **[voice&#95;create](#voice_create)**  **(** **)**
   * void  **[voice&#95;play](#voice_play)**  **(** [RID](class_rid) voice, [RID](class_rid) sample  **)**
-  * void  **[voice&#95;set&#95;volume](#voice_set_volume)**  **(** [RID](class_rid) voice, [real](class_real) volume  **)**
-  * void  **[voice&#95;set&#95;pan](#voice_set_pan)**  **(** [RID](class_rid) voice, [real](class_real) pan, [real](class_real) depth=0, [real](class_real) height=0  **)**
-  * void  **[voice&#95;set&#95;filter](#voice_set_filter)**  **(** [RID](class_rid) voice, [int](class_int) type, [real](class_real) cutoff, [real](class_real) resonance, [real](class_real) gain=0  **)**
-  * void  **[voice&#95;set&#95;chorus](#voice_set_chorus)**  **(** [RID](class_rid) voice, [real](class_real) chorus  **)**
-  * void  **[voice&#95;set&#95;reverb](#voice_set_reverb)**  **(** [RID](class_rid) voice, [int](class_int) room, [real](class_real) reverb  **)**
+  * void  **[voice&#95;set&#95;volume](#voice_set_volume)**  **(** [RID](class_rid) voice, [float](class_float) volume  **)**
+  * void  **[voice&#95;set&#95;pan](#voice_set_pan)**  **(** [RID](class_rid) voice, [float](class_float) pan, [float](class_float) depth=0, [float](class_float) height=0  **)**
+  * void  **[voice&#95;set&#95;filter](#voice_set_filter)**  **(** [RID](class_rid) voice, [int](class_int) type, [float](class_float) cutoff, [float](class_float) resonance, [float](class_float) gain=0  **)**
+  * void  **[voice&#95;set&#95;chorus](#voice_set_chorus)**  **(** [RID](class_rid) voice, [float](class_float) chorus  **)**
+  * void  **[voice&#95;set&#95;reverb](#voice_set_reverb)**  **(** [RID](class_rid) voice, [int](class_int) room, [float](class_float) reverb  **)**
   * void  **[voice&#95;set&#95;mix&#95;rate](#voice_set_mix_rate)**  **(** [RID](class_rid) voice, [int](class_int) rate  **)**
   * void  **[voice&#95;set&#95;positional](#voice_set_positional)**  **(** [RID](class_rid) voice, [bool](class_bool) enabled  **)**
-  * [real](class_real)  **[voice&#95;get&#95;volume](#voice_get_volume)**  **(** [RID](class_rid) voice  **)** const
-  * [real](class_real)  **[voice&#95;get&#95;pan](#voice_get_pan)**  **(** [RID](class_rid) voice  **)** const
-  * [real](class_real)  **[voice&#95;get&#95;pan&#95;height](#voice_get_pan_height)**  **(** [RID](class_rid) voice  **)** const
-  * [real](class_real)  **[voice&#95;get&#95;pan&#95;depth](#voice_get_pan_depth)**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **[voice&#95;get&#95;volume](#voice_get_volume)**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **[voice&#95;get&#95;pan](#voice_get_pan)**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **[voice&#95;get&#95;pan&#95;height](#voice_get_pan_height)**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **[voice&#95;get&#95;pan&#95;depth](#voice_get_pan_depth)**  **(** [RID](class_rid) voice  **)** const
   * [int](class_int)  **[voice&#95;get&#95;filter&#95;type](#voice_get_filter_type)**  **(** [RID](class_rid) voice  **)** const
-  * [real](class_real)  **[voice&#95;get&#95;filter&#95;cutoff](#voice_get_filter_cutoff)**  **(** [RID](class_rid) voice  **)** const
-  * [real](class_real)  **[voice&#95;get&#95;filter&#95;resonance](#voice_get_filter_resonance)**  **(** [RID](class_rid) voice  **)** const
-  * [real](class_real)  **[voice&#95;get&#95;chorus](#voice_get_chorus)**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **[voice&#95;get&#95;filter&#95;cutoff](#voice_get_filter_cutoff)**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **[voice&#95;get&#95;filter&#95;resonance](#voice_get_filter_resonance)**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **[voice&#95;get&#95;chorus](#voice_get_chorus)**  **(** [RID](class_rid) voice  **)** const
   * [int](class_int)  **[voice&#95;get&#95;reverb&#95;type](#voice_get_reverb_type)**  **(** [RID](class_rid) voice  **)** const
-  * [real](class_real)  **[voice&#95;get&#95;reverb](#voice_get_reverb)**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **[voice&#95;get&#95;reverb](#voice_get_reverb)**  **(** [RID](class_rid) voice  **)** const
   * [int](class_int)  **[voice&#95;get&#95;mix&#95;rate](#voice_get_mix_rate)**  **(** [RID](class_rid) voice  **)** const
   * [bool](class_bool)  **[voice&#95;is&#95;positional](#voice_is_positional)**  **(** [RID](class_rid) voice  **)** const
   * void  **[voice&#95;stop](#voice_stop)**  **(** [RID](class_rid) voice  **)**
   * void  **[free](#free)**  **(** [RID](class_rid) rid  **)**
-  * void  **[set&#95;stream&#95;global&#95;volume&#95;scale](#set_stream_global_volume_scale)**  **(** [real](class_real) scale  **)**
-  * [real](class_real)  **[get&#95;stream&#95;global&#95;volume&#95;scale](#get_stream_global_volume_scale)**  **(** **)** const
-  * void  **[set&#95;fx&#95;global&#95;volume&#95;scale](#set_fx_global_volume_scale)**  **(** [real](class_real) scale  **)**
-  * [real](class_real)  **[get&#95;fx&#95;global&#95;volume&#95;scale](#get_fx_global_volume_scale)**  **(** **)** const
-  * void  **[set&#95;event&#95;voice&#95;global&#95;volume&#95;scale](#set_event_voice_global_volume_scale)**  **(** [real](class_real) scale  **)**
-  * [real](class_real)  **[get&#95;event&#95;voice&#95;global&#95;volume&#95;scale](#get_event_voice_global_volume_scale)**  **(** **)** const
+  * void  **[set&#95;stream&#95;global&#95;volume&#95;scale](#set_stream_global_volume_scale)**  **(** [float](class_float) scale  **)**
+  * [float](class_float)  **[get&#95;stream&#95;global&#95;volume&#95;scale](#get_stream_global_volume_scale)**  **(** **)** const
+  * void  **[set&#95;fx&#95;global&#95;volume&#95;scale](#set_fx_global_volume_scale)**  **(** [float](class_float) scale  **)**
+  * [float](class_float)  **[get&#95;fx&#95;global&#95;volume&#95;scale](#get_fx_global_volume_scale)**  **(** **)** const
+  * void  **[set&#95;event&#95;voice&#95;global&#95;volume&#95;scale](#set_event_voice_global_volume_scale)**  **(** [float](class_float) scale  **)**
+  * [float](class_float)  **[get&#95;event&#95;voice&#95;global&#95;volume&#95;scale](#get_event_voice_global_volume_scale)**  **(** **)** const
 
 ###  Numeric Constants  
   * **SAMPLE_FORMAT_PCM8** = **0** - Sample format is 8 bits, signed.
@@ -172,27 +172,27 @@ Allocate a voice for playback. Voices are"#10;"#9;"#9;"#9;persistent. A voice ca
 Start playback of a given voice using a given"#10;"#9;"#9;"#9;sample. If the voice was already playing it will be"#10;"#9;"#9;"#9;restarted.
 
 #### <a name="voice_set_volume">voice_set_volume</a>
-  * void  **voice&#95;set&#95;volume**  **(** [RID](class_rid) voice, [real](class_real) volume  **)**
+  * void  **voice&#95;set&#95;volume**  **(** [RID](class_rid) voice, [float](class_float) volume  **)**
 
 Change the volume of a currently playing voice."#10;"#9;"#9;"#9;Volume is expressed as linear gain where 0.0 is mute"#10;"#9;"#9;"#9;and 1.0 is default.
 
 #### <a name="voice_set_pan">voice_set_pan</a>
-  * void  **voice&#95;set&#95;pan**  **(** [RID](class_rid) voice, [real](class_real) pan, [real](class_real) depth=0, [real](class_real) height=0  **)**
+  * void  **voice&#95;set&#95;pan**  **(** [RID](class_rid) voice, [float](class_float) pan, [float](class_float) depth=0, [float](class_float) height=0  **)**
 
 Change the pan of a currently playing voice and,"#10;"#9;"#9;"#9;optionally, the depth and height for a positional/3D"#10;"#9;"#9;"#9;sound. Panning values are expressed within the -1 to"#10;"#9;"#9;"#9;+1 range.
 
 #### <a name="voice_set_filter">voice_set_filter</a>
-  * void  **voice&#95;set&#95;filter**  **(** [RID](class_rid) voice, [int](class_int) type, [real](class_real) cutoff, [real](class_real) resonance, [real](class_real) gain=0  **)**
+  * void  **voice&#95;set&#95;filter**  **(** [RID](class_rid) voice, [int](class_int) type, [float](class_float) cutoff, [float](class_float) resonance, [float](class_float) gain=0  **)**
 
 Set a resonant filter post processing for the voice."#10;"#9;"#9;"#9;Filter type is a value from the FILTER_* enum.
 
 #### <a name="voice_set_chorus">voice_set_chorus</a>
-  * void  **voice&#95;set&#95;chorus**  **(** [RID](class_rid) voice, [real](class_real) chorus  **)**
+  * void  **voice&#95;set&#95;chorus**  **(** [RID](class_rid) voice, [float](class_float) chorus  **)**
 
 Set chorus send post processing for the voice (from"#10;"#9;"#9;"#9;0 to 1).
 
 #### <a name="voice_set_reverb">voice_set_reverb</a>
-  * void  **voice&#95;set&#95;reverb**  **(** [RID](class_rid) voice, [int](class_int) room, [real](class_real) reverb  **)**
+  * void  **voice&#95;set&#95;reverb**  **(** [RID](class_rid) voice, [int](class_int) room, [float](class_float) reverb  **)**
 
 Set the reverb send post processing for the voice (from"#10;"#9;"#9;"#9;0 to 1) and the reverb type, from the REVERB_* enum.
 
@@ -207,22 +207,22 @@ Set a different playback mix rate for the given"#10;"#9;"#9;"#9;voice.
 Set wether a given voice is positional. This is only"#10;"#9;"#9;"#9;interpreted as a hint and used for backends that may"#10;"#9;"#9;"#9;support binaural encoding.
 
 #### <a name="voice_get_volume">voice_get_volume</a>
-  * [real](class_real)  **voice&#95;get&#95;volume**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **voice&#95;get&#95;volume**  **(** [RID](class_rid) voice  **)** const
 
 Return the current volume for a given voice.
 
 #### <a name="voice_get_pan">voice_get_pan</a>
-  * [real](class_real)  **voice&#95;get&#95;pan**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **voice&#95;get&#95;pan**  **(** [RID](class_rid) voice  **)** const
 
 Return the current pan for a given voice (-1 to +1"#10;"#9;"#9;"#9;range).
 
 #### <a name="voice_get_pan_height">voice_get_pan_height</a>
-  * [real](class_real)  **voice&#95;get&#95;pan&#95;height**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **voice&#95;get&#95;pan&#95;height**  **(** [RID](class_rid) voice  **)** const
 
 Return the current pan height for a given voice (-1 to +1"#10;"#9;"#9;"#9;range).
 
 #### <a name="voice_get_pan_depth">voice_get_pan_depth</a>
-  * [real](class_real)  **voice&#95;get&#95;pan&#95;depth**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **voice&#95;get&#95;pan&#95;depth**  **(** [RID](class_rid) voice  **)** const
 
 Return the current pan depth for a given voice (-1 to +1"#10;"#9;"#9;"#9;range).
 
@@ -232,17 +232,17 @@ Return the current pan depth for a given voice (-1 to +1"#10;"#9;"#9;"#9;range).
 Return the current selected filter type for a given"#10;"#9;"#9;"#9;voice, from the FILTER_* enum.
 
 #### <a name="voice_get_filter_cutoff">voice_get_filter_cutoff</a>
-  * [real](class_real)  **voice&#95;get&#95;filter&#95;cutoff**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **voice&#95;get&#95;filter&#95;cutoff**  **(** [RID](class_rid) voice  **)** const
 
 Return the current filter cutoff (in hz) for a given"#10;"#9;"#9;"#9;voice.
 
 #### <a name="voice_get_filter_resonance">voice_get_filter_resonance</a>
-  * [real](class_real)  **voice&#95;get&#95;filter&#95;resonance**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **voice&#95;get&#95;filter&#95;resonance**  **(** [RID](class_rid) voice  **)** const
 
 Return the current filter resonance for a given"#10;"#9;"#9;"#9;voice.
 
 #### <a name="voice_get_chorus">voice_get_chorus</a>
-  * [real](class_real)  **voice&#95;get&#95;chorus**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **voice&#95;get&#95;chorus**  **(** [RID](class_rid) voice  **)** const
 
 Return the current chorus send for a given"#10;"#9;"#9;"#9;voice (0 to 1).
 
@@ -252,7 +252,7 @@ Return the current chorus send for a given"#10;"#9;"#9;"#9;voice (0 to 1).
 Return the current reverb type for a given voice"#10;"#9;"#9;"#9;from the REVERB_* enum.
 
 #### <a name="voice_get_reverb">voice_get_reverb</a>
-  * [real](class_real)  **voice&#95;get&#95;reverb**  **(** [RID](class_rid) voice  **)** const
+  * [float](class_float)  **voice&#95;get&#95;reverb**  **(** [RID](class_rid) voice  **)** const
 
 Return the current reverb send for a given voice"#10;"#9;"#9;"#9;(0 to 1).
 
@@ -277,11 +277,11 @@ Stop a given voice.
 Free a [RID](class_rid) resource.
 
 #### <a name="set_stream_global_volume_scale">set_stream_global_volume_scale</a>
-  * void  **set&#95;stream&#95;global&#95;volume&#95;scale**  **(** [real](class_real) scale  **)**
+  * void  **set&#95;stream&#95;global&#95;volume&#95;scale**  **(** [float](class_float) scale  **)**
 
 Set global scale for stream playback. Default is 1.0.
 
 #### <a name="get_stream_global_volume_scale">get_stream_global_volume_scale</a>
-  * [real](class_real)  **get&#95;stream&#95;global&#95;volume&#95;scale**  **(** **)** const
+  * [float](class_float)  **get&#95;stream&#95;global&#95;volume&#95;scale**  **(** **)** const
 
 Return the global scale for stream playback.

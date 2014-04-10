@@ -18,15 +18,15 @@ Control is the base node for all the GUI components.
   * [Object](class_object)  **[get&#95;window](#get_window)**  **(** **)** const
   * void  **[set&#95;anchor](#set_anchor)**  **(** [int](class_int) margin, [int](class_int) anchor_mode  **)**
   * [int](class_int)  **[get&#95;anchor](#get_anchor)**  **(** [int](class_int) margin  **)** const
-  * void  **[set&#95;margin](#set_margin)**  **(** [int](class_int) margin, [real](class_real) offset  **)**
-  * void  **[set&#95;anchor&#95;and&#95;margin](#set_anchor_and_margin)**  **(** [int](class_int) margin, [int](class_int) anchor_mode, [real](class_real) offset  **)**
+  * void  **[set&#95;margin](#set_margin)**  **(** [int](class_int) margin, [float](class_float) offset  **)**
+  * void  **[set&#95;anchor&#95;and&#95;margin](#set_anchor_and_margin)**  **(** [int](class_int) margin, [int](class_int) anchor_mode, [float](class_float) offset  **)**
   * void  **[set&#95;begin](#set_begin)**  **(** [Vector2](class_vector2) pos  **)**
   * void  **[set&#95;end](#set_end)**  **(** [Vector2](class_vector2) pos  **)**
   * void  **[set&#95;pos](#set_pos)**  **(** [Vector2](class_vector2) pos  **)**
   * void  **[set&#95;size](#set_size)**  **(** [Vector2](class_vector2) size  **)**
   * void  **[set&#95;custom&#95;minimum&#95;size](#set_custom_minimum_size)**  **(** [Vector2](class_vector2) size  **)**
   * void  **[set&#95;global&#95;pos](#set_global_pos)**  **(** [Vector2](class_vector2) pos  **)**
-  * [real](class_real)  **[get&#95;margin](#get_margin)**  **(** [int](class_int) margin  **)** const
+  * [float](class_float)  **[get&#95;margin](#get_margin)**  **(** [int](class_int) margin  **)** const
   * [Vector2](class_vector2)  **[get&#95;begin](#get_begin)**  **(** **)** const
   * [Vector2](class_vector2)  **[get&#95;end](#get_end)**  **(** **)** const
   * [Vector2](class_vector2)  **[get&#95;pos](#get_pos)**  **(** **)** const
@@ -45,8 +45,8 @@ Control is the base node for all the GUI components.
   * [Control](class_control)  **[get&#95;focus&#95;owner](#get_focus_owner)**  **(** **)** const
   * void  **[set&#95;h&#95;size&#95;flags](#set_h_size_flags)**  **(** [int](class_int) flags  **)**
   * [int](class_int)  **[get&#95;h&#95;size&#95;flags](#get_h_size_flags)**  **(** **)** const
-  * void  **[set&#95;stretch&#95;ratio](#set_stretch_ratio)**  **(** [real](class_real) ratio  **)**
-  * [real](class_real)  **[get&#95;stretch&#95;ratio](#get_stretch_ratio)**  **(** **)** const
+  * void  **[set&#95;stretch&#95;ratio](#set_stretch_ratio)**  **(** [float](class_float) ratio  **)**
+  * [float](class_float)  **[get&#95;stretch&#95;ratio](#get_stretch_ratio)**  **(** **)** const
   * void  **[set&#95;v&#95;size&#95;flags](#set_v_size_flags)**  **(** [int](class_int) flags  **)**
   * [int](class_int)  **[get&#95;v&#95;size&#95;flags](#get_v_size_flags)**  **(** **)** const
   * void  **[set&#95;theme](#set_theme)**  **(** [Theme](class_theme) theme  **)**
@@ -91,6 +91,7 @@ Control is the base node for all the GUI components.
   * **ANCHOR_BEGIN** = **0** - X is relative to MARGIN_LEFT,  Y is relative to MARGIN_TOP,
   * **ANCHOR_END** = **1** - X is relative to -MARGIN_RIGHT,  Y is relative to -MARGIN_BOTTOM,
   * **ANCHOR_RATIO** = **2** - X and Y are a ratio (0 to 1) relative to the parent size 0 is left/top, 1 is right/bottom.
+  * **ANCHOR_CENTER** = **3**
   * **FOCUS_NONE** = **0** - Control can't acquire focus.
   * **FOCUS_CLICK** = **1** - Control can acquire focus only if clicked.
   * **FOCUS_ALL** = **2** - Control can acquire focus if clicked, or by pressing TAB/Directionals in the keyboard from another Control.
@@ -174,12 +175,12 @@ Change the anchor (ANCHOR_BEGIN, ANCHOR_END, ANCHOR_RATIO) type for a margin (MA
 Return the anchor type (ANCHOR_BEGIN, ANCHOR_END, ANCHOR_RATIO) for a given margin (MARGIN_LEFT, MARGIN_TOP, MARGIN_RIGHT, MARGIN_BOTTOM).
 
 #### <a name="set_margin">set_margin</a>
-  * void  **set&#95;margin**  **(** [int](class_int) margin, [real](class_real) offset  **)**
+  * void  **set&#95;margin**  **(** [int](class_int) margin, [float](class_float) offset  **)**
 
 Set a margin offset. Margin can be one of (MARGIN_LEFT, MARGIN_TOP, MARGIN_RIGHT, MARGIN_BOTTOM). Offset value being set depends on the anchor mode.
 
 #### <a name="set_anchor_and_margin">set_anchor_and_margin</a>
-  * void  **set&#95;anchor&#95;and&#95;margin**  **(** [int](class_int) margin, [int](class_int) anchor_mode, [real](class_real) offset  **)**
+  * void  **set&#95;anchor&#95;and&#95;margin**  **(** [int](class_int) margin, [int](class_int) anchor_mode, [float](class_float) offset  **)**
 
 Change the anchor (ANCHOR_BEGIN, ANCHOR_END, ANCHOR_RATIO) type for a margin (MARGIN_LEFT, MARGIN_TOP, MARGIN_RIGHT, MARGIN_BOTTOM), and also set its offset. This is a helper (see [set&#95;anchor](#set_anchor) and [set&#95;margin](#set_margin)).
 
@@ -209,7 +210,7 @@ Changes MARGIN_RIGHT and MARGIN_BOTTOM to fit a given size. This is a helper (se
 Move the Control to a new position, relative to the top-left corner of the _window_ Control, and without changing current anchor mode. (see [set&#95;margin](#set_margin)).
 
 #### <a name="get_margin">get_margin</a>
-  * [real](class_real)  **get&#95;margin**  **(** [int](class_int) margin  **)** const
+  * [float](class_float)  **get&#95;margin**  **(** [int](class_int) margin  **)** const
 
 Return a margin offset. Margin can be one of (MARGIN_LEFT, MARGIN_TOP, MARGIN_RIGHT, MARGIN_BOTTOM). Offset value being returned depends on the anchor mode.
 
@@ -289,12 +290,12 @@ Hint for containers, set horizontal positioning flags.
 Hint for containers, return horizontal positioning flags.
 
 #### <a name="set_stretch_ratio">set_stretch_ratio</a>
-  * void  **set&#95;stretch&#95;ratio**  **(** [real](class_real) ratio  **)**
+  * void  **set&#95;stretch&#95;ratio**  **(** [float](class_float) ratio  **)**
 
 Hint for containers, set the stretch ratio. This value is relative to other stretch ratio, so if this control has 2 and another has 1, this one will be twice as big.
 
 #### <a name="get_stretch_ratio">get_stretch_ratio</a>
-  * [real](class_real)  **get&#95;stretch&#95;ratio**  **(** **)** const
+  * [float](class_float)  **get&#95;stretch&#95;ratio**  **(** **)** const
 
 Hint for containers, return the stretch ratio. This value is relative to other stretch ratio, so if this control has 2 and another has 1, this one will be twice as big.
 

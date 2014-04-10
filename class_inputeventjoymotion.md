@@ -14,7 +14,7 @@
   * [int](class_int) **device**
   * [int](class_int) **ID**
   * [int](class_int) **axis**
-  * [real](class_real) **value**
+  * [float](class_float) **value**
 
 ###  Numeric Constants  
   * **NONE** = **0**

@@ -13,8 +13,8 @@
   * [RID](class_rid)  **[space&#95;create](#space_create)**  **(** **)**
   * void  **[space&#95;set&#95;active](#space_set_active)**  **(** [RID](class_rid) space, [bool](class_bool) active  **)**
   * [bool](class_bool)  **[space&#95;is&#95;active](#space_is_active)**  **(** [RID](class_rid) space  **)** const
-  * void  **[space&#95;set&#95;param](#space_set_param)**  **(** [RID](class_rid) space, [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[space&#95;get&#95;param](#space_get_param)**  **(** [RID](class_rid) space, [int](class_int) param  **)** const
+  * void  **[space&#95;set&#95;param](#space_set_param)**  **(** [RID](class_rid) space, [int](class_int) param, [float](class_float) value  **)**
+  * [float](class_float)  **[space&#95;get&#95;param](#space_get_param)**  **(** [RID](class_rid) space, [int](class_int) param  **)** const
   * [PhysicsDirectSpaceState](class_physicsdirectspacestate)  **[space&#95;get&#95;direct&#95;state](#space_get_direct_state)**  **(** [RID](class_rid) space  **)**
   * [RID](class_rid)  **[area&#95;create](#area_create)**  **(** **)**
   * void  **[area&#95;set&#95;space](#area_set_space)**  **(** [RID](class_rid) area, [RID](class_rid) space  **)**
@@ -53,8 +53,8 @@
   * [int](class_int)  **[body&#95;get&#95;object&#95;instance&#95;ID](#body_get_object_instance_ID)**  **(** [RID](class_rid) body  **)** const
   * void  **[body&#95;set&#95;enable&#95;continuous&#95;collision&#95;detection](#body_set_enable_continuous_collision_detection)**  **(** [RID](class_rid) body, [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[body&#95;is&#95;continuous&#95;collision&#95;detection&#95;enabled](#body_is_continuous_collision_detection_enabled)**  **(** [RID](class_rid) body  **)** const
-  * void  **[body&#95;set&#95;param](#body_set_param)**  **(** [RID](class_rid) body, [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[body&#95;get&#95;param](#body_get_param)**  **(** [RID](class_rid) body, [int](class_int) param  **)** const
+  * void  **[body&#95;set&#95;param](#body_set_param)**  **(** [RID](class_rid) body, [int](class_int) param, [float](class_float) value  **)**
+  * [float](class_float)  **[body&#95;get&#95;param](#body_get_param)**  **(** [RID](class_rid) body, [int](class_int) param  **)** const
   * void  **[body&#95;static&#95;simulate&#95;motion](#body_static_simulate_motion)**  **(** [RID](class_rid) body, [Transform](class_transform) new_xform  **)**
   * void  **[body&#95;set&#95;state](#body_set_state)**  **(** [RID](class_rid) body, [int](class_int) state, var value  **)**
   * void  **[body&#95;get&#95;state](#body_get_state)**  **(** [RID](class_rid) body, [int](class_int) state  **)** const

@@ -7,8 +7,8 @@
 
 ###  Member Functions 
   * [Vector3](class_vector3)  **[get&#95;total&#95;gravity](#get_total_gravity)**  **(** **)** const
-  * [real](class_real)  **[get&#95;total&#95;density](#get_total_density)**  **(** **)** const
-  * [real](class_real)  **[get&#95;inverse&#95;mass](#get_inverse_mass)**  **(** **)** const
+  * [float](class_float)  **[get&#95;total&#95;density](#get_total_density)**  **(** **)** const
+  * [float](class_float)  **[get&#95;inverse&#95;mass](#get_inverse_mass)**  **(** **)** const
   * [Vector3](class_vector3)  **[get&#95;inverse&#95;inertia](#get_inverse_inertia)**  **(** **)** const
   * void  **[set&#95;linear&#95;velocity](#set_linear_velocity)**  **(** [Vector3](class_vector3) velocity  **)**
   * [Vector3](class_vector3)  **[get&#95;linear&#95;velocity](#get_linear_velocity)**  **(** **)** const
@@ -29,7 +29,7 @@
   * [Object](class_object)  **[get&#95;contact&#95;collider&#95;object](#get_contact_collider_object)**  **(** [int](class_int) contact_idx  **)** const
   * [int](class_int)  **[get&#95;contact&#95;collider&#95;shape](#get_contact_collider_shape)**  **(** [int](class_int) contact_idx  **)** const
   * [Vector3](class_vector3)  **[get&#95;contact&#95;collider&#95;velocity&#95;at&#95;pos](#get_contact_collider_velocity_at_pos)**  **(** [int](class_int) contact_idx  **)** const
-  * [real](class_real)  **[get&#95;step](#get_step)**  **(** **)** const
+  * [float](class_float)  **[get&#95;step](#get_step)**  **(** **)** const
   * void  **[integrate&#95;forces](#integrate_forces)**  **(** **)**
   * [PhysicsDirectSpaceState](class_physicsdirectspacestate)  **[get&#95;space&#95;state](#get_space_state)**  **(** **)**
 

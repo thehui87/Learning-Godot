@@ -7,13 +7,13 @@ Direct access object to a physics body in the [Physics2DServer](class_physics2ds
 
 ###  Member Functions 
   * [Vector2](class_vector2)  **[get&#95;total&#95;gravity](#get_total_gravity)**  **(** **)** const
-  * [real](class_real)  **[get&#95;total&#95;density](#get_total_density)**  **(** **)** const
-  * [real](class_real)  **[get&#95;inverse&#95;mass](#get_inverse_mass)**  **(** **)** const
-  * [real](class_real)  **[get&#95;inverse&#95;inertia](#get_inverse_inertia)**  **(** **)** const
+  * [float](class_float)  **[get&#95;total&#95;density](#get_total_density)**  **(** **)** const
+  * [float](class_float)  **[get&#95;inverse&#95;mass](#get_inverse_mass)**  **(** **)** const
+  * [float](class_float)  **[get&#95;inverse&#95;inertia](#get_inverse_inertia)**  **(** **)** const
   * void  **[set&#95;linear&#95;velocity](#set_linear_velocity)**  **(** [Vector2](class_vector2) velocity  **)**
   * [Vector2](class_vector2)  **[get&#95;linear&#95;velocity](#get_linear_velocity)**  **(** **)** const
-  * void  **[set&#95;angular&#95;velocity](#set_angular_velocity)**  **(** [real](class_real) velocity  **)**
-  * [real](class_real)  **[get&#95;angular&#95;velocity](#get_angular_velocity)**  **(** **)** const
+  * void  **[set&#95;angular&#95;velocity](#set_angular_velocity)**  **(** [float](class_float) velocity  **)**
+  * [float](class_float)  **[get&#95;angular&#95;velocity](#get_angular_velocity)**  **(** **)** const
   * void  **[set&#95;transform](#set_transform)**  **(** [Matrix32](class_matrix32) transform  **)**
   * [Matrix32](class_matrix32)  **[get&#95;transform](#get_transform)**  **(** **)** const
   * void  **[set&#95;sleep&#95;state](#set_sleep_state)**  **(** [bool](class_bool) enabled  **)**
@@ -28,7 +28,7 @@ Direct access object to a physics body in the [Physics2DServer](class_physics2ds
   * [Object](class_object)  **[get&#95;contact&#95;collider&#95;object](#get_contact_collider_object)**  **(** [int](class_int) contact_idx  **)** const
   * [int](class_int)  **[get&#95;contact&#95;collider&#95;shape](#get_contact_collider_shape)**  **(** [int](class_int) contact_idx  **)** const
   * [Vector2](class_vector2)  **[get&#95;contact&#95;collider&#95;velocity&#95;at&#95;pos](#get_contact_collider_velocity_at_pos)**  **(** [int](class_int) contact_idx  **)** const
-  * [real](class_real)  **[get&#95;step](#get_step)**  **(** **)** const
+  * [float](class_float)  **[get&#95;step](#get_step)**  **(** **)** const
   * void  **[integrate&#95;forces](#integrate_forces)**  **(** **)**
   * [Physics2DDirectSpaceState](class_physics2ddirectspacestate)  **[get&#95;space&#95;state](#get_space_state)**  **(** **)**
 
@@ -43,17 +43,17 @@ Direct access object to a physics body in the [Physics2DServer](class_physics2ds
 Return the total gravity vector being currently applied to this body.
 
 #### <a name="get_total_density">get_total_density</a>
-  * [real](class_real)  **get&#95;total&#95;density**  **(** **)** const
+  * [float](class_float)  **get&#95;total&#95;density**  **(** **)** const
 
 Return the space density currently being applied to this body.
 
 #### <a name="get_inverse_mass">get_inverse_mass</a>
-  * [real](class_real)  **get&#95;inverse&#95;mass**  **(** **)** const
+  * [float](class_float)  **get&#95;inverse&#95;mass**  **(** **)** const
 
 Return the inverse of the mass of the body.
 
 #### <a name="get_inverse_inertia">get_inverse_inertia</a>
-  * [real](class_real)  **get&#95;inverse&#95;inertia**  **(** **)** const
+  * [float](class_float)  **get&#95;inverse&#95;inertia**  **(** **)** const
 
 Return the inverse of the inertia of the body.
 
@@ -68,12 +68,12 @@ Change the linear velocity of the body.
 Return the current linear velocity of the body.
 
 #### <a name="set_angular_velocity">set_angular_velocity</a>
-  * void  **set&#95;angular&#95;velocity**  **(** [real](class_real) velocity  **)**
+  * void  **set&#95;angular&#95;velocity**  **(** [float](class_float) velocity  **)**
 
 Change the angular velocity of the body.
 
 #### <a name="get_angular_velocity">get_angular_velocity</a>
-  * [real](class_real)  **get&#95;angular&#95;velocity**  **(** **)** const
+  * [float](class_float)  **get&#95;angular&#95;velocity**  **(** **)** const
 
 Return the angular velocity of the body.
 
@@ -143,7 +143,7 @@ Return the collider shape index.
 Return the linear velocity vector at contact point of the collider.
 
 #### <a name="get_step">get_step</a>
-  * [real](class_real)  **get&#95;step**  **(** **)** const
+  * [float](class_float)  **get&#95;step**  **(** **)** const
 
 Return the timestep (delta) used for the simulation.
 

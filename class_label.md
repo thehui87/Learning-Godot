@@ -20,8 +20,8 @@ Control that displays formatted text.
   * [int](class_int)  **[get&#95;line&#95;count](#get_line_count)**  **(** **)** const
   * [int](class_int)  **[get&#95;total&#95;character&#95;count](#get_total_character_count)**  **(** **)** const
   * void  **[set&#95;visible&#95;characters](#set_visible_characters)**  **(** [int](class_int) arg0  **)**
-  * void  **[set&#95;percent&#95;visible](#set_percent_visible)**  **(** [real](class_real) percent_visible  **)**
-  * [real](class_real)  **[get&#95;percent&#95;visible](#get_percent_visible)**  **(** **)** const
+  * void  **[set&#95;percent&#95;visible](#set_percent_visible)**  **(** [float](class_float) percent_visible  **)**
+  * [float](class_float)  **[get&#95;percent&#95;visible](#get_percent_visible)**  **(** **)** const
 
 ###  Numeric Constants  
   * **ALIGN_LEFT** = **0** - Align rows to the left (default).

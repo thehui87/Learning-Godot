@@ -18,9 +18,9 @@
   * [Rect2](class_rect2)  **[get&#95;icon&#95;region](#get_icon_region)**  **(** [int](class_int) column  **)** const
   * void  **[set&#95;icon&#95;max&#95;width](#set_icon_max_width)**  **(** [int](class_int) column, [int](class_int) width  **)**
   * [int](class_int)  **[get&#95;icon&#95;max&#95;width](#get_icon_max_width)**  **(** [int](class_int) column  **)** const
-  * void  **[set&#95;range](#set_range)**  **(** [int](class_int) column, [real](class_real) value  **)**
-  * [real](class_real)  **[get&#95;range](#get_range)**  **(** [int](class_int) column  **)** const
-  * void  **[set&#95;range&#95;config](#set_range_config)**  **(** [int](class_int) column, [real](class_real) min, [real](class_real) max, [real](class_real) step, [bool](class_bool) expr=false  **)**
+  * void  **[set&#95;range](#set_range)**  **(** [int](class_int) column, [float](class_float) value  **)**
+  * [float](class_float)  **[get&#95;range](#get_range)**  **(** [int](class_int) column  **)** const
+  * void  **[set&#95;range&#95;config](#set_range_config)**  **(** [int](class_int) column, [float](class_float) min, [float](class_float) max, [float](class_float) step, [bool](class_bool) expr=false  **)**
   * [Dictionary](class_dictionary)  **[get&#95;range&#95;config](#get_range_config)**  **(** [int](class_int) column  **)**
   * void  **[set&#95;metadata](#set_metadata)**  **(** [int](class_int) column, var meta  **)**
   * void  **[get&#95;metadata](#get_metadata)**  **(** [int](class_int) column  **)** const

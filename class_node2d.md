@@ -7,10 +7,10 @@ Base node for 2D system.
 
 ###  Member Functions 
   * void  **[set&#95;pos](#set_pos)**  **(** [Vector2](class_vector2) pos  **)**
-  * void  **[set&#95;rot](#set_rot)**  **(** [real](class_real) rot  **)**
+  * void  **[set&#95;rot](#set_rot)**  **(** [float](class_float) rot  **)**
   * void  **[set&#95;scale](#set_scale)**  **(** [Vector2](class_vector2) scale  **)**
   * [Vector2](class_vector2)  **[get&#95;pos](#get_pos)**  **(** **)** const
-  * [real](class_real)  **[get&#95;rot](#get_rot)**  **(** **)** const
+  * [float](class_float)  **[get&#95;rot](#get_rot)**  **(** **)** const
   * [Vector2](class_vector2)  **[get&#95;scale](#get_scale)**  **(** **)** const
   * [Vector2](class_vector2)  **[get&#95;global&#95;pos](#get_global_pos)**  **(** **)** const
   * void  **[set&#95;transform](#set_transform)**  **(** [Matrix32](class_matrix32) xform  **)**
@@ -30,7 +30,7 @@ Base node for 2D system. Node2D contains a position, rotation and scale, which i
 Set the position of the 2d node.
 
 #### <a name="set_rot">set_rot</a>
-  * void  **set&#95;rot**  **(** [real](class_real) rot  **)**
+  * void  **set&#95;rot**  **(** [float](class_float) rot  **)**
 
 Set the rotation of the 2d node.
 
@@ -45,7 +45,7 @@ Set the scale of the 2d node.
 Return the position of the 2D node.
 
 #### <a name="get_rot">get_rot</a>
-  * [real](class_real)  **get&#95;rot**  **(** **)** const
+  * [float](class_float)  **get&#95;rot**  **(** **)** const
 
 Return the rotation of the 2D node.
 

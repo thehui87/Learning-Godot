@@ -21,7 +21,7 @@
   * [bool](class_bool)  **[is&#95;pressed](#is_pressed)**  **(** **)** const
 
 ###  Signals  
+  *  **released**  **(** **)**
   *  **pressed**  **(** **)**
-  *  **release**  **(** **)**
 
 ###  Member Function Description  

@@ -9,14 +9,14 @@
   * void  **[&#95;integrate&#95;forces](#_integrate_forces)**  **(** [PhysicsDirectBodyState](class_physicsdirectbodystate) state  **)** virtual
   * void  **[set&#95;mode](#set_mode)**  **(** [int](class_int) mode  **)**
   * [int](class_int)  **[get&#95;mode](#get_mode)**  **(** **)** const
-  * void  **[set&#95;mass](#set_mass)**  **(** [real](class_real) mass  **)**
-  * [real](class_real)  **[get&#95;mass](#get_mass)**  **(** **)** const
-  * void  **[set&#95;weight](#set_weight)**  **(** [real](class_real) weight  **)**
-  * [real](class_real)  **[get&#95;weight](#get_weight)**  **(** **)** const
-  * void  **[set&#95;friction](#set_friction)**  **(** [real](class_real) friction  **)**
-  * [real](class_real)  **[get&#95;friction](#get_friction)**  **(** **)** const
-  * void  **[set&#95;bounce](#set_bounce)**  **(** [real](class_real) bounce  **)**
-  * [real](class_real)  **[get&#95;bounce](#get_bounce)**  **(** **)** const
+  * void  **[set&#95;mass](#set_mass)**  **(** [float](class_float) mass  **)**
+  * [float](class_float)  **[get&#95;mass](#get_mass)**  **(** **)** const
+  * void  **[set&#95;weight](#set_weight)**  **(** [float](class_float) weight  **)**
+  * [float](class_float)  **[get&#95;weight](#get_weight)**  **(** **)** const
+  * void  **[set&#95;friction](#set_friction)**  **(** [float](class_float) friction  **)**
+  * [float](class_float)  **[get&#95;friction](#get_friction)**  **(** **)** const
+  * void  **[set&#95;bounce](#set_bounce)**  **(** [float](class_float) bounce  **)**
+  * [float](class_float)  **[get&#95;bounce](#get_bounce)**  **(** **)** const
   * void  **[set&#95;linear&#95;velocity](#set_linear_velocity)**  **(** [Vector3](class_vector3) linear_velocity  **)**
   * [Vector3](class_vector3)  **[get&#95;linear&#95;velocity](#get_linear_velocity)**  **(** **)** const
   * void  **[set&#95;angular&#95;velocity](#set_angular_velocity)**  **(** [Vector3](class_vector3) angular_velocity  **)**

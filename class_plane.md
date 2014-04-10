@@ -6,25 +6,25 @@ Plane in hessian form.
 
 ###  Member Functions 
   * [Vector3](class_vector3)  **[center](#center)**  **(** **)**
-  * [real](class_real)  **[distance&#95;to](#distance_to)**  **(** [Vector3](class_vector3) point  **)**
+  * [float](class_float)  **[distance&#95;to](#distance_to)**  **(** [Vector3](class_vector3) point  **)**
   * [Vector3](class_vector3)  **[get&#95;any&#95;point](#get_any_point)**  **(** **)**
-  * [bool](class_bool)  **[has&#95;point](#has_point)**  **(** [Vector3](class_vector3) point, [real](class_real) epsilon=0.00001  **)**
+  * [bool](class_bool)  **[has&#95;point](#has_point)**  **(** [Vector3](class_vector3) point, [float](class_float) epsilon=0.00001  **)**
   * [Vector3](class_vector3)  **[intersect&#95;3](#intersect_3)**  **(** [Plane](class_plane) b, [Plane](class_plane) c  **)**
   * [Vector3](class_vector3)  **[intersects&#95;ray](#intersects_ray)**  **(** [Vector3](class_vector3) from, [Vector3](class_vector3) dir  **)**
   * [Vector3](class_vector3)  **[intersects&#95;segment](#intersects_segment)**  **(** [Vector3](class_vector3) begin, [Vector3](class_vector3) end  **)**
   * [bool](class_bool)  **[is&#95;point&#95;over](#is_point_over)**  **(** [Vector3](class_vector3) point  **)**
   * [Plane](class_plane)  **[normalized](#normalized)**  **(** **)**
   * [Vector3](class_vector3)  **[project](#project)**  **(** [Vector3](class_vector3) point  **)**
-  * void  **[Plane](#Plane)**  **(** [real](class_real) a, [real](class_real) b, [real](class_real) c, [real](class_real) d  **)**
+  * void  **[Plane](#Plane)**  **(** [float](class_float) a, [float](class_float) b, [float](class_float) c, [float](class_float) d  **)**
   * void  **[Plane](#Plane)**  **(** [Vector3](class_vector3) v1, [Vector3](class_vector3) v2, [Vector3](class_vector3) v3  **)**
-  * void  **[Plane](#Plane)**  **(** [Vector3](class_vector3) normal, [real](class_real) d  **)**
+  * void  **[Plane](#Plane)**  **(** [Vector3](class_vector3) normal, [float](class_float) d  **)**
 
 ###  Member Variables  
   * [Vector3](class_vector3) **normal**
-  * [real](class_real) **x**
-  * [real](class_real) **y**
-  * [real](class_real) **z**
-  * [real](class_real) **d**
+  * [float](class_float) **x**
+  * [float](class_float) **y**
+  * [float](class_float) **z**
+  * [float](class_float) **d**
 
 ###  Description  
 Plane represents a normalized plane equation. Basically, "normal" is the normal of the plane (a,b,c normalized), and "d" is the distance from the origin to the plane (in the direction of "normal"). "Over" or "Above" the plane is considered the side of the plane towards where the normal is pointing.
@@ -32,7 +32,7 @@ Plane represents a normalized plane equation. Basically, "normal" is the normal 
 ###  Member Function Description  
 
 #### <a name="has_point">has_point</a>
-  * [bool](class_bool)  **has&#95;point**  **(** [Vector3](class_vector3) point, [real](class_real) epsilon=0.00001  **)**
+  * [bool](class_bool)  **has&#95;point**  **(** [Vector3](class_vector3) point, [float](class_float) epsilon=0.00001  **)**
 
 Returns true if "p" is inside the plane (by a very minimum treshold).
 

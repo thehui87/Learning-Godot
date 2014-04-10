@@ -9,7 +9,7 @@
   * [Transform](class_transform)  **[inverse](#inverse)**  **(** **)**
   * [Transform](class_transform)  **[looking&#95;at](#looking_at)**  **(** [Vector3](class_vector3) target, [Vector3](class_vector3) up  **)**
   * [Transform](class_transform)  **[orthonormalized](#orthonormalized)**  **(** **)**
-  * [Transform](class_transform)  **[rotated](#rotated)**  **(** [Vector3](class_vector3) axis, [real](class_real) phi  **)**
+  * [Transform](class_transform)  **[rotated](#rotated)**  **(** [Vector3](class_vector3) axis, [float](class_float) phi  **)**
   * [Transform](class_transform)  **[scaled](#scaled)**  **(** [Vector3](class_vector3) scale  **)**
   * [Transform](class_transform)  **[translated](#translated)**  **(** [Vector3](class_vector3) ofs  **)**
   * var  **[xform](#xform)**  **(** var v  **)**

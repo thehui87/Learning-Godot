@@ -10,8 +10,8 @@ Base node for all joint constraints in 2D phyisics.
   * [NodePath](class_nodepath)  **[get&#95;node&#95;a](#get_node_a)**  **(** **)** const
   * void  **[set&#95;node&#95;b](#set_node_b)**  **(** [NodePath](class_nodepath) node  **)**
   * [NodePath](class_nodepath)  **[get&#95;node&#95;b](#get_node_b)**  **(** **)** const
-  * void  **[set&#95;bias](#set_bias)**  **(** [real](class_real) bias  **)**
-  * [real](class_real)  **[get&#95;bias](#get_bias)**  **(** **)** const
+  * void  **[set&#95;bias](#set_bias)**  **(** [float](class_float) bias  **)**
+  * [float](class_float)  **[get&#95;bias](#get_bias)**  **(** **)** const
 
 ###  Description  
 Base node for all joint constraints in 2D phyisics. Joints take 2 bodies and apply a custom constraint.

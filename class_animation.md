@@ -15,32 +15,32 @@ Contains data used to animate everything in the engine.
   * [int](class_int)  **[find&#95;track](#find_track)**  **(** [NodePath](class_nodepath) path  **)** const
   * void  **[track&#95;move&#95;up](#track_move_up)**  **(** [int](class_int) idx  **)**
   * void  **[track&#95;move&#95;down](#track_move_down)**  **(** [int](class_int) idx  **)**
-  * [int](class_int)  **[transform&#95;track&#95;insert&#95;key](#transform_track_insert_key)**  **(** [int](class_int) idx, [real](class_real) time, [Vector3](class_vector3) loc, [Quat](class_quat) rot, [Vector3](class_vector3) scale  **)**
-  * void  **[track&#95;insert&#95;key](#track_insert_key)**  **(** [int](class_int) idx, [real](class_real) time, var key, [real](class_real) transition=1  **)**
+  * [int](class_int)  **[transform&#95;track&#95;insert&#95;key](#transform_track_insert_key)**  **(** [int](class_int) idx, [float](class_float) time, [Vector3](class_vector3) loc, [Quat](class_quat) rot, [Vector3](class_vector3) scale  **)**
+  * void  **[track&#95;insert&#95;key](#track_insert_key)**  **(** [int](class_int) idx, [float](class_float) time, var key, [float](class_float) transition=1  **)**
   * void  **[track&#95;remove&#95;key](#track_remove_key)**  **(** [int](class_int) idx, [int](class_int) key_idx  **)**
-  * void  **[track&#95;remove&#95;key&#95;at&#95;pos](#track_remove_key_at_pos)**  **(** [int](class_int) idx, [real](class_real) pos  **)**
+  * void  **[track&#95;remove&#95;key&#95;at&#95;pos](#track_remove_key_at_pos)**  **(** [int](class_int) idx, [float](class_float) pos  **)**
   * void  **[track&#95;set&#95;key&#95;value](#track_set_key_value)**  **(** [int](class_int) idx, [int](class_int) key, var value  **)**
-  * void  **[track&#95;set&#95;key&#95;transition](#track_set_key_transition)**  **(** [int](class_int) idx, [int](class_int) key_idx, [real](class_real) transition  **)**
-  * [real](class_real)  **[track&#95;get&#95;key&#95;transition](#track_get_key_transition)**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
+  * void  **[track&#95;set&#95;key&#95;transition](#track_set_key_transition)**  **(** [int](class_int) idx, [int](class_int) key_idx, [float](class_float) transition  **)**
+  * [float](class_float)  **[track&#95;get&#95;key&#95;transition](#track_get_key_transition)**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
   * [int](class_int)  **[track&#95;get&#95;key&#95;count](#track_get_key_count)**  **(** [int](class_int) idx  **)** const
   * void  **[track&#95;get&#95;key&#95;value](#track_get_key_value)**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
-  * [real](class_real)  **[track&#95;get&#95;key&#95;time](#track_get_key_time)**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
-  * [int](class_int)  **[track&#95;find&#95;key](#track_find_key)**  **(** [int](class_int) idx, [real](class_real) time, [bool](class_bool) exact=false  **)** const
+  * [float](class_float)  **[track&#95;get&#95;key&#95;time](#track_get_key_time)**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
+  * [int](class_int)  **[track&#95;find&#95;key](#track_find_key)**  **(** [int](class_int) idx, [float](class_float) time, [bool](class_bool) exact=false  **)** const
   * void  **[track&#95;set&#95;interpolation&#95;type](#track_set_interpolation_type)**  **(** [int](class_int) idx, [int](class_int) interpolation  **)**
   * [int](class_int)  **[track&#95;get&#95;interpolation&#95;type](#track_get_interpolation_type)**  **(** [int](class_int) idx  **)** const
-  * [Array](class_array)  **[transform&#95;track&#95;interpolate](#transform_track_interpolate)**  **(** [int](class_int) idx, [real](class_real) time_sec  **)** const
+  * [Array](class_array)  **[transform&#95;track&#95;interpolate](#transform_track_interpolate)**  **(** [int](class_int) idx, [float](class_float) time_sec  **)** const
   * void  **[value&#95;track&#95;set&#95;continuous](#value_track_set_continuous)**  **(** [int](class_int) idx, [bool](class_bool) continuous  **)**
   * [bool](class_bool)  **[value&#95;track&#95;is&#95;continuous](#value_track_is_continuous)**  **(** [int](class_int) idx  **)** const
-  * [IntArray](class_intarray)  **[value&#95;track&#95;get&#95;key&#95;indices](#value_track_get_key_indices)**  **(** [int](class_int) idx, [real](class_real) time_sec, [real](class_real) delta  **)** const
-  * [IntArray](class_intarray)  **[method&#95;track&#95;get&#95;key&#95;indices](#method_track_get_key_indices)**  **(** [int](class_int) idx, [real](class_real) time_sec, [real](class_real) delta  **)** const
+  * [IntArray](class_intarray)  **[value&#95;track&#95;get&#95;key&#95;indices](#value_track_get_key_indices)**  **(** [int](class_int) idx, [float](class_float) time_sec, [float](class_float) delta  **)** const
+  * [IntArray](class_intarray)  **[method&#95;track&#95;get&#95;key&#95;indices](#method_track_get_key_indices)**  **(** [int](class_int) idx, [float](class_float) time_sec, [float](class_float) delta  **)** const
   * [String](class_string)  **[method&#95;track&#95;get&#95;name](#method_track_get_name)**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
   * [Array](class_array)  **[method&#95;track&#95;get&#95;params](#method_track_get_params)**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
-  * void  **[set&#95;length](#set_length)**  **(** [real](class_real) time_sec  **)**
-  * [real](class_real)  **[get&#95;length](#get_length)**  **(** **)** const
+  * void  **[set&#95;length](#set_length)**  **(** [float](class_float) time_sec  **)**
+  * [float](class_float)  **[get&#95;length](#get_length)**  **(** **)** const
   * void  **[set&#95;loop](#set_loop)**  **(** [bool](class_bool) enabled  **)**
   * [bool](class_bool)  **[has&#95;loop](#has_loop)**  **(** **)** const
-  * void  **[set&#95;step](#set_step)**  **(** [real](class_real) size_sec  **)**
-  * [real](class_real)  **[get&#95;step](#get_step)**  **(** **)** const
+  * void  **[set&#95;step](#set_step)**  **(** [float](class_float) size_sec  **)**
+  * [float](class_float)  **[get&#95;step](#get_step)**  **(** **)** const
   * void  **[clear](#clear)**  **(** **)**
 
 ###  Numeric Constants  
@@ -98,12 +98,12 @@ Move a track up.
 Nove a track down.
 
 #### <a name="transform_track_insert_key">transform_track_insert_key</a>
-  * [int](class_int)  **transform&#95;track&#95;insert&#95;key**  **(** [int](class_int) idx, [real](class_real) time, [Vector3](class_vector3) loc, [Quat](class_quat) rot, [Vector3](class_vector3) scale  **)**
+  * [int](class_int)  **transform&#95;track&#95;insert&#95;key**  **(** [int](class_int) idx, [float](class_float) time, [Vector3](class_vector3) loc, [Quat](class_quat) rot, [Vector3](class_vector3) scale  **)**
 
 Insert a transform key for a transform track.
 
 #### <a name="track_insert_key">track_insert_key</a>
-  * void  **track&#95;insert&#95;key**  **(** [int](class_int) idx, [real](class_real) time, var key, [real](class_real) transition=1  **)**
+  * void  **track&#95;insert&#95;key**  **(** [int](class_int) idx, [float](class_float) time, var key, [float](class_float) transition=1  **)**
 
 Insert a generic key in a given track.
 
@@ -113,7 +113,7 @@ Insert a generic key in a given track.
 Remove a key by index in a given track.
 
 #### <a name="track_remove_key_at_pos">track_remove_key_at_pos</a>
-  * void  **track&#95;remove&#95;key&#95;at&#95;pos**  **(** [int](class_int) idx, [real](class_real) pos  **)**
+  * void  **track&#95;remove&#95;key&#95;at&#95;pos**  **(** [int](class_int) idx, [float](class_float) pos  **)**
 
 Remove a key by position (seconds) in a given track.
 
@@ -123,13 +123,13 @@ Remove a key by position (seconds) in a given track.
 Set the value of an existing key.
 
 #### <a name="track_set_key_transition">track_set_key_transition</a>
-  * void  **track&#95;set&#95;key&#95;transition**  **(** [int](class_int) idx, [int](class_int) key_idx, [real](class_real) transition  **)**
+  * void  **track&#95;set&#95;key&#95;transition**  **(** [int](class_int) idx, [int](class_int) key_idx, [float](class_float) transition  **)**
 
 Set the transition curve (easing) for a specific key (see built-in
 			math function "ease").
 
 #### <a name="track_get_key_transition">track_get_key_transition</a>
-  * [real](class_real)  **track&#95;get&#95;key&#95;transition**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
+  * [float](class_float)  **track&#95;get&#95;key&#95;transition**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
 
 Return the transition curve (easing) for a specific key (see built-in
 			math function "ease").
@@ -145,12 +145,12 @@ Return the amount of keys in a given track.
 Return the value of a given key in a given track.
 
 #### <a name="track_get_key_time">track_get_key_time</a>
-  * [real](class_real)  **track&#95;get&#95;key&#95;time**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
+  * [float](class_float)  **track&#95;get&#95;key&#95;time**  **(** [int](class_int) idx, [int](class_int) key_idx  **)** const
 
 Return the time at which the key is located.
 
 #### <a name="track_find_key">track_find_key</a>
-  * [int](class_int)  **track&#95;find&#95;key**  **(** [int](class_int) idx, [real](class_real) time, [bool](class_bool) exact=false  **)** const
+  * [int](class_int)  **track&#95;find&#95;key**  **(** [int](class_int) idx, [float](class_float) time, [bool](class_bool) exact=false  **)** const
 
 Find the key index by time in a given track. Optionally, only find it if the exact time is given.
 
@@ -165,7 +165,7 @@ Set the interpolation type of a given track, from the INTERPOLATION_* enum.
 Return the interpolation type of a given track, from the INTERPOLATION_* enum.
 
 #### <a name="transform_track_interpolate">transform_track_interpolate</a>
-  * [Array](class_array)  **transform&#95;track&#95;interpolate**  **(** [int](class_int) idx, [real](class_real) time_sec  **)** const
+  * [Array](class_array)  **transform&#95;track&#95;interpolate**  **(** [int](class_int) idx, [float](class_float) time_sec  **)** const
 
 Return the interpolated value of a transform track at a given time (in seconds). An array consisting of 3 elements: position ([Vector3](class_vector3)), rotation ([Quat](class_quat)) and scale ([Vector3](class_vector3)).
 
@@ -180,12 +180,12 @@ Enable or disable interpolation for a whole track. By default tracks are interpo
 Return wether interpolation is enabled or disabled for a whole track. By default tracks are interpolated.
 
 #### <a name="value_track_get_key_indices">value_track_get_key_indices</a>
-  * [IntArray](class_intarray)  **value&#95;track&#95;get&#95;key&#95;indices**  **(** [int](class_int) idx, [real](class_real) time_sec, [real](class_real) delta  **)** const
+  * [IntArray](class_intarray)  **value&#95;track&#95;get&#95;key&#95;indices**  **(** [int](class_int) idx, [float](class_float) time_sec, [float](class_float) delta  **)** const
 
 Return all the key indices of a value track, given a position and delta time.
 
 #### <a name="method_track_get_key_indices">method_track_get_key_indices</a>
-  * [IntArray](class_intarray)  **method&#95;track&#95;get&#95;key&#95;indices**  **(** [int](class_int) idx, [real](class_real) time_sec, [real](class_real) delta  **)** const
+  * [IntArray](class_intarray)  **method&#95;track&#95;get&#95;key&#95;indices**  **(** [int](class_int) idx, [float](class_float) time_sec, [float](class_float) delta  **)** const
 
 Return all the key indices of a method track, given a position and delta time.
 
@@ -200,12 +200,12 @@ Return the method name of a method track.
 Return the arguments values to be called on a method track for a given key in a given track.
 
 #### <a name="set_length">set_length</a>
-  * void  **set&#95;length**  **(** [real](class_real) time_sec  **)**
+  * void  **set&#95;length**  **(** [float](class_float) time_sec  **)**
 
 Set the total length of the animation (in seconds). Note that length is not delimited by the last key, as this one may be before or after the end to ensure correct interpolation and looping.
 
 #### <a name="get_length">get_length</a>
-  * [real](class_real)  **get&#95;length**  **(** **)** const
+  * [float](class_float)  **get&#95;length**  **(** **)** const
 
 Return the total length of the animation (in seconds).
 

@@ -12,12 +12,12 @@
   * [bool](class_bool)  **[is&#95;gravity&#95;a&#95;point](#is_gravity_a_point)**  **(** **)** const
   * void  **[set&#95;gravity&#95;vector](#set_gravity_vector)**  **(** [Vector3](class_vector3) vector  **)**
   * [Vector3](class_vector3)  **[get&#95;gravity&#95;vector](#get_gravity_vector)**  **(** **)** const
-  * void  **[set&#95;gravity](#set_gravity)**  **(** [real](class_real) gravity  **)**
-  * [real](class_real)  **[get&#95;gravity](#get_gravity)**  **(** **)** const
-  * void  **[set&#95;density](#set_density)**  **(** [real](class_real) density  **)**
-  * [real](class_real)  **[get&#95;density](#get_density)**  **(** **)** const
-  * void  **[set&#95;priority](#set_priority)**  **(** [real](class_real) priority  **)**
-  * [real](class_real)  **[get&#95;priority](#get_priority)**  **(** **)** const
+  * void  **[set&#95;gravity](#set_gravity)**  **(** [float](class_float) gravity  **)**
+  * [float](class_float)  **[get&#95;gravity](#get_gravity)**  **(** **)** const
+  * void  **[set&#95;density](#set_density)**  **(** [float](class_float) density  **)**
+  * [float](class_float)  **[get&#95;density](#get_density)**  **(** **)** const
+  * void  **[set&#95;priority](#set_priority)**  **(** [float](class_float) priority  **)**
+  * [float](class_float)  **[get&#95;priority](#get_priority)**  **(** **)** const
   * void  **[set&#95;enable&#95;monitoring](#set_enable_monitoring)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;monitoring&#95;enabled](#is_monitoring_enabled)**  **(** **)** const
 

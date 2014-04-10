@@ -13,9 +13,9 @@ Base class for audio streams.
   * [bool](class_bool)  **[has&#95;loop](#has_loop)**  **(** **)** const
   * [String](class_string)  **[get&#95;stream&#95;name](#get_stream_name)**  **(** **)** const
   * [int](class_int)  **[get&#95;loop&#95;count](#get_loop_count)**  **(** **)** const
-  * void  **[seek&#95;pos](#seek_pos)**  **(** [real](class_real) pos  **)**
-  * [real](class_real)  **[get&#95;pos](#get_pos)**  **(** **)** const
-  * [real](class_real)  **[get&#95;length](#get_length)**  **(** **)** const
+  * void  **[seek&#95;pos](#seek_pos)**  **(** [float](class_float) pos  **)**
+  * [float](class_float)  **[get&#95;pos](#get_pos)**  **(** **)** const
+  * [float](class_float)  **[get&#95;length](#get_length)**  **(** **)** const
   * [int](class_int)  **[get&#95;update&#95;mode](#get_update_mode)**  **(** **)** const
   * void  **[update](#update)**  **(** **)**
 
@@ -65,12 +65,12 @@ Return the name of the audio stream. Often the song"#10;"#9;"#9;"#9;title when t
 Return the amount of times that the stream has"#10;"#9;"#9;"#9;looped (if loop is supported).
 
 #### <a name="seek_pos">seek_pos</a>
-  * void  **seek&#95;pos**  **(** [real](class_real) pos  **)**
+  * void  **seek&#95;pos**  **(** [float](class_float) pos  **)**
 
 Seek to a certain position (in seconds) in an audio"#10;"#9;"#9;"#9;stream.
 
 #### <a name="get_pos">get_pos</a>
-  * [real](class_real)  **get&#95;pos**  **(** **)** const
+  * [float](class_float)  **get&#95;pos**  **(** **)** const
 
 Return the current playing position (in seconds) of the audio"#10;"#9;"#9;"#9;stream (if supported). Since this value is updated"#10;"#9;"#9;"#9;internally, it may not be exact or updated"#10;"#9;"#9;"#9;continuosly. Accuracy depends on the sample buffer"#10;"#9;"#9;"#9;size of the audio driver.
 

@@ -6,8 +6,8 @@
 Provides a base class for different kinds of light nodes.
 
 ###  Member Functions 
-  * void  **[set&#95;parameter](#set_parameter)**  **(** [int](class_int) variable, [real](class_real) value  **)**
-  * [real](class_real)  **[get&#95;parameter](#get_parameter)**  **(** [int](class_int) arg0  **)** const
+  * void  **[set&#95;parameter](#set_parameter)**  **(** [int](class_int) variable, [float](class_float) value  **)**
+  * [float](class_float)  **[get&#95;parameter](#get_parameter)**  **(** [int](class_int) arg0  **)** const
   * void  **[set&#95;color](#set_color)**  **(** [int](class_int) color, [Color](class_color) value  **)**
   * [Color](class_color)  **[get&#95;color](#get_color)**  **(** [int](class_int) arg0  **)** const
   * void  **[set&#95;project&#95;shadows](#set_project_shadows)**  **(** [bool](class_bool) enable  **)**

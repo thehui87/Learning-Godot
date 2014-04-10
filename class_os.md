@@ -6,7 +6,6 @@
 Operating System functions.
 
 ###  Member Functions 
-  * [Vector2](class_vector2)  **[get&#95;mouse&#95;pos](#get_mouse_pos)**  **(** **)** const
   * void  **[set&#95;clipboard](#set_clipboard)**  **(** [String](class_string) clipboard  **)**
   * [String](class_string)  **[get&#95;clipboard](#get_clipboard)**  **(** **)** const
   * void  **[set&#95;video&#95;mode](#set_video_mode)**  **(** [Vector2](class_vector2) size, [bool](class_bool) fullscreen, [bool](class_bool) resizable, [int](class_int) screen=0  **)**
@@ -16,6 +15,8 @@ Operating System functions.
   * [Array](class_array)  **[get&#95;fullscreen&#95;mode&#95;list](#get_fullscreen_mode_list)**  **(** [int](class_int) screen=0  **)** const
   * void  **[set&#95;iterations&#95;per&#95;second](#set_iterations_per_second)**  **(** [int](class_int) iterations_per_second  **)**
   * [int](class_int)  **[get&#95;iterations&#95;per&#95;second](#get_iterations_per_second)**  **(** **)** const
+  * void  **[set&#95;target&#95;fps](#set_target_fps)**  **(** [int](class_int) target_fps  **)**
+  * [float](class_float)  **[get&#95;target&#95;fps](#get_target_fps)**  **(** **)** const
   * [bool](class_bool)  **[has&#95;touchscreen&#95;ui&#95;hint](#has_touchscreen_ui_hint)**  **(** **)** const
   * void  **[set&#95;low&#95;processor&#95;usage&#95;mode](#set_low_processor_usage_mode)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;in&#95;low&#95;processor&#95;usage&#95;mode](#is_in_low_processor_usage_mode)**  **(** **)** const
@@ -24,6 +25,7 @@ Operating System functions.
   * [int](class_int)  **[execute](#execute)**  **(** [String](class_string) path, [StringArray](class_stringarray) arguments, [bool](class_bool) blocking  **)**
   * [int](class_int)  **[kill](#kill)**  **(** [int](class_int) pid  **)**
   * [int](class_int)  **[shell&#95;open](#shell_open)**  **(** [String](class_string) uri  **)**
+  * [int](class_int)  **[get&#95;process&#95;ID](#get_process_ID)**  **(** **)** const
   * [String](class_string)  **[get&#95;environment](#get_environment)**  **(** [String](class_string) environment  **)** const
   * [bool](class_bool)  **[has&#95;environment](#has_environment)**  **(** [String](class_string) environment  **)** const
   * [String](class_string)  **[get&#95;name](#get_name)**  **(** **)** const
@@ -42,7 +44,7 @@ Operating System functions.
   * [bool](class_bool)  **[can&#95;draw](#can_draw)**  **(** **)** const
   * [int](class_int)  **[get&#95;frames&#95;drawn](#get_frames_drawn)**  **(** **)**
   * [bool](class_bool)  **[is&#95;stdout&#95;verbose](#is_stdout_verbose)**  **(** **)** const
-  * [int](class_int)  **[get&#95;mouse&#95;button&#95;state](#get_mouse_button_state)**  **(** **)** const
+  * [bool](class_bool)  **[can&#95;use&#95;threads](#can_use_threads)**  **(** **)** const
   * void  **[dump&#95;memory&#95;to&#95;file](#dump_memory_to_file)**  **(** [String](class_string) file  **)**
   * void  **[dump&#95;resources&#95;to&#95;file](#dump_resources_to_file)**  **(** [String](class_string) file  **)**
   * void  **[print&#95;resources&#95;in&#95;use](#print_resources_in_use)**  **(** [bool](class_bool) short=false  **)**
@@ -52,8 +54,12 @@ Operating System functions.
   * [int](class_int)  **[get&#95;dynamic&#95;memory&#95;usage](#get_dynamic_memory_usage)**  **(** **)** const
   * [String](class_string)  **[get&#95;data&#95;dir](#get_data_dir)**  **(** **)** const
   * [String](class_string)  **[get&#95;unique&#95;ID](#get_unique_ID)**  **(** **)** const
-  * [real](class_real)  **[get&#95;frames&#95;per&#95;second](#get_frames_per_second)**  **(** **)** const
+  * [float](class_float)  **[get&#95;frames&#95;per&#95;second](#get_frames_per_second)**  **(** **)** const
   * void  **[print&#95;all&#95;textures&#95;by&#95;size](#print_all_textures_by_size)**  **(** **)**
+  * [int](class_int)  **[native&#95;video&#95;play](#native_video_play)**  **(** [String](class_string) arg0  **)**
+  * [bool](class_bool)  **[native&#95;video&#95;is&#95;playing](#native_video_is_playing)**  **(** **)**
+  * void  **[native&#95;video&#95;stop](#native_video_stop)**  **(** **)**
+  * void  **[native&#95;video&#95;pause](#native_video_pause)**  **(** **)**
 
 ###  Numeric Constants  
   * **DAY_SUNDAY** = **0**
@@ -89,11 +95,6 @@ Operating System functions. OS Wraps the most common functionality to communicat
         -Command Line
 
 ###  Member Function Description  
-
-#### <a name="get_mouse_pos">get_mouse_pos</a>
-  * [Vector2](class_vector2)  **get&#95;mouse&#95;pos**  **(** **)** const
-
-Return the mouse pos.
 
 #### <a name="set_clipboard">set_clipboard</a>
   * void  **set&#95;clipboard**  **(** [String](class_string) clipboard  **)**
@@ -230,11 +231,6 @@ Return the total amount of frames drawn.
   * [bool](class_bool)  **is&#95;stdout&#95;verbose**  **(** **)** const
 
 Return true if the engine was executed with -v (verbose stdout).
-
-#### <a name="get_mouse_button_state">get_mouse_button_state</a>
-  * [int](class_int)  **get&#95;mouse&#95;button&#95;state**  **(** **)** const
-
-Return the state of the mouse buttons (each button in each bit).
 
 #### <a name="get_static_memory_peak_usage">get_static_memory_peak_usage</a>
   * [int](class_int)  **get&#95;static&#95;memory&#95;peak&#95;usage**  **(** **)** const

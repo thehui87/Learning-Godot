@@ -12,11 +12,11 @@ Container and player of [Animaton] resources.
   * [bool](class_bool)  **[has&#95;animation](#has_animation)**  **(** [String](class_string) name  **)** const
   * [Animation](class_animation)  **[get&#95;animation](#get_animation)**  **(** [String](class_string) name  **)** const
   * [StringArray](class_stringarray)  **[get&#95;animation&#95;list](#get_animation_list)**  **(** **)** const
-  * void  **[set&#95;blend&#95;time](#set_blend_time)**  **(** [String](class_string) anim_from, [String](class_string) anim_to, [real](class_real) sec  **)**
-  * [real](class_real)  **[get&#95;blend&#95;time](#get_blend_time)**  **(** [String](class_string) anim_from, [String](class_string) anim_to  **)** const
-  * void  **[set&#95;default&#95;blend&#95;time](#set_default_blend_time)**  **(** [real](class_real) sec  **)**
-  * [real](class_real)  **[get&#95;default&#95;blend&#95;time](#get_default_blend_time)**  **(** **)** const
-  * void  **[play](#play)**  **(** [String](class_string) name="", [real](class_real) custom_blend=-1, [real](class_real) custom_speed=1, [bool](class_bool) from_end=false  **)**
+  * void  **[set&#95;blend&#95;time](#set_blend_time)**  **(** [String](class_string) anim_from, [String](class_string) anim_to, [float](class_float) sec  **)**
+  * [float](class_float)  **[get&#95;blend&#95;time](#get_blend_time)**  **(** [String](class_string) anim_from, [String](class_string) anim_to  **)** const
+  * void  **[set&#95;default&#95;blend&#95;time](#set_default_blend_time)**  **(** [float](class_float) sec  **)**
+  * [float](class_float)  **[get&#95;default&#95;blend&#95;time](#get_default_blend_time)**  **(** **)** const
+  * void  **[play](#play)**  **(** [String](class_string) name="", [float](class_float) custom_blend=-1, [float](class_float) custom_speed=1, [bool](class_bool) from_end=false  **)**
   * void  **[stop](#stop)**  **(** **)**
   * void  **[stop&#95;all](#stop_all)**  **(** **)**
   * [bool](class_bool)  **[is&#95;playing](#is_playing)**  **(** **)** const
@@ -26,20 +26,20 @@ Container and player of [Animaton] resources.
   * void  **[clear&#95;queue](#clear_queue)**  **(** **)**
   * void  **[set&#95;active](#set_active)**  **(** [bool](class_bool) active  **)**
   * [bool](class_bool)  **[is&#95;active](#is_active)**  **(** **)** const
-  * void  **[set&#95;speed](#set_speed)**  **(** [real](class_real) speed  **)**
-  * [real](class_real)  **[get&#95;speed](#get_speed)**  **(** **)** const
+  * void  **[set&#95;speed](#set_speed)**  **(** [float](class_float) speed  **)**
+  * [float](class_float)  **[get&#95;speed](#get_speed)**  **(** **)** const
   * void  **[set&#95;autoplay](#set_autoplay)**  **(** [String](class_string) name  **)**
   * [String](class_string)  **[get&#95;autoplay](#get_autoplay)**  **(** **)** const
   * void  **[set&#95;root](#set_root)**  **(** [NodePath](class_nodepath) path  **)**
   * [NodePath](class_nodepath)  **[get&#95;root](#get_root)**  **(** **)** const
-  * void  **[seek](#seek)**  **(** [real](class_real) pos_sec, [bool](class_bool) update=false  **)**
-  * [real](class_real)  **[get&#95;pos](#get_pos)**  **(** **)** const
+  * void  **[seek](#seek)**  **(** [float](class_float) pos_sec, [bool](class_bool) update=false  **)**
+  * [float](class_float)  **[get&#95;pos](#get_pos)**  **(** **)** const
   * [String](class_string)  **[find&#95;animation](#find_animation)**  **(** [Animation](class_animation) animation  **)** const
   * void  **[clear&#95;caches](#clear_caches)**  **(** **)**
   * void  **[set&#95;animation&#95;process&#95;mode](#set_animation_process_mode)**  **(** [int](class_int) mode  **)**
   * [int](class_int)  **[get&#95;animation&#95;process&#95;mode](#get_animation_process_mode)**  **(** **)** const
-  * [real](class_real)  **[get&#95;current&#95;animation&#95;pos](#get_current_animation_pos)**  **(** **)** const
-  * [real](class_real)  **[get&#95;current&#95;animation&#95;length](#get_current_animation_length)**  **(** **)** const
+  * [float](class_float)  **[get&#95;current&#95;animation&#95;pos](#get_current_animation_pos)**  **(** **)** const
+  * [float](class_float)  **[get&#95;current&#95;animation&#95;length](#get_current_animation_length)**  **(** **)** const
 
 ###  Signals  
   *  **animation&#95;changed**  **(** [String](class_string) old_name, [String](class_string) new_name  **)**
@@ -85,22 +85,22 @@ Get an [Animation](class_animation) resource by requesting a name.
 Get the list of names of the animations stored in the player.
 
 #### <a name="set_blend_time">set_blend_time</a>
-  * void  **set&#95;blend&#95;time**  **(** [String](class_string) anim_from, [String](class_string) anim_to, [real](class_real) sec  **)**
+  * void  **set&#95;blend&#95;time**  **(** [String](class_string) anim_from, [String](class_string) anim_to, [float](class_float) sec  **)**
 
 Specify a blend time (in seconds) between two animations, referemced by their names.
 
 #### <a name="get_blend_time">get_blend_time</a>
-  * [real](class_real)  **get&#95;blend&#95;time**  **(** [String](class_string) anim_from, [String](class_string) anim_to  **)** const
+  * [float](class_float)  **get&#95;blend&#95;time**  **(** [String](class_string) anim_from, [String](class_string) anim_to  **)** const
 
 Get the blend time between two animations, referemced by their names.
 
 #### <a name="set_default_blend_time">set_default_blend_time</a>
-  * void  **set&#95;default&#95;blend&#95;time**  **(** [real](class_real) sec  **)**
+  * void  **set&#95;default&#95;blend&#95;time**  **(** [float](class_float) sec  **)**
 
 Set the default blend time between animations.
 
 #### <a name="get_default_blend_time">get_default_blend_time</a>
-  * [real](class_real)  **get&#95;default&#95;blend&#95;time**  **(** **)** const
+  * [float](class_float)  **get&#95;default&#95;blend&#95;time**  **(** **)** const
 
 Return the default blend time between animations.
 
@@ -140,12 +140,12 @@ Set the player as active (playing)
 Return true if the player is active.
 
 #### <a name="set_speed">set_speed</a>
-  * void  **set&#95;speed**  **(** [real](class_real) speed  **)**
+  * void  **set&#95;speed**  **(** [float](class_float) speed  **)**
 
 Set a speed scaling ratio in a given animation channel (or channel 0 if none is provided). Default ratio is _1_ (no scaling).
 
 #### <a name="get_speed">get_speed</a>
-  * [real](class_real)  **get&#95;speed**  **(** **)** const
+  * [float](class_float)  **get&#95;speed**  **(** **)** const
 
 Get the speed scaling ratio in a given animation channel (or channel 0 if none is provided). Default ratio is _1_ (no scaling).
 
@@ -160,12 +160,12 @@ Set the name of the animation that will be automatically played when the scene i
 Return the name of the animation that will be automatically played when the scene is loaded.
 
 #### <a name="seek">seek</a>
-  * void  **seek**  **(** [real](class_real) pos_sec, [bool](class_bool) update=false  **)**
+  * void  **seek**  **(** [float](class_float) pos_sec, [bool](class_bool) update=false  **)**
 
 Seek the animation in an animation channel (or channel 0 if none is provided) to a specific position (in seconds).
 
 #### <a name="get_pos">get_pos</a>
-  * [real](class_real)  **get&#95;pos**  **(** **)** const
+  * [float](class_float)  **get&#95;pos**  **(** **)** const
 
 Return the playback position (in seconds) in an animation channel (or channel 0 if none is provided)
 

@@ -10,8 +10,8 @@
   * [MeshLibrary](class_meshlibrary)  **[get&#95;theme](#get_theme)**  **(** **)** const
   * void  **[set&#95;bake](#set_bake)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;baking&#95;enabled](#is_baking_enabled)**  **(** **)** const
-  * void  **[set&#95;cell&#95;size](#set_cell_size)**  **(** [real](class_real) size  **)**
-  * [real](class_real)  **[get&#95;cell&#95;size](#get_cell_size)**  **(** **)** const
+  * void  **[set&#95;cell&#95;size](#set_cell_size)**  **(** [float](class_float) size  **)**
+  * [float](class_float)  **[get&#95;cell&#95;size](#get_cell_size)**  **(** **)** const
   * void  **[set&#95;octant&#95;size](#set_octant_size)**  **(** [int](class_int) size  **)**
   * [int](class_int)  **[get&#95;octant&#95;size](#get_octant_size)**  **(** **)** const
   * void  **[set&#95;cell&#95;item](#set_cell_item)**  **(** [int](class_int) x, [int](class_int) y, [int](class_int) z, [int](class_int) item, [int](class_int) orientation=0  **)**
@@ -31,8 +31,8 @@
   * void  **[area&#95;set&#95;name](#area_set_name)**  **(** [int](class_int) area, [String](class_string) name  **)**
   * [String](class_string)  **[area&#95;get&#95;name](#area_get_name)**  **(** [int](class_int) area  **)** const
   * [bool](class_bool)  **[area&#95;is&#95;exterior&#95;portal](#area_is_exterior_portal)**  **(** [int](class_int) area  **)** const
-  * void  **[area&#95;set&#95;portal&#95;disable&#95;distance](#area_set_portal_disable_distance)**  **(** [int](class_int) area, [real](class_real) distance  **)**
-  * [real](class_real)  **[area&#95;get&#95;portal&#95;disable&#95;distance](#area_get_portal_disable_distance)**  **(** [int](class_int) area  **)** const
+  * void  **[area&#95;set&#95;portal&#95;disable&#95;distance](#area_set_portal_disable_distance)**  **(** [int](class_int) area, [float](class_float) distance  **)**
+  * [float](class_float)  **[area&#95;get&#95;portal&#95;disable&#95;distance](#area_get_portal_disable_distance)**  **(** [int](class_int) area  **)** const
   * void  **[area&#95;set&#95;portal&#95;disable&#95;color](#area_set_portal_disable_color)**  **(** [int](class_int) area, [Color](class_color) color  **)**
   * [Color](class_color)  **[area&#95;get&#95;portal&#95;disable&#95;color](#area_get_portal_disable_color)**  **(** [int](class_int) area  **)** const
   * void  **[erase&#95;area](#erase_area)**  **(** [int](class_int) area  **)**

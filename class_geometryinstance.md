@@ -10,10 +10,10 @@ Base node for geometry based visual instances.
   * [Object](class_object)  **[get&#95;material&#95;override](#get_material_override)**  **(** **)** const
   * void  **[set&#95;flag](#set_flag)**  **(** [int](class_int) flag, [bool](class_bool) value  **)**
   * [bool](class_bool)  **[get&#95;flag](#get_flag)**  **(** [int](class_int) flag  **)** const
-  * void  **[set&#95;draw&#95;range&#95;begin](#set_draw_range_begin)**  **(** [real](class_real) mode  **)**
-  * [real](class_real)  **[get&#95;draw&#95;range&#95;begin](#get_draw_range_begin)**  **(** **)** const
-  * void  **[set&#95;draw&#95;range&#95;end](#set_draw_range_end)**  **(** [real](class_real) mode  **)**
-  * [real](class_real)  **[get&#95;draw&#95;range&#95;end](#get_draw_range_end)**  **(** **)** const
+  * void  **[set&#95;draw&#95;range&#95;begin](#set_draw_range_begin)**  **(** [float](class_float) mode  **)**
+  * [float](class_float)  **[get&#95;draw&#95;range&#95;begin](#get_draw_range_begin)**  **(** **)** const
+  * void  **[set&#95;draw&#95;range&#95;end](#set_draw_range_end)**  **(** [float](class_float) mode  **)**
+  * [float](class_float)  **[get&#95;draw&#95;range&#95;end](#get_draw_range_end)**  **(** **)** const
 
 ###  Signals  
   *  **visibility&#95;changed**  **(** **)**

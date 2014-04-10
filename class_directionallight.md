@@ -8,8 +8,8 @@ Directional Light, such as the Sun or the Moon.
 ###  Member Functions 
   * void  **[set&#95;shadow&#95;mode](#set_shadow_mode)**  **(** [int](class_int) mode  **)**
   * [int](class_int)  **[get&#95;shadow&#95;mode](#get_shadow_mode)**  **(** **)** const
-  * void  **[set&#95;shadow&#95;param](#set_shadow_param)**  **(** [int](class_int) param, [real](class_real) value  **)**
-  * [real](class_real)  **[get&#95;shadow&#95;param](#get_shadow_param)**  **(** [int](class_int) param  **)** const
+  * void  **[set&#95;shadow&#95;param](#set_shadow_param)**  **(** [int](class_int) param, [float](class_float) value  **)**
+  * [float](class_float)  **[get&#95;shadow&#95;param](#get_shadow_param)**  **(** [int](class_int) param  **)** const
 
 ###  Numeric Constants  
   * **SHADOW_ORTHOGONAL** = **0**
