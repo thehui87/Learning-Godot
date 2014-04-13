@@ -27,6 +27,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 
 #### Intermediate
 
+*  [Multiple Screen Resolutions](tutorial_multires)
 *  [GUI Control Repositioning](tutorial_gui_repositioning)
 *  ~~[GUI Skinning](tutorial_gui_skinning)~~
 *  ~~[ Physics Engine (2D)](tutorial_physics_2d)~~
