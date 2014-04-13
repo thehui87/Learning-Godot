@@ -4,7 +4,7 @@
 
 This tutorial will explain how everything is animated in Godot. Godot animation system is extremely powerful and flexible. 
 
-To begin, let's just use the scene from the previous tutorial (splash screen). The goal will be to add a simple animation to it. Here's a copy just in case: <p align="center"><img src="robisplash.zip|}}
+To begin, let's just use the scene from the previous tutorial (splash screen). The goal will be to add a simple animation to it. Here's a copy just in case: [robisplash.zip](media/robisplash.zip)
 
 
 ### Creating the Animation
