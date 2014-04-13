@@ -20,5 +20,8 @@ Stretch settings are located in the project settings, it's just a bunch of confi
 
 #### Stretch Aspect
 
-
+* **Ignore**: Ignore the aspect ratio when stretching the screen. This means that the original resolution will be stretched to fit the new one, even if it's wider or narrower.
+* **Keep**: Keep aspect ratio when stretching the screen. This means that the original resolution will be kept when fitting the new one, and black bars will be added to the sides or the top/bottom of the screen.
+* **Keep Width**: Keep aspect ratio when stretching the screen, but if the resulting screen is taller than the specified resolution, it will be stretched vertically (and more vertical resolution will be reported in the viewport, proportionally). This is usually the best option for creating GUIs or HUDs that scale, so some controls can be anchored to the bottom.
+* **Keep Height**: Keep aspect ratio when stretching the screen, but if the resulting screen is wider than the specified resolution, it will be stretched horizontally (and more horizontal resolution will be reported in the viewport, proportionally). This is usually the best option for 2D games that scroll horizontally (like runners or platformers).
 
