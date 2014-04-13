@@ -11,3 +11,14 @@ In any case, while changing the root Viewport params is probably the most flexib
 Stretch settings are located in the project settings, it's just a bunch of configuration variables that provide several options:
 
 <p align="center"><img src="images/stretch.png"></p>
+
+#### Stretch Mode
+
+* **Disabled**: The first is the stretch mode. By default this is disable, which means no stretching happens (the bigger the screen or window, the bigger the resolution, always matching pixels 1:1).
+* **2D**: In this mode, the resolution specified in display/width and display/height in the project settings will be stretched to cover the whole screen. This means that 3D will be unaffected (will just render to higher res) and 2D sil also be rendererd at higher rest, just enlarged.
+* **Viewport**: Viewport scaling is different, the root [Viewport](class_viewport) is set as a render  target, and still renders precisely to the resolution specified in the display/ section of the project settings. Finally, this viewport is copied and scaled to fit the screen. 
+
+#### Stretch Aspect
+
+
+
