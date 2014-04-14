@@ -15,8 +15,8 @@ Stretch settings are located in the project settings, it's just a bunch of confi
 #### Stretch Mode
 
 * **Disabled**: The first is the stretch mode. By default this is disable, which means no stretching happens (the bigger the screen or window, the bigger the resolution, always matching pixels 1:1).
-* **2D**: In this mode, the resolution specified in display/width and display/height in the project settings will be stretched to cover the whole screen. This means that 3D will be unaffected (will just render to higher res) and 2D sil also be rendererd at higher rest, just enlarged.
-* **Viewport**: Viewport scaling is different, the root [Viewport](class_viewport) is set as a render  target, and still renders precisely to the resolution specified in the display/ section of the project settings. Finally, this viewport is copied and scaled to fit the screen. 
+* **2D**: In this mode, the resolution specified in display/width and display/height in the project settings will be stretched to cover the whole screen. This means that 3D will be unaffected (will just render to higher-res) and 2D will also be rendered at higher-res, just enlarged.
+* **Viewport**: Viewport scaling is different, the root [Viewport](class_viewport) is set as a render  target, and still renders precisely to the resolution specified in the `display/` section of the project settings. Finally, this viewport is copied and scaled to fit the screen. This mode is useful when working with pixel-precise games, or just for the sake of rendering to a lower resolution for improving performance.
 
 #### Stretch Aspect
 
