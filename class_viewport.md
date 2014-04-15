@@ -29,15 +29,22 @@ Creates a sub-view into the screen.
   * [Image](class_image)  **[get&#95;screen&#95;capture](#get_screen_capture)**  **(** **)** const
   * void  **[set&#95;as&#95;render&#95;target](#set_as_render_target)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;set&#95;as&#95;render&#95;target](#is_set_as_render_target)**  **(** **)** const
+  * void  **[set&#95;render&#95;target&#95;vflip](#set_render_target_vflip)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[get&#95;render&#95;target&#95;vflip](#get_render_target_vflip)**  **(** **)** const
   * void  **[set&#95;render&#95;target&#95;update&#95;mode](#set_render_target_update_mode)**  **(** [int](class_int) mode  **)**
   * [int](class_int)  **[get&#95;render&#95;target&#95;update&#95;mode](#get_render_target_update_mode)**  **(** **)** const
   * [RenderTargetTexture](class_rendertargettexture)  **[get&#95;render&#95;target&#95;texture](#get_render_target_texture)**  **(** **)** const
   * [RID](class_rid)  **[get&#95;viewport](#get_viewport)**  **(** **)** const
+  * void  **[input](#input)**  **(** [InputEvent](class_inputevent) local_event  **)**
+  * void  **[unhandled&#95;input](#unhandled_input)**  **(** [InputEvent](class_inputevent) local_event  **)**
   * void  **[update&#95;worlds](#update_worlds)**  **(** **)**
+  * void  **[set&#95;use&#95;own&#95;world](#set_use_own_world)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[is&#95;using&#95;own&#95;world](#is_using_own_world)**  **(** **)** const
   * void  **[set&#95;as&#95;audio&#95;listener](#set_as_audio_listener)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;audio&#95;listener](#is_audio_listener)**  **(** **)** const
   * void  **[set&#95;as&#95;audio&#95;listener&#95;2d](#set_as_audio_listener_2d)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;audio&#95;listener&#95;2d](#is_audio_listener_2d)**  **(** **)** const
+  * void  **[set&#95;render&#95;target&#95;to&#95;screen&#95;rect](#set_render_target_to_screen_rect)**  **(** [Rect2](class_rect2) arg0  **)**
 
 ###  Signals  
   *  **size&#95;changed**  **(** **)**

@@ -19,6 +19,7 @@ Scene-Based implementation of the MainLoop.
   * [int](class_int)  **[get&#95;node&#95;count](#get_node_count)**  **(** **)** const
   * [int](class_int)  **[get&#95;frame](#get_frame)**  **(** **)** const
   * void  **[quit](#quit)**  **(** **)**
+  * void  **[set&#95;screen&#95;stretch](#set_screen_stretch)**  **(** [int](class_int) mode, [int](class_int) aspect, [Vector2](class_vector2) minsize  **)**
   * void  **[queue&#95;delete](#queue_delete)**  **(** [Object](class_object) obj  **)**
   * void  **[call&#95;group](#call_group)**  **(** [int](class_int) flags, [String](class_string) group, [String](class_string) method, var arg0=NULL, var arg1=NULL, var arg2=NULL, var arg3=NULL, var arg4=NULL  **)**
 
@@ -32,6 +33,13 @@ Scene-Based implementation of the MainLoop.
   * **GROUP_CALL_REVERSE** = **1** - Call a group in inverse-scene order.
   * **GROUP_CALL_REALTIME** = **2** - Call a group immediately (usually calls are delivered on idle).
   * **GROUP_CALL_UNIQUE** = **4** - Call a group only once, even if call is performed many times.
+  * **STRETCH_MODE_DISABLED** = **0**
+  * **STRETCH_MODE_2D** = **1**
+  * **STRETCH_MODE_VIEWPORT** = **2**
+  * **STRETCH_ASPECT_IGNORE** = **0**
+  * **STRETCH_ASPECT_KEEP** = **1**
+  * **STRETCH_ASPECT_KEEP_WIDTH** = **2**
+  * **STRETCH_ASPECT_KEEP_HEIGHT** = **3**
 
 ###  Description  
 Scene implementation of the MainLoop. All scenes edited using the editor are loaded with this main loop, which provides the base for the scene system.

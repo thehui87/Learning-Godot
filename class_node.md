@@ -55,6 +55,8 @@ Base class for all the "Scene" elements.
   * [bool](class_bool)  **[is&#95;processing&#95;input](#is_processing_input)**  **(** **)** const
   * void  **[set&#95;process&#95;unhandled&#95;input](#set_process_unhandled_input)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;processing&#95;unhandled&#95;input](#is_processing_unhandled_input)**  **(** **)** const
+  * void  **[set&#95;process&#95;unhandled&#95;key&#95;input](#set_process_unhandled_key_input)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[is&#95;processing&#95;unhandled&#95;key&#95;input](#is_processing_unhandled_key_input)**  **(** **)** const
   * void  **[set&#95;pause&#95;mode](#set_pause_mode)**  **(** [int](class_int) mode  **)**
   * [int](class_int)  **[get&#95;pause&#95;mode](#get_pause_mode)**  **(** **)** const
   * [bool](class_bool)  **[can&#95;process](#can_process)**  **(** **)** const
@@ -63,6 +65,7 @@ Base class for all the "Scene" elements.
   * [SceneMainLoop](class_scenemainloop)  **[get&#95;scene](#get_scene)**  **(** **)** const
   * [Node](class_node)  **[duplicate](#duplicate)**  **(** **)** const
   * void  **[replace&#95;by](#replace_by)**  **(** [Node](class_node) node, [bool](class_bool) keep_data=false  **)**
+  * [Object](class_object)  **[get&#95;viewport](#get_viewport)**  **(** **)** const
   * void  **[queue&#95;free](#queue_free)**  **(** **)**
 
 ###  Signals  

@@ -47,7 +47,6 @@ Base class of anything 2D.
   * [Rect2](class_rect2)  **[get&#95;viewport&#95;rect](#get_viewport_rect)**  **(** **)** const
   * [RID](class_rid)  **[get&#95;canvas](#get_canvas)**  **(** **)** const
   * [Object](class_object)  **[get&#95;world&#95;2d](#get_world_2d)**  **(** **)** const
-  * [Object](class_object)  **[get&#95;viewport](#get_viewport)**  **(** **)** const
 
 ###  Signals  
   *  **item&#95;rect&#95;changed**  **(** **)**

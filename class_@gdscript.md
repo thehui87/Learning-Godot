@@ -62,7 +62,8 @@ Built-in GDScript functions.
   * [Nil](class_nil)  **[print&#95;stack](#print_stack)**  **(** **)**
 
 ###  Numeric Constants  
-  * **PI** = **3.141593**
+  * **PI** = **3.141593** - Constant that represents how many times the diameter of a
+		circumference fits around it's perimeter.
 
 ###  Description  
 This contains the list of built-in gdscript functions. Mostly math functions and other utilities. Everything else is expanded by objects.
@@ -88,6 +89,11 @@ Standard tangent function.
   * [float](class_float)  **sinh**  **(** [float](class_float) s  **)**
 
 Hyperbolic sine.
+
+#### <a name="cosh">cosh</a>
+  * [float](class_float)  **cosh**  **(** [float](class_float) s  **)**
+
+Hyperbolic cosine.
 
 #### <a name="tanh">tanh</a>
   * [float](class_float)  **tanh**  **(** [float](class_float) s  **)**
@@ -194,6 +200,20 @@ Return the amount of decimals in the floating point value.
 
 Snap float value to a given step.
 
+#### <a name="randomize">randomize</a>
+  * [Nil](class_nil)  **randomize**  **(** **)**
+
+Reset the seed of the random number generator with a
+			new, different one.
+
+#### <a name="randi">randi</a>
+  * [int](class_int)  **randi**  **(** **)**
+
+Random 32 bits value (integer). To obtain a value
+			from 0 to N, you can use remainder, like (for random
+			from 0 to 19): randi() %
+			20.
+
 #### <a name="randf">randf</a>
   * [float](class_float)  **randf**  **(** **)**
 
@@ -202,12 +222,13 @@ Random value (0 to 1 float).
 #### <a name="rand_range">rand_range</a>
   * [float](class_float)  **rand&#95;range**  **(** [float](class_float) from, [float](class_float) to  **)**
 
-Random range.
+Random range, any floating point value between
+			'from' and 'to'
 
 #### <a name="rand_seed">rand_seed</a>
   * [Array](class_array)  **rand&#95;seed**  **(** [float](class_float) seed  **)**
 
-random from seed, pass a seed and an array with both number and new seed is returned.
+Random from seed, pass a seed and an array with both number and new seed is returned.
 
 #### <a name="deg2rad">deg2rad</a>
   * [float](class_float)  **deg2rad**  **(** [float](class_float) deg  **)**
@@ -288,3 +309,27 @@ Print one or more arguments to strings in the best way possible to console. No n
   * [Array](class_array)  **range**  **(** var ...  **)**
 
 Return an array with the given range. Range can be 1 argument N (0 to N-1), two arguments (initial, final-1) or three arguments (initial,final-1,increment).
+
+#### <a name="load">load</a>
+  * [Object](class_object)  **load**  **(** [String](class_string) path  **)**
+
+Load a resource from the filesystem, pass a valid
+			path as argument.
+
+#### <a name="inst2dict">inst2dict</a>
+  * [Dictionary](class_dictionary)  **inst2dict**  **(** [Object](class_object) inst  **)**
+
+Convert a script class instance to a dictionary
+			(useful for serializing).
+
+#### <a name="dict2inst">dict2inst</a>
+  * [Object](class_object)  **dict2inst**  **(** [Dictionary](class_dictionary) dict  **)**
+
+Convert a previously converted instances to dictionary
+			back into an instance. Useful for deserializing.
+
+#### <a name="print_stack">print_stack</a>
+  * [Nil](class_nil)  **print&#95;stack**  **(** **)**
+
+Print a stack track at code location, only works when
+			running with debugger turned on.

@@ -46,8 +46,9 @@ Container and player of [Animaton] resources.
   *  **finished**  **(** **)**
 
 ###  Numeric Constants  
-  * **ANIMATION_PROCESS_FIXED** = **0**
-  * **ANIMATION_PROCESS_IDLE** = **1**
+  * **ANIMATION_PROCESS_FIXED** = **0** - Process animation on fixed process. This is specially useful
+		when animating kinematic bodies.
+  * **ANIMATION_PROCESS_IDLE** = **1** - Process animation on idle process.
 
 ###  Description  
 An animation player is used for general purpose playback of [Animation](class_animation) resources. It contains a dictionary of animations (referenced by name) and custom blend times between their transitions. Additionally, animations can be played and blended in diferent channels.
@@ -104,15 +105,28 @@ Set the default blend time between animations.
 
 Return the default blend time between animations.
 
+#### <a name="play">play</a>
+  * void  **play**  **(** [String](class_string) name="", [float](class_float) custom_blend=-1, [float](class_float) custom_speed=1, [bool](class_bool) from_end=false  **)**
+
+Play a given animation by the animation name. Custom
+			speed and blend times can be set. If custom speed is
+			negative (-1), 'from_end' being true can play the
+			animation backwards.
+
+#### <a name="stop">stop</a>
+  * void  **stop**  **(** **)**
+
+Stop the currently played animation.
+
 #### <a name="stop_all">stop_all</a>
   * void  **stop&#95;all**  **(** **)**
 
-Stop playback on all animation channels.
+Stop playback of animations (deprecated).
 
 #### <a name="is_playing">is_playing</a>
   * [bool](class_bool)  **is&#95;playing**  **(** **)** const
 
-Return wether an animation chanel is playing (or channel 0 if none is provided).
+Return wether an animation is playing.
 
 #### <a name="set_current_animation">set_current_animation</a>
   * void  **set&#95;current&#95;animation**  **(** [String](class_string) anim  **)**
@@ -122,17 +136,23 @@ Set the current animation (even if no playback occurs). Using set_current_animat
 #### <a name="get_current_animation">get_current_animation</a>
   * [String](class_string)  **get&#95;current&#95;animation**  **(** **)** const
 
-Return the name of the animation being played in a channel (or channel 0 if none is provided).
+Return the name of the animation being played.
 
 #### <a name="queue">queue</a>
   * void  **queue**  **(** [String](class_string) name  **)**
 
 Queue an animation for playback once the current one is done.
 
+#### <a name="clear_queue">clear_queue</a>
+  * void  **clear&#95;queue**  **(** **)**
+
+If animations are queued to play, clear them.
+
 #### <a name="set_active">set_active</a>
   * void  **set&#95;active**  **(** [bool](class_bool) active  **)**
 
-Set the player as active (playing)
+Set the player as active (playing). If false, it
+			will do nothing.
 
 #### <a name="is_active">is_active</a>
   * [bool](class_bool)  **is&#95;active**  **(** **)** const
@@ -159,10 +179,25 @@ Set the name of the animation that will be automatically played when the scene i
 
 Return the name of the animation that will be automatically played when the scene is loaded.
 
+#### <a name="set_root">set_root</a>
+  * void  **set&#95;root**  **(** [NodePath](class_nodepath) path  **)**
+
+AnimationPlayer resolves animation track paths from
+			this node (which is relative to itself), by
+			default root is "..", but it can be changed..
+
+#### <a name="get_root">get_root</a>
+  * [NodePath](class_nodepath)  **get&#95;root**  **(** **)** const
+
+Return path to root node (see [set_root]).
+
 #### <a name="seek">seek</a>
   * void  **seek**  **(** [float](class_float) pos_sec, [bool](class_bool) update=false  **)**
 
-Seek the animation in an animation channel (or channel 0 if none is provided) to a specific position (in seconds).
+Seek the animation to a given position in time (in
+			seconds). If 'update'
+			is true, the animation will be updated too,
+			otherwise it will be updated at process time.
 
 #### <a name="get_pos">get_pos</a>
   * [float](class_float)  **get&#95;pos**  **(** **)** const
@@ -188,3 +223,15 @@ Set the mode in which the animation player processes. By default, it processes o
   * [int](class_int)  **get&#95;animation&#95;process&#95;mode**  **(** **)** const
 
 Return the mode in which the animation player processes. See [set&#95;animation&#95;process&#95;mode](#set_animation_process_mode).
+
+#### <a name="get_current_animation_pos">get_current_animation_pos</a>
+  * [float](class_float)  **get&#95;current&#95;animation&#95;pos**  **(** **)** const
+
+Get the position (in seconds) of the currently being
+			played animation.
+
+#### <a name="get_current_animation_length">get_current_animation_length</a>
+  * [float](class_float)  **get&#95;current&#95;animation&#95;length**  **(** **)** const
+
+Get the length (in seconds) of the currently being
+			played animation.

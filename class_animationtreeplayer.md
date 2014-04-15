@@ -3,7 +3,7 @@
 ####**Category:** Core
 
 ###  Brief Description  
-
+Animation Player that uses a node graph for the blending.
 
 ###  Member Functions 
   * void  **[add&#95;node](#add_node)**  **(** [int](class_int) type, [String](class_string) id  **)**
@@ -77,4 +77,47 @@
   * **NODE_TIMESEEK** = **8**
   * **NODE_TRANSITION** = **9**
 
+###  Description  
+Animation Player that uses a node graph for the blending. This kind
+	of player is very useful when animating character or other skeleton
+	based rigs, because it can combine several animations to form a
+	desired pose.
+
 ###  Member Function Description  
+
+#### <a name="add_node">add_node</a>
+  * void  **add&#95;node**  **(** [int](class_int) type, [String](class_string) id  **)**
+
+Add a node of a given type in the graph with given
+			id.
+
+#### <a name="node_exists">node_exists</a>
+  * [bool](class_bool)  **node&#95;exists**  **(** [String](class_string) node  **)** const
+
+Check if a node exists (by name).
+
+#### <a name="node_rename">node_rename</a>
+  * [int](class_int)  **node&#95;rename**  **(** [String](class_string) node, [String](class_string) new_name  **)**
+
+Rename a node in the graph.
+
+#### <a name="node_get_type">node_get_type</a>
+  * [int](class_int)  **node&#95;get&#95;type**  **(** [String](class_string) id  **)** const
+
+Get the node type, will return from NODE_* enum.
+
+#### <a name="node_get_input_count">node_get_input_count</a>
+  * [int](class_int)  **node&#95;get&#95;input&#95;count**  **(** [String](class_string) id  **)** const
+
+Return the input count for a given node. Different
+			types of nodes have different amount of inputs.
+
+#### <a name="node_get_input_sourcre">node_get_input_sourcre</a>
+  * [String](class_string)  **node&#95;get&#95;input&#95;sourcre**  **(** [String](class_string) id, [int](class_int) idx  **)** const
+
+Return the input source for a given node input.
+
+#### <a name="animation_node_set_animation">animation_node_set_animation</a>
+  * void  **animation&#95;node&#95;set&#95;animation**  **(** [String](class_string) id, [Animation](class_animation) animation  **)**
+
+Set the animation for an animation node.

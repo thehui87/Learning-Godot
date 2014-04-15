@@ -6,6 +6,8 @@
 
 
 ###  Member Functions 
+  * [int](class_int)  **[open&#95;encrypted](#open_encrypted)**  **(** [String](class_string) path, [int](class_int) mode_flags, [RawArray](class_rawarray) key  **)**
+  * [int](class_int)  **[open&#95;encrypted&#95;with&#95;pass](#open_encrypted_with_pass)**  **(** [String](class_string) path, [int](class_int) mode_flags, [String](class_string) pass  **)**
   * [int](class_int)  **[open](#open)**  **(** [String](class_string) path, [int](class_int) flags  **)**
   * void  **[close](#close)**  **(** **)**
   * [bool](class_bool)  **[is&#95;open](#is_open)**  **(** **)** const
