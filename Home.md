@@ -27,6 +27,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 
 #### Intermediate
 
+*  [Viewports](tutorial_viewports)
 *  [Multiple Screen Resolutions](tutorial_multires)
 *  [GUI Control Repositioning](tutorial_gui_repositioning)
 *  ~~[GUI Skinning](tutorial_gui_skinning)~~
