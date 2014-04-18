@@ -30,6 +30,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Viewports](tutorial_viewports)
 *  [Multiple Screen Resolutions](tutorial_multires)
 *  [GUI Control Repositioning](tutorial_gui_repositioning)
+*  [Tile Map](tutorial_tilemap)
 *  ~~[GUI Skinning](tutorial_gui_skinning)~~
 *  ~~[ Physics Engine (2D)](tutorial_physics_2d)~~
 *  ~~[Cut-Out Animation](tutorial_cutout)~~
