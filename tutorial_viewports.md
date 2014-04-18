@@ -54,6 +54,22 @@ The root viewport uses this for the stretch options in the project settings.
 
 ### Worlds
 
+For 3D, a Viewport will contain a [World](class_world). This is basically, the universe that links physics and rendering together. Spatial-base nodes will register using the World of the closest viewport. By default,  newly created viewports do not contain a World but use the same as a parent viewport (root viewport does contain one though, which is the one objects are renderer by default). A world can be set in a viewport using the "world" property, and that will separate all children nodes of that viewport from interacting with the parent viewport world. This is specially useful in scenarios where, for example, you might want to show a separate character in 3D imposed over the game (like in Starcraft).
+
+For 2D, each Viewport contains it's own [World2D](class_world2d). This suffices in most cases, but in case sharing them may be desired, it is possible to do so by calling the viewport API manually.
+
+### Sub-Viewport
+
+If the viewport is a child of a control, it will become active and display anything it has inside. The layout is something like this:
+
+-Control
+   -Viewport
+
+The viewport will cover the area of it's parent control completely.
+
+### Render Target
+
+
 
 
  
