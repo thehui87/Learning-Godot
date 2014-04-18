@@ -13,9 +13,16 @@ To begin with, a tileset needs to be made. Here are some tiles for it. They are 
 
 <p align="center"><img src="images/tileset.png"></p>
 
-Create a new project and throw those inside. 
+Create a new project and throw the above png image inside.
 
+###Create the TileSet
 
+We will be creating a [TileSet](class_tileset) resource. While this resource exports properties, it's pretty difficult to get complex data into it and maintain it:
 
+<p align="center"><img src="images/tileset_edit_resource.png"></p>
+
+There's enough properties to get by, and with some effort editing this way can work, but the easiest way to edit and maintain a tileset is with the export tool!
+
+###TileSet Scene
 
 
