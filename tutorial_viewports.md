@@ -4,7 +4,7 @@
 
 Godot has a small but very useful feature called viewports. Viewports are, as they name implies, rectangles where the world is drawn. They have three main uses, but can flexibly adapted to a lot more. All this is done via the [Viewport](class_viewport) node.
 
-image
+<p align="center"><img src="images/viewportnode.png"></p>
 
 The main uses in question are:
 
@@ -83,6 +83,10 @@ If the viewport is a child of a control, it will become active and display anyth
    -  Viewport
 
 The viewport will cover the area of it's parent control completely.
+
+
+<p align="center"><img src="images/subviewport.png"></p>
+
 
 ### Render Target
 
