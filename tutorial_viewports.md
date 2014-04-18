@@ -58,16 +58,41 @@ For 3D, a Viewport will contain a [World](class_world). This is basically, the u
 
 For 2D, each Viewport contains it's own [World2D](class_world2d). This suffices in most cases, but in case sharing them may be desired, it is possible to do so by calling the viewport API manually.
 
+### Capture
+
+It is possible to query a capture of the viewport contents. For the root viewport this is effectively a screen capture. This is done with the following API:
+
+```python
+# queues a screen capture, will not happen immediately
+viewport.queue_screen_capture() 
+```
+
+After a frame or two (check _process() ), the capture will be ready, get it back by using:
+```python
+var capture = viewport.get_screen_capture()
+```
+If the returned image is empty, capture still didn't happen, wait a little more, as this API is asyncronous.
+
 ### Sub-Viewport
 
 If the viewport is a child of a control, it will become active and display anything it has inside. The layout is something like this:
 
--Control
-   -Viewport
+-  Control
+   -  Viewport
 
 The viewport will cover the area of it's parent control completely.
 
 ### Render Target
+
+To set as a render target, just toggle the "render target" property of the viewport to enabled. Note that whatever is inside will not be visible in the scene editor. To display the contents, the render target texture must be used. This can be requested via code using (for example):
+
+```python
+var rtt = viewport.get_render_target_texture() 
+sprite.set_texture(rtt)
+```
+
+By default, re-rendering of the render target happens when the render target texture has been drawn in a frame. If visible, it will be rendered, otherwise it will not. This behavior can be changed to manual rendering (once), or always render, no matter if visible or not.
+
 
 
 
