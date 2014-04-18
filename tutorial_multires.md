@@ -4,7 +4,7 @@
 
 A base screen resolution for the project can be specified in the project settings. 
 
-<p align="center"><img src="images/stretchres.png"></p>
+<p align="center"><img src="images/screenres.png"></p>
 
 However, what it does is not completely obvious. When running on PC, the engine will attempt to set this resolution (or use something smaller if it fails). On mobile, consoles or devices with a fixed resolution or full screen rendering, this resolution will be ignored and the native resolution will be used instead. To compensate for this, Godot offers many ways to control how the screen will resize and stretch to different screen sizes.
 
@@ -18,7 +18,7 @@ In any case, while changing the root Viewport params is probably the most flexib
 
 Stretch settings are located in the project settings, it's just a bunch of configuration variables that provide several options:
 
-<p align="center"><img src="images/stretch.png"></p>
+<p align="center"><img src="images/stretchsettings.png"></p>
 
 #### Stretch Mode
 
