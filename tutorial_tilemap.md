@@ -81,7 +81,7 @@ Also set the cell size to '50', since that is the size used by the tiles. Quadra
 
 With all set, make sure the TileMap node is selected. A red grid will appear on screen, allowing to paint on it with the selected tile on the left pallete.
 
-<p align="center"><img src="images/tile_example5.png"></p> 
+<p align="center"><img src="images/tile_example6.png"></p> 
 
 To avoid moving and selecting the tilemap node accidentally (something common given it's a huge node), it is recommended that you lock it, using the lock button:
 
