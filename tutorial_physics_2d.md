@@ -30,5 +30,15 @@ var b = RectangleShape2D.new()
 b.set_extents(Vector2(20,10))
 ```
 
+The main use for shapes is checking collision/intersection and getting resolution information. This is done easily with the build functions like this:
+
+```python
+
+#check if there is a collision between two shapes, each with a transform
+if b.collide(b_xform,a,a_xform):
+   print("OMG Collision!")
+
+```
+
 
 
