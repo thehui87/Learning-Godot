@@ -25,4 +25,18 @@ There's enough properties to get by, and with some effort editing this way can w
 
 ###TileSet Scene
 
+Create a new scene with a regular node or node2d as root. For each new a sprite will be added. Since tiles here are 50x50, enabling snap might be a good idea. It is very important that the sprite is either centered ("center" property) or with an offset that refers to the center, because at the time of editing if the tile is mirrored in either X or Y direction, it will be done around this center (for both the image and collision).
+
+If more than one tile is present in the source image, make sure to use the region property of the sprite to adjust which of the sprites is the source texture is being edited.
+
+Finally, make sure to name your sprite node correctly, this will ensure that, in subsequent edits to the tileset (for example, if added collision, changed the region, etc), the tile will still be **identified correctly and updated**. This name should be unique.
+
+Sounds like a lot of requirements, so here's a screenshot that shows where everything of relevance is:
+
+<p align="center"><img src="images/tile_example.png"></p>
+
+
+
+
+
 
