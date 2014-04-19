@@ -97,7 +97,7 @@ This can't be avoided, as it is the way the hardware bilinear filter works. So, 
 
 * Disable filtering for either the tileset texture or the entire image loader (see the [Image Files](image_files) asset pipeline tutorial).
 * Use a single image for each tile.
-* Viewport Scaling can often helps shrinking the map (see the [Viewports](tutorial_viewports) tutorial).
+* Viewport Scaling can often help shrinking the map (see the [Viewports](tutorial_viewports) tutorial).
 
 
 
