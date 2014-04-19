@@ -526,7 +526,7 @@ Functions can’t be referenced because they are not treated as class members. T
 instance.call("funcname",args) # call a function by bane
 
 var fr = funcref(instance,"funcname") #create a function ref
-fr.exec(args)
+fr.call_func(args)
 
 ```
 
