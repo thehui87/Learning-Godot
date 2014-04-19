@@ -45,7 +45,7 @@ To add collision to a tile, create a StaticBody2D child for each sprite. This is
 
 <p align="center"><img src="images/tile_example3.png"></p> 
 
-Finally, edit the polygon, this will give the tile a collision. **Remember to use snap!**. Using snap will make sure collision polygons are aligned properly, allowing a character to walk seamlessly from tile to tile.
+Finally, edit the polygon, this will give the tile a collision. **Remember to use snap!**. Using snap will make sure collision polygons are aligned properly, allowing a character to walk seamlessly from tile to tile. Also **do not scale or move** the collision and/or collision polygon nodes. leave them at offset 0,0, with scale 1,1 and rotation 0 respect to the parent sprite.
 
 <p align="center"><img src="images/tile_example4.png"></p> 
 
@@ -81,7 +81,7 @@ Also set the cell size to '50', since that is the size used by the tiles. Quadra
 
 With all set, make sure the TileMap node is selected. A red grid will appear on screen, allowing to paint on it with the selected tile on the left pallete.
 
-<p align="center"><img src="images/tile_example5.png"></p> 
+<p align="center"><img src="images/tile_example6.png"></p> 
 
 To avoid moving and selecting the tilemap node accidentally (something common given it's a huge node), it is recommended that you lock it, using the lock button:
 
@@ -97,7 +97,7 @@ This can't be avoided, as it is the way the hardware bilinear filter works. So, 
 
 * Disable filtering for either the tileset texture or the entire image loader (see the [Image Files](image_files) asset pipeline tutorial).
 * Use a single image for each tile.
-* Viewport Scaling can often helps shrinking the map (see the [Viewports](tutorial_viewports) tutorial).
+* Viewport Scaling can often help shrinking the map (see the [Viewports](tutorial_viewports) tutorial).
 
 
 
