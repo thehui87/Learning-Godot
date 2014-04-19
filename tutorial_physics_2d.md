@@ -6,7 +6,7 @@ Our world is made of tangible matter. In our world, a piano can't go through a w
 
 Anyway, moving sprites around is nice but one day they have to collide properly, so let's get to the point.
 
-### Shape
+### Shapes
 
 The base collidable object in Godot's 2D world is a [Shape2D](class_shape2d). There are many types of shapes, all of them inherit this base class:
 
@@ -16,6 +16,19 @@ The base collidable object in Godot's 2D world is a [Shape2D](class_shape2d). Th
 * [ConvexPolygonShape2D](class_convexpolygonshape2d)
 * [ConcavePolygonShape2D](class_concavepolygonshape2d)
 *  etc. (there are others check the class list).
+
+Shapes are of type [Resource](class_resource), but they can be created via code easily. For example:
+
+```python
+
+#create a circle
+var c = CircleShape2D.new()
+c.set_radius(20)
+
+#create a box
+var b = RectangleShape2D.new()
+b.set_half_extents(Vector3(25,20,10))
+```
 
 
 
