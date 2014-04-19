@@ -27,7 +27,7 @@ c.set_radius(20)
 
 #create a box
 var b = RectangleShape2D.new()
-b.set_half_extents(Vector3(25,20,10))
+b.set_extents(Vector2(20,10))
 ```
 
 
