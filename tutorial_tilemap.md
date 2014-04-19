@@ -15,7 +15,7 @@ To begin with, a tileset needs to be made. Here are some tiles for it. They are 
 
 Create a new project and throw the above png image inside.
 
-###Create the TileSet
+###Create the TileSet Scene
 
 We will be creating a [TileSet](class_tileset) resource. While this resource exports properties, it's pretty difficult to get complex data into it and maintain it:
 
@@ -53,6 +53,17 @@ Keep adding collisions to tiles untile we are done. Note that BG is just a BG so
 
 <p align="center"><img src="images/tile_example5.png"></p> 
 
+OK! We're done! remember to save this scene for future edit, call it "tileset_edit.scn" or something like that.
+
+###Exporting a TileSet
+
+With the scene created and opened in the editor, next step will be to create a tileset. Use Scene > Convert To > Tile Set from the Scene Menu:
+
+<p align="center"><img src="images/tileset_export.png"></p> 
+
+Then choose a filename, like "mytiles.res". Make sure the "Merge With Existing" option is toggled on. This way, every time the tileset resource file is overwritten, existing tiles are merged and updated (they are referenced by their unique name, so again, **name your tiles properly**).
+
+<p align="center"><img src="images/tileset_merge.png"></p> 
 
 
 
