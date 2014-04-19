@@ -65,6 +65,22 @@ Then choose a filename, like "mytiles.res". Make sure the "Merge With Existing" 
 
 <p align="center"><img src="images/tileset_merge.png"></p> 
 
+###Using the TileSet in a TileMap
+
+Create a new scene, use any node or node2d as root, then create a [TileMap](class_tilemap) as a child.
+
+<p align="center"><img src="images/tilemap_scene.png"></p> 
+
+Go to the tileset property of this node and assign the one created in previous steps:
+
+<p align="center"><img src="images/tileset_property.png"></p> 
+
+Also set the cell size to '50', since that is the size used by the tiles. Quadrant size is a tuning value, which means that the engine will draw and cull the tilemap in blocks of 16x16 tiles. This value is usually fine and does not need to be changed, but can be used to tune performance in specific cases (if you know what you are doing).
+
+###Paiting Your World
+
+With all set, make sure the TileMap node is selected. A red grid will appear on screen, allowing to paint on it with the selected tile on the left pallete.
+
 
 
 
