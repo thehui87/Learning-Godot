@@ -45,7 +45,7 @@ To add collision to a tile, create a StaticBody2D child for each sprite. This is
 
 <p align="center"><img src="images/tile_example3.png"></p> 
 
-Finally, edit the polygon, this will give the tile a collision. **Remember to use snap!**. Using snap will make sure collision polygons are aligned properly, allowing a character to walk seamlessly from tile to tile.
+Finally, edit the polygon, this will give the tile a collision. **Remember to use snap!**. Using snap will make sure collision polygons are aligned properly, allowing a character to walk seamlessly from tile to tile. Also **do not scale or move** the collision and/or collision polygon nodes. leave them at offset 0,0, with scale 1,1 and rotation 0 respect to the parent sprite.
 
 <p align="center"><img src="images/tile_example4.png"></p> 
 
