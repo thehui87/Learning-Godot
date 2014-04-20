@@ -108,7 +108,7 @@ func _on_goto_scene_pressed():
 
 Finally, by running the project it's possible to switch bewtween both scenes y pressing the button!
 
-
+(To load scenes with a progress bar, check out the next tutorial, [Background Loading](Background loading))
 
 
 
