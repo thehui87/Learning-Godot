@@ -42,6 +42,12 @@ if b.collide(b_xform,a,a_xform):
 
 Godot will return correct collision and collision info from the different calls to the Shape2D api. Collision between all shapes and transforms can be done this way, or even obtaining contact information, motion casting, etc.
 
+### Transforming Shapes
+
+As seen before in the collide functions, 2D shapes in godot can be transformed by using a regular [Matrix32](class_matrix32) transform, meaning the can check collision while scaled, moved and rotated. The only limitation to this is that shapes with curved sections (such as circle and capsule) can only be scaled uniformly. This means that circle or capsule shapes scaled in the form of an ellipse **will not work properly**. This is a limitation on the collision algorithm used (SAT), so make sure that your circle and capsule shapes are always scaled uniformly!
+
+<p align="center"><img src="images/shaperules.png"></p>
+
 ### But Problems Begin
 
 Even though this sounds good, reality is that collision detection alone is usually not enough in most scenarios. Many problems start arising as long as the development of the game is in progress:
@@ -76,6 +82,8 @@ To solve all these problems, Godot has a physics and collision engine that is we
 * Scene Kinematics: Handle shapes, collisions, broadphase, etc as nodes. See [Area2D](class_area2d),[StaticBody2D](class_staticbody2d),[KinematicBody2D](class_kinematicbody2d).
 * Scene Physics: Rigid bodies and constraints as nodes. See [RigidBody2D](class_rigidbody2d), and the joint nodes.
 
+### CollisionObject2D
 
+[CollisionObject2D](class_collisionobject2d) is the (virtual) base node for everything that can be collided in 2D. Area2D, StaticBody2D, KinematicBody2D and RigidBody2D all inherit from it. This node contains a list of shapes (Shape2D) and a relative transform. This means that all collisionable objects in Godot can use multiple shapes at different transforms (offset/scale/rotation). Just remember that, as mentioned before, **non-uniform scale will not work for circle and capsule shapes**.
 
 
