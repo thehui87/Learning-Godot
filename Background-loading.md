@@ -1,6 +1,6 @@
 # Background loading
 
-When switching the main scene of your game (for example going to a new level), you might want to show a loading screen with some indication that progress is being made. The main load method (```ResourceLoader::load``` or just ```load``` from gdscript) blocks your thread while the resource is being loaded, so It's not good. This document will discuss the ```ResourceInteractiveLoader``` class for smoother load screens.
+When switching the main scene of your game (for example going to a new level), you might want to show a loading screen with some indication that progress is being made. The main load method (```ResourceLoader::load``` or just ```load``` from gdscript) blocks your thread while the resource is being loaded, so It's not good. This document discusses the ```ResourceInteractiveLoader``` class for smoother load screens.
 
 ## ResourceLoaderInteractive
 
