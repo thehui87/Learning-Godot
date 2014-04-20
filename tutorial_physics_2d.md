@@ -70,10 +70,11 @@ Imagine we solved the collision issue, we can tell easily and quickly which shap
 
 ### Introducing.. Godot's Physics Engine!
 
+To solve all these problems, Godot has a physics and collision engine that is well integrated into the scene system, yet it allows different levels and layers of functionality. The built-in physics engine can be used for:
 
-
-
-
+* Simple Collision Detection: See [Shape2D](class_shape2d) API.
+* Scene Kinematics: Handle shapes, collisions, broadphase, etc as nodes. See [Area2D](class_area2d),[StaticBody2D](class_staticbody2d),[KinematicBody2D](class_kinematicbody2d).
+* Scene Physics: Added rigid bodies and constraints as nodes. See [RigidBody2D](class_rigidbody2d), and the joint nodes..
 
 
 
