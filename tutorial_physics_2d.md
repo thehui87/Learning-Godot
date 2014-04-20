@@ -174,4 +174,35 @@ body_exit_shape(body_id:int,body:PhysicsBody2D,body_shape_index:int,area_shape_i
 
 ### Physics Global Variables
 
-### FPS & Fixed Process Callback
+A few global variables can be tweaked in the project settings for adjusting how 2D physics works:
+
+<p align="center"><img src="images/physics2d_options.png"></p>
+
+Leaving them alone is best (except for the gravity, that needs to be adjusted in most games), but there is one specific parameter that might need tweaking which is the "cell_size". Godot 2D physics engine used by default a space hashing algorithm that divides space in cells to compute close collision pairs more efficiently.
+
+If a game uses several colliders that are really small and occupy a small portion of the screen, it might be necessary to shrink that value (always to a power of 2) to improve efficiency. Likewise if a game uses few large colliders that span a huge map (of several screens of size), increasing that value a bit might help save resources. 
+
+### Fixed Process Callback
+
+The physics engine may spawn multiple threads to improve performance, so it can use up to a full frame to process physics. Because of this, when accessing physics variables such as position, linear velocity, etc. they might not be representative of what is going on in the current frame.
+
+To solve this, Godot has a fixed process callback, which is like process but it's called once per physics frame (by default 60 times per second). During this time, the physics engine is in _synchronization_ state and can be accessed directly and without delays. 
+
+To enable a fixed process callback, use the set_fixed_process() function, example:
+
+```python
+extends KinematicBody2D
+
+func _fixed_process(delta):
+   move( direction * delta )
+
+func _ready():
+   set_fixed_process(true)
+```
+
+### Casting Rays and Motion Queries
+
+
+
+
+
