@@ -127,8 +127,14 @@ In fact, what CollisionPolygon does is to decompose the polygon in convex shapes
 [Kinematic](class_kinematicbody2d) bodies are special types of bodies that are meant to be user-controlled. They are not affected by the physics at all (to other types of bodies, such a character or a rigidbody, these are the same as a staticbody). They have however, two main uses:
 
 * **Simulated Motion**: When these bodies are moved manually, either from code or from an [AnimationPlayer](class_animationplayer) (with process mode set to fixed!), the physics will automatically compute an estimate of their linear and angular velocity. This makes them very useful for moving platforms or other AnimationPlayer-controlled objects (like a door, a bridge that opens, etc). As an example, the 2d/platformer demo uses them for moving platforms.
-* **Kinematic Characters**: KinematicBody2D also has an api for moving objects (the move() function) while performing collision tests. This makes them really useful to implement characters that collide against a work, but that don't require advanced physics. A special [tutorial for this exists](tutorial_kinematic_char).
+* **Kinematic Characters**: KinematicBody2D also has an api for moving objects (the move() function) while performing collision tests. This makes them really useful to implement characters that collide against a world, but that don't require advanced physics. A special [tutorial for this exists](tutorial_kinematic_char).
 
 ### RigidBody2D
 
 This type of body simulates newtonian physics. It has mass, friction, and the 0,0 coordinates simulates the center of mass. When real physics are needed, [RigidBody2D](class_rigidbody2d) is the node to use. The motion of this body is affected by gravity and/or other bodies.
+
+Rigid bodies are usually active all the time, but when they end up in resting position and don't move for a while, they are put to sleep until something else wakes them up. This saves an enormous amount of CPU.
+
+### Physics Global Variables
+
+### FPS & Fixed Process Callback
