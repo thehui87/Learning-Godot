@@ -4,7 +4,7 @@ When switching the main scene of your game (for example going to a new level), y
 
 ## ResourceLoaderInteractive
 
-When ```ResourceLoaderInteractive``` class allows you to load a resource in stages. Every time the method ```poll``` is called, a new stage is loaded, and control is returned to the called. Each stage is generally a resource. For example, if you're loading a scene that loads 10 images, each image will be one stage.
+When ```ResourceLoaderInteractive``` class allows you to load a resource in stages. Every time the method ```poll``` is called, a new stage is loaded, and control is returned to the caller. Each stage is generally a sub-resource that is loaded by the main resource. For example, if you're loading a scene that loads 10 images, each image will be one stage.
 
 ## Usage
 
@@ -52,11 +52,13 @@ Use this method if you need to load the entire resource in the current frame, wi
 Ref<Resource> ResourceLoaderInteractive::get_resource();
 ```
 
-If everything goes well, use this method to retrieve your loaded resource.3
+If everything goes well, use this method to retrieve your loaded resource.
 
 ## Example
 
-This example demostrates how to load a new scene. Consider it in the context of the (Scene Switcher)[https://github.com/okamstudio/godot/wiki/tutorial_singletons#scene-switcher] example.
+This example demostrates how to load a new scene. Consider it in the context of the [Scene Switcher](https://github.com/okamstudio/godot/wiki/tutorial_singletons#scene-switcher) example.
+
+First we setup some variables and initialize the ```current_scene``` with the main scene of the game:
 
 ```
 var loader
@@ -64,6 +66,14 @@ var wait_frames
 var time_max = 100 # msec
 var current_scene
 
+func _ready():
+    var root = get_scene().get_root()
+    current_scene = root.get_child( root.get_child_count() -1 )
+```
+
+The function ```godot_scene``` is called from the game when the scene needs to be switched. It requests an interactive loader, and calls ```set_progress(true)``` to start polling the loading in the ```_progress``` callback. It also starts the "loading" animation, which can show a progress bar or loading screen, etc.
+
+```
 func goto_scene(path): # game requests to switch to this scene
     loader = ResourceLoader.load_interactive(path)
     if loader == null: # check for errors
@@ -77,7 +87,13 @@ func goto_scene(path): # game requests to switch to this scene
     get_node("animation").play("loading")
 
     wait_frames = 1 
+```
 
+```_process``` is where the loader is polled. ```poll``` is called, and then we deal with the return value from that call. ```OK``` means keep polling, ```ERR_FILE_EOF``` means load is done, anything else means there was an error. Also note we skip one frame (via ```wait_frames```, set on the ```goto_scene``` function) to allow the loading screen to show up.
+
+Note how use use ```OS.get_ticks_msec``` to control how long we block the thread. Some stages might load really fast, which means we might be able to cram more than one call to ```poll``` in one frame, some might take way more than your value for ```time_max```, so keep in mind we won't have precise control over the timings.
+
+```
 func _process(time):
     if loader == null:
         # no need to process anymore
@@ -105,7 +121,11 @@ func _process(time):
             show_error()
             loader = null
             break
-    
+```
+
+Some extra helper functions. ```update_progress``` updates a progress bar, or can also update a paused animation (the animation represents the entire load process from beginning to end). ```set_new_scene``` puts the newly loaded scene on the tree. Because it's a scene being loaded, ```instance()``` needs to be called on the resource obtained from the loader.
+
+```    
 func update_progress():
     var progress = float(loader.get_stage()) / loader.get_stage_count()
     # update your progress bar?
@@ -120,8 +140,83 @@ func update_progress():
 func set_new_scene(scene_resource):
     current_scene = scene_resource.instance()
     get_node("/root").add_child(current_scene)
-
-func _ready():
-    var root = get_scene().get_root()
-    current_scene = root.get_child( root.get_child_count() -1 )
 ```
+
+# Using multiple threads
+
+ResourceInteractiveLoader can be used from multiple threads. A couple of things to keep in mind if you attempt it:
+
+### Use a Semaphore
+
+While your threads waits for the main thread to request a new resource, use a Semaphore to sleep (instead of a busy loop or anything similar).
+
+### Don't block the main thread during the call to ```poll```
+
+If you have a mutex to allow calls from the main thread to your loader class, don't lock it while you call ```poll``` on the loader. When a resource is finished loading, it might require some resources from the low level APIs (VisualServer, etc), which might need to lock the main thread to acquire them. This might cause a deadlock if the main thread is waiting for your mutex while your thread is waiting to load a resource.
+
+## Example class
+
+You can find an example class for loading resources in threads [here](https://raw.githubusercontent.com/wiki/okamstudio/godot/media/resource_queue.gd). Usage is as follows:
+
+```
+func start()
+```
+Call after you instance the class to start the thread.
+
+```
+func queue_resource(path, p_in_front = false)
+```
+Queue a resource. Use optional parameter "p_in_front" to put it in front of the queue.
+
+```
+func cancel_resource(path)
+```
+Remove a resource from the queue, discarding any loading done.
+
+```
+func is_ready(path)
+```
+Returns true if a resource is done loading and ready to be retrieved.
+
+```
+func get_progress(path)
+```
+Get the progress of a resource. Returns -1 on error (for example if the resource is not on the queue), or a number between 0.0 and 1.0 with the progress of the load. Use mostly for cosmetic purposes (updating progress bars, etc), use ```is_ready``` to find out if a resource is actually ready.
+
+```
+func get_resource(path)
+```
+Returns the fully loaded resource, or null on error. If the resource is not done loading (```is_ready``` returns false), it will block your thread and finish the load. If the resource is not on the queue, it will call ```ResourceLoader::load``` to load it normally and return it.
+
+### Example:
+
+```
+# initialize
+queue = preload("res://resource_queue.gd").new()
+queue.start()
+
+# suppose your game starts with a ~10 second custscene, during which they can't interact with the game.
+# For that time we know they won't use the pause menu, so we can queue it to load during the cutscene:
+queue.queue_resource("res://pause_menu.xml")
+
+# later when the user presses the pause button for the first time:
+pause_menu = queue.get_resource("res://pause_menu.xml").instance()
+pause_menu.show()
+
+# when you need a new scene:
+queue.queue_resource("res://level_1.xml", true) # use "true" as the second parameter to put it at the front
+                                                # of the queue, pausing the load of any other resource
+
+# to check progress
+if queue.is_ready("res://level_1.xml"):
+    show_new_level(queue.get_resource("res://level_1.xml"))
+else:
+    update_progress(queue.get_process(get_resource("res://level_1.xml"))
+
+# when the user walks away from the trigger zone in your Metroidvania game:
+queue.cancel_resource("res://zone_2.xml")
+
+```
+
+**Note**: this code in its current form is not tested in real world scenarios. Find me on IRC (punto on irc.freenode.net) or e-mail me (punto@okamstudio.com) for help.
+
