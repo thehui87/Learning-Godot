@@ -12,7 +12,7 @@ Usage is generally as follows
 
 ### Obtaining a ResourceLoaderInteractive
 
-```
+```C++
 Ref<ResourceInteractiveLoader> ResourceLoader::load_interactive(String p_path);
 ```
 
@@ -20,7 +20,7 @@ This method will give you a ResourceLoaderInteractive that you will use to manag
 
 ### Polling
 
-```
+```C++
 Error ResourceLoaderInteractive::poll();
 ```
 
@@ -32,7 +32,7 @@ Returns ```OK``` on no errors, ```ERR_FILE_EOF``` when loading is finished. Any 
 
 To query the progress of the load, use the following methods:
 
-```
+```C++
 int ResourceLoaderInteractive::get_stage_count() const;
 int ResourceLoaderInteractive::get_stage() const;
 ```
@@ -41,14 +41,14 @@ int ResourceLoaderInteractive::get_stage() const;
 ```get_stage``` returns the current stage being loaded
 
 ### Forcing completion (optional)
-```
+```C++
 Error ResourceLoaderInteractive::wait();
 ```
 Use this method if you need to load the entire resource in the current frame, without any more steps.
 
 ### Obtaining the resource
 
-```
+```C++
 Ref<Resource> ResourceLoaderInteractive::get_resource();
 ```
 
@@ -60,7 +60,7 @@ This example demostrates how to load a new scene. Consider it in the context of 
 
 First we setup some variables and initialize the ```current_scene``` with the main scene of the game:
 
-```
+```python
 var loader
 var wait_frames
 var time_max = 100 # msec
@@ -73,7 +73,7 @@ func _ready():
 
 The function ```goto_scene``` is called from the game when the scene needs to be switched. It requests an interactive loader, and calls ```set_progress(true)``` to start polling the loader in the ```_progress``` callback. It also starts a "loading" animation, which can show a progress bar or loading screen, etc.
 
-```
+```python
 func goto_scene(path): # game requests to switch to this scene
     loader = ResourceLoader.load_interactive(path)
     if loader == null: # check for errors
@@ -93,7 +93,7 @@ func goto_scene(path): # game requests to switch to this scene
 
 Note how use use ```OS.get_ticks_msec``` to control how long we block the thread. Some stages might load really fast, which means we might be able to cram more than one call to ```poll``` in one frame, some might take way more than your value for ```time_max```, so keep in mind we won't have precise control over the timings.
 
-```
+```python
 func _process(time):
     if loader == null:
         # no need to process anymore
@@ -125,7 +125,7 @@ func _process(time):
 
 Some extra helper functions. ```update_progress``` updates a progress bar, or can also update a paused animation (the animation represents the entire load process from beginning to end). ```set_new_scene``` puts the newly loaded scene on the tree. Because it's a scene being loaded, ```instance()``` needs to be called on the resource obtained from the loader.
 
-```    
+```python
 func update_progress():
     var progress = float(loader.get_stage()) / loader.get_stage_count()
     # update your progress bar?
@@ -158,39 +158,39 @@ If you have a mutex to allow calls from the main thread to your loader class, do
 
 You can find an example class for loading resources in threads [here](https://raw.githubusercontent.com/wiki/okamstudio/godot/media/resource_queue.gd). Usage is as follows:
 
-```
+```python
 func start()
 ```
 Call after you instance the class to start the thread.
 
-```
+```python
 func queue_resource(path, p_in_front = false)
 ```
 Queue a resource. Use optional parameter "p_in_front" to put it in front of the queue.
 
-```
+```python
 func cancel_resource(path)
 ```
 Remove a resource from the queue, discarding any loading done.
 
-```
+```python
 func is_ready(path)
 ```
 Returns true if a resource is done loading and ready to be retrieved.
 
-```
+```python
 func get_progress(path)
 ```
 Get the progress of a resource. Returns -1 on error (for example if the resource is not on the queue), or a number between 0.0 and 1.0 with the progress of the load. Use mostly for cosmetic purposes (updating progress bars, etc), use ```is_ready``` to find out if a resource is actually ready.
 
-```
+```python
 func get_resource(path)
 ```
 Returns the fully loaded resource, or null on error. If the resource is not done loading (```is_ready``` returns false), it will block your thread and finish the load. If the resource is not on the queue, it will call ```ResourceLoader::load``` to load it normally and return it.
 
 ### Example:
 
-```
+```python
 # initialize
 queue = preload("res://resource_queue.gd").new()
 queue.start()
