@@ -30,7 +30,7 @@ var b = RectangleShape2D.new()
 b.set_extents(Vector2(20,10))
 ```
 
-The main use for shapes is checking collision/intersection and getting resolution information. This is done easily with the build functions like this:
+The main use for shapes is checking collision/intersection and getting resolution information. This is done easily with the built-in functions like this:
 
 ```python
 
@@ -39,6 +39,42 @@ if b.collide(b_xform,a,a_xform):
    print("OMG Collision!")
 
 ```
+
+Godot will return correct collision and collision info from the different calls to the Shape2D api. Collision between all shapes and transforms can be done this way, or even obtaining contact information, motion casting, etc.
+
+### But Problems Begin
+
+Even though this sounds good, reality is that collision detection alone is usually not enough in most scenarios. Many problems start arising as long as the development of the game is in progress:
+
+#### Too Many Combinations!
+
+Games have several dozens, hundreds, thousands! of objects that can collide and be collided. The typical approach is to test everything against everything in two for loops like this:
+
+```python
+
+for i in colliders:
+    for j in colliders:
+         if (i.collides(j)):
+              do_collision_code()
+```
+
+But this scales really bad. Let's imagine there are only 100 objects in the game. This means that 100*100=10000 collisions will need to be tested each frame. This is a lot!
+
+#### Visual Aid
+
+Most of the time, creating a shape via code is not enough. We need to visually place it over a sprite, draw a collision polygon, etc. It is obvious that we need nodes to create the proper collision shapes in a scene.
+
+#### Collision Resolution
+
+Imagine we solved the collision issue, we can tell easily and quickly which shapes overlap. If many of them are dynamic objects that move around, or move according to newtonian physics, solving a collision of multiple objects can be really difficult code-wise.
+
+### Introducing.. Godot's Physics Engine!
+
+
+
+
+
+
 
 
 
