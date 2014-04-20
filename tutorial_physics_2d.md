@@ -202,6 +202,24 @@ func _ready():
 
 ### Casting Rays and Motion Queries
 
+It is very often desired to "explore" the world around from our code. Throwing rays is the most common way to do it. The simplest way to do this is by using the RayCast2D node, which will throw a ray every frame and record the intersection.
+
+At the moment there isn't a high level API for this, so the physics server must be used directly. For this, the [Physics2DDirectspaceState](class_physics2ddirectspacestate) class must be used. To obtain it, the following steps must be taken:
+
+1. It must be used inside the _fixed_process() callback, or at _integrate_forces()
+2. The 2D RIDs for the space and physics server must be obtained.
+
+The following code should work:
+
+```python:
+func _fixed_process(delta):
+    var space = get_world_2d().get_space()
+    var space_state = Physics2DServer.space_get_direct_state( space )
+```
+
+Enjoy doing space queries!
+
+
 
 
 
