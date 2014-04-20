@@ -30,7 +30,7 @@ var b = RectangleShape2D.new()
 b.set_extents(Vector2(20,10))
 ```
 
-The main use for shapes is checking collision/intersection and getting resolution information. This is done easily with the built-in functions like this:
+The main use for shapes is checking collision/intersection and getting resolution information. Shapes are mostly convex, (except the concavepolygon one, which is just a list of segments to check collision against). This collision check is done easily with the built-in functions like:
 
 ```python
 
@@ -113,4 +113,12 @@ As an example, here's the scene from the platformer, containing an Area2D with c
 ### CollisionPolygon2D
 
 This one is similar to CollisionShape2D, except that instead of assigning a shape, a polygon can be edited (drawn by the user) to determine the shape. The polygon can be convex or concave, it doesn't matter.
+
+Going back, here's the scene with the StaticBody2D, the static body is the child of a sprite (meaning if the sprite moves, the collision does too). In turn, the CollisionPolygon is a child of staticbody, meaning it adds collision shapes to it.
+
+<p align="center"><img src="images/spritewithcollision.png"></p>
+
+In fact, what CollisionPolygon does is to decompose the polygon in convex shapes (shapes can only be convex, remember?) and adds them to the CollisionObject2D:
+
+<p align="center"><img src="images/decompose.png"></p>
 
