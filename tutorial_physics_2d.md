@@ -120,5 +120,5 @@ Going back, here's the scene with the StaticBody2D, the static body is the child
 
 In fact, what CollisionPolygon does is to decompose the polygon in convex shapes (shapes can only be convex, remember?) and adds them to the CollisionObject2D:
 
-<p align="center"><img src="images/decompose.png"></p>
+<p align="center"><img src="images/decomposed.png"></p>
 
