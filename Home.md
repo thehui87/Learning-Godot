@@ -24,6 +24,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
  11.  [File System](tutorial_fs)
  12.  [SceneMainLoop](tutorial_scene_main_loop)
  13.  [Singletons (Autoload)](tutorial_singletons)
+ 14.  [Background Loading](Background loading)
 
 #### Intermediate
 
