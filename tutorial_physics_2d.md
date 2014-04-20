@@ -46,7 +46,7 @@ Godot will return correct collision and collision info from the different calls 
 
 As seen before in the collide functions, 2D shapes in godot can be transformed by using a regular [Matrix32](class_matrix32) transform, meaning the can check collision while scaled, moved and rotated. The only limitation to this is that shapes with curved sections (such as circle and capsule) can only be scaled uniformly. This means that circle or capsule shapes scaled in the form of an ellipse **will not work properly**. This is a limitation on the collision algorithm used (SAT), so make sure that your circle and capsule shapes are always scaled uniformly!
 
-<p align="center"><img src="images/shaperules.png"></p>
+<p align="center"><img src="images/shape_rules.png"></p>
 
 ### But Problems Begin
 
@@ -86,6 +86,31 @@ To solve all these problems, Godot has a physics and collision engine that is we
 
 [CollisionObject2D](class_collisionobject2d) is the (virtual) base node for everything that can be collided in 2D. Area2D, StaticBody2D, KinematicBody2D and RigidBody2D all inherit from it. This node contains a list of shapes (Shape2D) and a relative transform. This means that all collisionable objects in Godot can use multiple shapes at different transforms (offset/scale/rotation). Just remember that, as mentioned before, **non-uniform scale will not work for circle and capsule shapes**.
 
-### Creating a StaticBody
+<p align="center"><img src="images/collision_inheritance.png"></p>
 
+### Creating a StaticBody2D
+
+The simplest node in the physics engine is the StaticBody2D, which provides a static collision. This means that other objects can collide against it, but StaticBody2D will not move by itself or generate any kind of interaction when colliding other bodies. It's just there to be collided.
+
+Creating one of those bodies is not enough, because it lacks collision:
+
+<p align="center"><img src="images/collision_inheritance.png"></p>
+
+From the previous point, we know that CollisionObject2D derived nodes have an internal lists of shapes and transforms for collisions, but how to edit them? There are two special nodes for that.
+
+### CollisionShape2D
+
+This node is a helper node. It must be created as a direct children of a CollisionObject2D derived node ([Area2D](class_area2d),[StaticBody2D](class_staticbody2d),[KinematicBody2D](class_kinematicbody2d),[RigidBody2D](class_rigidbody2d)). 
+
+By itself it does nothing, but when created as a child of the above mentioned nodes, it adds collision shapes to them. Any amount of CollisionShape2D children can be created, meaning the parent object will simply have mroe collision shapes. When added/deleted/moved/edited, it updates the list of shapes in the parent node.
+
+At run time, though, this node does not exist (can't be accessed with get_node() ), since it's only meant to be an editor helper. To access the shapes created at runtime, use the CollisionObject2D API directly.
+
+As an example, here's the scene from the platformer, containing an Area2D with child CollisionObject2D and coin sprite:
+
+<p align="center"><img src="images/area2dcoin.png"></p>
+
+### CollisionPolygon2D
+
+This one is similar to CollisionShape2D, except that instead of assigning a shape, a polygon can be edited (drawn by the user) to determine the shape. The polygon can be convex or concave, it doesn't matter.
 
