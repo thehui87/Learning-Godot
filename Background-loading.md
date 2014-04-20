@@ -16,7 +16,7 @@ Usage is generally as follows
 Ref<ResourceInteractiveLoader> ResourceLoader::load_interactive(String p_path);
 ```
 
-This method will give you a ResourceLoaderInteractive that you will use to manager the load operation.
+This method will give you a ResourceLoaderInteractive that you will use to manage the load operation.
 
 ### Polling
 
@@ -71,7 +71,7 @@ func _ready():
     current_scene = root.get_child( root.get_child_count() -1 )
 ```
 
-The function ```godot_scene``` is called from the game when the scene needs to be switched. It requests an interactive loader, and calls ```set_progress(true)``` to start polling the loading in the ```_progress``` callback. It also starts the "loading" animation, which can show a progress bar or loading screen, etc.
+The function ```goto_scene``` is called from the game when the scene needs to be switched. It requests an interactive loader, and calls ```set_progress(true)``` to start polling the loader in the ```_progress``` callback. It also starts a "loading" animation, which can show a progress bar or loading screen, etc.
 
 ```
 func goto_scene(path): # game requests to switch to this scene
@@ -148,7 +148,7 @@ ResourceInteractiveLoader can be used from multiple threads. A couple of things 
 
 ### Use a Semaphore
 
-While your threads waits for the main thread to request a new resource, use a Semaphore to sleep (instead of a busy loop or anything similar).
+While your thread waits for the main thread to request a new resource, use a Semaphore to sleep (instead of a busy loop or anything similar).
 
 ### Don't block the main thread during the call to ```poll```
 
@@ -195,9 +195,10 @@ Returns the fully loaded resource, or null on error. If the resource is not done
 queue = preload("res://resource_queue.gd").new()
 queue.start()
 
-# suppose your game starts with a ~10 second custscene, during which they can't interact with the game.
+# suppose your game starts with a 10 second custscene, during which the user can't interact with the game.
 # For that time we know they won't use the pause menu, so we can queue it to load during the cutscene:
 queue.queue_resource("res://pause_menu.xml")
+start_curscene()
 
 # later when the user presses the pause button for the first time:
 pause_menu = queue.get_resource("res://pause_menu.xml").instance()
@@ -211,7 +212,7 @@ queue.queue_resource("res://level_1.xml", true) # use "true" as the second param
 if queue.is_ready("res://level_1.xml"):
     show_new_level(queue.get_resource("res://level_1.xml"))
 else:
-    update_progress(queue.get_process(get_resource("res://level_1.xml"))
+    update_progress(queue.get_process("res://level_1.xml"))
 
 # when the user walks away from the trigger zone in your Metroidvania game:
 queue.cancel_resource("res://zone_2.xml")
