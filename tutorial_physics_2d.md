@@ -84,7 +84,7 @@ To solve all these problems, Godot has a physics and collision engine that is we
 
 ### Units of Measure
 
-It is often a problem when integrating a 2D Physics engine to a game that such engines are optimized to work using meters as unit of measure. Godot 2D physics engine is designed to function properly in pixels, so all units and default values used for stabilization are tuned for this, making development more straightforward.
+It is often a problem when integrating a 2D Physics engine to a game that such engines are optimized to work using meters as unit of measure. Godot uses a built-in custom 2D physics engine that is designed to function properly in pixels, so all units and default values used for stabilization are tuned for this, making development more straightforward.
 
 ### CollisionObject2D
 
