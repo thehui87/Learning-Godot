@@ -86,4 +86,6 @@ To solve all these problems, Godot has a physics and collision engine that is we
 
 [CollisionObject2D](class_collisionobject2d) is the (virtual) base node for everything that can be collided in 2D. Area2D, StaticBody2D, KinematicBody2D and RigidBody2D all inherit from it. This node contains a list of shapes (Shape2D) and a relative transform. This means that all collisionable objects in Godot can use multiple shapes at different transforms (offset/scale/rotation). Just remember that, as mentioned before, **non-uniform scale will not work for circle and capsule shapes**.
 
+### Creating a StaticBody
+
 
