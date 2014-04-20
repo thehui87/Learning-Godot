@@ -152,6 +152,12 @@ func _integrate_forcres(state):
 
 The `state` parameter is of type [Physics2DDirectBodyState](class_physics2ddirectbodystate). Please do not use this object (state) outside the callback as it will result in an error.
 
+##### Contact Reporting
+
+In general, RigidBody2D will not keep track of the contacts, because this can require a huge amount of memory if thousands of rigid bodies are in the scene. To get contacts reported, simply increase the amount of the "contacts reported" property from zero to a meaningful value (depending on how many you are expecting to get). The contacts can be later obtained via the [Physics2DDirectBodyState.get_contact_count](class_physics2ddirectbodystate#get_contact_count)() and related functions.
+
+Contact monitoring via signals is also available (signals similar to the ones in Area2D, described below) via a boolean property.
+
 ### Area2D
 
 Areas in Godot physics have two main roles:
