@@ -82,6 +82,10 @@ To solve all these problems, Godot has a physics and collision engine that is we
 * Scene Kinematics: Handle shapes, collisions, broadphase, etc as nodes. See [Area2D](class_area2d),[StaticBody2D](class_staticbody2d),[KinematicBody2D](class_kinematicbody2d).
 * Scene Physics: Rigid bodies and constraints as nodes. See [RigidBody2D](class_rigidbody2d), and the joint nodes.
 
+### Units of Measure
+
+It is often a problem when integrating a 2D Physics engine to a game that such engines are optimized to work using meters as unit of measure. Godot 2D physics engine is designed to function properly in pixels, so all units and default values used for stabilization are tuned for this, making development more straightforward.
+
 ### CollisionObject2D
 
 [CollisionObject2D](class_collisionobject2d) is the (virtual) base node for everything that can be collided in 2D. Area2D, StaticBody2D, KinematicBody2D and RigidBody2D all inherit from it. This node contains a list of shapes (Shape2D) and a relative transform. This means that all collisionable objects in Godot can use multiple shapes at different transforms (offset/scale/rotation). Just remember that, as mentioned before, **non-uniform scale will not work for circle and capsule shapes**.
