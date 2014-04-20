@@ -135,6 +135,9 @@ This type of body simulates newtonian physics. It has mass, friction, and the 0,
 
 Rigid bodies are usually active all the time, but when they end up in resting position and don't move for a while, they are put to sleep until something else wakes them up. This saves an enormous amount of CPU.
 
+### Area2D
+
+
 ### Physics Global Variables
 
 ### FPS & Fixed Process Callback
