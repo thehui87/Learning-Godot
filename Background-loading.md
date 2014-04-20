@@ -4,7 +4,7 @@ When switching the main scene of your game (for example going to a new level), y
 
 ## ResourceLoaderInteractive
 
-When ```ResourceLoaderInteractive``` class allows you to load a resource in stages. Every time the method ```poll``` is called, a new stage is loaded, and control is returned to the caller. Each stage is generally a sub-resource that is loaded by the main resource. For example, if you're loading a scene that loads 10 images, each image will be one stage.
+The ```ResourceLoaderInteractive``` class allows you to load a resource in stages. Every time the method ```poll``` is called, a new stage is loaded, and control is returned to the caller. Each stage is generally a sub-resource that is loaded by the main resource. For example, if you're loading a scene that loads 10 images, each image will be one stage.
 
 ## Usage
 
