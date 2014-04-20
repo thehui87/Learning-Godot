@@ -114,6 +114,13 @@ As an example, here's the scene from the platformer, containing an Area2D with c
 
 <p align="center"><img src="images/area2dcoin.png"></p>
 
+#####Triggers
+
+A CollisionShape2D or CollisionPolygon2D can be set as a trigger. When used in a RigidBody2D or KinematicBody2D, "trigger" shapes become non-collidable (objects can't collide against it). They just move around with the object as ghosts. This makes them useful in two situations:
+
+*  Disabling collision in a specific shape.
+*  Get an Area2D to trigger a body_enter / body_exit signals with non collidable objects (useful in several situations).
+
 ### CollisionPolygon2D
 
 This one is similar to CollisionShape2D, except that instead of assigning a shape, a polygon can be edited (drawn by the user) to determine the shape. The polygon can be convex or concave, it doesn't matter.
