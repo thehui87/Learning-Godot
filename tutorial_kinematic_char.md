@@ -16,5 +16,33 @@ This short tutorial will focus on the kinematic character controller. Basically,
 
 To manage the logic of a kinematic body or character, it is always advised to use fixed process, which is called the same amount of times per second, always. This makes physics and motion calculation work a lot more stable than using regular process, which might have spikes or lose precision is the frame rate is too high or too low.
 
+```python
+extends KinematicBody2D
+
+func _fixed_process(delta):
+	pass
+
+func _ready():
+	set_fixed_process(true)
 
 
+```
+
+### Scene Setup
+
+To have something to test, here's the [scene from the tilemap tutorial](media/kbscene.zip). We'll be creating a new scene for the character. Use the robot sprite and create a scene like this:
+
+<p align="center"><img src="images/kbscene.png"></p>
+
+Let's add a circular collision shape to the collision body, create a new CircleShape2D in the shape property of CollisionShape2D. Set the radius to 30:
+
+<p align="center"><img src="images/kbradius.png"></p>
+
+Now create a script for the character, the one used as an example above should work as a base.
+Finally, instance that character scene in the tilemap, and make the map scene the main one, so it runs when pressing play.
+
+<p align="center"><img src="images/kbinstance.png"></p>
+
+### Creating the Kinematic Character
+
+Go back to the character scene, and open the script, the magic begins now! 
