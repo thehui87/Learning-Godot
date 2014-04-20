@@ -88,6 +88,29 @@ To solve all these problems, Godot has a physics and collision engine that is we
 
 <p align="center"><img src="images/collision_inheritance.png"></p>
 
-### Creating a StaticBody
+### Creating a StaticBody2D
 
+The simplest node in the physics engine is the StaticBody2D, which provides a static collision. This means that other objects can collide against it, but StaticBody2D will not move by itself or generate any kind of interaction when colliding other bodies. It's just there to be collided.
+
+Creating one of those bodies is not enough, because it lacks collision:
+
+<p align="center"><img src="images/collision_inheritance.png"></p>
+
+From the previous point, we know that CollisionObject2D derived nodes have an internal lists of shapes and transforms for collisions, but how to edit them? There are two special nodes for that.
+
+### CollisionShape2D
+
+This node is a helper node. It must be created as a direct children of a CollisionObject2D derived node ([Area2D](class_area2d),[StaticBody2D](class_staticbody2d),[KinematicBody2D](class_kinematicbody2d),[RigidBody2D](class_rigidbody2d)). 
+
+By itself it does nothing, but when created as a child of the above mentioned nodes, it adds collision shapes to them. Any amount of CollisionShape2D children can be created, meaning the parent object will simply have mroe collision shapes. When added/deleted/moved/edited, it updates the list of shapes in the parent node.
+
+At run time, though, this node does not exist (can't be accessed with get_node() ), since it's only meant to be an editor helper. To access the shapes created at runtime, use the CollisionObject2D API directly.
+
+As an example, here's the scene from the platformer, containing an Area2D with child CollisionObject2D and coin sprite:
+
+<p align="center"><img src="images/area2dcoin.png"></p>
+
+### CollisionPolygon2D
+
+This one is similar to CollisionShape2D, except that instead of assigning a shape, a polygon can be edited (drawn by the user) to determine the shape. The polygon can be convex or concave, it doesn't matter.
 
