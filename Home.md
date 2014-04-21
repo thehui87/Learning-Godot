@@ -39,7 +39,6 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  ~~[ Creating a 3D game](tutorial_3d)~~ 
 *  ~~[Using the AnimationTreePlayer](tutorial_animation_tree)~~
 *  ~~[Supporting Multiple Languages](tutorial_localization)~~
-*  ~~[Creating Resizable GUIs Efficiently](tutorial_resizable_gui)~~
 
 #### Advanced
 
