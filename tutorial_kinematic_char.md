@@ -113,6 +113,8 @@ func _ready():
 
 And give it a try.
 
+### Problem?
+
 And.. it doesn't work very well. If you go to the left against a wall, it gets stuck unless you release the arrow key. Once it is on the floor, it also gets stuck and it won't walk. What is going on??
 
 The answer is, what it seems like it should be simple, it isn't that simple in reality. If the motion can't be completed, the character will stop moving. It's as simple as that. This diagram should illustrate better what is going on:
@@ -120,6 +122,8 @@ The answer is, what it seems like it should be simple, it isn't that simple in r
 <p align="center"><img src="images/motion_diagram.png"></p>
 
 Basically, the desired motion vector will never complete because it hits the floor and the wall to early in the motion trajectory and that makes it stop there. Remember that even though the character is on the floor, the gravity is always turning the motion vector downwards.
+
+### Solution!
 
 The solution? This situation is solved by "sliding" by the collision normal. KinematicBody2D provides two useful functions:  
 
@@ -164,3 +168,5 @@ Note that not only the motion has been modified but also the velocity. This make
 the new direction too.
 
 The normal can also be used to detect that the character is on floor, by checking the angle. If the normal points up (or at least, within a certain threshold), the character can be determined to be there.
+
+A more complete demo can be found in the demo zip distributed with the engine, or in the [demo folder](https://github.com/okamstudio/godot/tree/master/demos/2d/kinematic_char).
