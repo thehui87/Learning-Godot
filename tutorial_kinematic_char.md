@@ -128,7 +128,7 @@ The solution? This situation is solved by "sliding" by the collision normal. Kin
 
 So what we want to do is this:
 
-<p align="center"><img src="images/motion_reflection.png"></p>
+<p align="center"><img src="images/motion_reflect.png"></p>
 
 When colliding, the function move() returns the "remainder" of the motion vector. That means, if the motion vector is 40 pixels, but collision happened at 10 pixels, the same vector but 30 pixels long is returned.
 The correct way to solve the motion is, then, to slide by the normal this way:
