@@ -56,3 +56,5 @@ c:\MyGame> godot -lang fr
 The project name becomes the app name when exporting to different operating systems and platforms. To specify the project name in more than one language. In the project settings dialog, create a new setting application/name and append it the locale identifier. For example:
 
 <p align="center"><img src="images/localized_name.png"></p>
+
+As always, If you don't know the code of a language or zone, [check the list](locales).
