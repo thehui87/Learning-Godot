@@ -24,7 +24,6 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
  11.  [File System](tutorial_fs)
  12.  [SceneMainLoop](tutorial_scene_main_loop)
  13.  [Singletons (Autoload)](tutorial_singletons)
- 14.  [Background Loading](Background loading)
 
 #### Intermediate
 
@@ -34,12 +33,12 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Physics & Collision (2D)](tutorial_physics_2d)
 *  [Tile Map](tutorial_tilemap)
 *  [Kinematic Character (2D)](tutorial_kinematic_char)
+*  [Background Loading](Background loading)
+*  [Internationalizing a Game (Multiple Languages)](tutorial_localization)
 *  ~~[GUI Skinning](tutorial_gui_skinning)~~
 *  ~~[Cut-Out Animation](tutorial_cutout)~~
 *  ~~[ Creating a 3D game](tutorial_3d)~~ 
 *  ~~[Using the AnimationTreePlayer](tutorial_animation_tree)~~
-*  ~~[Supporting Multiple Languages](tutorial_localization)~~
-*  ~~[Creating Resizable GUIs Efficiently](tutorial_resizable_gui)~~
 
 #### Advanced
 
