@@ -77,7 +77,7 @@ Go to the tileset property of this node and assign the one created in previous s
 
 Also set the cell size to '50', since that is the size used by the tiles. Quadrant size is a tuning value, which means that the engine will draw and cull the tilemap in blocks of 16x16 tiles. This value is usually fine and does not need to be changed, but can be used to tune performance in specific cases (if you know what you are doing).
 
-###Paiting Your World
+###Painting Your World
 
 With all set, make sure the TileMap node is selected. A red grid will appear on screen, allowing to paint on it with the selected tile on the left pallete.
 
