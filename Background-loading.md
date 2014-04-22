@@ -156,7 +156,7 @@ If you have a mutex to allow calls from the main thread to your loader class, do
 
 ## Example class
 
-You can find an example class for loading resources in threads [here](https://raw.githubusercontent.com/wiki/okamstudio/godot/media/resource_queue.gd). Usage is as follows:
+You can find an example class for loading resources in threads [here](media/resource_queue.gd). Usage is as follows:
 
 ```python
 func start()
