@@ -529,5 +529,16 @@ var fr = funcref(instance,"funcname") #create a function ref
 fr.call_func(args)
 
 ```
+##  Assertions
+
+It is often desired to check for a condition and fail if not met. When running in the debugger this would effectively cause a break. For this, the assert() built-in function exists:
+
+```python
+
+assert( counter == 2 )
+
+```
+
+If the condition inside assert() is false, assertion fails and an error happens. When using release builds, this condition is not checked.
 
  --- //[Juan Linietsky](reduzio@gmail.com) 2013/11/10 18:09//
