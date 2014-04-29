@@ -35,6 +35,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Kinematic Character (2D)](tutorial_kinematic_char)
 *  [Background Loading](Background loading)
 *  [Internationalizing a Game (Multiple Languages)](tutorial_localization)
+*  [Encrypting Save Games](tutorial_encrypting_savegames)
 *  ~~[GUI Skinning](tutorial_gui_skinning)~~
 *  ~~[Cut-Out Animation](tutorial_cutout)~~
 *  ~~[ Creating a 3D game](tutorial_3d)~~ 
