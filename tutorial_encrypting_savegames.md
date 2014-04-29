@@ -8,7 +8,7 @@ But, imagine if someone was to find a way to edit the saved games and assign the
 
 No, we definitely do not want this to happen, so let's see how to encrypt savegames and protect the world order.
 
-### Why?
+### How?
 
 The class [File](class_file) is simple to use, just open a location and read/write data (integers, strings and variants). To create an encrypted file, a passphrase must be provided, like this:
 
