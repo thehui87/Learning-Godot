@@ -8,8 +8,9 @@ For compiling under Linux or other Unix variants, the following is requiered:
 *  X11 and MESA development Libraries
 *  ALSA development libraries
 *  Freetype (for the editor)
+*  OpenSSL (for HTTPS and TLS)
 *  pkg-config (used to detect the above three)
-*  **Ubuntu Users:** apt-get install scons pkg-config libx11-dev libxcursor-dev build-essential libasound2-dev libfreetype6-dev libgl1-mesa-dev libglu-dev
+*  **Ubuntu Users:** apt-get install scons pkg-config libx11-dev libxcursor-dev build-essential libasound2-dev libfreetype6-dev libgl1-mesa-dev libglu-dev libssl-dev
 
 # Compiling
 
