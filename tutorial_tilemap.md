@@ -87,16 +87,17 @@ To avoid moving and selecting the tilemap node accidentally (something common gi
 
 <p align="center"><img src="images/tile_lock.png"></p> 
 
-###Scaling Artifacts
+###Offset and Scaling Artifacts
 
 When using a single texture for all the tiles, scaling the tileset (or even moving to a non pixel-aligned location) will most likely result in filtering artifacts like this:
 
 <p align="center"><img src="images/tileset_filter.png"></p>
 
-This can't be avoided, as it is the way the hardware bilinear filter works. So, to avoid this situation, there are a few workarounds:
+This can't be avoided, as it is the way the hardware bilinear filter works. So, to avoid this situation, there are a few workarounds, try the ones that look better for you:
 
+* Use a single image for each tile, this will remove all artifacts but can be more cumbersome to implement, so first try the options below first.
 * Disable filtering for either the tileset texture or the entire image loader (see the [Image Files](image_files) asset pipeline tutorial).
-* Use a single image for each tile.
+* Enable pixel snap (Set: ΅Scene -> Project Settings -> rasterizer/uxe_pixel_snap" to true).
 * Viewport Scaling can often help shrinking the map (see the [Viewports](tutorial_viewports) tutorial).
 
 
