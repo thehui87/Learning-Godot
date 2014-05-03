@@ -121,7 +121,7 @@ The answer is, what it seems like it should be simple, it isn't that simple in r
 
 <p align="center"><img src="images/motion_diagram.png"></p>
 
-Basically, the desired motion vector will never complete because it hits the floor and the wall to early in the motion trajectory and that makes it stop there. Remember that even though the character is on the floor, the gravity is always turning the motion vector downwards.
+Basically, the desired motion vector will never complete because it hits the floor and the wall too early in the motion trajectory and that makes it stop there. Remember that even though the character is on the floor, the gravity is always turning the motion vector downwards.
 
 ### Solution!
 
