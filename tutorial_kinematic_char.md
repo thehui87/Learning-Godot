@@ -14,7 +14,7 @@ This short tutorial will focus on the kinematic character controller. Basically,
 
 ### Fixed Process
 
-To manage the logic of a kinematic body or character, it is always advised to use fixed process, which is called the same amount of times per second, always. This makes physics and motion calculation work a lot more stable than using regular process, which might have spikes or lose precision is the frame rate is too high or too low.
+To manage the logic of a kinematic body or character, it is always advised to use fixed process, which is called the same amount of times per second, always. This makes physics and motion calculation work in a more predictable way than using regular process, which might have spikes or lose precision is the frame rate is too high or too low.
 
 ```python
 extends KinematicBody2D
