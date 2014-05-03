@@ -118,7 +118,8 @@ func thread_process():
 			var path = res.get_meta("path")
 			if path in pending: # else it was already retrieved
 				pending[res.get_meta("path")] = res.get_resource()
-			queue.remove(0)
+
+			queue.erase(res) # something might have been put at the front of the queue while we polled, so use erase instead of remove
 
 	_unlock("process")
 
