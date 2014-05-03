@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Yes, the name sounds strange. "Kinematic Character" WTF is that? The reason is that when physics engines came out, they were called "Dynamics" engines. Many attempts were made to create a character controller using the dynamics engines but it wasn't as easy as it seems. Godot has one of the best implementations of dynamic character controller you can find (as it can be seen in the 2d/platformer demo), but using it requieres a considerable level of skill and understanding of physics engines (or a lot of patience with trial and error).
+Yes, the name sounds strange. "Kinematic Character" WTF is that? The reason is that when physics engines came out, they were called "Dynamics" engines (because they dealt mainly with collision responses). Many attempts were made to create a character controller using the dynamics engines but it wasn't as easy as it seems. Godot has one of the best implementations of dynamic character controller you can find (as it can be seen in the 2d/platformer demo), but using it requieres a considerable level of skill and understanding of physics engines (or a lot of patience with trial and error).
 Some physics engines such as Havok seem to swear by dynamic character controllers as the best alternative, while others (PhysX) would rather promote the Kinematic one.
 
 So, what is really the difference? Basically:
