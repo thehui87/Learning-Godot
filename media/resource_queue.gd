@@ -103,11 +103,10 @@ func get_resource(path):
 func thread_process():
 	_wait("thread_process")
 
-	var t = OS.get_ticks_msec()
-
 	_lock("process")
 
-	while queue.size() > 0 && OS.get_ticks_msec() < t + time_max:
+	while queue.size() > 0:
+
 		var res = queue[0]
 
 		_unlock("process_poll")
