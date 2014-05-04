@@ -37,6 +37,8 @@ Let's add a circular collision shape to the collision body, create a new CircleS
 
 <p align="center"><img src="images/kbradius.png"></p>
 
+**Note: As mentioned before in the physics tutorial, the physics engine can't handle scale on most types of shapes (only collision polygons, planes and segments work), so always change the parameters (such as radius) of the shape instead of scaling it. The same is also true for the kinematic/rigid/static bodies themselves, as their scale affect the shape scale.**
+
 Now create a script for the character, the one used as an example above should work as a base.
 Finally, instance that character scene in the tilemap, and make the map scene the main one, so it runs when pressing play.
 
