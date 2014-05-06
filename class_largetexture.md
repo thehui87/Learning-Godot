@@ -6,7 +6,9 @@
 
 
 ###  Member Functions 
-  * void  **[add&#95;piece](#add_piece)**  **(** [Vector2](class_vector2) ofs, [Texture](class_texture) texture  **)**
+  * [int](class_int)  **[add&#95;piece](#add_piece)**  **(** [Vector2](class_vector2) ofs, [Texture](class_texture) texture  **)**
+  * void  **[set&#95;piece&#95;offset](#set_piece_offset)**  **(** [int](class_int) idx, [Vector2](class_vector2) ofs  **)**
+  * void  **[set&#95;piece&#95;texture](#set_piece_texture)**  **(** [int](class_int) idx, [Texture](class_texture) texture  **)**
   * void  **[set&#95;size](#set_size)**  **(** [Vector2](class_vector2) size  **)**
   * void  **[clear](#clear)**  **(** **)**
   * [int](class_int)  **[get&#95;piece&#95;count](#get_piece_count)**  **(** **)** const

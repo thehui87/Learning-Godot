@@ -22,6 +22,9 @@ Node for 2D Tile-Based games.
   * [bool](class_bool)  **[is&#95;cell&#95;y&#95;flipped](#is_cell_y_flipped)**  **(** [int](class_int) x, [int](class_int) y  **)** const
   * void  **[clear](#clear)**  **(** **)**
 
+###  Signals  
+  *  **settings&#95;changed**  **(** **)**
+
 ###  Numeric Constants  
   * **INVALID_CELL** = **-1** - Returned when a cell doesn't exist.
 

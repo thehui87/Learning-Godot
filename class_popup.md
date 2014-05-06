@@ -14,10 +14,12 @@ Base container control for popups and dialogs.
   * [bool](class_bool)  **[is&#95;exclusive](#is_exclusive)**  **(** **)** const
 
 ###  Signals  
+  *  **popup&#95;hide**  **(** **)**
   *  **about&#95;to&#95;show**  **(** **)**
 
 ###  Numeric Constants  
   * **NOTIFICATION_POST_POPUP** = **80**
+  * **NOTIFICATION_POPUP_HIDE** = **81**
 
 ###  Description  
 PopUp is a base [Control](class_control) used to show dialogs and popups. It's a subwindow and modal by default (see [Control](class_control)) and has helpers for custom popup behavior.

@@ -37,7 +37,7 @@ Base class of anything 2D.
   * void  **[draw&#95;style&#95;box](#draw_style_box)**  **(** [StyleBox](class_stylebox) style_box, [Rect2](class_rect2) rect  **)**
   * void  **[draw&#95;primitive](#draw_primitive)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object(), [float](class_float) width=1  **)**
   * void  **[draw&#95;polygon](#draw_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) colors, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [float](class_float) arg4=Object()  **)**
-  * void  **[draw&#95;colored&#95;polygon](#draw_colored_polygon)**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [float](class_float) arg4=Object()  **)**
+  * void  **[draw&#95;colored&#95;polygon](#draw_colored_polygon)**  **(** [Vector2Array](class_vector2array) points, [Color](class_color) color, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object()  **)**
   * void  **[draw&#95;string](#draw_string)**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) text, [Color](class_color) modulate=Color(1,1,1,1), [int](class_int) clip_w=-1  **)**
   * [float](class_float)  **[draw&#95;char](#draw_char)**  **(** [Font](class_font) font, [Vector2](class_vector2) pos, [String](class_string) char, [String](class_string) next, [Color](class_color) modulate=Color(1,1,1,1)  **)**
   * void  **[draw&#95;set&#95;transform](#draw_set_transform)**  **(** [Vector2](class_vector2) pos, [float](class_float) rot, [Vector2](class_vector2) scale  **)**
@@ -205,7 +205,7 @@ Draw a custom primitive, 1 point for a point, 2 points for a line, 3 points for 
 Draw a polygon of any amount of points, convex or concave.
 
 #### <a name="draw_colored_polygon">draw_colored_polygon</a>
-  * void  **draw&#95;colored&#95;polygon**  **(** [Vector2Array](class_vector2array) points, [ColorArray](class_colorarray) color, [Vector2Array](class_vector2array) uvs, [Texture](class_texture) texture=Array(), [float](class_float) arg4=Object()  **)**
+  * void  **draw&#95;colored&#95;polygon**  **(** [Vector2Array](class_vector2array) points, [Color](class_color) color, [Vector2Array](class_vector2array) uvs=Array(), [Texture](class_texture) texture=Object()  **)**
 
 Draw a colored polygon of any amount of points, convex or concave.
 

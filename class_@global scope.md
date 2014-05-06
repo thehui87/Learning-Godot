@@ -17,6 +17,7 @@ Global scope constants and variables.
   * [TranslationServer](class_translationserver) **TranslationServer**
   * [TranslationServer](class_translationserver) **TS**
   * [Input](class_input) **Input**
+  * [InputMap](class_inputmap) **InputMap**
   * [SceneIO](class_sceneio) **SceneIO**
   * [VisualServer](class_visualserver) **VisualServer**
   * [VisualServer](class_visualserver) **VS**

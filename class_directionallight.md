@@ -14,7 +14,8 @@ Directional Light, such as the Sun or the Moon.
 ###  Numeric Constants  
   * **SHADOW_ORTHOGONAL** = **0**
   * **SHADOW_PERSPECTIVE** = **1**
-  * **SHADOW_PARALLEL_SPLIT** = **2**
+  * **SHADOW_PARALLEL_2_SPLITS** = **2**
+  * **SHADOW_PARALLEL_4_SPLITS** = **3**
   * **SHADOW_PARAM_MAX_DISTANCE** = **0**
   * **SHADOW_PARAM_PSSM_SPLIT_WEIGHT** = **1**
   * **SHADOW_PARAM_PSSM_ZOFFSET_SCALE** = **2**

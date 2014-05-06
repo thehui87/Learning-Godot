@@ -6,7 +6,7 @@
 
 
 ###  Member Functions 
-  * [int](class_int)  **[connect](#connect)**  **(** [String](class_string) host, [int](class_int) port  **)**
+  * [int](class_int)  **[connect](#connect)**  **(** [String](class_string) host, [int](class_int) port, [bool](class_bool) use_ssl=false, [bool](class_bool) arg3=true  **)**
   * void  **[set&#95;connection](#set_connection)**  **(** [StreamPeer](class_streampeer) connection  **)**
   * [int](class_int)  **[request](#request)**  **(** [int](class_int) method, [String](class_string) url, [StringArray](class_stringarray) headers, [String](class_string) body=""  **)**
   * [int](class_int)  **[send&#95;body&#95;text](#send_body_text)**  **(** [String](class_string) body  **)**
@@ -19,6 +19,8 @@
   * [Dictionary](class_dictionary)  **[get&#95;response&#95;headers&#95;as&#95;dictionary](#get_response_headers_as_dictionary)**  **(** **)**
   * [int](class_int)  **[get&#95;response&#95;body&#95;length](#get_response_body_length)**  **(** **)** const
   * [RawArray](class_rawarray)  **[read&#95;response&#95;body&#95;chunk](#read_response_body_chunk)**  **(** **)**
+  * void  **[set&#95;blocking&#95;mode](#set_blocking_mode)**  **(** [bool](class_bool) enabled  **)**
+  * [bool](class_bool)  **[is&#95;blocking&#95;mode&#95;enabled](#is_blocking_mode_enabled)**  **(** **)** const
   * [int](class_int)  **[get&#95;status](#get_status)**  **(** **)** const
   * [int](class_int)  **[poll](#poll)**  **(** **)**
 
@@ -41,6 +43,7 @@
   * **STATUS_REQUESTING** = **6**
   * **STATUS_BODY** = **7**
   * **STATUS_CONNECTION_ERROR** = **8**
+  * **STATUS_SSL_HANDSHAKE_ERROR** = **9**
   * **RESPONSE_CONTINUE** = **100**
   * **RESPONSE_SWITCHING_PROTOCOLS** = **101**
   * **RESPONSE_PROCESSING** = **102**
