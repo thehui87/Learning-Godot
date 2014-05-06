@@ -483,6 +483,22 @@ export(Color,RGBA) var col # Color is RGBA
 ```
 It must be noted that even if the script is not being run while at the editor, the exported properties are still editable (see below for “tool”).
 
+##  Virtual Functions 
+
+As any dynamically typed language, all functions are virtual. This means if a function with a certain name exists in a class, and it is re-declared in one that extends it, the new one will be called instead.
+
+### Super Call
+
+To call the same function on the parent, use a call with a period prefix, like this:
+
+```python
+func _myfunc():
+   ._myfync() #calls parent func
+```
+### Built-In engine callbacks
+
+However, as a single exception, most engine built-in callbacks (not the signals!, just overridable functions like _notification, _process, _init, _input, _ready, _draw, _enter_scene, etc) happen in all levels of inheritance. Calling super on those is not needed.
+
 ##  Static Functions 
 
 A function can be declared static. When static, it has no access to the instance member variables or “self”. This is mainly useful to make libraries of helper functions:
