@@ -16,6 +16,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * Reflections (using reflection objects)
 * Light Probes
 * More Shaders (2D, Lighting, Post-Processing)
+* Masks in 2D Engine
 * 2D deforms and skeletons
 * FBX Import (blender did it..)
 * Live scene editing (should be rather easy)
