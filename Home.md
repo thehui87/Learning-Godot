@@ -36,6 +36,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Background Loading](Background loading)
 *  [Internationalizing a Game (Multiple Languages)](tutorial_localization)
 *  [Encrypting Save Games](tutorial_encrypting_savegames)
+*  ~~[Input Events & Actions](tutorial_input_events)~~
 *  ~~[Custom Drawing in Node2D/Control](tutorial_custom_draw_2d)~~
 *  ~~[GamePad/Keyboard-Controlled GUIs](tutorial_gp_gui)~~
 *  ~~[GUI Skinning](tutorial_gui_skinning)~~
