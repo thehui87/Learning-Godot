@@ -44,6 +44,11 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  ~~[ Creating a 3D game](tutorial_3d)~~ 
 *  ~~[Using the AnimationTreePlayer](tutorial_animation_tree)~~
 
+#### Math
+
+*  ~~[Vector Math](tutorial_vector_math)~~
+*  ~~[Matrices & Transforms](tutorial_transforms)~~
+
 #### Advanced
 
 *  [Paths](paths)
