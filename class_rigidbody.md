@@ -35,6 +35,8 @@
   * [bool](class_bool)  **[is&#95;active](#is_active)**  **(** **)** const
   * void  **[set&#95;can&#95;sleep](#set_can_sleep)**  **(** [bool](class_bool) able_to_sleep  **)**
   * [bool](class_bool)  **[is&#95;able&#95;to&#95;sleep](#is_able_to_sleep)**  **(** **)** const
+  * void  **[set&#95;axis&#95;lock](#set_axis_lock)**  **(** [int](class_int) axis_lock  **)**
+  * [int](class_int)  **[get&#95;axis&#95;lock](#get_axis_lock)**  **(** **)** const
 
 ###  Signals  
   *  **body&#95;enter**  **(** [Object](class_object) body  **)**

@@ -60,6 +60,8 @@
   * void  **[body&#95;get&#95;state](#body_get_state)**  **(** [RID](class_rid) body, [int](class_int) state  **)** const
   * void  **[body&#95;apply&#95;impulse](#body_apply_impulse)**  **(** [RID](class_rid) body, [Vector3](class_vector3) pos, [Vector3](class_vector3) impulse  **)**
   * void  **[body&#95;set&#95;axis&#95;velocity](#body_set_axis_velocity)**  **(** [RID](class_rid) body, [Vector3](class_vector3) axis_velocity  **)**
+  * void  **[body&#95;set&#95;axis&#95;lock](#body_set_axis_lock)**  **(** [RID](class_rid) body, [int](class_int) axis  **)**
+  * void  **[body&#95;get&#95;axis&#95;lock](#body_get_axis_lock)**  **(** [RID](class_rid) body, [int](class_int) arg1  **)**
   * void  **[body&#95;add&#95;collision&#95;exception](#body_add_collision_exception)**  **(** [RID](class_rid) body, [RID](class_rid) excepted_body  **)**
   * void  **[body&#95;remove&#95;collision&#95;exception](#body_remove_collision_exception)**  **(** [RID](class_rid) body, [RID](class_rid) excepted_body  **)**
   * void  **[body&#95;set&#95;max&#95;contacts&#95;reported](#body_set_max_contacts_reported)**  **(** [RID](class_rid) body, [int](class_int) amount  **)**

@@ -15,12 +15,11 @@ Helper tool to create geometry.
   * void  **[add&#95;uv2](#add_uv2)**  **(** [Vector2](class_vector2) uv2  **)**
   * void  **[add&#95;bones](#add_bones)**  **(** [IntArray](class_intarray) bones  **)**
   * void  **[add&#95;weights](#add_weights)**  **(** [RealArray](class_realarray) weights  **)**
+  * void  **[add&#95;smooth&#95;group](#add_smooth_group)**  **(** [bool](class_bool) smooth  **)**
   * void  **[set&#95;material](#set_material)**  **(** [Material](class_material) material  **)**
   * void  **[index](#index)**  **(** **)**
   * void  **[deindex](#deindex)**  **(** **)**
-  * void  **[generate&#95;flat&#95;normals](#generate_flat_normals)**  **(** **)**
-  * void  **[generate&#95;smooth&#95;normals](#generate_smooth_normals)**  **(** **)**
-  * void  **[generate&#95;tangents](#generate_tangents)**  **(** **)**
+  * void  **[generate&#95;normals](#generate_normals)**  **(** **)**
   * [Mesh](class_mesh)  **[commit](#commit)**  **(** [Mesh](class_mesh) existing=Object()  **)**
   * void  **[clear](#clear)**  **(** **)**
 

@@ -8,6 +8,8 @@ Node that instances meshes into a [Scenario].
 ###  Member Functions 
   * void  **[set&#95;mesh](#set_mesh)**  **(** [Mesh](class_mesh) mesh  **)**
   * [Mesh](class_mesh)  **[get&#95;mesh](#get_mesh)**  **(** **)** const
+  * void  **[set&#95;skeleton&#95;path](#set_skeleton_path)**  **(** [NodePath](class_nodepath) skeleton_path  **)**
+  * [NodePath](class_nodepath)  **[get&#95;skeleton&#95;path](#get_skeleton_path)**  **(** **)**
   * [AABB](class_aabb)  **[get&#95;aabb](#get_aabb)**  **(** **)** const
   * void  **[create&#95;trimesh&#95;collision](#create_trimesh_collision)**  **(** **)**
   * void  **[create&#95;convex&#95;collision](#create_convex_collision)**  **(** **)**

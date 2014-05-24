@@ -31,6 +31,8 @@ Creates a sub-view into the screen.
   * [bool](class_bool)  **[is&#95;set&#95;as&#95;render&#95;target](#is_set_as_render_target)**  **(** **)** const
   * void  **[set&#95;render&#95;target&#95;vflip](#set_render_target_vflip)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[get&#95;render&#95;target&#95;vflip](#get_render_target_vflip)**  **(** **)** const
+  * void  **[set&#95;render&#95;target&#95;filter](#set_render_target_filter)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[get&#95;render&#95;target&#95;filter](#get_render_target_filter)**  **(** **)** const
   * void  **[set&#95;render&#95;target&#95;update&#95;mode](#set_render_target_update_mode)**  **(** [int](class_int) mode  **)**
   * [int](class_int)  **[get&#95;render&#95;target&#95;update&#95;mode](#get_render_target_update_mode)**  **(** **)** const
   * [RenderTargetTexture](class_rendertargettexture)  **[get&#95;render&#95;target&#95;texture](#get_render_target_texture)**  **(** **)** const

@@ -28,6 +28,8 @@ Label that displays rich text.
   * [int](class_int)  **[get&#95;tab&#95;size](#get_tab_size)**  **(** **)** const
   * void  **[set&#95;selection&#95;enabled](#set_selection_enabled)**  **(** [bool](class_bool) enabled  **)**
   * [bool](class_bool)  **[is&#95;selection&#95;enabled](#is_selection_enabled)**  **(** **)** const
+  * [int](class_int)  **[parse&#95;bbcode](#parse_bbcode)**  **(** [String](class_string) bbcode  **)**
+  * [int](class_int)  **[append&#95;bbcode](#append_bbcode)**  **(** [String](class_string) bbcode  **)**
 
 ###  Signals  
   *  **meta&#95;clicked**  **(** [Nil](class_nil) meta  **)**

@@ -59,6 +59,7 @@ Base class of anything 2D.
   * **BLEND_MODE_ADD** = **1** - Additive blending mode.
   * **BLEND_MODE_SUB** = **2** - Substractive blending mode.
   * **BLEND_MODE_MUL** = **3** - Multiplicative blending mode.
+  * **BLEND_MODE_PREMULT_ALPHA** = **4**
   * **NOTIFICATION_DRAW** = **30** - CanvasItem is requested to draw.
   * **NOTIFICATION_VISIBILITY_CHANGED** = **31** - Canvas item visibility has changed.
   * **NOTIFICATION_ENTER_CANVAS** = **32** - Canvas item has entered the canvas.

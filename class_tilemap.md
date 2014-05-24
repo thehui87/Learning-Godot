@@ -16,6 +16,8 @@ Node for 2D Tile-Based games.
   * [bool](class_bool)  **[get&#95;center&#95;x](#get_center_x)**  **(** **)** const
   * void  **[set&#95;center&#95;y](#set_center_y)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[get&#95;center&#95;y](#get_center_y)**  **(** **)** const
+  * void  **[set&#95;collision&#95;layer&#95;mask](#set_collision_layer_mask)**  **(** [int](class_int) mask  **)**
+  * [int](class_int)  **[get&#95;collision&#95;layer&#95;mask](#get_collision_layer_mask)**  **(** **)** const
   * void  **[set&#95;cell](#set_cell)**  **(** [int](class_int) x, [int](class_int) y, [int](class_int) tile, [bool](class_bool) flip_x=false, [bool](class_bool) flip_y=false  **)**
   * [int](class_int)  **[get&#95;cell](#get_cell)**  **(** [int](class_int) x, [int](class_int) y  **)** const
   * [bool](class_bool)  **[is&#95;cell&#95;x&#95;flipped](#is_cell_x_flipped)**  **(** [int](class_int) x, [int](class_int) y  **)** const

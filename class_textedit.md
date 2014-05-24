@@ -29,6 +29,7 @@ Multiline text editing control.
   * [int](class_int)  **[get&#95;selection&#95;to&#95;line](#get_selection_to_line)**  **(** **)** const
   * [int](class_int)  **[get&#95;selection&#95;to&#95;column](#get_selection_to_column)**  **(** **)** const
   * [String](class_string)  **[get&#95;selection&#95;text](#get_selection_text)**  **(** **)** const
+  * [String](class_string)  **[get&#95;word&#95;under&#95;cursor](#get_word_under_cursor)**  **(** **)** const
   * [IntArray](class_intarray)  **[search](#search)**  **(** [String](class_string) flags, [int](class_int) from_line, [int](class_int) from_column, [int](class_int) to_line  **)** const
   * void  **[undo](#undo)**  **(** **)**
   * void  **[redo](#redo)**  **(** **)**

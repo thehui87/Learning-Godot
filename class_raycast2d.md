@@ -20,5 +20,7 @@
   * void  **[remove&#95;exception&#95;rid](#remove_exception_rid)**  **(** [RID](class_rid) rid  **)**
   * void  **[remove&#95;exception](#remove_exception)**  **(** [Object](class_object) node  **)**
   * void  **[clear&#95;exceptions](#clear_exceptions)**  **(** **)**
+  * void  **[set&#95;layer&#95;mask](#set_layer_mask)**  **(** [int](class_int) mask  **)**
+  * [int](class_int)  **[get&#95;layer&#95;mask](#get_layer_mask)**  **(** **)** const
 
 ###  Member Function Description  

@@ -11,6 +11,7 @@ IP Protocol support functions.
   * [int](class_int)  **[get&#95;resolve&#95;item&#95;status](#get_resolve_item_status)**  **(** [int](class_int) id  **)** const
   * [String](class_string)  **[get&#95;resolve&#95;item&#95;address](#get_resolve_item_address)**  **(** [int](class_int) id  **)** const
   * void  **[erase&#95;resolve&#95;item](#erase_resolve_item)**  **(** [int](class_int) id  **)**
+  * [Array](class_array)  **[get&#95;local&#95;addresses](#get_local_addresses)**  **(** **)** const
 
 ###  Numeric Constants  
   * **RESOLVER_STATUS_NONE** = **0**

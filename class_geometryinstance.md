@@ -26,7 +26,7 @@ Base node for geometry based visual instances.
   * **FLAG_BILLBOARD_FIX_Y** = **2**
   * **FLAG_DEPH_SCALE** = **5**
   * **FLAG_VISIBLE_IN_ALL_ROOMS** = **6**
-  * **FLAG_MAX** = **7**
+  * **FLAG_MAX** = **8**
 
 ###  Description  
 Base node for geometry based visual instances. Shares some common functionality like visibility and custom materials.

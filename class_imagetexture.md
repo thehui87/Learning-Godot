@@ -17,6 +17,7 @@
   * void  **[set&#95;lossy&#95;storage&#95;quality](#set_lossy_storage_quality)**  **(** [float](class_float) quality  **)**
   * [float](class_float)  **[get&#95;lossy&#95;storage&#95;quality](#get_lossy_storage_quality)**  **(** **)** const
   * void  **[fix&#95;alpha&#95;edges](#fix_alpha_edges)**  **(** **)**
+  * void  **[premultiply&#95;alpha](#premultiply_alpha)**  **(** **)**
   * void  **[set&#95;size&#95;override](#set_size_override)**  **(** [Vector2](class_vector2) size  **)**
 
 ###  Numeric Constants  

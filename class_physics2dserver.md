@@ -55,6 +55,10 @@ Physics 2D Server.
   * [int](class_int)  **[body&#95;get&#95;object&#95;instance&#95;ID](#body_get_object_instance_ID)**  **(** [RID](class_rid) body  **)** const
   * void  **[body&#95;set&#95;continuous&#95;collision&#95;detection&#95;mode](#body_set_continuous_collision_detection_mode)**  **(** [RID](class_rid) body, [int](class_int) mode  **)**
   * [int](class_int)  **[body&#95;get&#95;continuous&#95;collision&#95;detection&#95;mode](#body_get_continuous_collision_detection_mode)**  **(** [RID](class_rid) body  **)** const
+  * void  **[body&#95;set&#95;layer&#95;mask](#body_set_layer_mask)**  **(** [RID](class_rid) body, [int](class_int) mask  **)**
+  * [int](class_int)  **[body&#95;get&#95;layer&#95;mask](#body_get_layer_mask)**  **(** [RID](class_rid) body, [int](class_int) arg1  **)** const
+  * void  **[body&#95;set&#95;user&#95;mask](#body_set_user_mask)**  **(** [RID](class_rid) body, [int](class_int) mask  **)**
+  * [int](class_int)  **[body&#95;get&#95;user&#95;mask](#body_get_user_mask)**  **(** [RID](class_rid) body, [int](class_int) arg1  **)** const
   * void  **[body&#95;set&#95;param](#body_set_param)**  **(** [RID](class_rid) body, [int](class_int) param, [float](class_float) value  **)**
   * [float](class_float)  **[body&#95;get&#95;param](#body_get_param)**  **(** [RID](class_rid) body, [int](class_int) param  **)** const
   * void  **[body&#95;set&#95;state](#body_set_state)**  **(** [RID](class_rid) body, [int](class_int) state, var value  **)**

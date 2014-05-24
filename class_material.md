@@ -42,6 +42,8 @@ Abstract base [Resource](class_resource) for coloring and shading geometry.
   * **BLEND_MODE_MIX** = **0** - Use the regular alpha blending equation (source and dest colors are faded) (default).
   * **BLEND_MODE_ADD** = **1** - Use additive blending equation, often used for particle effects such as fire or light decals.
   * **BLEND_MODE_SUB** = **2** - Use substractive blending equation, often used for some smoke effects or types of glass.
+  * **BLEND_MODE_MUL** = **3**
+  * **BLEND_MODE_PREMULT_ALPHA** = **4**
 
 ###  Description  
 Material is a base [Resource](class_resource) used for coloring and shading geometry. All materials inherit from it and almost all [VisualInstance](class_visualinstance) derived nodes carry a Material. A few flags and parameters are shared between all material types and are configured here.
