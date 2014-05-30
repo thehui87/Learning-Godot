@@ -18,6 +18,12 @@ This platform is stalled. The code in the repository was never tested. Adobe rel
 
 The EMScripten backend (javascript) generally works well in Firefox, Chrome and Safari. It seems to be not working in Internet Explorer 11. Unfortunately, Godot authors are not very experienced in this platform, so further work is stalled. Help with this from someone experienced in EMScripten and HTML5 would be very appreciated.
 
+### X11 Platform
+
+Some features do not work in X11, notably fullscreen support, or setting a icon (in a way that will work in Ubuntu). If you have experience with this platform help is appreciated! 
+
+
+
 ## Assets
 
 ### Demo Content
@@ -55,5 +61,4 @@ The engine lacks support for an editable terrain, this could be done easily with
 ## Contacting developers
 
 Godot developers can be most easily reached via forum or irc (see http://www.godotengine.org for links).
-
 
