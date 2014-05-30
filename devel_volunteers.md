@@ -20,7 +20,7 @@ The EMScripten backend (javascript) generally works well in Firefox, Chrome and 
 
 ### X11 Platform
 
-Some features do not work in X11, notably fullscreen support, or setting a icon (in a way that will work in Ubuntu). If you have experience with this platform help is appreciated! 
+Some features do not work in X11, notably fullscreen support, or setting a icon (in a way that will work in Ubuntu). A PulseAudio backend might be needed too, as some users have problems with ALSA backend while PulseAudio runs. If you have experience with this platform help is appreciated! 
 
 
 
