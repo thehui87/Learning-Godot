@@ -6,6 +6,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 # Roadmap
 
 * [Development Roadmap](devel_roadmap)
+* [Volunteers Needed](devel_volunteers)
 
 # Tutorials
 
