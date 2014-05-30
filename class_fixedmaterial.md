@@ -38,6 +38,7 @@ Simple Material with a fixed parameter set.
   * **FLAG_USE_ALPHA** = **0**
   * **FLAG_USE_COLOR_ARRAY** = **1**
   * **FLAG_USE_POINT_SIZE** = **2**
+  * **FLAG_DISCARD_ALPHA** = **3**
 
 ###  Description  
 FixedMaterial is a simple type of material [Resource](class_resource), which contains a fixed amount of paramters. It is the only type of material supported in fixed-pipeline devices and APIs. It is also an often a better alternative to [ShaderMaterial](class_shadermaterial) for most simple use cases.

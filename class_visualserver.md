@@ -266,11 +266,11 @@ Server for anything visible.
   * **SCENARIO_DEBUG_OVERDRAW** = **2**
   * **INSTANCE_MESH** = **1**
   * **INSTANCE_MULTIMESH** = **2**
-  * **INSTANCE_PARTICLES** = **3**
-  * **INSTANCE_LIGHT** = **4**
-  * **INSTANCE_ROOM** = **5**
-  * **INSTANCE_PORTAL** = **6**
-  * **INSTANCE_GEOMETRY_MASK** = **14**
+  * **INSTANCE_PARTICLES** = **4**
+  * **INSTANCE_LIGHT** = **5**
+  * **INSTANCE_ROOM** = **6**
+  * **INSTANCE_PORTAL** = **7**
+  * **INSTANCE_GEOMETRY_MASK** = **30**
   * **INFO_OBJECTS_IN_FRAME** = **0**
   * **INFO_VERTICES_IN_FRAME** = **1**
   * **INFO_MATERIAL_CHANGES_IN_FRAME** = **2**

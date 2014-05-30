@@ -30,7 +30,8 @@ Abstract base [Resource](class_resource) for coloring and shading geometry.
   * **HINT_OPAQUE_PRE_PASS** = **1**
   * **HINT_NO_SHADOW** = **2**
   * **HINT_NO_DEPTH_DRAW** = **3**
-  * **HINT_MAX** = **4**
+  * **HINT_NO_DEPTH_DRAW_FOR_ALPHA** = **4**
+  * **HINT_MAX** = **5**
   * **SHADE_MODEL_LAMBERT** = **0**
   * **SHADE_MODEL_LAMBERT_WRAP** = **1**
   * **SHADE_MODEL_FRESNEL** = **2**
