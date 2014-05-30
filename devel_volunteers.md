@@ -38,6 +38,19 @@ Godot lacks support for this feature. Help implementing it (specially from someo
 
 What kind of AI APIS are the most useful in the industry? Help defining this would, again, be appreciated.
 
+## Editor Plugins
+
+### Documenting Plugins
+
+Most of the plug-in API is undocumented and it's not obvious how it works. Help with this would be very appreciated.
+
+### Example Plugins
+
+Godot supports plugins in the editor, but none exists yet. Example plugins for simple features might be a nice starting point.
+
+### Terrain Plugin
+
+The engine lacks support for an editable terrain, this could be done easily with a plugin.
 
 ## Contacting developers
 
