@@ -240,11 +240,11 @@ Remember that not every combination of two bodies can "report" contacts. Static 
 
 | Type      | RigidBody | CharacterBody | KinematicBody | StaticBody | Area |
 |-----------|-----------|---------------|---------------|------------|------|
-| RigidBody |    Both   |     Both      |    Both       |  Rigidbody | Area |  
-| CharacterBody |    Both   |     Both      |    Both   |  CharacterBody | Area |  
-| KinematicBody |    Both   |     Both      |    None   |  None | Area |  
-| StaticBody |    RigidBody   |    CharacterBody  |    None   |  None | None |  
-| Area |    Area   |    Area  |    Area   |  None | None |  
+| **RigidBody** |    Both   |     Both      |    Both       |  Rigidbody | Area |  
+| **CharacterBody** |    Both   |     Both      |    Both   |  CharacterBody | Area |  
+| **KinematicBody** |    Both   |     Both      |    None   |  None | Area |  
+| **StaticBody** |    RigidBody   |    CharacterBody  |    None   |  None | None |  
+| **Area** |    Area   |    Area  |    Area   |  None | None |  
 
 
 
