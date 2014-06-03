@@ -232,6 +232,21 @@ func _fixed_process(delta):
 
 Enjoy doing space queries!
 
+### Contact Reporting
+
+Remember that not every combination of two bodies can "report" contacts. Static bodies are passive and will not report contacts when hit. Kinematic Bodies will report contacts but only against Rigid/Character bodies. Area2D is also passive and will not report against another Area2D. The following table should make it more visual:
+
+#### In case of overlap, who receives contacts?
+
+| Type      | RigidBody | CharacterBody | KinematicBody | StaticBody | Area |
+--------------------------------------------------------------------------------
+| RigidBody |    Both   |     Both      |    Both       |  Rigidbody | Area |  
+| CharacterBody |    Both   |     Both      |    Both   |  CharacterBody | Area |  
+| KinematicBody |    Both   |     Both      |    None   |  None | Area |  
+| StaticBody |    RigidBody   |    CharacterBody  |    None   |  None | None |  
+| Area |    Area   |    Area  |    Area   |  None | None |  
+
+
 
 
 
