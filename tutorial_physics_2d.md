@@ -239,7 +239,7 @@ Remember that not every combination of two bodies can "report" contacts. Static 
 #### In case of overlap, who receives contacts?
 
 | Type      | RigidBody | CharacterBody | KinematicBody | StaticBody | Area |
---------------------------------------------------------------------------------
+|-----------|-----------|---------------|---------------|------------|------|
 | RigidBody |    Both   |     Both      |    Both       |  Rigidbody | Area |  
 | CharacterBody |    Both   |     Both      |    Both   |  CharacterBody | Area |  
 | KinematicBody |    Both   |     Both      |    None   |  None | Area |  
