@@ -18,6 +18,7 @@
   * [int](class_int)  **[make&#95;dir](#make_dir)**  **(** [String](class_string) name  **)**
   * [int](class_int)  **[make&#95;dir&#95;recursive](#make_dir_recursive)**  **(** [String](class_string) name  **)**
   * [bool](class_bool)  **[file&#95;exists](#file_exists)**  **(** [String](class_string) name  **)**
+  * [bool](class_bool)  **[dir&#95;exists](#dir_exists)**  **(** [String](class_string) name  **)**
   * [int](class_int)  **[get&#95;space&#95;left](#get_space_left)**  **(** **)**
   * [int](class_int)  **[copy](#copy)**  **(** [String](class_string) from, [String](class_string) to  **)**
   * [int](class_int)  **[rename](#rename)**  **(** [String](class_string) from, [String](class_string) to  **)**

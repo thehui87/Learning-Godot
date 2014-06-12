@@ -1,28 +1,29 @@
 
 |  | | | | | |
 |  --- | ------- | --- | ------- | --- | ------- |
-| **@** | [@GDScript](class_@gdscript) |  | [InputEventJoyMotion](class_inputeventjoymotion) |  | [RigidBody2D](class_rigidbody2d) | 
-|  | [@Global Scope](class_@global scope) |  | [InputEventKey](class_inputeventkey) |  | [Room](class_room) | 
-| **A** | [AABB](class_aabb) |  | [InputEventMouseButton](class_inputeventmousebutton) |  | [RoomBounds](class_roombounds) | 
-|  | [AcceptDialog](class_acceptdialog) |  | [InputEventMouseMotion](class_inputeventmousemotion) | **S** | [Sample](class_sample) | 
-|  | [AnimatedSprite](class_animatedsprite) |  | [InputEventScreenDrag](class_inputeventscreendrag) |  | [SampleLibrary](class_samplelibrary) | 
-|  | [AnimatedSprite3D](class_animatedsprite3d) |  | [InputEventScreenTouch](class_inputeventscreentouch) |  | [SamplePlayer](class_sampleplayer) | 
-|  | [Animation](class_animation) |  | [InputMap](class_inputmap) |  | [SamplePlayer2D](class_sampleplayer2d) | 
-|  | [AnimationPlayer](class_animationplayer) |  | [IntArray](class_intarray) |  | [SceneIO](class_sceneio) | 
-|  | [AnimationTreePlayer](class_animationtreeplayer) |  | [InterpolatedCamera](class_interpolatedcamera) |  | [SceneInteractiveLoader](class_sceneinteractiveloader) | 
-|  | [Area](class_area) | **J** | [Joint2D](class_joint2d) |  | [SceneMainLoop](class_scenemainloop) | 
-|  | [Area2D](class_area2d) | **K** | [KinematicBody2D](class_kinematicbody2d) |  | [ScenePreloader](class_scenepreloader) | 
-|  | [Array](class_array) | **L** | [Label](class_label) |  | [Script](class_script) | 
-|  | [AtlasTexture](class_atlastexture) |  | [LargeTexture](class_largetexture) |  | [ScrollBar](class_scrollbar) | 
-|  | [AudioServer](class_audioserver) |  | [Light](class_light) |  | [ScrollContainer](class_scrollcontainer) | 
-|  | [AudioServerSW](class_audioserversw) |  | [LineEdit](class_lineedit) |  | [SegmentShape2D](class_segmentshape2d) | 
-|  | [AudioStream](class_audiostream) |  | [LineShape2D](class_lineshape2d) |  | [Semaphore](class_semaphore) | 
-|  | [AudioStreamGibberish](class_audiostreamgibberish) | **M** | [MainLoop](class_mainloop) |  | [Separator](class_separator) | 
-|  | [AudioStreamMPC](class_audiostreammpc) |  | [MarginContainer](class_margincontainer) |  | [Shader](class_shader) | 
-|  | [AudioStreamOGGVorbis](class_audiostreamoggvorbis) |  | [Marshalls](class_marshalls) |  | [ShaderMaterial](class_shadermaterial) | 
-|  | [AudioStreamResampled](class_audiostreamresampled) |  | [Material](class_material) |  | [Shape](class_shape) | 
-|  | [AudioStreamSpeex](class_audiostreamspeex) |  | [Matrix3](class_matrix3) |  | [Shape2D](class_shape2d) | 
-| **B** | [BakedLight](class_bakedlight) |  | [Matrix32](class_matrix32) |  | [Skeleton](class_skeleton) | 
+| **@** | [@GDScript](class_@gdscript) |  | [InputEventJoyButton](class_inputeventjoybutton) |  | [RigidBody](class_rigidbody) | 
+|  | [@Global Scope](class_@global scope) |  | [InputEventJoyMotion](class_inputeventjoymotion) |  | [RigidBody2D](class_rigidbody2d) | 
+| **A** | [AABB](class_aabb) |  | [InputEventKey](class_inputeventkey) |  | [Room](class_room) | 
+|  | [AcceptDialog](class_acceptdialog) |  | [InputEventMouseButton](class_inputeventmousebutton) |  | [RoomBounds](class_roombounds) | 
+|  | [AnimatedSprite](class_animatedsprite) |  | [InputEventMouseMotion](class_inputeventmousemotion) | **S** | [Sample](class_sample) | 
+|  | [AnimatedSprite3D](class_animatedsprite3d) |  | [InputEventScreenDrag](class_inputeventscreendrag) |  | [SampleLibrary](class_samplelibrary) | 
+|  | [Animation](class_animation) |  | [InputEventScreenTouch](class_inputeventscreentouch) |  | [SamplePlayer](class_sampleplayer) | 
+|  | [AnimationPlayer](class_animationplayer) |  | [InputMap](class_inputmap) |  | [SamplePlayer2D](class_sampleplayer2d) | 
+|  | [AnimationTreePlayer](class_animationtreeplayer) |  | [IntArray](class_intarray) |  | [SceneIO](class_sceneio) | 
+|  | [Area](class_area) |  | [InterpolatedCamera](class_interpolatedcamera) |  | [SceneInteractiveLoader](class_sceneinteractiveloader) | 
+|  | [Area2D](class_area2d) | **J** | [Joint2D](class_joint2d) |  | [SceneMainLoop](class_scenemainloop) | 
+|  | [Array](class_array) | **K** | [KinematicBody2D](class_kinematicbody2d) |  | [ScenePreloader](class_scenepreloader) | 
+|  | [AtlasTexture](class_atlastexture) | **L** | [Label](class_label) |  | [Script](class_script) | 
+|  | [AudioServer](class_audioserver) |  | [LargeTexture](class_largetexture) |  | [ScrollBar](class_scrollbar) | 
+|  | [AudioServerSW](class_audioserversw) |  | [Light](class_light) |  | [ScrollContainer](class_scrollcontainer) | 
+|  | [AudioStream](class_audiostream) |  | [LineEdit](class_lineedit) |  | [SegmentShape2D](class_segmentshape2d) | 
+|  | [AudioStreamGibberish](class_audiostreamgibberish) |  | [LineShape2D](class_lineshape2d) |  | [Semaphore](class_semaphore) | 
+|  | [AudioStreamMPC](class_audiostreammpc) | **M** | [MainLoop](class_mainloop) |  | [Separator](class_separator) | 
+|  | [AudioStreamOGGVorbis](class_audiostreamoggvorbis) |  | [MarginContainer](class_margincontainer) |  | [Shader](class_shader) | 
+|  | [AudioStreamResampled](class_audiostreamresampled) |  | [Marshalls](class_marshalls) |  | [ShaderMaterial](class_shadermaterial) | 
+|  | [AudioStreamSpeex](class_audiostreamspeex) |  | [Material](class_material) |  | [Shape](class_shape) | 
+| **B** | [BakedLight](class_bakedlight) |  | [Matrix3](class_matrix3) |  | [Shape2D](class_shape2d) | 
+|  | [BakedLightInstance](class_bakedlightinstance) |  | [Matrix32](class_matrix32) |  | [Skeleton](class_skeleton) | 
 |  | [BaseButton](class_basebutton) |  | [MenuButton](class_menubutton) |  | [Slider](class_slider) | 
 |  | [BitMap](class_bitmap) |  | [Mesh](class_mesh) |  | [SoundPlayer2D](class_soundplayer2d) | 
 |  | [BoneAttachment](class_boneattachment) |  | [MeshDataTool](class_meshdatatool) |  | [SoundRoomParams](class_soundroomparams) | 
@@ -108,4 +109,3 @@
 |  | [InputDefault](class_inputdefault) |  | [ResourcePreloader](class_resourcepreloader) | **i** | [int](class_int) | 
 |  | [InputEvent](class_inputevent) |  | [ResourceSaver](class_resourcesaver) | 
 |  | [InputEventAction](class_inputeventaction) |  | [RichTextLabel](class_richtextlabel) | 
-|  | [InputEventJoyButton](class_inputeventjoybutton) |  | [RigidBody](class_rigidbody) | 

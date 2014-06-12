@@ -8,6 +8,7 @@
   * [Matrix32](class_matrix32)  **[affine&#95;inverse](#affine_inverse)**  **(** **)**
   * [Vector2](class_vector2)  **[get&#95;origin](#get_origin)**  **(** **)**
   * [float](class_float)  **[get&#95;rotation](#get_rotation)**  **(** **)**
+  * [Vector2](class_vector2)  **[get&#95;scale](#get_scale)**  **(** **)**
   * [Matrix32](class_matrix32)  **[interpolate&#95;with](#interpolate_with)**  **(** [Matrix32](class_matrix32) m, [float](class_float) c  **)**
   * [Matrix32](class_matrix32)  **[inverse](#inverse)**  **(** **)**
   * [Matrix32](class_matrix32)  **[orthonormalized](#orthonormalized)**  **(** **)**

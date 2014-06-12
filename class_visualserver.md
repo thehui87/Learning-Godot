@@ -158,6 +158,7 @@ Server for anything visible.
   * void  **[cursor&#95;set&#95;visible](#cursor_set_visible)**  **(** [bool](class_bool) arg0, [int](class_int) arg1  **)**
   * void  **[cursor&#95;set&#95;pos](#cursor_set_pos)**  **(** [Vector2](class_vector2) arg0, [int](class_int) arg1  **)**
   * void  **[black&#95;bars&#95;set&#95;margins](#black_bars_set_margins)**  **(** [int](class_int) left, [int](class_int) top, [int](class_int) right, [int](class_int) bottom  **)**
+  * void  **[black&#95;bars&#95;set&#95;images](#black_bars_set_images)**  **(** [RID](class_rid) left, [RID](class_rid) top, [RID](class_rid) right, [RID](class_rid) bottom  **)**
   * [RID](class_rid)  **[make&#95;sphere&#95;mesh](#make_sphere_mesh)**  **(** [int](class_int) arg0, [int](class_int) arg1, [float](class_float) arg2  **)**
   * void  **[mesh&#95;add&#95;surface&#95;from&#95;planes](#mesh_add_surface_from_planes)**  **(** [RID](class_rid) arg0, [Array](class_array) arg1  **)**
   * void  **[draw](#draw)**  **(** **)**

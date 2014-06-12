@@ -38,6 +38,8 @@
   * void  **[erase&#95;area](#erase_area)**  **(** [int](class_int) area  **)**
   * [int](class_int)  **[get&#95;unused&#95;area&#95;id](#get_unused_area_id)**  **(** **)** const
   * void  **[bake&#95;geometry](#bake_geometry)**  **(** **)**
+  * void  **[set&#95;use&#95;baked&#95;light](#set_use_baked_light)**  **(** [bool](class_bool) use  **)**
+  * [bool](class_bool)  **[is&#95;using&#95;baked&#95;light](#is_using_baked_light)**  **(** **)** const
   * void  **[clear](#clear)**  **(** **)**
 
 ###  Numeric Constants  

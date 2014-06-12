@@ -16,6 +16,10 @@ Provides a base class for different kinds of light nodes.
   * [Texture](class_texture)  **[get&#95;projector](#get_projector)**  **(** **)** const
   * void  **[set&#95;operator](#set_operator)**  **(** [int](class_int) operator  **)**
   * [int](class_int)  **[get&#95;operator](#get_operator)**  **(** **)** const
+  * void  **[set&#95;bake&#95;mode](#set_bake_mode)**  **(** [int](class_int) bake_mode  **)**
+  * [int](class_int)  **[get&#95;bake&#95;mode](#get_bake_mode)**  **(** **)** const
+  * void  **[set&#95;enabled](#set_enabled)**  **(** [bool](class_bool) enabled  **)**
+  * [bool](class_bool)  **[is&#95;enabled](#is_enabled)**  **(** **)** const
 
 ###  Numeric Constants  
   * **PARAM_RADIUS** = **2**

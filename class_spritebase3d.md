@@ -1,5 +1,5 @@
 #  SpriteBase3D  
-####**Inherits:** [VisualInstance](class_visualinstance)
+####**Inherits:** [GeometryInstance](class_geometryinstance)
 ####**Category:** Core
 
 ###  Brief Description  
