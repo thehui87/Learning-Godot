@@ -88,7 +88,8 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 
 *  [Import Process](import_process) The import process described.
 *  [Importing Textures](import_textures) Importing textures.
-*  ~~[Importing 3D](import_3d) Importing 3D scenes.~~
+*  [Importing 3D Meshes](import_meshes) Importing 3D meshes.
+*  [Importing 3D Scenes](import_3d) Importing 3D scenes.
 *  [Importing Fonts](import_fonts) Importing fonts.
 *  [Importing Audio Samples](import_samples) Importing audio samples.
 *  [Importing Translations](import_translation) Importing translations.
