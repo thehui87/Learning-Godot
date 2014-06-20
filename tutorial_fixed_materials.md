@@ -89,4 +89,4 @@ Almost all of the parameters above can have a texture assigned to them. There ar
 * **UV2 Coordinates**: Some imported models might have come with a second set of UV coordinates. These are common for detail textures or for baked light textures.
 * **Sphere**: Spherical coordinates (difference of the normal at the pixel by the camera normal).
 
-The value of every pixel of the texture is multiplied by the original param. This means that if a texture is loaded for diffuse, it will be multiplied by the color of the diffuse color parameter. Same applies to all the others except for specular exponent, which is replaced.
+The value of every pixel of the texture is multiplied by the original parameter. This means that if a texture is loaded for diffuse, it will be multiplied by the color of the diffuse color parameter. Same applies to all the others except for specular exponent, which is replaced.
