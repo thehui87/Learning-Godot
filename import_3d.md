@@ -143,6 +143,22 @@ Some animations are meant to be cycled (like walk animations) if this is the cas
 
 ## Import Script
 
+Creating a script to parse the imported scene is actually really simple. This is great for post processing, changing materials, doing funny stuff with the geometry, etc.
+
+Create a script that basically looks like this:
+
+```python
+
+tool #needed so it runs in editor
+extends EditorScenePostImport
+
+func post_import(scene):
+  #do your stuff here
+  pass # scene contains the imported scene starting from the root node
+
+```
+
+The post_import function takes the imported scene as parameter (the paramenter is actually the root node of the scene).
 
 ## Update Logic
 
