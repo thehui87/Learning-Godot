@@ -64,6 +64,22 @@ Normal depth controls the inensity of the normal-mapping as well as the directio
 
 <p align="center"><img src="images/fixed_material_normal_depth.png"></p>
 
+#### Glow
 
+This value controls how much of the color is sent to the glow buffer. It can be greater than 1 for a stronger effect. For glow to work, a WorldEnvironment must exist with Glow activated.
+
+<p align="center"><img src="images/fixed_material_glow.png"></p>
+
+#### Blend Mode
+
+Objects are usually blended in Mix mode. Other blend modes (Add and Sub) exist for special cases (usually particle effects, light rays, etc) but materials can be set to them:
+
+<p align="center"><img src="images/fixed_material_blend.png"></p>
+
+#### Point Size, Line Width
+
+When drawing points or lines, the size of them can be adjusted here per material.
+
+### Textures
 
 
