@@ -50,6 +50,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Creating a 3D game](tutorial_3d)
 *  [Materials](tutorial_materials) 
 *  [Fixed Materials](tutorial_fixed_materials) 
+*  [Shader Materials](tutorial_shader_materials) 
 *  ~~[Lighting](tutorial_lighting)~~ 
 *  ~~[Shadow Mapping](tutorial_shadow_mapping)~~ 
 *  ~~[High Dynamic Range](tutorial_hdr)~~ 
