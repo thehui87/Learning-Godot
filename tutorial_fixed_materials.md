@@ -54,3 +54,16 @@ Below is an example of how they interact:
 
 #### Detail & Detail Mix
 
+Detail is a second diffuse texture which can be mixed with the first one (more on textures later!). Detail blend and mix control how these are added together, here's an example of what detail textures are for:
+
+<p align="center"><img src="images/fixed_material_detail.png"></p>
+
+#### Normal Depth
+
+Normal depth controls the inensity of the normal-mapping as well as the direction. On 1 (the default) normalmapping applies normaly, on -1 the map is inverted and on 0 is disabled. Intermediate or greater values are accepted. Here's how it's supposed to look:
+
+<p align="center"><img src="images/fixed_material_normal_depth.png"></p>
+
+
+
+
