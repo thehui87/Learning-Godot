@@ -39,5 +39,18 @@ If this is the case, enable this option for the material. This option is often u
 
 ### Parameters
 
+#### Diffuse, Specular, Emission and Specular Exponent
 
+These are the base colors for the material. 
+
+* Diffuse Color is responsible for the light that reaches the material, then gets diffused around. This color varies by the angle to the light and the distance (in the case of spot and omni lights). It is the color that best represents the material. It can also have alpha (transparency)
+* Specular color is the color of the reflected light and responsible for shines. It is affected by the specular exponent.
+* Emission is the color of the light generated within the material (althought it will not lit anything else around unless baking). This color is constant.
+* Specular Exponent (or "Shininess"/"Intensity" in some 3D DCCs) is the way light is reflected. If the value is high, light is reflected completely, otherwise it is diffused more and more.
+
+Below is an example of how they interact:
+
+<p align="center"><img src="images/fixed_material_colors.png"></p>
+
+#### Detail & Detail Mix
 
