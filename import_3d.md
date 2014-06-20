@@ -59,7 +59,48 @@ Notice that:
 * The Mesh got static collision added (-col).
 * The Light was not imported (-noimp).
 
+## Options in Detail
 
+Following is a list of most import options and what they do in more detail.
+
+#### Remove Nodes (-noimp)
+
+Node names that have this at the end will be removed at import time, mo matter their type. Erasing them afterwards is most of the times pointless because the will be restored if the source scene changes.
+
+#### Import Animations
+
+Some scene formats (.dae) support one or more animations. If this is checked, an [AnimationPlayer](class_animationplayer) node will be created, containing the animations.
+
+#### Compress Geometry
+
+This option (disabled -or more like, always enabled- at the moment at the time of writing this) will compress geometry so it takes less space and renders faster (at the cost of less precision). 
+
+#### Force Generation of Tanget Arrays
+
+The importer detects when you have used a normalmap texture, or when the source file contains tangent/binormal information. These arrays are needed for normalmapping to work, and most exporters know what they do when they export this. However, it might be possible to run into source scenes that do not have this information which, as a result, make normal-mapping not work. If you notice that normal-maps do not work when importing the scene, turn this on!
+
+#### SRGB -> Linear of Diffuse Textures
+
+When rendering using HDR (High Dynamic Range) it might be desirable to use linear-space textures to achieve a more real-life lighting. Otherwise, colors may saturate and contrast too much when exposure changes. This option must be used together with the SRGB option in [WorldEnvironment](class_worldenvironment). The texture import options also have the option to do this conversion, but if this one is turned on, conversion will always be done to diffuse textures (usually what is desired). For more information, read the [HDR Tutorial](tutorial_hdr).
+
+#### Set alpha in materials (-alpha)
+
+When working with most 3D dccs, its pretty obvious when a texture is transparent and has opacity and this rarely affects the workflow or final rendering. However, when dealing with real-time rendering, materials with alpha blending are usually less optimal to draw, so they must be explicitly marked as such. 
+
+Originally Godot detected this based on whether if the source texture had an alpha channel, but most image manipulation apps like Photoshop or Gimp will export this channel anyway even if not used. Code was added later to check manually if there really was any transparency in the texture, but artists will anyway and very often lay uvmaps into opaque parts of a texture and leave unused areas (where no UV exists) transparent, making this detection worthless. 
+
+Finally, it was decided that it's best to import everything as opaque and leave artists to fix materials that need transparency when it's obvious that they are not looking right (see the [Fixed Materials](tutorial_fixed_materials) tutorial). 
+
+As a helper, since every 3D dcc allows naming the materials and keeping their name upon export, the (-alpha) modifier in their name will hint the 3D scene importer in Godot that this material will use the alpha channel for transparency.
+
+
+
+
+
+
+
+
+ 
 
 
 
