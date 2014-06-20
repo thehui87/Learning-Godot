@@ -141,7 +141,31 @@ Because of this, the "Optimize" option exists but, in some cases, this option mi
 
 Some animations are meant to be cycled (like walk animations) if this is the case, animation names that end in "-cycle" or "-loop" are automatically set to loop.
 
+## Import Script
+
+
 ## Update Logic
 
+Other types of resources (like samples, meshes, fonts, images, etc) are re-imported entirely when changed and user changes are not kept.
 
+Because of 3D Scenes can be really complex, they use a different update strategy. The user might have done local changes to take advantage of the engine features and it would be really frustrating if everything is lost on re-import because the source asset changed.
+
+This led to the implementation of a special update strategy. The idea behind is that the user will not lose anything he or she did, and only added data or data that can't be edited inside Godot will be updated. 
+
+It works like this:
+
+#### Strategy
+
+Upon changes on the source asset (ie: .dae), and on re-import, the editor will remember the way the scene originally was, and will track your local changes like renaming nodes, moving them or reparenting them. Finally, the following will be updated:
+
+* Mesh Data will be replaced by the data from the updated scene.
+* Materials will be kept if they were not modified by the user.
+* Portal and Room shapes will be replaced by the ones from the updated scene.
+* If the user moved a node inside Godot, the transform will be kept. If the user moved a node in the source asset, the transform will be replaced. Finally, if the node was moved in both places, the transform will be combined.
+
+In general, if the user deletes anything from the imported scene (node, mesh, material, etc), updating the source asset will restore what was deleted. This is a good way to revert local changes to anything. If you really don't want a node anymore in the scene, either delete it from both places or add the "-noimp" tag to it in the source asset.
+
+#### Fresh Re-Import
+
+It can also happen that the source asset changed beyond recognition and a full fresh re-import is desired. If so, simply re-open the 3d scene import dialog from the Import -> Re-Import menu and perform re-import.
 
