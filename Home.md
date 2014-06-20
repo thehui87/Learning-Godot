@@ -47,7 +47,9 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  ~~[Custom Drawing in Node2D/Control](tutorial_custom_draw_2d)~~
 
 #### 3D Tutorials
-*  ~~[ Creating a 3D game](tutorial_3d)~~ 
+*  [Creating a 3D game](tutorial_3d)
+*  [Materials](tutorial_materials) 
+*  [Fixed Materials](tutorial_fixed_materials) 
 *  ~~[3D Sprites](tutorial_3d_sprites)~~ 
 *  ~~[Using the AnimationTreePlayer](tutorial_animation_tree)~~
 
