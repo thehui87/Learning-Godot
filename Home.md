@@ -30,6 +30,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 
 *  [Viewports](tutorial_viewports)
 *  [Multiple Screen Resolutions](tutorial_multires)
+*  [Version Control & Project Organization](tutorial_vercontrol)
 *  [GUI Control Repositioning](tutorial_gui_repositioning)
 *  [Background Loading](Background loading)
 *  [Encrypting Save Games](tutorial_encrypting_savegames)
