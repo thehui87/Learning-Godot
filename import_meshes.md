@@ -28,4 +28,7 @@ Finally, there is an option to weld vertices. Given OBJ files are text-based, it
 
 Mesh resources (what this importer imports) are used inside MeshInstance nodes. Simply set them to the Mesh property of them.
 
+<p align="center"><img src="images/3dmesh_instance.png"></p>
+
+And that is it.
 
