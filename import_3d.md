@@ -105,7 +105,7 @@ However, it is often the case that the visual geometry is too complex or too un-
 
 #### Create Rooms (-room)
 
-This is used to create a room. As a general rule, any node that is a child of this node will be considered inside the room (including portals).
+This is used to create a room. As a general rule, any node that is a child of this node will be considered inside the room (including portals). For more information about rooms/portals, look at the [Portals & Rooms](tutorial_portals_rooms) tutorial.
 
 There are two ways in which this modifier can be used. The first is using a Dummy/Empty node in the 3D app with the "-room" tag. For this to work, the "interior" of the room must be closed (geometry of the childrens should contain walls, roof, floor, etc and the only holes to the outside should be covered with portals). The importer will then create a simplified version of the geometry for the room. 
 
@@ -114,6 +114,34 @@ The second way is to use the "-room" modifier on a mesh node. This will use the 
 Anyway, the room will need portals, which are described next.
 
 #### Create Portals (-portal)
+
+Portals are the view to look outside a room. They are always some flat shape on the surface of a room. If the portal is left alone, it is used to activate occlusion when looking inside<->outside the room. Again, more information on the [Portals & Rooms](tutorial_portals_rooms) tutorial.
+
+Basically, the conditions to make and import a portal from the 3D DCC are:
+
+* It should be a child of a room.
+* It should lay on the surface of the room (this doesn't need to be super exact, just make it as close as you can by eye and Godot will adjust it)
+* It must be a flat, convex shape, any flat and convex shape is ok, no matter the axis or size.
+* Normals for the flat shape faces must **all point towards the OUTSIDE** of the room.
+
+Here is how it usually looks:
+
+<p align="center"><img src="images/3dimp_portal.png"></p>
+
+To connect to rooms, simply make two identical portals for both rooms and place them overlapped. This does not need to be perfectly exact, again, as Godot will fix it.
+
+#### [..]
+
+The rest of the tags in this section should be rather obvious, or will be documented/changed in the future.
+
+## Animation Options
+
+Some things to keep in mind when importing animations. 3D DCCs allow animating with curves for every x,y,z component, doing IK constraints and other stuff. When imported for real-time, animations are sampled (at small intervals) so all this information is lost. Sampled animations are fast to process, but can use considerable amounts of memory. 
+Because of this, the "Optimize" option exists but, in some cases, this option might get to break an animation, so make it sure to disable if you see this.
+
+Some animations are meant to be cycled (like walk animations) if this is the case, animation names that end in "-cycle" or "-loop" are automatically set to loop.
+
+## Update Logic
 
 
 
