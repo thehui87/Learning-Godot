@@ -36,6 +36,7 @@ Base class for all the "Scene" elements.
   * void  **[remove&#95;from&#95;group](#remove_from_group)**  **(** [String](class_string) group  **)**
   * [bool](class_bool)  **[is&#95;in&#95;group](#is_in_group)**  **(** [String](class_string) group  **)** const
   * void  **[move&#95;child](#move_child)**  **(** [Node](class_node) child_node, [int](class_int) to_pos  **)**
+  * [Array](class_array)  **[get&#95;groups](#get_groups)**  **(** **)** const
   * void  **[raise](#raise)**  **(** **)**
   * void  **[set&#95;owner](#set_owner)**  **(** [Node](class_node) owner  **)**
   * [Node](class_node)  **[get&#95;owner](#get_owner)**  **(** **)** const

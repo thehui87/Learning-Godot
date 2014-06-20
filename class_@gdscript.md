@@ -59,6 +59,7 @@ Built-in GDScript functions.
   * [Object](class_object)  **[load](#load)**  **(** [String](class_string) path  **)**
   * [Dictionary](class_dictionary)  **[inst2dict](#inst2dict)**  **(** [Object](class_object) inst  **)**
   * [Object](class_object)  **[dict2inst](#dict2inst)**  **(** [Dictionary](class_dictionary) dict  **)**
+  * [int](class_int)  **[hash](#hash)**  **(** var var:var  **)**
   * [Nil](class_nil)  **[print&#95;stack](#print_stack)**  **(** **)**
 
 ###  Numeric Constants  

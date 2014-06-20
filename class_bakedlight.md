@@ -27,6 +27,8 @@
   * [float](class_float)  **[get&#95;edge&#95;damp](#get_edge_damp)**  **(** **)** const
   * void  **[set&#95;normal&#95;damp](#set_normal_damp)**  **(** [float](class_float) normal_damp  **)**
   * [float](class_float)  **[get&#95;normal&#95;damp](#get_normal_damp)**  **(** **)** const
+  * void  **[set&#95;format](#set_format)**  **(** [int](class_int) format  **)**
+  * [int](class_int)  **[get&#95;format](#get_format)**  **(** **)** const
   * void  **[set&#95;energy&#95;multiplier](#set_energy_multiplier)**  **(** [float](class_float) energy_multiplier  **)**
   * [float](class_float)  **[get&#95;energy&#95;multiplier](#get_energy_multiplier)**  **(** **)** const
   * void  **[set&#95;gamma&#95;adjust](#set_gamma_adjust)**  **(** [float](class_float) gamma_adjust  **)**

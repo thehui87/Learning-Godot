@@ -261,7 +261,7 @@ Server for anything visible.
   * **LIGHT_PARAM_RADIUS** = **2**
   * **LIGHT_PARAM_ENERGY** = **3**
   * **LIGHT_PARAM_ATTENUATION** = **4**
-  * **LIGHT_PARAM_MAX** = **8**
+  * **LIGHT_PARAM_MAX** = **10**
   * **SCENARIO_DEBUG_DISABLED** = **0**
   * **SCENARIO_DEBUG_WIREFRAME** = **1**
   * **SCENARIO_DEBUG_OVERDRAW** = **2**

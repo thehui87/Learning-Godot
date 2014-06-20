@@ -36,7 +36,7 @@
   * **FX_HDR** = **3**
   * **FX_FOG** = **4**
   * **FX_BCS** = **5**
-  * **FX_GAMMA** = **6**
+  * **FX_SRGB** = **6**
   * **FX_MAX** = **7**
   * **FX_BLUR_BLEND_MODE_ADDITIVE** = **0**
   * **FX_BLUR_BLEND_MODE_SCREEN** = **1**
@@ -65,7 +65,6 @@
   * **FX_PARAM_BCS_BRIGHTNESS** = **21**
   * **FX_PARAM_BCS_CONTRAST** = **22**
   * **FX_PARAM_BCS_SATURATION** = **23**
-  * **FX_PARAM_GAMMA** = **24**
-  * **FX_PARAM_MAX** = **25**
+  * **FX_PARAM_MAX** = **24**
 
 ###  Member Function Description  

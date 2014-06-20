@@ -9,6 +9,7 @@ Image datatype.
   * void  **[brush&#95;transfer](#brush_transfer)**  **(** [Image](class_image) src, [Image](class_image) brush, [Vector2](class_vector2) pos=0  **)**
   * [Image](class_image)  **[brushed](#brushed)**  **(** [Image](class_image) src, [Image](class_image) brush, [Vector2](class_vector2) pos=0  **)**
   * [Image](class_image)  **[compressed](#compressed)**  **(** [int](class_int) format=0  **)**
+  * [Image](class_image)  **[decompressed](#decompressed)**  **(** **)**
   * [bool](class_bool)  **[empty](#empty)**  **(** **)**
   * [RawArray](class_rawarray)  **[get&#95;data](#get_data)**  **(** **)**
   * [int](class_int)  **[get&#95;format](#get_format)**  **(** **)**
