@@ -93,15 +93,15 @@ Finally, it was decided that it's best to import everything as opaque and leave 
 
 As a helper, since every 3D dcc allows naming the materials and keeping their name upon export, the (-alpha) modifier in their name will hint the 3D scene importer in Godot that this material will use the alpha channel for transparency.
 
+#### Set Vert. Color in Materials (-vcol)
 
+Most 3D DCCs support vertex color painting. This is generally applied as multiplication or screen blending. However, it is also often the case that your exporter will export this information as all 1s, or export it as something else and you will not realize it. Since most of the cases this option is not desired, just add this to any material to confirm that vertex colors are desired.
 
+#### Create Collisions (-col, -colonly)
 
+These will only work for Mesh nodes, If the "-col" option is detected, a child static collision node will be added, using the same geometry as the mesh.
 
+However, it is often the case that the visual geometry is too complex or too un-smooth for collisions, which end up not working well. To solve this, the "-colonly" modifier exists, which will remove the mesh upon import and create a [StaticBody](class_staticbody) collision instead. This helps the visual mesh and actual collision to be separated.
 
-
-
- 
-
-
-
+#### Create Portals (-portal)
 
