@@ -48,6 +48,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 
 #### 3D Tutorials
 *  ~~[ Creating a 3D game](tutorial_3d)~~ 
+*  ~~[3D Sprites](tutorial_3d_sprites)~~ 
 *  ~~[Using the AnimationTreePlayer](tutorial_animation_tree)~~
 
 #### Math
