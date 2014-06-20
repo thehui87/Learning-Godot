@@ -31,17 +31,21 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Viewports](tutorial_viewports)
 *  [Multiple Screen Resolutions](tutorial_multires)
 *  [GUI Control Repositioning](tutorial_gui_repositioning)
+*  [Background Loading](Background loading)
+*  [Encrypting Save Games](tutorial_encrypting_savegames)
+*  [Internationalizing a Game (Multiple Languages)](tutorial_localization)
+*  ~~[Input Events & Actions](tutorial_input_events)~~
+*  ~~[GamePad/Keyboard-Controlled GUIs](tutorial_gp_gui)~~
+
+#### 2D Tutorials
 *  [Physics & Collision (2D)](tutorial_physics_2d)
 *  [Tile Map](tutorial_tilemap)
 *  [Kinematic Character (2D)](tutorial_kinematic_char)
-*  [Background Loading](Background loading)
-*  [Internationalizing a Game (Multiple Languages)](tutorial_localization)
-*  [Encrypting Save Games](tutorial_encrypting_savegames)
-*  ~~[Input Events & Actions](tutorial_input_events)~~
-*  ~~[Custom Drawing in Node2D/Control](tutorial_custom_draw_2d)~~
-*  ~~[GamePad/Keyboard-Controlled GUIs](tutorial_gp_gui)~~
-*  ~~[GUI Skinning](tutorial_gui_skinning)~~
 *  ~~[Cut-Out Animation](tutorial_cutout)~~
+*  ~~[GUI Skinning](tutorial_gui_skinning)~~
+*  ~~[Custom Drawing in Node2D/Control](tutorial_custom_draw_2d)~~
+
+#### 3D Tutorials
 *  ~~[ Creating a 3D game](tutorial_3d)~~ 
 *  ~~[Using the AnimationTreePlayer](tutorial_animation_tree)~~
 
