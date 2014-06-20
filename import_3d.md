@@ -26,7 +26,12 @@ That opens what is probably the biggest of all the import dialogs:
 
 Many options exist in there, so each section will be explained as follows:
 
+## Source & Target Paths
 
+To import, two options are needed. The first is a source .dae file (.dae stands for Collada. More import formats will eventually added, but Collada is the most complete open format as of this writing).
+A target folder needs to be provided, so the importer can import the scene there. The imported scene will have the same filename as the source one, except for the .scn extension, so make sure you pick good names when you export!
+
+The textures will be copied and converted. Textures in 3D applications are usually just PNG or JPG files. Godot will convert them to video memory texture compression format (s3tc, pvrtc, ericsson, etc) by default. Since the original textures, 3d file and textues are usually not needed, it's recommended you keep them outside the project. For some hints on how to do this the best way, you can check the [Version Control & Project Organization](tutorial_vercontrol) tutorial.
 
 
 
