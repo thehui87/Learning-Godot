@@ -85,7 +85,7 @@ When drawing points or lines, the size of them can be adjusted here per material
 Almost all of the parameters above can have a texture assigned to them. There are four options to where they can get their UV coordinates:
 
 * **UV Coordinates (UV Array)**: This is the regular UV coordinate array that was imported with the model.
-* **UV * UV XForm **: UV Coordinates multiplied by the UV Xform matrix.
+* **UV x UV XForm **: UV Coordinates multiplied by the UV Xform matrix.
 * **UV2 Coordinates **: Some imported models might have come with a second set of UV coordinates. These are common for detail textures or for baked light textures.
 * **Sphere**: Spherical coordinates (difference of the normal at the pixel by the camera normal).
 
