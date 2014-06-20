@@ -26,7 +26,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
  12.  [SceneMainLoop](tutorial_scene_main_loop)
  13.  [Singletons (Autoload)](tutorial_singletons)
 
-#### Intermediate
+#### General
 
 *  [Viewports](tutorial_viewports)
 *  [Multiple Screen Resolutions](tutorial_multires)
