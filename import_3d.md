@@ -103,5 +103,17 @@ These will only work for Mesh nodes, If the "-col" option is detected, a child s
 
 However, it is often the case that the visual geometry is too complex or too un-smooth for collisions, which end up not working well. To solve this, the "-colonly" modifier exists, which will remove the mesh upon import and create a [StaticBody](class_staticbody) collision instead. This helps the visual mesh and actual collision to be separated.
 
+#### Create Rooms (-room)
+
+This is used to create a room. As a general rule, any node that is a child of this node will be considered inside the room (including portals).
+
+There are two ways in which this modifier can be used. The first is using a Dummy/Empty node in the 3D app with the "-room" tag. For this to work, the "interior" of the room must be closed (geometry of the childrens should contain walls, roof, floor, etc and the only holes to the outside should be covered with portals). The importer will then create a simplified version of the geometry for the room. 
+
+The second way is to use the "-room" modifier on a mesh node. This will use the mesh as the base for the BSP tree that contains the room bounds. Make sure that the mesh shape is **closed**, all normals **point outside** and that the geometry is **not self-intersecting**, otherwise the bounds may be computed wrong (BSP Trees are too picky and difficult to work with, which is why they are barely used anymore..).
+
+Anyway, the room will need portals, which are described next.
+
 #### Create Portals (-portal)
+
+
 
