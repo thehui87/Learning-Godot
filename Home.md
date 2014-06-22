@@ -51,8 +51,8 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Materials](tutorial_materials) 
 *  [Fixed Materials](tutorial_fixed_materials) 
 *  [Shader Materials](tutorial_shader_materials) 
-*  ~~[Lighting](tutorial_lighting)~~ 
-*  ~~[Shadow Mapping](tutorial_shadow_mapping)~~ 
+*  [Lighting](tutorial_lighting) 
+*  [Shadow Mapping](tutorial_shadow_mapping)
 *  ~~[High Dynamic Range](tutorial_hdr)~~ 
 *  ~~[Light Baking](tutorial_light_baking)~~ 
 *  ~~[3D Sprites](tutorial_3d_sprites)~~ 
