@@ -61,7 +61,7 @@ Regular shader materials allow custom lighting code. Fixed materials come with f
 *  **Velvet**: This is similar to Lambert, but adds light scattering in the edges. It's useful for leathers and some types of metals.
 * **Toon**: Standard toon shading with a coverage parameter. The specular component also becomes toon-ized.
 
-<p align="center"><img src="images/fixed_material_shaders.png"></p>
+<p align="center"><img src="images/fixed_material_shader.png"></p>
 
 #### Detail & Detail Mix
 
