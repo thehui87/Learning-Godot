@@ -24,6 +24,7 @@ Each one has a specific function:
 * **Energy**: This value is a multiplier for the light, it's specially useful for HDR (See [HDR Tutorial](tutorial_hdr) ) and for Spot and Omni lights, because it can create very bright spots near the emissor.
 * **Diffuse and Specular**: These light values get multiplied by the material light and diffuse colors, so a white value does not mean that light will be white, but that the original color will be kept.
 * **Operator**: It is possible to make some lights negative for a darkening effect.
+* **Projector**: Lights can project a texture for the diffuse light (currently only supported in Spot light).
 
 ### Directional Light
 
