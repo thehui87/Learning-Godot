@@ -15,7 +15,7 @@ The emission color is a material property, as seen in the previous tutorials abo
 
 As mentioned before, there are three types of light nodes: Directional, Ambient and Spot. Each has different uses and will be described in detail below, but firs let's take a look at the common parameters for lights:
 
-<p align="center"><img src="images/light_directional.png"></p>
+<p align="center"><img src="images/light_params.png"></p>
 
 Each one has a specific function:
 
