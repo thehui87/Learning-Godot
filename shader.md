@@ -231,6 +231,19 @@ Material that glows from red to white:
 DIFFUSE = vec3(1,0,0) + vec(1,1,1)*mod(TIME,1.0);
 
 ```
+
+Standard Blinn Lighting Shader
+
+```c
+float NdotL = max(0.0,dot( NORMAL, LIGHT_DIR ));
+vec3 half_vec = normalize(LIGHT_DIR + EYE_VEC);
+float eye_light = max(dot(NORMAL, half_vec),0.0);
+LIGHT = LIGHT_DIFFUSE * DIFFUSE * NdotL;
+if (NdotL > 0.0) {
+	LIGHT+=LIGHT_SPECULAR * SPECULAR * pow( eye_light, SPECULAR_EXP );
+};
+
+```
 	
 ###  Notes
 	
