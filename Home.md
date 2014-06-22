@@ -57,6 +57,10 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  ~~[Light Baking](tutorial_light_baking)~~ 
 *  ~~[3D Sprites](tutorial_3d_sprites)~~ 
 *  ~~[Using the AnimationTreePlayer](tutorial_animation_tree)~~
+*  ~~[Portals & Rooms](tutorial_portals_rooms)~~ 
+*  ~~[Vehicle](tutorial_vehicle)~~ 
+*  ~~[GridMap (3D TileMap)](tutorial_grid_map)~~ 
+*  ~~[Spatial Audio](tutorial_spatial_audio)~~ 
 
 #### Math
 
