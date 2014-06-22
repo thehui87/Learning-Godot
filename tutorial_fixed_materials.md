@@ -52,6 +52,17 @@ Below is an example of how they interact:
 
 <p align="center"><img src="images/fixed_material_colors.png"></p>
 
+#### Shader & Shader Param
+
+Regular shader materials allow custom lighting code. Fixed materials come with four predefined shader types:
+
+*  **Lambert**: The standard diffuse light, where the amount of light is proportional to the angle with the light emissor.
+*  **Wrap**: A variation on Lambert, where the "coverage" of the light can be changed. This is useful for many types of materials such as wood, clay, hair, etc.
+*  **Velvet**: This is similar to Lambert, but adds light scattering in the edges. It's useful for leathers and some types of metals.
+* **Toon**: Standard toon shading with a coverage parameter. The specular component also becomes toon-ized.
+
+<p align="center"><img src="images/fixed_material_shaders.png"></p>
+
 #### Detail & Detail Mix
 
 Detail is a second diffuse texture which can be mixed with the first one (more on textures later!). Detail blend and mix control how these are added together, here's an example of what detail textures are for:
