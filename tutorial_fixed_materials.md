@@ -52,6 +52,17 @@ Below is an example of how they interact:
 
 <p align="center"><img src="images/fixed_material_colors.png"></p>
 
+#### Shader & Shader Param
+
+Regular shader materials allow custom lighting code. Fixed materials come with four predefined shader types:
+
+*  **Lambert**: The standard diffuse light, where the amount of light is proportional to the angle with the light emissor.
+*  **Wrap**: A variation on Lambert, where the "coverage" of the light can be changed. This is useful for many types of materials such as wood, clay, hair, etc.
+*  **Velvet**: This is similar to Lambert, but adds light scattering in the edges. It's useful for leathers and some types of metals.
+* **Toon**: Standard toon shading with a coverage parameter. The specular component also becomes toon-ized.
+
+<p align="center"><img src="images/fixed_material_shaders.png"></p>
+
 #### Detail & Detail Mix
 
 Detail is a second diffuse texture which can be mixed with the first one (more on textures later!). Detail blend and mix control how these are added together, here's an example of what detail textures are for:
@@ -82,4 +93,11 @@ When drawing points or lines, the size of them can be adjusted here per material
 
 ### Textures
 
+Almost all of the parameters above can have a texture assigned to them. There are four options to where they can get their UV coordinates:
 
+* **UV Coordinates (UV Array)**: This is the regular UV coordinate array that was imported with the model.
+* **UV x UV XForm**: UV Coordinates multiplied by the UV Xform matrix.
+* **UV2 Coordinates**: Some imported models might have come with a second set of UV coordinates. These are common for detail textures or for baked light textures.
+* **Sphere**: Spherical coordinates (difference of the normal at the pixel by the camera normal).
+
+The value of every pixel of the texture is multiplied by the original parameter. This means that if a texture is loaded for diffuse, it will be multiplied by the color of the diffuse color parameter. Same applies to all the others except for specular exponent, which is replaced.
