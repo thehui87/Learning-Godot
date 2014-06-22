@@ -134,6 +134,7 @@ Several Built-in functions are provided for convenience, listed as follows:
 | vec_type **mix**( vec_type a,vec_type b, float c ) | Linear Interpolate |
 | vec_type **mix**( vec_type a,vec_type b, vec_type c ) | Linear Interpolate (Vector Coef.)|
 | vec_type **step**( vec_type a,vec_type b) | ` a[i] < b[i] ? 0.0 : 1.0`| 
+| vec_type **smoothstep**( vec_type a,vec_type b,vec_type c) |  | 
 | float **length**( vec_type ) | Vector Length |
 | float **distance**( vec_type, vec_type ) | Distance between vector. |
 | float **dot**( vec_type, vec_type ) | Dot Product |
@@ -192,7 +193,24 @@ Depending on the shader type, several built-in variables are available, listed a
 | out float **SPEC_EXP** | Specular Exponent (Fragment Version) |
 | out float **GLOW** | Glow |
 | out float **DISCARD** | Discard (any write > 0.5 discards the pixel) |
-	
+
+#####  Material - LightShader
+
+| Variable | Description |
+| -------- | -------- |
+| const vec3 **NORMAL** | View-Space normal |
+| const vec3 **LIGHT_DIR** | View-Space Light Direction |
+| const vec3 **EYE_VEC** | View-Space Eye-Point Vector |
+| const vec3 **DIFFUSE** | Material Diffuse Color |
+| const vec3 **LIGHT_DIFFUSE** | Light Diffuse Color |
+| const vec3 **SPECULAR** | Material Specular Color |
+| const vec3 **LIGHT_SPECULAR** | Light Specular Color |
+| const float **SPECULAR_EXP** | Specular Exponent |
+| const vec1 **SHADE_PARAM** | Generic Shade Parameter |
+| const vec2 **POINT_COORD** | Current Pixel Coordinate |
+| out vec2 **LIGHT**| Resulting Light |
+| const float **TIME**| Time (in seconds) |
+
 ###  Examples
 	
 Material that reads a texture, a color and multiples them, fragment program:
