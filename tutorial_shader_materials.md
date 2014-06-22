@@ -24,3 +24,21 @@ Edit the newly created shader, and the shader editor will open:
 
 <p align="center"><img src="images/shader_material_editor.png"></p>
 
+There are three code tabs open, the first is for the vertex shader, the second for the fragment and the third for the lighting. The shader language is documented in it's [own section](shader) so a small example will be presented next.
+
+Create a very simple fragment shader that writes a color:
+
+```c++
+uniform color col;
+DIFFUSE = col.rgb;
+```
+Code changes take place in real-time. If the code is modified, it will be instantly recompiled and the object will be updated. If a typo is made, the editor will notify of the compilation failure:
+
+<p align="center"><img src="images/shader_material_typo.png"></p>
+
+Finally, go back and edit the material, and the exported uniform will be instantly visible:
+
+<p align="center"><img src="images/shader_material_col.png"></p>
+
+This allows to very quickly create custom, complex materials for every type of object.
+
