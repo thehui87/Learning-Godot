@@ -50,3 +50,11 @@ This makes them considerably inconvenient to tweak for artists, so Godot simulat
 Spot lights are similar to Omni lights, except they only operate between a given angle (or "cutoff"). They are useful to simulate flashlights, car lights, etc. This kind of light is also attenuated towards the opposite direction it points to.
 
 <p align="center"><img src="images/light_spot.png"></p>
+
+## Ambient Light
+
+Ambient light can be found in the properties of a WorldEnvironment (remember only one of such can be instanced per scene). Ambient light consists of a uniform light and energy. This light is applied the same to every single pixel of the rendered scene, except to objects that used baked light.
+
+## Baked Light
+
+Baked Light stands for pre-computed ambient light. It can serve multiple purposes, such as baking light emissors that are not going to be used in real-time, and baking light bounces from real-time lights to add more realism to a scene (see [Baked Light](tutorial_baked_light) tutorial for more information).
