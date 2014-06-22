@@ -34,4 +34,19 @@ This is the most common type of light and represents the sun. It is also the che
 
 Basically what faces the light is lit, what doesn't is dark. Most lights have specific parameters but directional lights are pretty simple in nature so they don't.
 
+### Omni Light
 
+Omni light is a point that throws light all around it up to a given radius (distance) that can be controlled by the user. The light attenuates with the distance and reaches 0 at the edge. It represents lamps or any other light source that comes from a point. 
+
+<p align="center"><img src="images/light_omni.png"></p>
+
+The attenuation curve for these kind of lights in nature is computed with an inverse-quadratic function that never reaches zero and has almost infinitely large values near the emissor. 
+This makes them considerably inconvenient to tweak for artists, so Godot simulates them with an artist-controlled exponential curve instead.
+
+<p align="center"><img src="images/light_attenuation.png"></p>
+
+### Spot Light
+
+Spot lights are similar to Omni lights, except they only operate between a given angle (or "cutoff"). They are useful to simulate flashlights, car lights, etc. This kind of light is also attenuated towards the opposite direction it points to.
+
+<p align="center"><img src="images/light_spot.png"></p>
