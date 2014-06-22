@@ -16,3 +16,11 @@ Traditionally, most engines will ask you to learn GLSL, HLSL or CG, which are pr
 
 ## Creating a ShaderMaterial
 
+Create a new ShaderMaterial in some object of your choice. Go to the "Shader" property, then create a new "Shader":
+
+<p align="center"><img src="images/shader_material_create.png"></p>
+
+Edit the newly created shader, and the shader editor will open:
+
+<p align="center"><img src="images/shader_material_editor.png"></p>
+
