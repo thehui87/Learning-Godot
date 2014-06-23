@@ -27,6 +27,8 @@ An alternative technique is PSM (Perspective Shadow Mapping). This technique is 
 
 Omnidirectional lights are also troubesome. How to represent 360 degrees of light with a single texture? There are two alternatives, the first one is to use DPSM (Dual Paraboloid Shadow Mapping). This technique is fast, but it requires DISCARD to be used (which makes it not very usable on mobile). DPSM can also look rather bad if the geometry is not tesselated enough, so more vertices might be neccesary if it doesnt'r look tight. The second option is to simply not use a shadow map, and use a shadow cubemap. This is faster, but requires six passes to render all directions and is not supported on the current (GLES2) renderer. 
 
+<p align="center"><img src="images/shadow_omni.png"></p>
+
 As few considerations when using DPSM shadow maps:
 
 *  Keep Slope-Scale on 0.
@@ -37,6 +39,8 @@ As few considerations when using DPSM shadow maps:
 ### Spot Light Shadows
 
 Spot light shadows are generally the simpler, just needing a single texture and no special techniques.
+
+<p align="center"><img src="images/shadow_spot.png"></p>
 
 ## Shadows Parameters
 
