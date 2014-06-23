@@ -35,6 +35,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  [Background Loading](Background loading)
 *  [Encrypting Save Games](tutorial_encrypting_savegames)
 *  [Internationalizing a Game (Multiple Languages)](tutorial_localization)
+*  [Handling Quit Request](tutorial_quit)
 *  ~~[Input Events & Actions](tutorial_input_events)~~
 *  ~~[GamePad/Keyboard-Controlled GUIs](tutorial_gp_gui)~~
 
