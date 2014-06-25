@@ -17,8 +17,21 @@ Except the scene is more contrasted, because there is a higher light range in pl
 
 Additionally, it is possible to set a threshold value to send to the glow buffer depending on the pixel luminance. This allows for more realistic light bleeding effects in the scene.
 
-## Work Pipeline
+## Linear Color Space
 
+The problem with this technique is that computer monitors apply a gamma curve to adapt better to the way the human eye sees. Artists create their art on the screen too, so their art has an implicit gamma curve applied to it. 
+The color space where images created in computer monitors exist is called "sRGB". Every visual content that people has on their computers or downloads from the internet (such as pictures, movies, porn, etc) is in this colorspace.
+
+The mathematics of HDR require that we multiply the scene by different values to adjust the luminance and exposure to different light ranges, and this curve gets in the way as we need colors in linear space for this.
+
+## Linear Color Space & Asset Pipeline
+
+
+
+
+
+
+<p align="center"><img src="images/hdr_srgb.png"></p>
 
 ## Parameters of HDR
 
@@ -60,5 +73,4 @@ Upper bound value of light for the scene at which the tonemapper stops working. 
 ### Exposure Adjustment Speed
 
 Auto-exposure will change slowly and will take a while to adjust (like in real cameras). Bigger values means faster adjustment.
-
 
