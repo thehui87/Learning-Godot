@@ -17,5 +17,48 @@ Except the scene is more contrasted, because there is a higher light range in pl
 
 Additionally, it is possible to set a threshold value to send to the glow buffer depending on the pixel luminance. This allows for more realistic light bleeding effects in the scene.
 
+## Work Pipeline
+
+
 ## Parameters of HDR
+
+HDR is found in the [Environment](class_environment) resource. These are found most of the time inside a [WorldEnvironment](class_worldenvironment) node, or set in a camera. There are many parameters for HDR:
+
+### ToneMapper
+
+The ToneMapper is the heart of the algorithm. Many options for tonemappers are provided:
+
+* Linear: Simplest tonemapper. It does it's job for adjusting scene brightness, but if the differences in light are too big, it will cause colors to be too saturated.
+* Log: Similar to linear, but not as extreme.
+* Reinhardt: Classical tonemapper (modified so it will not desaturate as much)
+* ReinhardtAutoWhite: Same as above, but uses the max scene luminance to adjust the white value.
+
+### Exposure
+
+The same exposure parameter as in real cameras. Controls how much light enters the camera. Higher values will result in a brighter scene and lower values will result in a darker scene.
+
+### White
+
+Maximum value of white.
+
+### Glow Threshold
+
+Determine above which value (from 0 to 1 after the scene is tonemapped), light will start bleeding.
+
+### Glow Scale
+
+Determine how much light will bleed.
+
+### Min Luminance
+
+Lower bound value of light for the scene at which the tonemapper stops working. This allows dark scenes to remain dark.
+
+### Max Luminance
+
+Upper bound value of light for the scene at which the tonemapper stops working. This allows bright scenes to remain saturated.
+
+### Exposure Adjustment Speed
+
+Auto-exposure will change slowly and will take a while to adjust (like in real cameras). Bigger values means faster adjustment.
+
 
