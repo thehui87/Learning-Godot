@@ -22,7 +22,7 @@ Additionally, it is possible to set a threshold value to send to the glow buffer
 The problem with this technique is that computer monitors apply a gamma curve to adapt better to the way the human eye sees. Artists create their art on the screen too, so their art has an implicit gamma curve applied to it. 
 The color space where images created in computer monitors exist is called "sRGB". Every visual content that people has on their computers or downloads from the internet (such as pictures, movies, porn, etc) is in this colorspace.
 
-<p align="center"><img src="images/hdr_srgb.png"></p>
+<p align="center"><img src="images/hdr_gamma.png"></p>
 
 The mathematics of HDR require that we multiply the scene by different values to adjust the luminance and exposure to different light ranges, and this curve gets in the way as we need colors in linear space for this.
 
@@ -50,6 +50,8 @@ Keep in mind that sRGB -> Linear and Linear -> sRGB conversions must always be *
 ## Parameters of HDR
 
 HDR is found in the [Environment](class_environment) resource. These are found most of the time inside a [WorldEnvironment](class_worldenvironment) node, or set in a camera. There are many parameters for HDR:
+
+<p align="center"><img src="images/hdr_parameters.png"></p>
 
 ### ToneMapper
 
@@ -87,4 +89,3 @@ Upper bound value of light for the scene at which the tonemapper stops working. 
 ### Exposure Adjustment Speed
 
 Auto-exposure will change slowly and will take a while to adjust (like in real cameras). Bigger values means faster adjustment.
-
