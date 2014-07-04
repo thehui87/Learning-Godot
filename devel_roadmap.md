@@ -2,34 +2,34 @@
 
 These are just tentative to have a rough idea of the development plan. Ideas and helping set better priorities are always welcome.
 
-### Godot 1.0 (stable) (~June 2014)
+**Update (June 2014)** Some changes in the roadmap happened due to mostly our internal development schedule at Okam (features Juan needs to do for our games in course), basically 1.0 will have a few more features taken from 1.1 and will come out a little later.
 
-* No new features (unless small and useful)
+### Godot 1.0 (stable) (~July/August 2014)
+
+* Lightmapping
+* More Shaders (Lighting & Post Processing)
+* 2D Deforms and Skeletons
+* Live Scene Editing
+* Navmesh support
 * Focus on Stability and Usability
 * Complete Documentation (how much? time should tell)
 * First stable, versioned release.
 * Easier deployer for iOS and NaCL
 
-### Godot 1.1 (~August-2014)
+### Godot 1.1 (~September-2014)
 
-* Lightmapping
 * Reflections (using reflection objects)
 * Light Probes
-* More Shaders (2D, Lighting, Post-Processing)
-* Masks in 2D Engine
-* 2D deforms and skeletons
-* FBX Import (blender did it..)
-* Live scene editing (should be rather easy)
-* Navmesh support
+* 2D Shaders
+* FBX Import (ASSIMP? or blender did it..)
+* Windows Universal Binary support (API should exist now?)
 
-### Godot 1.2 (~November 2014)
+### Godot 1.2 (~December 2014)
 
 * OpenGL ES 3.0 backend
 * SSAO, LPV, and more modern visual effects.
-* Windows Universal Binary support (API still does not exist AFAIK)
 
 ### Future
 
 * Add optional typing to GDScript
-* Make viewports more flexible
 * Ideas?
