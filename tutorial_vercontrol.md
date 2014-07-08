@@ -81,3 +81,6 @@ game/gui/options/options.scn
 
 This model or similar models allows projects to grow to really large sizes and still be completely manageable. Notice that everything is based on parts of the game that can be named or described, like the settings screen or the valley. Since everything in Godot is done with scenes, and everything that can be named or described can be a scene, this workflow is very smooth and easygoing.
 
+## Cache Files
+
+Godot uses a hidden file called ".fscache" at the root of the project. On it, it caches project files and is used to quickly know when one is modified. Make sure to **not commit this file** to git or svn, as it contains local information and might confuse another editor instance in another computer.
