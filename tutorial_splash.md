@@ -6,7 +6,7 @@ This will be a simple tutorial to cement the basic idea of how the GUI subsystem
 
 Following is a file with the assets that will be used:
 
-<p align="center"><img src="robisplash_assets.zip|}}
+[robisplash_assets.zip](media/robisplash_assets.zip)
 
 
 ### Setting Up
