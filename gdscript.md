@@ -248,9 +248,9 @@ Arrays are allocated linearly in memory, so they are fast, but very large arrays
 Arrays can be appended using the + operator:
 
 ```python
-arr=[1,2,3]+[4,5,6]
+var arr=[1,2,3]+[4,5,6]
 #is the same as
-arr[1,2,3,4,5,6]
+var arr=[1,2,3,4,5,6]
 ```
 
 There are specialized arrays for some built-in datatypes which do not suffer from this and use  less memory, but they are atomic and generally run a little slower, so they are only justified for very large amount of data: [RawArraw](class_rawarray), [IntArray](class_intarray), [FloatArray](class_floatarray), [StringArray](class_stringarray), [Vector2Array](class_vector2array), [Vector3Array](class_vector3array), [ColorArray](class_colorarray).
