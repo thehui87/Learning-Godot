@@ -28,6 +28,16 @@ Making commercial games on mobile devices very often requires access to specific
 
 These APIs however (such as ADMob, Facebook, Play Services, etc) are in most of the cases available as REST, which enables them to function in all platforms with a single implementation, by just using HTTP, SSL and JSON (all well supported by Godot). 
 
+## Do you know about Signing?
+
+### Jarsigner
+
+We would like to replace the dependency on jarsigner by our own signing process for Android, this way we can remove the dependency on JDK, but we don't completely understand how this signing process works, so help is appreciated!
+
+### Codesign
+
+Generating our own IPAs seems easy and there are tools to install them on iOS devices even under Linux or Windows, but we don't know much how the signature process works. Can you help us implement this on the iOS exporter, so Godot can do one click deploy to iOS devices under any OS?
+
 
 ## Assets
 
