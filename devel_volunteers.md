@@ -22,13 +22,7 @@ The EMScripten backend (javascript) generally works well in Firefox, Chrome and 
 
 Some features do not work in X11, notably fullscreen support, or setting a icon (in a way that will work in Ubuntu). A PulseAudio backend might be needed too, as some users have problems with ALSA backend while PulseAudio runs. If you have experience with this platform help is appreciated! 
 
-## REST APIs
-
-Making commercial games on mobile devices very often requires access to specific platform APIs such as ADs, analytcs, payments, monetization, install tracking, leaderboards, social networks, etc. From the most hippie-indie to the most unscrupulous-commercial of games always needs some interaction with these. Integrating these APIs to Godot is often very annoying because it requires to integrate SDKs written in different languages (Java/ObjC) to each platform and making custom binaries or templates. 
-
-These APIs however (such as ADMob, Facebook, Play Services, etc) are in most of the cases available as REST, which enables them to function in all platforms with a single implementation, by just using HTTP, SSL and JSON (all well supported by Godot). 
-
-## Do you know about Signing?
+## Signing
 
 ### Jarsigner
 
@@ -38,6 +32,13 @@ We would like to replace the dependency on jarsigner by our own signing process 
 
 Generating our own IPAs seems easy and there are tools to install them on iOS devices even under Linux or Windows, but we don't know much how the signature process works. Can you help us implement this on the iOS exporter, so Godot can do one click deploy to iOS devices under any OS?
 
+
+
+## REST APIs
+
+Making commercial games on mobile devices very often requires access to specific platform APIs such as ADs, analytcs, payments, monetization, install tracking, leaderboards, social networks, etc. From the most hippie-indie to the most unscrupulous-commercial of games always needs some interaction with these. Integrating these APIs to Godot is often very annoying because it requires to integrate SDKs written in different languages (Java/ObjC) to each platform and making custom binaries or templates. 
+
+These APIs however (such as ADMob, Facebook, Play Services, etc) are in most of the cases available as REST, which enables them to function in all platforms with a single implementation, by just using HTTP, SSL and JSON (all well supported by Godot). 
 
 ## Assets
 
