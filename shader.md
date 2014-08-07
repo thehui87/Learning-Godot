@@ -154,9 +154,13 @@ Depending on the shader type, several built-in variables are available, listed a
 	
 | Variable | Description |
 | ------ | ------- |
-| vec3 **VERTEX** | Pre-Transformed Vertex | 
-| vec3 **NORMAL** | Pre-Transformed Normal | 
-| vec3 **TANGENT** | Pre-Transformed Tangent | 
+| const vec3 **SRC_VERTEX** | Model-Space Vertex |
+| const vec3 **SRC_NORMAL** | Model-Space Normal |
+| const vec3 **SRC_TANGENT** | Model-Space Tangent |
+| vec3 **VERTEX** | View-Space Vertex | 
+| vec3 **NORMAL** | View-Space Normal | 
+| vec3 **TANGENT** | View-Space Tangent | 
+| vec3 **BINORMAL** | View-Space Binormal | 
 | vec2 **UV** | UV | 
 | vec2 **UV2** | UV2 | 
 | color **COLOR**  | Vertex Color | 
@@ -167,6 +171,7 @@ Depending on the shader type, several built-in variables are available, listed a
 | const mat4 **WORLD_MATRIX** | Object World Matrix | 
 | const mat4 **INV_CAMERA_MATRIX** | Inverse Camera Matrix | 
 | const mat4 **PROJECTION_MATRIX** | Projection Matrix | 
+| const mat4 **MODELVIEW_MATRIX** | (InvCamera * Projection) | 
 | const float **INSTANCE_ID** | Instance ID (for multimesh)| 
 | const float **TIME** | Time (in seconds) | 
 
