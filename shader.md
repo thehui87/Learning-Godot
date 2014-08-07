@@ -157,6 +157,7 @@ Depending on the shader type, several built-in variables are available, listed a
 | const vec3 **SRC_VERTEX** | Model-Space Vertex |
 | const vec3 **SRC_NORMAL** | Model-Space Normal |
 | const vec3 **SRC_TANGENT** | Model-Space Tangent |
+| const float **SRC_BINORMALF** | Direction to Compute Binormal |
 | vec3 **VERTEX** | View-Space Vertex | 
 | vec3 **NORMAL** | View-Space Normal | 
 | vec3 **TANGENT** | View-Space Tangent | 
