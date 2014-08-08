@@ -134,6 +134,11 @@ To connect to rooms, simply make two identical portals for both rooms and place 
 
 The rest of the tags in this section should be rather obvious, or will be documented/changed in the future.
 
+## Double-Sidedness
+
+Collada and other formats support specifying the double-sidedness of the geometry (in other words, when not double-sided, back-faces are not drawn). Godot supports this option per Material, not per Geometry. 
+When exporting from 3D DCCs that work with per-object double-sidedness (such as Blender of Maya), make sure that the double sided objects do not share a material with the single sided ones or the importer will not be able to discern.
+
 ## Animation Options
 
 Some things to keep in mind when importing animations. 3D DCCs allow animating with curves for every x,y,z component, doing IK constraints and other stuff. When imported for real-time, animations are sampled (at small intervals) so all this information is lost. Sampled animations are fast to process, but can use considerable amounts of memory. 
@@ -184,4 +189,3 @@ In general, if the user deletes anything from the imported scene (node, mesh, ma
 #### Fresh Re-Import
 
 It can also happen that the source asset changed beyond recognition and a full fresh re-import is desired. If so, simply re-open the 3d scene import dialog from the Import -> Re-Import menu and perform re-import.
-
