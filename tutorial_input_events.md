@@ -1,3 +1,4 @@
 -explain input event
+-explain input editor
 -explain as actions
 -explain InputMap and how to map to user-events.
