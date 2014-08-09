@@ -40,7 +40,7 @@ The default options are often enough to export, so tweaking them is not necessar
 
 <p align="center"><img src="images/export_error.png"></p>
 
-At thas time, the user is expected to come back to the wiki and follow instructions on how to properly set up that platform.
+At that time, the user is expected to come back to the wiki and follow instructions on how to properly set up that platform.
 
 ### Export Templates
 
