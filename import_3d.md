@@ -14,6 +14,22 @@ This allows for some interesting features:
 
 This is achieved by using a very simple language tag that will be explained in detail later. 
 
+## Exporting DAE Files
+
+### Why not FBX?
+
+Most game engines use the FBX format for importing 3D scenes, which is definitely one of the most standardized in the industry. However, this format requires the use of a closed library from Autodesk which is distributed with a more restrictive licensing terms than Godot. The plan is, sometime in the future, to implement an external conversion binary, but meanwhile FBX is not really supported.
+
+### Exporting DAE files from Maya and 3DS Max
+
+Autodesk added built-in collada support to Maya and 3DS Max, but It's really broken and should not be used. The best way to export this format is by using the [OpenCollada](https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools) plugins. They work really well, although they are not always up-to date with the latest version of the software.
+
+### Exporting DAE files from Blender
+
+Blender also has built-in collada support, but It's really broken and should not be used either.
+Godot provides a [Python Plugin](https://github.com/okamstudio/godot/tree/master/tools/export/blender25) that will do a much better job at exporting the scenes.
+
+
 ## The Import Process
 
 Import process begins with the 3D scene import menu:
