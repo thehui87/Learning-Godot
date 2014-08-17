@@ -30,6 +30,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 
 *  [Viewports](tutorial_viewports)
 *  [Multiple Screen Resolutions](tutorial_multires)
+*  [Mouse & Input Coordinates](tutorial_mouse_coords)
 *  [Version Control & Project Organization](tutorial_vercontrol)
 *  [GUI Control Repositioning](tutorial_gui_repositioning)
 *  [Background Loading](Background loading)
@@ -128,4 +129,3 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 # Advanced
 
 [Advanced](advanced) Advanced Topics (C++ Programming, File Formats, Porting, etc).
-
