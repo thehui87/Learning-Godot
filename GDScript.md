@@ -539,4 +539,75 @@ var fr = funcref(instance, "funcname")  # create a function ref
 fr.exec(args)
 ```
 
+##  Coroutines
+
+GDScript has some support for coroutines via the yield() built-in function. The way it works is very simple: Calling "yield()" will immediately return from the current function, with the current frozen state of the same function as the return value. Calling "resume" on this resulting object will continue execution and return whathever the function returns. Once resumed the state object becomes invalid. Here is an example:
+
+```python
+
+func myfunc():
+
+   print("hello")
+   yield()
+   print("world")
+
+func _ready():
+
+    var y = myfunc()
+    #function state saved in 'y'
+    y.resume()
+    # 'y' resumed and is now an invalid state
+
+```
+
+Will print:
+
+```
+hello
+world
+```
+
+It is also possible to pass values between yield() and resume(), for example:
+
+```python
+
+func myfunc():
+
+   print("hello")
+   print( yield() )
+   return "cheers!"
+
+func _ready():
+
+    var y = myfunc()
+    #function state saved in 'y'
+    print( y.resume("world") )
+    # 'y' resumed and is now an invalid state
+
+```
+
+Will print:
+
+```
+
+hello
+world
+cheers!
+
+```
+
+##  Coroutines & Signals
+
+The real strength of using yield() is when combined with signals (if you haven't read about this yet, come back after a few tutorials). yield() can accept two parameters, an object and a signal. When the signal is activated, execution will return. Here are some examples:
+
+```python
+
+#resume execution the next frame
+yield( get_scene(), "idle_frame" )
+
+#resume execution when animation is done playing:
+yield( get_node("AnimationPlayer"), "finished" )
+
+```
+
  --- //[Juan Linietsky](reduzio@gmail.com) 2013/11/10 18:09//
