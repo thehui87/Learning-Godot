@@ -27,6 +27,9 @@ C and C++ can be perfectly used to program Godot (check the advanced tutorials s
 
 Of course, the biggest benefit of using a statically typed language is performance, so using C++ is recommended only if an important bottleneck is found that can't be overcomed with scripting or engine tools. This is, however, rare as most tasks in a game (game logic, user interfaces, AI, etc) are not performance intensive and the engine takes care of the heavy workloads via it's tools and components.
 
+However, if you have never used a scripting language (many users are wary about GDScript because they didn't), with more reason give it a chance. The simplicity and ease of use of scripting languages are such a huge advantage that it far outweighs the fears of potential performance issues. It's simply much more efficient to write the whole game using scripting, and only add a C++ component when a performance issue can't be solved (which, again, is rare).
+
+
 #### Statically Typed+Runtime Languages:
 
 Static compiled languages with a runtime (Such C#, Java or Dart) are often a nice alternative because they are fast (static typing will always be much faster, even if interpreted) and don't have most of the hassles associated with C++. It is a workflow with different pros/cons that could be added to Godot but, unfortunately, we haven't been able to find a run-time (language, tools and library) that meets the following requirements:
