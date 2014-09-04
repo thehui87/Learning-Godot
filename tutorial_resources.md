@@ -9,7 +9,7 @@ Where *Nodes* focus on behaviors, such as drawing a sprite, drawing a 3D model, 
 
 Examples of resources are [Texture](class_texture), [Script](class_script), [Mesh](class_mesh), [Animation](class_animation), [Sample](class_sample), [AudioStream](class_audiostream), [Font](class_font), [Translation](class_translation), etc.
 
-When Godot saves o loads (from disk) a scene (.scn or .xml), an image (png, jpg), a scrit (.gd) or pretty much anything, that file is considered a resource.
+When Godot saves or loads (from disk) a scene (.scn or .xml), an image (png, jpg), a scrit (.gd) or pretty much anything, that file is considered a resource.
 
 When a resource is loaded from disk, **it is always loaded once**. That means, if there is a copy of that resource already loaded in memory, trying to load the resource again will just return the same copy again and again. This corresponds with the fact that resources are just data containers, so there is no need to have them duplicated.
 
