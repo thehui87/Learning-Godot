@@ -600,7 +600,7 @@ cheers!
 
 ##  Coroutines & Signals
 
-The real strength of using yield() is when combined with signals (if you haven't read about this yet, come back after a few tutorials). yield() can accept two parameters, an object and a signal. When the signal is activated, execution will return. Here are some examples:
+The real strength of using yield() is when combined with signals (if you haven't heard about signals yet, come back after a few tutorials). yield() can accept two parameters, an object and a signal. When the signal is activated, execution will return. Here are some examples:
 
 ```python
 
