@@ -555,6 +555,7 @@ func _ready():
 
     var y = myfunc()
     #function state saved in 'y'
+    print("my dear")
     y.resume()
     # 'y' resumed and is now an invalid state
 
@@ -564,6 +565,7 @@ Will print:
 
 ```
 hello
+my dear
 world
 ```
 
