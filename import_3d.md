@@ -63,6 +63,8 @@ This section contains many options to change the way import workflow works. Some
 
 This means that the object names in the 3D DCC need to have those options appended at the end for the importer to tell what they are. When imported, Godot will convert them to what they are meant to be.
 
+**Note:** Maya users must use "_" (underscore) instead of "-" (minus).
+
 Here is an example of how a scene in the 3D dcc looks (using blender), and how it is imported to Godot:
 
 <p align="center"><img src="images/3dimp_blender.png"></p>
