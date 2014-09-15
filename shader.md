@@ -191,6 +191,7 @@ Depending on the shader type, several built-in variables are available, listed a
 | const vec4 **VAR1** | Varying 1 |
 | const vec4 **VAR2** | Varying 2 |
 | const vec2 **SCREEN_TEXEL_SIZE**| Size of Screen Pixel (for texscreen) |
+| const vec2 **SCREEN_UV**| Screen Texture Coordinate (for using with texscreen) |
 | const float **TIME**| Time (in seconds) |
 | out vec3 **DIFFUSE** | Diffuse Color |
 | out vec4 **DIFFUSE_ALPHA** | Diffuse Color with Alpha |
