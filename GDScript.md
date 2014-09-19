@@ -160,71 +160,71 @@ A sequence of characters in unicode format. Strings can contain the standard C e
 
 ##   Vector Built-In Types 
 
-###   Vector2/Size2 
+###   [Vector2](class_vector2)
 
 2D vector type containing x and y fields. Can alternatively access fields as width and height for readability. Can also be accessed as array.
 
-###   Rect2 
+###   [Rect2](class_rect2)
 
 2D Rectangle type containing two vectors fields: “pos” and "size". Alternatively contains an “end” field which is “pos+size”.
 
-###   Vector3 
+###   [Vector3](class_vector3) 
 
 3D vector type containing x, y and z fields. This can also be accessed as an array.
 
-###   Matrix32 
+###   [Matrix32](class_matrix32)
 
 3x2 matrix used for 2D transforms.
 
-###   Plane 
+###   [Plane](class_plane) 
 
 3D Plane type in normalized form that contains a “normal” vector field and a “d” scalar distance.
 
-###   Quat 
+###   [Quat](class_quat)
 
 Quaternion is a datatype used for representing a 3D rotation. It’s useful for interpolating rotations.
 
-###   AABB/Box3 
+###   [AABB](class_aabb)
 
 Axis Aligned bounding box (or 3D box) contains 2 vectors fields: “pos” and "size". Alternatively contains an “end” field which is “pos+size”.
 
-###   Matrix3 
+###   [Matrix3](class_matrix3) 
 
 3x3 matrix used for 3D rotation and scale. It contains 3 vector fields (x, y and z) and can also be accessed as an array of 3D vectors.
 
-###   Transform 
+###   [Transform](class_transform)
 
 3D Transform contains a Matrix3 field “basis” and a Vector3 field “origin”.
 
 ##   Engine Built-In Types 
 
-###   Color 
+###   [Color](class_color) 
 
 Color data type contains r, g, b, and a fields. It can also be accessed as h, s, and v for hue/saturation/value.
 
-###   Image 
+###   [Image](class_image) 
 
 Contains a custom format 2D image and allows direct access to the pixels.
 
-###   NodePath 
+###   [NodePath](class_nodepath) 
 
 Compiled path to a node used mainly in the scene system. It can be easily assigned to, and from, a String.
 
-###   RID 
+###   [RID](class_rid) 
 
 Resource ID (RID). Servers use generic RIDs to reference opaque data.
 
-###   Object 
+###   [Object](class_object) 
 
 Base class for anything that is not a built-in type.
 
-###   InputEvent 
+###   [InputEvent](class_inputevent) 
 	
 Events from input devices are contained in very compact form in InputEvent objects. Due to the fact that they can be received in high amounts from frame to frame they are optimized as their own data type.
 
 ##   Container Built-In Types 
 
-###   Array 
+###   [Array](class_array) 
 
 Generic sequence of objects. Its size can be changed to anything and starts from index 0.
 
@@ -237,7 +237,7 @@ Arrays are allocated linearly in memory, so they are fast, but very large arrays
 
 There are specialized arrays (listed below) for some built-in data types which do not suffer from this and use less memory, but they are atomic and generally run a little slower, so they are only justified for very large amount of data.
 
-###   Dictionary 
+###   [Dictionary](class_dictionary) 
 
 Associative container which contains values referenced by unique keys.
 	
@@ -257,33 +257,33 @@ var d = {
 }
 ```
 
-###  ByteArray 
+###  [ByteArray](class_bytearray) 
 
 An array of bytes can only contain bytes (integers from 0 to 255).
 
 This, and all of the following specialized array types, are optimized for memory usage and can’t fragment the memory.
 
-###  IntArray 
+###  [IntArray](class_intarray) 
 
 Array of integers can only contain integers.
 
-###  FloatArray 
+###  [FloatArray](class_floatarray) 
 
 Array of floats can only contain floats.
 
-###  StringArray 
+###  [StringArray](class_stringarray) 
 
 Array of strings can only contain strings.
 
-###  Vector2Array 
+###  [Vector2Array](class_vector2array) 
 
 Array of Vector2 can only contain 2D Vectors.
 
-###  Vector3Array 
+###  [Vector3Array](class_vector3array) 
 
 Array of Vector3 can only contain 3D Vectors.
 
-###  ColorArray 
+###  [ColorArray](class_colorarray) 
 
 Array of Color can only contains colors.
 
