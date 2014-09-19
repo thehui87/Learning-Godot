@@ -154,7 +154,7 @@ The integer data type can only contain integer numbers, (both negative and posit
 
 Used to contain a floating point value (real numbers).
 
-###   String 
+###   [String](class_string)
 
 A sequence of characters in unicode format. Strings can contain the standard C escape sequences.
 
