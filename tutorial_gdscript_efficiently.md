@@ -304,4 +304,15 @@ for i in range(strings.size()):
 	print(strings[i])
 ```
 
+And while() loops are the same everywhere:
 
+``python
+
+var i=0
+
+while(i<strings.size()):
+	print(strings[i])
+	i+=1
+
+
+```
