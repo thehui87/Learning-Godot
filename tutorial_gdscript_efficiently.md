@@ -58,7 +58,7 @@ Static:
 ```c++
 void print_value(int value) 
 {
-	printf("value is %i\n,value);
+	printf("value is %i\n",value);
 }
 
 [..]
@@ -296,7 +296,7 @@ Container datatypes (arrays and dictionaries) are iterable. Dictionaries allow i
 
 ```python
 for key in dict:
-	print(key," -> ",dict[value])
+	print(key," -> ",dict[key])
 ```
 
 Iterating with indices is also possible:
