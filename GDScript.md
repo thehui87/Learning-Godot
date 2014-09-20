@@ -80,6 +80,10 @@ func _init():
     var lv = Something.new()
     print(lv.a)
 ```
+
+If you have previous experience with statically typed languages such as C, C++ or C# but never used a dynamically typed one, it is advised you read this tutorial about [Using GDScript Efficiently](tutorial_gdscript_efficiently).
+
+
 #  Language 
 
 ##  Identifiers 
