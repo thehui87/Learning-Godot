@@ -238,13 +238,13 @@ func game():
 
 Dictionaries can also be used as data markup or quick structures. While GDScript dictionaries resemble python dictionaries, it also supports Lua style syntax an indexing, which makes it very useful for writing initial states and quick structs:
 
-```
+```python
 # same example, lua-style
 # this syntax is a lot more readable and usable
 
 var d = { 
 	name="john", 
-	age:22 
+	age=22 
 } 
 
 print("Name: ", d.name, " Age: ", d.age ) # used "." based indexing
