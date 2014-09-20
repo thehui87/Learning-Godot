@@ -41,7 +41,7 @@ a="Hi!" // this is invalid
 
 Dynamic: 
 
-```c++
+```python
 var a # null by default
 a=5 # valid, 'a' becomes an integer
 a="Hi!" # valid, 'a' changed to a string
