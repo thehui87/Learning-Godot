@@ -97,6 +97,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 #### Languages
 
 *  [GDScript](gdscript) Built-in, simple, flexible and efficient scripting language.
+*  [Efficient GDScript](tutorial_gdscript_efficiently) Tips and help migrating from other languages. 
 *  [Shader](shader) Built-in, portable, shader language.
 *  [Locales](locales) List of supported locale strings.
 
