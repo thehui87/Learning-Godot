@@ -46,5 +46,29 @@ var a # null by default
 a=5 # valid, 'a' becomes an integer
 a="Hi!" # valid, 'a' changed to a string
 ```
+Functions are of dynamic nature too, which means they can be called with different arguments, for example:
 
+Static:
 
+```c++
+void print_value(int value) 
+{
+	printf("value is %i\n,value);
+}
+
+[..]
+
+print_value(55); // valid
+print_value("Hello"); // invalid
+```
+Dynamic:
+
+```python
+func print_value(value):
+
+	print(value)
+[..]
+
+print_value(55) # valid
+print_value("Hello") # valid
+```
