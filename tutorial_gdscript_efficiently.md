@@ -239,7 +239,7 @@ func game():
 Dictionaries can also be used as data markup or quick structures. While GDScript dictionaries resemble python dictionaries, it also supports Lua style syntax an indexing, which makes it very useful for writing initial states and quick structs:
 
 ```python
-# same example, lua-style
+# same example, lua-style support
 # this syntax is a lot more readable and usable
 
 var d = { 
@@ -256,7 +256,52 @@ d["mother"]="rebecca" #this works
 d.name="caroline" # if key exists, assignment does work, this is why it's like a quick struct.
 
 ```
+### For & While
 
+Iterating in some statically typed languages can be quite complex:
 
+```c++
+
+const char* strings = new const char*[50];
+
+[..]
+
+for(int i=0;i<50;i++)
+{
+
+	printf("value: %s\n",i,strings[i]);
+}
+
+//Even in STL:
+
+for(std::list<std::string>::const_iterator it = strings.begin() ; it != strings.end() ; it++) {
+
+	std::cout << *it << std::endl;
+}
+
+```
+
+This is usually greatly simplified in dynamically typed languages:
+
+```python
+
+for s in strings:
+	print(s)
+
+```
+
+Container datatypes (arrays and dictionaries) are iterable. Dictionaries allow iterating the keys:
+
+```python
+for key in dict:
+	print(key," -> ",dict[value])
+```
+
+Iterating with indices is also possible:
+
+```python
+for i in range(strings.size()):
+	print(strings[i])
+```
 
 
