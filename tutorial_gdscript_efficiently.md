@@ -119,7 +119,7 @@ public final void do_something() {
 ```python
 
 func use_class(instance); #does not care about class type
-	instance.use() # will work with any class that as a .use() method.
+	instance.use() # will work with any class that has a ".use()" method.
 
 func do_something():
 	var instance = SomeClass.new() # created as reference
