@@ -248,9 +248,13 @@ var d = {
 } 
 
 print("Name: ", d.name, " Age: ", d.age ) # used "." based indexing
+d.name="caroline" #works for assignment
+
+d.nother="rebecca" #this doesn't work (use syntax below to add a key:value pair)
+d["mother"]="rebecca" #this works
+
 
 ```
-
 
 
 
