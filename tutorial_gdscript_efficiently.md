@@ -201,7 +201,7 @@ d["age"]=11 # modification
 d.erase("name") #removal
 ```
 
-Two-dimensional arrays can often be implemented easier with dictionaries. Here's a simple battleship game example:
+In most cases, two-dimensional arrays can often be implemented more easily with dictionaries. Here's a simple battleship game example:
 
 ```python
 #battleship game
