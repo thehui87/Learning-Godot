@@ -306,7 +306,45 @@ for i in range(strings.size()):
 	print(strings[i])
 ```
 
-And while() loops are the same everywhere:
+The range() function can take 3 arguments:
+- range(n) (will go from 0 to n-1)
+- range(b,n) (will go from b to n-1)
+- range(b,n,s) (will go from b to n-1, in steps of s)
+
+Some examples:
+
+```c++
+for(int i=0;i<10;i++) {}
+
+for(int i=5;i<10;i++) {}
+
+for(int i=5;i<10;i+=2) {}
+```
+
+Translate to:
+
+```python
+for i in range(10):
+
+for i in range(5,10):
+
+for i in range(5,10,2):
+```
+
+And backwards looping is done through a negative counter:
+
+```c++
+for(int i=10;i>0;i++) {}
+```
+
+becomes
+
+```c++
+for i in range(10,0,-1):
+```
+#### While
+
+While() loops are the same everywhere:
 
 ```python
 
