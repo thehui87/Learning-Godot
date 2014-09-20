@@ -46,6 +46,9 @@ var a # null by default
 a=5 # valid, 'a' becomes an integer
 a="Hi!" # valid, 'a' changed to a string
 ```
+
+#### As Function Arguments:
+
 Functions are of dynamic nature too, which means they can be called with different arguments, for example:
 
 Static:
@@ -65,10 +68,64 @@ Dynamic:
 
 ```python
 func print_value(value):
-
 	print(value)
 [..]
 
 print_value(55) # valid
 print_value("Hello") # valid
 ```
+
+#### Pointers & Referencing:
+
+In static languages such as C or C++ (and to some extent Java and C#), there is a distinction between a variable and a pointer/reference to a variable. The later allows the object to be modified by other functions by passing a reference to the original one.
+
+In C# or Java, everything not a built-in type (int, float, sometimes String) is always a pointer or a reference. References are also garbage-collected automatically, which means they are erased when no onger used. Dynamically typed languages tend to use this memory model too. Some Examples:
+
+// C++
+
+```c++
+void use_class(SomeClass *instance) {
+
+	instance->use();
+}
+
+void do_something() {
+
+	SomeClass *instance = new SomeClass; //created as pointer
+	use_class(instance) //pass as pointer
+	delete instance; //otherwise it will leak memory
+}
+```
+Java: 
+
+```java
+@Override
+public final void use_class(SomeClass instance) {
+
+	instance.use();
+}
+
+public final void do_something() {
+
+	SomeClass instance = new SomeClass(); //created as reference
+	use_class(instance) //pass as reference
+	//garbage collector will get rid of it when not in use and freeze your game randomly
+}
+```
+
+```python
+
+func use_class(instance); #does not care about class type
+	instance.use() # will work with any class that as a .use() method.
+
+func do_something():
+	var instance = SomeClass.new() # created as reference
+	use_class(instance) # pass as reference
+	#will be unreferenced and deleted
+```
+
+In GDScript, only base types (int, float, string and the vector types) are passed by value to functions (value is copied). Everything else (instances, arrays, dictionaries, etc) is passed as reference.
+
+### Arrays
+
+
