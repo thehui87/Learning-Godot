@@ -79,8 +79,12 @@ Next, is the function for changing scene. This function will erase the current s
 ```python
 
 func goto_scene(scene):
-        var s = ResourceLoader.load(scene)
+        # remove current scene from root and enqueue it for deletion
+        get_scene().get_root().remove(current_scene)
         current_scene.queue_free()
+
+        # load and add new scene to root
+        var s = ResourceLoader.load(scene)
         current_scene = s.instance()
         get_scene().get_root().add_child(current_scene)
 
