@@ -36,7 +36,7 @@ Static:
 ```c++
 int a; // value uninitialized
 a=5; // this is valid
-a="Hi!" // this is invalid
+a="Hi!"; // this is invalid
 ```
 
 Dynamic: 
