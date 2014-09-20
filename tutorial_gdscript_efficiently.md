@@ -92,7 +92,7 @@ void use_class(SomeClass *instance) {
 void do_something() {
 
 	SomeClass *instance = new SomeClass; //created as pointer
-	use_class(instance) //pass as pointer
+	use_class(instance); //pass as pointer
 	delete instance; //otherwise it will leak memory
 }
 ```
@@ -108,8 +108,9 @@ public final void use_class(SomeClass instance) {
 public final void do_something() {
 
 	SomeClass instance = new SomeClass(); //created as reference
-	use_class(instance) //pass as reference
-	//garbage collector will get rid of it when not in use and freeze your game randomly
+	use_class(instance); //pass as reference
+	//garbage collector will get rid of it when not in 
+	//use and freeze your game randomly for a second
 }
 ```
 
@@ -124,8 +125,44 @@ func do_something():
 	#will be unreferenced and deleted
 ```
 
-In GDScript, only base types (int, float, string and the vector types) are passed by value to functions (value is copied). Everything else (instances, arrays, dictionaries, etc) is passed as reference.
+In GDScript, only base types (int, float, string and the vector types) are passed by value to functions (value is copied). Everything else (instances, arrays, dictionaries, etc) is passed as reference. Classes that inherit [Reference](class_reference) (the default if nothing is specified) will be freed when not used, but manual memory management is allowed too if inheriting manualy from [Object](class_object).
 
 ### Arrays
+
+Arrays in dynamically typed languages can contain many different mixed datatypes inside and are always dynamic (can be resized at any time). Example:
+
+```c++
+int *array = new int[4]; //create array
+array[0]=10; //initialize manually
+array[1]=20; //can't mix types
+array[2]=40;
+array[3]=60;
+//can't resize
+use_array(array); //passed as pointer
+delete[] array; //must be freed
+
+//or
+
+std::vector<int> array;
+array.resize(4);
+array[0]=10; //initialize manually
+array[1]=20; //can't mix types
+array[2]=40;
+array[3]=60;
+array.resize(3); //can be resized
+use_array(array); //passed reference or value
+//freed when stack ends
+```
+
+GDScript:
+
+```python
+var array = [10, "hello", 40, 60] # simple, and can mix types
+array.resize(3) # can be resized
+use_array(array) # passed as reference
+#freed when no longer in use
+```
+
+
 
 
