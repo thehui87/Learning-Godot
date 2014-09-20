@@ -334,7 +334,7 @@ for i in range(5,10,2):
 And backwards looping is done through a negative counter:
 
 ```c++
-for(int i=10;i>0;i++) {}
+for(int i=10;i>0;i--) {}
 ```
 
 becomes
