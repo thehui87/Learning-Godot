@@ -1,11 +1,10 @@
-
 ### Size and Anchors
 
 If a game was to be always run in the same device and at the same resolution, positioning controls would be a simple matter of setting the position and size of each one of them. Unfortunately, it is rarely the case. 
 
 Only TVs nowadays have a standard resolution and aspect ratio. Everything else, from computer monitors to tablets, portable consoles and mobile phones have different resolutions and aspect ratios.
 
-There are several ways to handle this, but for now let's just imagine that the screen resolution has chanced and the controls need to be re-positioned. Some will need to follow the bottom of the screen, others the top of the screen, or maybe the right or left margins.
+There are several ways to handle this, but for now let's just imagine that the screen resolution has changed and the controls need to be re-positioned. Some will need to follow the bottom of the screen, others the top of the screen, or maybe the right or left margins.
 
 <p align="center"><img src="images/anchors.png"></p>
 
