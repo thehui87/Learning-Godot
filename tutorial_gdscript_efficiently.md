@@ -25,7 +25,7 @@ While the main cons are:
 - Less performance than statically typed languages.
 - More difficult to refactor (symbols can't be traced) 
 - Some errors only appear while running the code.
-- Less flexibility for code-completion (some values can only known at run-time).
+- Less flexibility for code-completion (some variable types are only known at run-time).
 
 This, translated to reality, means that Godot+GDScript are a combination designed to games very quickly and efficiently. For games that are very computationally intensive and can't benefit from the engine built-in tools (such as the Vector types, Physics Engine, Math library, etc), the possibility of using C++ is present too. This allows to still create the entire game in GDScript and add small bits of C++ in the areas that need a boost.
 
