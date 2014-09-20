@@ -4,6 +4,8 @@
 
 This tutorial aims to be a quick reference for how to use GDScript more efficiently. It focuses in common cases specific to the language, but also covers a lot related to using dynamically typed languages.
 
+It's meant to be specially useful for programmers without previous or little experience of dynamically typed languages.
+
 ## Dynamic Nature
 
 ### Pros & Cons of Dynamic Typing
