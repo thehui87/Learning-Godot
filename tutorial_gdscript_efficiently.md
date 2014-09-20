@@ -248,14 +248,14 @@ var d = {
 } 
 
 print("Name: ", d.name, " Age: ", d.age ) # used "." based indexing
-d.name="caroline" #works for assignment
+
+# indexing
 
 d.nother="rebecca" #this doesn't work (use syntax below to add a key:value pair)
 d["mother"]="rebecca" #this works
-
+d.name="caroline" # if key exists, assignment does work, this is why it's like a quick struct.
 
 ```
-
 
 
 
