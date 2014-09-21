@@ -34,7 +34,9 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 ### Godot 1.2 (2015)
 
 * OpenGL ES 3.0 backend
-* SSAO, LPV, and more modern visual effects. Let's put Unreal 4 and Cryengine to shame :P
+* SSAO, LPV, and more modern visual effects. Let's put Unreal 4 and Cryengine to shame
+* Better Networking Support.
+* Improved Navmesh Support (Crowds)
 
 ### Future
 
