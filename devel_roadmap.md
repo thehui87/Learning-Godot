@@ -24,11 +24,10 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 
 * Live Scene Editing
 * More Shaders (2D & Post Processing)
+* Visual Shader Editor
 * Reflections (using reflection objects)
 * Rework UI (make panels little more customizable)
-* Light Probes
-* 2D Shaders
-* FBX Import (ASSIMP? or blender did it..)
+* OpenGEX or FBX Import (ASSIMP? or blender did it..)
 * Windows Universal Binary support (API should exist now?)
 
 ### Godot 1.2 (2015)
