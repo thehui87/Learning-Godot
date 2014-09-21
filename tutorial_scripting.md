@@ -73,6 +73,13 @@ To edit the script, pushing the icon above should do it (although, the UI will t
 
 There is not much in there. The "_ready()" function is called when the node (and all it's children) entered the active scene. (Remember, It's not a constructor, the constructor is "_init()" ). 
 
+
+#### The Role of the Script
+
+A script basically adds a behavior to a node. It is used to control the node functions as well as other nodes (children, parent, siblings, etc). The local scope of the script is the node (just like in regular inheritance) and the virtual functions of the node are captured by the script.
+
+<p align="center"><img src="images/brainslug.png"></p>
+
 #### Handling a Signal
 
 Signals are used mostly in GUI nodes, (although other nodes have them too). Signals are "emitted" when some specific kind of action happens, and can be connected to any function of any script instance. In this step, the "pressed" signal from the button will be connected to a custom function.
