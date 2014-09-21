@@ -78,7 +78,7 @@ There is not much in there. The "_ready()" function is called when the node (and
 
 A script basically adds a behavior to a node. It is used to control the node functions as well as other nodes (children, parent, siblings, etc). The local scope of the script is the node (just like in regular inheritance) and the virtual functions of the node are captured by the script.
 
-<p align="center"><img src="images/brainslug.png"></p>
+<p align="center"><img src="images/brainslug.jpg"></p>
 
 #### Handling a Signal
 
