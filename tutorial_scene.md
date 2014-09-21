@@ -20,7 +20,7 @@ But let's go to the basics. A node is a basic element for creating a game, it ha
 *  Has editable properties.
 *  Can receive a callback to process every frame.
 *  Can be extended (to have more functions).
-*  Can be added other nodes as children.
+*  Can be added to other nodes as children.
 
 
 <p align="center"><img src="images/tree.png"></p>
