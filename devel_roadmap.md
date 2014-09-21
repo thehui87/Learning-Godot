@@ -25,6 +25,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * Live Scene Editing
 * More Shaders (2D & Post Processing)
 * Visual Shader Editor
+* Support for Terrain 
 * Reflections (using reflection objects)
 * Rework UI (make panels little more customizable)
 * OpenGEX or FBX Import (ASSIMP? or blender did it..)
