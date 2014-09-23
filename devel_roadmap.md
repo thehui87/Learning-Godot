@@ -28,6 +28,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * Support for Terrain 
 * Reflections (using reflection objects)
 * Rework UI (make panels little more customizable)
+* Ragdoll Wizard/Helper (can be done manually now but it's a lot of work)
 * OpenGEX or FBX Import (ASSIMP? or blender did it..)
 * Windows Universal Binary support (API should exist now?)
 
