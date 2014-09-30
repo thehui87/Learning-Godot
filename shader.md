@@ -227,7 +227,7 @@ Material that reads a texture, a color and multiples them, fragment program:
 uniform color modulate;
 uniform texture source;
 
-DIFFUSE = color.rgb * tex(source,UV).rgb;
+DIFFUSE = modulate.rgb * tex(source,UV).rgb;
 
 ```
 	
