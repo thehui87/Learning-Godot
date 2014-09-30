@@ -25,10 +25,11 @@ Another common problem is that, while it's useful for working inside a DAW, high
 
 | Format                  | 1 Second of Audio | Frame Size | 
 | ------ | ----------------- | ---------- | 
-| 24 bits, 96 khz, Stereo | 576kb             | 6          | 
+| 24 bits, 96 khz, Stereo | 576kb             | 12          | 
 | 16 bits, 44 khz, Mono   | 88kb              | 2          | 
+| 16 bits, IMA-ADPCM   | 22kb              | 1/2          | 
 
-As seen, for being no audible difference, the 16 bits, 44khz takes *6 times less memory* than the 24 bits, 96khz, Stereo version.
+As seen, for being no audible difference, the 16 bits, 44khz takes *6 times less memory* than the 24 bits, 96khz, Stereo version. The IMA-ADPCM version takes *24 times less memory* than what was exported from the DAW.
 
 #### Trimming
 
