@@ -23,10 +23,10 @@ First of all, it is important to know that Godot has an internal reverb generato
 
 Another common problem is that, while it's useful for working inside a DAW, high dynamic range (24 bits) and high sampling rate (96khz) is completely unnecessary for use in a game, as there is no [audible difference](http://www.youtube.com/watch?v=cIQ9IXSUzuM). If positional sound is going to be used (for 2D and 3D), the panning and stereo reverb will be provided by the engine, so there is little need for stereo sound. How does this affect the resource usage? Look at the following comparison:
 
- | Format                  | 1 Second of Audio | Frame Size | 
- | ------                  | ----------------- | ---------- | 
- | 24 bits, 96 khz, Stereo | 576kb             | 6          | 
- | 16 bits, 44 khz, Mono   | 88kb              | 2          | 
+| Format                  | 1 Second of Audio | Frame Size | 
+| ------ | ----------------- | ---------- | 
+| 24 bits, 96 khz, Stereo | 576kb             | 6          | 
+| 16 bits, 44 khz, Mono   | 88kb              | 2          | 
 
 As seen, for being no audible difference, the 16 bits, 44khz takes *6 times less memory* than the 24 bits, 96khz, Stereo version.
 
