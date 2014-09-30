@@ -77,5 +77,33 @@ user@host:~/newgame$ godot -export Windows /var/builds/project.exe
 user@host:~/newgame$ godot -export Android /var/builds/project.apk
 ```
 
+### Running a Script
+
+It is possible to run a simple .gd script from the command line. This feature is specially useful in very large projects, for batch conversion of assets or custom import/export.
+The script must inherit from SceneMainLoop or MainLoop. 
+
+Here is a simple example of how it works:
+
+
+```python
+#sayhello.gd
+extends SceneMainLoop
+
+func _init():
+    print("Hello!")
+    quit()
+```
+
+And how to run it:
+
+```
+user@host:~/newgame$ godot -s sayhello.gd
+Hello!
+user@host:~/newgame$ 
+```
+
+If no engine.cfg exists at the path, current path is assumed to be the current working directory. (unless -path is specified).
+
+
 
 
