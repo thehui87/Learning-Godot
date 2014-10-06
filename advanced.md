@@ -2,6 +2,7 @@
 
 ## Compiling & Running
 
+*  [Introduction](compiling_intro) Introduction to Godot Build System.
 *  [Windows](compiling_windows) Compiling under Windows.
 *  [Linux](compiling_linux) Compiling under Linux (or other Unix variants).
 *  [OSX](compiling_osx) Compiling under Apple OSX.
