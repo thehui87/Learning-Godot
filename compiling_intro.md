@@ -114,8 +114,8 @@ This flag appends ".debug" suffix (for debug), or ".tools" (for debug with tools
 Bits is meant to control the CPU or OS version intended to run the binaries. It works mostly on desktop platforms and ignored everywhere else. 
 
 *  **32**: Build binaries for 32 bits platform.
-*  **64**: Build binaries for  C++ debugging symbols and optimization, but keep the runtime checks (performs checks and reports errors). Official binaries use this configuration.
-*  **default**: Built whatever the build system feels is best. On Linux this depends on the host platform (if not cross compiling), while on Windows and Mac it defaults to produce 32 bits binaries unless specified. 
+*  **64**: Build binaries for 64 bits platform.
+*  **default**: Built whatever the build system feels is best. On Linux this depends on the host platform (if not cross compiling), while on Windows and Mac it defaults to produce 32 bits binaries unless 64 bits is specified. 
 
 
 ```
