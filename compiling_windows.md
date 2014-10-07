@@ -49,6 +49,12 @@ export MINGW32_PREFIX="/path/to/i586-mingw32msvc-"
 export MINGW64_PREFIX="/path/to/i686-w64-mingw32-"
 ```
 
+To make sure you are doing things correctly, executing the following in the shell should result in a working compiler:
+
+```
+user@host:~$ ${MINGW32_PREFIX}gcc
+gcc: fatal error: no input files
+```
 
 # Creating Windows Export Templates
 
