@@ -70,7 +70,9 @@ Note:
 If you reaaaally feel oldschool, you can copy your entire game (or symlink) to the assets/ folder of the Java project (make sure engine.cfg is in assets/) and it will work, but you lose all the benefits of the export system (scripts are not byte-compiled, textures not converted to Android compression, etc. so it's not a good idea).
 ```
 
-### Compiling export templates:
+### Compiling Export Templates:
+
+Godot needs the freshly compiled APK as export templates. It opens the APK, changes a few things inside, adds your file and spits it back. It's really handy! (and required some reverse engineering of the format.).
 
 Compiling the standard export templates is done by calling scons with the following arguments:
 
