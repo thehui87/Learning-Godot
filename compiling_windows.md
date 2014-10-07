@@ -27,6 +27,29 @@ For most projects, using only scripting is enough but when development in C++ is
 C:\path_to_sdk\vcvarsall.bat &&  scons bin/godot_win.exe
 ```
 
+# Cross Compiling
+
+If you are a Linux or Mac user, you need to install mingw32 and mingw-w64. Under Ubuntu or Debian, just run the following commands:
+
+```
+apt-get install ming32 mingw-w64
+```
+
+If you are using other distro, scons will check for the following binaries:
+
+```
+i586-mingw32msvc-gcc
+i686-w64-mingw32-gcc
+```
+
+If the binaries are named or located somewhere else, export the following env variables:
+
+```
+export MINGW32_PREFIX="/path/to/i586-mingw32msvc-"
+export MINGW64_PREFIX="/path/to/i686-w64-mingw32-"
+```
+
+
 # Creating Windows Export Templates
 
 Windows export templates are created by compiling Godot as release, with the following flags:
