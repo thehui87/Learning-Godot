@@ -154,3 +154,6 @@ windows_release.exe
 
 To create those yourself, just follow the instructions detailed for each platform in this same tutorial section. Each platform explains how to create it's own template.
 
+If you are working for multiple platforms, OSX is definitely the best host platform for cross compilation, since you can cross-compile for almost every target (except for winrt). Linux and Windows come in second place, but Linux has the advantage of being the easier platform to setup this.
+
+
