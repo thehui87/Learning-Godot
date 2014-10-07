@@ -18,7 +18,7 @@ for a release build (check platform/iphone/detect.py for the compiler flags used
 Alternatively, you can run
 
 ```
-$ scons p=isim bin/godot.isim.debug
+$ scons p=isim bin/godot.isim.tools
 ```
 for a Simulator executable.
 
