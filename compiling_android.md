@@ -65,9 +65,10 @@ C:\godot\platform\android\java> ant release
 
 In the java/bin subfolder, the resulting apk can be used as export template.
 
-`Note:
+```
+Note:
 If you reaaaally feel oldschool, you can copy your entire game (or symlink) to the assets/ folder of the Java project (make sure engine.cfg is in assets/) and it will work, but you lose all the benefits of the export system (scripts are not byte-compiled, textures not converted to Android compression, etc. so it's not a good idea).
-`
+```
 
 ### Compiling export templates:
 
