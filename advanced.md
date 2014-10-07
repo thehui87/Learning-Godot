@@ -10,7 +10,6 @@
 *  [iOS](compiling_ios) Compiling for iOS.
 *  ~~[QNX](compiling_qnx) Compiling for BlackBerry QNX.~~
 *  ~~[NaCl](compiling_nacl) Compiling for Google Native Client.~~
-*  [Compiler Flags](compiling_flags) General Compiler Flags.
 
 ## File Formats
 
