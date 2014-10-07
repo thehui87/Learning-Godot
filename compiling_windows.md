@@ -15,7 +15,7 @@ Python adds the interpreter (python.exe) to the path. It usually installs in C:\
 
 Start a Visual Studio command prompt (it sets up environment variables needed by SCons to locate the compiler and SDK), go to the root dir of the engine source code and type:
 ```
-C:\godot> scons bin/godot.exe
+C:\godot> scons platform=windows
 ```
 
 If all goes well, the resulting binary executable will be placed in C:\godot\bin\godot_win.exe. This executable file contains the whole engine and runs without any dependencies. Executing it will bring up the project manager.
@@ -27,6 +27,37 @@ For most projects, using only scripting is enough but when development in C++ is
 C:\path_to_sdk\vcvarsall.bat &&  scons bin/godot_win.exe
 ```
 
+# Creating Windows Export Templates
 
+Windows export templates are created by compiling Godot as release, with the following flags:
+
+(for 32 bits, using Mingw32 command prompt or Visual Studio command prompt)
+```
+C:\godot> scons platform=windows tools=no target=release bits=32
+C:\godot> scons platform=windows tools=no target=release_debug bits=32
+```
+(for 64 bits, using Mingw-w64 or Visual Studio command prompt)
+```
+C:\godot> scons platform=windows tools=no target=release bits=64
+C:\godot> scons platform=windows tools=no target=release_debug bits=64
+```
+
+If you plan on replacing the standard templates, copy these to:
+```
+C:\USERS\YOURUSER\AppData\Roaming\Godot\Templates
+```
+With the following names:
+```
+windows_32_debug.exe
+windows_32_release.exe
+windows_64_debug.exe
+windows_64_release.exe
+```
+
+However, if you are writing your custom modules or custom C++ code, you might instead want to configure your binaries as custom export templates here:
+
+<p align="center"><img src="images/wintemplates.png"></p>
+
+You don't even need to copy them, you can just reference the resulting files in the bin\ directory of your Godot source folder, so the next time you build you automatically have the custom templates referenced.
 
 
