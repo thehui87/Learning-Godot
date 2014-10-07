@@ -1,4 +1,5 @@
-# Requirements
+#Compiling for Linux
+### Requirements
 
 For compiling under Linux or other Unix variants, the following is requiered:
 
@@ -12,7 +13,7 @@ For compiling under Linux or other Unix variants, the following is requiered:
 *  pkg-config (used to detect the above three)
 *  **Ubuntu Users:** apt-get install scons pkg-config libx11-dev libxcursor-dev build-essential libasound2-dev libfreetype6-dev libgl1-mesa-dev libglu-dev libssl-dev
 
-# Compiling
+### Compiling
 
 Start a terminal, go to the root dir of the engine source code and type:
 ```
@@ -21,7 +22,7 @@ user@host:~/godot$ scons platform=x11
 
 If all goes well, the resulting binary executable will be placed in the "bin" subdirectory. This executable file contains the whole engine and runs without any dependencies. Executing it will bring up the project manager.
 
-# Building export templates
+### Building Export Templates
 
 To build Linux export templates, run the build system with the following parameters:
 
