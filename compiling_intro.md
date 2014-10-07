@@ -107,7 +107,7 @@ Target controls optimization and debug flags. Each mode means:
 scons platform=<platform> target=debug/release_debug/release
 ```
 
-This flag appends ".debug" suffix (for debug), or ".tools" (for debug with tools enable). When optimization is enabled (release) it appends the ".opt" suffix.
+This flag appends ".debug" suffix (for debug), or ".tools" (for debug with tools enables). When optimization is enabled (release) it appends the ".opt" suffix.
 
 ### Bits
 
