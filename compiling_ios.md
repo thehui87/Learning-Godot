@@ -7,18 +7,18 @@
 
 Open a Terminal, go to the root dir of the engine source code and type:
 ```
-$ scons bin/godot.iphone
+$ scons p=iphone bin/godot.iphone.debug
 ```
 for a debug build, or:
 ```
-$ scons bin/godot_opt.iphone target=release
+$ scons p=iphone bin/godot.iphone.opt target=release
 ```
 for a release build (check platform/iphone/detect.py for the compiler flags used for each configuration)
 
 Alternatively, you can run
 
 ```
-$ scons bin/godot.isim
+$ scons p=isim bin/godot.isim.debug
 ```
 for a Simulator executable.
 
