@@ -48,8 +48,10 @@ This will create a fat binary that works in both platforms, but will add about 6
 
 We usually try to keep Godot android build code up to date, but Google changes their toolchain versions very often, so if compilation fails due to wrong toolchain version, go to your NDK directory and check the current numbers, then set the following environment variables:
 
+```
 NDK_TOOLCHAIN  (by default set to "arm-eabi-4.4.0")
 NDK_TARGET (by default set to "arm-linux-androideabi-4.8")
+```
 
 ### Building the APK
 
