@@ -124,3 +124,33 @@ scons platform=<platform> bits=default/32/64
 
 This flag appends ".32" or ".64" suffixes to resulting binaries when relevant.
 
+### Export Templates
+
+Official export templates are downloaded from the Godot Engine site: http://www.godotengine.org.
+However, you might want to build them yourself (in case you want newer ones, you are using custom modules, or simply don't trust your own shadow).
+
+If you download the official export templates package and unzip it, you will notice that most are just optimized binaries or packages for each platform:
+
+```
+android_debug.apk
+android_release.apk
+javascript_debug.zip
+javascript_release.zip
+linux_server_32
+linux_server_64
+linux_x11_32_debug
+linux_x11_32_release
+linux_x11_64_debug
+linux_x11_64_release
+osx.zip
+version.txt
+windows_32_debug.exe
+windows_32_release.exe
+windows_64_debug.exe
+windows_64_release.exe
+windows_debug.exe
+windows_release.exe
+```
+
+To create those yourself, just follow the instructions detailed for each platform in this same tutorial section. Each platform explains how to create it's own template.
+
