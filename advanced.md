@@ -18,13 +18,15 @@
 *  ~~[Theme File](theme_file) External theme (skin) file format.~~
 *  ~~[Config File](engine_cfg) Global engine and project settings file (engine.cfg).~~
 
-## Engine Source Code
+## Developing in C++
+
+### Engine Source Code in C++
 
 *  [Core Types](core_types) Core Types.
 *  [Variant](core_variant) Variant.
 *  [Object](core_object) Object.
 
-## Extending the Engine in C++
+### Extending the Engine in C++
 
 *  ~~[Custom Modules](custom_modules) Creating custom modules in C++.~~
 *  ~~[Resource Loader](add_resource) Adding a new resource loader.~~
