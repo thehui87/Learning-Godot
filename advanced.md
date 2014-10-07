@@ -20,13 +20,13 @@
 
 ## Developing in C++
 
-### Engine Source Code in C++
+### Source Code
 
 *  [Core Types](core_types) Core Types.
 *  [Variant](core_variant) Variant.
 *  [Object](core_object) Object.
 
-### Extending the Engine in C++
+### Extending
 
 *  ~~[Custom Modules](custom_modules) Creating custom modules in C++.~~
 *  ~~[Resource Loader](add_resource) Adding a new resource loader.~~
