@@ -157,7 +157,11 @@ obj->connect("enter_scene",this,"_node_entered_scene")
 
 The method "_node_entered_scene" must be registered to the class using ObjectTypeDB::register_method (explained before).
 
+Addign signals to a class is done in _bind_method, using the ADD_SIGNAL macro, example:
 
+```c++
+ADD_SIGNAL( MethodInfo("been_killed") )
+```
 ### References.
 
 Reference inherits from Object and holds a reference count. It is the base for reference counted object types. Declaring them must be done using Ref<> template. For example.
