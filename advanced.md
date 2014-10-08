@@ -11,13 +11,6 @@
 *  ~~[QNX](compiling_qnx) Compiling for BlackBerry QNX.~~
 *  ~~[NaCl](compiling_nacl) Compiling for Google Native Client.~~
 
-## File Formats
-
-*  ~~[XML File](xml_file) XML file format for resources.~~
-*  ~~[Shader File](shader_file) External shader file (.shader).~~
-*  ~~[Theme File](theme_file) External theme (skin) file format.~~
-*  ~~[Config File](engine_cfg) Global engine and project settings file (engine.cfg).~~
-
 ## Developing in C++
 
 ### Source Code
@@ -40,3 +33,12 @@
 *  [External Editor](external_editor) Configuring an external editor for opening scripts.
 *  [Changing Editor Fonts](editor_font) Changing the editor font (including support for CJK)
 *  [iOS Services](ios_services) Using iOS services (GameCenter, StoreKit)
+
+
+## File Formats
+
+*  ~~[XML File](xml_file) XML file format for resources.~~
+*  ~~[Shader File](shader_file) External shader file (.shader).~~
+*  ~~[Theme File](theme_file) External theme (skin) file format.~~
+*  ~~[Config File](engine_cfg) Global engine and project settings file (engine.cfg).~~
+
