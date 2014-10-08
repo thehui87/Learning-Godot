@@ -28,7 +28,7 @@
 
 ### Extending
 
-*  ~~[Custom Modules](custom_modules) Creating custom modules in C++.~~
+*  [Custom Modules](custom_modules) Creating custom modules in C++.
 *  ~~[Resource Loader](add_resource) Adding a new resource loader.~~
 *  ~~[Script Language](add_script_lang) Adding a new scripting language.~~
 *  ~~[Server](add_server) Adding a new server (physics engine, rendering backend, etc).~~
