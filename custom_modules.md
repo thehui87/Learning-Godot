@@ -131,7 +131,7 @@ Import('env')
 env.add_source_files(env.modules_sources,"*.cpp") # just add all cpp files to the build
 ```
 
-And finally, the configuration file for the module, this is a simply python script that must be named 'config.py'
+And finally, the configuration file for the module, this is a simple python script that must be named 'config.py'
 
 ```python
 # config.py
