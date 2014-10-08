@@ -180,10 +180,4 @@ And the output will be:
 
 ```
 60
-``
-
-
-
-
-
-
+```
