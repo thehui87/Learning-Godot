@@ -91,8 +91,96 @@ Sumator::Sumator() {
 }
 ```
 
+Then, the new class needs to be registered somehow, so two more files need to be created:
+
+```
+register_types.h
+register_types.cpp
+```
+
+With the following contents
+
+```c++
+/* register_types.h */
+void register_sumator_types();
+void unregister_sumator_types();
+/* yes, the word in the middle must be the same as the module folder name */
+```
+```c++
+/* register_types.cpp */
+
+#include "register_types.h"
+#include "object_type_db.h"
+
+void register_sumator_types() {
+
+        ObjectTypeDB::register_type<Sumator>();
+}
+
+void unregister_sumator_types() {
+   //nothing to do here
+}
+```
+
+Next, we need to create a SCsub so the build system compiles this module:
+
+```python
+# SCsub
+Import('env')
+
+env.add_source_files(env.modules_sources,"*.cpp") # just add all cpp files to the build
+```
+
+And finally, the configuration file for the module, this is a simply python script that must be named 'config.py'
+
+```python
+# config.py
+
+def can_build(platform):
+  return True  
+
+def configure(env):
+  pass
+```
+
+The module is asked if it's ok to build for the specific platform (in this case, True means it will build for every platform).  
+
+The second function allows to customize the build process for the module, like adding special compiler flags, options etc. (This can be done in SCSub, but configure(env) is called at a previous stage). If unsure, just ignore this.
+
+And that's it. Hope it was not too complex! your module should look like this:
+
+```
+modules/config.py
+modules/sumator.h
+modules/sumator.cpp
+modules/register_types.h
+modules/register_types.cpp
+modules/SCsub
+```
+
+You can then zip it and share the module with everyone else. When building for every platform (instructions in the previous section), your module will be included.
 
 
+### Using the Module
+
+Using your newly created module is very easy, from any script you can do:
+
+```python
+
+var s = Sumator.new()
+s.add(10)
+s.add(20)
+s.add(30)
+print( s.get_total() )
+s.reset()
+
+```
+
+And the output will be:
+
+```
+60
+``
 
 
 
