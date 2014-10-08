@@ -73,6 +73,12 @@ Aha! Finally something that looks acceptable. It's perfectly acceptable and you 
 
 Well, that was too much, shadows casted are way too thin and don't look good anymore. Well, though luck, the previous setting was good anyway, let's accept that perfection does not exist and move on to something else.
 
+
+### Important!
+
+If you are using shadow maps with directional lights, make sure that the **view distance** of the **camera** is set to an **optimal range**. This means, if the distance between your camera and the visible end of the scene is 100, then set the view distance to that value. If a greater than necessary value is used, the shadow maps will lose detail as they will try to cover a bigger area.
+So, always make sure to use the optimal range!
+
 ### Shadow Filtering
 
 Raw shadows are blocky. Increasing their resolution just makes smaller blocks, but they are still blocks.
@@ -87,7 +93,6 @@ ESM is a more complex filter and has a few more tweaking parameters. ESM uses sh
 
 
  
-
 
 
 
