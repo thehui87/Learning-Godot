@@ -56,6 +56,8 @@ _MD is a macro that convers "methodname" to a stringname for more efficiency. Ar
 
 Check _bind_methods of Control or Object for more examples.
 
+If just adding modules and functionality that is not expected to be documented as throughly, the _MD() macro can safely be ignore and a string passing the name can be passed for brevity.
+
 #####References:
 * [core/object_type_db.h](https://github.com/okamstudio/godot/blob/master/core/object_type_db.h)
 
@@ -141,6 +143,20 @@ void somefunc(Object *some_obj) {
 }
 ```
 If cast fails, NULL is returned. This system uses RTTI, but it also works fine (although a bit slower) when RTTI is disabled. This is useful on platforms where a very small binary size is ideal, such as HTML5 or consoles (with low memory footprint).
+
+### Signals.
+
+Objects can have a set of signals defined (similar to Delegates in other languages). Connecting to them is rather easy:
+
+```c++
+obj->connect(<signal>,target_instance,target_method)
+//for example
+obj->connect("enter_scene",this,"_node_entered_scene")
+
+```
+
+The method "_node_entered_scene" must be registered to the class using ObjectTypeDB::register_method (explained before).
+
 
 ### References.
 
