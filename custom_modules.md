@@ -181,3 +181,15 @@ And the output will be:
 ```
 60
 ```
+
+### Summing Up
+
+As you see, it's really easy to develop Godot in C++. Just write your stuff normally and remember to: 
+* use OBJ_TYPE macro for inheritance, so Godot can wrap it
+* use _bind_methods to bind your functions to scripting, and to allow them to work as callbacks for signals.
+
+But this is not all, depending what you do, you will be greeted with some surprises.
+
+* If you inherit from [Node](class_node) (or any derived node type, such as Sprite), your new class will appear in the editor, in the inheritance tree in the "Add Node" dialog.
+* If you inherit from [Resource](class_resource), it will appear int the resource list, and all the exposed properties can be serialized when saved/loaded.
+* By this same logic, you can extend the Editor and almost any area of the engine. 
