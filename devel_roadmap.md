@@ -26,7 +26,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * More Shaders (2D & Post Processing)
 * Visual Shader Editor
 * Support for Terrain 
-* Reflections (using reflection objects)
+* Reflections (using reflection probes)
 * Rework UI (make panels little more customizable)
 * Ragdoll Wizard/Helper (can be done manually now but it's a lot of work)
 * OpenGEX or FBX Import (ASSIMP? or blender did it..)
