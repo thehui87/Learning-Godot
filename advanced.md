@@ -10,6 +10,7 @@
 *  [iOS](compiling_ios) Compiling for iOS.
 *  ~~[QNX](compiling_qnx) Compiling for BlackBerry QNX.~~
 *  ~~[NaCl](compiling_nacl) Compiling for Google Native Client.~~
+*  [Batch Building Templates](compiling_batch_templates) Script for Batch Building All Templates.
 
 ## Developing in C++
 
