@@ -38,6 +38,7 @@ These are just tentative to have a rough idea of the development plan. Ideas and
 * SSAO, LPV, and more modern visual effects. Let's put Unreal 4 and Cryengine to shame
 * Better Networking Support.
 * Improved Navmesh Support (Crowds)
+* Make Audio System Graph-Based
 
 ### Future
 
