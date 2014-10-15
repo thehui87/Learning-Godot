@@ -35,18 +35,20 @@ C:\godot> mkdir platform/android/java/libs/armeabi
 Then copy or symlink: 
 
 ```
-C:\godot> copy bin/libgodot_android.debug.so platform/android/java/libs/armeabi
+C:\godot> copy bin/libgodot_android.debug.so platform/android/java/libs/armeabi/libgodot_android.so
 
 alternatively if you are under unix you can symlink:
 
-user@host:~/godot$ ln -s platform/android/libgodot_android.so platform/android/java/libs/armeabi
+user@host:~/godot$ ln -s platform/android/libgodot_android.debug.so platform/android/java/libs/armeabi/libgodot_android.so
 
 ```
+
+**Note**: The file inside libs/armeabi must be renamed to **"libgodot_android.so"**, or else unsatisfied link error will happen at runtime.
 
 If you also want to include support for x86 Android, add the following compile flag: `x86=yes` , then copy/symlink the resulting folder to the x86 folder:
 
 ```
-C:\godot> cp bin/libgodot_android.debug.x86.so platform/android/java/libs/x86
+C:\godot> cp bin/libgodot_android.debug.x86.so platform/android/java/libs/x86/libgodot_android.so
 ```
 
 This will create a fat binary that works in both platforms, but will add about 6 megabytes to the APK. 
