@@ -66,6 +66,7 @@ upx templates/linux_server_32
 
 
 # Android
+**IMPORTANT REPLACE THIS BY ACTUAL VALUES**
 
 export ANDROID_HOME=/home/to/android-sdk
 export ANDROID_NDK_ROOT=/home/to/android-ndk
@@ -77,14 +78,14 @@ mkdir -p platform/android/java/libs/x86
 #Android Release 
 
 scons -j 4 p=android target=release
-cp bin/libgodot_android.android.opt.so platform/android/java/libs/armeabi
+cp bin/libgodot_android.android.opt.so platform/android/java/libs/armeabi/libgodot_android.so
 ant -s platform/android/java/build.xml release
 cp platform/android/java/bin/Godot-release-unsigned.apk templates/android_release.apk
 
 #Android Debug
 
 scons -j 4 p=android target=release_debug
-cp bin/libgodot_android.android.opt.debug.so platform/android/java/libs/armeabi
+cp bin/libgodot_android.android.opt.debug.so platform/android/java/libs/armeabi/libgodot_android.so
 ant -s platform/android/java/build.xml release
 cp platform/android/java/bin/Godot-release-unsigned.apk templates/android_debug.apk
 
