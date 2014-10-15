@@ -17,12 +17,14 @@ Operating System functions.
   * [int](class_int)  **[get&#95;iterations&#95;per&#95;second](#get_iterations_per_second)**  **(** **)** const
   * void  **[set&#95;target&#95;fps](#set_target_fps)**  **(** [int](class_int) target_fps  **)**
   * [float](class_float)  **[get&#95;target&#95;fps](#get_target_fps)**  **(** **)** const
+  * void  **[set&#95;time&#95;scale](#set_time_scale)**  **(** [float](class_float) time_scale  **)**
+  * [float](class_float)  **[get&#95;time&#95;scale](#get_time_scale)**  **(** **)**
   * [bool](class_bool)  **[has&#95;touchscreen&#95;ui&#95;hint](#has_touchscreen_ui_hint)**  **(** **)** const
   * void  **[set&#95;low&#95;processor&#95;usage&#95;mode](#set_low_processor_usage_mode)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;in&#95;low&#95;processor&#95;usage&#95;mode](#is_in_low_processor_usage_mode)**  **(** **)** const
   * [int](class_int)  **[get&#95;processor&#95;count](#get_processor_count)**  **(** **)** const
   * [String](class_string)  **[get&#95;executable&#95;path](#get_executable_path)**  **(** **)** const
-  * [int](class_int)  **[execute](#execute)**  **(** [String](class_string) path, [StringArray](class_stringarray) arguments, [bool](class_bool) blocking  **)**
+  * [int](class_int)  **[execute](#execute)**  **(** [String](class_string) path, [StringArray](class_stringarray) arguments, [bool](class_bool) blocking, [Array](class_array) output=Array()  **)**
   * [int](class_int)  **[kill](#kill)**  **(** [int](class_int) pid  **)**
   * [int](class_int)  **[shell&#95;open](#shell_open)**  **(** [String](class_string) uri  **)**
   * [int](class_int)  **[get&#95;process&#95;ID](#get_process_ID)**  **(** **)** const
@@ -61,6 +63,7 @@ Operating System functions.
   * [bool](class_bool)  **[native&#95;video&#95;is&#95;playing](#native_video_is_playing)**  **(** **)**
   * void  **[native&#95;video&#95;stop](#native_video_stop)**  **(** **)**
   * void  **[native&#95;video&#95;pause](#native_video_pause)**  **(** **)**
+  * void  **[set&#95;use&#95;file&#95;access&#95;save&#95;and&#95;swap](#set_use_file_access_save_and_swap)**  **(** [bool](class_bool) enabled  **)**
 
 ###  Numeric Constants  
   * **DAY_SUNDAY** = **0**
@@ -159,7 +162,7 @@ Return true if low cpu usage mode is enabled.
 Return the path tot he current engine executable.
 
 #### <a name="execute">execute</a>
-  * [int](class_int)  **execute**  **(** [String](class_string) path, [StringArray](class_stringarray) arguments, [bool](class_bool) blocking  **)**
+  * [int](class_int)  **execute**  **(** [String](class_string) path, [StringArray](class_stringarray) arguments, [bool](class_bool) blocking, [Array](class_array) output=Array()  **)**
 
 Execute the binary file in given path, optionally blocking until it returns. A process ID is returned.
 

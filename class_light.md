@@ -20,6 +20,8 @@ Provides a base class for different kinds of light nodes.
   * [int](class_int)  **[get&#95;bake&#95;mode](#get_bake_mode)**  **(** **)** const
   * void  **[set&#95;enabled](#set_enabled)**  **(** [bool](class_bool) enabled  **)**
   * [bool](class_bool)  **[is&#95;enabled](#is_enabled)**  **(** **)** const
+  * void  **[set&#95;editor&#95;only](#set_editor_only)**  **(** [bool](class_bool) editor_only  **)**
+  * [bool](class_bool)  **[is&#95;editor&#95;only](#is_editor_only)**  **(** **)** const
 
 ###  Numeric Constants  
   * **PARAM_RADIUS** = **2**
@@ -29,9 +31,12 @@ Provides a base class for different kinds of light nodes.
   * **PARAM_SPOT_ATTENUATION** = **4**
   * **PARAM_SHADOW_DARKENING** = **5**
   * **PARAM_SHADOW_Z_OFFSET** = **6**
-  * **COLOR_AMBIENT** = **0**
-  * **COLOR_DIFFUSE** = **1**
-  * **COLOR_SPECULAR** = **2**
+  * **COLOR_DIFFUSE** = **0**
+  * **COLOR_SPECULAR** = **1**
+  * **BAKE_MODE_DISABLED** = **0**
+  * **BAKE_MODE_INDIRECT** = **1**
+  * **BAKE_MODE_INDIRECT_AND_SHADOWS** = **2**
+  * **BAKE_MODE_FULL** = **3**
 
 ###  Description  
 Light is the abstract base class for light nodes, so it shouldn't be used directly (It can't be instanced). Other types of light nodes inherit from it. Light contains the common variables and parameters used for lighting.

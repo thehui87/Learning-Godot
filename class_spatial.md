@@ -24,11 +24,19 @@ Base class for all 3D nodes.
   * void  **[update&#95;gizmo](#update_gizmo)**  **(** **)**
   * void  **[set&#95;gizmo](#set_gizmo)**  **(** SpatialGizmo gizmo  **)**
   * SpatialGizmo  **[get&#95;gizmo](#get_gizmo)**  **(** **)** const
+  * void  **[show](#show)**  **(** **)**
+  * void  **[hide](#hide)**  **(** **)**
+  * [bool](class_bool)  **[is&#95;visible](#is_visible)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95;hidden](#is_hidden)**  **(** **)** const
+
+###  Signals  
+  *  **visibility&#95;changed**  **(** **)**
 
 ###  Numeric Constants  
   * **NOTIFICATION_TRANSFORM_CHANGED** = **29** - Spatial nodes receive this notifacation with their global transform changes. This means that either the current or a parent node changed it's transform.
   * **NOTIFICATION_ENTER_WORLD** = **41**
   * **NOTIFICATION_EXIT_WORLD** = **42**
+  * **NOTIFICATION_VISIBILITY_CHANGED** = **43**
 
 ###  Description  
 Spatial is the base for every type of 3D [Node](class_node). It contains a 3D [Transform](class_transform) which can be set or get as local or global. If a Spatial [Node](class_node) has Spatial children, their transforms will be relative to the parent.

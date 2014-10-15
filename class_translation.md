@@ -12,6 +12,7 @@ Language Translation.
   * [String](class_string)  **[get&#95;message](#get_message)**  **(** [String](class_string) src_message  **)** const
   * void  **[erase&#95;message](#erase_message)**  **(** [String](class_string) src_message  **)**
   * [StringArray](class_stringarray)  **[get&#95;message&#95;list](#get_message_list)**  **(** **)** const
+  * [int](class_int)  **[get&#95;message&#95;count](#get_message_count)**  **(** **)** const
 
 ###  Description  
 Translations are resources that can be loaded/unloaded on demand. They map a string to another string.

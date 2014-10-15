@@ -23,6 +23,7 @@ Axis-Aligned Bounding Box.
   * [AABB](class_aabb)  **[intersection](#intersection)**  **(** [AABB](class_aabb) with  **)**
   * [bool](class_bool)  **[intersects](#intersects)**  **(** [AABB](class_aabb) with  **)**
   * [bool](class_bool)  **[intersects&#95;plane](#intersects_plane)**  **(** [Plane](class_plane) plane  **)**
+  * [bool](class_bool)  **[intersects&#95;segment](#intersects_segment)**  **(** [Vector3](class_vector3) from, [Vector3](class_vector3) to  **)**
   * [AABB](class_aabb)  **[merge](#merge)**  **(** [AABB](class_aabb) with  **)**
   * void  **[AABB](#AABB)**  **(** [Vector3](class_vector3) pos, [Vector3](class_vector3) size  **)**
 

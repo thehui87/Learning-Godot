@@ -1,0 +1,30 @@
+#  VehicleWheel  
+####**Inherits:** [Spatial](class_spatial)
+####**Category:** Core
+
+###  Brief Description  
+
+
+###  Member Functions 
+  * void  **[set&#95;radius](#set_radius)**  **(** [float](class_float) length  **)**
+  * [float](class_float)  **[get&#95;radius](#get_radius)**  **(** **)** const
+  * void  **[set&#95;suspension&#95;rest&#95;length](#set_suspension_rest_length)**  **(** [float](class_float) length  **)**
+  * [float](class_float)  **[get&#95;suspension&#95;rest&#95;length](#get_suspension_rest_length)**  **(** **)** const
+  * void  **[set&#95;suspension&#95;travel](#set_suspension_travel)**  **(** [float](class_float) length  **)**
+  * [float](class_float)  **[get&#95;suspension&#95;travel](#get_suspension_travel)**  **(** **)** const
+  * void  **[set&#95;suspension&#95;stiffness](#set_suspension_stiffness)**  **(** [float](class_float) length  **)**
+  * [float](class_float)  **[get&#95;suspension&#95;stiffness](#get_suspension_stiffness)**  **(** **)** const
+  * void  **[set&#95;suspension&#95;max&#95;force](#set_suspension_max_force)**  **(** [float](class_float) length  **)**
+  * [float](class_float)  **[get&#95;suspension&#95;max&#95;force](#get_suspension_max_force)**  **(** **)** const
+  * void  **[set&#95;damping&#95;compression](#set_damping_compression)**  **(** [float](class_float) length  **)**
+  * [float](class_float)  **[get&#95;damping&#95;compression](#get_damping_compression)**  **(** **)** const
+  * void  **[set&#95;damping&#95;relaxation](#set_damping_relaxation)**  **(** [float](class_float) length  **)**
+  * [float](class_float)  **[get&#95;damping&#95;relaxation](#get_damping_relaxation)**  **(** **)** const
+  * void  **[set&#95;use&#95;as&#95;traction](#set_use_as_traction)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[is&#95;used&#95;as&#95;traction](#is_used_as_traction)**  **(** **)** const
+  * void  **[set&#95;use&#95;as&#95;steering](#set_use_as_steering)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[is&#95;used&#95;as&#95;steering](#is_used_as_steering)**  **(** **)** const
+  * void  **[set&#95;friction&#95;slip](#set_friction_slip)**  **(** [float](class_float) length  **)**
+  * [float](class_float)  **[get&#95;friction&#95;slip](#get_friction_slip)**  **(** **)** const
+
+###  Member Function Description  

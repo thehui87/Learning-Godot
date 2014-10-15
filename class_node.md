@@ -175,9 +175,37 @@ Return a children node by it"apos;s index (see [get&#95;child&#95;count](#get_ch
 #### <a name="get_node">get_node</a>
   * [Node](class_node)  **get&#95;node**  **(** [NodePath](class_nodepath) path  **)** const
 
-Fetch a node. "path" must be valid (or else error will occur) and can be either the name of a child node, a relative path (from the current node to another node), or an absolute path to a node.
- Examples ofa paths are: get_node("Sword") , get_node("../Swamp/Alligator") , get_node("/MyGame"). 
-Note: fetching absolute paths only works when the node is inside the scene tree (see [is&#95;inside&#95;scene](#is_inside_scene)).
+Fetch a node. NodePath must be valid (or else error will occur) and can be either the path to child node, a relative path (from the current node to another node), or an absolute path to a node.
+ Note: fetching absolute paths only works when the node is inside the scene tree (see [is&#95;inside&#95;scene](#is_inside_scene)). Examples. Assume your current node is Character and following tree:
+
+    root/
+
+    root/Character
+
+    root/Character/Sword
+
+    root/Character/Backpack/Dagger
+
+    root/MyGame
+
+    root/Swamp/Alligator
+
+    root/Swamp/Mosquito
+
+    root/Swamp/Goblin
+
+
+
+    Possible paths are:
+
+    - get_node("Sword")
+
+    - get_node("Backpack/Dagger")
+
+    - get_node("../Swamp/Alligator")
+
+    - get_node("/root/MyGame")
+
 
 #### <a name="get_parent">get_parent</a>
   * Parent  **get&#95;parent**  **(** **)** const

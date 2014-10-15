@@ -162,6 +162,7 @@ Server for anything visible.
   * [RID](class_rid)  **[make&#95;sphere&#95;mesh](#make_sphere_mesh)**  **(** [int](class_int) arg0, [int](class_int) arg1, [float](class_float) arg2  **)**
   * void  **[mesh&#95;add&#95;surface&#95;from&#95;planes](#mesh_add_surface_from_planes)**  **(** [RID](class_rid) arg0, [Array](class_array) arg1  **)**
   * void  **[draw](#draw)**  **(** **)**
+  * void  **[flush](#flush)**  **(** **)**
   * void  **[free](#free)**  **(** [RID](class_rid) arg0  **)**
   * void  **[set&#95;default&#95;clear&#95;color](#set_default_clear_color)**  **(** [Color](class_color) arg0  **)**
   * [int](class_int)  **[get&#95;render&#95;info](#get_render_info)**  **(** [int](class_int) arg0  **)**
@@ -176,7 +177,7 @@ Server for anything visible.
   * **TEXTURE_FLAG_MIPMAPS** = **1**
   * **TEXTURE_FLAG_REPEAT** = **2**
   * **TEXTURE_FLAG_FILTER** = **4**
-  * **TEXTURE_FLAG_CUBEMAP** = **8**
+  * **TEXTURE_FLAG_CUBEMAP** = **2048**
   * **TEXTURE_FLAGS_DEFAULT** = **7**
   * **CUBEMAP_LEFT** = **0**
   * **CUBEMAP_RIGHT** = **1**
@@ -191,8 +192,6 @@ Server for anything visible.
   * **MATERIAL_FLAG_INVERT_FACES** = **2**
   * **MATERIAL_FLAG_UNSHADED** = **3**
   * **MATERIAL_FLAG_ONTOP** = **4**
-  * **MATERIAL_FLAG_WIREFRAME** = **5**
-  * **MATERIAL_FLAG_BILLBOARD** = **6**
   * **MATERIAL_FLAG_MAX** = **7**
   * **MATERIAL_BLEND_MODE_MIX** = **0**
   * **MATERIAL_BLEND_MODE_ADD** = **1**
@@ -253,9 +252,8 @@ Server for anything visible.
   * **LIGHT_DIRECTIONAL** = **0**
   * **LIGHT_OMNI** = **1**
   * **LIGHT_SPOT** = **2**
-  * **LIGHT_COLOR_AMBIENT** = **0**
-  * **LIGHT_COLOR_DIFFUSE** = **1**
-  * **LIGHT_COLOR_SPECULAR** = **2**
+  * **LIGHT_COLOR_DIFFUSE** = **0**
+  * **LIGHT_COLOR_SPECULAR** = **1**
   * **LIGHT_PARAM_SPOT_ATTENUATION** = **0**
   * **LIGHT_PARAM_SPOT_ANGLE** = **1**
   * **LIGHT_PARAM_RADIUS** = **2**

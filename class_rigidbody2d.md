@@ -33,8 +33,8 @@ Rigid body 2D node.
   * void  **[apply&#95;impulse](#apply_impulse)**  **(** [Vector2](class_vector2) pos, [Vector2](class_vector2) impulse  **)**
   * void  **[set&#95;applied&#95;force](#set_applied_force)**  **(** [Vector2](class_vector2) force  **)**
   * [Vector2](class_vector2)  **[get&#95;applied&#95;force](#get_applied_force)**  **(** **)** const
-  * void  **[set&#95;active](#set_active)**  **(** [bool](class_bool) active  **)**
-  * [bool](class_bool)  **[is&#95;active](#is_active)**  **(** **)** const
+  * void  **[set&#95;sleeping](#set_sleeping)**  **(** [bool](class_bool) sleeping  **)**
+  * [bool](class_bool)  **[is&#95;sleeping](#is_sleeping)**  **(** **)** const
   * void  **[set&#95;can&#95;sleep](#set_can_sleep)**  **(** [bool](class_bool) able_to_sleep  **)**
   * [bool](class_bool)  **[is&#95;able&#95;to&#95;sleep](#is_able_to_sleep)**  **(** **)** const
 
@@ -175,16 +175,6 @@ Set an axis velocity. The velocity in the given vector axis will be set as the g
   * void  **apply&#95;impulse**  **(** [Vector2](class_vector2) pos, [Vector2](class_vector2) impulse  **)**
 
 Apply a positioned impulse (which will be affected by the body mass and shape).
-
-#### <a name="set_active">set_active</a>
-  * void  **set&#95;active**  **(** [bool](class_bool) active  **)**
-
-Change the body state between sleeping/active states. As a note, static bodies can never be active.
-
-#### <a name="is_active">is_active</a>
-  * [bool](class_bool)  **is&#95;active**  **(** **)** const
-
-Return the body state. As a note, static bodies are never active.
 
 #### <a name="set_can_sleep">set_can_sleep</a>
   * void  **set&#95;can&#95;sleep**  **(** [bool](class_bool) able_to_sleep  **)**

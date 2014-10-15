@@ -6,6 +6,8 @@
 
 ###  Member Functions 
   * [Matrix32](class_matrix32)  **[affine&#95;inverse](#affine_inverse)**  **(** **)**
+  * [Matrix32](class_matrix32)  **[basis&#95;xform](#basis_xform)**  **(** var v  **)**
+  * [Matrix32](class_matrix32)  **[basis&#95;xform&#95;inv](#basis_xform_inv)**  **(** var v  **)**
   * [Vector2](class_vector2)  **[get&#95;origin](#get_origin)**  **(** **)**
   * [float](class_float)  **[get&#95;rotation](#get_rotation)**  **(** **)**
   * [Vector2](class_vector2)  **[get&#95;scale](#get_scale)**  **(** **)**

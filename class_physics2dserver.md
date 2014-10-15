@@ -82,6 +82,7 @@ Physics 2D Server.
   * [int](class_int)  **[joint&#95;get&#95;type](#joint_get_type)**  **(** [RID](class_rid) joint  **)** const
   * void  **[free](#free)**  **(** [RID](class_rid) rid  **)**
   * void  **[set&#95;active](#set_active)**  **(** [bool](class_bool) active  **)**
+  * [int](class_int)  **[get&#95;process&#95;info](#get_process_info)**  **(** [int](class_int) arg0  **)**
 
 ###  Numeric Constants  
   * **SHAPE_LINE** = **0**
@@ -125,6 +126,9 @@ Physics 2D Server.
   * **CCD_MODE_CAST_SHAPE** = **2**
   * **AREA_BODY_ADDED** = **0**
   * **AREA_BODY_REMOVED** = **1**
+  * **INFO_ACTIVE_OBJECTS** = **0**
+  * **INFO_COLLISION_PAIRS** = **1**
+  * **INFO_ISLAND_COUNT** = **2**
 
 ###  Description  
 Physics 2D Server is the server responsible for all 2D physics.

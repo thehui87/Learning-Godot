@@ -10,7 +10,7 @@
   * [int](class_int)  **[get&#95;mode](#get_mode)**  **(** **)** const
   * void  **[set&#95;octree](#set_octree)**  **(** [RawArray](class_rawarray) octree  **)**
   * [RawArray](class_rawarray)  **[get&#95;octree](#get_octree)**  **(** **)** const
-  * void  **[add&#95;lightmap](#add_lightmap)**  **(** [Texture](class_texture) texture, [int](class_int) id  **)**
+  * void  **[add&#95;lightmap](#add_lightmap)**  **(** [Texture](class_texture) texture, [Vector2](class_vector2) gen_size  **)**
   * void  **[erase&#95;lightmap](#erase_lightmap)**  **(** [int](class_int) id  **)**
   * void  **[clear&#95;lightmaps](#clear_lightmaps)**  **(** **)**
   * void  **[set&#95;cell&#95;subdivision](#set_cell_subdivision)**  **(** [int](class_int) cell_subdivision  **)**
@@ -29,6 +29,8 @@
   * [float](class_float)  **[get&#95;normal&#95;damp](#get_normal_damp)**  **(** **)** const
   * void  **[set&#95;format](#set_format)**  **(** [int](class_int) format  **)**
   * [int](class_int)  **[get&#95;format](#get_format)**  **(** **)** const
+  * void  **[set&#95;transfer&#95;lightmaps&#95;only&#95;to&#95;uv2](#set_transfer_lightmaps_only_to_uv2)**  **(** [bool](class_bool) enable  **)**
+  * [bool](class_bool)  **[get&#95;transfer&#95;lightmaps&#95;only&#95;to&#95;uv2](#get_transfer_lightmaps_only_to_uv2)**  **(** **)** const
   * void  **[set&#95;energy&#95;multiplier](#set_energy_multiplier)**  **(** [float](class_float) energy_multiplier  **)**
   * [float](class_float)  **[get&#95;energy&#95;multiplier](#get_energy_multiplier)**  **(** **)** const
   * void  **[set&#95;gamma&#95;adjust](#set_gamma_adjust)**  **(** [float](class_float) gamma_adjust  **)**

@@ -28,12 +28,14 @@ Camera node, displays from a point of view.
   * void  **[look&#95;at&#95;from&#95;pos](#look_at_from_pos)**  **(** [Vector3](class_vector3) pos, [Vector3](class_vector3) target, [Vector3](class_vector3) up  **)**
   * void  **[set&#95;environment](#set_environment)**  **(** [Environment](class_environment) env  **)**
   * [Environment](class_environment)  **[get&#95;environment](#get_environment)**  **(** **)** const
-  * void  **[set&#95;use&#95;vertical&#95;aspect](#set_use_vertical_aspect)**  **(** [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[is&#95;using&#95;vertical&#95;aspect](#is_using_vertical_aspect)**  **(** **)** const
+  * void  **[set&#95;keep&#95;aspect&#95;mode](#set_keep_aspect_mode)**  **(** [int](class_int) mode  **)**
+  * [int](class_int)  **[get&#95;keep&#95;aspect&#95;mode](#get_keep_aspect_mode)**  **(** **)** const
 
 ###  Numeric Constants  
   * **PROJECTION_PERSPECTIVE** = **0** - Perspective Projection (object's size on the screen becomes smaller when far away).
   * **PROJECTION_ORTHOGONAL** = **1** - Orthogonal Projection (objects remain the same size on the screen no matter how far away they are).
+  * **KEEP_WIDTH** = **0**
+  * **KEEP_HEIGHT** = **1**
 
 ###  Description  
 Camera is a special node that displays what is visible from its current location. Cameras register themselves in the nearest [Viewport](class_viewport) node (when ascending the tree). Only one camera can be active per viewport. If no viewport is available ascending the tree, the Camera will register in the global viewport. In other words, a Camera just provides _3D_ display capabilities to a [Viewport](class_viewport), and, without one, a [Scene] registered in that [Viewport](class_viewport) (or higher viewports) can't be displayed.

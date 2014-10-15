@@ -8,14 +8,12 @@ Abstract base [Resource](class_resource) for coloring and shading geometry.
 ###  Member Functions 
   * void  **[set&#95;flag](#set_flag)**  **(** [int](class_int) flag, [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[get&#95;flag](#get_flag)**  **(** [int](class_int) flag  **)** const
-  * void  **[set&#95;hint](#set_hint)**  **(** [int](class_int) hint, [bool](class_bool) enable  **)**
-  * [bool](class_bool)  **[get&#95;hint](#get_hint)**  **(** [int](class_int) hint  **)** const
   * void  **[set&#95;blend&#95;mode](#set_blend_mode)**  **(** [int](class_int) mode  **)**
   * [int](class_int)  **[get&#95;blend&#95;mode](#get_blend_mode)**  **(** **)** const
-  * void  **[set&#95;shade&#95;model](#set_shade_model)**  **(** [int](class_int) model  **)**
-  * [int](class_int)  **[get&#95;shade&#95;model](#get_shade_model)**  **(** **)** const
   * void  **[set&#95;line&#95;width](#set_line_width)**  **(** [float](class_float) width  **)**
   * [float](class_float)  **[get&#95;line&#95;width](#get_line_width)**  **(** **)** const
+  * void  **[set&#95;depth&#95;draw&#95;mode](#set_depth_draw_mode)**  **(** [int](class_int) mode  **)**
+  * [int](class_int)  **[get&#95;depth&#95;draw&#95;mode](#get_depth_draw_mode)**  **(** **)** const
 
 ###  Numeric Constants  
   * **FLAG_VISIBLE** = **0** - Geometry is visible when this flag is enabled (default).
@@ -23,23 +21,13 @@ Abstract base [Resource](class_resource) for coloring and shading geometry.
   * **FLAG_INVERT_FACES** = **2** - Front facing and back facing order is swapped when this flag is enabled.
   * **FLAG_UNSHADED** = **3** - Shading (lighting) is disabled when this flag is enabled.
   * **FLAG_ONTOP** = **4**
-  * **FLAG_WIREFRAME** = **5** - Triangle geometry is drawn as lines if this flag is enabled.
-  * **FLAG_BILLBOARD_TOGGLE** = **6** - Geometry world transform is computed as billboard if this flag is enabled, often used for impostors.
+  * **FLAG_LIGHTMAP_ON_UV2** = **5**
+  * **FLAG_COLOR_ARRAY_SRGB** = **6**
   * **FLAG_MAX** = **7** - Maximum amount of flags
-  * **HINT_DECAL** = **0**
-  * **HINT_OPAQUE_PRE_PASS** = **1**
-  * **HINT_NO_SHADOW** = **2**
-  * **HINT_NO_DEPTH_DRAW** = **3**
-  * **HINT_NO_DEPTH_DRAW_FOR_ALPHA** = **4**
-  * **HINT_MAX** = **5**
-  * **SHADE_MODEL_LAMBERT** = **0**
-  * **SHADE_MODEL_LAMBERT_WRAP** = **1**
-  * **SHADE_MODEL_FRESNEL** = **2**
-  * **SHADE_MODEL_TOON** = **3**
-  * **SHADE_MODEL_CUSTOM_0** = **4**
-  * **SHADE_MODEL_CUSTOM_1** = **5**
-  * **SHADE_MODEL_CUSTOM_2** = **6**
-  * **SHADE_MODEL_CUSTOM_3** = **7**
+  * **DEPTH_DRAW_ALWAYS** = **0**
+  * **DEPTH_DRAW_OPAQUE_ONLY** = **1**
+  * **DEPTH_DRAW_OPAQUE_PRE_PASS_ALPHA** = **2**
+  * **DEPTH_DRAW_NEVER** = **3**
   * **BLEND_MODE_MIX** = **0** - Use the regular alpha blending equation (source and dest colors are faded) (default).
   * **BLEND_MODE_ADD** = **1** - Use additive blending equation, often used for particle effects such as fire or light decals.
   * **BLEND_MODE_SUB** = **2** - Use substractive blending equation, often used for some smoke effects or types of glass.

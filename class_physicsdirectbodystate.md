@@ -17,6 +17,7 @@
   * void  **[set&#95;transform](#set_transform)**  **(** [Transform](class_transform) transform  **)**
   * [Transform](class_transform)  **[get&#95;transform](#get_transform)**  **(** **)** const
   * void  **[add&#95;force](#add_force)**  **(** [Vector3](class_vector3) force, [Vector3](class_vector3) pos  **)**
+  * void  **[apply&#95;impulse](#apply_impulse)**  **(** [Vector3](class_vector3) pos, [Vector3](class_vector3) j  **)**
   * void  **[set&#95;sleep&#95;state](#set_sleep_state)**  **(** [bool](class_bool) enabled  **)**
   * [bool](class_bool)  **[is&#95;sleeping](#is_sleeping)**  **(** **)** const
   * [int](class_int)  **[get&#95;contact&#95;count](#get_contact_count)**  **(** **)** const

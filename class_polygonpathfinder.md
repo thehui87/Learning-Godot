@@ -11,6 +11,8 @@
   * [Vector2Array](class_vector2array)  **[get&#95;intersections](#get_intersections)**  **(** [Vector2](class_vector2) from, [Vector2](class_vector2) to  **)** const
   * [Vector2](class_vector2)  **[get&#95;closest&#95;point](#get_closest_point)**  **(** [Vector2](class_vector2) point  **)** const
   * [bool](class_bool)  **[is&#95;point&#95;inside](#is_point_inside)**  **(** [Vector2](class_vector2) point  **)** const
+  * void  **[set&#95;point&#95;penalty](#set_point_penalty)**  **(** [int](class_int) idx, [float](class_float) penalty  **)**
+  * [float](class_float)  **[get&#95;point&#95;penalty](#get_point_penalty)**  **(** [int](class_int) idx  **)** const
   * [Rect2](class_rect2)  **[get&#95;bounds](#get_bounds)**  **(** **)** const
 
 ###  Member Function Description  

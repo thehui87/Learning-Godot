@@ -31,8 +31,8 @@
   * [bool](class_bool)  **[is&#95;using&#95;continuous&#95;collision&#95;detection](#is_using_continuous_collision_detection)**  **(** **)** const
   * void  **[set&#95;axis&#95;velocity](#set_axis_velocity)**  **(** [Vector3](class_vector3) axis_velocity  **)**
   * void  **[apply&#95;impulse](#apply_impulse)**  **(** [Vector3](class_vector3) pos, [Vector3](class_vector3) impulse  **)**
-  * void  **[set&#95;active](#set_active)**  **(** [bool](class_bool) active  **)**
-  * [bool](class_bool)  **[is&#95;active](#is_active)**  **(** **)** const
+  * void  **[set&#95;sleeping](#set_sleeping)**  **(** [bool](class_bool) sleeping  **)**
+  * [bool](class_bool)  **[is&#95;sleeping](#is_sleeping)**  **(** **)** const
   * void  **[set&#95;can&#95;sleep](#set_can_sleep)**  **(** [bool](class_bool) able_to_sleep  **)**
   * [bool](class_bool)  **[is&#95;able&#95;to&#95;sleep](#is_able_to_sleep)**  **(** **)** const
   * void  **[set&#95;axis&#95;lock](#set_axis_lock)**  **(** [int](class_int) axis_lock  **)**

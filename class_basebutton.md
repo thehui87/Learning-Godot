@@ -8,6 +8,7 @@ Provides a base class for different kinds of buttons.
 ###  Member Functions 
   * void  **[set&#95;pressed](#set_pressed)**  **(** [bool](class_bool) pressed  **)**
   * [bool](class_bool)  **[is&#95;pressed](#is_pressed)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95;hovered](#is_hovered)**  **(** **)** const
   * void  **[set&#95;toggle&#95;mode](#set_toggle_mode)**  **(** [bool](class_bool) enabled  **)**
   * [bool](class_bool)  **[is&#95;toggle&#95;mode](#is_toggle_mode)**  **(** **)** const
   * void  **[set&#95;disabled](#set_disabled)**  **(** [bool](class_bool) disabled  **)**

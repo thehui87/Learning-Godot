@@ -7,7 +7,7 @@
 
 ###  Member Functions 
   * [int](class_int)  **[get&#95;point&#95;count](#get_point_count)**  **(** **)** const
-  * void  **[add&#95;point](#add_point)**  **(** [Vector2](class_vector2) pos, [Vector2](class_vector2) in=Vector2(0,0), [Vector2](class_vector2) out=Vector2(0,0)  **)**
+  * void  **[add&#95;point](#add_point)**  **(** [Vector2](class_vector2) pos, [Vector2](class_vector2) in=Vector2(0,0), [Vector2](class_vector2) out=Vector2(0,0), [int](class_int) atpos=-1  **)**
   * void  **[set&#95;point&#95;pos](#set_point_pos)**  **(** [int](class_int) idx, [Vector2](class_vector2) pos  **)**
   * [Vector2](class_vector2)  **[get&#95;point&#95;pos](#get_point_pos)**  **(** [int](class_int) idx  **)** const
   * void  **[set&#95;point&#95;in](#set_point_in)**  **(** [int](class_int) idx, [Vector2](class_vector2) pos  **)**
@@ -16,12 +16,11 @@
   * [Vector2](class_vector2)  **[get&#95;point&#95;out](#get_point_out)**  **(** [int](class_int) idx  **)** const
   * void  **[remove&#95;point](#remove_point)**  **(** [int](class_int) idx  **)**
   * [Vector2](class_vector2)  **[interpolate](#interpolate)**  **(** [int](class_int) idx, [float](class_float) t  **)** const
-  * [Vector2Array](class_vector2array)  **[bake](#bake)**  **(** [int](class_int) subdivs=10  **)** const
-  * void  **[set&#95;points&#95;in](#set_points_in)**  **(** [Vector2Array](class_vector2array) arg0  **)**
-  * void  **[set&#95;points&#95;out](#set_points_out)**  **(** [Vector2Array](class_vector2array) arg0  **)**
-  * void  **[set&#95;points&#95;pos](#set_points_pos)**  **(** [Vector2Array](class_vector2array) arg0  **)**
-  * [Vector2Array](class_vector2array)  **[get&#95;points&#95;in](#get_points_in)**  **(** **)** const
-  * [Vector2Array](class_vector2array)  **[get&#95;points&#95;out](#get_points_out)**  **(** **)** const
-  * [Vector2Array](class_vector2array)  **[get&#95;points&#95;pos](#get_points_pos)**  **(** **)** const
+  * [Vector2](class_vector2)  **[interpolatef](#interpolatef)**  **(** [float](class_float) fofs  **)** const
+  * void  **[set&#95;bake&#95;interval](#set_bake_interval)**  **(** [float](class_float) distance  **)**
+  * [float](class_float)  **[get&#95;bake&#95;interval](#get_bake_interval)**  **(** **)** const
+  * [float](class_float)  **[get&#95;baked&#95;length](#get_baked_length)**  **(** **)** const
+  * [Vector2](class_vector2)  **[interpolate&#95;baked](#interpolate_baked)**  **(** [float](class_float) offset, [bool](class_bool) cubic=false  **)** const
+  * [Vector2Array](class_vector2array)  **[get&#95;baked&#95;points](#get_baked_points)**  **(** **)** const
 
 ###  Member Function Description  

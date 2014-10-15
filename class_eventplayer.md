@@ -6,8 +6,8 @@
 
 
 ###  Member Functions 
-  * void  **[set&#95;stream](#set_stream)**  **(** Stream stream  **)**
-  * Stream  **[get&#95;stream](#get_stream)**  **(** **)** const
+  * void  **[set&#95;stream](#set_stream)**  **(** [EventStream](class_eventstream) stream  **)**
+  * [EventStream](class_eventstream)  **[get&#95;stream](#get_stream)**  **(** **)** const
   * void  **[play](#play)**  **(** **)**
   * void  **[stop](#stop)**  **(** **)**
   * [bool](class_bool)  **[is&#95;playing](#is_playing)**  **(** **)** const

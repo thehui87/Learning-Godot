@@ -7,6 +7,7 @@ Base class for all resources.
 
 ###  Member Functions 
   * void  **[set&#95;path](#set_path)**  **(** [String](class_string) path  **)**
+  * void  **[take&#95;over&#95;path](#take_over_path)**  **(** [String](class_string) path  **)**
   * [String](class_string)  **[get&#95;path](#get_path)**  **(** **)** const
   * void  **[set&#95;name](#set_name)**  **(** [String](class_string) name  **)**
   * [String](class_string)  **[get&#95;name](#get_name)**  **(** **)** const

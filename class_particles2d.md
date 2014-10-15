@@ -57,10 +57,10 @@
   * **PARAM_GRAVITY_STRENGTH** = **6**
   * **PARAM_RADIAL_ACCEL** = **7**
   * **PARAM_TANGENTIAL_ACCEL** = **8**
-  * **PARAM_INITIAL_SIZE** = **10**
-  * **PARAM_FINAL_SIZE** = **11**
-  * **PARAM_HUE_VARIATION** = **12**
-  * **PARAM_MAX** = **13**
+  * **PARAM_INITIAL_SIZE** = **11**
+  * **PARAM_FINAL_SIZE** = **12**
+  * **PARAM_HUE_VARIATION** = **13**
+  * **PARAM_MAX** = **14**
   * **MAX_COLOR_PHASES** = **4**
 
 ###  Member Function Description  

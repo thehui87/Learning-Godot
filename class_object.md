@@ -7,6 +7,7 @@ Base class for all non built-in types.
 ###  Member Functions 
   * void  **[&#95;get](#_get)**  **(** [String](class_string) property  **)** virtual
   * [Array](class_array)  **[&#95;get&#95;property&#95;list](#_get_property_list)**  **(** **)** virtual
+  * void  **[&#95;init](#_init)**  **(** **)** virtual
   * void  **[&#95;notification](#_notification)**  **(** [int](class_int) what  **)** virtual
   * void  **[&#95;set](#_set)**  **(** [String](class_string) property, var value  **)** virtual
   * [String](class_string)  **[get&#95;type](#get_type)**  **(** **)** const
@@ -29,7 +30,7 @@ Base class for all non built-in types.
   * void  **[callv](#callv)**  **(** [String](class_string) method, [Array](class_array) arg_array  **)**
   * [bool](class_bool)  **[has&#95;method](#has_method)**  **(** [String](class_string) arg0  **)** const
   * [Array](class_array)  **[get&#95;signal&#95;list](#get_signal_list)**  **(** **)** const
-  * void  **[connect](#connect)**  **(** [String](class_string) signal, [Object](class_object) target, [String](class_string) method, [Array](class_array) binds=Array(), [int](class_int) flags=0  **)**
+  * [int](class_int)  **[connect](#connect)**  **(** [String](class_string) signal, [Object](class_object) target, [String](class_string) method, [Array](class_array) binds=Array(), [int](class_int) flags=0  **)**
   * void  **[disconnect](#disconnect)**  **(** [String](class_string) signal, [Object](class_object) target, [String](class_string) method  **)**
   * [bool](class_bool)  **[is&#95;connected](#is_connected)**  **(** [String](class_string) signal, [Object](class_object) target, [String](class_string) method  **)** const
   * void  **[set&#95;block&#95;signals](#set_block_signals)**  **(** [bool](class_bool) enable  **)**
@@ -170,7 +171,7 @@ Create and store a function in the object. The call will take place on idle time
 Return the list of signals as an array of dictionaries.
 
 #### <a name="connect">connect</a>
-  * void  **connect**  **(** [String](class_string) signal, [Object](class_object) target, [String](class_string) method, [Array](class_array) binds=Array(), [int](class_int) flags=0  **)**
+  * [int](class_int)  **connect**  **(** [String](class_string) signal, [Object](class_object) target, [String](class_string) method, [Array](class_array) binds=Array(), [int](class_int) flags=0  **)**
 
 Connect a signal to a method at a target (member function). Binds are optional and are passed as extra arguments to the call. Flags specify optional deferred or one shot connections, see enum CONNECT_*.
                         A signal can only be connected once to a method, and it will throw an error if already connected. If you want to avoid this, use [is&#95;connected](#is_connected) to check.

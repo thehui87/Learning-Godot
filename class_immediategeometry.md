@@ -13,6 +13,7 @@
   * void  **[set&#95;uv](#set_uv)**  **(** [Vector2](class_vector2) uv  **)**
   * void  **[set&#95;uv2](#set_uv2)**  **(** [Vector2](class_vector2) uv  **)**
   * void  **[add&#95;vertex](#add_vertex)**  **(** [Vector3](class_vector3) color  **)**
+  * void  **[add&#95;sphere](#add_sphere)**  **(** [int](class_int) lats, [int](class_int) lons, [float](class_float) radius  **)**
   * void  **[end](#end)**  **(** **)**
   * void  **[clear](#clear)**  **(** **)**
 

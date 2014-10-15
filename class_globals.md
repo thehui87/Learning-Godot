@@ -17,6 +17,7 @@ Contains global variables accessible from everywhere.
   * [int](class_int)  **[save](#save)**  **(** **)**
   * [bool](class_bool)  **[has&#95;singleton](#has_singleton)**  **(** [String](class_string) arg0  **)** const
   * [Object](class_object)  **[get&#95;singleton](#get_singleton)**  **(** [String](class_string) arg0  **)** const
+  * [bool](class_bool)  **[load&#95;resource&#95;pack](#load_resource_pack)**  **(** [String](class_string) arg0  **)**
 
 ###  Description  
 Contains global variables accessible from everywhere. Use the normal [Object](class_object) API, such as "Globals.get(variable)", "Globals.set(variable,value)" or "Globals.has(variable)" to access them. Variables stored in engine.cfg are also loaded into globals, making this object very useful for reading custom game configuration options.

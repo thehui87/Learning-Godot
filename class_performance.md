@@ -30,6 +30,12 @@
   * **RENDER_VIDEO_MEM_USED** = **17**
   * **RENDER_TEXTURE_MEM_USED** = **18**
   * **RENDER_VERTEX_MEM_USED** = **19**
-  * **MONITOR_MAX** = **21**
+  * **PHYSICS_2D_ACTIVE_OBJECTS** = **21**
+  * **PHYSICS_2D_COLLISION_PAIRS** = **22**
+  * **PHYSICS_2D_ISLAND_COUNT** = **23**
+  * **PHYSICS_3D_ACTIVE_OBJECTS** = **24**
+  * **PHYSICS_3D_COLLISION_PAIRS** = **25**
+  * **PHYSICS_3D_ISLAND_COUNT** = **26**
+  * **MONITOR_MAX** = **27**
 
 ###  Member Function Description  

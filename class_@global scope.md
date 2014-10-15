@@ -18,7 +18,6 @@ Global scope constants and variables.
   * [TranslationServer](class_translationserver) **TS**
   * [Input](class_input) **Input**
   * [InputMap](class_inputmap) **InputMap**
-  * [SceneIO](class_sceneio) **SceneIO**
   * [VisualServer](class_visualserver) **VisualServer**
   * [VisualServer](class_visualserver) **VS**
   * [AudioServer](class_audioserver) **AudioServer**
@@ -413,11 +412,20 @@ Global scope constants and variables.
   * **PROPERTY_HINT_RANGE** = **1** - Hint string is a range, defined as "min,max" or "min,max,step". This is valid for integers and floats.
   * **PROPERTY_HINT_EXP_RANGE** = **2** - Hint string is an exponential range, defined as "min,max" or "min,max,step". This is valid for integers and floats.
   * **PROPERTY_HINT_ENUM** = **3** - Property hint is an enumerated value, like "Hello,Something,Else". This is valid for integers, floats and strings properties.
+  * **PROPERTY_HINT_EXP_EASING** = **4**
   * **PROPERTY_HINT_LENGTH** = **5**
+  * **PROPERTY_HINT_KEY_ACCEL** = **6**
   * **PROPERTY_HINT_FLAGS** = **7** - Property hint is a bitmask description, for bits 0,1,2,3 abd 5 the hint would be like "Bit0,Bit1,Bit2,Bit3,,Bit5". Valid only for integers.
+  * **PROPERTY_HINT_ALL_FLAGS** = **8**
   * **PROPERTY_HINT_FILE** = **9** - String property is a file (so pop up a file dialog when edited). Hint string can be a set of wildcards like "*.doc".
   * **PROPERTY_HINT_DIR** = **10** - String property is a directory (so pop up a file dialog when edited).
+  * **PROPERTY_HINT_GLOBAL_FILE** = **11**
+  * **PROPERTY_HINT_GLOBAL_DIR** = **12**
   * **PROPERTY_HINT_RESOURCE_TYPE** = **13** - String property is a resource, so open the resource popup menu when edited.
+  * **PROPERTY_HINT_MULTILINE_TEXT** = **14**
+  * **PROPERTY_HINT_COLOR_NO_ALPHA** = **15**
+  * **PROPERTY_HINT_IMAGE_COMPRESS_LOSSY** = **16**
+  * **PROPERTY_HINT_IMAGE_COMPRESS_LOSSLESS** = **17**
   * **PROPERTY_USAGE_STORAGE** = **1** - Property will be used as storage (default).
   * **PROPERTY_USAGE_STORAGE** = **1** - Property will be used as storage (default).
   * **PROPERTY_USAGE_EDITOR** = **2** - Property will be visible in editor (default).

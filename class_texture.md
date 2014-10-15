@@ -21,8 +21,10 @@ Texture for 2D and 3D.
   * **FLAG_MIPMAPS** = **1** - Generate mipmaps.
   * **FLAG_REPEAT** = **2** - Repeat (instead of clamp to edge).
   * **FLAG_FILTER** = **4** - Turn on magnifying filter.
-  * **FLAG_VIDEO_SURFACE** = **16** - Texture is a video surface
+  * **FLAG_VIDEO_SURFACE** = **4096** - Texture is a video surface
   * **FLAGS_DEFAULT** = **7** - Default flags
+  * **FLAG_ANISOTROPIC_FILTER** = **8**
+  * **FLAG_CONVERT_TO_LINEAR** = **16**
 
 ###  Description  
 A texture works by registering an image in the video hardware, which then can be used in 3D models or 2D [Sprite](class_sprite) or GUI [Control](class_control)s.

@@ -16,6 +16,7 @@ Base node for 2D system.
   * void  **[move&#95;local&#95;x](#move_local_x)**  **(** [float](class_float) delta, [bool](class_bool) scaled=false  **)**
   * void  **[move&#95;local&#95;y](#move_local_y)**  **(** [float](class_float) delta, [bool](class_bool) scaled=false  **)**
   * [Vector2](class_vector2)  **[get&#95;global&#95;pos](#get_global_pos)**  **(** **)** const
+  * void  **[set&#95;global&#95;pos](#set_global_pos)**  **(** [Vector2](class_vector2) arg0  **)**
   * void  **[set&#95;transform](#set_transform)**  **(** [Matrix32](class_matrix32) xform  **)**
   * void  **[set&#95;global&#95;transform](#set_global_transform)**  **(** [Matrix32](class_matrix32) xform  **)**
   * void  **[edit&#95;set&#95;pivot](#edit_set_pivot)**  **(** [Vector2](class_vector2) arg0  **)**

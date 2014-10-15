@@ -13,6 +13,8 @@ Scene-Based implementation of the MainLoop.
   * void  **[set&#95;auto&#95;accept&#95;quit](#set_auto_accept_quit)**  **(** [bool](class_bool) enabled  **)**
   * void  **[set&#95;editor&#95;hint](#set_editor_hint)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;editor&#95;hint](#is_editor_hint)**  **(** **)** const
+  * void  **[set&#95;edited&#95;scene&#95;root](#set_edited_scene_root)**  **(** [Object](class_object) scene  **)**
+  * [Object](class_object)  **[get&#95;edited&#95;scene&#95;root](#get_edited_scene_root)**  **(** **)** const
   * void  **[set&#95;pause](#set_pause)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;paused](#is_paused)**  **(** **)** const
   * void  **[set&#95;input&#95;as&#95;handled](#set_input_as_handled)**  **(** **)**

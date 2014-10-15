@@ -30,6 +30,8 @@ Built-In string class.
   * [int](class_int)  **[length](#length)**  **(** **)**
   * [bool](class_bool)  **[match](#match)**  **(** [String](class_string) expr  **)**
   * [bool](class_bool)  **[matchn](#matchn)**  **(** [String](class_string) expr  **)**
+  * [RawArray](class_rawarray)  **[md5&#95;buffer](#md5_buffer)**  **(** **)**
+  * [String](class_string)  **[md5&#95;text](#md5_text)**  **(** **)**
   * [int](class_int)  **[nocasecmp&#95;to](#nocasecmp_to)**  **(** [String](class_string) to  **)**
   * [String](class_string)  **[ord&#95;at](#ord_at)**  **(** [int](class_int) at  **)**
   * [String](class_string)  **[pad&#95;decimals](#pad_decimals)**  **(** [int](class_int) digits  **)**

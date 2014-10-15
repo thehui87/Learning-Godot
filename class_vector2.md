@@ -6,6 +6,8 @@ Vector used for 2D Math.
 
 ###  Member Functions 
   * [float](class_float)  **[angle&#95;to](#angle_to)**  **(** [Vector2](class_vector2) to  **)**
+  * [float](class_float)  **[angle&#95;to&#95;point](#angle_to_point)**  **(** [Vector2](class_vector2) to  **)**
+  * [float](class_float)  **[atan2](#atan2)**  **(** **)**
   * [Vector2](class_vector2)  **[cubic&#95;interpolate](#cubic_interpolate)**  **(** [Vector2](class_vector2) b, [Vector2](class_vector2) pre_a, [Vector2](class_vector2) post_b, [float](class_float) t  **)**
   * [float](class_float)  **[distance&#95;squared&#95;to](#distance_squared_to)**  **(** [Vector2](class_vector2) to  **)**
   * [float](class_float)  **[distance&#95;to](#distance_to)**  **(** [Vector2](class_vector2) to  **)**

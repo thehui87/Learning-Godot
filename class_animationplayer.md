@@ -40,6 +40,7 @@ Container and player of [Animaton] resources.
   * [int](class_int)  **[get&#95;animation&#95;process&#95;mode](#get_animation_process_mode)**  **(** **)** const
   * [float](class_float)  **[get&#95;current&#95;animation&#95;pos](#get_current_animation_pos)**  **(** **)** const
   * [float](class_float)  **[get&#95;current&#95;animation&#95;length](#get_current_animation_length)**  **(** **)** const
+  * void  **[advance](#advance)**  **(** [float](class_float) delta  **)**
 
 ###  Signals  
   *  **animation&#95;changed**  **(** [String](class_string) old_name, [String](class_string) new_name  **)**

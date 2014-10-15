@@ -11,5 +11,6 @@ Server that manages all translations. Translations can be set to it and removed 
   * [String](class_string)  **[translate](#translate)**  **(** [String](class_string) arg0  **)** const
   * void  **[add&#95;translation](#add_translation)**  **(** [Object](class_object) arg0  **)**
   * void  **[remove&#95;translation](#remove_translation)**  **(** [Object](class_object) arg0  **)**
+  * void  **[clear](#clear)**  **(** **)**
 
 ###  Member Function Description  

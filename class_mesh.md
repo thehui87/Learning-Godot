@@ -24,6 +24,7 @@ A [Resource](class_resource) that contains vertex-array based geometry.
   * void  **[surface&#95;set&#95;name](#surface_set_name)**  **(** [int](class_int) surf_idx, [String](class_string) name  **)**
   * [String](class_string)  **[surface&#95;get&#95;name](#surface_get_name)**  **(** [int](class_int) surf_idx  **)** const
   * void  **[center&#95;geometry](#center_geometry)**  **(** **)**
+  * void  **[regen&#95;normalmaps](#regen_normalmaps)**  **(** **)**
   * void  **[set&#95;custom&#95;aabb](#set_custom_aabb)**  **(** [AABB](class_aabb) aabb  **)**
   * [AABB](class_aabb)  **[get&#95;custom&#95;aabb](#get_custom_aabb)**  **(** **)** const
 

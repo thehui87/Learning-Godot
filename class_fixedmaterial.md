@@ -16,10 +16,10 @@ Simple Material with a fixed parameter set.
   * [bool](class_bool)  **[get&#95;fixed&#95;flag](#get_fixed_flag)**  **(** [int](class_int) flag  **)** const
   * void  **[set&#95;uv&#95;transform](#set_uv_transform)**  **(** [Transform](class_transform) transform  **)**
   * [Transform](class_transform)  **[get&#95;uv&#95;transform](#get_uv_transform)**  **(** **)** const
+  * void  **[set&#95;light&#95;shader](#set_light_shader)**  **(** [int](class_int) shader  **)**
+  * [int](class_int)  **[get&#95;light&#95;shader](#get_light_shader)**  **(** **)** const
   * void  **[set&#95;point&#95;size](#set_point_size)**  **(** [float](class_float) size  **)**
   * [float](class_float)  **[get&#95;point&#95;size](#get_point_size)**  **(** **)** const
-  * void  **[set&#95;detail&#95;blend&#95;mode](#set_detail_blend_mode)**  **(** [int](class_int) mode  **)**
-  * [int](class_int)  **[get&#95;detail&#95;blend&#95;mode](#get_detail_blend_mode)**  **(** **)** const
 
 ###  Numeric Constants  
   * **PARAM_DIFFUSE** = **0** - Diffuse Lighting (light scattered from surface).
