@@ -25,7 +25,14 @@ C:\godot> scons platform=android
 
 This should result in a regular .so in \bin folder as if it was compiled with flags: `tools=no target=debug`
 
-Copy the .so to the libs Android folder (or symlink if you are in Linux or OSX)
+Copy the .so to the libs/armeabi Android folder (or symlink if you are in Linux or OSX). Note: Git does not support empty directories so you will have to create it if it does not exist:
+
+```
+C:\godot> mkdir platform/android/java/libs
+C:\godot> mkdir platform/android/java/libs/armeabi
+```
+
+Then copy or symlink: 
 
 ```
 C:\godot> cp bin/libgodot_android.debug.so platform/android/java/libs/armeabi
