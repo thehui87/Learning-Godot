@@ -35,7 +35,7 @@ C:\godot> mkdir platform/android/java/libs/armeabi
 Then copy or symlink: 
 
 ```
-C:\godot> cp bin/libgodot_android.debug.so platform/android/java/libs/armeabi
+C:\godot> copy bin/libgodot_android.debug.so platform/android/java/libs/armeabi
 
 alternatively if you are under unix you can symlink:
 
