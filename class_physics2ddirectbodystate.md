@@ -27,6 +27,7 @@ Direct access object to a physics body in the [Physics2DServer](class_physics2ds
   * [int](class_int)  **[get&#95;contact&#95;collider&#95;id](#get_contact_collider_id)**  **(** [int](class_int) contact_idx  **)** const
   * [Object](class_object)  **[get&#95;contact&#95;collider&#95;object](#get_contact_collider_object)**  **(** [int](class_int) contact_idx  **)** const
   * [int](class_int)  **[get&#95;contact&#95;collider&#95;shape](#get_contact_collider_shape)**  **(** [int](class_int) contact_idx  **)** const
+  * void  **[get&#95;contact&#95;collider&#95;shape&#95;metadata](#get_contact_collider_shape_metadata)**  **(** [int](class_int) contact_idx  **)** const
   * [Vector2](class_vector2)  **[get&#95;contact&#95;collider&#95;velocity&#95;at&#95;pos](#get_contact_collider_velocity_at_pos)**  **(** [int](class_int) contact_idx  **)** const
   * [float](class_float)  **[get&#95;step](#get_step)**  **(** **)** const
   * void  **[integrate&#95;forces](#integrate_forces)**  **(** **)**

@@ -15,6 +15,7 @@
   * [Vector2](class_vector2)  **[get&#95;collider&#95;velocity](#get_collider_velocity)**  **(** **)** const
   * void  **[get&#95;collider](#get_collider)**  **(** **)** const
   * [int](class_int)  **[get&#95;collider&#95;shape](#get_collider_shape)**  **(** **)** const
+  * void  **[get&#95;collider&#95;metadata](#get_collider_metadata)**  **(** **)** const
   * void  **[set&#95;collide&#95;with&#95;static&#95;bodies](#set_collide_with_static_bodies)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[can&#95;collide&#95;with&#95;static&#95;bodies](#can_collide_with_static_bodies)**  **(** **)** const
   * void  **[set&#95;collide&#95;with&#95;kinematic&#95;bodies](#set_collide_with_kinematic_bodies)**  **(** [bool](class_bool) enable  **)**

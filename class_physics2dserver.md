@@ -44,9 +44,11 @@ Physics 2D Server.
   * void  **[body&#95;add&#95;shape](#body_add_shape)**  **(** [RID](class_rid) body, [RID](class_rid) shape, [Matrix32](class_matrix32) transform=1,0, 0,1, 0,0  **)**
   * void  **[body&#95;set&#95;shape](#body_set_shape)**  **(** [RID](class_rid) body, [int](class_int) shape_idx, [RID](class_rid) shape  **)**
   * void  **[body&#95;set&#95;shape&#95;transform](#body_set_shape_transform)**  **(** [RID](class_rid) body, [int](class_int) shape_idx, [Matrix32](class_matrix32) transform  **)**
+  * void  **[body&#95;set&#95;shape&#95;metadata](#body_set_shape_metadata)**  **(** [RID](class_rid) body, [int](class_int) shape_idx, var metadata  **)**
   * [int](class_int)  **[body&#95;get&#95;shape&#95;count](#body_get_shape_count)**  **(** [RID](class_rid) body  **)** const
   * [RID](class_rid)  **[body&#95;get&#95;shape](#body_get_shape)**  **(** [RID](class_rid) body, [int](class_int) shape_idx  **)** const
   * [Matrix32](class_matrix32)  **[body&#95;get&#95;shape&#95;transform](#body_get_shape_transform)**  **(** [RID](class_rid) body, [int](class_int) shape_idx  **)** const
+  * void  **[body&#95;get&#95;shape&#95;metadata](#body_get_shape_metadata)**  **(** [RID](class_rid) body, [int](class_int) shape_idx  **)** const
   * void  **[body&#95;remove&#95;shape](#body_remove_shape)**  **(** [RID](class_rid) body, [int](class_int) shape_idx  **)**
   * void  **[body&#95;clear&#95;shapes](#body_clear_shapes)**  **(** [RID](class_rid) body  **)**
   * void  **[body&#95;set&#95;shape&#95;as&#95;trigger](#body_set_shape_as_trigger)**  **(** [RID](class_rid) body, [int](class_int) shape_idx, [bool](class_bool) enable  **)**
