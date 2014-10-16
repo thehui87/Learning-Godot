@@ -517,6 +517,34 @@ static func sum2(a, b):
     return a + b
 ```
 
+##  Setters/Getters for Exports
+
+It is often useful to know when an exported member variable changed. It may also be desired to encapsulate it's access. For this, GDScript provides a setter/getter helper using the "setget" keyword.
+Just add it at the end of the export line like this:
+
+```python
+export var myinteger = 5 setget myinteger_changed
+```
+If the value of "myinteger" is modified _externally_ (not from local usage in the class), the setter function will be called beforehand. The setter must, then, decide what to do with the new value. The setter function looks like this:
+
+```python
+func myinteger_changed(newvalue):
+    myinteger=newvalue
+```
+
+A setter and a getter can be used together too, just define both of them:
+
+```python
+export var myinteger = 5 setget myinteger_changed,myinteger_requested
+
+func myinteger_changed(newvalue):
+    myinteger=newvalue
+
+func myinteger_requested():
+    return myinteger # getter must return a value
+
+```
+
 ##  Tool Mode 
 
 Scripts, by default, don’t run inside the editor and only the exported properties can be changed. In some cases it is desired that they do run inside the editor (as long as they don’t execute game code or manually avoid doing so). For this, the “tool” keyword exists and must be placed at the top of the file:
