@@ -517,13 +517,13 @@ static func sum2(a, b):
     return a + b
 ```
 
-##  Setters/Getters for Exports
+##  Setters/Getters
 
-It is often useful to know when an exported member variable changed. It may also be desired to encapsulate it's access. For this, GDScript provides a setter/getter helper using the "setget" keyword.
-Just add it at the end of the export line like this:
+It is often useful to know when an member variable changed. It may also be desired to encapsulate it's access. For this, GDScript provides a setter/getter helper using the "setget" keyword.
+Just add it at the end of the variable definition line like this:
 
 ```python
-export var myinteger = 5 setget myinteger_changed
+var myinteger = 5 setget myinteger_changed
 ```
 If the value of "myinteger" is modified _externally_ (not from local usage in the class), the setter function will be called beforehand. The setter must, then, decide what to do with the new value. The setter function looks like this:
 
@@ -546,6 +546,8 @@ func myvar_get():
 ```
 
 Note: As mentioned before, local access will not trigger the setter and getter. example:
+
+This is specially useful when exporting variables to editor in tool scripts or plugins, for validating input.
 
 ```python
 
