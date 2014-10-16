@@ -545,6 +545,19 @@ func myinteger_requested():
 
 ```
 
+Note: As mentioned before, local access will not trigger the setter and getter. example:
+
+```python
+
+func _init():
+#does not trigger setter/getter
+    myinteger=5
+    print(myinteger)
+#triggers setter/getter
+    self.myinteger=5
+    print(self.myinteger)
+```
+
 ##  Tool Mode 
 
 Scripts, by default, don’t run inside the editor and only the exported properties can be changed. In some cases it is desired that they do run inside the editor (as long as they don’t execute game code or manually avoid doing so). For this, the “tool” keyword exists and must be placed at the top of the file:
