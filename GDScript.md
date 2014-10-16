@@ -519,20 +519,20 @@ static func sum2(a, b):
 
 ##  Setters/Getters
 
-It is often useful to know when an member variable changed. It may also be desired to encapsulate it's access. For this, GDScript provides a setter/getter helper using the "setget" keyword.
+It is often useful to know when an member variable changed. It may also be desired to encapsulate it's access. For this, GDScript provides a _setter_/_getter_ helper using the "setget" keyword.
 Just add it at the end of the variable definition line like this:
 
 ```python
 var myinteger = 5 setget myinteger_changed
 ```
-If the value of "myinteger" is modified _externally_ (not from local usage in the class), the setter function will be called beforehand. The setter must, then, decide what to do with the new value. The setter function looks like this:
+If the value of "myinteger" is modified _externally_ (not from local usage in the class), the _setter_ function will be called beforehand. The _setter_ must, then, decide what to do with the new value. The _setter function_ looks like this:
 
 ```python
 func myinteger_changed(newvalue):
     myinteger=newvalue
 ```
 
-A setter and a getter can be used together too, just define both of them:
+A _setter_ and a _getter_ can be used together too, just define both of them:
 
 ```python
 var myvar setget myvar_set,myvar_get
@@ -544,6 +544,13 @@ func myvar_get():
     return myvar # getter must return a value
 
 ```
+
+Using simply a _getter_ is possible too, just skip the setter:
+
+```python
+var myvar setget ,myvar_get
+```
+
 
 Note: As mentioned before, local access will not trigger the setter and getter. example:
 
