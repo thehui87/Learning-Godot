@@ -535,13 +535,13 @@ func myinteger_changed(newvalue):
 A setter and a getter can be used together too, just define both of them:
 
 ```python
-export var myinteger = 5 setget myinteger_changed,myinteger_requested
+var myvar setget myvar_set,myvar_get
 
-func myinteger_changed(newvalue):
-    myinteger=newvalue
+func myvar_set(newvalue):
+    myvar=newvalue
 
-func myinteger_requested():
-    return myinteger # getter must return a value
+func myvar_get():
+    return myvar # getter must return a value
 
 ```
 
