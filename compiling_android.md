@@ -124,3 +124,31 @@ However, if you are writing your custom modules or custom C++ code, you might in
 <p align="center"><img src="images/andtemplates.png"></p>
 
 You don't even need to copy them, you can just reference the resulting file in the bin\ directory of your Godot source folder, so the next time you build you automatically have the custom templates referenced.
+
+## Troubleshooting:
+
+### Application Not Installed
+
+Android might complain the application is not correctly installed. If so, check the following:
+
+* Check that the debug keystore is properly generated.
+* Check that jarsigner is from JDK6.
+
+If it still fails, open a command line and run logcat:
+
+C:\android-sdk\platform-tools> adb logcat
+
+And check the output while the application is installed. Reason for failure should be presented there. 
+Seek assistance if you can't figure it out.
+
+### Application Exits Immediately
+
+If the application runs but exits immediately, there might be one of the following reasons:
+
+* libgodot_android.so is not in libs/armeabi
+* Device does not support armv7 (try compiling yourself for armv6)
+* Device is Intel, and apk is compiled for ARM.
+
+In any case, "adb logcat" should also show the cause of the error. 
+
+
