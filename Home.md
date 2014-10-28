@@ -65,6 +65,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 *  ~~[Vehicle](tutorial_vehicle)~~ 
 *  ~~[GridMap (3D TileMap)](tutorial_grid_map)~~ 
 *  ~~[Spatial Audio](tutorial_spatial_audio)~~ 
+*  ~~[Toon Shading](tutorial_toon_shading)~~
 
 #### Math
 
