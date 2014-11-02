@@ -43,7 +43,7 @@ Some types and method names are about to change in the next days, please read th
 *  [Encrypting Save Games](tutorial_encrypting_savegames)
 *  [Internationalizing a Game (Multiple Languages)](tutorial_localization)
 *  [Handling Quit Request](tutorial_quit)
-*  ~~[Pausing The Game](tutorial_pause)~~
+*  [Pausing The Game](tutorial_pause)
 *  ~~[Input Events & Actions](tutorial_input_events)~~
 *  ~~[GamePad/Keyboard-Controlled GUIs](tutorial_gp_gui)~~
 
