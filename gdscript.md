@@ -497,7 +497,7 @@ func _myfunc():
 ```
 ### Built-In engine callbacks
 
-However, as a single exception, most engine built-in callbacks (not the signals!, just overridable functions like _notification, _process, _init, _input, _ready, _draw, _enter_scene, etc) happen in all levels of inheritance. Calling super on those is not needed.
+However, as a single exception, most engine built-in callbacks (not the signals!, just overridable functions like _notification, _process, _init, _input, _ready, _draw, _enter_tree, etc) happen in all levels of inheritance. Calling super on those is not needed.
 
 ##  Static Functions 
 

@@ -98,14 +98,14 @@ As mentioned before, it's better to use these functions. Nodes provide many usef
 
 ```python
 
-func _enter_scene():
-   pass # When the node enters the active scene, this function is called. Children nodes have not entered the active scene yet. In general, it's better to use _ready() for most cases.
+func _enter_tree():
+   pass # When the node enters the _Scene Tree_, it become acive and  this function is called. Children nodes have not entered the active scene yet. In general, it's better to use _ready() for most cases.
 
 func _ready():
-   pass # This function is called after _enter_scene, but it ensures that all children nodes have also entered the active scene, and they are all functional.
+   pass # This function is called after _enter_tree, but it ensures that all children nodes have also entered the _Scene Tree_, and became active.
    
-func _exit_scene():
-   pass # When the node exists the active scene, this function is called. Children nodes have all exited the active scene at this point.
+func _exit_tree():
+   pass # When the node exists the _Scene Tree_, this function is called. Children nodes have all exited the _Scene Tree_  at this point and all became inactive.
    
 func _process(delta):
    pass # When set_process() is enabled, this is called every frame

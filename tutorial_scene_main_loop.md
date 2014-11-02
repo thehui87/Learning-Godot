@@ -46,7 +46,7 @@ While other viewports can be created in the scene (for split-screen effects and 
 ### Scene Tree
 
 When a node is connected, directly or indirectly, to the root viewport, it becomes part of the _Scene Tree_. 
-This means that, as explained in previous tutorials, will get the _enter_scene() and _ready() callbacks (as well as _exit_scene()).
+This means that, as explained in previous tutorials, will get the _enter_tree() and _ready() callbacks (as well as _exit_tree()).
 
 <p align="center"><img src="images/activescene.png"></p>
 
@@ -62,9 +62,9 @@ Most node operations in Godot, such as drawing 2D, processing or getting notific
 
  1.  A scene is loaded from disk or created by scripting.
  2.  The root node of that scene (only one root, remember?) is added as either a child of the “root” Viewport (from SceneTree), or to any child or grand-child of it.
- 3.  Every node of the newly added scene, will receive the “enter_scene” notification ( _enter_scene() callback in GDScript) in top-to-bottom order.
+ 3.  Every node of the newly added scene, will receive the “enter_tree” notification ( _enter_tree() callback in GDScript) in top-to-bottom order.
  4.  An extra notification, “ready” ( _ready() callback in GDScript) is provided for convenience, when a node and all it’s children are inside the active scene.
- 5.  When a scene (or part of it) is removed, they receive the “exit scene” notification ( _exit_scene() callback in GDScript) in bottom-to-top order
+ 5.  When a scene (or part of it) is removed, they receive the “exit scene” notification ( _exit_tree() callback in GDScript) in bottom-to-top order
 
 
 

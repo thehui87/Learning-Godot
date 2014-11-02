@@ -151,11 +151,11 @@ Objects can have a set of signals defined (similar to Delegates in other languag
 ```c++
 obj->connect(<signal>,target_instance,target_method)
 //for example
-obj->connect("enter_scene",this,"_node_entered_scene")
+obj->connect("enter_tree",this,"_node_entered_tree")
 
 ```
 
-The method "_node_entered_scene" must be registered to the class using ObjectTypeDB::register_method (explained before).
+The method "_node_entered_tree" must be registered to the class using ObjectTypeDB::register_method (explained before).
 
 Addign signals to a class is done in _bind_method, using the ADD_SIGNAL macro, example:
 
