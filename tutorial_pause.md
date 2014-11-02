@@ -35,7 +35,26 @@ So the three possible states for a node are:
 * **Stop**: Stop the node no matter what (and children in Inherit mode). Paused or not this node will not process.
 * **Process**: Process the node no matter what (and children in Inherit mode). Paused or not this node will process.
 
+### Example
+
+An example of this is creating a popup or panel with controls inside, and set it's pause mode to "Process" then just hide it:
 
 
+Finally, when the pause button is pressed, enable the pause and show the pause screen.
 
+```python
+func _on_pause_button_pressed():
+    get_tree().set_pause(true)
+    get_node("pause_popup").show()
+```
+
+To remove the pause, just do the opposite when the pause screen is closed:
+
+```python
+func _on_pause_popup_close_pressed():
+    get_node("pause_popup").hide()
+    get_tree().set_pause(false)
+```
+
+And that should be all!
 
