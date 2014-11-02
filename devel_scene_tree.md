@@ -8,7 +8,7 @@ Notice! Some concept naming and class names will change. This concept, class and
 
 The change itself is related to concept. In the documentation, the term "Scene" was too ambiguous, as it was used for two different areas.
 
-* The scene, as in, the main class that contains all nodes (SceneMainLoop) and the total amount of nodes "acive".
+* The scene, as in, the main class that contains all nodes (SceneMainLoop) and the total amount of nodes "active".
 * The scene, as edited in the editor, that can be later instanced into other scenes.
 
 Given Godot main design strength is scene instancing, and most of the time is spent in the editor editing a "scene", the first area where this meaning is used (the tree of nodes in the SceneMainLoop) is ambiguous.
