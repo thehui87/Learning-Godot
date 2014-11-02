@@ -6,7 +6,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 # Notice!
 
 Some types and method names are about to change in the next days, please read this:
-* [SceneMainLoop - SceneTree Notes](devel_scene_tree)
+* [SceneTree - SceneTree Notes](devel_scene_tree)
 
 # Roadmap
 
@@ -29,7 +29,7 @@ Some types and method names are about to change in the next days, please read th
  9.  [Animation](tutorial_animation)
  10.  [Resources](tutorial_resources)
  11.  [File System](tutorial_fs)
- 12.  [SceneMainLoop](tutorial_scene_main_loop)
+ 12.  [SceneTree](tutorial_scene_main_loop)
  13.  [Singletons (Autoload)](tutorial_singletons)
 
 #### Engine

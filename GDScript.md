@@ -659,7 +659,7 @@ The real strength of using yield() is when combined with signals (if you haven't
 ```python
 
 #resume execution the next frame
-yield( get_scene(), "idle_frame" )
+yield( get_tree(), "idle_frame" )
 
 #resume execution when animation is done playing:
 yield( get_node("AnimationPlayer"), "finished" )

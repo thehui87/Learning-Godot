@@ -9,7 +9,7 @@ c:\godot> godot -s http_test.gd
 It will connect and fetch a website.
 
 ```python
-extends SceneMainLoop
+extends SceneTree
 
 # HTTPClient demo
 # This simple class can do HTTP requests, it will not block but it needs to be polled

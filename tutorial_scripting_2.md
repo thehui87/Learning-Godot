@@ -53,26 +53,26 @@ func _ready():
 
 ```
 
-This way, if the player, sneaking into the secret base, is discovered, all enemies can be notified about the alarm sounding, by using [SceneMainLoop.call_group](class_scenemainloop#call_group)():
+This way, if the player, sneaking into the secret base, is discovered, all enemies can be notified about the alarm sounding, by using [SceneTree.call_group](class_scenemainloop#call_group)():
 
 ```python 
 
 func _on_discovered():
 
-	get_scene().call_group(0,"guards","player_was_discovered")
+	get_tree().call_group(0,"guards","player_was_discovered")
 
 ```
 
 The above code calls the function "player_was_discovered" on every member of the group "guards".
-Optionally, it is possible to get the full list of "guards" nodes by calling [SceneMainLoop.get_nodes_in_group](class_scenemainloop#get_nodes_in_group)():
+Optionally, it is possible to get the full list of "guards" nodes by calling [SceneTree.get_nodes_in_group](class_scenemainloop#get_nodes_in_group)():
 
 ```python
 
-var guards = get_scene().get_nodes_in_group("guards")
+var guards = get_tree().get_nodes_in_group("guards")
 
 ```
 
-More will be added about [SceneMainLoop](class_scenemainloop) later.
+More will be added about [SceneTree](class_scenemainloop) later.
 
 
 ### Notifications

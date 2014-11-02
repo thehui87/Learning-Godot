@@ -1,4 +1,4 @@
-# SceneMainLoop
+# SceneTree
 
 ### Introduction
 
@@ -14,12 +14,12 @@ When initialization is complete, [OS](class_os) needs to be supplied a [MainLoop
 
 The user program, or game, starts in the MainLoop. This class has a few methods, for initialization, idle (frame-syncronized callback), fixed (physics-synchronized callback), and input. Again, this is really low level and when making games in Godot, writing your own MainLoop does not even make sense. 
 
-### SceneMainLoop
+### SceneTree
 
 One of the ways to explain how Godot works, is that it's a high level game engine over a low level middleware.
 The scene system is the game engine, while the [OS](class_os) and servers are the low level API. 
 
-In any case, the scene system provides it's own main loop to OS, [SceneMainLoop](class_scenemainloop). 
+In any case, the scene system provides it's own main loop to OS, [SceneTree](class_scenemainloop). 
 This is automatically instanced and set when running a scene, no need to do any extra work.
 
 It's important to know that this class exists because it has a few important uses:
@@ -28,20 +28,20 @@ It's important to know that this class exists because it has a few important use
 *  It contains information about the groups, and has means to call all nodes in a group, or get a list of them.
 *  It contains some global state functionality, such as setting pause mode, or quitting the process.
 
-When a node is part of the active scene, the [SceneMainLoop](class_scenemainloop) can be obtained by simply calling [Node.get_scene](class_node#get_scene)().
+When a node is part of the active scene, the [SceneTree](class_scenemainloop) can be obtained by simply calling [Node.get_tree](class_node#get_tree)().
 
 ### Root Viewport
 
 The root [Viewport](class_viewport) is always a top of the scene. From a node, it can be obtained in two different ways:
 
 ```python
-    get_scene().get_root() # access via scenemainloop
+    get_tree().get_root() # access via scenemainloop
     get_node("/root") # access via absolute path
 ```
 
 This node contains the main viewport, anything that is a child of a [Viewport](class_viewport) is drawn inside of it by default, so it makes sense that the top of all nodes is always a node of this type, otherwise nothing would be seen! 
 
-While other viewports can be created in the scene (for split-screen effects and such), this one is the only one that is never created by the user. It's created automatically inside SceneMainLoop.
+While other viewports can be created in the scene (for split-screen effects and such), this one is the only one that is never created by the user. It's created automatically inside SceneTree.
 
 ### Active Scene
 
@@ -61,7 +61,7 @@ Most node operations in Godot, such as drawing 2D, processing or getting notific
 ### "Becoming Active" In Detail
 
  1.  A scene is loaded from disk or created by scripting.
- 2.  The root node of that scene (only one root, remember?) is added as either a child of the “root” Viewport (from SceneMainLoop), or to any child or grand-child of it.
+ 2.  The root node of that scene (only one root, remember?) is added as either a child of the “root” Viewport (from SceneTree), or to any child or grand-child of it.
  3.  Every node of the newly added scene, will receive the “enter_scene” notification ( _enter_scene() callback in GDScript) in top-to-bottom order.
  4.  An extra notification, “ready” ( _ready() callback in GDScript) is provided for convenience, when a node and all it’s children are inside the active scene.
  5.  When a scene (or part of it) is removed, they receive the “exit scene” rotification ( _exit_scene() callback in GDScript) in bottom-to-top order

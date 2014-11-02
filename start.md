@@ -17,7 +17,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
  7.  [Animation](tutorial_animation)
  8.  [Resources](tutorial_resources)
  9.  [File System](tutorial_fs)
- 10.  [SceneMainLoop](tutorial_scene_main_loop)
+ 10.  [SceneTree](tutorial_scene_main_loop)
  11.  [Singletons (Autoload)](tutorial_singletons)
 
 #### Intermediate
