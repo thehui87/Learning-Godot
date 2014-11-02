@@ -3,6 +3,11 @@
 
 Welcome to the Godot Engine documentation center. The aim of these pages is to provide centralized access to all documentation-related materials.
 
+# Notice!
+
+Some types and method names are about to change in the next days, please read this:
+* [SceneMainLoop - SceneTree Notes](devel_scene_tree)
+
 # Roadmap
 
 * [Development Roadmap](devel_roadmap)
