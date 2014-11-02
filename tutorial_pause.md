@@ -26,6 +26,7 @@ This effectively stops the whole game. Calling this function from a script, by d
 
 Before enabling pause, make sure that nodes that must keep working during pause are white-listed. This is done by editing the "Pause Mode" property in a node:
 
+<p align="center"><img src="images/pausemode.png"></p>
 
 By default all nodes have this property in the "Inherit" state. This means, that they will only process (or not) depending on what this same property is set on the parent node. If the parent is set to "Inherit" , then the grandparent will be checked and so on. Ultimately, if a state can't be found in any of the grandparents, the pause state in SceneTree is used. This means that, by default, when the game is paused every node will be paused.
 
@@ -39,6 +40,7 @@ So the three possible states for a node are:
 
 An example of this is creating a popup or panel with controls inside, and set it's pause mode to "Process" then just hide it:
 
+<p align="center"><img src="images/pause_popup.png"></p>
 
 Finally, when the pause button is pressed, enable the pause and show the pause screen.
 
@@ -57,4 +59,3 @@ func _on_pause_popup_close_pressed():
 ```
 
 And that should be all!
-
