@@ -6,7 +6,7 @@ Welcome to the Godot Engine documentation center. The aim of these pages is to p
 # Notice!
 
 Some types and method names are about to change in the next days, please read this:
-* [SceneTree - SceneTree Notes](devel_scene_tree)
+* [SceneMainLoop -> SceneTree Notes](devel_scene_tree)
 
 # Roadmap
 
