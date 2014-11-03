@@ -2,7 +2,7 @@
 
 ### Pause?
 
-In most games, it is always desirable to, at some point, interrupt the game to do something else. Be it taking a break, to changing options. However this is not as simple s it seems. The game might be stopped, but it might be desirable that some menus and animations continue working. 
+In most games, it is always desirable to, at some point, interrupt the game to do something else. Be it taking a break, to changing options. However this is not as simple as it seems. The game might be stopped, but it might be desirable that some menus and animations continue working. 
 
 Implementing a fine-grained control for what can be paused (and what not) is a lot of work, so a simple framework for pausing is provided in Godot.
 
