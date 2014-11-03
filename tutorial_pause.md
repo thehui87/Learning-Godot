@@ -42,7 +42,9 @@ An example of this is creating a popup or panel with controls inside, and set it
 
 <p align="center"><img src="images/pause_popup.png"></p>
 
-Finally, when the pause button is pressed, enable the pause and show the pause screen.
+Just by setting the root of the pause popup to "Process", all children and grandchildren will inherit that state. This way, this branch of the scene tree will continue working when paused.
+
+Finally, make it so when a pause button is pressed (any button will do), enable the pause and show the pause screen.
 
 ```python
 func _on_pause_button_pressed():
