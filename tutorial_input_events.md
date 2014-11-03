@@ -72,5 +72,7 @@ get_tree().input_event(ev)
 ```
 ### InputMap
 
+Customizing and re-mapping input from code is often desired. If your whole workflow depends on actions, the [InputMap](class_inputmap) singleton is ideal for reassigning or creating different actions at run-time.
+
 
 -explain InputMap and how to map to user-events.
