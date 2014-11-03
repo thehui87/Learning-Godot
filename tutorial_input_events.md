@@ -20,7 +20,26 @@ But SceneTree does not know what to do with the event, so it will give it to the
 
 ### Anatomy of an InputEvent
 
+[InputEvent](class_inputevent) is just a base built-in type, it does not represent anything and only contains some basic information, such as event ID (which is increased for each event), device index, etc.
+InputEvent has a "type" member. By assigning it, it can become different types of input event. Every type of InputEvent has different properties, according to it's role.
 
+Example of changing event type.
+
+```python
+# create event
+var ev = InputEvent.new()
+# set type
+ev.type=InputEvent.MOUSE_BUTTON
+# button_index is only available for the above type
+ev.button_index=BUTTON_LEFT
+```
+
+There are several types of InputEvent, described in the table below:
+
+| Event | Type Index | Description |
+|-------|------------|-------------|
+|[InputEvent](class_inputevent)|NONE|Empty Input Event|
+|[InputEventKey](class_inputeventkey)|KEY|Contains a scancode and unicode value, as well as modifiers|
 
 
 
