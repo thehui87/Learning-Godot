@@ -14,9 +14,11 @@ But SceneTree does not know what to do with the event, so it will give it to the
 
 1. First, it will try to feed the input to the GUI, and see if any control can receive it. If so, the [Control](class_control) will be called the virtual function [Control._input_event](class_control#_input_event) and the signal "input_event" will be emitted (This function is re-implementable by script by inheriting from it). If the control wants to "consume" the event, it will call  [Control.accept_event](class_control#accept_event) and the event will not spread any more.
 2. If the GUI does not want the event, the standard _input function will be called in any node with input processing enabled (enable with [Node.set_process_input](class_node#set_process_input)) and  override [Node._input](class_node#_input)). If any function consumes the event, it can call [SceneTree.set_input_as_handled()](class_scenetree#set_input_as_handled), and the event will not spread any more.
-3. If so far no one consumed the event, the unhandled input callback with called (enable with [Node.set_process_unhandled_input](class_node#set_process_unhandled_input)) and  override [Node._unhandled_input](class_node#_unhandled_input)). If any function consumes the event, it can call [SceneTree.set_input_as_handled()](class_scenetree#set_input_as_handled), and the event will not spread any more.
+3. If so far no one consumed the event, the unhandled input callback will be called (enable with [Node.set_process_unhandled_input](class_node#set_process_unhandled_input)) and  override [Node._unhandled_input](class_node#_unhandled_input)). If any function consumes the event, it can call [SceneTree.set_input_as_handled()](class_scenetree#set_input_as_handled), and the event will not spread any more.
 4. If no one wanted the event so far, and a [Camera](class_camera) is assigned to the Viewport, a ray to the physics world (in the ray direction from he click) will be casted. If this ray hits an object, it will call the [CollisionObject._input_event](class_collisionobject#_input_event) function in the relevant physics object (bodies receive this callback by default, but areas do not. This can be configured through [Area](class_area) properties).
+5. Finally, if the event was unhandled, it will be passed to the next Viewport in the tree, or it will be ignored.
 
+### Anatomy of an InputEvent
 
 
 
