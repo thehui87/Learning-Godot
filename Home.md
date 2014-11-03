@@ -36,6 +36,7 @@ Some types and method names are about to change in the next days, please read th
 
 *  [Viewports](tutorial_viewports)
 *  [Multiple Screen Resolutions](tutorial_multires)
+*  [Input Events & Actions](tutorial_input_events)
 *  [Mouse & Input Coordinates](tutorial_mouse_coords)
 *  [Version Control & Project Organization](tutorial_vercontrol)
 *  [GUI Control Repositioning](tutorial_gui_repositioning)
@@ -44,7 +45,6 @@ Some types and method names are about to change in the next days, please read th
 *  [Internationalizing a Game (Multiple Languages)](tutorial_localization)
 *  [Handling Quit Request](tutorial_quit)
 *  [Pausing The Game](tutorial_pause)
-*  ~~[Input Events & Actions](tutorial_input_events)~~
 *  ~~[GamePad/Keyboard-Controlled GUIs](tutorial_gp_gui)~~
 
 #### 2D Tutorials
