@@ -5,7 +5,7 @@
 Regular 2D nodes, such as [Node2D](class_node2d) or [Control](class_control) both inherit from [CanvasItem](class_canvasitem), which is the base for all 2D nodes. CanvasItems can be arranged in trees and they will inherit their transform. This means that, moving the parent, the children will be moved too.
 
 These nodes are placed as direct or indirect children to a [Viewport](class_viewport), and will be displayed through it. 
-Viewport has a property "canvas_transform" ([Viewport](class_viewport#set_canvas_transform), which allows to transform all the CanvasItem hiereachy by a custom [Matrix32](class_matrix32) transform. Nodes such as [Camera2D](class_camera2d), work by changing that transform.
+Viewport has a property "canvas_transform" ([Viewport.set_canvas_transform()](class_viewport#set_canvas_transform)), which allows to transform all the CanvasItem hiereachy by a custom [Matrix32](class_matrix32) transform. Nodes such as [Camera2D](class_camera2d), work by changing that transform.
 
 Changing the canvas transform is useful because it is a lot more efficient than moving the root canvas item (and hence the whole scene). Canvas transform is a simple matrix that offsets the whole 2D drawing, so it's the most efficient way to do scrolling.
 
