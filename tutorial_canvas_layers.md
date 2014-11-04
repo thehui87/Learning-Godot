@@ -31,3 +31,6 @@ Here's a diagram of how it looks:
 
 CanvasLayers are independent of tree order, and they only depend on their layer number, so they can be instantiated when needed.
 
+### Performance
+
+Even though there shouldn't be any performance limitation, it is not advised to use excessive amount of layers to arrange drawing order of nodes. The most optimal way will be arranging them by tree order. In the future, nodes will also have a priority or sub-layer index which should aid for this.
