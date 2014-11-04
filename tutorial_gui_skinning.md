@@ -52,7 +52,7 @@ l.add_color_override("font_color",Color(1.0,1.0,1.0))
 In the inline help of Godot (help tab) you can check which theme options are overrideable. This is not yet available in the wiki class reference, but will be soon.
 
 
-### Changing the Control
+### Customizing a Control
 
 If only a few controls need to be skinned. It is often not neccesary to create a new theme. Controls offer their theme options as special kind of properties. If checked, overriding will take place:
 
@@ -60,3 +60,50 @@ If only a few controls need to be skinned. It is often not neccesary to create a
 
 
 As can be see in the image above, theme options have little check-boxes. If checked, they can be used to override the value of the theme just for that control.
+
+### Creating a Theme
+
+The simplest way to create a theme is to edit a theme resource. Create a Theme from the resource menu, the editor will appear immediately. Following to this, save it (to, as example, myheme.thm):
+
+<p align="center"><img src="images/themecheck.png"></p>
+
+This will create an empty theme that can later be loaded and assigned to controls.
+
+### Example: Themeing a Button
+
+Take some [assets](images/skin_assets.png), go to the "theme" menu and select "Add Class Item":
+
+<p align="center"><img src="images/themeci.png"></p>
+
+A menu will appear promting the type of control to create. Select "Button":
+
+<p align="center"><img src="images/themeci2.png"></p>
+
+Immediately, all button theme options will appear in the property editor, where they can be edited:
+
+<p align="center"><img src="images/themeci3.png"></p>
+
+Select the "normal" stylebox and create a new "StyleBoxTexture", then edit it. A texture stylebox basically contains a texture and the size of the margins that will not stretch when the texture is stretched. This is called "3x3" stretching:
+
+<p align="center"><img src="images/sb1.png"></p>
+
+Repeat the steps and add the other assets. There is no hover or disabled image in the example files, so use the same stylebox as in normal. Set the supplied font as the button font and change the font color to black. Soon, your button will look different and retro:
+
+<p align="center"><img src="images/sb2.png"></p>
+
+Save this theme to the .thm file. Go to the 2D editor and create a few buttons:
+
+<p align="center"><img src="images/skinbuttons1.png"></p>
+
+Now, go to the root node of the scene and locate the "theme" property, replace it by the theme that was just created. It should look like this:
+
+<p align="center"><img src="images/skinbuttons2.png"></p>
+
+Congratulations! You have created a reusable GUI Theme!
+
+
+
+
+
+
+
