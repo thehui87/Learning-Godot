@@ -51,8 +51,8 @@ Some types and method names are about to change in the next days, please read th
 *  [Physics & Collision (2D)](tutorial_physics_2d)
 *  [Tile Map](tutorial_tilemap)
 *  [Kinematic Character (2D)](tutorial_kinematic_char)
+*  [GUI Skinning](tutorial_gui_skinning)
 *  ~~[Cut-Out Animation](tutorial_cutout)~~
-*  ~~[GUI Skinning](tutorial_gui_skinning)~~
 *  ~~[Custom Drawing in Node2D/Control](tutorial_custom_draw_2d)~~
 
 #### 3D Tutorials
