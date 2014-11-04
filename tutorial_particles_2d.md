@@ -77,3 +77,21 @@ If this acceleration is positive, particles are accelerated away from the center
 This acceleration will use the tangent vector to the center. Combined with Radial Acceleration can do nice effects.
 
 <p align="center"><img src="images/paranim9.gif"></p>
+
+#### Damping
+
+Damping applies friction to the particles, forcing them to stop. It is specially useful for sparks or explosions, which usually begin with a high linear velocity and then stop as they fade.
+
+<p align="center"><img src="images/paranim10.gif"></p>
+
+#### Initial Angle
+
+Determines the intial angle of the particle (in degress). This parameter is mostly useful randomized.
+
+<p align="center"><img src="images/paranim11.gif"></p>
+
+#### Initial & Final Size
+
+Determines the intial and final scales of the particle. 
+
+<p align="center"><img src="images/paranim12.gif"></p>
