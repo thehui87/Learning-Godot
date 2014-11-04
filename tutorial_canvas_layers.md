@@ -21,7 +21,7 @@ How can these problems be solved in a single scene tree?
 
 ### CanvasLayers
 
-The answer is [CanvasLayer](class_canvaslayer), which is a node that adds a separate rendering layer for all it's children and grand-children. Viewport children will draw by default at layer "0", while a CanvasLayer will draw at any numeric layer. Layers with a greater number will be drawn above those with a smaller number. CanvasLayers also have their own transform, and do not depend of the transform of other layers. This allows the UI to be fixed in-place, while the word moves.
+The answer is [CanvasLayer](class_canvaslayer), which is a node that adds a separate 2D rendering layer for all it's children and grand-children. Viewport children will draw by default at layer "0", while a CanvasLayer will draw at any numeric layer. Layers with a greater number will be drawn above those with a smaller number. CanvasLayers also have their own transform, and do not depend of the transform of other layers. This allows the UI to be fixed in-place, while the word moves.
 
 An example of this is creating a parallax background. This can be done with a CanvasLayer at layer "-1". The screen with the points, life counter and pause button can also be created at layer "1".
 
