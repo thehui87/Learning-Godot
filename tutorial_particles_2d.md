@@ -4,7 +4,7 @@
 
 A simple (but flexible enough for most uses) particle system is provided. Particle systems are used to simulate complex physical effects tsuch as sparks, fire, magic particles, smoke, mist, magic, etc. 
 
-The idea is that a "particle" is emitted every a fixed interval and with a fixed lifetime. During his lifetime, every particle will have the same base behavior. What makes every particle different and provides a more organic look is the "randomness" associated to each parameter. In essence, creating a particle system means setting base physics parameters and then adding randomness to them.
+The idea is that a "particle" is emitted at a fixed interval and with a fixed lifetime. During his lifetime, every particle will have the same base behavior. What makes every particle different and provides a more organic look is the "randomness" associated to each parameter. In essence, creating a particle system means setting base physics parameters and then adding randomness to them.
 
 
 ### Particles2D
@@ -43,7 +43,7 @@ Spread is the angle at which particles will randomly be emitted. Increasing the 
 
 #### Linear Velocity 
 
-Linear Velocity is the speed at which particles will be emitted (in pixels/sec). Speed might later be modified by gravity or other acceleations (as described further below).
+Linear Velocity is the speed at which particles will be emitted (in pixels/sec). Speed might later be modified by gravity or other accelerations (as described further below).
 
 <p align="center"><img src="images/paranim4.gif"></p>
 
