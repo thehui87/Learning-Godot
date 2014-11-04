@@ -71,7 +71,7 @@ This will create an empty theme that can later be loaded and assigned to control
 
 ### Example: Themeing a Button
 
-Take some [assets](images/skin_assets.png), go to the "theme" menu and select "Add Class Item":
+Take some [assets](media/skin_assets.zip), go to the "theme" menu and select "Add Class Item":
 
 <p align="center"><img src="images/themeci.png"></p>
 
