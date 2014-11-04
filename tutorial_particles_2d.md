@@ -33,3 +33,10 @@ Changing it will change the emissor direction, but gravity will still affect the
 
 <p align="center"><img src="images/paranim2.gif"></p>
 
+This parameter is useful because, by rotating the node, gravity will also be rotated. Changing direction keeps them separate.
+
+#### Spread 
+
+Spread is the angle at which particles will randomly be emitted. Increasing the spread will increase the angle. A spread of 180 will emit in all directions.
+
+<p align="center"><img src="images/paranim3.gif"></p>
