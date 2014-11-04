@@ -2,7 +2,7 @@
 
 ## Intro
 
-A simple (but flexible enough for most uses) particle system is provided. Particle systems are used to simulate complex physical effects such as sparks, fire, magic particles, smoke, mist, magic, etc. 
+A simple (but flexible enough for most uses) particle system is provided. Particle systems are used to simulate complex physical effects tsuch as sparks, fire, magic particles, smoke, mist, magic, etc. 
 
 The idea is that a "particle" is emitted every a fixed interval and with a fixed lifetime. During his lifetime, every particle will have the same base behavior. What makes every particle different and provides a more organic look is the "randomness" associated to each parameter. In essence, creating a particle system means setting base physics parameters and then adding randomness to them.
 
@@ -126,7 +126,7 @@ Lifetime: 4.0
 
 #### Timescale
 
-It happens often that the effect achieved is perfect, except too fast or two slow. Timescale helps adjust the overall speed.
+It happens often that the effect achieved is perfect, except too fast or too slow. Timescale helps adjust the overall speed.
 
 Timescale everything 2x:
 
@@ -162,7 +162,7 @@ By default this option is on, and it means that the space that particles are emi
 
 If disabled, particles will emit to global space, meaning that if the node is moved, the emissor is moved too:
 
-<p align="center"><img src="images/paranim20.gif"></p> 
+<p align="center"><img src="images/paranim21.gif"></p> 
 
 #### Explosiveness
 
@@ -175,6 +175,12 @@ Values in the middle are also allowed. This feature is useful for creating explo
 
 <p align="center"><img src="images/paranim18.gif"></p> 
 
+## Randomness
 
+All physics parameters can be randomiez. Random variables go from 0 to 1. the formula to randomize a parameter is:
+
+```
+initial_value = param_value + param_value*randomness
+```
 
 
