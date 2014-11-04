@@ -96,7 +96,7 @@ Determines the intial and final scales of the particle.
 
 <p align="center"><img src="images/paranim12.gif"></p>
 
-#### Color Phases
+## Color Phases
 
 Particles can use up to 4 color phases. Each color phase can include transparency.
 Phases must provide an offset value from 0 to 1, and alays in ascending order. For example, a color will begin at offset 0 and end in offset 1, but 4 colors might use diferent offsets, such as 0, 0.2, 0.8 and 1.0 for the different phases:
@@ -106,3 +106,75 @@ Phases must provide an offset value from 0 to 1, and alays in ascending order. F
 Will result in:
 
 <p align="center"><img src="images/paranim13.gif"></p>
+
+
+## Global Parameters
+
+These parameters affect the behavior of the entire system.
+
+#### Lifetime
+
+The time in seconds that every particle will stay alive. When lifetime ends, a new particle is created to replace it. 
+
+Lifetime: 0.5
+
+<p align="center"><img src="images/paranim14.gif"></p> 
+
+Lifetime: 4.0
+
+<p align="center"><img src="images/paranim15.gif"></p> 
+
+#### Timescale
+
+It happens often that the effect achieved is perfect, except too fast or two slow. Timescale helps adjust the overall speed.
+
+Timescale everything 2x:
+
+<p align="center"><img src="images/paranim16.gif"></p> 
+
+#### Preprocess
+
+Particle systems begin with 0 particles emitted, then start emitting. This can be an inconvenience when just loading a scene and systems like a torch, mist, etc begin emitting the moment you enter. Preprocess is used to let the system process a given amount of seconds before it is actually shown the first time.
+
+#### Emit Timeout
+
+This variable will switch emission off after given amount of seconds being on. When zero, itś disabled.
+
+#### Offset
+
+Allows to move the emission center away from the center
+
+#### Half Extents
+
+Makes the center (by default 1 pixel) wider, to the size in pixels desired. Particles will emit randomly inside this area.
+
+<p align="center"><img src="images/paranim17.gif"></p> 
+
+It is also possible to set an emission mask by using this value. Check the "Particles" menu on the 2D scene editor viewport and select your favorite texture. Opaque pixels will be used as potential emission location, while transparent ones will be ignored:
+
+<p align="center"><img src="images/paranim19.gif"></p> 
+
+#### Local Space
+
+By default this option is on, and it means that the space that particles are emitted to is contained within the node. If the node is moved, all particles are moved with it:
+
+<p align="center"><img src="images/paranim20.gif"></p> 
+
+If disabled, particles will emit to global space, meaning that if the node is moved, the emissor is moved too:
+
+<p align="center"><img src="images/paranim20.gif"></p> 
+
+#### Explosiveness
+
+If lifetime is 1 and there are 10 particles, it means every particle will be emitted every 0.1 seconds. The explosiveness parameter changes this, and forces particles to be emitted all together. Ranges are:
+
+* 0: Emit all particles together.
+* 1: Emit particles at equal interval.
+
+Values in the middle are also allowed. This feature is useful for creating explosions or sudden bursts of particles:
+
+<p align="center"><img src="images/paranim18.gif"></p> 
+
+
+
+
