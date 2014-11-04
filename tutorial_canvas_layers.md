@@ -13,9 +13,9 @@ Changing the canvas transform is useful because it is a lot more efficient than 
 
 But this is not enough. There are often situations where the game or application may not want _everything_ transformed by the canvas transform. Examples of this are:
 
-* **Parallax Backgrounds**: Backgrounds that move slower than the rest of
-* **HUD**: Head's up display, or user interface. If the world moves, moving the life counter, points, etc is wrong.
-* **Transitions**: Effects used for transitions (fades, blends) may want to remain at a fixed location.
+* **Parallax Backgrounds**: Backgrounds that move slower than the rest of the stage.
+* **HUD**: Head's up display, or user interface. If the world moves, the life counter, points, etc must stay static.
+* **Transitions**: Effects used for transitions (fades, blends) may also want it to remain at a fixed location.
 
 How can these problems be solved in a single scene tree?
 
