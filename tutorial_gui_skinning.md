@@ -48,3 +48,15 @@ It is possible to override those options without using the theme directly and on
 var l = Label.new()
 l.add_color_override("font_color",Color(1.0,1.0,1.0))
 ```
+
+In the inline help of Godot (help tab) you can check which theme options are overrideable. This is not yet available in the wiki class reference, but will be soon.
+
+
+### Changing the Control
+
+If only a few controls need to be skinned. It is often not neccesary to create a new theme. Controls offer their theme options as special kind of properties. If checked, overriding will take place:
+
+<p align="center"><img src="images/themecheck.png"></p>
+
+
+As can be see in the image above, theme options have little check-boxes. If checked, they can be used to override the value of the theme just for that control.
