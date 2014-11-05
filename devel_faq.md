@@ -1,4 +1,4 @@
-## GDScript? Why your own scripting language? Why not Lua, Javascript, C#, etc.
+## #1 GDScript? Why your own scripting language? Why not Lua, Javascript, C#, etc.
 
 The official languges for Godot are GDSCript and C++.
 
@@ -8,13 +8,13 @@ Godot C++ API is also efficient and easy to use (the entire Godot editor is made
 
 More information about getting comfortable with GDScript or dynamically typed languages can be found [here](tutorial_gdscript_efficiently).
 
-## Why is FBX not supported for import?
+## #2 Why is FBX not supported for import?
 
 FBX SDK has a very [restrictive license](http://www.blender.org/bf/Autodesk_FBX_License.rtf), that is incompatible with the [open license](http://opensource.org/licenses/MIT) provided by Godot.
 
 That said, Godot Collada support is really good, please use the [OpenCollada](https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools) exporter for maximum compatibility if you are using Maya or 3DS Max. If you are use Blender, take a look at our own (Better Collada Exporter)[
 
-## Will [Insert closed SDK such as PhysX, Gameworks, etc] be supported in Godot?
+## #3 Will [Insert closed SDK such as PhysX, Gameworks, etc] be supported in Godot?
 
 No, the aim of Godot is to create a complete open source engine licensed under MIT, so you have complete control about over single piece of it. Open versions of functionality or features from such SDKs may be eventually added though.
 
