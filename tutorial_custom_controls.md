@@ -36,6 +36,12 @@ To provide this callback, just override [Control.get_minimum_size()](class_contr
 func get_minimum_size(): 
     return Vector2(30,30)
 ```
+Or alternatively, set it via function:
+
+```python
+func _ready():
+    set_custom_minimum_size( Vector2(30,30) )
+```
 
 ## Input
 
