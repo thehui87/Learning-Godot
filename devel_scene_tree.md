@@ -2,7 +2,7 @@
 
 ## Warning!
 
-Notice! Some concept naming and class names will change. This concept, class and method renaming will help better understand and conceptualize how Godot works. This will likely break backwards compatibility with some projects (not by much), so apologies in advance. It was necessary to do this now, as in the future it would be even more difficult. This document will explain how to fix/migrate the projects.
+Notice! Some concept naming and class names HAVE CHANGED. This concept, class and method renaming help better understand and conceptualize how Godot works. This broke backwards compatibility with some projects (not by much), so apologies in advance. It was necessary to do this now, as in the future it would be even more difficult. This document will explain how to fix/migrate the projects.
 
 ## Context
 
