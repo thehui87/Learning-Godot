@@ -3,7 +3,7 @@
 
 Welcome to the Godot Engine documentation center. The aim of these pages is to provide centralized access to all documentation-related materials.
 
-Items in ~~strikethrough~~ means **the feature exists**, but documentation for it has not been written yet.
+Items in ~~strikethrough~~ mean **the feature exists**, but documentation for it has not been written yet.
 
 # Notice!
 
