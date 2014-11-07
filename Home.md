@@ -3,6 +3,8 @@
 
 Welcome to the Godot Engine documentation center. The aim of these pages is to provide centralized access to all documentation-related materials.
 
+Items in ~~strikethrough~~ means **the feature exists**, but documentation for it has not been written yet.
+
 # Notice!
 
 Some types and method names are about to change in the next days, please read this:
