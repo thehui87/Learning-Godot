@@ -47,6 +47,7 @@ Some types and method names are about to change in the next days, please read th
 *  [Internationalizing a Game (Multiple Languages)](tutorial_localization)
 *  [Handling Quit Request](tutorial_quit)
 *  [Pausing The Game](tutorial_pause)
+*  ~~[Basic Networking (TCP&UDP)](tutorial_basic_networking)~~
 *  ~~[GamePad/Keyboard-Controlled GUIs](tutorial_gp_gui)~~
 
 #### 2D Tutorials
