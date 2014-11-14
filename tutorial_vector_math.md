@@ -191,22 +191,4 @@ if ( BA.dot(F) > 0 ):
     print("!")
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The secret to understanding the dot product
+Seems Snake is safe so far.
