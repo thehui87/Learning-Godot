@@ -10,7 +10,7 @@ PopupMenu displays a list of options.
   * void  **[add&#95;item](#add_item)**  **(** [String](class_string) label, [int](class_int) id=-1, [int](class_int) accel=0  **)**
   * void  **[add&#95;icon&#95;check&#95;item](#add_icon_check_item)**  **(** [Object](class_object) texture, [String](class_string) label, [int](class_int) id=-1, [int](class_int) accel=0  **)**
   * void  **[add&#95;check&#95;item](#add_check_item)**  **(** [String](class_string) label, [int](class_int) id=-1, [int](class_int) accel=0  **)**
-  * void  **[add&#95;submenu&#95;item](#add_submenu_item)**  **(** [String](class_string) label, [int](class_int) submenu, [int](class_int) id=-1  **)**
+  * void  **[add&#95;submenu&#95;item](#add_submenu_item)**  **(** [String](class_string) label, [String](class_string) submenu, [int](class_int) id=-1  **)**
   * void  **[set&#95;item&#95;text](#set_item_text)**  **(** [int](class_int) idx, [String](class_string) text  **)**
   * void  **[set&#95;item&#95;icon](#set_item_icon)**  **(** [int](class_int) idx, [Object](class_object) icon  **)**
   * void  **[set&#95;item&#95;accelerator](#set_item_accelerator)**  **(** [int](class_int) idx, [int](class_int) accel  **)**

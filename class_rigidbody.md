@@ -37,6 +37,7 @@
   * [bool](class_bool)  **[is&#95;able&#95;to&#95;sleep](#is_able_to_sleep)**  **(** **)** const
   * void  **[set&#95;axis&#95;lock](#set_axis_lock)**  **(** [int](class_int) axis_lock  **)**
   * [int](class_int)  **[get&#95;axis&#95;lock](#get_axis_lock)**  **(** **)** const
+  * [Array](class_array)  **[get&#95;colliding&#95;bodies](#get_colliding_bodies)**  **(** **)** const
 
 ###  Signals  
   *  **body&#95;enter**  **(** [Object](class_object) body  **)**

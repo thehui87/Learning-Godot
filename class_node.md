@@ -6,8 +6,8 @@
 Base class for all the "Scene" elements.
 
 ###  Member Functions 
-  * void  **[&#95;enter&#95;scene](#_enter_scene)**  **(** **)** virtual
-  * void  **[&#95;exit&#95;scene](#_exit_scene)**  **(** **)** virtual
+  * void  **[&#95;enter&#95;tree](#_enter_tree)**  **(** **)** virtual
+  * void  **[&#95;exit&#95;tree](#_exit_tree)**  **(** **)** virtual
   * void  **[&#95;fixed&#95;process](#_fixed_process)**  **(** [float](class_float) delta  **)** virtual
   * void  **[&#95;input](#_input)**  **(** [InputEvent](class_inputevent) event  **)** virtual
   * void  **[&#95;process](#_process)**  **(** [float](class_float) delta  **)** virtual
@@ -27,7 +27,7 @@ Base class for all the "Scene" elements.
   * Parent  **[get&#95;parent](#get_parent)**  **(** **)** const
   * [bool](class_bool)  **[has&#95;node&#95;and&#95;resource](#has_node_and_resource)**  **(** [NodePath](class_nodepath) path  **)** const
   * [Array](class_array)  **[get&#95;node&#95;and&#95;resource](#get_node_and_resource)**  **(** [NodePath](class_nodepath) path  **)**
-  * [bool](class_bool)  **[is&#95;inside&#95;scene](#is_inside_scene)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95;inside&#95;tree](#is_inside_tree)**  **(** **)** const
   * [bool](class_bool)  **[is&#95;a&#95;parent&#95;of](#is_a_parent_of)**  **(** [Node](class_node) node  **)** const
   * [bool](class_bool)  **[is&#95;greater&#95;than](#is_greater_than)**  **(** [Node](class_node) node  **)** const
   * [NodePath](class_nodepath)  **[get&#95;path](#get_path)**  **(** **)** const
@@ -63,20 +63,20 @@ Base class for all the "Scene" elements.
   * [bool](class_bool)  **[can&#95;process](#can_process)**  **(** **)** const
   * void  **[print&#95;stray&#95;nodes](#print_stray_nodes)**  **(** **)**
   * [int](class_int)  **[get&#95;position&#95;in&#95;parent](#get_position_in_parent)**  **(** **)** const
-  * [SceneMainLoop](class_scenemainloop)  **[get&#95;scene](#get_scene)**  **(** **)** const
+  * [SceneTree](class_scenetree)  **[get&#95;tree](#get_tree)**  **(** **)** const
   * [Node](class_node)  **[duplicate](#duplicate)**  **(** **)** const
   * void  **[replace&#95;by](#replace_by)**  **(** [Node](class_node) node, [bool](class_bool) keep_data=false  **)**
   * [Object](class_object)  **[get&#95;viewport](#get_viewport)**  **(** **)** const
   * void  **[queue&#95;free](#queue_free)**  **(** **)**
 
 ###  Signals  
-  *  **enter&#95;scene**  **(** **)**
   *  **renamed**  **(** **)**
-  *  **exit&#95;scene**  **(** **)**
+  *  **enter&#95;tree**  **(** **)**
+  *  **exit&#95;tree**  **(** **)**
 
 ###  Numeric Constants  
-  * **NOTIFICATION_ENTER_SCENE** = **10** - Notification received when the node enters the Scene Tree and gains access to the [RootNode]. Note that children nodes will not have received the notification at that time yet.
-  * **NOTIFICATION_EXIT_SCENE** = **11** - Notification received when the node exits the Scene Tree and loses access to the [RootNode]. Note that parent nodes will not have received the notification at that time yet.
+  * **NOTIFICATION_ENTER_TREE** = **10**
+  * **NOTIFICATION_EXIT_TREE** = **11**
   * **NOTIFICATION_MOVED_IN_PARENT** = **12**
   * **NOTIFICATION_READY** = **13**
   * **NOTIFICATION_FIXED_PROCESS** = **16**
@@ -92,7 +92,7 @@ Base class for all the "Scene" elements.
 ###  Description  
 Nodes can be set as children of other nodes, resulting in a tree arrangement. Any tree of nodes is called a "Scene".
         Scenes can be saved to disk, and then instanced into other scenes. This allows for very high flexibility in the architecture and data model of the projects. 
-        [SceneMainLoop](class_scenemainloop) contains the "active" tree of nodes, and a node becomes active (receinving NOTIFICATION_ENTER_SCENE) when added to that tree.
+        [SceneMainLoop] contains the "active" tree of nodes, and a node becomes active (receinving NOTIFICATION_ENTER_SCENE) when added to that tree.
         A node can contain any number of nodes as a children (but there is only one tree root) with the requirement that no two childrens with the same name can exist.
         Nodes can, optionally, be added to groups. This makes it easy to reach a number of nodes from the code (for example an "enemies" group).
         Nodes can be set to "process" state, so they constantly receive a callback requesting them to process (do anything). Normal processing ([&#95;process](#_process)) happens as fast as possible and is dependent on the frame rate, so the processing time delta is variable. Fixed processing ([&#95;fixed&#95;process](#_fixed_process)) happens a fixed amount of times per second (by default 60) and is useful to link itself to the physics.
@@ -101,16 +101,6 @@ Nodes can be set as children of other nodes, resulting in a tree arrangement. An
         Finally, when a node is freed, it will free all its children nodes too.
 
 ###  Member Function Description  
-
-#### <a name="_enter_scene">_enter_scene</a>
-  * void  **&#95;enter&#95;scene**  **(** **)** virtual
-
-Called when entered the scene.
-
-#### <a name="_exit_scene">_exit_scene</a>
-  * void  **&#95;exit&#95;scene**  **(** **)** virtual
-
-Called when being removed from the scene.
 
 #### <a name="_fixed_process">_fixed_process</a>
   * void  **&#95;fixed&#95;process**  **(** [float](class_float) delta  **)** virtual
@@ -211,11 +201,6 @@ Fetch a node. NodePath must be valid (or else error will occur) and can be eithe
   * Parent  **get&#95;parent**  **(** **)** const
 
 Return the parent [Node](class_node) of the current [Node](class_node), or an empty Object if the node lacks a parent.
-
-#### <a name="is_inside_scene">is_inside_scene</a>
-  * [bool](class_bool)  **is&#95;inside&#95;scene**  **(** **)** const
-
-Return wether the node is inside a scene tree (a tree where the topmost node is a [RootNode])
 
 #### <a name="is_a_parent_of">is_a_parent_of</a>
   * [bool](class_bool)  **is&#95;a&#95;parent&#95;of**  **(** [Node](class_node) node  **)** const
@@ -351,11 +336,6 @@ Return true if the node is processing unhandled input (see [set&#95;process&#95;
   * [bool](class_bool)  **can&#95;process**  **(** **)** const
 
 Return true if the node can process.
-
-#### <a name="get_scene">get_scene</a>
-  * [SceneMainLoop](class_scenemainloop)  **get&#95;scene**  **(** **)** const
-
-Get the current SceneMainLoop. Only returned if the node is inside the scene, else returns null.
 
 #### <a name="duplicate">duplicate</a>
   * [Node](class_node)  **duplicate**  **(** **)** const

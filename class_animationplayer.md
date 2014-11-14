@@ -59,7 +59,7 @@ An animation player is used for general purpose playback of [Animation](class_an
 #### <a name="add_animation">add_animation</a>
   * [int](class_int)  **add&#95;animation**  **(** [String](class_string) name, [Animation](class_animation) animation  **)**
 
-Add an animation resource to the player, which will be later referenced by the "name" arguemnt.
+Add an animation resource to the player, which will be later referenced by the "name" argument.
 
 #### <a name="remove_animation">remove_animation</a>
   * void  **remove&#95;animation**  **(** [String](class_string) name  **)**

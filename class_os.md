@@ -47,6 +47,7 @@ Operating System functions.
   * [int](class_int)  **[get&#95;frames&#95;drawn](#get_frames_drawn)**  **(** **)**
   * [bool](class_bool)  **[is&#95;stdout&#95;verbose](#is_stdout_verbose)**  **(** **)** const
   * [bool](class_bool)  **[can&#95;use&#95;threads](#can_use_threads)**  **(** **)** const
+  * [bool](class_bool)  **[is&#95;debug&#95;build](#is_debug_build)**  **(** **)** const
   * void  **[dump&#95;memory&#95;to&#95;file](#dump_memory_to_file)**  **(** [String](class_string) file  **)**
   * void  **[dump&#95;resources&#95;to&#95;file](#dump_resources_to_file)**  **(** [String](class_string) file  **)**
   * void  **[print&#95;resources&#95;in&#95;use](#print_resources_in_use)**  **(** [bool](class_bool) short=false  **)**

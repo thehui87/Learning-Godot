@@ -21,16 +21,16 @@
   * [RID](class_rid)  **[area&#95;get&#95;space](#area_get_space)**  **(** [RID](class_rid) area  **)** const
   * void  **[area&#95;set&#95;space&#95;override&#95;mode](#area_set_space_override_mode)**  **(** [RID](class_rid) area, [int](class_int) mode  **)**
   * [int](class_int)  **[area&#95;get&#95;space&#95;override&#95;mode](#area_get_space_override_mode)**  **(** [RID](class_rid) area  **)** const
-  * void  **[area&#95;add&#95;shape](#area_add_shape)**  **(** [RID](class_rid) area, [int](class_int) shape, [RID](class_rid) transform=Transform()  **)**
-  * [RID](class_rid)  **[area&#95;set&#95;shape](#area_set_shape)**  **(** [RID](class_rid) area, [int](class_int) shape_idx  **)** const
+  * void  **[area&#95;add&#95;shape](#area_add_shape)**  **(** [RID](class_rid) area, [RID](class_rid) shape, [Transform](class_transform) transform=Transform()  **)**
+  * void  **[area&#95;set&#95;shape](#area_set_shape)**  **(** [RID](class_rid) area, [int](class_int) shape_idx, [RID](class_rid) shape  **)**
   * void  **[area&#95;set&#95;shape&#95;transform](#area_set_shape_transform)**  **(** [RID](class_rid) area, [int](class_int) shape_idx, [Transform](class_transform) transform  **)**
   * [int](class_int)  **[area&#95;get&#95;shape&#95;count](#area_get_shape_count)**  **(** [RID](class_rid) area  **)** const
   * [RID](class_rid)  **[area&#95;get&#95;shape](#area_get_shape)**  **(** [RID](class_rid) area, [int](class_int) shape_idx  **)** const
   * [Transform](class_transform)  **[area&#95;get&#95;shape&#95;transform](#area_get_shape_transform)**  **(** [RID](class_rid) area, [int](class_int) shape_idx  **)** const
   * void  **[area&#95;remove&#95;shape](#area_remove_shape)**  **(** [RID](class_rid) area, [int](class_int) shape_idx  **)**
   * void  **[area&#95;clear&#95;shapes](#area_clear_shapes)**  **(** [RID](class_rid) area  **)**
-  * void  **[area&#95;set&#95;param](#area_set_param)**  **(** [RID](class_rid) area, [int](class_int) param  **)** const
-  * [Transform](class_transform)  **[area&#95;set&#95;transform](#area_set_transform)**  **(** [RID](class_rid) area  **)** const
+  * void  **[area&#95;set&#95;param](#area_set_param)**  **(** [RID](class_rid) area, [int](class_int) param, var value  **)**
+  * void  **[area&#95;set&#95;transform](#area_set_transform)**  **(** [RID](class_rid) area, [Transform](class_transform) transform  **)**
   * void  **[area&#95;get&#95;param](#area_get_param)**  **(** [RID](class_rid) area, [int](class_int) param  **)** const
   * [Transform](class_transform)  **[area&#95;get&#95;transform](#area_get_transform)**  **(** [RID](class_rid) area  **)** const
   * void  **[area&#95;attach&#95;object&#95;instance&#95;ID](#area_attach_object_instance_ID)**  **(** [RID](class_rid) area, [int](class_int) id  **)**
@@ -62,7 +62,7 @@
   * void  **[body&#95;apply&#95;impulse](#body_apply_impulse)**  **(** [RID](class_rid) body, [Vector3](class_vector3) pos, [Vector3](class_vector3) impulse  **)**
   * void  **[body&#95;set&#95;axis&#95;velocity](#body_set_axis_velocity)**  **(** [RID](class_rid) body, [Vector3](class_vector3) axis_velocity  **)**
   * void  **[body&#95;set&#95;axis&#95;lock](#body_set_axis_lock)**  **(** [RID](class_rid) body, [int](class_int) axis  **)**
-  * void  **[body&#95;get&#95;axis&#95;lock](#body_get_axis_lock)**  **(** [RID](class_rid) body, [int](class_int) arg1  **)**
+  * [int](class_int)  **[body&#95;get&#95;axis&#95;lock](#body_get_axis_lock)**  **(** [RID](class_rid) body  **)** const
   * void  **[body&#95;add&#95;collision&#95;exception](#body_add_collision_exception)**  **(** [RID](class_rid) body, [RID](class_rid) excepted_body  **)**
   * void  **[body&#95;remove&#95;collision&#95;exception](#body_remove_collision_exception)**  **(** [RID](class_rid) body, [RID](class_rid) excepted_body  **)**
   * void  **[body&#95;set&#95;max&#95;contacts&#95;reported](#body_set_max_contacts_reported)**  **(** [RID](class_rid) body, [int](class_int) amount  **)**
@@ -98,7 +98,7 @@
   * [float](class_float)  **[generic&#95;6dof&#95;joint&#95;get&#95;param](#generic_6dof_joint_get_param)**  **(** [RID](class_rid) joint, [int](class_int) axis, [int](class_int) param  **)**
   * void  **[generic&#95;6dof&#95;joint&#95;set&#95;flag](#generic_6dof_joint_set_flag)**  **(** [RID](class_rid) joint, [int](class_int) axis, [int](class_int) flag, [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[generic&#95;6dof&#95;joint&#95;get&#95;flag](#generic_6dof_joint_get_flag)**  **(** [RID](class_rid) joint, [int](class_int) axis, [int](class_int) flag  **)**
-  * void  **[free](#free)**  **(** [RID](class_rid) rid  **)**
+  * void  **[free&#95;rid](#free_rid)**  **(** [RID](class_rid) rid  **)**
   * void  **[set&#95;active](#set_active)**  **(** [bool](class_bool) active  **)**
   * [int](class_int)  **[get&#95;process&#95;info](#get_process_info)**  **(** [int](class_int) arg0  **)**
 

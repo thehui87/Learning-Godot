@@ -15,10 +15,18 @@ Provides a base class for different kinds of buttons.
   * [bool](class_bool)  **[is&#95;disabled](#is_disabled)**  **(** **)** const
   * void  **[set&#95;click&#95;on&#95;press](#set_click_on_press)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[get&#95;click&#95;on&#95;press](#get_click_on_press)**  **(** **)** const
+  * [int](class_int)  **[get&#95;draw&#95;mode](#get_draw_mode)**  **(** **)** const
 
 ###  Signals  
+  *  **released**  **(** **)**
   *  **toggled**  **(** [bool](class_bool) pressed  **)**
   *  **pressed**  **(** **)**
+
+###  Numeric Constants  
+  * **DRAW_NORMAL** = **0**
+  * **DRAW_PRESSED** = **1**
+  * **DRAW_HOVER** = **2**
+  * **DRAW_DISABLED** = **3**
 
 ###  Description  
 BaseButton is the abstract base class for buttons, so it shouldn't be used directly (It doesnt display anything). Other types of buttons inherit from it.
@@ -64,3 +72,8 @@ Set the button click_on_press mode. This mode generates click events when a mous
   * [bool](class_bool)  **get&#95;click&#95;on&#95;press**  **(** **)** const
 
 Return the state of the click_on_press property (see [set&#95;click&#95;on&#95;press](#set_click_on_press)).
+
+#### <a name="get_draw_mode">get_draw_mode</a>
+  * [int](class_int)  **get&#95;draw&#95;mode**  **(** **)** const
+
+Return the visual state used to draw the button. This is useful mainly when implementing your own draw code by either overiding _draw() or connecting to "draw" signal. The visual state of the button is defined by the DRAW_* enum.

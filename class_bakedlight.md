@@ -10,6 +10,10 @@
   * [int](class_int)  **[get&#95;mode](#get_mode)**  **(** **)** const
   * void  **[set&#95;octree](#set_octree)**  **(** [RawArray](class_rawarray) octree  **)**
   * [RawArray](class_rawarray)  **[get&#95;octree](#get_octree)**  **(** **)** const
+  * void  **[set&#95;light](#set_light)**  **(** [RawArray](class_rawarray) light  **)**
+  * [RawArray](class_rawarray)  **[get&#95;light](#get_light)**  **(** **)** const
+  * void  **[set&#95;sampler&#95;octree](#set_sampler_octree)**  **(** [IntArray](class_intarray) sampler_octree  **)**
+  * [IntArray](class_intarray)  **[get&#95;sampler&#95;octree](#get_sampler_octree)**  **(** **)** const
   * void  **[add&#95;lightmap](#add_lightmap)**  **(** [Texture](class_texture) texture, [Vector2](class_vector2) gen_size  **)**
   * void  **[erase&#95;lightmap](#erase_lightmap)**  **(** [int](class_int) id  **)**
   * void  **[clear&#95;lightmaps](#clear_lightmaps)**  **(** **)**
@@ -27,6 +31,14 @@
   * [float](class_float)  **[get&#95;edge&#95;damp](#get_edge_damp)**  **(** **)** const
   * void  **[set&#95;normal&#95;damp](#set_normal_damp)**  **(** [float](class_float) normal_damp  **)**
   * [float](class_float)  **[get&#95;normal&#95;damp](#get_normal_damp)**  **(** **)** const
+  * void  **[set&#95;tint](#set_tint)**  **(** [float](class_float) tint  **)**
+  * [float](class_float)  **[get&#95;tint](#get_tint)**  **(** **)** const
+  * void  **[set&#95;saturation](#set_saturation)**  **(** [float](class_float) saturation  **)**
+  * [float](class_float)  **[get&#95;saturation](#get_saturation)**  **(** **)** const
+  * void  **[set&#95;ao&#95;radius](#set_ao_radius)**  **(** [float](class_float) ao_radius  **)**
+  * [float](class_float)  **[get&#95;ao&#95;radius](#get_ao_radius)**  **(** **)** const
+  * void  **[set&#95;ao&#95;strength](#set_ao_strength)**  **(** [float](class_float) ao_strength  **)**
+  * [float](class_float)  **[get&#95;ao&#95;strength](#get_ao_strength)**  **(** **)** const
   * void  **[set&#95;format](#set_format)**  **(** [int](class_int) format  **)**
   * [int](class_int)  **[get&#95;format](#get_format)**  **(** **)** const
   * void  **[set&#95;transfer&#95;lightmaps&#95;only&#95;to&#95;uv2](#set_transfer_lightmaps_only_to_uv2)**  **(** [bool](class_bool) enable  **)**
@@ -45,6 +57,6 @@
   * **BAKE_SPECULAR** = **1**
   * **BAKE_TRANSLUCENT** = **2**
   * **BAKE_CONSERVE_ENERGY** = **3**
-  * **BAKE_MAX** = **4**
+  * **BAKE_MAX** = **5**
 
 ###  Member Function Description  

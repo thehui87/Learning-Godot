@@ -21,8 +21,8 @@ Physics 2D Server.
   * [RID](class_rid)  **[area&#95;get&#95;space](#area_get_space)**  **(** [RID](class_rid) area  **)** const
   * void  **[area&#95;set&#95;space&#95;override&#95;mode](#area_set_space_override_mode)**  **(** [RID](class_rid) area, [int](class_int) mode  **)**
   * [int](class_int)  **[area&#95;get&#95;space&#95;override&#95;mode](#area_get_space_override_mode)**  **(** [RID](class_rid) area  **)** const
-  * void  **[area&#95;add&#95;shape](#area_add_shape)**  **(** [RID](class_rid) area, [int](class_int) shape, [RID](class_rid) transform=1,0, 0,1, 0,0  **)**
-  * [RID](class_rid)  **[area&#95;set&#95;shape](#area_set_shape)**  **(** [RID](class_rid) area, [int](class_int) shape_idx  **)** const
+  * void  **[area&#95;add&#95;shape](#area_add_shape)**  **(** [RID](class_rid) area, [RID](class_rid) shape, [Matrix32](class_matrix32) transform=1,0, 0,1, 0,0  **)**
+  * void  **[area&#95;set&#95;shape](#area_set_shape)**  **(** [RID](class_rid) area, [int](class_int) shape_idx, [RID](class_rid) shape  **)**
   * void  **[area&#95;set&#95;shape&#95;transform](#area_set_shape_transform)**  **(** [RID](class_rid) area, [int](class_int) shape_idx, [Matrix32](class_matrix32) transform  **)**
   * [int](class_int)  **[area&#95;get&#95;shape&#95;count](#area_get_shape_count)**  **(** [RID](class_rid) area  **)** const
   * [RID](class_rid)  **[area&#95;get&#95;shape](#area_get_shape)**  **(** [RID](class_rid) area, [int](class_int) shape_idx  **)** const
@@ -82,7 +82,7 @@ Physics 2D Server.
   * void  **[damped&#95;string&#95;joint&#95;set&#95;param](#damped_string_joint_set_param)**  **(** [RID](class_rid) joint, [int](class_int) param, [float](class_float) value=RID()  **)**
   * [float](class_float)  **[damped&#95;string&#95;joint&#95;get&#95;param](#damped_string_joint_get_param)**  **(** [RID](class_rid) joint, [int](class_int) param  **)** const
   * [int](class_int)  **[joint&#95;get&#95;type](#joint_get_type)**  **(** [RID](class_rid) joint  **)** const
-  * void  **[free](#free)**  **(** [RID](class_rid) rid  **)**
+  * void  **[free&#95;rid](#free_rid)**  **(** [RID](class_rid) rid  **)**
   * void  **[set&#95;active](#set_active)**  **(** [bool](class_bool) active  **)**
   * [int](class_int)  **[get&#95;process&#95;info](#get_process_info)**  **(** [int](class_int) arg0  **)**
 

@@ -10,7 +10,7 @@ Base dialog for user notification.
   * [Object](class_object)  **[get&#95;label](#get_label)**  **(** **)**
   * void  **[set&#95;hide&#95;on&#95;ok](#set_hide_on_ok)**  **(** [bool](class_bool) enabled  **)**
   * [bool](class_bool)  **[get&#95;hide&#95;on&#95;ok](#get_hide_on_ok)**  **(** **)** const
-  * [Button](class_button)  **[add&#95;button](#add_button)**  **(** [String](class_string) text=""  **)**
+  * [Button](class_button)  **[add&#95;button](#add_button)**  **(** [String](class_string) text, [bool](class_bool) right=false, [String](class_string) action=""  **)**
   * [Button](class_button)  **[add&#95;cancel](#add_cancel)**  **(** [String](class_string) name  **)**
   * void  **[register&#95;text&#95;enter](#register_text_enter)**  **(** [Object](class_object) line_edit  **)**
   * void  **[set&#95;text](#set_text)**  **(** [String](class_string) text  **)**

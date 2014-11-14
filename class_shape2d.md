@@ -11,7 +11,7 @@ Base class for all 2D Shapes.
   * [bool](class_bool)  **[collide](#collide)**  **(** [Matrix32](class_matrix32) local_xform, [Shape2D](class_shape2d) with_shape, [Matrix32](class_matrix32) shape_xform  **)**
   * [bool](class_bool)  **[collide&#95;with&#95;motion](#collide_with_motion)**  **(** [Matrix32](class_matrix32) local_xform, [Vector2](class_vector2) local_motion, [Shape2D](class_shape2d) with_shape, [Matrix32](class_matrix32) shape_xform, [Vector2](class_vector2) shape_motion  **)**
   * void  **[collide&#95;and&#95;get&#95;contacts](#collide_and_get_contacts)**  **(** [Matrix32](class_matrix32) local_xform, [Shape2D](class_shape2d) with_shape, [Matrix32](class_matrix32) shape_xform  **)**
-  * void  **[collide&#95;with&#95;motion&#95;and&#95;get&#95;contacts](#collide_with_motion_and_get_contacts)**  **(** [Matrix32](class_matrix32) local_xform, [Object](class_object) local_motion, [Shape2D](class_shape2d) with_shape  **)**
+  * void  **[collide&#95;with&#95;motion&#95;and&#95;get&#95;contacts](#collide_with_motion_and_get_contacts)**  **(** [Matrix32](class_matrix32) local_xform, [Vector2](class_vector2) local_motion, [Shape2D](class_shape2d) with_shape, [Matrix32](class_matrix32) shape_xform, [Vector2](class_vector2) shape_motion  **)**
 
 ###  Description  
 Base class for all 2D Shapes. All 2D shape types inherit from this.

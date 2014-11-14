@@ -11,7 +11,7 @@ Animation Player that uses a node graph for the blending.
   * [int](class_int)  **[node&#95;rename](#node_rename)**  **(** [String](class_string) node, [String](class_string) new_name  **)**
   * [int](class_int)  **[node&#95;get&#95;type](#node_get_type)**  **(** [String](class_string) id  **)** const
   * [int](class_int)  **[node&#95;get&#95;input&#95;count](#node_get_input_count)**  **(** [String](class_string) id  **)** const
-  * [String](class_string)  **[node&#95;get&#95;input&#95;sourcre](#node_get_input_sourcre)**  **(** [String](class_string) id, [int](class_int) idx  **)** const
+  * [String](class_string)  **[node&#95;get&#95;input&#95;source](#node_get_input_source)**  **(** [String](class_string) id, [int](class_int) idx  **)** const
   * void  **[animation&#95;node&#95;set&#95;animation](#animation_node_set_animation)**  **(** [String](class_string) id, [Animation](class_animation) animation  **)**
   * [Animation](class_animation)  **[animation&#95;node&#95;get&#95;animation](#animation_node_get_animation)**  **(** [String](class_string) id  **)** const
   * void  **[animation&#95;node&#95;set&#95;master&#95;animation](#animation_node_set_master_animation)**  **(** [String](class_string) id, [String](class_string) source  **)**
@@ -112,8 +112,8 @@ Get the node type, will return from NODE_* enum.
 Return the input count for a given node. Different
 			types of nodes have different amount of inputs.
 
-#### <a name="node_get_input_sourcre">node_get_input_sourcre</a>
-  * [String](class_string)  **node&#95;get&#95;input&#95;sourcre**  **(** [String](class_string) id, [int](class_int) idx  **)** const
+#### <a name="node_get_input_source">node_get_input_source</a>
+  * [String](class_string)  **node&#95;get&#95;input&#95;source**  **(** [String](class_string) id, [int](class_int) idx  **)** const
 
 Return the input source for a given node input.
 

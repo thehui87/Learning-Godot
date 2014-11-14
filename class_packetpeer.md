@@ -7,7 +7,7 @@ Abstraction and base class for packet-based protocols.
 
 ###  Member Functions 
   * void  **[get&#95;var](#get_var)**  **(** **)** const
-  * [int](class_int)  **[put&#95;var](#put_var)**  **(** Variant var  **)**
+  * [int](class_int)  **[put&#95;var](#put_var)**  **(** var var  **)**
   * [int](class_int)  **[get&#95;available&#95;packet&#95;count](#get_available_packet_count)**  **(** **)** const
 
 ###  Description  

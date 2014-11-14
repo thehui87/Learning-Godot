@@ -20,6 +20,7 @@ Skeleton for characters and animated objects.
   * void  **[clear&#95;bones](#clear_bones)**  **(** **)**
   * [Transform](class_transform)  **[get&#95;bone&#95;pose](#get_bone_pose)**  **(** [int](class_int) bone_idx  **)** const
   * void  **[set&#95;bone&#95;pose](#set_bone_pose)**  **(** [int](class_int) bone_idx, [Transform](class_transform) pose  **)**
+  * void  **[set&#95;bone&#95;global&#95;pose](#set_bone_global_pose)**  **(** [int](class_int) bone_idx, [Transform](class_transform) pose  **)**
   * [Transform](class_transform)  **[get&#95;bone&#95;global&#95;pose](#get_bone_global_pose)**  **(** [int](class_int) bone_idx  **)** const
   * [Transform](class_transform)  **[get&#95;bone&#95;custom&#95;pose](#get_bone_custom_pose)**  **(** [int](class_int) bone_idx  **)** const
   * void  **[set&#95;bone&#95;custom&#95;pose](#set_bone_custom_pose)**  **(** [int](class_int) bone_idx, [Transform](class_transform) custom_pose  **)**

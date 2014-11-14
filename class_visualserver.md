@@ -129,7 +129,7 @@ Server for anything visible.
   * [bool](class_bool)  **[instance&#95;is&#95;exterior](#instance_is_exterior)**  **(** [RID](class_rid) arg0  **)** const
   * [Array](class_array)  **[instances&#95;cull&#95;aabb](#instances_cull_aabb)**  **(** [AABB](class_aabb) arg0, [RID](class_rid) arg1  **)** const
   * [Array](class_array)  **[instances&#95;cull&#95;ray](#instances_cull_ray)**  **(** [Vector3](class_vector3) arg0, [Vector3](class_vector3) arg1, [RID](class_rid) arg2  **)** const
-  * [Array](class_array)  **[instances&#95;cull&#95;convex](#instances_cull_convex)**  **(** [Vector3](class_vector3) arg0, [Vector3](class_vector3) arg1, [RID](class_rid) arg2  **)** const
+  * [Array](class_array)  **[instances&#95;cull&#95;convex](#instances_cull_convex)**  **(** [Array](class_array) arg0, [RID](class_rid) arg1  **)** const
   * [RID](class_rid)  **[instance&#95;geometry&#95;override&#95;material&#95;param](#instance_geometry_override_material_param)**  **(** [RID](class_rid) arg0  **)** const
   * [RID](class_rid)  **[instance&#95;geometry&#95;get&#95;material&#95;param](#instance_geometry_get_material_param)**  **(** [RID](class_rid) arg0  **)** const
   * [RID](class_rid)  **[get&#95;test&#95;cube](#get_test_cube)**  **(** **)**

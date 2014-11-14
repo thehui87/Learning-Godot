@@ -36,7 +36,7 @@ Base class for all non built-in types.
   * void  **[set&#95;block&#95;signals](#set_block_signals)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;blocking&#95;signals](#is_blocking_signals)**  **(** **)** const
   * void  **[set&#95;message&#95;translation](#set_message_translation)**  **(** [bool](class_bool) enable  **)**
-  * void  **[can&#95;translate&#95;messages](#can_translate_messages)**  **(** [bool](class_bool) arg0  **)**
+  * [bool](class_bool)  **[can&#95;translate&#95;messages](#can_translate_messages)**  **(** **)** const
   * void  **[property&#95;list&#95;changed&#95;notify](#property_list_changed_notify)**  **(** **)**
   * [String](class_string)  **[XL&#95;MESSAGE](#XL_MESSAGE)**  **(** [String](class_string) message  **)** const
   * [String](class_string)  **[tr](#tr)**  **(** [String](class_string) message  **)** const
@@ -202,7 +202,7 @@ Return true if signal emission blocking is enabled.
 Set true if this object can translate strings (in calls to tr() ). Default is true.
 
 #### <a name="can_translate_messages">can_translate_messages</a>
-  * void  **can&#95;translate&#95;messages**  **(** [bool](class_bool) arg0  **)**
+  * [bool](class_bool)  **can&#95;translate&#95;messages**  **(** **)** const
 
 Return true if this object can translate strings.
 

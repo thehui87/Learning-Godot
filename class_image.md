@@ -22,6 +22,7 @@ Image datatype.
   * [int](class_int)  **[load](#load)**  **(** [String](class_string) path=0  **)**
   * void  **[put&#95;pixel](#put_pixel)**  **(** [int](class_int) x, [int](class_int) y, [Color](class_color) color, [int](class_int) mipmap_level=0  **)**
   * [Image](class_image)  **[resized](#resized)**  **(** [int](class_int) x, [int](class_int) y, [int](class_int) interpolation=1  **)**
+  * [int](class_int)  **[save&#95;png](#save_png)**  **(** [String](class_string) path=0  **)**
 
 ###  Numeric Constants  
   * **COMPRESS_BC** = **0**

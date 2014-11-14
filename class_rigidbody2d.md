@@ -37,6 +37,7 @@ Rigid body 2D node.
   * [bool](class_bool)  **[is&#95;sleeping](#is_sleeping)**  **(** **)** const
   * void  **[set&#95;can&#95;sleep](#set_can_sleep)**  **(** [bool](class_bool) able_to_sleep  **)**
   * [bool](class_bool)  **[is&#95;able&#95;to&#95;sleep](#is_able_to_sleep)**  **(** **)** const
+  * [Array](class_array)  **[get&#95;colliding&#95;bodies](#get_colliding_bodies)**  **(** **)** const
 
 ###  Signals  
   *  **body&#95;enter**  **(** [Object](class_object) body  **)**

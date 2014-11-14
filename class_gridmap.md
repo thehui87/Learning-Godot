@@ -25,7 +25,7 @@
   * void  **[set&#95;center&#95;z](#set_center_z)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[get&#95;center&#95;z](#get_center_z)**  **(** **)** const
   * void  **[set&#95;clip](#set_clip)**  **(** [bool](class_bool) enabled, [bool](class_bool) clipabove=true, [int](class_int) floor=0, [int](class_int) axis=0  **)**
-  * [int](class_int)  **[crate&#95;area](#crate_area)**  **(** [int](class_int) id, [AABB](class_aabb) area  **)**
+  * [int](class_int)  **[create&#95;area](#create_area)**  **(** [int](class_int) id, [AABB](class_aabb) area  **)**
   * [AABB](class_aabb)  **[area&#95;get&#95;bounds](#area_get_bounds)**  **(** [int](class_int) area  **)** const
   * void  **[area&#95;set&#95;exterior&#95;portal](#area_set_exterior_portal)**  **(** [int](class_int) area, [bool](class_bool) enable  **)**
   * void  **[area&#95;set&#95;name](#area_set_name)**  **(** [int](class_int) area, [String](class_string) name  **)**

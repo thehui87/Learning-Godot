@@ -20,6 +20,7 @@ General purpose area detection and influence for 2D Phisics.
   * [float](class_float)  **[get&#95;priority](#get_priority)**  **(** **)** const
   * void  **[set&#95;enable&#95;monitoring](#set_enable_monitoring)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;monitoring&#95;enabled](#is_monitoring_enabled)**  **(** **)** const
+  * [Array](class_array)  **[get&#95;overlapping&#95;bodies](#get_overlapping_bodies)**  **(** **)** const
 
 ###  Signals  
   *  **body&#95;enter**  **(** [Object](class_object) body  **)**
