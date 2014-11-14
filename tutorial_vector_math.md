@@ -2,15 +2,15 @@
 
 ### Introduction
 
-This small tutorial aims to be a short and practical introduction to vector math, useful for 3D but also 2D games. Vector math is not only useful for 3D but also 2D games. It is an amazing tool once you get the grasp of it and makes programming of complex behaviors much simpler.
+This small tutorial aims to be a short and practical introduction to vector math, useful for 3D but also 2D games. Again, vector math is not only useful for 3D but _also_ 2D games. It is an amazing tool once you get the grasp of it and makes programming of complex behaviors much simpler.
 
-It often happens that young programmers rely too much on the _incorrect_ math for solving problems, for example using trigonometry instead of this kind of math.
+It often happens that young programmers rely too much on the _incorrect_ math for solving a wide array of problems, for example using only trigonometry instead of vector of math for 2D games.
 
-This tutorial will focus mostly on practical usages, with immediate application to the art of game programming.
+This tutorial will focus on practical usage, with immediate application to the art of game programming.
 
 ### Coordinate Systems (2D)
 
-The typical convention is to define coordinates as an (x,y) pair, x representing the horizontal offset and y the vertical one. This makes sense given the screen is just a rectangle in two dimensions. As an example, here is a position in 2D space:
+Typically, we define coordinates as an (x,y) pair, x representing the horizontal offset and y the vertical one. This makes sense given the screen is just a rectangle in two dimensions. As an example, here is a position in 2D space:
 
 <p align="center"><img src="images/tutovec1.png"></p>
 
@@ -20,11 +20,15 @@ In vector math, coordinates have two different uses, both equally important. The
 
 <p align="center"><img src="images/tutovec2.png"></p>
 
-When imagined as a vector, two properties can be inferred, the **direction** and the **magnitude**. Every position in space can be a vector, with the exception of the **origin**. This is because coordinates (0,0) can't represent neither direction or magnitude.
+When imagined as a vector, two properties can be inferred, the **direction** and the **magnitude**. Every position in space can be a vector, with the exception of the **origin**. This is because coordinates (0,0) can't represent direction (magnitude 0).
+
+<p align="center"><img src="images/tutovec2b.png"></p>
 
 #### Direction
 
-Direction is pretty much where the vector points to. Imagine an arrow that starts at the **origin** and goes towards a **position**. The tip of the arrow is in the position, so it always points outwards, away from the origin. Imagining vectors as arrows helps a lot.
+Direction is simply towards where the vector points to. Imagine an arrow that starts at the **origin** and goes towards a **position**. The tip of the arrow is in the position, so it always points outwards, away from the origin. Imagining vectors as arrows helps a lot.
+
+<p align="center"><img src="images/tutovec3b.png"></p>
 
 #### Magnitude
 
@@ -42,7 +46,7 @@ To say truth, angles are not that useful in vector math, and most of the time th
 
 Still, using angles is still not an excuse, even for 2D. Most of what takes a lot of work with angles in 2D, is still much more natural easier to accomplish with vector math. In vector math, angles are useful only as measure, but take little part in the math. So, give up the trigonometry already, prepare to embrace vectors!
 
-In any case, obtaining an angle from a vector is easy and can be accomplished with trig.. er what was that? I mean, the [atan2(x,y)](class_gdscript#atan2) function.
+In any case, obtaining an angle from a vector is easy and can be accomplished with trig.. er what was that? I mean, the [atan2(x,y)](class_@gdscript#atan2) function.
 
 ### Vectors in Godot
 
@@ -97,9 +101,9 @@ Ok, so we know what a vector is. It has a **direction** and a **magnitude**. We 
 
 <p align="center"><img src="images/tutovec3.png"></p>
 
-So, what's so special about normal vectors? You will soon be sorry for asking this because normal vectors are amazing. Better put in other words, normal vectors have **several, very useful properties**.
+So, what is so special about normal vectors? Normal vectors are amazing. In other words, normal vectors have **several, very useful properties**.
 
-I know you can't wait to know more about the fantastic properties of normal vectors, but one step at a time. So, how is a normal vector created from a regular vector?
+Can't wait to know more about the fantastic properties of normal vectors, but one step at a time. So, how is a normal vector created from a regular vector?
 
 #### Normalization
 
@@ -142,7 +146,7 @@ This is where despair begins and books and tutorials show you this formula:
 
 <p align="center"><img src="images/tutovec4.png"></p>
 
-And you realize it's time to give up making 3D games or complex 2D games. How can something so simple be so complex?. Someone else will have to make the next Zelda or Call of Duty. Top down RPGs don't look so bad after all. Yeah I hear someone did pretty will with one on Steam..
+And you realize it's time to give up making 3D games or complex 2D games. How can something so simple be so complex?. Someone else will have to make the next Zelda or Call of Duty. Top down RPGs don't look so bad after all. Yeah I hear someone did pretty will with one of those on Steam..
 
 So this is your moment, this is your time to shine. **DO NOT GIVE UP**! At this point, this tutorial will take a sharp turn and focus on what makes the dot product useful. This is, **why** it is useful. We will focus one by one in the use cases for the dot product, with real-life applications. No more formulas that don't make any sense. Formulas will make sense _once you learn_ why do they exist for.
 
@@ -166,7 +170,7 @@ So let's think of a real use-case scenario. Imagine Snake is going through a for
 
 * Snake is in position **A**.
 * The enemy is in position **B**.
-* The enemy is facing towards direction vector **D**.
+* The enemy is _facing_ towards direction vector **F**.
 
 <p align="center"><img src="images/tutovec6.png"></p>
 
@@ -178,10 +182,10 @@ var BA = A-B
 
 <p align="center"><img src="images/tutovec7.png"></p>
 
-The dot product between **C** and **BA** is greater than 0 will determine if Snake has been discovered. This happens because we will be able to tell that the guard is facing towards snake:
+The dot product between **F** and **BA** is greater than 0 will determine if Snake has been discovered. This happens because we will be able to tell that the guard is facing towards snake:
 
 ```python
-if (BA.dot(C) > 0 ):
+if ( BA.dot(F) > 0 ):
     print("!")
 ```
 
