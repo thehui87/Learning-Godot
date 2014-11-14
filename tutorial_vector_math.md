@@ -209,7 +209,7 @@ This means that dot product between normal vectors is always between the range o
 
 Uh.. this is oddly familiar.. seen this before.. where?
 
-Let's take two vectors and rotate them all the way from 0° to 180° degrees..
+Let's take two normal vectors. The first one is pointing up, the second too but we will rotate it all the way from up (0°) to down (180° degrees)..
 
 <p align="center"><img src="images/tutovec8.png"></p>
 
@@ -232,5 +232,73 @@ By comparing the normal of the collision point with a previously computed angle.
 The beauty of this is that the same code works exactly the same and without modification in [3D](https://github.com/okamstudio/godot/blob/master/demos/3d/kinematic_char/cubio.gd#L64). Vector math is, in a great deal, dimemsion-amount-independent, so adding or removing an axis only adds very little complexity.
 
 ### Planes
+
+The dot product has another interesting property with normal vectors. Imagine that perpendicular to that vector (and through the origin) passes a **plane**. Planes divide the entire space into positive (over the plane) and negative (under the plane), and (contrary to popular belief) you can also use their math in 2D:
+
+<p align="center"><img src="images/tutovec10.png"></p>
+
+It's as simple as it looks. The plane passes by the origin and the surface of it is perpendicular to the normal vector. The side towards the vector points to is the positive half-space, while the other side is the negative half-space. In 3D this is exactly the same, except that the plane is an infinite surface (imagine an infinite, flat sheet of paper that you can orient and is pinned to the origin) instead of a line.
+
+#### Distance to Plane
+
+Now that it's clear what a plane is, let's go back to the dot product. The dot product between a **normal vector** and any **point in space** (yes, this time we do dot product between vector and position), returns the **distance from the point to the plane**:
+
+```python
+var distance = normal.dot(point)
+```
+
+But not just the absolute distance, if the point is in the negative half space the distance will be negative, too:
+
+<p align="center"><img src="images/tutovec11.png"></p>
+
+This allows us to tell which side of the plane a point is. 
+
+#### Away from the Origin
+
+I know what you are thinking! So far this is nice, but _real_ planes are everywhere in space, not only passing through the origin. You want real _plane_ action and you want it _now_.
+
+Remember that planes not only split space in two, but they also have _polarity_. This means that it is possible to have perfectly overlapping planes, but their negative and positive half-spaces are swapped.
+
+With this in mind, let's describe a full plane as a **normal vector** _N_ and a **distance from the origin** scalar _D_. Thus, our plane is represented by N and D. For example:
+
+<p align="center"><img src="images/tutovec11.png"></p>
+
+For 3D math, Godot provides a [Plane](class_plane) built-in type that handles this.
+
+Basically, N and D can represent any plane in space, be it for 2D or 3D (depending on the amount of dimensions of N) and the math is the same for both. It's the same as before, but D id the distance from the origin to the plane, travelling in N direction. As an example, imagine you want to reach a point in the plane, you will just do:
+
+```
+var point_in_plane = N*D
+```
+
+This will stretch (resize) the normal vector and make it touch the plane. This math might seem confusing, but it's actually much simpler than it seems. If we want to tell, again, the distance from the point to the plane, we do the same but adjusing for distance:
+
+```python
+var distance = N.dot(point) - D
+```
+
+This will, again, return either a positive or negative distance.
+
+Flipping the polarity of the plane is also very simple, just negate both N and D. this will result in a plane in the same position, but with inverted negative and positive half spaces:
+
+```python
+N = -N
+D = -D
+```
+
+Of course, Godot implements this operator in [Plane](class_plane), so doing:
+
+```python
+var inverted_plane = -plane
+```
+
+Will work as expected.
+
+#### Constructing a Plane
+
+
+
+
+
 
 
