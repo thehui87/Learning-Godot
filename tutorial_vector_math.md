@@ -261,7 +261,7 @@ Remember that planes not only split space in two, but they also have _polarity_.
 
 With this in mind, let's describe a full plane as a **normal vector** _N_ and a **distance from the origin** scalar _D_. Thus, our plane is represented by N and D. For example:
 
-<p align="center"><img src="images/tutovec11.png"></p>
+<p align="center"><img src="images/tutovec12.png"></p>
 
 For 3D math, Godot provides a [Plane](class_plane) built-in type that handles this.
 
