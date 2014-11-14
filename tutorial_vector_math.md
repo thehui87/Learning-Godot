@@ -192,3 +192,45 @@ if ( BA.dot(F) > 0 ):
 ```
 
 Seems Snake is safe so far.
+
+### Siding with Normal Vectors
+
+Ok, so now we know that dot product between two vectors will let us know if they are looking towards the same side, opposite sides or are just perpendicular to each other.
+
+This works the same with all vectors, no matter the magnitude so **normal vectors** are not the exception. However, using the same property with normal vectors yields an even more interesting result, as an extra property is added:
+
+* If both vectors are facing towards the exact same direction (parallel to each other, angle between them is 0°), the resulting scalar is **1**.
+* If both vectors are facing towards the exact opposite direction (parallel to each other, but angle between them is 180°), the resulting scalar is **-1**.
+
+This means that dot product between normal vectors is always between the range of 1 and -1. So Again..
+* If their angle is **0°** dot product is **1**. 
+* If their angle is **90°**, then dot product is **0**.
+* If their angle is **180°**, then dot product is **-1**.
+
+Uh.. this is oddly familiar.. seen this before.. where?
+
+Let's take two vectors and rotate them all the way from 0° to 180° degrees..
+
+<p align="center"><img src="images/tutovec8.png"></p>
+
+..while plotting the resulting scalar!
+
+<p align="center"><img src="images/tutovec9.png"></p>
+
+Aha! It all makes sense now, this is a [Cosine](http://mathworld.wolfram.com/Cosine.html) function!
+
+We can say that, then, as a rule..
+
+The **dot product** between two **normal vectors** is the **cosine** of the **angle** between those two vectors. So, to obtain the angle between two vectors, we must do:
+
+```python
+var angle_in_radians = acos( a.dot(b) )
+```
+What is this useful for? Well obtaining the angle directly is probably not as useful, but just being able to tell the angle is useful for reference. One example is in the [Kinematic Character](https://github.com/okamstudio/godot/blob/master/demos/2d/kinematic_char/player.gd#L83) demo, when the character moves in a certain direction then we hit an object. How to tell if what we hit is the floor?
+By comparing the normal of the collision point with a previously computed angle.
+
+The beauty of this is that the same code works exactly the same and without modification in [3D](https://github.com/okamstudio/godot/blob/master/demos/3d/kinematic_char/cubio.gd#L64). Vector math is, in a great deal, dimemsion-amount-independent, so adding or removing an axis only adds very little complexity.
+
+### Planes
+
+
