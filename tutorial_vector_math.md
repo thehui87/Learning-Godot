@@ -182,6 +182,8 @@ var BA = A-B
 
 <p align="center"><img src="images/tutovec7.png"></p>
 
+Ideally, if the guard was looking straight towards snake, to make eye to eye contact, it would do it in the same direction as vector BA.
+
 The dot product between **F** and **BA** is greater than 0 will determine if Snake has been discovered. This happens because we will be able to tell that the guard is facing towards snake:
 
 ```python
