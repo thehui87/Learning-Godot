@@ -95,6 +95,25 @@ c.y = a.y*2.0
 ```
 Except, again, the former is way more efficient and readable.
 
+### Perpendicular Vectors
+
+Rotating a 2D vector 90° degrees to either side, left or right, is really easy, just swap x and y, then 
+negate either x or y (direction of rotation depends on which is negated).
+
+<p align="center"><img src="images/tutovec15.png"></p>
+
+Example:
+
+```python
+var v = Vector2(0,1)
+#rotate right (clockwise)
+var v_right = Vector2(-v.y,v.x)
+#rotate left (counter-clockwise)
+var v_right = Vector2(v.y,-v.x)
+```
+
+This is a handy trick that is often of use. It is impossible to do with 3D vectors, because there are an infinite amount of perpendicular vectors.
+
 ### Normal Vectors
 
 Ok, so we know what a vector is. It has a **direction** and a **magnitude**. We also know how to use them in Godot. The next step is learning about **normal vectors** (also called _unit vectors_ or just _normals_). Any vector with **magnitude** of length 1 is considered a **normal vector**. In 2D, imagine drawing a circle of radius one. That circle contains all normal vectors in existence for 2 dimensions:
@@ -316,7 +335,7 @@ var dvec = (point_b - point_a).normalized()
 var normal = Vector2(dvec.y,-dev.x)
 #or alternatively
 # var normal = Vector2(-dvec.y,dev.x)
-# depending the side of the normal
+# depending the desired side of the normal
 ```
 
 The rest is the same as the previous example, either point_a or point_b will work since they are in the same plane:
@@ -397,7 +416,6 @@ if (overlapping):
 ```
 
 As you can see, planes are quite useful, and this is the tip of the iceberg. You might be wondering what happens with non convex polygons. This is usually just handled by splitting the concave polygon into smaller convex polygons, or using a technique such as BSP (which is not used much nowadays).
-
 
 
 
