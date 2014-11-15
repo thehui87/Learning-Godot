@@ -161,6 +161,9 @@ I know, it's totally meaningless! you can even do it with a built-in function:
 ```python
 var s = a.dot(b)
 ```
+
+The order of two vectors does _not_ matter, `a.dot(b)` returns the same value as `b.dot(a)`.
+
 This is where despair begins and books and tutorials show you this formula:
 
 <p align="center"><img src="images/tutovec4.png"></p>
@@ -417,6 +420,52 @@ if (overlapping):
 
 As you can see, planes are quite useful, and this is the tip of the iceberg. You might be wondering what happens with non convex polygons. This is usually just handled by splitting the concave polygon into smaller convex polygons, or using a technique such as BSP (which is not used much nowadays).
 
+## Cross Product
+
+Quite a lot can be done with the dot product! But the party would not be complete without the cross product. Remember back at the beginning of this tutorial? Specifically how to obtain a perpendicular (rotated 90 degrees) vector by swapping x and y, then negating either of them for right (clockwise) or  left (counter-clockwise) rotation? That ended up being useful for calculating a 2D plane normal from two points.
+
+As mentioned before, no such thing exists in 3D because a 3D vector has infinite perpendicular vectors. It would also not make sense to obtain a 3D plane from 2 points, as 3 points are needed instead.
+
+To aid in this kind stuff, the brightest minds of humanity's top mathematicians brought us the **cross product**. 
+
+The cross product takes two vectors and returns another vector. The returned third vector is always perpendicular to the first two. The source vectors, of course, must not be the same, and must not be parallel or opposite, else the resulting vector will be (0,0,0):
+
+<p align="center"><img src="images/tutovec16.png"></p>
+
+The formula for the cross product is:
+
+```python
+var c = Vector3()
+c.x = (a.y * b.z) - (a.z * b.y)
+c.y = (a.z * b.x) - (a.x * b.z)
+c.z = (a.x * b.y) - (a.y * b.x)
+```
+
+This can be simplified, in Godot, to:
+
+```
+var c = a.cross(b)
+```
+
+However, unlike the dot product, doing `a.cross(b)` and `b.cross(a)` will yield different results. Specifically, the returned vector will be negated in the second case. As you might have realized, this coincides with creating perpendicular vectors in 2D. In 3D, there are also two possible perpendicular vectors to a pair of 2D vectors. 
+
+Also, the resulting cross product of two normal vectors is _not_ a normal vector. Result will need to be renormalized.
+
+### Area of a Triangle
+
+Cross product can be used to obtain the surface area of a triangle in 3D. Given a triangle consisting of 3 points, A, B C, the area of the triangle is:
+
+```python
+var area = (A-B).cross(A-C).length()
+```
+
+Which means, given the adjacent vectors of any of the points, the length of the resulting perpendicular vector is the triangle surface. 
+
+However, something else can be done with that perpendicular vector. If normalized, that vector becomes the normal of the triangle, so..
+
+### Plane from a Triangle
+
+By using the same method to obtain the area but normalizing the resulting vector instead, it is possible to obtain a 3D plane from a triangle.
 
 
 
