@@ -326,7 +326,7 @@ Pretty cool, huh? But this gets much better! With a little more effort, similar 
 
 The idea is really simple! With a point, just checking if a plane returns a positive distance is enough to tell if the point is outside. With another polygon, we must find a plane where _all the **other** polygon points_ return a positive distance to it. This check is performed with the planes of A against the points of B, and then with the planes of B against the points of A:
 
-<p align="center"><img src="images/tutovec13.png"></p>
+<p align="center"><img src="images/tutovec14.png"></p>
 
 Code should be something like this:
 
