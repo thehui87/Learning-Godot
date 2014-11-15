@@ -296,9 +296,39 @@ Will work as expected.
 
 So, remember, a plane is just that and it's main practical use is calculating the distance to it. So, why is it useful to calculate the distance from a point to a plane? It's extremely useful! Let's see some simple examples..
 
-#### Constructing a Plane
+#### Constructing a Plane in 2D
 
+Planes clearly don't come out of nowhere, so they must be built. Constructing them in 2D is easy, this can be done from either a normal and a point, or from two points in space.
 
+In the case of a normal and a point, most of the work is done, as the normal is already computed, so just calculate D from the dot product of the normal and the point.
+
+```python
+var N = normal
+var D = normal.dot(point)
+```
+
+For two points in space, there are actually two planes that pass through them, sharing the same space but with normal pointing to the opposite directions. To compute the normal from the two points, the direction vector must be obtained first, and then it needs to be rotated 90° degrees to either side:
+
+```python
+#calculate vector from a to b
+var dvec = (point_b - point_a).normalized()
+#rotate 90 degrees
+var normal = Vector2(dvec.y,-dev.x)
+#or alternatively
+# var normal = Vector2(-dvec.y,dev.x)
+# depending the side of the normal
+```
+
+The rest is the same as the previous example, either point_a or point_b will work since they are in the same plane:
+
+```python
+var N = normal
+var D = normal.dot(point_a)
+# this works the same
+# var D = normal.dot(point_b)
+```
+
+Doing the same in 3D is a little more complex and will be explained further down.
 
 #### Some Examples of Planes
 
@@ -367,7 +397,6 @@ if (overlapping):
 ```
 
 As you can see, planes are quite useful, and this is the tip of the iceberg. You might be wondering what happens with non convex polygons. This is usually just handled by splitting the concave polygon into smaller convex polygons, or using a technique such as BSP (which is not used much nowadays).
-
 
 
 
