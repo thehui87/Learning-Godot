@@ -292,9 +292,82 @@ Of course, Godot implements this operator in [Plane](class_plane), so doing:
 var inverted_plane = -plane
 ```
 
-Will work as expected.
+Will work as expected. 
+
+So, remember, a plane is just that and it's main practical use is calculating the distance to it. So, why is it useful to calculate the distance from a point to a plane? It's extremely useful! Let's see some simple examples..
 
 #### Constructing a Plane
+
+
+
+#### Some Examples of Planes
+
+Here is a simple example of what planes are useful for. Imagine you have a [convex](http://www.mathsisfun.com/definitions/convex.html) polygon. For example, a rectangle, a trapezoid, a triangle, or just any polygon where faces that don't bend inwards.
+
+For every segment of the polygon, we compute the plane that passes by that segment. Once we have the list of planes, we can do neat things, for example checking if a point is inside the polygon.
+
+We go through all planes, if we can find a plane where the distance to the point is positive, then the point is outside the polygon. If we can't, then the point is inside.
+
+<p align="center"><img src="images/tutovec13.png"></p>
+
+Code should be something like this:
+
+```python
+
+var inside=true
+for p in planes:
+   #check if distance to plane is positive
+   if ( N.dot(point) - D > 0): 
+       inside=false
+       break # with one that fails, it's enough
+```
+
+Pretty cool, huh? But this gets much better! With a little more effort, similar logic will let us know when two convex polygons are overlapping too. This is called the Separating Axis Theorem (or SAT) and most physics engines use this to detect collision.
+
+The idea is really simple! With a point, just checking if a plane returns a positive distance is enough to tell if the point is outside. With another polygon, we must find a plane where _all the **other** polygon points_ return a positive distance to it. This check is performed with the planes of A against the points of B, and then with the planes of B against the points of A:
+
+<p align="center"><img src="images/tutovec13.png"></p>
+
+Code should be something like this:
+
+```python
+
+var overlapping=true
+
+for p in planes_of_A:
+   var all_out = true
+   for v in points_of_B:
+      if ( p.distance_to(v) < 0): 
+         all_out=false
+         break
+   
+   if (all_out):
+      # a separating plane was found
+      # do not continue testing 
+      overlapping=false
+      break
+
+if (overlapping):
+   #only do this check if no separating plane
+   #was found in planes of A
+   for p in planes_of_B:
+      var all_out = true
+      for v in points_of_A:
+         if ( p.distance_to(v) < 0): 
+            all_out=false
+            break
+      
+      if (all_out):
+         overlapping=false
+         break
+
+if (overlapping):
+   print("Polygons Collided!")
+ 
+```
+
+As you can see, planes are quite useful, and this is the tip of the iceberg. You might be wondering what happens with non convex polygons. This is usually just handled by splitting the concave polygon into smaller convex polygons, or using a technique such as BSP (which is not used much nowadays).
+
 
 
 
