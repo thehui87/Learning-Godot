@@ -453,20 +453,34 @@ Also, the resulting cross product of two normal vectors is _not_ a normal vector
 
 ### Area of a Triangle
 
-Cross product can be used to obtain the surface area of a triangle in 3D. Given a triangle consisting of 3 points, A, B C, the area of the triangle is:
+Cross product can be used to obtain the surface area of a triangle in 3D. Given a triangle consisting of 3 points, A, B C:
 
-```python
-var area = (A-B).cross(A-C).length()
+<p align="center"><img src="images/tutovec17.png"></p>
+
+Take any of them as a pivot and compute the adjacent vectors to the other two points. As example, we will use B as a pivot:
+
+```
+var BA = A-B
+var BC = C-B
 ```
 
-Which means, given the adjacent vectors of any of the points, the length of the resulting perpendicular vector is the triangle surface. 
+<p align="center"><img src="images/tutovec18.png"></p>
 
-However, something else can be done with that perpendicular vector. If normalized, that vector becomes the normal of the triangle, so..
+The surface area is computed by doing the cross product between the adjacent vectors:
+
+```python
+var area = BA.cross(BC).length()
+```
+
+However, something else can be done with that perpendicular vector. 
+
+<p align="center"><img src="images/tutovec19.png"></p>
+
+If normalized, that vector becomes the normal of the triangle, so..
 
 ### Plane from a Triangle
 
 By using the same method to obtain the area but normalizing the resulting vector instead, it is possible to obtain a 3D plane from a triangle.
-
 
 
 
