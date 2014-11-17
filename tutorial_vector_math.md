@@ -518,3 +518,104 @@ var N = (A-C).cross(A-B).normalized()
 var D = N.dot(A)
 ```
 
+### Collision Detection in 3D
+
+This is another bonus bit, a reward for being patient and keeping up with this long tutorial. Here is another piece of wisdom. This maybe is not something with a direct use case (Godot already does collision detection pretty well) but It's a really cool algorithm to understand anyway, because it's used by almost all physics engines and collision detection libraries :)
+
+Remember that converting a convex shape in 2D to an array of 2D planes was useful for collision detection? You could detect if a point was inside any convex shape, or if two 2D convex shapes were overlapping. 
+
+Well, this works in 3D too, if two 3D polyhedral shapes are colliding, you won't be able to find a separating plane. If a separating plane is found, then the shapes are definitely not colliding.
+
+To refresh a bit a separating plane means that all vertices of polygon A are in one side of the plane, and all vertices of polygon B are in the other side. This plane is always one of the face-planes of either polygon A or polygon B.
+
+In 3D though, there is a problem to this approach, because it is possible that, in some cases a separating plane can't be found. This is an example of such situation:
+
+<p align="center"><img src="images/tutovec22.png"></p>
+
+To avoid it, some extra planes need to be tested as separators, these planes are the cross product between the edges of polygon A and the edges of polygon B
+
+<p align="center"><img src="images/tutovec23.png"></p>
+
+So the final algorithm is something like:
+
+
+```python
+
+var overlapping=true
+
+for p in planes_of_A:
+   var all_out = true
+   for v in points_of_B:
+      if ( p.distance_to(v) < 0): 
+         all_out=false
+         break
+   
+   if (all_out):
+      # a separating plane was found
+      # do not continue testing 
+      overlapping=false
+      break
+
+if (overlapping):
+   #only do this check if no separating plane
+   #was found in planes of A
+   for p in planes_of_B:
+      var all_out = true
+      for v in points_of_A:
+         if ( p.distance_to(v) < 0): 
+            all_out=false
+            break
+      
+      if (all_out):
+         overlapping=false
+         break
+
+if (overlapping):
+
+   for ea in edges_of_A:
+      for eb in edges_of_B:
+          var n = ea.cross(eb)
+          if (n.length()==0):
+             continue
+          var max_A=-1e20 #tiny number
+          var min_A=1e20 # huge number
+
+          # we are using the dot product directly
+          # so we can map a maximum and minimum range
+          # for each polygon, then check if they
+          # overlap.
+
+          for v in points_of_A:
+             var d = n.dot(v)
+             if (d>max_A):
+                max_A=d
+             if (d<min_A):
+                min_A=d
+
+          var max_B=-1e20 #tiny number
+          var min_B=1e20 # huge number
+
+          for v in points_of_B:
+             var d = n.dot(v)
+             if (d>max_B):
+                max_B=d
+             if (d<min_B):
+                min_B=d
+
+          if (min_A>max_B or min_B>max_A):
+              # not overlapping!
+              overlapping=false
+              break
+
+      if (not overlapping):
+         break
+    
+   
+if (overlapping):
+   print("Polygons Collided!")
+ 
+```
+
+This was all! Hope it was helpful, and please give feedback and let know if something in this tutorial is not clear! You should be now ready for the next challenge.. [Matrices and Transforms](tutorial_transforms)!
+
+
