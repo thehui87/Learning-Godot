@@ -453,7 +453,7 @@ Also, the resulting cross product of two normal vectors is _not_ a normal vector
 
 ### Area of a Triangle
 
-Cross product can be used to obtain the surface area of a triangle in 3D. Given a triangle consisting of 3 points, A, B C:
+Cross product can be used to obtain the surface area of a triangle in 3D. Given a triangle consisting of 3 points, **A**, **B** and **C**:
 
 <p align="center"><img src="images/tutovec17.png"></p>
 
@@ -466,22 +466,55 @@ var BC = C-B
 
 <p align="center"><img src="images/tutovec18.png"></p>
 
-The surface area is computed by doing the cross product between the adjacent vectors:
+Compute the cross product between **BA** and **BC** to obtain the perpendicular vector **P**:
 
 ```python
-var area = BA.cross(BC).length()
+var P = BA.cross(BC)
 ```
-
-However, something else can be done with that perpendicular vector. 
 
 <p align="center"><img src="images/tutovec19.png"></p>
 
-If normalized, that vector becomes the normal of the triangle, so..
+Finally, the length of **P** is the surface area of the triangle:
 
-### Plane from a Triangle
+```python
+var area = P.length()
+```
 
-By using the same method to obtain the area but normalizing the resulting vector instead, it is possible to obtain a 3D plane from a triangle.
+### Plane of the Triangle
 
+With **P** computed from the previous step, normalize it to get the normal of the plane.
 
+```
+var N = P.normalized()
+```
 
+And obtain the distance by doing the dot product of P with any of the 3 points of the **ABC** triangle:
+
+```python
+var D = P.dot(A)
+```
+
+Fantastic! you computed the plane from a triangle!
+
+Here's some useful info (that you can find in Godot source code anyway). Computing a plane from a triangle can result in 2 planes, so a sort of convention needs to be set. This usually depends (in video games and 3D visualization) to use the front-facing side of the triangle.
+
+In Godot, front-facing triangles are those that, when looking at the camera, are in clockwise order. Triangles that look Counter-clockwise when looking at the camera are not drawn (this helps to draw less, so the back-part of the objects is not drawn).
+
+To make it a little clearer, in the image below, the triangle **ABC** appears clock-wise when looked at from the _Front Camera_, but to the _Rear Camera_ it appears counter-clockwise so it will not be drawn.
+
+<p align="center"><img src="images/tutovec20.png"></p>
+
+Normals of triangles often are sided towards the direction they can be viewed from, so in this case, the normal of triangle ABC would point towards the front camera:
+
+<p align="center"><img src="images/tutovec21.png"></p>
+
+So, to obtain N, the correct formula is:
+
+```python
+# clockwise normal from triangle formula
+var N = (A-C).cross(A-B).normalized()
+# for counter-clockwise:
+# var N = (A-B).cross(A-C).normalized()
+var D = N.dot(A)
+```
 
