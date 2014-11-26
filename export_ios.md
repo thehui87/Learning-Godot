@@ -5,7 +5,8 @@ Exporting for iOS is done manually at the moment. These are the steps to load yo
 #### Requirements
 
 *  Download XCode for iOS
-*  Download the XCode project template: http://www.godotengine.org/builds/release/GodotiOSXCode.zip
+*  Download the export templates: http://www.godotengine.org/wp/download/
+*  Since there is no automatic deployer yet, unzip export_templates.tpz manually and extract GodotiOSXCode.zip from it.
 
 The zip contains an XCode project, "godot_ios.xcodeproj", an empty data.pck file and the engine executable. Open the project, and modify the game name, icon, organization, provisioning signing certificate identities (??), etc.
 
@@ -36,4 +37,3 @@ On XCode, click on your app name (top left, next to the "Stop" button), and sele
 ![](images/edit_scheme.png)
 
 When you run, your device will connect to the host and open the files remotely. Note that the directory with the game data ("platformer") is no longer added to the project, only the engine executable.
-
