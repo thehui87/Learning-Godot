@@ -59,7 +59,7 @@ Some types and method names are about to change in the next days, please read th
 *  [Canvas Layers](tutorial_canvas_layers)
 *  [Custom Drawing in Node2D/Control](tutorial_custom_draw_2d)
 *  [Custom GUI Controls](tutorial_custom_controls)
-*  [Cut-Out Animation](tutorial_cutout)
+*  [Cut-Out Animation](Cutout-Animation)
 
 #### 3D Tutorials
 *  [Creating a 3D game](tutorial_3d)
