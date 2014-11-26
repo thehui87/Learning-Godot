@@ -91,6 +91,24 @@ Moving the remote transform nodes will move the sprites, allowing to easily anim
 
 <p align="center"><img src="images/tutovec_torso4.gif"></p>
 
+#### Completing the Skeleton
+
+Complete the skeleton by following the same steps for the rest of the parts. The resulting scene should look similar to this:
+
+<p align="center"><img src="images/tuto_cutout10.png"></p>
+
+The resulting rig should be easy to animate, by selecting the nodes and rotating them you can animate forward kinematic (FK) efficiently. 
+
+For simple objects and rigs this is fine, however the following problems are common:
+
+* Selecting sprites can become difficult for complex rigs, and the scene tree ends being used due to the difficulty of clicking over the proper sprite.
+* Inverse Kinematics is often desire for extremities.
+
+To solve these problems, Godot supports a simple method of skeletons.
+
+### Skeletons
+
+
 
 
 
