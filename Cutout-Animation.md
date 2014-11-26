@@ -151,8 +151,26 @@ Now that a whole skeleton is rigged, the next step is setting up the IK chains. 
 
 ### IK Chains
 
+To add in animation, IK chains are a powerful tool. Imagine you want to pose a foot in a specific position in the ground. Moving the foot involves also moving the rest of the leg bones. Each motion of the foot involves rotating several other bones. This is quite complex and leads to imprecise results.
 
+So, what if we could just move the foot and let the rest of the leg accommodate to the new foot position?
+This type of posing is called IK (Inverse Kinematic).
 
+To create an IK chain, simply select a chain of bones from endpoint to the base for the chain. For example, to create an IK chain for the right leg select the following:
+
+<p align="center"><img src="images/tuto_cutout17.png"></p>
+
+Then enable this chain for IK. Go to Edit -> Skeleton -> Make IK Chain
+
+<p align="center"><img src="images/tuto_cutout18.png"></p>
+
+As a result, the base of the chain will turn _Yellow_.
+
+<p align="center"><img src="images/tuto_cutout19.png"></p>
+
+Once the IK chain is set-up, simply grab any of the bones in the extremity, any child or grand-child of the base of the chain and try to grab it and move it. Result will be pleasant, satisfaction warranted!
+
+<p align="center"><img src="images/tutovec_torso5.gif"></p>
 
 
 
