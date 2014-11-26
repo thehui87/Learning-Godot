@@ -102,13 +102,54 @@ The resulting rig should be easy to animate, by selecting the nodes and rotating
 For simple objects and rigs this is fine, however the following problems are common:
 
 * Selecting sprites can become difficult for complex rigs, and the scene tree ends being used due to the difficulty of clicking over the proper sprite.
-* Inverse Kinematics is often desire for extremities.
+* Inverse Kinematics is often desired for extremities.
 
 To solve these problems, Godot supports a simple method of skeletons.
 
 ### Skeletons
 
+Godot _does not really_ support actual skeletons. What exists is a helper to create "bones" between nodes. This is enough for most cases, but the way it works is not completely obvious. 
 
+As an example, let's turn the right arm into a skeleton. To create skeletons, a chain of nodes must be selected from top to bottom:
+
+<p align="center"><img src="images/tuto_cutout11.png"></p>
+
+Then, the option to create a skeleton is located at Edit -> Skeleton -> Make Bones:
+
+<p align="center"><img src="images/tuto_cutout12.png"></p>
+
+This will add bones covering the arm, but the result is not quite what is expected.
+
+<p align="center"><img src="images/tuto_cutout13.png"></p>
+
+It looks like the bones are shifted up in the hierarchy. The hand connects to the arm, and the arm to the body. So the question is:
+
+* Why does the hand lack a bone?
+* Why does the arm connect to the body?
+
+This might seem strange at first, but will make sense later on. In traditional skeleton systems, bones have a position, an orientation and a length. In Godot, bones are mostly helpers so they connect the current node with the parent. Because of this, **toggling a node as a bone will just connect it to the parent**.
+
+So, with this knowledge. Let's do the same again so we have an actual, useful skeleton. 
+
+The first step is creating an endpoint node. Any kind of node will do, but [Position2D](class_position2d) is preferred because it's visible in the editor. The endpoint node will ensure that the last bone has orientation
+
+<p align="center"><img src="images/tuto_cutout14.png"></p>
+
+Now select the whole chain, from the endpoint to the arm and create bones:
+
+<p align="center"><img src="images/tuto_cutout15.png"></p>
+
+The result resembles a skeleton a lot more, and now the arm and forearm can be selected and animated.
+
+Finally, create endpoints in all meaningful extremities and connect the whole skeleton with bones up to the hip:
+
+<p align="center"><img src="images/tuto_cutout16.png"></p>
+
+Finally! the whole skeleton is rigged! On close look, it is noticeable that there is a second set of endpoints in the hands. This will make sense soon.
+
+Now that a whole skeleton is rigged, the next step is setting up the IK chains. IK chains allow for more natural control of extremities.
+
+### IK Chains
 
 
 
