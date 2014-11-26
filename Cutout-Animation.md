@@ -172,6 +172,64 @@ Once the IK chain is set-up, simply grab any of the bones in the extremity, any 
 
 <p align="center"><img src="images/tutovec_torso5.gif"></p>
 
+### Animation
+
+The following section will be a collection of tips for creating animation for your rigs. If unsure about how the animation system in Godot works, refresh it by checking again the [relevant tutorial](tutorial_animation).
+
+## 2D Animation
+
+When doing animation in 2D, a helper will be present in the top menu. This helper only appears when the animation editor window is opened:
+
+<p align="center"><img src="images/tuto_cutout20.png"></p>
+
+The key button will insert location/rotation/scale keyframes to the selected objects or bones. This depends on the mask enabled. Green items will insert keys while red ones will not, so modify the key insertion mask to your preference.
 
 
+#### Rest Pose
+
+These kind of rigs do not have a "rest" pose, so it's recommended to create a reference rest pose in one of the animations. 
+
+Simply do the following steps:
+
+1. Make sure the rig is in "rest" (not doing any specific pose).
+2. Create a new animation, rename it to "rest".
+3. Select all nodes (box selection should work fine).
+4. Select "loc" and "rot" on the top menu.
+5. Push the key button. Keys will be inserted for everything, creating a default pose.
+
+<p align="center"><img src="images/tuto_cutout21.png"></p>
+
+#### Rotation
+
+Animating these models means only modifying the rotation of the nodes. Location and scale are rarely used, with the only exception of moving the entire rig from the hip (which is the root node). 
+
+As a result, when inserting keys, only the "rot" button needs to be pressed most of the time:
+
+<p align="center"><img src="images/tuto_cutout22.png"></p>
+
+This will avoid the creation of extra animation tracks for the position that will remain unused.
+
+#### Keyframing IK
+
+When editing IK chains, is is not neccesary to select the whole chain to add keyframes. Selecting the endpoint of the chain and inserting a keyframe will automatically insert keyframes until the chain base too. This makes the task of animating extremities much simpler.
+
+#### Moving Sprites Above and Behind Others.
+
+RemoteTransform2D works in most cases, but sometimes it is really necessary to have a node above and below others during an animation. To aid on this the "Behind Parent" property exists on any Node2D:
+
+<p align="center"><img src="images/tuto_cutout23.png"></p>
+
+#### Batch Setting Transition Curves
+
+When creating really complex animations and inserting lots of keyframes, editing the individual keyframe curves for each can become an endless task. For this, the Animation Editor has a small menu where changing all the curves is easy. Just select every single keyframe and (generally) apply the "Out-In" transition curve to smooth the animation:
+
+<p align="center"><img src="images/tuto_cutout23.png"></p>
+
+The difference is going from this:
+
+<p align="center"><img src="images/tutovec_torso6.gif"></p>
+
+to this:
+
+<p align="center"><img src="images/tutovec_torso7.gif"></p>
 
