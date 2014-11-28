@@ -30,6 +30,10 @@
   * [bool](class_bool)  **[is&#95;flipped&#95;h](#is_flipped_h)**  **(** **)** const
   * void  **[set&#95;flip&#95;v](#set_flip_v)**  **(** [bool](class_bool) enable  **)**
   * [bool](class_bool)  **[is&#95;flipped&#95;v](#is_flipped_v)**  **(** **)** const
+  * void  **[set&#95;h&#95;frames](#set_h_frames)**  **(** [int](class_int) enable  **)**
+  * [int](class_int)  **[get&#95;h&#95;frames](#get_h_frames)**  **(** **)** const
+  * void  **[set&#95;v&#95;frames](#set_v_frames)**  **(** [int](class_int) enable  **)**
+  * [int](class_int)  **[get&#95;v&#95;frames](#get_v_frames)**  **(** **)** const
   * void  **[set&#95;emission&#95;half&#95;extents](#set_emission_half_extents)**  **(** [Vector2](class_vector2) extents  **)**
   * [Vector2](class_vector2)  **[get&#95;emission&#95;half&#95;extents](#get_emission_half_extents)**  **(** **)** const
   * void  **[set&#95;color&#95;phases](#set_color_phases)**  **(** [int](class_int) phases  **)**
@@ -60,7 +64,7 @@
   * **PARAM_INITIAL_SIZE** = **11**
   * **PARAM_FINAL_SIZE** = **12**
   * **PARAM_HUE_VARIATION** = **13**
-  * **PARAM_MAX** = **14**
+  * **PARAM_MAX** = **16**
   * **MAX_COLOR_PHASES** = **4**
 
 ###  Member Function Description  

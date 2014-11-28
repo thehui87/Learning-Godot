@@ -60,7 +60,7 @@ Operating System functions.
   * [float](class_float)  **[get&#95;frames&#95;per&#95;second](#get_frames_per_second)**  **(** **)** const
   * void  **[print&#95;all&#95;textures&#95;by&#95;size](#print_all_textures_by_size)**  **(** **)**
   * void  **[print&#95;resources&#95;by&#95;type](#print_resources_by_type)**  **(** [StringArray](class_stringarray) arg0  **)**
-  * [int](class_int)  **[native&#95;video&#95;play](#native_video_play)**  **(** [String](class_string) arg0, [float](class_float) arg1  **)**
+  * [int](class_int)  **[native&#95;video&#95;play](#native_video_play)**  **(** [String](class_string) arg0, [float](class_float) arg1, [String](class_string) arg2, [String](class_string) arg3  **)**
   * [bool](class_bool)  **[native&#95;video&#95;is&#95;playing](#native_video_is_playing)**  **(** **)**
   * void  **[native&#95;video&#95;stop](#native_video_stop)**  **(** **)**
   * void  **[native&#95;video&#95;pause](#native_video_pause)**  **(** **)**
