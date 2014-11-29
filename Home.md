@@ -69,6 +69,7 @@ Some types and method names are about to change in the next days, please read th
 *  [Lighting](tutorial_lighting) 
 *  [Shadow Mapping](tutorial_shadow_mapping)
 *  [High Dynamic Range](tutorial_hdr)
+*  [3D Performance & Limitations](tutorial_3d_performance)
 *  ~~[Light Baking](tutorial_light_baking)~~ 
 *  ~~[3D Sprites](tutorial_3d_sprites)~~ 
 *  ~~[Using the AnimationTreePlayer](tutorial_animation_tree)~~
