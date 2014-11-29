@@ -35,17 +35,83 @@ In any case, this method is meant for generating static geometry (models that wi
 
 If, instead, there is a requirement to generate simple geometry that will be updated often, Godot provides a special node, [ImmediateGeometry](class_immediategeometry) which provides an OpenGL 1.x style immediate-mode API to create points, lines, triangles, etc.
 
+### Environment
 
+Besides from editing a scene, it is often common to edit the environment. Godot provides a [WorldEnvironment](class_worldenvironment) node that allows changing the background color, mode (as in, put a skybox), and applying several types of built-in post-processing effects. Environments can also be overriden in the Camera.
 
+### 3D Viewport
 
+Editing 3D scenes is done in the 3D tab. This tab can be selected manually, but it will be automatically enabled when a Spatial node is selected.
 
+<p align="center"><img src="images/tuto_3d3.png"></p>
 
+Default 3D scene navigation controls are similar to Blender (aiming to have some sort of consistency in the free software pipeline..), but options are included to customize mouse buttons and behavior to be similar to other tools in Editor Settings:
 
+<p align="center"><img src="images/tuto_3d4.png"></p>
 
+#### Coordinate System
 
-this tutorial will be written soon, sorry for the delay!
+Godot uses the metric system for everything. 3D Physics and other areas are tuned for this, so attempting to use a different scale is usually a bad idea (unless you know what you are doing).
 
-some notes until this tutorial is complete:
+When working with 3D assets, it's always best to work in the correct scale (set your DCC to metric). Godot allows scaling post-import and, while this works in most cases, in rare situations it may introduce floating point precision issues (and thus, glitches or artifacts) in delicate areas such as rendering or physics. So, make sure your artists always work in the right scale!
 
--tell users about the [Spatial](class_spatial) node.
--write about how important using the right scale is.
+The Y coordinate is used for "up", though for most objects that need alignment (like lights, cameras, capsule collider, vehicle, etc), the Z axis is used. This convention roughly means that:
+
+* **X** is sides
+* **Y** is up/down
+* **Z** is front/back
+
+#### Space and Manipulation Gizmos
+
+Moving objects in the 3D view is done through the manipulator gizmos. Each axis is represented by a color: Red, Green, Blue represent X,Y,Z respectively. This applies to the grid and other gizmos too.
+
+<p align="center"><img src="images/tuto_3d5.png"></p>
+
+Some useful keybindings:
+* To snap motion or rotation, press the "s" key while moving, scaling or rotating.
+* To center the view on the selected object, press the "f" key.
+
+#### View Menu
+
+The view options are controlled by the [[view]] menu. Pay attention to this little menu because it is often overlooked!
+
+<p align="center"><img src="images/tuto_3d6.png"></p>
+
+#### Default Lighting
+
+The 3D View has by some default options on lighting:
+
+* There is a directional light that makes objects visible while editing turned on by default. It is no longer visible when running the game.
+* There is subtle default environment light to avoid places not reached by the light to remain visible. It is also no longer visible when running the game (and when the default light is turned off).
+
+These can be turned off by toggling the "Default Light" option:
+
+<p align="center"><img src="images/tuto_3d8.png"></p>
+
+Customizing this (and other default view options) is also possible via the settings menu:
+
+<p align="center"><img src="images/tuto_3d7.png"></p>
+
+which opens this window, allowing to customize ambient light color and default light direction:
+
+<p align="center"><img src="images/tuto_3d9.png"></p>
+
+#### Cameras
+
+No matter how many objects are placed in 3D space, nothing will be displayed unless a [Camera](class_camera) is also added to the scene. Cameras can either work in orthogonal or perspective projections:
+
+<p align="center"><img src="images/tuto_3d10.png"></p>
+
+Cameras are associated and only display to a parent or grand-parent viewport. Since the root of the scene tree is a viewport, cameras will display on it by default, but if sub-viewports (either as render target or picture-in-picture) are desired, they need their own children cameras to display.
+
+When dealing with multiple cameras, the following rules are followed for each viewport:
+
+* If no cameras are present in the scene tree, the first one that enters it will become the active camera. Further cameras entering the scene will be ignored (unless they are set as _current_).
+* If a camera has the "_current_" property set, it will be used regardless of any other camera in the scene. If the property is set, it will become active, replacing the previous camera.
+* If an active camera leaves the scene tree, the first camera in tree-order will take it's place.
+
+#### Lights
+
+There is no limitation on the number of lights and types in Godot. As many as desired can be added (as long as performance allows). Shadow maps are, however, limited. The more they are used, the less the quality overall.
+
+It is possible to [bake lighting](tutorial_light_baking), to avoid using large amount of real-time lights.
