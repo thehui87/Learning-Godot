@@ -77,7 +77,7 @@ If several identical objects have to be drawn in the same place or nearby, try u
 
 #### Bake Lighting
 
-Small lights are usually not a performance issue. Shadows a little more. In general, if several lights need to affect a scene, it's ideal to [bake it](tutorial_baked_light). Baking can also improve the scene quality by adding indirect light bounces. 
+Small lights are usually not a performance issue. Shadows a little more. In general, if several lights need to affect a scene, it's ideal to [bake it](tutorial_light_baking). Baking can also improve the scene quality by adding indirect light bounces. 
 
 
 
