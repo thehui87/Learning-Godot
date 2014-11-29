@@ -75,7 +75,9 @@ As also mentioned before, using objects with less vertices can improve performan
 If several identical objects have to be drawn in the same place or nearby, try using [MultiMesh](class_multimesh) instead. MultiMesh allows drawing of dozens of thousands of objects at very little performance cost, making it ideal for flocks, grass, particles, etc.
 
 
+#### Bake Lighting
 
+Small lights are usually not a performance issue. Shadows a little more. In general, if several lights need to affect a scene, it's ideal to [bake it](tutorial_baked_light). Baking can also improve the scene quality by adding indirect light bounces. 
 
 
 
