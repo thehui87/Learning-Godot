@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Creating a 3D game can be challenging. That extra Z coordinate makes many of the common techniques that helped to make 2D games simple no longer work. To aid in this transition, it is worth mentioning that Godot uses very similar APIs for 2D and 3D games. Most nodes are the same and are present in both 2D and 3D versions. In fact, it is worth checking the 3D platformer tutorial, or the 3D kinematic character tutorials, which are almost identical to their 2D counterparts.
+Creating a 3D game can be challenging. That extra Z coordinate makes many of the common techniques that helped to make 2D games simple no longer work. To aid in this transition, it is worth mentioning that Godot uses very similar APIs for 2D and 3D. Most nodes are the same and are present in both 2D and 3D versions. In fact, it is worth checking the 3D platformer tutorial, or the 3D kinematic character tutorials, which are almost identical to their 2D counterparts.
 
 In 3D, math is a little more complex than in 2D, so also checking the [vector math tutorials](https://github.com/okamstudio/godot/wiki#math) in the wiki (which were specially created for game developers, not mathematicians or engineers) will help pave the way into efficiently developing 3D games.
 
