@@ -2,13 +2,13 @@
 
 ### Introduction
 
-Creating a 3D game can be challenging. That extra Z coordinate makes many of the common techniques that helped to make 2D games simple no longer work. To aid in this transition, it is worth to mention that Godot uses very similar APIs for 2D and 3D games. Most nodes are the same and are present in both 2D and 3D versions. In fact, it is worth checking the 3D platformer tutorial, or the 3D kinematic character tutorials, which are almost identical to their 2D counterparts.
+Creating a 3D game can be challenging. That extra Z coordinate makes many of the common techniques that helped to make 2D games simple no longer work. To aid in this transition, it is worth mentioning that Godot uses very similar APIs for 2D and 3D games. Most nodes are the same and are present in both 2D and 3D versions. In fact, it is worth checking the 3D platformer tutorial, or the 3D kinematic character tutorials, which are almost identical to their 2D counterparts.
 
 In 3D, math is a little more complex than in 2D, so also checking the [vector math tutorials](https://github.com/okamstudio/godot/wiki#math) in the wiki (which were specially created for game developers, not mathematicians or engineers) will help pave the way into efficiently developing 3D games.
 
 ### Spatial Node
 
-Just like [Node2D](class_node2d) is the base node for 2D, and [Control](class_control) is the base node for everything GUI, the 3D engine uses the [Spatial](class_spatial) base node for everything 3D.
+[Node2D](class_node2d) is the base node for 2D. [Control](class_control) is the base node for everything GUI. Following this reasoning, the 3D engine uses the [Spatial](class_spatial) node for everything 3D.
 
 <p align="center"><img src="images/tuto_3d1.png"></p>
 
@@ -18,19 +18,19 @@ Spatial nodes have a local transform, which is relative to the parent node (as l
 
 ### 3D Content
 
-Unlike 2D, where loading image content and drawing it is straightforward, 3D is a little more difficult. The content usually needs to be created with special 3D tool (usually referred to as DCCs) and exported to an exchange format in order to be imported in Godot (3D formats are not as standardized as images).
+Unlike 2D, where loading image content and drawing is straightforward, 3D is a little more difficult. The content needs to be created with special 3D tool (usually referred to as DCCs) and exported to an exchange file format in order to be imported in Godot (3D formats are not as standardized as images).
 
 #### DCC-Created Models
 
 There are two pipelines to import 3D models in Godot. The first and most common one is through the [3D Scene](import_3d) importer, which allows to import entire scenes (just as they look in the DCC), including animation, skeletal rigs, blend shapes, etc. 
 
-The second pipeline is through the [3D Object](import_meshes) importer. This second method allows the import of simple .OBJ files as mesh resources, which can be then put inside a [MeshInstance](class_meshinstance) node for display.
+The second pipeline is through the [3D Object](import_meshes) importer. This second method allows importing simple .OBJ files as mesh resources, which can be then put inside a [MeshInstance](class_meshinstance) node for display.
 
 #### Generated Geometry
 
-It is possible to create your own geometry by using the [Mesh](class_mesh) resource directly, simply create your arrays and use the [Mesh.add_surface](class_mesh#add_surface) function. A helper class is also available, [SurfaceTool](class_surfacetool), which provides a more straightforward API and helpers for indexing, generating normals, tangents, etc.
+It is possible to create custom geometry by using the [Mesh](class_mesh) resource directly, simply create your arrays and use the [Mesh.add_surface](class_mesh#add_surface) function. A helper class is also available, [SurfaceTool](class_surfacetool), which provides a more straightforward API and helpers for indexing, generating normals, tangents, etc.
 
-In any case, this method is meant for generating static geometry (models that will not be updated often), as creating arrays and submitting them has a significant performance cost.
+In any case, this method is meant for generating static geometry (models that will not be updated often), as creating vertex arrays and submitting them to the 3D API has a significant performance cost.
 
 #### Immediate Geometry
 
@@ -44,7 +44,7 @@ The disadvantage is, of course, that added complexity and reduced performance in
 
 ### Environment
 
-Besides from editing a scene, it is often common to edit the environment. Godot provides a [WorldEnvironment](class_worldenvironment) node that allows changing the background color, mode (as in, put a skybox), and applying several types of built-in post-processing effects. Environments can also be overriden in the Camera.
+Besides editing a scene, it is often common to edit the environment. Godot provides a [WorldEnvironment](class_worldenvironment) node that allows changing the background color, mode (as in, put a skybox), and applying several types of built-in post-processing effects. Environments can also be overriden in the Camera.
 
 ### 3D Viewport
 
@@ -58,11 +58,11 @@ Default 3D scene navigation controls are similar to Blender (aiming to have some
 
 #### Coordinate System
 
-Godot uses the metric system for everything. 3D Physics and other areas are tuned for this, so attempting to use a different scale is usually a bad idea (unless you know what you are doing).
+Godot uses the [metric](http://en.wikipedia.org/wiki/Metric_system) system for everything. 3D Physics and other areas are tuned for this, so attempting to use a different scale is usually a bad idea (unless you know what you are doing).
 
 When working with 3D assets, it's always best to work in the correct scale (set your DCC to metric). Godot allows scaling post-import and, while this works in most cases, in rare situations it may introduce floating point precision issues (and thus, glitches or artifacts) in delicate areas such as rendering or physics. So, make sure your artists always work in the right scale!
 
-The Y coordinate is used for "up", though for most objects that need alignment (like lights, cameras, capsule collider, vehicle, etc), the Z axis is used. This convention roughly means that:
+The Y coordinate is used for "up", though for most objects that need alignment (like lights, cameras, capsule collider, vehicle, etc), the Z axis is used as a "pointing towards" direction. This convention roughly means that:
 
 * **X** is sides
 * **Y** is up/down
@@ -70,7 +70,7 @@ The Y coordinate is used for "up", though for most objects that need alignment (
 
 #### Space and Manipulation Gizmos
 
-Moving objects in the 3D view is done through the manipulator gizmos. Each axis is represented by a color: Red, Green, Blue represent X,Y,Z respectively. This applies to the grid and other gizmos too.
+Moving objects in the 3D view is done through the manipulator gizmos. Each axis is represented by a color: Red, Green, Blue represent X,Y,Z respectively. This convention applies to the grid and other gizmos too (and also to the shader language, ordering of components for Vector3,Color,etc).
 
 <p align="center"><img src="images/tuto_3d5.png"></p>
 
@@ -80,7 +80,7 @@ Some useful keybindings:
 
 #### View Menu
 
-The view options are controlled by the [[view]] menu. Pay attention to this little menu because it is often overlooked!
+The view options are controlled by the `[view]` menu. Pay attention to this little menu inside the window because it is often overlooked!
 
 <p align="center"><img src="images/tuto_3d6.png"></p>
 
@@ -111,6 +111,8 @@ No matter how many objects are placed in 3D space, nothing will be displayed unl
 
 Cameras are associated and only display to a parent or grand-parent viewport. Since the root of the scene tree is a viewport, cameras will display on it by default, but if sub-viewports (either as render target or picture-in-picture) are desired, they need their own children cameras to display.
 
+<p align="center"><img src="images/tuto_3d11.png"></p>
+
 When dealing with multiple cameras, the following rules are followed for each viewport:
 
 * If no cameras are present in the scene tree, the first one that enters it will become the active camera. Further cameras entering the scene will be ignored (unless they are set as _current_).
@@ -121,4 +123,4 @@ When dealing with multiple cameras, the following rules are followed for each vi
 
 There is no limitation on the number of lights and types in Godot. As many as desired can be added (as long as performance allows). Shadow maps are, however, limited. The more they are used, the less the quality overall.
 
-It is possible to [bake lighting](tutorial_light_baking), to avoid using large amount of real-time lights.
+It is possible to [bake lighting](tutorial_light_baking), to avoid using large amount of real-time lights and improve performance.
