@@ -2,8 +2,9 @@
 
 ### Introduction
 
-aruhgq
+Creating a 3D game can be challenging. That extra Z coordinate makes many of the common techniques that helped to make 2D games simple no longer work. To aid in this transition, it is worth to mention that Godot uses very similar APIs for 2D and 3D games. Most nodes are the same and are present in both 2D and 3D versions. In fact, it is worth checking the 3D platformer tutorial, or the 3D kinematic character tutorials, which are almost identical to their 2D counterparts.
 
+In 3D, math is a little more complex than in 2D, so also checking the [vector math tutorials](https://github.com/okamstudio/godot/wiki#math) in the wiki (which were specially created for game developers, not mathematicians or engineers) will help pave the way into efficiently developing 3D games.
 
 ### Spatial Node
 
@@ -34,6 +35,12 @@ In any case, this method is meant for generating static geometry (models that wi
 #### Immediate Geometry
 
 If, instead, there is a requirement to generate simple geometry that will be updated often, Godot provides a special node, [ImmediateGeometry](class_immediategeometry) which provides an OpenGL 1.x style immediate-mode API to create points, lines, triangles, etc.
+
+#### 2D in 3D
+
+While Godot packs a powerful 2D engine, many types of games use 2D in a 3D environment. By using a fixed camera (either orthogonal or perspective) that does not rotate, nodes such as [Sprite3D](class_sprite3d) and [AnimatedSprite3D](class_animatedsprite3d) can be used to create 2D games that take advantage of mixing with 3D backgrounds, more realistic parallax, lighting/shadow effects, etc.
+
+The disadvantage is, of course, that added complexity and reduced performance in comparison to plain 2D, as well as the lack of reference of working in pixels.
 
 ### Environment
 
