@@ -312,6 +312,63 @@ OK, hopefully this should be enough! Let's complete the tutorial by moving to 3D
 
 ### Matrices & Transforms in 3D
 
+As mentioned before, for 3D, we deal with 3 [Vector3](class_vector3) vectors for the rotation matrix, and an extra one for the origin.
+
+#### Matrix3
+
+Godot has a special type for a 3x3 matrix, named [Matrix3](class_matrix3). It can be used to represent a 3D rotation and scale. Sub vectors can be accessed as:
+
+```python
+var m = Matrix3()
+var x = m[0] # Vector3
+var y = m[1] # Vector3
+var z = m[2] # Vector3
+```
+
+or, alternatively as:
+
+```python
+var m = Matrix3()
+var x = m.x # Vector3
+var y = m.y # Vector3
+var z = m.z # Vector3
+```
+
+Matrix3 is also initialized to Identity by default:
+
+<p align="center"><img src="images/tutomat17.png"></p>
+
+##### Rotation in 3D
+
+Rotation in 3D is more complex than in 2D (translation and scale are the same), because rotation is an implicit 2D operation. To rotate in 3D, an _axis_, must be picked. Rotation, then, happens around this axis.
+
+The axis for the rotation must be a _normal vector_. As in, a vector that can point to any direction, but length must be one (1.0).
+
+```python
+#rotate in Y axis
+var m3 = Matrix3()
+m3 = m3.rotated( Vector3(0,1,0), PI/2 )
+```
+
+#### Transform
+
+To add the final component to the mix, Godot provides the [Transform](class_transform) type. Transform has two members:
+
+* **basis** (of type [Matrix3](class_matrix3)) 
+* **origin** (of type [Vector3](class_vector3)) 
+
+Any 3D transform can be represented with Transform, and the separation of basis and origin makes it easier to work translation and rotation separately.
+
+An example:
+ 
+```python
+var t = Transform()
+pos = t.xform(pos) #transform 3D position
+pos = t.basis.xform(pos) # (only rotate)
+pos = t.origin + pos  (only translate)
+```
+
+
 
 
 
