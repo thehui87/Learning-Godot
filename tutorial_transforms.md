@@ -111,6 +111,8 @@ It's easy to guess that an _identity_ matrix is just a matrix that aligns the tr
 
 #### Operations
 
+##### Rotation
+
 Rotating Matrix32 is done by using the "rotated" function:
 
 ```
@@ -119,6 +121,8 @@ m = m.rotated(PI/2) # rotate 90°
 ```
 
 <p align="center"><img src="images/tutomat12.png"></p>
+
+##### Translation
 
 There are two ways to translate a Matrix32, the first one is just moving the origin:
 ```
@@ -142,6 +146,7 @@ m=m.translated( Vector2(2,0) )
 
 <p align="center"><img src="images/tutomat14.png"></p>
 
+##### Scale
 
 A matrix can be scaled too. Scaling will multiply the basis vectors by a vetor (X vector by x component of the scale, Y vector by y component of the scale). It will leave the origin alone:
 
@@ -156,7 +161,7 @@ These kind of operations in matrices are accumulative. It means every one starts
 
 <p align="center"><img src="images/tutomat16.png"></p>
 
-A matrix is used similarly to a turtle. The turtle most likely had a matrix inside..
+A matrix is used similarly to a turtle. The turtle most likely had a matrix inside (and you are likely learning this may years _after_ discovering Santa is not real).
 
 #### Transform
 
@@ -177,6 +182,8 @@ Post - multiplying is also valid:
 var new_pos = m * pos
 ```
 
+##### Inverse Transform
+
 To do the opposite operation (what we did up there with the rocket), the "xform_inv" method is used:
 
 ```python
@@ -192,6 +199,8 @@ Or pre-multiplication:
 ```python
 var new_pos = pos * m
 ```
+
+##### Orthonormal Matrices
 
 However, if the Matrix has been scaled (vectors are not normals), or the basis vectors are not orthogonal (90°), the inverse transform will not work. 
 In other words, inverse transform is only valid in _orthonormal_ matrices. For this, these cases an affine inverse must be computed.
@@ -253,12 +262,15 @@ pos = (transform1 * transform2).xform(pos)
 ```
 Because in matrix math, A * B is not the same as B * A.
 
+##### Multiplication by Inverse
+
 Multiplying a matrix by it's inverse, results in identity
 
 ```python
 # No matter what A is, B will be identity
 B = A.affine_inverse() * A
 ```
+##### Multiplication by Identity
 
 Multiplying a matrix by identity, will result in the unchanged matrix:
 
@@ -299,7 +311,6 @@ var B = A * B_local_to_A
 OK, hopefully this should be enough! Let's complete the tutorial by moving to 3D matrices
 
 ### Matrices & Transforms in 3D
-
 
 
 
