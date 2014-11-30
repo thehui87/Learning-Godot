@@ -82,7 +82,7 @@ Some types and method names are about to change in the next days, please read th
 #### Math
 
 *  [Vector Math](tutorial_vector_math)
-*  ~~[Matrices & Transforms](tutorial_transforms)~~
+*  [Matrices & Transforms](tutorial_transforms)
 
 #### Advanced
 
