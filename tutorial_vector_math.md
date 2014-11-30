@@ -114,15 +114,15 @@ var v_right = Vector2(v.y,-v.x)
 
 This is a handy trick that is often of use. It is impossible to do with 3D vectors, because there are an infinite amount of perpendicular vectors.
 
-### Normal Vectors
+### Uniy Vectors
 
-Ok, so we know what a vector is. It has a **direction** and a **magnitude**. We also know how to use them in Godot. The next step is learning about **normal vectors** (also called _unit vectors_ or just _normals_). Any vector with **magnitude** of length 1 is considered a **normal vector**. In 2D, imagine drawing a circle of radius one. That circle contains all normal vectors in existence for 2 dimensions:
+Ok, so we know what a vector is. It has a **direction** and a **magnitude**. We also know how to use them in Godot. The next step is learning about **unit vectors**. Any vector with **magnitude** of length 1 is considered a **unit vector**. In 2D, imagine drawing a circle of radius one. That circle contains all unit vectors in existence for 2 dimensions:
 
 <p align="center"><img src="images/tutovec3.png"></p>
 
-So, what is so special about normal vectors? Normal vectors are amazing. In other words, normal vectors have **several, very useful properties**.
+So, what is so special about unit vectors? Unit vectors are amazing. In other words, unit vectors have **several, very useful properties**.
 
-Can't wait to know more about the fantastic properties of normal vectors, but one step at a time. So, how is a normal vector created from a regular vector?
+Can't wait to know more about the fantastic properties of unit vectors, but one step at a time. So, how is a unit vector created from a regular vector?
 
 #### Normalization
 
@@ -134,7 +134,7 @@ var m = sqrt( a.x*a.x + a.y*a.y )
 a.x/=m
 a.y/=m
 ```
-As you might have guessed, if the vector has magnitude 0 (meaning, it's not a vector but the **origin**), a division by zero occurs and the universe goes through a second big bang, except in reverse polarity and then back. As a result, humanity is safe but Godot will print an error. Remember! Vector(0,0) can't be normalized! No, Unity can't normalize it either, so don't switch back engines yet.
+As you might have guessed, if the vector has magnitude 0 (meaning, it's not a vector but the **origin** -also called _null vector_), a division by zero occurs and the universe goes through a second big bang, except in reverse polarity and then back. As a result, humanity is safe but Godot will print an error. Remember! Vector(0,0) can't be normalized!.
 
 Of course, Vector2 and Vector3 already provide a method to do this:
 ```python
@@ -215,23 +215,23 @@ if ( BA.dot(F) > 0 ):
 
 Seems Snake is safe so far.
 
-### Siding with Normal Vectors
+### Siding with Unit Vectors
 
 Ok, so now we know that dot product between two vectors will let us know if they are looking towards the same side, opposite sides or are just perpendicular to each other.
 
-This works the same with all vectors, no matter the magnitude so **normal vectors** are not the exception. However, using the same property with normal vectors yields an even more interesting result, as an extra property is added:
+This works the same with all vectors, no matter the magnitude so **unit vectors** are not the exception. However, using the same property with unit vectors yields an even more interesting result, as an extra property is added:
 
 * If both vectors are facing towards the exact same direction (parallel to each other, angle between them is 0°), the resulting scalar is **1**.
 * If both vectors are facing towards the exact opposite direction (parallel to each other, but angle between them is 180°), the resulting scalar is **-1**.
 
-This means that dot product between normal vectors is always between the range of 1 and -1. So Again..
+This means that dot product between unit vectors is always between the range of 1 and -1. So Again..
 * If their angle is **0°** dot product is **1**. 
 * If their angle is **90°**, then dot product is **0**.
 * If their angle is **180°**, then dot product is **-1**.
 
 Uh.. this is oddly familiar.. seen this before.. where?
 
-Let's take two normal vectors. The first one is pointing up, the second too but we will rotate it all the way from up (0°) to down (180° degrees)..
+Let's take two unit vectors. The first one is pointing up, the second too but we will rotate it all the way from up (0°) to down (180° degrees)..
 
 <p align="center"><img src="images/tutovec8.png"></p>
 
@@ -243,7 +243,7 @@ Aha! It all makes sense now, this is a [Cosine](http://mathworld.wolfram.com/Cos
 
 We can say that, then, as a rule..
 
-The **dot product** between two **normal vectors** is the **cosine** of the **angle** between those two vectors. So, to obtain the angle between two vectors, we must do:
+The **dot product** between two **unit vectors** is the **cosine** of the **angle** between those two vectors. So, to obtain the angle between two vectors, we must do:
 
 ```python
 var angle_in_radians = acos( a.dot(b) )
@@ -255,15 +255,17 @@ The beauty of this is that the same code works exactly the same and without modi
 
 ### Planes
 
-The dot product has another interesting property with normal vectors. Imagine that perpendicular to that vector (and through the origin) passes a **plane**. Planes divide the entire space into positive (over the plane) and negative (under the plane), and (contrary to popular belief) you can also use their math in 2D:
+The dot product has another interesting property with unit vectors. Imagine that perpendicular to that vector (and through the origin) passes a **plane**. Planes divide the entire space into positive (over the plane) and negative (under the plane), and (contrary to popular belief) you can also use their math in 2D:
 
 <p align="center"><img src="images/tutovec10.png"></p>
 
-It's as simple as it looks. The plane passes by the origin and the surface of it is perpendicular to the normal vector. The side towards the vector points to is the positive half-space, while the other side is the negative half-space. In 3D this is exactly the same, except that the plane is an infinite surface (imagine an infinite, flat sheet of paper that you can orient and is pinned to the origin) instead of a line.
+Unit vectors that are perpendicular to a surface (so, they describe the orientation of the surface) are called **unit normal vectors**. Though, usually they are just abbreviated as **normals**. Normals appear in planes, 3D geometry (to determine where each face or vertex is siding), etc. A **normal** _is_ a **unit vector**, but it's called _normal_ because of it's usage. (Just like we call Origin to (0,0)!). 
+
+It's as simple as it looks. The plane passes by the origin and the surface of it is perpendicular to the unit vector (or _normal_). The side towards the vector points to is the positive half-space, while the other side is the negative half-space. In 3D this is exactly the same, except that the plane is an infinite surface (imagine an infinite, flat sheet of paper that you can orient and is pinned to the origin) instead of a line.
 
 #### Distance to Plane
 
-Now that it's clear what a plane is, let's go back to the dot product. The dot product between a **normal vector** and any **point in space** (yes, this time we do dot product between vector and position), returns the **distance from the point to the plane**:
+Now that it's clear what a plane is, let's go back to the dot product. The dot product between a **unit vector** and any **point in space** (yes, this time we do dot product between vector and position), returns the **distance from the point to the plane**:
 
 ```python
 var distance = normal.dot(point)
@@ -281,7 +283,7 @@ I know what you are thinking! So far this is nice, but _real_ planes are everywh
 
 Remember that planes not only split space in two, but they also have _polarity_. This means that it is possible to have perfectly overlapping planes, but their negative and positive half-spaces are swapped.
 
-With this in mind, let's describe a full plane as a **normal vector** _N_ and a **distance from the origin** scalar _D_. Thus, our plane is represented by N and D. For example:
+With this in mind, let's describe a full plane as a **normal** _N_ and a **distance from the origin** scalar _D_. Thus, our plane is represented by N and D. For example:
 
 <p align="center"><img src="images/tutovec12.png"></p>
 
@@ -320,7 +322,7 @@ So, remember, a plane is just that and it's main practical use is calculating th
 
 #### Constructing a Plane in 2D
 
-Planes clearly don't come out of nowhere, so they must be built. Constructing them in 2D is easy, this can be done from either a normal and a point, or from two points in space.
+Planes clearly don't come out of nowhere, so they must be built. Constructing them in 2D is easy, this can be done from either a normal (unit vector) and a point, or from two points in space.
 
 In the case of a normal and a point, most of the work is done, as the normal is already computed, so just calculate D from the dot product of the normal and the point.
 
@@ -449,7 +451,7 @@ var c = a.cross(b)
 
 However, unlike the dot product, doing `a.cross(b)` and `b.cross(a)` will yield different results. Specifically, the returned vector will be negated in the second case. As you might have realized, this coincides with creating perpendicular vectors in 2D. In 3D, there are also two possible perpendicular vectors to a pair of 2D vectors. 
 
-Also, the resulting cross product of two normal vectors is _not_ a normal vector. Result will need to be renormalized.
+Also, the resulting cross product of two unit vectors is _not_ a unit vector. Result will need to be renormalized.
 
 ### Area of a Triangle
 
