@@ -38,7 +38,7 @@ On a modern PC and consoles, vertex cost is low. Very low. GPUs originally only 
 
 Nowadays, all this is handled inside the GPU, so the performance is extremely high. 3D artists usually have the wrong feeling about polycount performance because 3D DCCs (such as Blender, Max, etc) need to keep geometry in CPU memory in order for it to be edited, reducing actual performance. Truth is, a model rendered by a 3D engine is much more optimal than how 3D DCCs display them.
 
-On mobile devices, the story is different. PC and Console GPUs are brute-force monsters that can draw as much electricity as they want from the power grid. Mobile GPUs are limited to battery, so they need to be a lot more power efficient. 
+On mobile devices, the story is different. PC and Console GPUs are brute-force monsters that can pull as much electricity as they need from the power grid. Mobile GPUs are limited to a tiny battery, so they need to be a lot more power efficient. 
 
 To be more efficient, mobile GPUs attempt to avoid _overdraw_. This means, the same pixel on the screen being rendered. Imagine a town with several buildings, GPUs don't really know what is visible and what is hidden until they draw it. A house might be drawn and then another house in front of it. PC GPUs normally don't care much about this and just throw more pixel processors to the hardware to increase performance (but this also increases power consumption).
 
