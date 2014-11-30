@@ -7,7 +7,7 @@ Items in ~~strikethrough~~ mean **the feature exists**, but documentation for it
 
 # Notice!
 
-Some types and method names are about to change in the next days, please read this:
+Some types and method names changed recently, please read this:
 * [SceneMainLoop -> SceneTree Notes](devel_scene_tree)
 
 # Roadmap
