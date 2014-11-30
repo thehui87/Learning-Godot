@@ -114,7 +114,7 @@ var v_right = Vector2(v.y,-v.x)
 
 This is a handy trick that is often of use. It is impossible to do with 3D vectors, because there are an infinite amount of perpendicular vectors.
 
-### Uniy Vectors
+### Unit Vectors
 
 Ok, so we know what a vector is. It has a **direction** and a **magnitude**. We also know how to use them in Godot. The next step is learning about **unit vectors**. Any vector with **magnitude** of length 1 is considered a **unit vector**. In 2D, imagine drawing a circle of radius one. That circle contains all unit vectors in existence for 2 dimensions:
 
