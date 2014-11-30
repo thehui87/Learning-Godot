@@ -57,14 +57,14 @@ Doing this to the selected point will move it back to the center:
 This was expected, but then let's do something more interesting. Use the dot product of X and the point, and add it to the dot product of Y and the point:
 
 ```python
-var final_pos = x.dot(new_pos) + y.dot(final_pos)
+var final_pos = x.dot(new_pos) + y.dot(new_pos)
 ```
 Then what we have is.. wait a minute, it's the ship in it's design position!
 
 <p align="center"><img src="images/tutomat9.png"></p>
 
 How did this black magic happen? The ship was lost in space, and now it's back home!
-It might seem strange, but it does have plenty of logic. Remember, as we have seen in the [previous tutorial](tutorial_vector_math#distance-to-plane), what happened is that the distance to X axis, and the distance to Y axis were computed. This was enough to obtain back the design coordinates for every point in the ship.
+It might seem strange, but it does have plenty of logic. Remember, as we have seen in the [previous tutorial](tutorial_vector_math#distance-to-plane), what happened is that the distance to X axis, and the distance to Y axis were computed. Calculating distance in a direction or plane was one of the uses for the dot product. This was enough to obtain back the design coordinates for every point in the ship.
 
 So, what he have been working with so far (with X, Y and Origin) is an **Oriented Coordinate System**. X an Y are the **Basis**, and **Origin** is the offset.
 
