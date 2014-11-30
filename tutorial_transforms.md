@@ -4,7 +4,8 @@
 
 Before reading this tutorial, it is advised to read the previous one about [vector math](tutorial_vector_math) as this one is a direct continuation.
 
-Matrices and transforms are pretty much the same. Well not really. These terms are all over the place so It's quite difficult. We'll get familiar with 3 terms here: **Transform**, **Matrix** and **Oriented Coordinate System** (too long let's use **OCS**). It's more like one is a subset of the other, but don't despair yet! While this field is pretty large, we'll just work with the subset that matters. We'll learn this by going _backwards_.
+This tutorial will be about _transformations_ and will cover a little about matrices (but not in-depth).
+Transformations are most of the time applied as translation, rotation and scale so they will be considered as priority here.
 
 ### Oriented Coordinate System (OCS)
 
