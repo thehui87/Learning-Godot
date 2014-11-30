@@ -146,13 +146,166 @@ m=m.translated( Vector2(2,0) )
 A matrix can be scaled too. Scaling will multiply the basis vectors by a vetor (X vector by x component of the scale, Y vector by y component of the scale). It will leave the origin alone:
 
  ```
-# Move 2 units towards where the basis is oriented
+# Make the basis twice it's size.
 var m = Matrix32()
 m = m.scaled( Vector2(2,2) )
 ```
-
 <p align="center"><img src="images/tutomat15.png"></p>
+
+These kind of operations in matrices are accumulative. It means every one starts relative to the previous one. For those that have been living on this planet long enough, a good reference of how transform works is this:
+
+<p align="center"><img src="images/tutomat16.png"></p>
+
+A matrix is used similarly to a turtle. The turtle most likely had a matrix inside..
 
 #### Transform
 
-explain orthogonal, orthonormal, etc.
+Transform is the act of switching between coordinate systems. To convert a position (either 2D or 3D) from "designer" coordinate system to the OCS, the "xform" method is used.
+
+```python
+var new_pos = m.xform(pos)
+```
+And only for basis (no translation):
+
+```python
+var new_pos = m.basis_xform(pos)
+```
+
+Post - multiplying is also valid:
+
+```python
+var new_pos = m * pos
+```
+
+To do the opposite operation (what we did up there with the rocket), the "xform_inv" method is used:
+
+```python
+var new_pos = m.xform_inv(pos)
+```
+Only for Basis:
+```python
+var new_pos = m.basis_xform_inv(pos)
+```
+
+Or pre-multiplication:
+
+```python
+var new_pos = pos * m
+```
+
+However, if the Matrix has been scaled (vectors are not normals), or the basis vectors are not orthogonal (90°), the inverse transform will not work. 
+In other words, inverse transform is only valid in _orthonormal_ matrices. For this, these cases an affine inverse must be computed.
+
+The transform, or inverse transform of an identity matrix will return the position unchanged:
+
+```python
+# Does nothing, pos is unchanged
+pos = Matrix32().xform(pos)
+```
+
+#### Affine Inverse
+
+The affine inverse is a matrix that does the inverse operation of another matrix, no matter if the matrix has scale or the axis vectors are not orthogonal. The affine inverse is calculated with the affine_inverse() method:
+
+```python
+var mi = m.affine_inverse()
+var pos = m.xform(pos)
+pos = mi.xform(pos)
+#pos is unchanged
+```
+If the matrix is orthonormal, then:
+
+```python
+#if m is orthonormal, then
+pos = mi.xform(pos)
+#is the same is
+pos = m.xform_inv(pos)
+```
+
+#### Matrix Multiplication
+
+Matrices can be multiplied. Multiplication of two matrices "chains" (concatenates) their transforms.
+However, as per convention, multiplication takes place in reverse order.
+
+Example:
+```python
+var m = more_transforms * some_transforms
+```
+
+To make it a little clearer, this:
+
+```python
+pos = transform1.xform(pos)
+pos = transform2.xform(pos)
+```
+
+Is the same as:
+
+```python
+# note the inverse order
+pos = (transform2 * transform1).xform(pos)
+```
+However, this is not the same:
+
+```python
+# yields a different results
+pos = (transform1 * transform2).xform(pos)
+```
+Because in matrix math, A * B is not the same as B * A.
+
+Multiplying a matrix by it's inverse, results in identity
+
+```python
+# No matter what A is, B will be identity
+B = A.affine_inverse() * A
+```
+
+Multiplying a matrix by identity, will result in the unchanged matrix:
+
+```python
+# B will be equal to A
+B = A * Matrix32()
+```
+
+#### Matrix tips
+
+When using a transform hierarchy, remember that matrix multiplication is reversed! To obtain the global transform for a hierarchy, do:
+
+```python
+var global_xform = parent_matrix * child_matrix
+```
+
+For 3 levels:
+
+```python
+# due to reverse order, parenthesis are needed
+var global_xform = gradparent_matrix * (parent_matrix * child_matrix)
+```
+
+To make a matrix relative to the parent, use the affine inverse (or regular inverse for orthonormal matrices).
+
+```python
+# transform B from a global matrix to one local to A
+var B_local_to_A = A.affine_inverse() * B
+```
+
+Revert it just like the example above:
+
+```python
+# transform back local B to global B
+var B = A * B_local_to_A
+```
+
+OK, hopefully this should be enough! Let's complete the tutorial by moving to 3D matrices
+
+### Matrices & Transforms in 3D
+
+
+
+
+
+
+
+
+
+
