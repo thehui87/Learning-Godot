@@ -80,4 +80,79 @@ So, let's change the representation of the basis. Instead of 2 vectors, let's us
 
 The vectors are up there in the matrix, horizontally. The next problem now is that.. what is this matrix thing? Well, we'll assume you've never heard of a matrix. 
 
+### Transforms in Godot
 
+This tutorial will not explain matrix math (and their operations) in depth, only it's practical use. There is plenty of material for that, which should be a lot simpler to understand after completing this tutorial. We'll just explain how to use transforms.
+
+### Matrix32
+
+[Matrix32](class_matrix32) is a 3x2 matrix. It has 3 Vector2 elements and it's used for 2D. The "X" axis is the element 0, "Y" axis is the element 1 and "Origin" is element 2. It's not divided in basis/origin for convenience, due to it's simplicity.
+
+```python
+var m = Matrix32()
+var x = m[0] # 'X'
+var y = m[1] # 'Y'
+var o = m[2] # 'Origin'
+```
+
+Most operations will be explained with this datatype (Matrix32), but the same logic applies to 3D.
+
+#### Identity
+
+By default, Matrix32 is created as an "identity" matrix. This means:
+
+* 'X' Points right: Vector2(1,0)
+* 'Y' Points up (or down in pixels): Vector2(0,1)
+* 'Origin' is the origin Vector2(0,0)
+
+<p align="center"><img src="images/tutomat11.png"></p>
+
+It's easy to guess that an _identity_ matrix is just a matrix that aligns the transform to it's parent coordinate system. It's an **OCS** that hasn't been translated, rotated or scaled. All transform types in Godot are created with _identity_.
+
+#### Operations
+
+Rotating Matrix32 is done by using the "rotated" function:
+
+```
+var m = Matrix32()
+m = m.rotated(PI/2) # rotate 90°
+```
+
+<p align="center"><img src="images/tutomat12.png"></p>
+
+There are two ways to translate a Matrix32, the first one is just moving the origin:
+```
+# Move 2 units to the right
+var m = Matrix32()
+m = m.rotated(PI/2) # rotate 90°
+m[2]+=Vector2(2,0)
+```
+
+<p align="center"><img src="images/tutomat13.png"></p>
+
+This will always work in global coordinates.
+If instead, translation is desired in _local_ coordinates of the matrix (towards where the _basis_ is oriented), there is the [Matrix32.translated](class_matrix32#translated) method:
+
+```
+# Move 2 units towards where the basis is oriented
+var m = Matrix32()
+m = m.rotated(PI/2) # rotate 90°
+m=m.translated( Vector2(2,0) )
+```
+
+<p align="center"><img src="images/tutomat14.png"></p>
+
+
+A matrix can be scaled too. Scaling will multiply the basis vectors by a vetor (X vector by x component of the scale, Y vector by y component of the scale). It will leave the origin alone:
+
+ ```
+# Move 2 units towards where the basis is oriented
+var m = Matrix32()
+m = m.scaled( Vector2(2,2) )
+```
+
+<p align="center"><img src="images/tutomat15.png"></p>
+
+#### Transform
+
+explain orthogonal, orthonormal, etc.
