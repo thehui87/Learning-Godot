@@ -32,8 +32,9 @@ If a scene has, for example, 20.000 objects with 20.000 different materials each
 It is a common thought that the lower the polygons in a model, the faster it will be rendered. This is _really_ relative and depends on many factors.
 
 On a modern PC and consoles, vertex cost is low. Very low. GPUs originally only rendered triangles, so all the vertices:
+
 1. Had to be transformed by the CPU (including clipping).
-2. Had to be sent to the GPU memory from the main RAM.
+1. Had to be sent to the GPU memory from the main RAM.
 
 Nowadays, all this is handled inside the GPU, so the performance is extremely high. 3D artists usually have the wrong feeling about polycount performance because 3D DCCs (such as Blender, Max, etc) need to keep geometry in CPU memory in order for it to be edited, reducing actual performance. Truth is, a model rendered by a 3D engine is much more optimal than how 3D DCCs display them.
 
