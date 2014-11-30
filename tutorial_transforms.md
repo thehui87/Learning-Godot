@@ -31,7 +31,7 @@ So, a transform is too generic of a term. To solve this puzzle, we will overimpo
 
 <p align="center"><img src="images/tutomat4.png"></p>
 
-So, we can see that the "design space" has been transformed too. How can we best represent this transformation? Let's use 3 vectors for this (in 2D), a normal pointing towards X positive, a normal pointing towards Y positive and a translation.
+So, we can see that the "design space" has been transformed too. How can we best represent this transformation? Let's use 3 vectors for this (in 2D), a unit vector pointing towards X positive, a unit vector pointing towards Y positive and a translation.
 
 <p align="center"><img src="images/tutomat5.png"></p>
 
@@ -203,7 +203,7 @@ var new_pos = pos * m
 
 ##### Orthonormal Matrices
 
-However, if the Matrix has been scaled (vectors are not normals), or the basis vectors are not orthogonal (90°), the inverse transform will not work. 
+However, if the Matrix has been scaled (vectors are not unit length), or the basis vectors are not orthogonal (90°), the inverse transform will not work. 
 In other words, inverse transform is only valid in _orthonormal_ matrices. For this, these cases an affine inverse must be computed.
 
 The transform, or inverse transform of an identity matrix will return the position unchanged:
