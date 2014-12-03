@@ -80,7 +80,7 @@ Next, is the function for changing scene. This function will erase the current s
 
 func goto_scene(scene):
         # remove current scene from root and enqueue it for deletion
-        get_tree().get_root().remove_child(current_scene)
+        # (when deleted, it will be removed)
         current_scene.queue_free()
 
         # load and add new scene to root
