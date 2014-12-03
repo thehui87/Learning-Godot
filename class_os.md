@@ -56,6 +56,7 @@ Operating System functions.
   * [int](class_int)  **[get&#95;static&#95;memory&#95;peak&#95;usage](#get_static_memory_peak_usage)**  **(** **)** const
   * [int](class_int)  **[get&#95;dynamic&#95;memory&#95;usage](#get_dynamic_memory_usage)**  **(** **)** const
   * [String](class_string)  **[get&#95;data&#95;dir](#get_data_dir)**  **(** **)** const
+  * [String](class_string)  **[get&#95;system&#95;dir](#get_system_dir)**  **(** [int](class_int) dir  **)** const
   * [String](class_string)  **[get&#95;unique&#95;ID](#get_unique_ID)**  **(** **)** const
   * [float](class_float)  **[get&#95;frames&#95;per&#95;second](#get_frames_per_second)**  **(** **)** const
   * void  **[print&#95;all&#95;textures&#95;by&#95;size](#print_all_textures_by_size)**  **(** **)**
@@ -86,6 +87,14 @@ Operating System functions.
   * **MONTH_OCTOBER** = **9**
   * **MONTH_NOVEMBER** = **10**
   * **MONTH_DECEMBER** = **11**
+  * **SYSTEM_DIR_DESKTOP** = **0**
+  * **SYSTEM_DIR_DCIM** = **1**
+  * **SYSTEM_DIR_DOCUMENTS** = **2**
+  * **SYSTEM_DIR_DOWNLOADS** = **3**
+  * **SYSTEM_DIR_MOVIES** = **4**
+  * **SYSTEM_DIR_MUSIC** = **5**
+  * **SYSTEM_DIR_PICTURES** = **6**
+  * **SYSTEM_DIR_RINGTONES** = **7**
 
 ###  Description  
 Operating System functions. OS Wraps the most common functionality to communicate with the host Operating System, such as:
