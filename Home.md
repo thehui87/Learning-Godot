@@ -36,6 +36,7 @@ Some types and method names changed recently, please read this:
 
 #### Engine
 
+*  [2D & 3D Keybinding Cheatsheet](tutorial_keycheat)
 *  [Viewports](tutorial_viewports)
 *  [Multiple Screen Resolutions](tutorial_multires)
 *  [Input Events & Actions](tutorial_input_events)
