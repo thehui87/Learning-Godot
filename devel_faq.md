@@ -6,7 +6,7 @@ The official languges for Godot are GDScript and C++.
 
 GDScript is designed to integrate from the ground to the way Godot works, more than any other language, and is very simple and easy to learn. Takes at much a day or two to get comfortable and it's very easy to see the benefits once you do.  Please do the effort to learn GDScript, you will not regret it.
 
-Godot C++ API is also efficient and easy to use (the entire Godot editor is made with this API), but trying to use it instead of GDScript is, in most cases, a waste of time.
+Godot C++ API is also efficient and easy to use (the entire Godot editor is made with this API), and an excellent tool to optimize parts of a project, but trying to use it instead of GDScript for an entire game is, in most cases, a waste of time.
 
 More information about getting comfortable with GDScript or dynamically typed languages can be found [here](tutorial_gdscript_efficiently).
 
