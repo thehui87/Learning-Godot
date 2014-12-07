@@ -116,7 +116,7 @@ Some types and method names changed recently, please read this:
 
 #### Cheat Sheets
 
-*  [2D & 3D Keybindings](tutorial_keycheat)
+*  [2D & 3D Keybindings](tutorial_keycheat) List of main 2D and 3D editor keyboard and mouse shortcuts.
 
 
 # Asset Pipeline
