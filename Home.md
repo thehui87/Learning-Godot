@@ -79,10 +79,6 @@ Some types and method names changed recently, please read this:
 *  ~~[Spatial Audio](tutorial_spatial_audio)~~ 
 *  ~~[Toon Shading](tutorial_toon_shading)~~
 
-#### Cheat Sheets
-
-*  [2D & 3D Keybindings](tutorial_keycheat)
-
 #### Math
 
 *  [Vector Math](tutorial_vector_math)
@@ -117,6 +113,11 @@ Some types and method names changed recently, please read this:
 *  [GDScript (More Efficiently)](tutorial_gdscript_efficiently) Tips and help migrating from other languages. 
 *  [Shader](shader) Built-in, portable, shader language.
 *  [Locales](locales) List of supported locale strings.
+
+#### Cheat Sheets
+
+*  [2D & 3D Keybindings](tutorial_keycheat)
+
 
 # Asset Pipeline
 #### General
