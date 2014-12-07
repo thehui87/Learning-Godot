@@ -36,7 +36,6 @@ Some types and method names changed recently, please read this:
 
 #### Engine
 
-*  [2D & 3D Keybinding Cheatsheet](tutorial_keycheat)
 *  [Viewports](tutorial_viewports)
 *  [Multiple Screen Resolutions](tutorial_multires)
 *  [Input Events & Actions](tutorial_input_events)
@@ -79,6 +78,10 @@ Some types and method names changed recently, please read this:
 *  ~~[GridMap (3D TileMap)](tutorial_grid_map)~~ 
 *  ~~[Spatial Audio](tutorial_spatial_audio)~~ 
 *  ~~[Toon Shading](tutorial_toon_shading)~~
+
+#### Cheat Sheets
+
+*  [2D & 3D Keybindings](tutorial_keycheat)
 
 #### Math
 
