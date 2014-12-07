@@ -1,8 +1,10 @@
 ## #1 GDScript? Why your own scripting language? Why not Lua, Javascript, C#, etc.
 
+The short answer is, we'd rather a programmer does the effort to learn GDScript so he or she later has a seamless experience, than attracting him or her with a familiar programming language that is not up to  the design requirements of Godot, resulting in a worse experience.
+
 The official languges for Godot are GDSCript and C++.
 
-GDScript is designed to integrate from the ground to the way Godot works and is very simple and easy to learn. Takes at much a day or two to get comfortable and it's very easy to see the benefits once you do. Please do the effort to learn GDScript, you will not regret it.
+GDScript is designed to integrate from the ground to the way Godot works and is very simple and easy to learn. Takes at much a day or two to get comfortable and it's very easy to see the benefits once you do.  Please do the effort to learn GDScript, you will not regret it.
 
 Godot C++ API is also efficient and easy to use (the entire Godot editor is made with this API), but trying to use it instead of GDScript is, in most cases, a waste of time.
 
