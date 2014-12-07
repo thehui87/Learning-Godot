@@ -8,6 +8,8 @@ GDScript is designed to integrate from the ground to the way Godot works, more t
 
 Godot C++ API is also efficient and easy to use (the entire Godot editor is made with this API), and an excellent tool to optimize parts of a project, but trying to use it instead of GDScript for an entire game is, in most cases, a waste of time.
 
+Yes, for more than a decade we tried in the past integrating several VMs (and even shipped games using them), such as Python, Squirrel and Lua (in fact we authored tolua++ in the past, one of the most popular C++ binders). None of them worked as well as GDScript does now.
+
 More information about getting comfortable with GDScript or dynamically typed languages can be found [here](tutorial_gdscript_efficiently).
 
 ## #2 Why is FBX not supported for import?
