@@ -19,4 +19,7 @@
   * void  **[set&#95;hframes](#set_hframes)**  **(** [int](class_int) hframes  **)**
   * [int](class_int)  **[get&#95;hframes](#get_hframes)**  **(** **)** const
 
+###  Signals  
+  *  **frame&#95;changed**  **(** **)**
+
 ###  Member Function Description  

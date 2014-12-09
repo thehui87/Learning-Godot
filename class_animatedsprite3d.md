@@ -11,4 +11,7 @@
   * void  **[set&#95;frame](#set_frame)**  **(** [int](class_int) frame  **)**
   * [int](class_int)  **[get&#95;frame](#get_frame)**  **(** **)** const
 
+###  Signals  
+  *  **frame&#95;changed**  **(** **)**
+
 ###  Member Function Description  

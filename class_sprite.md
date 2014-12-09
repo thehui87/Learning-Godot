@@ -29,6 +29,9 @@ General purpose Sprite node.
   * void  **[set&#95;modulate](#set_modulate)**  **(** [Color](class_color) modulate  **)**
   * [Color](class_color)  **[get&#95;modulate](#get_modulate)**  **(** **)** const
 
+###  Signals  
+  *  **frame&#95;changed**  **(** **)**
+
 ###  Description  
 General purpose Sprite node. This Sprite node can show any texture as a sprite. The texture can be used as a spritesheet for animation, or only a region from a bigger texture can referenced, like an atlas.
 

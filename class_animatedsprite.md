@@ -21,6 +21,9 @@ Sprite node that can use multiple textures for animation.
   * void  **[set&#95;modulate](#set_modulate)**  **(** [Color](class_color) modulate  **)**
   * [Color](class_color)  **[get&#95;modulate](#get_modulate)**  **(** **)** const
 
+###  Signals  
+  *  **frame&#95;changed**  **(** **)**
+
 ###  Description  
 Sprite node that can use multiple textures for animation.
 
