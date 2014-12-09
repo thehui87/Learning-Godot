@@ -413,7 +413,7 @@ extends "somefile.gd".Subclass
 It's possible to check if an instance inherits from a given class. For this the “extends” keyword can be used as an operator instead:
 
 ```python
-static var enemy_class = preload("enemy.gd")  # cache the enemy class
+const enemy_class = preload("enemy.gd")  # cache the enemy class
 
 [..]
 
