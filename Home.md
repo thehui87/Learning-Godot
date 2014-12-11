@@ -60,6 +60,7 @@ Some types and method names changed recently, please read this:
 *  [Custom Drawing in Node2D/Control](tutorial_custom_draw_2d)
 *  [Custom GUI Controls](tutorial_custom_controls)
 *  [Cut-Out Animation](Cutout-Animation)
+*  ~~[Physics Object Guide](tutorial_physics_objects_guide)~~
 
 #### 3D Tutorials
 *  [Creating a 3D game](tutorial_3d)
